@@ -2,6 +2,8 @@
 (function(){
 const N = globalThis.NFM = globalThis.NFM || {};
 const R=Math.random, cl=(v,a,b)=>v<a?a:v>b?b:v;
+// калибровка (Update #8): компрессия силы, игра по счёту, домашнее преимущество
+const QK=0.98, QE=1.3, LD3=0.45, LD2=0.65, LD1=0.85, TR1=1.25, XE=0.35, HA=0.1, HD=0.06, TD=0.7, PM=1.7, HQ=0.28;
 const W = { // веса вклада роли в атаку / оборону / центр
  att:{GK:0,CB:.08,LB:.25,RB:.25,DM:.2,CM:.4,LM:.6,RM:.6,AM:.8,LW:.95,RW:.95,ST:1},
  def:{GK:0,CB:1,LB:.8,RB:.8,DM:.8,CM:.5,LM:.4,RM:.4,AM:.25,LW:.12,RW:.12,ST:.1},
@@ -21,7 +23,7 @@ class Match{
   this.t=[home,away]; this.o=o; this.min=0; this.done=false; this.ev=[]; this.score=[0,0]; this.ko=!!o.ko; this.neutral=!!o.neutral; this.agg=o.agg||null; this.hf=this.neutral?0:(o.hf??0.85); this.wx=o.wx||'clear'; this.inAdd=false; this.addK=0; this.addN=0; this.injN=0;
   this.st=[0,1].map(()=>({poss:0,sh:0,sot:0,xg:0,fo:0,co:0,yc:0,rc:0,off:0}));
   this.ps={}; this.ball=[50,50]; this.possSide=0; this.pens=null; this.phase=_t("1т");
-  for(const s of [0,1]){ const tm=this.t[s]; tm.side=s; tm.subsLeft=tm.subsLeft??5; tm.subWin=0;
+  for(const s of [0,1]){ const tm=this.t[s]; tm.on=(tm.on||[]).filter(e=>e&&e.p); tm.bench=(tm.bench||[]).filter(Boolean); tm.side=s; tm.subsLeft=tm.subsLeft??5; tm.subWin=0;
    tm.on.forEach(e=>this._init(e.p,s,0,e.role)); tm.bench.forEach(p=>{p._mfit=p.fit;}); }
   this.calc();
  }
@@ -37,7 +39,7 @@ class Match{
    const ment=tac.ment||0, press=tac.press??1, tempo=tac.tempo??1;
    a*=1+0.06*ment; d*=1-0.045*ment; m*=1+0.03*(press-1);
    if(tac.style==='short'){m*=1.03;a*=0.98} else if(tac.style==='long'){m*=0.96;a*=1.03} else if(tac.style==='counter'){m*=0.95;d*=1.03}
-   if(s===0&&this.hf>0){const k=this.hf/0.85;a*=1+0.065*k;d*=1+0.04*k;m*=1+0.03*k} if(!this.neutral&&s===1&&this.o.homeAdvBig){d*=0.98}
+   if(s===0&&this.hf>0){const k=this.hf/0.85;a*=1+HA*k;d*=1+HD*k;m*=1+0.03*k} if(!this.neutral&&s===1&&this.o.homeAdvBig){d*=0.98}
    return {a,d,m,gk,press,tempo,ment,style:tac.style||'mix'}; });
  }
  log(e){e.m=this.min; if(this.inAdd&&this.addK>0)e.ml=this.min+'+'+this.addK;this.ev.push(e);this.cur.push(e);return e}
@@ -49,13 +51,14 @@ class Match{
   if(this.inAdd) this.addK++; else this.min++;
   const [A,B]=this.str;
   // владение
-  let pH = 0.5 + (A.m-B.m)/(A.m+B.m)*1.8; if(A.style==='counter')pH-=.04; if(B.style==='counter')pH+=.04; pH=cl(pH,.25,.75);
+  let pH = 0.5 + (A.m-B.m)/(A.m+B.m)*PM; if(A.style==='counter')pH-=.04; if(B.style==='counter')pH+=.04; pH=cl(pH,.25,.75);
   const s = R()<pH?0:1, o=1-s; this.possSide=s; this.st[s].poss++;
   const X=this.str[s], Y=this.str[o];
   const bx = s===0? 55+R()*25 : 45-R()*25; const kf=[[cl(bx+(R()-.5)*20,5,95),15+R()*70],[bx,20+R()*60]];
   // атака
-  let ratio = X.a/Y.d; if(ratio>1.12)ratio=Math.min(1.55,1.12+(ratio-1.12)*0.45); if(ratio<0.89)ratio=0.89-(0.89-ratio)*0.45; let q = 0.236*Math.pow(ratio,1.5)*(1+0.12*(X.tempo-1));
-  if(X.style==='counter' && pH<.5) q*=1.06;
+  let ratio = X.a/Y.d; if(ratio>1.12)ratio=Math.min(1.45,1.12+(ratio-1.12)*0.4); if(ratio<0.89)ratio=0.89-(0.89-ratio)*0.4; let q = QK*0.236*Math.pow(ratio,QE)*(1+0.12*(X.tempo-1));
+  { const lead=this.score[s]-this.score[o]; if(lead>=3)q*=LD3; else if(lead>=2)q*=LD2; else if(lead===1&&this.min>=60)q*=LD1; else if(lead===-1&&this.min>=60)q*=TR1; else if(lead===0&&this.min>=70)q*=TD; }
+  if(X.style==='counter' && pH<.5) q*=1.06; if(this.hf>0) q*= s===0?1+HQ*this.hf/0.85:1-HQ*0.5*this.hf/0.85;
   if(this.onPitch(s).length<11) q*=0.92; if(this.onPitch(o).length<11) q*=1.08; if(this.wx==='snow')q*=0.94; else if(this.wx==='rain')q*=0.98;
   q=cl(q,.04,.55);
   if(R()<q) this.shot(s,ratio,kf);
@@ -88,7 +91,7 @@ class Match{
   const isHead = R()<.22; const sh = pick(this.onPitch(s).filter(e=>e.role!=='GK'), e=>(isHead?(W.shot[e.role]+1.2)*Math.pow(cl(((e.p.h||180)-166)/14,0.2,2.5),2)*(e.p.phy||50):W.shot[e.role]*Math.pow(e.p.att||50,1.5))*((tm.instr||{})[e.p.id]==='att'?1.3:1));
   if(!sh) return;
   const gkE = this.onPitch(o).find(e=>e.role==='GK'); const gkV = gkE?this.eff(gkE):35;
-  let xg = (0.025+0.36*Math.pow(R(),3.1))*Math.pow(ratio,0.6)*(1-0.07*(this.str[s].tempo-1));
+  let xg = (0.025+0.36*Math.pow(R(),3.1))*Math.pow(ratio,XE)*(1-0.07*(this.str[s].tempo-1));
   if(isHead) xg*=0.8; if(this.wx==='wind')xg*=0.95;
   xg=cl(xg,.01,.7);
   this._resolveShot(s,sh,xg,gkE,gkV,kf,false,isHead);
@@ -127,7 +130,7 @@ class Match{
   if(R()<0.014){ // пенальти
    this.log({t:'foul',side:s,p:e.p.id,txt:_t("Фол в штрафной! {0} сбивает соперника — пенальти!",(nm(e.p)))});
    const sh = this.onPitch(victimSide).filter(x=>x.role!=='GK').sort((a,b)=>(b.p.att+b.p.tec)-(a.p.att+a.p.tec))[0];
-   const gkE=this.onPitch(s).find(x=>x.role==='GK'); this._resolveShot(victimSide,sh,0.76,gkE,gkE?this.eff(gkE):35,[[victimSide===0?88:12,50]],true,false); return;
+   if(!sh) return; const gkE=this.onPitch(s).find(x=>x.role==='GK'); this._resolveShot(victimSide,sh,0.76,gkE,gkE?this.eff(gkE):35,[[victimSide===0?88:12,50]],true,false); return;
   }
   if(R()<0.05){ // опасный штрафной
    const tk=this.onPitch(victimSide).filter(x=>x.role!=='GK').sort((a,b)=>(b.p.tec*1.3+b.p.att)-(a.p.tec*1.3+a.p.att))[0]; const gkE=this.onPitch(s).find(x=>x.role==='GK');
