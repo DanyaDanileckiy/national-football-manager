@@ -1,0 +1,841 @@
+0|Jesteśmy w
+1|za mało terminów
+2|{0}Kolejka {1}
+3|Grupa {0}
+4|1/16 finału
+5|1/8 finału
+6|Ćwierćfinał
+7|Półfinał
+8|Finał
+9|Runda {0}
+10|Pierwszy mecz
+11|Rewanż
+12|Nasi rywale{0}
+13|w grupie {0}
+14|Nasz rywal
+15|(dwumecz, wynik łączny; przy remisie — dogrywka i rzuty karne, bez reguły bramek na wyjeździe)
+16|(jeden mecz; przy remisie — dogrywka i rzuty karne)
+17|Startujemy od drugiej rundy (wolny los w pierwszej).
+18|Sztab reprezentacji młodzieżowych
+19|Federacja piłkarska
+20|Losowanie
+21|Jesteśmy w turnieju finałowym!
+22|Liga Narodów UEFA
+23|LN
+24|Liga Narodów CONCACAF
+25|LNC
+26|awans!
+27|spadek
+28|Wygraliśmy grupę i w następnej edycji zagramy w Dywizji {0}!
+29|Zajęliśmy ostatnie miejsce i w następnej edycji spadamy do Dywizji {0}.
+30|Awans przez baraże!
+31|Wygraliśmy baraże i awansujemy do Dywizji {0}.
+32|Porażka w barażach
+33|Przegraliśmy baraże i spadamy do Dywizji {0}.
+34|Dywizja {0}
+35|Final Four
+36|{0}-F4
+37|Baraże ligi
+38|{0}-B
+39|Baraże
+40|Eliminacje mistrzostw świata {0}
+41|Eliminacje Euro {0}
+42|EEU
+43|Baraże Euro {0}
+44|BEU
+45|Półfinał ścieżki
+46|Finał ścieżki
+47|Mistrzostwa Europy {0}
+48|EURO
+49|{0}UEFA
+50|EMŚ
+51|{0}baraże UEFA
+52|BMŚ
+53|{0}CONMEBOL
+54|Copa América {0}
+55|CA
+56|Złoty Puchar CONCACAF {0}
+57|ZP
+58|{0}CONCACAF, 1. runda
+59|EMŚ-1
+60|1. runda
+61|{0}CONCACAF, 2. runda
+62|EMŚ-2
+63|{0}CONCACAF, 3. runda
+64|Eliminacje Pucharu Azji {0}
+65|EPA
+66|Puchar Azji {0}
+67|PA
+68|{0}AFC, 1. runda
+69|{0}AFC, 2. runda
+70|{0}AFC, 3. runda
+71|{0}AFC, 4. runda
+72|EMŚ-4
+73|{0}AFC, 5. runda
+74|EMŚ-5
+75|5. runda
+76|Eliminacje Pucharu Narodów Afryki {0}
+77|EPNA
+78|Puchar Narodów Afryki {0}
+79|PNA
+80|{0}CAF
+81|{0}CAF, baraże
+82|BCAF
+83|{0}OFC, 1. runda
+84|{0}OFC, 2. runda
+85|{0}OFC, turniej finałowy
+86|Puchar Narodów Oceanii {0}
+87|PNO
+88|{0}baraże interkontynentalne
+89|BI
+90|1. runda baraży
+91|Finał baraży
+92|Mistrzostwa świata {0}
+93|MŚ
+94|odpadnięcie w fazie grupowej
+95|wyjście z grupy
+96|półfinał
+97|finał
+98|tytuł
+99|Cel: wygrać baraże.
+100|Cel: powalczyć w barażach.
+101|Cel: zdobyć trofeum.
+102|Cel: godnie zaprezentować się w turnieju.
+103|Cel federacji: awans do kolejnej rundy.
+104|Cel: walczyć o kolejną rundę.
+105|Cel federacji: awans do turnieju finałowego.
+106|Cel: godnie rywalizować; awans byłby bonusem.
+107|Cel: zajść jak najdalej.
+108|Cel: postawić się faworytom.
+109|Cel: walczyć o pierwsze miejsce w grupie.
+110|Cel: uniknąć spadku.
+111|Cel federacji
+112|Wiadomości
+113|zwycięzca
+114|{0} {1} wygrywa turniej, pokonując w finale {2}.
+115|Wynik: „{0}” — {1} Zaufanie federacji {2}{3}.
+116|baraże wygrane.
+117|baraże przegrane.
+118|awans do kolejnej rundy!
+119|awans wywalczony!
+120|nie udało się zajść dalej.
+121|awans nie wyszedł.
+122|idziemy dalej.
+123|odpadliśmy.
+124|pierwsze miejsce w grupie.
+125|bez pierwszego miejsca.
+126|TROFEUM! Budżet federacji został zwiększony.
+127|Podsumowanie
+128|stycznia
+129|lutego
+130|marca
+131|kwietnia
+132|maja
+133|czerwca
+134|lipca
+135|sierpnia
+136|września
+137|października
+138|listopada
+139|grudnia
+140|nd
+141|pn
+142|wt
+143|śr
+144|czw
+145|pt
+146|sb
+147|Atak
+148|Obrona
+149|Podania
+150|Technika
+151|Fizyczność
+152|Szybkość
+153|Bramkarz
+154|Selekcjoner
+155|Mecze towarzyskie
+156|TOW
+157|Witamy!
+158|Szanowny Panie {0}, federacja z radością wita Pana na stanowisku selekcjonera reprezentacji {1}. Oczekujemy od Pana dobrych wyników. Pierwsze powołania są już gotowe — proszę sprawdzić kadrę przed najbliższym okienkiem.
+159|Zostałeś zwolniony
+160|Niestety federacja straciła do ciebie zaufanie i postanowiła rozwiązać kontrakt. Ale inne federacje są tobą zainteresowane — wybierz nową reprezentację.
+161|Federacja {0}
+162|Oferta pracy
+163|Federacja piłkarska {0} {1} proponuje ci objęcie reprezentacji narodowej. Siła drużyny
+164|Nowa praca
+165|Teraz prowadzisz {0} {1}. Powodzenia! Dokonaj powołań na najbliższe okienko.
+166|Złamana obietnica
+167|Trenerze, obiecał mi pan miejsce w podstawowym składzie. Jestem rozczarowany.
+168|Mecz towarzyski
+169|{0} meczów)
+170|potencjał {0})
+171|Szczęśliwego Nowego Roku {0}
+172|Zawodnicy są o rok starsi. {0} Zaufanie federacji
+173|Zmiany w kadrze
+174|Sztab szkoleniowy
+175|Okienko reprezentacyjne
+176|{0} Sprawdź powołania (18–23 zawodników) i skład.
+177|W tym okienku mamy {0} mecz(e)
+178|W tym okienku nie mamy meczów o punkty — możesz umówić sparingi (Rozgrywki → Mecze towarzyskie).
+179|Służba medyczna
+180|Kontuzja na treningu
+181|{0} doznał kontuzji podczas intensywnego treningu i będzie pauzował {1} dni.
+182|Zwycięstwo nad {0} {1}:{2}. Pana wrażenia?
+183|Jestem dumny z chłopaków — dali z siebie wszystko.
+184|Możemy grać jeszcze lepiej; za wcześnie, by się rozluźniać.
+185|To było moje taktyczne zwycięstwo.
+186|Porażka {0}:{1} z {2}. Kto zawinił?
+187|Biorę całą odpowiedzialność na siebie.
+188|Niektórzy zawodnicy zagrali poniżej swojego poziomu.
+189|Sędziowanie wpłynęło na wynik.
+190|Remis {0}:{1}. Zadowolony z wyniku?
+191|Sprawiedliwy wynik, idziemy dalej.
+192|Powinniśmy byli wygrać.
+193|Rywal był bardzo mocny.
+194|Kibice chcą więcej młodych w składzie. Pana odpowiedź?
+195|Młodzi dostaną szansę, gdy na nią zasłużą.
+196|Tak, odmłodzimy kadrę.
+197|W tej chwili ważniejsze jest doświadczenie.
+198|Jakie cele ma drużyna na najbliższy turniej?
+199|Tylko zwycięstwo!
+200|Myślimy o każdym meczu z osobna.
+201|Jesteśmy outsiderem, nie ciąży na nas presja.
+202|Jak ocenia pan formę fizyczną zawodników?
+203|Wszystko w porządku, drużyna jest gotowa.
+204|Są problemy ze zmęczeniem, będziemy rotować.
+205|Kluby przeciążają zawodników.
+206|Krążą plotki, że przechodzi pan do innej reprezentacji. To prawda?
+207|Jestem w pełni skupiony na tej drużynie.
+208|Nigdy nie mów nigdy.
+209|Bez komentarza.
+210|W tym okienku rozmawiałeś już z tym zawodnikiem.
+211|Zawodnikowi pochlebiło to, ale może się rozluźnić.
+212|Pochwała zmotywowała zawodnika.
+213|Zawodnik dziękuje, ale wie, że stać go na więcej.
+214|Zawodnik źle przyjął krytykę.
+215|Zawodnik przyjął wyzwanie i chce udowodnić, że nie masz racji!
+216|Zawodnik spokojnie wysłuchał uwag.
+217|Zawodnik cieszy się z obietnicy gry od pierwszej minuty w następnym meczu. Nie zawiedź go!
+218|Rywalizacja zmotywowała zawodnika.
+219|Zawodnik martwi się o swoje miejsce w składzie.
+220|Zawodnik docenia możliwość odpoczynku.
+221|{0} Morale {1}{2}.
+222|{0} zgodził się grać dla reprezentacji!{1}
+223|(odmówił {0})
+224|{0} odmówił{1}.
+225|wybrał {0}
+226|Centrum treningowe
+227|Szybszy rozwój zawodników na zgrupowaniach
+228|Akademia młodzieżowa
+229|Więcej i zdolniejszych wychowanków
+230|Centrum medyczne
+231|Szybsza regeneracja i leczenie kontuzji
+232|Dział skautingu
+233|Więcej poszukiwań zawodników na okienko
+234|Stadion narodowy
+235|Większe przychody i wsparcie kibiców
+236|Pierwsze zwycięstwo
+237|Wygraj swój pierwszy mecz
+238|Mur
+239|Mecz o punkty bez straconego gola
+240|Pogrom
+241|Wygraj różnicą 5 lub więcej goli
+242|Pogromca faworytów
+243|Pokonaj znacznie silniejszego rywala
+244|Hat trick
+245|Zawodnik reprezentacji strzela 3 gole w jednym meczu
+246|Awans
+247|Awansuj do turnieju finałowego
+248|W najlepszej czwórce
+249|Dojdź do półfinału turnieju
+250|Ponad oczekiwania
+251|Przekrocz cel federacji
+252|Pierwsze trofeum
+253|Wygraj dowolny turniej
+254|Mistrz kontynentu
+255|Wygraj mistrzostwa kontynentu
+256|Mistrz świata
+257|Wygraj mistrzostwa świata
+258|Seria
+259|10 zwycięstw z rzędu
+260|Pół setki
+261|50 zwycięstw na stanowisku
+262|Nowe wyzwanie
+263|Obejmij inną reprezentację
+264|Budowniczy
+265|Wszystkie obiekty na poziomie 3
+266|Perełka
+267|Powołaj zawodnika z podwójnym obywatelstwem
+268|Osiągnięcie
+269|UEFA (Europa)
+270|CONMEBOL (Ameryka Południowa)
+271|CONCACAF (Ameryka Północna i Środkowa)
+272|CAF (Afryka)
+273|AFC (Azja)
+274|OFC (Oceania)
+275|BR
+276|ŚO
+277|LO
+278|PO
+279|DP
+280|ŚP
+281|OP
+282|LP
+283|PP
+284|LS
+285|PS
+286|N
+287|Pada deszcz, murawa jest śliska.
+288|Upał — zawodnikom będzie ciężko.
+289|Pada śnieg.
+290|Silny wiatr.
+291|bezchmurnie
+292|pochmurno
+293|deszcz
+294|upał
+295|śnieg
+296|wiatr
+297|1P
+298|Sędzia gwiżdże! Mecz się rozpoczął.
+299|Sędzia rozpoczyna spotkanie.
+300|Gramy!
+301|Spalony — atak {0} zatrzymany.
+302|Chorągiewka w górze — spalony.
+303|{0} doznaje urazu i nie może kontynuować gry.
+304|Doliczony czas: {0} min.
+305|Przerwa. Wynik: {0}.
+306|2P
+307|Przerwa przed dogrywką.
+308|DOG
+309|Remis w dwumeczu ({0}:{1}) — dogrywka!
+310|Remis w regulaminowym czasie — dogrywka!
+311|Piłka w siatce, ale po analizie VAR gol {0} zostaje anulowany
+312|spalony
+313|faul w ataku
+314|ręka
+315|z rzutu karnego
+316|z rzutu wolnego bezpośredniego
+317|z rzutu wolnego, w okienko
+318|z rzutu wolnego, nad murem
+319|głową
+320|głową po dośrodkowaniu
+321|płasko, przy słupku
+322|od poprzeczki do siatki
+323|zza pola karnego
+324|po szybkim rajdzie
+325|z dobitki
+326|precyzyjnym strzałem z bliska
+327|mocnym strzałem z lewej nogi
+328|w dalszy róg
+329|GOL! {0} ({1}) strzela {2}{3}! {4}
+330|Asysta
+331|{0} wykonuje rzut karny — {1} broni!
+332|bramkarz
+333|Rzut wolny wykonuje {0} — {1} wychodzi i łapie piłkę.
+334|{0} strzela, ale {1} jest dobrze ustawiony.
+335|Świetna parada! {0} odbija strzał {1}.
+336|{0} strzela na bramkę — bramkarz łapie.
+337|Rzut rożny dla atakujących. Wykonuje {0}.
+338|{0} nie wykorzystuje rzutu karnego!
+339|{0} wykonuje rzut wolny — piłka trafia w mur.
+340|{0} strzela obok bramki.
+341|nad poprzeczką!
+342|Obrońca blokuje strzał {0}.
+343|Groźnie! {0} minimalnie chybia.
+344|{0} próbuje z daleka — niecelnie.
+345|Faul: {0} ({1}) przewinienie.
+346|Faul w polu karnym! {0} powala rywala — rzut karny!
+347|Faul tuż przed polem karnym: {0} powala rywala. Groźny rzut wolny!
+348|Bezpośrednia czerwona kartka! {0} wylatuje za brutalny faul.
+349|Druga żółta — {0} schodzi z boiska!
+350|Żółta kartka
+351|Zmiana w {0}: wchodzi {1}, schodzi {2}.
+352|Rzuty karne!
+353|trafia
+354|pudłuje
+355|Koniec meczu! {0} {1}
+356|(k. {0})
+357|(po dogr.)
+358|dwumecz {0}
+359|Anuluj
+360|Wstecz
+361|Start
+362|Kadra
+363|Taktyka
+364|Turnieje
+365|Poczta
+366|Statystyki
+367|Młodzież
+368|Trening
+369|Federacja
+370|Ustawienia
+371|National
+372|Football Manager
+373|Więcej
+374|Język
+375|Nie można wczytać
+376|ten zapis pochodzi ze starej wersji (v{0}). W wersji 3 przebudowano turnieje (baraże, dwumecze w fazie pucharowej, Ligi Narodów z awansami i spadkami) oraz nazwiska i dane zawodników — stare zapisy są niezgodne. Rozpocznij nową grę.
+377|Obejmij reprezentację i poprowadź ją do chwały
+378|Nowa gra
+379|Wczytaj grę
+380|Jak grać
+381|210 reprezentacji · 6 konfederacji · eliminacje, Ligi Narodów, turnieje kontynentalne i mistrzostwa świata.
+382|Wszystkie nazwiska i kluby są fikcyjne.
+383|Jesteś selekcjonerem reprezentacji. Naciśnij
+384|„Dalej”
+385|aby przesuwać się w kalendarzu: okienka reprezentacyjne (marzec, czerwiec, wrzesień, październik, listopad), eliminacje, Ligi Narodów i turnieje finałowe.
+386|Powołania
+387|przed każdym okienkiem wybierz od 18 do 23 zawodników.
+388|przeciągaj lub dotykaj zawodników na boisku, aby zamienić ich miejscami; ponowne dotknięcie otwiera indywidualne polecenia.
+389|Mecz
+390|śledź akcje, zmieniaj taktykę i przeprowadzaj zmiany na żywo. Pauzuj w dowolnym momencie.
+391|pilnuj zaufania. Jeśli spadnie za nisko, zostaniesz zwolniony. Sukcesy dają budżet na infrastrukturę i oferty od innych reprezentacji.
+392|Rozumiem
+393|Twoje imię
+394|Imię trenera
+395|Wybierz konfederację
+396|Zmień
+397|Siła {0}
+398|Faworyt: oczekuje się wyłącznie zwycięstw i tytułów.
+399|Mocna drużyna: awans do turniejów finałowych jest obowiązkowy.
+400|Średniak: każdy awans do turnieju finałowego to sukces.
+401|Outsider: mała presja, każde zwycięstwo to święto.
+402|Slot zapisu
+403|Slot {0}{1}
+404|(zajęty)
+405|Obejmij reprezentację
+406|Tworzenie świata: 210 reprezentacji, ~5000 zawodników…
+407|Menu główne
+408|Dalej
+409|Brak nadchodzących meczów. Umów mecz towarzyski w „Rozgrywkach”.
+410|Mecz dzisiaj
+411|za {0} dni
+412|teren neutralny
+413|u siebie
+414|na wyjeździe
+415|Zaufanie federacji
+416|Presja mediów
+417|Kibice
+418|Budżet
+419|Z
+420|R
+421|P
+422|W kadrze
+423|Kadra / Powołania
+424|Rozgrywki
+425|Terminarz reprezentacji
+426|Brak zaplanowanych meczów
+427|k. {0}
+428|po dogr.
+429|dwumecz {0}
+430|Symulacja…
+431|Dzień meczowy!
+432|Okienko reprezentacyjne — sprawdź powołania
+433|Losowanie — nowa wiadomość
+434|Szczęśliwego Nowego Roku!
+435|Turniej zakończony — sprawdź pocztę
+436|Brak wiadomości
+437|Przyjmij ofertę
+438|Odrzuć
+439|Spróbuj go przekonać
+440|Zrezygnuj
+441|Poprzyj wniosek (−10 budżetu)
+442|Odrzuć
+443|Wybierz nową reprezentację
+444|Zamknij
+445|Teraz prowadzisz {0}
+446|Federacja cię zwolniła
+447|Ale nie zostaniesz bez pracy. Wybierz jedną z ofert
+448|Szukaj kolejnych zawodników
+449|Na emeryturze
+450|Dział skautingu · poziom {0}
+451|Skauci szukają zawodników uprawnionych do gry w reprezentacji, także z podwójnym obywatelstwem (🛂). Pozostałe poszukiwania w tym okienku
+452|Znalezieni zawodnicy
+453|{0} lat
+454|także {0} {1}
+455|Zaproś
+456|Na razie nikogo. Rozpocznij poszukiwania.
+457|zakończył karierę w {0}
+458|{0} meczów · {1} goli
+459|Nikt jeszcze nie zakończył kariery
+460|(wymagane 18–23) · BR {0} · OBR {1} · POM {2} · NAP {3}
+461|Automatyczne powołania
+462|Wszyscy
+463|OBR
+464|POM
+465|NAP
+466|{0} d
+467|{0} lat · {1} · {2} meczów, {3} goli
+468|F {0}
+469|M {0}
+470|Maksymalnie 23 zawodników
+471|Powołania gotowe
+472|Znalezieni zawodnicy
+473|Brak pozostałych poszukiwań
+474|Historia pojawi się za kilka miesięcy.
+475|najlepsza #{0} · najgorsza
+476|Za mało meczów do wykresu
+477|ogromny
+478|wysoki
+479|może się rozwinąć
+480|w szczytowej formie
+481|wrażliwy
+482|zrównoważony
+483|ambitny
+484|{0} cm
+485|lewonożny
+486|prawonożny
+487|obunożny
+488|noga
+489|(2. liga)
+490|naturalizowany (ur. w {0})
+491|W klubie: {0} · gole w sezonie
+492|świetna forma
+493|słaba forma
+494|stabilny
+495|Potencjał
+496|Charakter
+497|Forma
+498|Morale
+499|Kondycja
+500|Kontuzja: {0} dni
+501|Zawieszenie: {0} mecz(e)
+502|Żółte kartki (suma)
+503|Mecze
+504|Gole
+505|Asysty
+506|Czyste konta
+507|Średnia ocen
+508|Historia ocen pod twoim kierunkiem (żółte punkty — gole)
+509|Porozmawiaj z zawodnikiem
+510|Pochwal
+511|Skrytykuj
+512|Obiecaj miejsce w składzie
+513|Ostrzeż przed konkurencją
+514|Daj odpocząć
+515|Reprezentacje młodzieżowe
+516|Wyniki
+517|Zawodnicy do lat 21 grają w kadrze U21 (Euro U21 i eliminacje w UEFA), do lat 23 — w kwalifikacjach olimpijskich i na igrzyskach (plus trzech zawodników powyżej 23 lat). Mecze młodzieżówek są symulowane automatycznie; siła to średnia 11 najlepszych dostępnych. Akademia (poziom {0}) co roku wypuszcza nowych zawodników.
+518|{0} lat · {1} · potencjał
+519|mecze w młodzieżówkach {0}
+520|W pierwszej kadrze
+521|Powołaj
+522|Brak zawodników poniżej 23 lat
+523|Kadra U17 (15–17 lat) gra w eliminacjach i corocznych mistrzostwach świata U17. W wieku 18 lat najzdolniejsi trafiają do pierwszej kadry, pozostali odchodzą. Najlepsi juniorzy mogą też grać w U20.
+524|U21 TOW
+525|(k. {0})
+526|Jeszcze nie było meczów
+527|Zwycięstwo
+528|Zakończony
+529|Faza pucharowa
+530|Faza grupowa
+531|Brak turniejów
+532|{0}Koszyk {1}
+533|Faza główna
+534|Grupy z późniejszym startem
+535|Koszyki według rankingu FIFA.{0}{1}
+536|Gospodarz ({0}) jest już przydzielony do grupy A.
+537|Ograniczenie: maksymalnie 2 drużyny UEFA i po 1 z innych konfederacji w grupie.
+538|Losowanie zaraz się rozpocznie…
+539|Pokaż wszystko
+540|Gotowe
+541|Koszyki
+542|Autobus w bramce
+543|Równowaga
+544|Wszystko do ataku
+545|Niski
+546|Średni
+547|Wysoki
+548|Wolne
+549|Normalne
+550|Szybkie
+551|Mieszany
+552|Krótkie podania
+553|Długie piłki
+554|Kontratak
+555|Standard
+556|Częściej do przodu
+557|Trzymaj pozycję
+558|Swoboda ruchu
+559|Krycie indywidualne
+560|Nastawienie
+561|Pressing
+562|Tempo
+563|Styl
+564|Automatyczny skład
+565|Przeciągnij zawodnika na innego lub dotknij kolejno dwóch zawodników, aby ich zamienić. Ponowne dotknięcie otwiera indywidualne polecenie. Czerwona ramka — poza pozycją / niedostępny.
+566|Ławka
+567|Powołaj więcej zawodników
+568|Polecenia dla drużyny
+569|Ustawiono najlepszy skład
+570|Polecenie indywidualne
+571|Karta zawodnika
+572|Zrównoważony
+573|Wszystkiego po trochu
+574|Atak i technika
+575|Obrona i fizyczność
+576|Przygotowanie fizyczne
+577|Fizyczność i szybkość
+578|Technika i podania
+579|Podania i technika
+580|Zgranie: wzrost formy
+581|Bramkarze
+582|Specjalny trening bramkarzy
+583|Regeneracja
+584|Kondycja i morale, bez rozwoju
+585|Akcent zgrupowania
+586|Trening odbywa się na początku każdego okienka dla powołanych. Centrum treningowe: poziom {0}.
+587|Intensywność
+588|Lekka
+589|Normalna
+590|Wysoka (ryzyko kontuzji)
+591|Kondycja powołanych
+592|{0} Jeśli spadnie do 12%, zostaniesz zwolniony.
+593|Federacja jest zachwycona twoją pracą.
+594|Federacja jest zadowolona.
+595|Federacja niepokoi się wynikami.
+596|Twoja posada jest zagrożona!
+597|Cele
+598|Cel
+599|Brak trwających turniejów
+600|Infrastruktura · budżet
+601|Budżet rośnie dzięki zwycięstwom, awansom do turniejów finałowych i tytułom.
+602|Kariera
+603|od {0}
+604|Obiekt ulepszony!
+605|Dywizja {0}
+606|w następnej edycji
+607|Zwycięzcy grup awansują, ostatni spadają{0}.
+608|3. drużyny z A/B i 2. drużyny z B/C grają dwumeczowe baraże o miejsce w dywizji
+609|Umów mecz towarzyski
+610|Zakończony{0}
+611|zwycięzca {0}
+612|Żaden turniej jeszcze się nie rozpoczął
+613|Wkrótce
+614|Galeria zwycięzców
+615|Na razie pusto
+616|Tabele
+617|Strzelcy
+618|Tabela
+619|Drużyna
+620|M
+621|RB
+622|Pkt
+623|Miejsca: {0}. Zielony znacznik — obecnie w strefie awansu (najlepsi spośród drużyn z tego samego miejsca porównywani są punktami na mecz).
+624|Do fazy pucharowej awansuje {0} najlepszych z każdej grupy i {1} najlepszych z trzecich miejsc.
+625|k. {0}
+626|Zwycięzca
+627|Tylko nasze mecze
+628|Zawodnik
+629|Drużyna
+630|G
+631|A
+632|Jeszcze nie padły gole
+633|1. mecz
+634|Rewanż
+635|Brak wolnych terminów w najbliższych okienkach
+636|Data (wolne terminy reprezentacyjne)
+637|Rywal
+638|Grać u siebie
+639|Umów
+640|Mecz umówiony
+641|Rywal jest zajęty w tym terminie
+642|Zawodnicy
+643|Rekordy
+644|Ranking
+645|Trofea
+646|Uwzględnij emerytów
+647|M — mecze w reprezentacji łącznie, Z — mecze pod twoim kierunkiem, Oc — średnia ocena pod twoim kierunkiem. Dotknij nagłówka, aby sortować.
+648|Wiek
+649|Siła
+650|Z
+651|CK
+652|Oc
+653|(emer.)
+654|Wszystkich meczów: {0}. Dotknij meczu, aby zobaczyć szczegóły (akcje, statystyki, oceny).
+655|Historia strzelców
+656|Dostępne po zakończeniu czteroletniego cyklu
+657|Rekordy reprezentacji (pod twoim kierunkiem)
+658|Najwyższe zwycięstwo
+659|Najwyższa porażka
+660|Seria zwycięstw
+661|Seria bez porażki
+662|Czyste konta
+663|Bilans trenera
+664|gole {0}
+665|% zwycięstw
+666|Rekordy zawodników
+667|Najlepszy strzelec
+668|Najwięcej meczów
+669|Najwięcej asyst
+670|Czyste konta (bramkarz)
+671|Najlepsza średnia ocen (5+ meczów)
+672|Najlepsza ocena w meczu
+673|Ranking FIFA · {0} {1}: #{2} ({3} pkt) {4}
+674|Wzór SUM: P = Pprzed + I·(W − We), We = 1/(10^(−dr/600)+1). I: mecz towarzyski 10, LN (grupy) 15, faza finałowa LN i eliminacje 25, faza grupowa turniejów kontynentalnych 35 / faza pucharowa 40, MŚ 50 / 60. Wygrana w karnych — 0,75, porażka — 0,5. W fazie pucharowej turniejów finałowych nie traci się punktów. Aktualizacja co miesiąc; strzałki pokazują zmianę względem poprzedniego miesiąca.
+675|Świat
+676|Punkty
+677|Na razie brak trofeów. Wszystko przed tobą!
+678|Osiągnięcia
+679|widzów {0}
+680|Brak akcji
+681|Posiadanie piłki
+682|Strzały
+683|Celne
+684|xG (oczekiwane gole)
+685|Rzuty rożne
+686|Faule
+687|Żółte kartki
+688|Czerwone kartki
+689|Spalone
+690|Oceny zawodników {0}
+691|najlepszy
+692|Zapisy gry
+693|Gra zapisuje się automatycznie w bieżącym slocie po każdym kroku i meczu.
+694|Slot {0} {1}
+695|(bieżący)
+696|pusty
+697|Zapisz
+698|Wczytaj
+699|Eksportuj do pliku
+700|Importuj
+701|Domyślna prędkość
+702|Tylko kluczowe akcje w relacji
+703|Wyjdź do menu głównego
+704|Oryginalna gra menedżerska o reprezentacjach narodowych. Wszystkie nazwiska, kluby i dane są fikcyjne.
+705|Slot {0}
+706|Gra wczytana
+707|Slot jest pusty
+708|Nie udało się wczytać
+709|Zapisano w slocie {0}
+710|Usunąć zapis w slocie {0}?
+711|Zaimportowano
+712|Przed meczem
+713|Elo {0}
+714|mecz u siebie
+715|mecz na wyjeździe
+716|Raport skauta
+717|Ustawienie
+718|średnia siła podstawowej jedenastki
+719|Kluczowi zawodnicy
+720|Bilans pod twoim kierunkiem
+721|Nasz skład
+722|Niedostępni
+723|Kadra musi liczyć od 18 do 23 zawodników (teraz {0}).
+724|Rozpocznij mecz
+725|Szybka symulacja
+726|Pierwszy z dwóch meczów (wynik łączny)
+727|rewanż: pierwszy mecz {0}; przy remisie w dwumeczu — dogrywka i rzuty karne (bez bramek na wyjeździe)
+728|faza pucharowa: przy remisie — dogrywka i rzuty karne
+729|stadion na {0} miejsc · oczekiwanych {1} widzów{2}
+730|komplet publiczności, mocne wsparcie gospodarzy
+731|trybuny w połowie puste
+732|Presja
+733|Zmiany
+734|Symuluj do końca
+735|Kontuzja! Dokonaj zmiany
+736|Dogrywka
+737|Przerwa — możesz zmienić taktykę
+738|Koniec
+739|Zmiany · pozostało {0}
+740|Wybierz zawodnika na boisku (po lewej), a potem rezerwowego (po prawej).
+741|Brak rezerwowych
+742|Dokonaj zmiany
+743|Wznów mecz
+744|Wybierz obu zawodników
+745|Zmiana niemożliwa
+746|Taktyka w trakcie meczu
+747|zachowaj obecne
+748|Polecenia indywidualne
+749|Ustawienie zmienione
+750|Podsumowanie meczu
+751|Zwycięstwo!
+752|Porażka
+753|Remis
+754|Awans dzięki wynikowi dwumeczu!
+755|Odpadamy w dwumeczu.
+756|Brak goli
+757|Konferencja prasowa · {0} · pytanie {1}
+758|Konferencja prasowa zakończona
+759|UEFA
+760|CONMEBOL
+761|CONCACAF
+762|CAF
+763|AFC
+764|OFC
+765|Mistrzostwa Europy
+766|Mistrzostwa Ameryki Południowej
+767|Mistrzostwa CONCACAF
+768|Puchar Narodów Afryki
+769|Puchar Azji
+770|Mistrzostwa Oceanii
+771|Elim. U{0}
+772|Eliminacje MŚ U17 {0}
+773|Mistrzostwa świata U17 {0}
+774|Eliminacje
+775|Euro U19
+776|Mistrzostwa świata U20 {0}
+777|Eliminacje Euro U21 {0}
+778|Elim. U21
+779|Mistrzostwa Europy U21 {0}
+780|Puchar Azji U23
+781|Puchar Narodów Afryki U23
+782|Turniej przedolimpijski U23 CONMEBOL
+783|Turniej przedolimpijski U23 CONCACAF
+784|Turniej przedolimpijski U23 OFC
+785|Baraż olimpijski {0}
+786|B-U23
+787|Baraż
+788|Turniej olimpijski w piłce nożnej {0}
+789|Puchar Arabski {0}
+790|PAR
+791|Puchar Zatoki {0}
+792|ZAT
+793|Mistrzostwa Azji Południowej {0}
+794|SAFF
+795|Mistrzostwa Azji Południowo-Wschodniej {0}
+796|ASEAN
+797|Puchar Króla {0}
+798|PK
+799|Puchar Mistrzów Kontynentów {0}
+800|PMK
+801|Mistrzostwa Narodów Afryki (zawodnicy lig krajowych) {0}
+802|CHAN
+803|Mistrzostwa Azji Wschodniej {0}
+804|MAW
+805|Awans z U17
+806|Przechodzą z U17 do pierwszej kadry
+807|strzelił {0} goli w tym miesiącu — świetna forma.
+808|{0} rzadko gra w {1}; forma spada.
+809|seria czystych kont w {0}.
+810|{0} doznał kontuzji w {1} — pauza ok. {2} dni.
+811|Transfer: {0} przechodzi z {1} do {2}{3}{4}
+812|2. liga
+813|krok naprzód.
+814|w poszukiwaniu minut.
+815|Wiadomości klubowe
+816|Prasa
+817|Gazety domagają się zmian
+818|Słaba seria wywołała falę krytyki. Dziennikarze rozważają możliwe zwolnienie selekcjonera. Presja mediów: {0}%. Federacja będzie surowiej oceniać wyniki.
+819|Prasa jest po naszej stronie
+820|Dziennikarze chwalą pracę sztabu szkoleniowego.
+821|Kibice są niezadowoleni
+822|Kibice wygwizdują drużynę, a frekwencja na meczach u siebie spada.
+823|Cały kraj kibicuje reprezentacji!
+824|Bilety na mecze u siebie znikają w kilka minut.
+825|Podwójne obywatelstwo
+826|{0} ({1} lat, {2}, {3}, siła {4}, potencjał {5}) może grać dla naszej reprezentacji i dla {6} {7}. Jeszcze się nie zdecydował. Spróbujemy go przekonać?
+827|Wniosek o naturalizację
+828|{0} ({1} lat, {2}, siła {3}) — pochodzi z {4}, od pięciu lat gra w {5} i chce otrzymać paszport, aby grać dla naszej reprezentacji. Poparcie wniosku kosztuje 10 jednostek budżetu; część kibiców może przyjąć to chłodno.
+829|{0} wybrał naszą reprezentację! Dołączył do kadry.
+830|Po namyśle {0} wybrał {1}.
+831|{0} będzie grał dla {1}.
+832|Za mały budżet (potrzeba 10).
+833|{0} otrzymał paszport i może już być powoływany.
+834|Wniosek odrzucony.
+c_ENG|Anglia
+c_SCO|Szkocja
+c_WAL|Walia
+c_NIR|Irlandia Północna
+c_CD|DR Konga
+c_CG|Kongo

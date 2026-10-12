@@ -1,0 +1,841 @@
+0|Şu an buradayız:
+1|yeterli tarih yok
+2|{0}{1}. hafta
+3|{0} Grubu
+4|Son 32 turu
+5|Son 16 turu
+6|Çeyrek final
+7|Yarı final
+8|Final
+9|{0}. tur
+10|İlk maç
+11|Rövanş
+12|Rakiplerimiz{0}
+13|{0} Grubunda
+14|Rakibimiz
+15|(iki maç, toplam skor; eşitlikte uzatma ve penaltılar, deplasman golü kuralı yok)
+16|(tek maç; beraberlikte uzatma ve penaltılar)
+17|İkinci turdan başlıyoruz (ilk turu bay geçiyoruz).
+18|Genç milli takımlar teknik ekibi
+19|Futbol Federasyonu
+20|Kura çekimi
+21|Final turnuvasındayız!
+22|UEFA Uluslar Ligi
+23|UL
+24|CONCACAF Uluslar Ligi
+25|CUL
+26|üst lige çıkış!
+27|küme düşme
+28|Grubu kazandık ve bir sonraki sezonda {0} Ligi'nde oynayacağız!
+29|Son sırada bitirdik ve bir sonraki sezonda {0} Ligi'ne düşüyoruz.
+30|Play-off ile üst lige çıkış!
+31|Play-off'u kazandık ve {0} Ligi'ne yükseliyoruz.
+32|Play-off'ta yenilgi
+33|Play-off'u kaybettik ve {0} Ligi'ne düşüyoruz.
+34|{0} Ligi
+35|Dörtlü Final
+36|{0}-F4
+37|Lig play-off'u
+38|{0}-PO
+39|Play-off
+40|{0} Dünya Kupası elemeleri
+41|{0} Avrupa Şampiyonası elemeleri
+42|AŞE
+43|{0} Avrupa Şampiyonası play-off'u
+44|AŞP
+45|Yol yarı finali
+46|Yol finali
+47|{0} Avrupa Şampiyonası
+48|EURO
+49|{0}UEFA
+50|DKE
+51|{0}UEFA play-off'u
+52|DKP
+53|{0}CONMEBOL
+54|{0} Copa América
+55|CA
+56|{0} CONCACAF Altın Kupa
+57|AK
+58|{0}CONCACAF, 1. tur
+59|DKE-1
+60|1. tur
+61|{0}CONCACAF, 2. tur
+62|DKE-2
+63|{0}CONCACAF, 3. tur
+64|{0} Asya Kupası elemeleri
+65|AKE
+66|{0} Asya Kupası
+67|AsK
+68|{0}AFC, 1. tur
+69|{0}AFC, 2. tur
+70|{0}AFC, 3. tur
+71|{0}AFC, 4. tur
+72|DKE-4
+73|{0}AFC, 5. tur
+74|DKE-5
+75|5. tur
+76|{0} Afrika Uluslar Kupası elemeleri
+77|AUKE
+78|{0} Afrika Uluslar Kupası
+79|AUK
+80|{0}CAF
+81|{0}CAF, play-off
+82|CAFP
+83|{0}OFC, 1. tur
+84|{0}OFC, 2. tur
+85|{0}OFC, final aşaması
+86|{0} OFC Uluslar Kupası
+87|OUK
+88|{0}kıtalararası play-off
+89|KAP
+90|Play-off 1. tur
+91|Play-off finali
+92|{0} Dünya Kupası
+93|DK
+94|grupta elenmek
+95|gruptan çıkmak
+96|yarı final
+97|final
+98|şampiyonluk
+99|Hedef: play-off'u kazanmak.
+100|Hedef: play-off'ta mücadele etmek.
+101|Hedef: kupayı kazanmak.
+102|Hedef: turnuvada onurlu bir performans.
+103|Federasyonun hedefi: bir üst tura çıkmak.
+104|Hedef: bir üst tur için mücadele etmek.
+105|Federasyonun hedefi: final turnuvasına katılmak.
+106|Hedef: onurlu bir mücadele; turnuvaya katılmak bonus olur.
+107|Hedef: olabildiğince ileri gitmek.
+108|Hedef: favorilere kafa tutmak.
+109|Hedef: grup liderliği için savaşmak.
+110|Hedef: küme düşmemek.
+111|Federasyonun hedefi
+112|Haberler
+113|şampiyon
+114|{0} {1} finalde {2} ekibini yenerek turnuvayı kazandı.
+115|Sonuç: «{0}» — {1} Federasyon güveni {2}{3}.
+116|play-off kazanıldı.
+117|play-off kaybedildi.
+118|bir üst tura çıktık!
+119|bileti kaptık!
+120|daha ileri gidemedik.
+121|turnuvaya katılamadık.
+122|tur atladık.
+123|elendik.
+124|grup birinciliği.
+125|birincilik yok.
+126|KUPA! Federasyonun bütçesi artırıldı.
+127|Sonuç
+128|Ocak
+129|Şubat
+130|Mart
+131|Nisan
+132|Mayıs
+133|Haziran
+134|Temmuz
+135|Ağustos
+136|Eylül
+137|Ekim
+138|Kasım
+139|Aralık
+140|Paz
+141|Pzt
+142|Sal
+143|Çar
+144|Per
+145|Cum
+146|Cmt
+147|Hücum
+148|Savunma
+149|Pas
+150|Teknik
+151|Fizik
+152|Hız
+153|Kalecilik
+154|Teknik direktör
+155|Hazırlık maçları
+156|HZR
+157|Hoş geldiniz!
+158|Sayın {0}, federasyon olarak sizi {1} milli takımının teknik direktörü olarak ağırlamaktan mutluluk duyuyoruz. Sizden başarılı sonuçlar bekliyoruz. İlk kadronuz hazır — bir sonraki milli araya kadar kadroyu kontrol edin.
+159|Görevden alındınız
+160|Ne yazık ki federasyon size olan güvenini kaybetti ve sözleşmenizi feshetmeye karar verdi. Ancak diğer federasyonlar sizinle ilgileniyor — yeni bir milli takım seçin.
+161|{0} Federasyonu
+162|İş teklifi
+163|{0} {1} Futbol Federasyonu size milli takımın başına geçmeyi teklif ediyor. Takım gücü
+164|Yeni görev
+165|Artık {0} {1} takımını çalıştırıyorsunuz. Bol şans! Bir sonraki milli ara için kadroyu belirleyin.
+166|Tutulmayan söz
+167|Hocam, bana ilk on bir sözü vermiştiniz. Hayal kırıklığına uğradım.
+168|Hazırlık maçı
+169|{0} maç)
+170|potansiyel {0})
+171|Mutlu yıllar {0}
+172|Oyuncular bir yaş büyüdü. {0} Federasyon güveni
+173|Kadro değişiklikleri
+174|Teknik ekip
+175|Milli ara
+176|{0} Kadroyu (18–23 oyuncu) ve ilk on biri kontrol edin.
+177|Bu milli arada {0} maçımız var
+178|Bu milli arada resmi maçımız yok — hazırlık maçları ayarlayabilirsiniz (Organizasyonlar → Hazırlık maçları).
+179|Sağlık ekibi
+180|Antrenmanda sakatlık
+181|{0} yoğun bir antrenmanda sakatlandı ve {1} gün forma giyemeyecek.
+182|{0} karşısında {1}:{2} galibiyet. İzlenimleriniz?
+183|Oyuncularımla gurur duyuyorum — her şeylerini verdiler.
+184|Daha iyi oynayabiliriz; rehavete kapılmak için erken.
+185|Bu benim taktik zaferimdi.
+186|{2} karşısında {0}:{1} yenilgi. Suçlu kim?
+187|Tüm sorumluluk bende.
+188|Bazı oyuncular seviyelerinin altında kaldı.
+189|Hakem kararları sonucu etkiledi.
+190|{0}:{1} beraberlik. Sonuçtan memnun musunuz?
+191|Adil bir sonuç, yolumuza devam ediyoruz.
+192|Kazanmamız gerekiyordu.
+193|Rakip çok güçlüydü.
+194|Taraftarlar kadroda daha fazla genç oyuncu istiyor. Cevabınız?
+195|Gençler hak ettiklerinde şanslarını alacaklar.
+196|Evet, kadroyu gençleştireceğiz.
+197|Şu anda tecrübe daha önemli.
+198|Takımın bir sonraki turnuvadaki hedefleri neler?
+199|Sadece galibiyet!
+200|Maç maç düşünüyoruz.
+201|Biz sürpriz takımız, üzerimizde baskı yok.
+202|Oyuncuların fiziksel durumunu nasıl değerlendiriyorsunuz?
+203|Her şey yolunda, takım hazır.
+204|Yorgunluk sorunları var, rotasyon yapacağız.
+205|Kulüpler oyuncuları aşırı yoruyor.
+206|Başka bir milli takıma geçeceğiniz konuşuluyor. Doğru mu?
+207|Tamamen bu takıma odaklanmış durumdayım.
+208|Asla asla deme.
+209|Yorum yok.
+210|Bu milli arada bu oyuncuyla zaten konuştunuz.
+211|Oyuncu iltifattan hoşlandı ama biraz gevşeyebilir.
+212|Övgü oyuncuyu motive etti.
+213|Oyuncu teşekkür ediyor ama daha fazlasını yapabileceğini biliyor.
+214|Oyuncu eleştiriyi kötü karşıladı.
+215|Oyuncu meydan okumayı kabul etti ve yanıldığınızı kanıtlamak istiyor!
+216|Oyuncu uyarıları sakin bir şekilde dinledi.
+217|Oyuncu bir sonraki maçta ilk on birde başlama sözüne sevindi. Onu hayal kırıklığına uğratmayın!
+218|Rekabet oyuncuyu kamçıladı.
+219|Oyuncu takımdaki yeri için endişeli.
+220|Oyuncu dinlenme fırsatı için minnettar.
+221|{0} Moral {1}{2}.
+222|{0} milli takımda oynamayı kabul etti!{1}
+223|({0} teklifini reddetti)
+224|{0} reddetti{1}.
+225|{0} tercih etti
+226|Antrenman merkezi
+227|Kamplarda oyuncuların daha hızlı gelişimi
+228|Altyapı akademisi
+229|Daha çok ve daha yetenekli altyapı oyuncusu
+230|Sağlık merkezi
+231|Daha hızlı toparlanma ve sakatlık tedavisi
+232|Scouting departmanı
+233|Milli ara başına daha fazla oyuncu araması
+234|Milli stadyum
+235|Daha fazla gelir ve taraftar desteği
+236|İlk galibiyet
+237|İlk maçınızı kazanın
+238|Kilit
+239|Gol yemeden bir resmi maç
+240|Farklı galibiyet
+241|5 veya daha fazla gol farkıyla kazanın
+242|Dev avcısı
+243|Çok daha güçlü bir rakibi yenin
+244|Hat-trick
+245|Bir milli oyuncu tek maçta 3 gol atar
+246|Bilet
+247|Bir final turnuvasına katılın
+248|Son dörtte
+249|Bir turnuvada yarı finale çıkın
+250|Beklentilerin üzerinde
+251|Federasyonun hedefini aşın
+252|İlk kupa
+253|Herhangi bir turnuvayı kazanın
+254|Kıta şampiyonu
+255|Kıta şampiyonasını kazanın
+256|Dünya şampiyonu
+257|Dünya Kupası'nı kazanın
+258|Seri
+259|Üst üste 10 galibiyet
+260|Yarım asır
+261|Görevde 50 galibiyet
+262|Yeni meydan okuma
+263|Başka bir milli takımın başına geçin
+264|Mimar
+265|Tüm tesisler 3. seviyede
+266|Keşif
+267|Çifte vatandaş bir oyuncuyu kadroya çağırın
+268|Başarı
+269|UEFA (Avrupa)
+270|CONMEBOL (Güney Amerika)
+271|CONCACAF (Kuzey ve Orta Amerika)
+272|CAF (Afrika)
+273|AFC (Asya)
+274|OFC (Okyanusya)
+275|KL
+276|STP
+277|SLB
+278|SĞB
+279|DOS
+280|MO
+281|OOS
+282|SLO
+283|SĞO
+284|SLK
+285|SĞK
+286|SNT
+287|Yağmur yağıyor, zemin kaygan.
+288|Sıcak — oyuncular için zor olacak.
+289|Kar yağıyor.
+290|Sert rüzgâr.
+291|açık
+292|bulutlu
+293|yağmur
+294|sıcak
+295|kar
+296|rüzgâr
+297|İY
+298|Hakem düdüğü çaldı! Maç başladı.
+299|Hakem maçı başlatıyor.
+300|Başlıyoruz!
+301|Ofsayt — {0} atağı durduruldu.
+302|Bayrak kalktı — ofsayt.
+303|{0} sakatlandı ve devam edemiyor.
+304|Uzatma dakikaları: {0} dk.
+305|Devre arası. Skor: {0}.
+306|İkY
+307|Uzatmalar öncesi ara.
+308|UZ
+309|Toplamda eşitlik ({0}:{1}) — uzatmalar!
+310|Normal sürede beraberlik — uzatmalar!
+311|Top ağlarda, ancak VAR incelemesinin ardından {0} golü iptal edildi
+312|ofsayt
+313|hücumda faul
+314|elle oynama
+315|penaltıdan
+316|direkt serbest vuruştan
+317|serbest vuruştan, doksana
+318|serbest vuruştan, barajın üzerinden
+319|kafayla
+320|ortaya kafayı vurarak
+321|yerden, köşeye
+322|üst direğe çarpıp içeri
+323|ceza sahası dışından
+324|hızlı bir çıkışın ardından
+325|dönen topu
+326|yakın mesafeden isabetli bir vuruşla
+327|sol ayağıyla sert bir vuruşla
+328|uzak köşeye
+329|GOL! {0} ({1}) {2}{3} ağlara gönderiyor! {4}
+330|Asist
+331|{0} penaltıyı kullanıyor — {1} kurtarıyor!
+332|kaleci
+333|Serbest vuruşu {0} kullanıyor — {1} çıkıyor ve topu kontrol ediyor.
+334|{0} vuruyor, ama {1} yerinde.
+335|Harika kurtarış! {0}, {1} vuruşunu çeliyor.
+336|{0} kaleyi yokluyor — kaleci topu kontrol ediyor.
+337|Hücumda korner. {0} kullanıyor.
+338|{0} penaltıyı kaçırdı!
+339|{0} serbest vuruşu kullanıyor — top baraja çarpıyor.
+340|{0} vuruyor, top dışarıda.
+341|üst direğin üzerinden!
+342|Bir savunmacı {0} vuruşunu bloke ediyor.
+343|Tehlike! {0} az farkla ıskalıyor.
+344|{0} uzaktan şansını deniyor — dışarıda.
+345|Faul: {0} ({1}) kural ihlali yapıyor.
+346|Ceza sahasında faul! {0} rakibini düşürüyor — penaltı!
+347|Ceza sahası çizgisinde faul: {0} rakibini düşürüyor. Tehlikeli serbest vuruş!
+348|Direkt kırmızı! {0} sert bir faul sonrası oyundan atıldı.
+349|İkinci sarı — {0} oyundan atıldı!
+350|Sarı kart
+351|{0} oyuncu değişikliği: {1} girdi, {2} çıktı.
+352|Penaltı atışları!
+353|gol
+354|kaçırdı
+355|Maç sona erdi! {0} {1}
+356|(pen. {0})
+357|(uzt.)
+358|toplam {0}
+359|İptal
+360|Geri
+361|Ana sayfa
+362|Kadro
+363|Taktik
+364|Turnuvalar
+365|Posta
+366|İstatistik
+367|Altyapı
+368|Antrenman
+369|Federasyon
+370|Ayarlar
+371|National
+372|Football Manager
+373|Daha fazla
+374|Dil
+375|Yüklenemiyor
+376|bu kayıt eski bir sürüme ait (v{0}). Sürüm 3'te turnuvalar (play-off'lar, iki maçlı eleme turları, yükselme ve düşmeli Uluslar Ligleri) ile oyuncu adları ve verileri yeniden yapıldı — eski kayıtlar uyumlu değil. Yeni bir oyun başlatın.
+377|Bir milli takımın başına geçin ve onu zafere taşıyın
+378|Yeni oyun
+379|Oyun yükle
+380|Nasıl oynanır
+381|210 milli takım · 6 konfederasyon · elemeler, Uluslar Ligleri, kıta turnuvaları ve Dünya Kupası.
+382|Tüm isimler ve kulüpler hayal ürünüdür.
+383|Milli takımın teknik direktörüsünüz. Takvimde ilerlemek için
+384|«Devam»
+385|düğmesine basın: milli aralar (mart, haziran, eylül, ekim, kasım), elemeler, Uluslar Ligleri ve final turnuvaları.
+386|Kadro
+387|her milli aradan önce 18 ila 23 oyuncu seçin.
+388|sahadaki oyuncuları yer değiştirmek için sürükleyin veya dokunun; ikinci dokunuş bireysel talimatları açar.
+389|Maç
+390|pozisyonları izleyin, taktiği değiştirin ve canlı olarak oyuncu değişikliği yapın. İstediğiniz an durdurun.
+391|güveni takip edin. Çok düşerse görevden alınırsınız. Başarılar altyapı için bütçe ve diğer milli takımlardan teklifler getirir.
+392|Anlaşıldı
+393|Adınız
+394|Teknik direktörün adı
+395|Bir konfederasyon seçin
+396|Değiştir
+397|Güç {0}
+398|Favori: yalnızca galibiyet ve kupa bekleniyor.
+399|Güçlü takım: final turnuvalarına katılmak zorunlu.
+400|Orta sıra takım: her final turnuvası katılımı bir başarı.
+401|Sürpriz takım: baskı az, her galibiyet bir bayram.
+402|Kayıt yuvası
+403|Yuva {0}{1}
+404|(dolu)
+405|Takımın başına geç
+406|Dünya oluşturuluyor: 210 milli takım, ~5000 oyuncu…
+407|Ana menü
+408|Devam
+409|Yaklaşan maç yok. «Organizasyonlar» bölümünden hazırlık maçı ayarlayın.
+410|Bugün maç var
+411|{0} gün sonra
+412|tarafsız saha
+413|iç saha
+414|deplasman
+415|Federasyon güveni
+416|Basın baskısı
+417|Taraftarlar
+418|Bütçe
+419|G
+420|B
+421|M
+422|Kadroda
+423|Kadro / Çağrı
+424|Organizasyonlar
+425|Milli takım fikstürü
+426|Planlanmış maç yok
+427|pen. {0}
+428|uzt.
+429|toplam {0}
+430|Simülasyon…
+431|Maç günü!
+432|Milli ara — kadroyu kontrol edin
+433|Kura çekimi — yeni mesaj
+434|Mutlu yıllar!
+435|Turnuva bitti — postaya bakın
+436|Mesaj yok
+437|Teklifi kabul et
+438|Reddet
+439|İkna etmeye çalış
+440|Vazgeç
+441|Başvuruyu destekle (−10 bütçe)
+442|Reddet
+443|Yeni milli takım seç
+444|Kapat
+445|Artık {0} takımını çalıştırıyorsunuz
+446|Federasyon sizi görevden aldı
+447|Ama işsiz kalmayacaksınız. Tekliflerden birini seçin
+448|Daha fazla oyuncu ara
+449|Futbolu bırakanlar
+450|Scouting departmanı · seviye {0}
+451|Gözlemciler milli takımda oynamaya uygun oyuncuları arıyor, çifte vatandaşlar dahil (🛂). Bu milli arada kalan arama hakkı
+452|Bulunan oyuncular
+453|{0} yaş
+454|ayrıca {0} {1}
+455|Davet et
+456|Henüz kimse yok. Arama başlatın.
+457|{0} yılında futbolu bıraktı
+458|{0} maç · {1} gol
+459|Henüz futbolu bırakan yok
+460|(18–23 gerekli) · KL {0} · DEF {1} · OS {2} · FV {3}
+461|Otomatik kadro
+462|Tümü
+463|DEF
+464|OS
+465|FV
+466|{0}g
+467|{0} yaş · {1} · {2} maç, {3} gol
+468|F {0}
+469|M {0}
+470|En fazla 23 oyuncu
+471|Kadro belirlendi
+472|Oyuncu bulundu
+473|Arama hakkı kalmadı
+474|Geçmiş birkaç ay içinde görünecek.
+475|en iyi #{0} · en kötü
+476|Grafik için yeterli maç yok
+477|çok büyük
+478|yüksek
+479|gelişebilir
+480|zirvede
+481|hassas
+482|dengeli
+483|hırslı
+484|{0} cm
+485|solak
+486|sağ ayaklı
+487|iki ayaklı
+488|ayak
+489|(2. lig)
+490|vatandaşlığa alınmış (doğum yeri: {0})
+491|Kulüpte: {0} · sezondaki goller
+492|formda
+493|formsuz
+494|istikrarlı
+495|Potansiyel
+496|Karakter
+497|Form
+498|Moral
+499|Kondisyon
+500|Sakatlık: {0} gün
+501|Ceza: {0} maç
+502|Sarı kartlar (biriken)
+503|Maçlar
+504|Goller
+505|Asistler
+506|Gol yenmeyen maçlar
+507|Ortalama not
+508|Sizin dönemdeki not geçmişi (sarı noktalar — goller)
+509|Oyuncuyla konuş
+510|Öv
+511|Eleştir
+512|İlk on bir sözü ver
+513|Rekabet konusunda uyar
+514|Dinlenmesine izin ver
+515|Genç milli takımlar
+516|Sonuçlar
+517|21 yaş altı oyuncular Ümit Milli Takımı'nda (U21 Avrupa Şampiyonası ve UEFA'daki elemeleri), 23 yaş altı oyuncular olimpiyat elemeleri ve Olimpiyatlar'da (artı üç 23 yaş üstü oyuncu) oynar. Genç milli takım maçları otomatik olarak simüle edilir; güç, müsait en iyi 11 oyuncunun ortalamasıdır. Akademi (seviye {0}) her yıl yeni oyuncular yetiştirir.
+518|{0} yaş · {1} · potansiyel
+519|genç milli maç {0}
+520|A takımında
+521|Çağır
+522|23 yaş altı oyuncu yok
+523|U17 takımı (15–17 yaş) elemelerde ve yıllık U17 Dünya Kupası'nda oynar. 18 yaşında umut vadedenler A kadroya geçer, diğerleri serbest bırakılır. En iyi gençler U20'de de oynayabilir.
+524|U21 HZR
+525|(p. {0})
+526|Henüz maç oynanmadı
+527|Galibiyet
+528|Tamamlandı
+529|Eleme turları
+530|Grup aşaması
+531|Henüz turnuva yok
+532|{0}{1}. torba
+533|Ana aşama
+534|Geç başlayan gruplar
+535|Torbalar FIFA sıralamasına göre.{0}{1}
+536|Ev sahibi ({0}) zaten A Grubu'na yerleştirildi.
+537|Kısıtlama: bir grupta en fazla 2 UEFA takımı ve diğer her konfederasyondan 1 takım.
+538|Kura çekimi başlamak üzere…
+539|Hepsini göster
+540|Tamam
+541|Torbalar
+542|Otobüsü çek
+543|Denge
+544|Herkes hücuma
+545|Düşük
+546|Orta
+547|Yüksek
+548|Yavaş
+549|Normal
+550|Hızlı
+551|Karışık
+552|Kısa pas
+553|Uzun toplar
+554|Kontra atak
+555|Standart
+556|Hücuma daha çok katıl
+557|Pozisyonunu koru
+558|Serbest rol
+559|Adam adama markaj
+560|Yaklaşım
+561|Pres
+562|Tempo
+563|Stil
+564|Otomatik ilk on bir
+565|Yer değiştirmek için bir oyuncuyu diğerinin üzerine sürükleyin veya art arda iki oyuncuya dokunun. İkinci dokunuş bireysel talimatı açar. Kırmızı çerçeve — mevkisi dışında / müsait değil.
+566|Yedekler
+567|Daha fazla oyuncu çağırın
+568|Takım talimatları
+569|En iyi ilk on bir belirlendi
+570|Bireysel talimat
+571|Oyuncu kartı
+572|Dengeli
+573|Her şeyden biraz
+574|Hücum ve teknik
+575|Savunma ve fizik
+576|Fiziksel hazırlık
+577|Fizik ve hız
+578|Teknik ve pas
+579|Pas ve teknik
+580|Uyum: form artışı
+581|Kaleciler
+582|Kalecilere özel antrenman
+583|Toparlanma
+584|Kondisyon ve moral, gelişim yok
+585|Kampın odağı
+586|Antrenman her milli aranın başında kadroya çağrılan oyuncular için yapılır. Antrenman merkezi: seviye {0}.
+587|Yoğunluk
+588|Hafif
+589|Normal
+590|Yüksek (sakatlık riski)
+591|Çağrılanların kondisyonu
+592|{0} %12'ye düşerse görevden alınırsınız.
+593|Federasyon çalışmanızdan çok memnun.
+594|Federasyon memnun.
+595|Federasyon sonuçlardan endişeli.
+596|Göreviniz tehlikede!
+597|Hedefler
+598|Hedef
+599|Devam eden turnuva yok
+600|Altyapı · bütçe
+601|Bütçe galibiyetler, final turnuvası katılımları ve kupalarla artar.
+602|Kariyer
+603|{0} yılından beri
+604|Tesis geliştirildi!
+605|{0} Ligi
+606|bir sonraki sezonda
+607|Grup birincileri yükselir, sonuncular düşer{0}.
+608|A/B liglerinin üçüncüleri ile B/C liglerinin ikincileri ligdeki yer için iki maçlı play-off oynar
+609|Hazırlık maçı ayarla
+610|Tamamlandı{0}
+611|şampiyon {0}
+612|Henüz başlayan turnuva yok
+613|Yakında
+614|Şampiyonlar galerisi
+615|Şimdilik boş
+616|Puan durumları
+617|Gol krallığı
+618|Puan durumu
+619|Takım
+620|O
+621|Av
+622|P
+623|Kontenjan: {0}. Yeşil işaret — şu an turnuva bileti bölgesinde (aynı sıradakilerin en iyileri maç başına puanla karşılaştırılır).
+624|Eleme turlarına her gruptan ilk {0} takım ve en iyi {1} grup üçüncüsü yükselir.
+625|pen. {0}
+626|Şampiyon
+627|Sadece bizim maçlarımız
+628|Oyuncu
+629|Takım
+630|G
+631|A
+632|Henüz gol yok
+633|1. maç
+634|2. maç
+635|Önümüzdeki milli aralarda boş tarih yok
+636|Tarih (boş milli maç tarihleri)
+637|Rakip
+638|İç sahada oyna
+639|Ayarla
+640|Maç ayarlandı
+641|Rakibin bu tarihte maçı var
+642|Oyuncular
+643|Rekorlar
+644|Sıralama
+645|Kupalar
+646|Futbolu bırakanları da göster
+647|O — milli takımdaki toplam maç, M — sizin döneminizdeki maç, Nt — sizin döneminizdeki ortalama not. Sıralamak için başlığa dokunun.
+648|Yaş
+649|Güç
+650|M
+651|GY
+652|Nt
+653|(bıraktı)
+654|Toplam maç: {0}. Ayrıntılar için bir maça dokunun (pozisyonlar, istatistikler, notlar).
+655|Gol kralları geçmişi
+656|Dört yıllık döngü bitince kullanılabilir
+657|Milli takım rekorları (sizin döneminiz)
+658|En farklı galibiyet
+659|En ağır yenilgi
+660|Galibiyet serisi
+661|Yenilmezlik serisi
+662|Gol yenmeyen maçlar
+663|Teknik direktör karnesi
+664|goller {0}
+665|Galibiyet yüzdesi
+666|Oyuncu rekorları
+667|En golcü
+668|En çok maç
+669|En çok asist
+670|Gol yenmeyen maçlar (kaleci)
+671|En iyi ortalama not (5+ maç)
+672|Tek maçtaki en iyi not
+673|FIFA sıralaması · {0} {1}: #{2} ({3} puan) {4}
+674|SUM formülü: P = Pönce + I·(W − We), We = 1/(10^(−dr/600)+1). I: hazırlık 10, UL (grup) 15, UL eleme turları ve elemeler 25, kıta turnuvalarında grup aşaması 35 / eleme turları 40, Dünya Kupası 50 / 60. Penaltılarla galibiyet — 0,75, yenilgi — 0,5. Final turnuvalarının eleme turlarında puan kaybedilmez. Her ay güncellenir; oklar bir önceki aya göre değişimi gösterir.
+675|Dünya
+676|Puan
+677|Henüz kupa yok. Her şey önünüzde!
+678|Başarılar
+679|seyirci {0}
+680|Pozisyon yok
+681|Topla oynama
+682|Şut
+683|İsabetli
+684|xG (beklenen gol)
+685|Korner
+686|Faul
+687|Sarı kart
+688|Kırmızı kart
+689|Ofsayt
+690|Oyuncu notları {0}
+691|en iyi
+692|Kayıtlar
+693|Oyun her adım ve maçtan sonra geçerli yuvaya otomatik kaydedilir.
+694|Yuva {0} {1}
+695|(geçerli)
+696|boş
+697|Kaydet
+698|Yükle
+699|Dosyaya aktar
+700|İçe aktar
+701|Varsayılan hız
+702|Anlatımda sadece önemli pozisyonlar
+703|Ana menüye çık
+704|Milli takımlar için özgün bir menajerlik oyunu. Tüm isimler, kulüpler ve veriler hayal ürünüdür.
+705|Yuva {0}
+706|Oyun yüklendi
+707|Yuva boş
+708|Yüklenemedi
+709|{0}. yuvaya kaydedildi
+710|{0}. yuvadaki kayıt silinsin mi?
+711|İçe aktarıldı
+712|Maç öncesi
+713|Elo {0}
+714|iç saha maçı
+715|deplasman maçı
+716|Gözlemci raporu
+717|Diziliş
+718|ilk on birin ortalama gücü
+719|Kilit oyuncular
+720|Sizin döneminizdeki karşılaşmalar
+721|İlk on birimiz
+722|Oynayamayacaklar
+723|Kadroda 18–23 oyuncu olmalı (şu an {0}).
+724|Maçı başlat
+725|Hızlı simülasyon
+726|İki maçın ilki (toplam skor)
+727|rövanş: ilk maç {0}; toplamda eşitlikte uzatma ve penaltılar (deplasman golü yok)
+728|eleme maçı: beraberlikte uzatma ve penaltılar
+729|{0} kişilik stadyum · {1} seyirci bekleniyor{2}
+730|tribünler dolu, ev sahibine güçlü destek
+731|tribünler yarı boş
+732|Baskı
+733|Değişiklikler
+734|Sonuna kadar simüle et
+735|Sakatlık! Oyuncu değişikliği yapın
+736|Uzatmalar
+737|Devre arası — taktiği değiştirebilirsiniz
+738|Bitti
+739|Değişiklikler · kalan {0}
+740|Sahadan bir oyuncu (solda), ardından bir yedek (sağda) seçin.
+741|Yedek yok
+742|Değişikliği yap
+743|Maça devam et
+744|İki oyuncuyu da seçin
+745|Değişiklik yapılamıyor
+746|Maç içi taktik
+747|mevcut olanı koru
+748|Bireysel talimatlar
+749|Diziliş değiştirildi
+750|Maç özeti
+751|Galibiyet!
+752|Yenilgi
+753|Beraberlik
+754|Toplam skorla tur atladık!
+755|Toplam skorla elendik.
+756|Gol yok
+757|Basın toplantısı · {0} · soru {1}
+758|Basın toplantısı sona erdi
+759|UEFA
+760|CONMEBOL
+761|CONCACAF
+762|CAF
+763|AFC
+764|OFC
+765|Avrupa Şampiyonası
+766|Güney Amerika Şampiyonası
+767|CONCACAF Şampiyonası
+768|Afrika Uluslar Kupası
+769|Asya Kupası
+770|Okyanusya Şampiyonası
+771|U{0} Elemeleri
+772|{0} U17 Dünya Kupası elemeleri
+773|{0} U17 Dünya Kupası
+774|Elemeler
+775|U19 Avrupa Şampiyonası
+776|{0} U20 Dünya Kupası
+777|{0} U21 Avrupa Şampiyonası elemeleri
+778|U21 Elemeleri
+779|{0} U21 Avrupa Şampiyonası
+780|U23 Asya Kupası
+781|U23 Afrika Uluslar Kupası
+782|CONMEBOL U23 olimpiyat elemeleri
+783|CONCACAF U23 olimpiyat elemeleri
+784|OFC U23 olimpiyat elemeleri
+785|{0} olimpiyat play-off'u
+786|U23-PO
+787|Play-off
+788|{0} Olimpiyat futbol turnuvası
+789|{0} Arap Kupası
+790|ARK
+791|{0} Körfez Kupası
+792|KÖRFEZ
+793|{0} Güney Asya Şampiyonası
+794|SAFF
+795|{0} Güneydoğu Asya Şampiyonası
+796|ASEAN
+797|{0} Kral Kupası
+798|KK
+799|{0} Kıta Şampiyonları Kupası
+800|KŞK
+801|{0} Afrika Uluslar Şampiyonası (yerel lig oyuncuları)
+802|CHAN
+803|{0} Doğu Asya Şampiyonası
+804|DAŞ
+805|U17'den yükselme
+806|U17'den A kadroya geçenler
+807|bu ay {0} gol attı — harika formda.
+808|{0}, {1} formasıyla neredeyse hiç oynamıyor; formu düşüyor.
+809|{0} formasıyla gol yemeden geçen maç serisi.
+810|{0}, {1} formasıyla sakatlandı — yaklaşık {2} gün yok.
+811|Transfer: {0}, {1} takımından {2} takımına geçti{3}{4}
+812|2. lig
+813|ileriye doğru bir adım.
+814|daha fazla süre arayışında.
+815|Kulüp haberleri
+816|Basın
+817|Gazeteler değişim istiyor
+818|Kötü gidişat bir eleştiri dalgası başlattı. Gazeteciler teknik direktörün olası görevden alınmasını tartışıyor. Basın baskısı: %{0}. Federasyon sonuçlar konusunda daha katı olacak.
+819|Basın bizim yanımızda
+820|Gazeteciler teknik ekibin çalışmasını övüyor.
+821|Taraftarlar memnun değil
+822|Taraftarlar takımı ıslıklıyor ve iç saha maçlarına ilgi azalıyor.
+823|Tüm ülke milli takımın arkasında!
+824|İç saha maçlarının biletleri dakikalar içinde tükeniyor.
+825|Çifte vatandaşlık
+826|{0} ({1} yaş, {2}, {3}, güç {4}, potansiyel {5}) hem bizim milli takımımızda hem de {6} {7} formasıyla oynayabilir. Henüz karar vermedi. İkna etmeye çalışalım mı?
+827|Vatandaşlık başvurusu
+828|{0} ({1} yaş, {2}, güç {3}) — {4} doğumlu, beş yıldır {5} formasını giyiyor ve milli takımımızda oynamak için pasaport istiyor. Başvuruyu desteklemek 10 birim bütçeye mal olur; taraftarların bir kısmı buna soğuk bakabilir.
+829|{0} bizim milli takımımızı seçti! Kadroya eklendi.
+830|Düşündükten sonra {0}, {1} tercihini yaptı.
+831|{0}, {1} formasıyla oynayacak.
+832|Yeterli bütçe yok (10 gerekli).
+833|{0} pasaportunu aldı ve artık kadroya çağrılabilir.
+834|Başvuru reddedildi.
+c_ENG|İngiltere
+c_SCO|İskoçya
+c_WAL|Galler
+c_NIR|Kuzey İrlanda
+c_CD|Kongo DC
+c_CG|Kongo

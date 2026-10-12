@@ -1,0 +1,841 @@
+0|Jsme v
+1|málo termínů
+2|{0}{1}. kolo
+3|Skupina {0}
+4|Šestnáctifinále
+5|Osmifinále
+6|Čtvrtfinále
+7|Semifinále
+8|Finále
+9|{0}. kolo
+10|První zápas
+11|Odveta
+12|Naši soupeři{0}
+13|ve skupině {0}
+14|Náš soupeř
+15|(dvojzápas, celkové skóre; při rovnosti prodloužení a penalty, bez pravidla venkovních gólů)
+16|(jeden zápas; při remíze prodloužení a penalty)
+17|Začínáme od druhého kola (v prvním volný los).
+18|Realizační tým mládežnických výběrů
+19|Fotbalová asociace
+20|Los
+21|Jsme na závěrečném turnaji!
+22|Liga národů UEFA
+23|LN
+24|Liga národů CONCACAF
+25|LNC
+26|postup!
+27|sestup
+28|Vyhráli jsme skupinu a v příštím ročníku budeme hrát Ligu {0}!
+29|Skončili jsme poslední a v příštím ročníku sestoupíme do Ligy {0}.
+30|Postup přes baráž!
+31|Vyhráli jsme baráž a postupujeme do Ligy {0}.
+32|Prohra v baráži
+33|Prohráli jsme baráž a sestupujeme do Ligy {0}.
+34|Liga {0}
+35|Final Four
+36|{0}-F4
+37|Baráž ligy
+38|{0}-B
+39|Baráž
+40|Kvalifikace MS {0}
+41|Kvalifikace ME {0}
+42|KME
+43|Baráž ME {0}
+44|BME
+45|Semifinále cesty
+46|Finále cesty
+47|Mistrovství Evropy {0}
+48|EURO
+49|{0}UEFA
+50|KMS
+51|{0}baráž UEFA
+52|BMS
+53|{0}CONMEBOL
+54|Copa América {0}
+55|CA
+56|Zlatý pohár CONCACAF {0}
+57|ZP
+58|{0}CONCACAF, 1. kolo
+59|KMS-1
+60|1. kolo
+61|{0}CONCACAF, 2. kolo
+62|KMS-2
+63|{0}CONCACAF, 3. kolo
+64|Kvalifikace Asijského poháru {0}
+65|KAP
+66|Asijský pohár {0}
+67|AP
+68|{0}AFC, 1. kolo
+69|{0}AFC, 2. kolo
+70|{0}AFC, 3. kolo
+71|{0}AFC, 4. kolo
+72|KMS-4
+73|{0}AFC, 5. kolo
+74|KMS-5
+75|5. kolo
+76|Kvalifikace Afrického poháru národů {0}
+77|KAPN
+78|Africký pohár národů {0}
+79|APN
+80|{0}CAF
+81|{0}CAF, baráž
+82|BCAF
+83|{0}OFC, 1. kolo
+84|{0}OFC, 2. kolo
+85|{0}OFC, závěrečná fáze
+86|Pohár národů OFC {0}
+87|PNO
+88|{0}mezikontinentální baráž
+89|MB
+90|1. kolo baráže
+91|Finále baráže
+92|Mistrovství světa {0}
+93|MS
+94|vypadnutí ve skupině
+95|postup ze skupiny
+96|semifinále
+97|finále
+98|titul
+99|Cíl: vyhrát baráž.
+100|Cíl: bojovat v baráži.
+101|Cíl: získat trofej.
+102|Cíl: důstojně se prezentovat na turnaji.
+103|Cíl asociace: postup do dalšího kola.
+104|Cíl: bojovat o další kolo.
+105|Cíl asociace: postup na závěrečný turnaj.
+106|Cíl: důstojně bojovat; postup by byl bonusem.
+107|Cíl: dojít co nejdál.
+108|Cíl: potrápit favority.
+109|Cíl: bojovat o první místo ve skupině.
+110|Cíl: vyhnout se sestupu.
+111|Cíl asociace
+112|Zprávy
+113|vítěz
+114|{0} {1} vyhrává turnaj po finálovém vítězství nad {2}.
+115|Výsledek: „{0}“ — {1} Důvěra asociace {2}{3}.
+116|baráž vyhrána.
+117|baráž prohrána.
+118|postup do dalšího kola!
+119|postup vybojován!
+120|dál jsme se nedostali.
+121|postup se nepodařil.
+122|postupujeme.
+123|vypadli jsme.
+124|první místo ve skupině.
+125|bez prvního místa.
+126|TROFEJ! Rozpočet asociace byl navýšen.
+127|Bilance
+128|ledna
+129|února
+130|března
+131|dubna
+132|května
+133|června
+134|července
+135|srpna
+136|září
+137|října
+138|listopadu
+139|prosince
+140|ne
+141|po
+142|út
+143|st
+144|čt
+145|pá
+146|so
+147|Útok
+148|Obrana
+149|Přihrávky
+150|Technika
+151|Fyzička
+152|Rychlost
+153|Brankář
+154|Trenér
+155|Přátelská utkání
+156|PŘ
+157|Vítejte!
+158|Vážený pane {0}, asociace vás s radostí vítá ve funkci hlavního trenéra reprezentace {1}. Očekáváme od vás důstojné výsledky. Vaše první nominace je již připravena — zkontrolujte kádr před nejbližším reprezentačním srazem.
+159|Byl jste odvolán
+160|Asociace bohužel ztratila důvěru ve vaši práci a rozhodla se ukončit smlouvu. Ale zájem o vás projevily jiné asociace — vyberte si novou reprezentaci.
+161|Asociace {0}
+162|Pracovní nabídka
+163|Fotbalová asociace {0} {1} vám nabízí vedení národního týmu. Síla týmu
+164|Nová práce
+165|Nyní vedete {0} {1}. Hodně štěstí! Sestavte nominaci na nejbližší sraz.
+166|Porušený slib
+167|Trenére, slíbil jste mi místo v základní sestavě. Jsem zklamaný.
+168|Přátelské utkání
+169|{0} zápasů)
+170|potenciál {0})
+171|Šťastný nový rok {0}
+172|Hráči jsou o rok starší. {0} Důvěra asociace
+173|Změny v kádru
+174|Realizační tým
+175|Reprezentační sraz
+176|{0} Zkontrolujte nominaci (18–23 hráčů) a sestavu.
+177|Na tomto srazu máme {0} zápas(y)
+178|Na tomto srazu nemáme soutěžní zápasy — můžete domluvit přátelská utkání (Soutěže → Přátelská utkání).
+179|Lékařský tým
+180|Zranění na tréninku
+181|{0} se zranil při intenzivním tréninku a bude {1} dní chybět.
+182|Výhra nad {0} {1}:{2}. Vaše dojmy?
+183|Jsem na kluky hrdý — nechali na hřišti všechno.
+184|Můžeme hrát ještě lépe; na uvolnění je brzy.
+185|Bylo to moje taktické vítězství.
+186|Prohra {0}:{1} s {2}. Kdo za to může?
+187|Veškerá odpovědnost je na mně.
+188|Někteří hráči nepodali svůj standardní výkon.
+189|Rozhodčí ovlivnil výsledek.
+190|Remíza {0}:{1}. Jste s výsledkem spokojen?
+191|Spravedlivý výsledek, jdeme dál.
+192|Měli jsme vyhrát.
+193|Soupeř byl velmi silný.
+194|Fanoušci chtějí v sestavě víc mladých. Vaše odpověď?
+195|Mladí dostanou šanci, až si ji zaslouží.
+196|Ano, budeme kádr omlazovat.
+197|Teď jsou důležitější zkušenosti.
+198|Jaké jsou cíle týmu na nejbližším turnaji?
+199|Jen vítězství!
+200|Bereme zápas od zápasu.
+201|Jsme outsideři, netlačí na nás žádný tlak.
+202|Jak hodnotíte fyzickou kondici hráčů?
+203|Všechno je v pořádku, tým je připraven.
+204|Jsou tu problémy s únavou, budeme rotovat.
+205|Kluby hráče přetěžují.
+206|Proslýchá se, že odcházíte k jiné reprezentaci. Je to pravda?
+207|Jsem plně soustředěný na tento tým.
+208|Nikdy neříkej nikdy.
+209|Bez komentáře.
+210|S tímto hráčem jste během tohoto srazu už mluvil.
+211|Hráč je polichocen, ale může polevit.
+212|Pochvala hráče motivovala.
+213|Hráč děkuje, ale ví, že může víc.
+214|Hráč přijal kritiku špatně.
+215|Hráč přijal výzvu a chce vám dokázat, že se mýlíte!
+216|Hráč klidně vyslechl připomínky.
+217|Hráč má radost ze slibu, že v příštím zápase nastoupí v základu. Nezklamte ho!
+218|Konkurence hráče vyburcovala.
+219|Hráč se bojí o své místo v týmu.
+220|Hráč oceňuje možnost odpočinout si.
+221|{0} Morálka {1}{2}.
+222|{0} souhlasil, že bude hrát za reprezentaci!{1}
+223|(odmítl {0})
+224|{0} odmítl{1}.
+225|dal přednost {0}
+226|Tréninkové centrum
+227|Rychlejší rozvoj hráčů na srazech
+228|Mládežnická akademie
+229|Více a talentovanějších odchovanců
+230|Lékařské centrum
+231|Rychlejší regenerace a léčba zranění
+232|Skautské oddělení
+233|Více hledání hráčů za sraz
+234|Národní stadion
+235|Vyšší příjmy a podpora fanoušků
+236|První výhra
+237|Vyhrajte svůj první zápas
+238|Zámek
+239|Soutěžní zápas bez inkasovaného gólu
+240|Debakl
+241|Vyhrajte o 5 a více gólů
+242|Postrach favoritů
+243|Porazte mnohem silnějšího soupeře
+244|Hattrick
+245|Reprezentant vstřelí 3 góly v jednom zápase
+246|Postup
+247|Postupte na závěrečný turnaj
+248|Mezi čtyřmi
+249|Dojděte do semifinále turnaje
+250|Nad očekávání
+251|Překonejte cíl asociace
+252|První trofej
+253|Vyhrajte jakýkoli turnaj
+254|Mistr kontinentu
+255|Vyhrajte kontinentální mistrovství
+256|Mistr světa
+257|Vyhrajte mistrovství světa
+258|Série
+259|10 výher v řadě
+260|Padesátka
+261|50 výher ve funkci
+262|Nová výzva
+263|Převezměte jinou reprezentaci
+264|Stavitel
+265|Všechna zařízení na úrovni 3
+266|Objev
+267|Nominujte hráče s dvojím občanstvím
+268|Úspěch
+269|UEFA (Evropa)
+270|CONMEBOL (Jižní Amerika)
+271|CONCACAF (Severní a Střední Amerika)
+272|CAF (Afrika)
+273|AFC (Asie)
+274|OFC (Oceánie)
+275|B
+276|SO
+277|LO
+278|PO
+279|DZ
+280|SZ
+281|OZ
+282|LZ
+283|PZ
+284|LK
+285|PK
+286|ÚT
+287|Prší, trávník je kluzký.
+288|Vedro — pro hráče to bude náročné.
+289|Sněží.
+290|Silný vítr.
+291|jasno
+292|oblačno
+293|déšť
+294|vedro
+295|sníh
+296|vítr
+297|1P
+298|Výkop! Zápas začal.
+299|Rozhodčí zahajuje utkání.
+300|Hraje se!
+301|Ofsajd — útok {0} je zastaven.
+302|Praporek je nahoře — ofsajd.
+303|{0} se zranil a nemůže pokračovat.
+304|Nastavení: {0} min.
+305|Poločas. Skóre: {0}.
+306|2P
+307|Přestávka před prodloužením.
+308|PRO
+309|Rovnost v celkovém skóre ({0}:{1}) — prodloužení!
+310|Remíza v řádné hrací době — prodloužení!
+311|Míč je v síti, ale po kontrole VAR je gól {0} neuznán
+312|ofsajd
+313|faul v útoku
+314|ruka
+315|z penalty
+316|z přímého kopu
+317|z přímého kopu do šibenice
+318|z přímého kopu přes zeď
+319|hlavou
+320|hlavou po centru
+321|po zemi k tyči
+322|od břevna do sítě
+323|zpoza vápna
+324|po rychlém průniku
+325|z dorážky
+326|přesnou ranou zblízka
+327|prudkou ranou levačkou
+328|k vzdálenější tyči
+329|GÓL! {0} ({1}) skóruje {2}{3}! {4}
+330|Asistence
+331|{0} kope penaltu — {1} chytá!
+332|brankář
+333|Přímý kop zahrává {0} — {1} vybíhá a míč chytá.
+334|{0} pálí, ale {1} je dobře postavený.
+335|Skvělý zákrok! {0} vyráží ránu {1}.
+336|{0} střílí na branku — brankář chytá.
+337|Roh pro útočící tým. Zahrává {0}.
+338|{0} neproměňuje penaltu!
+339|{0} kope přímý kop — míč se odráží od zdi.
+340|{0} střílí vedle.
+341|nad břevno!
+342|Obránce blokuje střelu {0}.
+343|Nebezpečí! {0} těsně mine.
+344|{0} to zkouší z dálky — vedle.
+345|Faul: {0} ({1}) fauluje.
+346|Faul ve vápně! {0} sráží soupeře — penalta!
+347|Faul na hranici vápna: {0} sráží soupeře. Nebezpečný přímý kop!
+348|Přímá červená! {0} je vyloučen za hrubý faul.
+349|Druhá žlutá — {0} jde ze hřiště!
+350|Žlutá karta
+351|Střídání v {0}: přichází {1}, odchází {2}.
+352|Penaltový rozstřel!
+353|proměňuje
+354|neproměňuje
+355|Konec zápasu! {0} {1}
+356|(pen. {0})
+357|(po prodl.)
+358|celkem {0}
+359|Zrušit
+360|Zpět
+361|Domů
+362|Kádr
+363|Taktika
+364|Turnaje
+365|Pošta
+366|Statistiky
+367|Mládež
+368|Trénink
+369|Asociace
+370|Nastavení
+371|National
+372|Football Manager
+373|Více
+374|Jazyk
+375|Nelze načíst
+376|tato uložená hra pochází ze staré verze (v{0}). Ve verzi 3 byly přepracovány turnaje (baráže, vyřazovací dvojzápasy, Ligy národů s postupy a sestupy) i jména a údaje hráčů — staré uložené hry nejsou kompatibilní. Začněte novou hru.
+377|Převezměte reprezentaci a doveďte ji ke slávě
+378|Nová hra
+379|Načíst hru
+380|Jak hrát
+381|210 reprezentací · 6 konfederací · kvalifikace, Ligy národů, kontinentální turnaje a mistrovství světa.
+382|Všechna jména a kluby jsou smyšlené.
+383|Jste hlavní trenér reprezentace. Klepněte na
+384|„Pokračovat“
+385|a posouvejte se kalendářem: reprezentační srazy (březen, červen, září, říjen, listopad), kvalifikace, Ligy národů a závěrečné turnaje.
+386|Nominace
+387|před každým srazem vyberte 18 až 23 hráčů.
+388|přetáhněte nebo klepněte na hráče na hřišti a prohoďte je; druhé klepnutí otevře individuální pokyny.
+389|Zápas
+390|sledujte dění, měňte taktiku a střídejte živě. Kdykoli můžete pozastavit.
+391|hlídejte důvěru. Pokud klesne příliš nízko, budete odvolán. Úspěchy přinášejí rozpočet na infrastrukturu a nabídky jiných reprezentací.
+392|Rozumím
+393|Vaše jméno
+394|Jméno trenéra
+395|Vyberte konfederaci
+396|Změnit
+397|Síla {0}
+398|Favorit: očekávají se jen výhry a tituly.
+399|Silný tým: postup na závěrečné turnaje je povinnost.
+400|Průměrný tým: každý postup na závěrečný turnaj je úspěch.
+401|Outsider: malý tlak, každá výhra je svátek.
+402|Pozice pro uložení
+403|Pozice {0}{1}
+404|(obsazeno)
+405|Převzít reprezentaci
+406|Vytváříme svět: 210 reprezentací, ~5000 hráčů…
+407|Hlavní menu
+408|Pokračovat
+409|Žádné nadcházející zápasy. Domluvte přátelské utkání v sekci „Soutěže“.
+410|Zápas dnes
+411|za {0} dní
+412|neutrální půda
+413|doma
+414|venku
+415|Důvěra asociace
+416|Tlak médií
+417|Fanoušci
+418|Rozpočet
+419|V
+420|R
+421|P
+422|Nominováno
+423|Kádr / Nominace
+424|Soutěže
+425|Program reprezentace
+426|Žádné naplánované zápasy
+427|pen. {0}
+428|po prodl.
+429|celkem {0}
+430|Simulace…
+431|Zápasový den!
+432|Reprezentační sraz — zkontrolujte nominaci
+433|Los — nová zpráva
+434|Šťastný nový rok!
+435|Turnaj skončil — viz pošta
+436|Žádné zprávy
+437|Přijmout nabídku
+438|Odmítnout
+439|Zkusit ho přesvědčit
+440|Vzdát to
+441|Podpořit žádost (−10 rozpočtu)
+442|Zamítnout
+443|Vybrat novou reprezentaci
+444|Zavřít
+445|Nyní vedete {0}
+446|Asociace vás odvolala
+447|Bez práce ale nezůstanete. Vyberte jednu z nabídek
+448|Hledat další hráče
+449|Ukončili kariéru
+450|Skautské oddělení · úroveň {0}
+451|Skauti hledají hráče, kteří mohou hrát za reprezentaci, včetně hráčů s dvojím občanstvím (🛂). Zbývající hledání na tomto srazu
+452|Nalezení hráči
+453|{0} let
+454|také {0} {1}
+455|Pozvat
+456|Zatím nikdo. Spusťte hledání.
+457|ukončil kariéru v roce {0}
+458|{0} zápasů · {1} gólů
+459|Zatím nikdo neukončil kariéru
+460|(potřeba 18–23) · B {0} · OBR {1} · ZÁL {2} · ÚT {3}
+461|Automatická nominace
+462|Všichni
+463|OBR
+464|ZÁL
+465|ÚT
+466|{0} d
+467|{0} let · {1} · {2} zápasů, {3} gólů
+468|F {0}
+469|M {0}
+470|Maximálně 23 hráčů
+471|Nominace hotova
+472|Nalezeni hráči
+473|Žádná další hledání
+474|Historie se objeví za pár měsíců.
+475|nejlepší #{0} · nejhorší
+476|Málo zápasů pro graf
+477|obrovský
+478|vysoký
+479|může růst
+480|na vrcholu
+481|citlivý
+482|vyrovnaný
+483|ambiciózní
+484|{0} cm
+485|levák
+486|pravák
+487|obounohý
+488|noha
+489|(2. liga)
+490|naturalizovaný (narozen: {0})
+491|V klubu: {0} · góly v sezoně
+492|ve skvělé formě
+493|bez formy
+494|stabilní
+495|Potenciál
+496|Povaha
+497|Forma
+498|Morálka
+499|Kondice
+500|Zranění: {0} dní
+501|Trest: {0} zápas(y)
+502|Žluté karty (souhrn)
+503|Zápasy
+504|Góly
+505|Asistence
+506|Čistá konta
+507|Průměrná známka
+508|Historie známek pod vaším vedením (žluté body — góly)
+509|Promluvit s hráčem
+510|Pochválit
+511|Kritizovat
+512|Slíbit místo v základu
+513|Upozornit na konkurenci
+514|Nechat odpočinout
+515|Mládežnické reprezentace
+516|Výsledky
+517|Hráči do 21 let hrají za jedenadvacítku (ME U21 a kvalifikace v UEFA), do 23 let v olympijských kvalifikacích a na olympiádě (plus tři hráči nad 23). Zápasy mládežnických výběrů se simulují automaticky; síla je průměr 11 nejlepších dostupných. Akademie (úroveň {0}) každý rok vychová nové hráče.
+518|{0} let · {1} · potenciál
+519|zápasy za mládež {0}
+520|V áčku
+521|Nominovat
+522|Žádní hráči do 23 let
+523|Sedmnáctka (15–17 let) hraje kvalifikaci a každoroční MS U17. V 18 letech nadějní hráči přecházejí do áčka, ostatní odcházejí. Nejlepší junioři mohou hrát i za dvacítku.
+524|U21 PŘ
+525|(p. {0})
+526|Zatím žádné zápasy
+527|Výhra
+528|Skončeno
+529|Vyřazovací fáze
+530|Skupinová fáze
+531|Zatím žádné turnaje
+532|{0}Koš {1}
+533|Hlavní fáze
+534|Skupiny s pozdějším startem
+535|Koše podle žebříčku FIFA.{0}{1}
+536|Pořadatel ({0}) je již nasazen do skupiny A.
+537|Omezení: ve skupině nejvýše 2 týmy UEFA a po 1 z ostatních konfederací.
+538|Los brzy začne…
+539|Zobrazit vše
+540|Hotovo
+541|Koše
+542|Zaparkovaný autobus
+543|Rovnováha
+544|Vše do útoku
+545|Nízký
+546|Střední
+547|Vysoký
+548|Pomalé
+549|Normální
+550|Rychlé
+551|Smíšený
+552|Krátké přihrávky
+553|Dlouhé míče
+554|Protiútoky
+555|Standard
+556|Více se zapojovat do útoku
+557|Držet pozici
+558|Volná role
+559|Osobní obrana
+560|Nastavení
+561|Presink
+562|Tempo
+563|Styl
+564|Automatická sestava
+565|Přetáhněte hráče na jiného nebo klepněte postupně na dva hráče a prohoďte je. Druhé klepnutí otevře individuální pokyn. Červený rámeček — mimo pozici / nedostupný.
+566|Náhradníci
+567|Nominujte více hráčů
+568|Týmové pokyny
+569|Nastavena nejlepší sestava
+570|Individuální pokyn
+571|Karta hráče
+572|Vyvážený
+573|Od všeho trochu
+574|Útok a technika
+575|Obrana a fyzička
+576|Kondiční příprava
+577|Fyzička a rychlost
+578|Technika a přihrávky
+579|Přihrávky a technika
+580|Souhra: zlepšení formy
+581|Brankáři
+582|Speciální trénink brankářů
+583|Regenerace
+584|Kondice a morálka, bez rozvoje
+585|Zaměření srazu
+586|Trénink probíhá na začátku každého srazu pro nominované hráče. Tréninkové centrum: úroveň {0}.
+587|Intenzita
+588|Lehká
+589|Normální
+590|Vysoká (riziko zranění)
+591|Kondice nominovaných
+592|{0} Pokud klesne na 12 %, budete odvolán.
+593|Asociace je z vaší práce nadšená.
+594|Asociace je spokojená.
+595|Asociace má obavy z výsledků.
+596|Vaše místo je ohroženo!
+597|Cíle
+598|Cíl
+599|Žádné probíhající turnaje
+600|Infrastruktura · rozpočet
+601|Rozpočet roste s výhrami, postupy na závěrečné turnaje a tituly.
+602|Kariéra
+603|od {0}
+604|Zařízení vylepšeno!
+605|Liga {0}
+606|v příštím ročníku
+607|Vítězové skupin postupují, poslední sestupují{0}.
+608|třetí týmy z A/B a druhé týmy z B/C hrají dvouzápasovou baráž o místo v lize
+609|Domluvit přátelské utkání
+610|Skončeno{0}
+611|vítěz {0}
+612|Zatím nezačal žádný turnaj
+613|Brzy
+614|Síň vítězů
+615|Zatím prázdné
+616|Tabulky
+617|Střelci
+618|Tabulka
+619|Tým
+620|Z
+621|RS
+622|B
+623|Místa: {0}. Zelená značka — nyní v postupové zóně (nejlepší z týmů na stejném místě se porovnávají podle bodů na zápas).
+624|Do vyřazovací fáze postupuje {0} nejlepších z každé skupiny a {1} nejlepších týmů ze třetích míst.
+625|pen. {0}
+626|Vítěz
+627|Jen naše zápasy
+628|Hráč
+629|Tým
+630|G
+631|A
+632|Zatím žádné góly
+633|1. zápas
+634|Odveta
+635|V nejbližších srazech nejsou volné termíny
+636|Datum (volné reprezentační termíny)
+637|Soupeř
+638|Hrát doma
+639|Domluvit
+640|Zápas domluven
+641|Soupeř má v tomto termínu jiný zápas
+642|Hráči
+643|Rekordy
+644|Žebříček
+645|Trofeje
+646|Včetně hráčů po kariéře
+647|Z — celkem zápasů za reprezentaci, M — zápasy pod vaším vedením, Zn — průměrná známka pod vaším vedením. Klepnutím na záhlaví seřadíte.
+648|Věk
+649|Síla
+650|M
+651|ČK
+652|Zn
+653|(ukonč.)
+654|Celkem zápasů: {0}. Klepnutím na zápas zobrazíte detaily (události, statistiky, známky).
+655|Historie střelců
+656|K dispozici po skončení čtyřletého cyklu
+657|Rekordy reprezentace (pod vaším vedením)
+658|Nejvyšší výhra
+659|Nejvyšší prohra
+660|Série výher
+661|Série bez prohry
+662|Čistá konta
+663|Trenérská bilance
+664|góly {0}
+665|% výher
+666|Rekordy hráčů
+667|Nejlepší střelec
+668|Nejvíce zápasů
+669|Nejvíce asistencí
+670|Čistá konta (brankář)
+671|Nejlepší průměrná známka (5+ zápasů)
+672|Nejlepší známka v zápase
+673|Žebříček FIFA · {0} {1}: #{2} ({3} bodů) {4}
+674|Vzorec SUM: P = Ppřed + I·(W − We), We = 1/(10^(−dr/600)+1). I: přátelské utkání 10, LN (skupiny) 15, vyřazovací fáze LN a kvalifikace 25, skupinová fáze kontinentálních turnajů 35 / vyřazovací fáze 40, MS 50 / 60. Výhra na penalty — 0,75, prohra — 0,5. Ve vyřazovací fázi závěrečných turnajů se body neztrácejí. Aktualizuje se měsíčně; šipky ukazují změnu oproti předchozímu měsíci.
+675|Svět
+676|Body
+677|Zatím žádné trofeje. Vše je před vámi!
+678|Úspěchy
+679|diváků {0}
+680|Žádné události
+681|Držení míče
+682|Střely
+683|Na branku
+684|xG (očekávané góly)
+685|Rohy
+686|Fauly
+687|Žluté karty
+688|Červené karty
+689|Ofsajdy
+690|Známky hráčů {0}
+691|nejlepší
+692|Uložené hry
+693|Hra se automaticky ukládá do aktuální pozice po každém kroku a zápase.
+694|Pozice {0} {1}
+695|(aktuální)
+696|prázdná
+697|Uložit
+698|Načíst
+699|Exportovat do souboru
+700|Importovat
+701|Výchozí rychlost
+702|V přenosu jen klíčové momenty
+703|Odejít do hlavního menu
+704|Původní manažerská hra o národních týmech. Všechna jména, kluby a data jsou smyšlené.
+705|Pozice {0}
+706|Hra načtena
+707|Pozice je prázdná
+708|Načtení se nezdařilo
+709|Uloženo do pozice {0}
+710|Smazat uloženou hru v pozici {0}?
+711|Importováno
+712|Před zápasem
+713|Elo {0}
+714|domácí zápas
+715|zápas venku
+716|Skautská zpráva
+717|Rozestavení
+718|průměrná síla základní sestavy
+719|Klíčoví hráči
+720|Vzájemné zápasy pod vaším vedením
+721|Naše sestava
+722|Nedostupní
+723|Nominace musí mít 18–23 hráčů (nyní {0}).
+724|Zahájit zápas
+725|Rychlá simulace
+726|První ze dvou zápasů (celkové skóre)
+727|odveta: první zápas {0}; při rovnosti celkového skóre prodloužení a penalty (bez venkovních gólů)
+728|vyřazovací zápas: při remíze prodloužení a penalty
+729|stadion pro {0} diváků · očekává se {1} diváků{2}
+730|vyprodáno, silná podpora domácích
+731|poloprázdné tribuny
+732|Tlak
+733|Střídání
+734|Dosimulovat do konce
+735|Zranění! Vystřídejte
+736|Prodloužení
+737|Poločas — můžete změnit taktiku
+738|Konec
+739|Střídání · zbývá {0}
+740|Vyberte hráče na hřišti (vlevo), potom náhradníka (vpravo).
+741|Žádní náhradníci
+742|Vystřídat
+743|Pokračovat v zápase
+744|Vyberte oba hráče
+745|Střídání není možné
+746|Taktika během zápasu
+747|ponechat současnou
+748|Individuální pokyny
+749|Rozestavení změněno
+750|Shrnutí zápasu
+751|Výhra!
+752|Prohra
+753|Remíza
+754|Postupujeme díky celkovému skóre!
+755|Vypadli jsme na celkové skóre.
+756|Žádné góly
+757|Tisková konference · {0} · otázka {1}
+758|Tisková konference skončila
+759|UEFA
+760|CONMEBOL
+761|CONCACAF
+762|CAF
+763|AFC
+764|OFC
+765|Mistrovství Evropy
+766|Mistrovství Jižní Ameriky
+767|Mistrovství CONCACAF
+768|Africký pohár národů
+769|Asijský pohár
+770|Mistrovství Oceánie
+771|Kval. U{0}
+772|Kvalifikace MS U17 {0}
+773|Mistrovství světa U17 {0}
+774|Kvalifikace
+775|ME U19
+776|Mistrovství světa U20 {0}
+777|Kvalifikace ME U21 {0}
+778|Kval. U21
+779|Mistrovství Evropy U21 {0}
+780|Asijský pohár U23
+781|Africký pohár národů U23
+782|Olympijská kvalifikace CONMEBOL U23
+783|Olympijská kvalifikace CONCACAF U23
+784|Olympijská kvalifikace OFC U23
+785|Olympijská baráž {0}
+786|B-U23
+787|Baráž
+788|Olympijský fotbalový turnaj {0}
+789|Arabský pohár {0}
+790|ARP
+791|Pohár Perského zálivu {0}
+792|ZÁLIV
+793|Mistrovství jižní Asie {0}
+794|SAFF
+795|Mistrovství jihovýchodní Asie {0}
+796|ASEAN
+797|Královský pohár {0}
+798|KP
+799|Pohár mistrů kontinentů {0}
+800|PMK
+801|Mistrovství afrických národů (hráči domácích lig) {0}
+802|CHAN
+803|Mistrovství východní Asie {0}
+804|MVA
+805|Postup z U17
+806|Přecházejí z U17 do áčka
+807|dal tento měsíc {0} gólů — skvělá forma.
+808|{0} v {1} skoro nehraje; forma klesá.
+809|série čistých kont v {0}.
+810|{0} se zranil v {1} — bude chybět asi {2} dní.
+811|Přestup: {0} přechází z {1} do {2}{3}{4}
+812|2. liga
+813|krok vpřed.
+814|za herním vytížením.
+815|Klubové zprávy
+816|Tisk
+817|Noviny žádají změny
+818|Špatná série vyvolala vlnu kritiky. Novináři probírají možné odvolání trenéra. Tlak médií: {0} %. Asociace bude výsledky posuzovat přísněji.
+819|Tisk je na naší straně
+820|Novináři chválí práci realizačního týmu.
+821|Fanoušci jsou nespokojení
+822|Fanoušci tým vypískávají a návštěvnost domácích zápasů klesá.
+823|Celá země fandí reprezentaci!
+824|Vstupenky na domácí zápasy mizí během pár minut.
+825|Dvojí občanství
+826|{0} ({1} let, {2}, {3}, síla {4}, potenciál {5}) může hrát za naši reprezentaci i za {6} {7}. Zatím se nerozhodl. Zkusíme ho přesvědčit?
+827|Žádost o naturalizaci
+828|{0} ({1} let, {2}, síla {3}) — pochází z {4}, pět let hraje za {5} a chce pas, aby mohl hrát za naši reprezentaci. Podpora žádosti stojí 10 jednotek rozpočtu; část fanoušků to může přijmout chladně.
+829|{0} si vybral naši reprezentaci! Byl zařazen do kádru.
+830|Po zvážení si {0} vybral {1}.
+831|{0} bude hrát za {1}.
+832|Nedostatečný rozpočet (potřeba 10).
+833|{0} získal pas a nyní může být nominován.
+834|Žádost zamítnuta.
+c_ENG|Anglie
+c_SCO|Skotsko
+c_WAL|Wales
+c_NIR|Severní Irsko
+c_CD|DR Kongo
+c_CG|Kongo

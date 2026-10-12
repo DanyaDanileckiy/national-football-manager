@@ -1,0 +1,841 @@
+0|Nous sommes en
+1|pas assez de dates
+2|{0}Journée {1}
+3|Groupe {0}
+4|Seizièmes de finale
+5|Huitièmes de finale
+6|Quarts de finale
+7|Demi-finale
+8|Finale
+9|Tour {0}
+10|Match aller
+11|Match retour
+12|Nos adversaires{0}
+13|dans le groupe {0}
+14|Notre adversaire
+15|(aller-retour, score cumulé ; en cas d'égalité — prolongation et tirs au but, sans règle du but à l'extérieur)
+16|(match unique ; en cas d'égalité — prolongation et tirs au but)
+17|Nous entrons en lice au deuxième tour (exemptés du premier).
+18|Staff des équipes de jeunes
+19|Fédération de football
+20|Tirage au sort
+21|Nous sommes en phase finale !
+22|Ligue des nations de l'UEFA
+23|LN
+24|Ligue des nations de la CONCACAF
+25|LNC
+26|promotion !
+27|relégation
+28|Nous avons remporté le groupe et jouerons en Ligue {0} lors de la prochaine édition !
+29|Nous avons fini derniers et descendrons en Ligue {0} lors de la prochaine édition.
+30|Promotion via les barrages !
+31|Nous avons remporté les barrages et montons en Ligue {0}.
+32|Défaite en barrages
+33|Nous avons perdu les barrages et descendons en Ligue {0}.
+34|Ligue {0}
+35|Final Four
+36|{0}-F4
+37|Barrages de ligue
+38|{0}-B
+39|Barrages
+40|Qualifications pour la Coupe du monde {0}
+41|Qualifications pour l'Euro {0}
+42|QEU
+43|Barrages de l'Euro {0}
+44|BEU
+45|Demi-finale de la voie
+46|Finale de la voie
+47|Championnat d'Europe {0}
+48|EURO
+49|{0}UEFA
+50|QCM
+51|{0}barrages UEFA
+52|BCM
+53|{0}CONMEBOL
+54|Copa América {0}
+55|CA
+56|Gold Cup de la CONCACAF {0}
+57|GC
+58|{0}CONCACAF, 1er tour
+59|QCM-1
+60|1er tour
+61|{0}CONCACAF, 2e tour
+62|QCM-2
+63|{0}CONCACAF, 3e tour
+64|Qualifications pour la Coupe d'Asie {0}
+65|QCA
+66|Coupe d'Asie {0}
+67|CAs
+68|{0}AFC, 1er tour
+69|{0}AFC, 2e tour
+70|{0}AFC, 3e tour
+71|{0}AFC, 4e tour
+72|QCM-4
+73|{0}AFC, 5e tour
+74|QCM-5
+75|5e tour
+76|Qualifications pour la CAN {0}
+77|QCAN
+78|Coupe d'Afrique des nations {0}
+79|CAN
+80|{0}CAF
+81|{0}CAF, barrages
+82|BCAF
+83|{0}OFC, 1er tour
+84|{0}OFC, 2e tour
+85|{0}OFC, phase finale
+86|Coupe d'Océanie des nations {0}
+87|CON
+88|{0}barrages intercontinentaux
+89|BI
+90|1er tour des barrages
+91|Finale des barrages
+92|Coupe du monde {0}
+93|CM
+94|élimination en phase de groupes
+95|sortir des groupes
+96|demi-finale
+97|finale
+98|titre
+99|Objectif : remporter les barrages.
+100|Objectif : se battre en barrages.
+101|Objectif : remporter le trophée.
+102|Objectif : faire un tournoi honorable.
+103|Objectif de la fédération : atteindre le tour suivant.
+104|Objectif : viser le tour suivant.
+105|Objectif de la fédération : se qualifier pour la phase finale.
+106|Objectif : rivaliser dignement ; une qualification serait un bonus.
+107|Objectif : aller le plus loin possible.
+108|Objectif : tenir tête aux favoris.
+109|Objectif : viser la première place du groupe.
+110|Objectif : éviter la relégation.
+111|Objectif de la fédération
+112|Actualités
+113|vainqueur
+114|{0} {1} remporte le tournoi en battant {2} en finale.
+115|Bilan : « {0} » — {1} Confiance de la fédération {2}{3}.
+116|barrages remportés.
+117|barrages perdus.
+118|qualifiés pour le tour suivant !
+119|qualification obtenue !
+120|impossible d'aller plus loin.
+121|qualification manquée.
+122|nous passons.
+123|nous sommes éliminés.
+124|première place du groupe.
+125|pas de première place.
+126|TROPHÉE ! Le budget de la fédération a été augmenté.
+127|Bilan
+128|janvier
+129|février
+130|mars
+131|avril
+132|mai
+133|juin
+134|juillet
+135|août
+136|septembre
+137|octobre
+138|novembre
+139|décembre
+140|dim
+141|lun
+142|mar
+143|mer
+144|jeu
+145|ven
+146|sam
+147|Attaque
+148|Défense
+149|Passes
+150|Technique
+151|Physique
+152|Vitesse
+153|Gardien
+154|Sélectionneur
+155|Matchs amicaux
+156|AMI
+157|Bienvenue !
+158|Cher {0}, la fédération a le plaisir de vous accueillir au poste de sélectionneur de l'équipe nationale de {1}. Nous attendons de vous de bons résultats. Votre première liste est déjà prête — vérifiez l'effectif avant la prochaine fenêtre internationale.
+159|Vous êtes limogé
+160|Malheureusement, la fédération a perdu confiance en vous et a décidé de mettre fin à votre contrat. Mais d'autres fédérations s'intéressent à vous — choisissez une nouvelle sélection.
+161|Fédération de {0}
+162|Offre d'emploi
+163|La fédération de football {0} {1} vous propose de prendre en main son équipe nationale. Force de l'équipe
+164|Nouveau poste
+165|Vous dirigez désormais {0} {1}. Bonne chance ! Établissez la liste pour la prochaine fenêtre internationale.
+166|Promesse non tenue
+167|Coach, vous m'aviez promis une place de titulaire. Je suis déçu.
+168|Match amical
+169|{0} sélections)
+170|potentiel {0})
+171|Bonne année {0}
+172|Les joueurs ont pris un an. {0} Confiance de la fédération
+173|Changements dans l'effectif
+174|Staff
+175|Fenêtre internationale
+176|{0} Vérifiez la liste (18–23 joueurs) et la composition.
+177|Lors de cette fenêtre, nous avons {0} match(s)
+178|Pas de match officiel lors de cette fenêtre — vous pouvez organiser des amicaux (Compétitions → Matchs amicaux).
+179|Service médical
+180|Blessure à l'entraînement
+181|{0} s'est blessé lors d'une séance intense et sera absent {1} jours.
+182|Victoire {1}:{2} contre {0}. Vos impressions ?
+183|Je suis fier des joueurs — ils ont tout donné.
+184|Nous pouvons encore mieux jouer ; il est trop tôt pour se relâcher.
+185|C'est ma victoire tactique.
+186|Défaite {0}:{1} contre {2}. À qui la faute ?
+187|J'en assume l'entière responsabilité.
+188|Certains joueurs n'étaient pas à leur niveau.
+189|L'arbitrage a pesé sur le résultat.
+190|Match nul {0}:{1}. Satisfait du résultat ?
+191|Un résultat juste, on avance.
+192|Nous aurions dû gagner.
+193|L'adversaire était très fort.
+194|Les supporters réclament plus de jeunes. Votre réponse ?
+195|Les jeunes auront leur chance quand ils la mériteront.
+196|Oui, nous allons rajeunir l'effectif.
+197|Pour l'instant, l'expérience compte davantage.
+198|Quels sont les objectifs de l'équipe pour le prochain tournoi ?
+199|Seule la victoire compte !
+200|Nous prenons match après match.
+201|Nous sommes outsiders, sans pression.
+202|Comment jugez-vous la condition physique des joueurs ?
+203|Tout va bien, l'équipe est prête.
+204|Il y a de la fatigue, nous ferons tourner.
+205|Les clubs surchargent les joueurs.
+206|La rumeur dit que vous partez pour une autre sélection. Est-ce vrai ?
+207|Je suis entièrement concentré sur cette équipe.
+208|Il ne faut jamais dire jamais.
+209|Pas de commentaire.
+210|Vous avez déjà parlé à ce joueur lors de cette fenêtre.
+211|Le joueur est flatté mais risque de se relâcher.
+212|Les éloges ont motivé le joueur.
+213|Le joueur vous remercie mais sait qu'il peut faire mieux.
+214|Le joueur a mal pris la critique.
+215|Le joueur relève le défi et veut vous prouver que vous avez tort !
+216|Le joueur a écouté les remarques avec calme.
+217|Le joueur est ravi de la promesse d'être titulaire au prochain match. Ne le décevez pas !
+218|La concurrence a stimulé le joueur.
+219|Le joueur s'inquiète pour sa place.
+220|Le joueur apprécie de pouvoir souffler.
+221|{0} Moral {1}{2}.
+222|{0} a accepté de jouer pour la sélection !{1}
+223|(a refusé {0})
+224|{0} a refusé{1}.
+225|il a choisi {0}
+226|Centre d'entraînement
+227|Progression plus rapide des joueurs en stage
+228|Académie des jeunes
+229|Plus de jeunes talents, et plus doués
+230|Centre médical
+231|Récupération et soins des blessures plus rapides
+232|Cellule de recrutement
+233|Plus de recherches de joueurs par fenêtre
+234|Stade national
+235|Plus de recettes et de soutien des supporters
+236|Première victoire
+237|Gagnez votre premier match
+238|Forteresse
+239|Un match officiel sans encaisser de but
+240|Démonstration
+241|Gagnez avec 5 buts d'écart ou plus
+242|Tombeur de géants
+243|Battez un adversaire bien plus fort
+244|Triplé
+245|Un joueur de la sélection marque 3 buts en un match
+246|Qualifié
+247|Qualifiez-vous pour une phase finale
+248|Dans le dernier carré
+249|Atteignez la demi-finale d'un tournoi
+250|Au-delà des attentes
+251|Dépassez l'objectif de la fédération
+252|Premier trophée
+253|Remportez n'importe quel tournoi
+254|Champion continental
+255|Remportez le championnat continental
+256|Champion du monde
+257|Remportez la Coupe du monde
+258|Série
+259|10 victoires d'affilée
+260|Demi-centaine
+261|50 victoires en poste
+262|Nouveau défi
+263|Prenez en main une autre sélection
+264|Bâtisseur
+265|Toutes les infrastructures au niveau 3
+266|Belle trouvaille
+267|Convoquez un joueur binational
+268|Succès
+269|UEFA (Europe)
+270|CONMEBOL (Amérique du Sud)
+271|CONCACAF (Amérique du Nord et centrale)
+272|CAF (Afrique)
+273|AFC (Asie)
+274|OFC (Océanie)
+275|G
+276|DC
+277|DG
+278|DD
+279|MDC
+280|MC
+281|MOC
+282|MG
+283|MD
+284|AG
+285|AD
+286|BU
+287|Il pleut, la pelouse est glissante.
+288|Chaleur — ce sera dur pour les joueurs.
+289|Il neige.
+290|Vent fort.
+291|dégagé
+292|nuageux
+293|pluie
+294|chaleur
+295|neige
+296|vent
+297|MT1
+298|Coup d'envoi ! Le match commence.
+299|L'arbitre lance la partie.
+300|C'est parti !
+301|Hors-jeu — l'attaque de {0} est stoppée.
+302|Le drapeau se lève — hors-jeu.
+303|{0} est blessé et ne peut pas continuer.
+304|Temps additionnel : {0} min.
+305|Mi-temps. Score : {0}.
+306|MT2
+307|Pause avant la prolongation.
+308|PROL
+309|Égalité au cumul ({0}:{1}) — prolongation !
+310|Égalité à la fin du temps réglementaire — prolongation !
+311|Le ballon est au fond, mais après vérification VAR le but de {0} est refusé
+312|hors-jeu
+313|faute en attaque
+314|main
+315|sur penalty
+316|sur coup franc direct
+317|sur coup franc, en pleine lucarne
+318|sur coup franc, par-dessus le mur
+319|de la tête
+320|de la tête sur un centre
+321|à ras de terre, dans le coin
+322|sur la barre et dedans
+323|depuis l'entrée de la surface
+324|après un rush rapide
+325|sur le rebond
+326|d'une frappe précise à bout portant
+327|d'une puissante frappe du gauche
+328|dans le coin opposé
+329|BUT ! {0} ({1}) marque {2}{3} ! {4}
+330|Passe décisive
+331|{0} tire le penalty — {1} l'arrête !
+332|gardien
+333|Coup franc de {0} — {1} sort et capte le ballon.
+334|{0} frappe, mais {1} est bien placé.
+335|Superbe arrêt ! {0} détourne la frappe de {1}.
+336|{0} frappe au but — le gardien capte.
+337|Corner pour l'attaque. {0} le tire.
+338|{0} manque son penalty !
+339|{0} tire le coup franc — le ballon heurte le mur.
+340|{0} frappe à côté.
+341|au-dessus de la barre !
+342|Un défenseur contre la frappe de {0}.
+343|Danger ! {0} manque de peu.
+344|{0} tente sa chance de loin — à côté.
+345|Faute : {0} ({1}) commet une faute.
+346|Faute dans la surface ! {0} fait tomber son adversaire — penalty !
+347|Faute à l'entrée de la surface : {0} fait tomber son adversaire. Coup franc dangereux !
+348|Rouge direct ! {0} est expulsé pour un tacle dangereux.
+349|Deuxième jaune — {0} est expulsé !
+350|Carton jaune
+351|Changement chez {0} : {1} remplace {2}.
+352|Séance de tirs au but !
+353|marque
+354|manque
+355|Coup de sifflet final ! {0} {1}
+356|(t.a.b. {0})
+357|(a.p.)
+358|cumul {0}
+359|Annuler
+360|Retour
+361|Accueil
+362|Effectif
+363|Tactique
+364|Tournois
+365|Courrier
+366|Statistiques
+367|Jeunes
+368|Entraînement
+369|Fédération
+370|Paramètres
+371|National
+372|Football Manager
+373|Plus
+374|Langue
+375|Chargement impossible
+376|cette sauvegarde provient d'une ancienne version (v{0}). La version 3 a refondu les tournois (barrages, phases à élimination directe en aller-retour, Ligues des nations avec promotions et relégations) ainsi que les noms et données des joueurs — les anciennes sauvegardes ne sont pas compatibles. Commencez une nouvelle partie.
+377|Prenez en main une sélection et menez-la vers la gloire
+378|Nouvelle partie
+379|Charger une partie
+380|Comment jouer
+381|210 sélections · 6 confédérations · qualifications, Ligues des nations, tournois continentaux et Coupe du monde.
+382|Tous les noms et clubs sont fictifs.
+383|Vous êtes le sélectionneur. Appuyez sur
+384|« Continuer »
+385|pour avancer dans le calendrier : fenêtres internationales (mars, juin, septembre, octobre, novembre), qualifications, Ligues des nations et phases finales.
+386|Liste
+387|avant chaque fenêtre, choisissez de 18 à 23 joueurs.
+388|faites glisser ou touchez les joueurs sur le terrain pour les permuter ; une seconde pression ouvre les consignes individuelles.
+389|Match
+390|suivez les actions, modifiez la tactique et effectuez des changements en direct. Mettez en pause à tout moment.
+391|surveillez la confiance. Si elle chute trop, vous serez limogé. Les succès apportent du budget pour les infrastructures et des offres d'autres sélections.
+392|Compris
+393|Votre nom
+394|Nom du sélectionneur
+395|Choisissez une confédération
+396|Changer
+397|Force {0}
+398|Favori : on n'attend que des victoires et des titres.
+399|Équipe forte : la qualification aux phases finales est obligatoire.
+400|Équipe moyenne : chaque qualification est un succès.
+401|Outsider : peu de pression, chaque victoire est une fête.
+402|Emplacement de sauvegarde
+403|Emplacement {0}{1}
+404|(occupé)
+405|Prendre la sélection
+406|Création du monde : 210 sélections, ~5000 joueurs…
+407|Menu principal
+408|Continuer
+409|Aucun match à venir. Organisez un amical dans « Compétitions ».
+410|Match aujourd'hui
+411|dans {0} jours
+412|terrain neutre
+413|à domicile
+414|à l'extérieur
+415|Confiance de la fédération
+416|Pression médiatique
+417|Supporters
+418|Budget
+419|V
+420|N
+421|D
+422|Convoqués
+423|Effectif / Liste
+424|Compétitions
+425|Calendrier de la sélection
+426|Aucun match prévu
+427|t.a.b. {0}
+428|a.p.
+429|cumul {0}
+430|Simulation…
+431|Jour de match !
+432|Fenêtre internationale — vérifiez la liste
+433|Tirage au sort — nouveau message
+434|Bonne année !
+435|Tournoi terminé — consultez le courrier
+436|Aucun message
+437|Accepter l'offre
+438|Refuser
+439|Tenter de le convaincre
+440|Renoncer
+441|Soutenir la demande (−10 de budget)
+442|Refuser
+443|Choisir une nouvelle sélection
+444|Fermer
+445|Vous dirigez désormais {0}
+446|La fédération vous a limogé
+447|Mais vous ne resterez pas sans travail. Choisissez l'une des offres
+448|Chercher d'autres joueurs
+449|Retraités
+450|Cellule de recrutement · niveau {0}
+451|Les recruteurs cherchent des joueurs éligibles pour la sélection, y compris des binationaux (🛂). Recherches restantes pour cette fenêtre
+452|Joueurs trouvés
+453|{0} ans
+454|aussi {0} {1}
+455|Inviter
+456|Personne pour l'instant. Lancez une recherche.
+457|retraité en {0}
+458|{0} sél. · {1} buts
+459|Personne n'a encore pris sa retraite
+460|(18–23 requis) · G {0} · DÉF {1} · MIL {2} · ATT {3}
+461|Liste automatique
+462|Tous
+463|DÉF
+464|MIL
+465|ATT
+466|{0} j
+467|{0} ans · {1} · {2} sél., {3} buts
+468|F {0}
+469|M {0}
+470|23 joueurs maximum
+471|Liste établie
+472|Joueurs trouvés
+473|Plus de recherches disponibles
+474|L'historique apparaîtra dans quelques mois.
+475|meilleur #{0} · pire
+476|Pas assez de matchs pour un graphique
+477|énorme
+478|élevé
+479|peut progresser
+480|à son apogée
+481|sensible
+482|équilibré
+483|ambitieux
+484|{0} cm
+485|gaucher
+486|droitier
+487|ambidextre
+488|pied
+489|(D2)
+490|naturalisé (né en {0})
+491|En club : {0} · buts cette saison
+492|en grande forme
+493|en méforme
+494|régulier
+495|Potentiel
+496|Caractère
+497|Forme
+498|Moral
+499|Condition
+500|Blessure : {0} jours
+501|Suspension : {0} match(s)
+502|Cartons jaunes (cumul)
+503|Matchs
+504|Buts
+505|Passes décisives
+506|Clean sheets
+507|Note moyenne
+508|Historique des notes sous vos ordres (points jaunes — buts)
+509|Parler au joueur
+510|Féliciter
+511|Critiquer
+512|Promettre une titularisation
+513|Avertir de la concurrence
+514|Le laisser souffler
+515|Sélections de jeunes
+516|Résultats
+517|Les moins de 21 ans jouent pour les Espoirs (Euro Espoirs et ses qualifications à l'UEFA), les moins de 23 ans pour les qualifications olympiques et les Jeux (plus trois joueurs de plus de 23 ans). Les matchs des jeunes sont simulés automatiquement ; la force est la moyenne des 11 meilleurs disponibles. L'académie (niveau {0}) révèle de nouveaux joueurs chaque année.
+518|{0} ans · {1} · potentiel
+519|matchs chez les jeunes {0}
+520|Dans l'équipe A
+521|Convoquer
+522|Aucun joueur de moins de 23 ans
+523|Les U17 (15–17 ans) disputent les qualifications et la Coupe du monde U17 annuelle. À 18 ans, les plus prometteurs rejoignent l'équipe A ; les autres sont libérés. Les meilleurs juniors peuvent aussi jouer en U20.
+524|Espoirs AMI
+525|(t. {0})
+526|Pas encore de matchs
+527|Victoire
+528|Terminé
+529|Phase finale
+530|Phase de groupes
+531|Pas encore de tournois
+532|{0}Chapeau {1}
+533|Phase principale
+534|Groupes à démarrage tardif
+535|Les chapeaux sont établis selon le classement FIFA.{0}{1}
+536|Le pays hôte ({0}) est déjà placé dans le groupe A.
+537|Restriction : au plus 2 équipes de l'UEFA et 1 de chaque autre confédération par groupe.
+538|Le tirage va commencer…
+539|Tout afficher
+540|Terminé
+541|Chapeaux
+542|Bus garé
+543|Équilibre
+544|Tout pour l'attaque
+545|Bas
+546|Moyen
+547|Haut
+548|Lent
+549|Normal
+550|Rapide
+551|Mixte
+552|Jeu court
+553|Ballons longs
+554|Contre-attaque
+555|Standard
+556|Se projeter davantage
+557|Tenir sa position
+558|Liberté de mouvement
+559|Marquage individuel
+560|Orientation
+561|Pressing
+562|Rythme
+563|Style
+564|Composition automatique
+565|Faites glisser un joueur sur un autre ou touchez deux joueurs à la suite pour les permuter. Une seconde pression ouvre la consigne individuelle. Bordure rouge — hors poste / indisponible.
+566|Remplaçants
+567|Convoquez plus de joueurs
+568|Consignes d'équipe
+569|Meilleure composition choisie
+570|Consigne individuelle
+571|Fiche du joueur
+572|Équilibré
+573|Un peu de tout
+574|Attaque et technique
+575|Défense et physique
+576|Préparation physique
+577|Physique et vitesse
+578|Technique et passes
+579|Passes et technique
+580|Cohésion : gain de forme
+581|Gardiens
+582|Entraînement spécifique des gardiens
+583|Récupération
+584|Condition et moral, sans progression
+585|Thème du stage
+586|L'entraînement a lieu au début de chaque fenêtre pour les joueurs convoqués. Centre d'entraînement : niveau {0}.
+587|Intensité
+588|Légère
+589|Normale
+590|Élevée (risque de blessure)
+591|Condition des convoqués
+592|{0} Si elle tombe à 12 %, vous serez limogé.
+593|La fédération est ravie de votre travail.
+594|La fédération est satisfaite.
+595|La fédération s'inquiète des résultats.
+596|Votre poste est menacé !
+597|Objectifs
+598|Objectif
+599|Aucun tournoi en cours
+600|Infrastructures · budget
+601|Le budget augmente avec les victoires, les qualifications et les titres.
+602|Carrière
+603|depuis {0}
+604|Infrastructure améliorée !
+605|Ligue {0}
+606|lors de la prochaine édition
+607|Les vainqueurs de groupe montent, les derniers descendent{0}.
+608|les 3es des ligues A/B et les 2es des ligues B/C disputent des barrages aller-retour pour une place dans la ligue
+609|Organiser un amical
+610|Terminé{0}
+611|vainqueur {0}
+612|Aucun tournoi n'a encore commencé
+613|À venir
+614|Palmarès
+615|Vide pour l'instant
+616|Classements
+617|Buteurs
+618|Classement
+619|Équipe
+620|J
+621|Diff
+622|Pts
+623|Places : {0}. Marque verte — actuellement en position qualificative (les meilleurs parmi des équipes de même rang sont comparés aux points par match).
+624|Les {0} premiers de chaque groupe et les {1} meilleurs troisièmes accèdent à la phase finale.
+625|t.a.b. {0}
+626|Vainqueur
+627|Seulement nos matchs
+628|Joueur
+629|Équipe
+630|B
+631|PD
+632|Pas encore de buts
+633|Aller
+634|Retour
+635|Aucune date libre lors des prochaines fenêtres
+636|Date (dates internationales libres)
+637|Adversaire
+638|Jouer à domicile
+639|Programmer
+640|Match programmé
+641|L'adversaire est déjà pris à cette date
+642|Joueurs
+643|Records
+644|Classement
+645|Trophées
+646|Inclure les retraités
+647|J — total des sélections, M — matchs sous vos ordres, Nt — note moyenne sous vos ordres. Touchez l'en-tête pour trier.
+648|Âge
+649|For
+650|M
+651|CS
+652|Nt
+653|(ret.)
+654|Matchs au total : {0}. Touchez un match pour les détails (actions, statistiques, notes).
+655|Historique des buteurs
+656|Disponible à la fin du cycle de quatre ans
+657|Records de la sélection (sous vos ordres)
+658|Plus large victoire
+659|Plus lourde défaite
+660|Série de victoires
+661|Série d'invincibilité
+662|Clean sheets
+663|Bilan du sélectionneur
+664|buts {0}
+665|% de victoires
+666|Records des joueurs
+667|Meilleur buteur
+668|Plus de sélections
+669|Plus de passes décisives
+670|Clean sheets (gardien)
+671|Meilleure note moyenne (5+ matchs)
+672|Meilleure note sur un match
+673|Classement FIFA · {0} {1} : #{2} ({3} points) {4}
+674|Formule SUM : P = Pavant + I·(W − We), We = 1/(10^(−dr/600)+1). I : amical 10, LN (groupes) 15, phase finale de la LN et qualifications 25, phase de groupes des tournois continentaux 35 / élimination directe 40, Coupe du monde 50 / 60. Victoire aux tirs au but — 0,75, défaite — 0,5. En phase à élimination directe des tournois finaux, on ne perd pas de points. Mis à jour chaque mois ; les flèches indiquent l'évolution par rapport au mois précédent.
+675|Monde
+676|Points
+677|Pas encore de trophées. Tout reste à faire !
+678|Succès
+679|spectateurs {0}
+680|Aucune action
+681|Possession
+682|Tirs
+683|Cadrés
+684|xG (buts attendus)
+685|Corners
+686|Fautes
+687|Cartons jaunes
+688|Cartons rouges
+689|Hors-jeu
+690|Notes des joueurs {0}
+691|meilleur
+692|Sauvegardes
+693|La partie est sauvegardée automatiquement dans l'emplacement actuel après chaque étape et chaque match.
+694|Emplacement {0} {1}
+695|(actuel)
+696|vide
+697|Sauvegarder
+698|Charger
+699|Exporter vers un fichier
+700|Importer
+701|Vitesse par défaut
+702|Seulement les actions clés dans le direct
+703|Retour au menu principal
+704|Jeu original de gestion d'équipes nationales. Tous les noms, clubs et données sont fictifs.
+705|Emplacement {0}
+706|Partie chargée
+707|Emplacement vide
+708|Échec du chargement
+709|Sauvegardé dans l'emplacement {0}
+710|Supprimer la sauvegarde de l'emplacement {0} ?
+711|Importé
+712|Avant-match
+713|Elo {0}
+714|à domicile
+715|à l'extérieur
+716|Rapport de l'observateur
+717|Système
+718|force moyenne du onze de départ
+719|Joueurs clés
+720|Confrontations sous vos ordres
+721|Notre composition
+722|Indisponibles
+723|La liste doit compter de 18 à 23 joueurs (actuellement {0}).
+724|Lancer le match
+725|Simulation rapide
+726|Premier de deux matchs (score cumulé)
+727|match retour : aller {0} ; en cas d'égalité au cumul — prolongation et tirs au but (sans but à l'extérieur)
+728|élimination directe : en cas d'égalité — prolongation et tirs au but
+729|stade de {0} places · {1} spectateurs attendus{2}
+730|à guichets fermés, fort soutien du public
+731|tribunes à moitié vides
+732|Pression
+733|Changements
+734|Simuler jusqu'à la fin
+735|Blessure ! Effectuez un changement
+736|Prolongation
+737|Mi-temps — vous pouvez modifier la tactique
+738|Fin
+739|Changements · reste {0}
+740|Choisissez un joueur sur le terrain (à gauche), puis un remplaçant (à droite).
+741|Aucun remplaçant
+742|Effectuer le changement
+743|Reprendre le match
+744|Choisissez les deux joueurs
+745|Changement impossible
+746|Tactique en match
+747|garder l'actuel
+748|Consignes individuelles
+749|Système modifié
+750|Résumé du match
+751|Victoire !
+752|Défaite
+753|Match nul
+754|Qualifiés au score cumulé !
+755|Éliminés au score cumulé.
+756|Aucun but
+757|Conférence de presse · {0} · question {1}
+758|Conférence de presse terminée
+759|UEFA
+760|CONMEBOL
+761|CONCACAF
+762|CAF
+763|AFC
+764|OFC
+765|Championnat d'Europe
+766|Championnat d'Amérique du Sud
+767|Championnat de la CONCACAF
+768|Coupe d'Afrique des nations
+769|Coupe d'Asie
+770|Championnat d'Océanie
+771|Qualif. U{0}
+772|Qualifications pour la Coupe du monde U17 {0}
+773|Coupe du monde U17 {0}
+774|Qualifications
+775|Euro U19
+776|Coupe du monde U20 {0}
+777|Qualifications pour l'Euro Espoirs {0}
+778|Qualif. Espoirs
+779|Euro Espoirs {0}
+780|Coupe d'Asie U23
+781|CAN U23
+782|Tournoi préolympique U23 de la CONMEBOL
+783|Tournoi préolympique U23 de la CONCACAF
+784|Tournoi préolympique U23 de l'OFC
+785|Barrages olympiques {0}
+786|B-U23
+787|Barrages
+788|Tournoi olympique de football {0}
+789|Coupe arabe {0}
+790|CAR
+791|Coupe du Golfe {0}
+792|GOLFE
+793|Championnat d'Asie du Sud {0}
+794|SAFF
+795|Championnat d'Asie du Sud-Est {0}
+796|ASEAN
+797|Coupe du Roi {0}
+798|CR
+799|Coupe des champions continentaux {0}
+800|CCC
+801|Championnat d'Afrique des nations (joueurs locaux) {0}
+802|CHAN
+803|Coupe d'Asie de l'Est {0}
+804|CAE
+805|Promotion des U17
+806|Passent des U17 à l'équipe A
+807|a marqué {0} buts ce mois-ci — en grande forme.
+808|{0} joue peu à {1} ; sa forme décline.
+809|série de clean sheets avec {0}.
+810|{0} s'est blessé avec {1} — absent environ {2} jours.
+811|Transfert : {0} quitte {1} pour {2}{3}{4}
+812|D2
+813|un pas en avant.
+814|en quête de temps de jeu.
+815|Nouvelles des clubs
+816|Presse
+817|Les journaux réclament du changement
+818|La mauvaise série a déclenché une vague de critiques. Les journalistes évoquent un possible limogeage du sélectionneur. Pression médiatique : {0} %. La fédération sera plus exigeante sur les résultats.
+819|La presse est avec nous
+820|Les journalistes saluent le travail du staff.
+821|Les supporters sont mécontents
+822|Les supporters sifflent l'équipe et l'affluence baisse à domicile.
+823|Tout le pays est derrière la sélection !
+824|Les billets pour les matchs à domicile partent en quelques minutes.
+825|Double nationalité
+826|{0} ({1} ans, {2}, {3}, force {4}, potentiel {5}) peut jouer pour notre sélection comme pour {6} {7}. Il n'a pas encore choisi. Essayons-nous de le convaincre ?
+827|Demande de naturalisation
+828|{0} ({1} ans, {2}, force {3}) — originaire de {4}, joue depuis cinq ans pour {5} et souhaite obtenir un passeport pour jouer avec notre sélection. Soutenir la demande coûte 10 unités de budget ; une partie des supporters pourrait mal le prendre.
+829|{0} a choisi notre sélection ! Il a été intégré à l'effectif.
+830|Après réflexion, {0} a choisi {1}.
+831|{0} jouera pour {1}.
+832|Budget insuffisant (10 requis).
+833|{0} a obtenu son passeport et peut désormais être convoqué.
+834|Demande refusée.
+c_ENG|Angleterre
+c_SCO|Écosse
+c_WAL|Pays de Galles
+c_NIR|Irlande du Nord
+c_CD|RD Congo
+c_CG|Congo

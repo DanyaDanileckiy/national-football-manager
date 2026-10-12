@@ -1,5 +1,5 @@
 // Проверка форматов: node test/fmt.js — один цикл, двойные даты, состав ЧМ, Лиги наций
-require('../js/data.js');require('../js/names.js');require('../js/core.js');require('../js/comps.js');require('../js/world.js');require('../js/match.js');
+require('../js/i18n.js');require('../js/data.js');require('../js/names.js');require('../js/core.js');require('../js/comps.js');require('../js/world.js');require('../js/match.js');
 const N=NFM; const S=N.newGame(process.argv[2]||'FR','Т'); N.setS(S); const snaps={};
 const _ce=N.evCycle; let fixAll=[]; N.evCycle=(e)=>{ snaps.C=JSON.parse(JSON.stringify(S.C)); snaps.F=S.F.slice(); snaps.nl=JSON.parse(JSON.stringify(S.nl)); _ce(e); };
 let r; do{ r=N.advance({autoUser:true,until:'2030-08-02'}); }while(r.stop!=='until'&&r.stop!=='end'&&r.stop!=='guard');

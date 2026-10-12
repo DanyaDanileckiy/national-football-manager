@@ -10,9 +10,9 @@ const pad=n=>(n<10?'0':'')+n;
 N.ds=(y,m,d)=>{const t=new Date(Date.UTC(y,m-1,d));return t.getUTCFullYear()+'-'+pad(t.getUTCMonth()+1)+'-'+pad(t.getUTCDate())};
 N.addD=(s,n)=>{const [y,m,d]=s.split('-').map(Number);return N.ds(y,m,d+n)};
 N.diffD=(a,b)=>Math.round((Date.parse(b)-Date.parse(a))/864e5);
-const MON=['января','февраля','марта','апреля','мая','июня','июля','августа','сентября','октября','ноября','декабря'];
-const WDAY=['вс','пн','вт','ср','чт','пт','сб'];
-N.fmtD=(s,short)=>{const [y,m,d]=s.split('-').map(Number);const w=new Date(Date.UTC(y,m-1,d)).getUTCDay();return short?(d+' '+MON[m-1].slice(0,3)+' '+y):(WDAY[w]+', '+d+' '+MON[m-1]+' '+y)};
+const MON=[_t("января"),_t("февраля"),_t("марта"),_t("апреля"),_t("мая"),_t("июня"),_t("июля"),_t("августа"),_t("сентября"),_t("октября"),_t("ноября"),_t("декабря")];
+const WDAY=[_t("вс"),_t("пн"),_t("вт"),_t("ср"),_t("чт"),_t("пт"),_t("сб")];
+N.fmtD=(s,short)=>{const [y,m,d]=s.split('-').map(Number);if(NFM_I18N.lang!=='ru')return NFM_I18N.date(y,m,d,short);const w=new Date(Date.UTC(y,m-1,d)).getUTCDay();return short?(d+' '+MON[m-1].slice(0,3)+' '+y):(WDAY[w]+', '+d+' '+MON[m-1]+' '+y)};
 const WIN={3:[20,24],6:[5,9],9:[4,8],10:[9,13],11:[13,17]};
 N.WIN=WIN;
 const wd=(list)=>list.flatMap(([y,m])=>WIN[m].map(d=>N.ds(y,m,d)));
@@ -23,7 +23,7 @@ const RW={GK:{gk:.82,phy:.08,pas:.05,spd:.05},CB:{def:.5,phy:.25,spd:.1,pas:.1,t
  LW:{att:.35,spd:.3,tec:.25,pas:.1},RW:{att:.35,spd:.3,tec:.25,pas:.1},ST:{att:.55,phy:.15,spd:.15,tec:.15}};
 const COMPAT={CB:{LB:.9,RB:.9,DM:.85},LB:{RB:.94,LM:.9,CB:.85},RB:{LB:.94,RM:.9,CB:.85},DM:{CM:.96,CB:.85},CM:{DM:.94,AM:.93},AM:{CM:.93,ST:.88,LW:.88,RW:.88},LM:{RM:.93,LW:.93,LB:.85,AM:.86},RM:{LM:.93,RW:.93,RB:.85,AM:.86},LW:{RW:.95,LM:.93,ST:.88},RW:{LW:.95,RM:.93,ST:.88},ST:{LW:.88,RW:.88,AM:.88}};
 N.ATTRS=['att','def','pas','tec','phy','spd','gk'];
-N.ATTRN={att:'Атака',def:'Оборона',pas:'Пас',tec:'Техника',phy:'Физика',spd:'Скорость',gk:'Вратарь'};
+N.ATTRN={att:_t("Атака"),def:_t("Оборона"),pas:_t("Пас"),tec:_t("Техника"),phy:_t("Физика"),spd:_t("Скорость"),gk:_t("Вратарь")};
 function raw(p,role){const w=RW[role];let s=0;for(const k in w)s+=w[k]*(p[k]||0);return s}
 N.compat=(pos,role)=>{ if(pos===role)return 1; if(pos==='GK'||role==='GK')return .35; const c=COMPAT[pos]&&COMPAT[pos][role]; if(c)return c; const g1=N.POS[pos][1],g2=N.POS[role][1]; if(g1===g2)return .82; if((g1+g2).match(/DF|FD/))return .55; return .7; };
 N.roleOvr=(p,role)=>{ if(!p||!p.att&&!p.gk)return 30; return raw(p,role)*(0.7+0.3*N.compat(p.pos,role)); };
@@ -97,17 +97,17 @@ N.autoLineup=(players,form)=>{ const F=N.FORMS[form]; const used=new Set(); cons
  return {form,xi,bench}; };
 // ---------- новая игра ----------
 N.newGame=(team,coach)=>{
- const S={v:4,clubs:{},nl:{},d:'2026-08-01',me:team,coach:coach||'Тренер',nid:1,nfid:1,P:{},T:{},C:{},F:[],E:[],arch:[],
+ const S={v:4,clubs:{},nl:{},d:'2026-08-01',me:team,coach:coach||_t("Тренер"),nid:1,nfid:1,P:{},T:{},C:{},F:[],E:[],arch:[],
   u:{trust:55,call:[],xi:null,tac:{ment:0,press:1,tempo:1,width:1,style:'mix'},instr:{},train:{f:'bal',i:1},infra:{base:1,acad:1,med:1,scout:1,stad:1},bud:30,scoutLeft:1,mail:[],tro:[],ach:{},stat:{w:0,d:0,l:0,gf:0,ga:0},u21:{res:[]},teams:[{c:team,from:'2026-08-01'}],found:[],press:null,win:0,expect:{}},log:[]};
  SS=S; for(const t of N.TEAMS){ S.T[t.c]={...t,elo:Math.round(1000+(t.r-40)*20+gauss()*25),form:pick(['4-3-3','4-2-3-1','4-4-2','4-3-3','4-2-3-1','3-5-2','4-1-4-1','5-3-2']),pl:[]}; }
  N.seedPts(S); for(const c in S.T) N.genPool(c, c===team?40:23); S.u.prs=30; S.u.fan=60; S.u.yres=[]; N.y17Fill();
  for(const c in S.T) N.teamStr(c);
- S.C.FR={id:'FR',n:'Товарищеские матчи',sh:'ТМ',kind:'fr',groups:[],stage:'groups'};
+ S.C.FR={id:'FR',n:_t("Товарищеские матчи"),sh:_t("ТМ"),kind:'fr',groups:[],stage:'groups'};
  N.buildCycle(2026);
- N.addEv('2027-01-01','year'); N.autoCall(); N.mail('Федерация футбола','Добро пожаловать!','Уважаемый '+S.coach+', федерация рада приветствовать вас на посту главного тренера сборной '+S.T[team].n+'. Мы ждём от вас достойных результатов. Ваш первый вызов уже сформирован — проверьте состав перед ближайшим окном.');
+ N.addEv('2027-01-01','year'); N.autoCall(); N.mail(_t("Федерация футбола"),_t("Добро пожаловать!"),_t("Уважаемый {0}, федерация рада приветствовать вас на посту главного тренера сборной {1}. Мы ждём от вас достойных результатов. Ваш первый вызов уже сформирован — проверьте состав перед ближайшим окном.",(S.coach),(S.T[team].n)));
  N.runEvents(S.d); S._stop=null; return S; };
 N.addEv=(d,t,x)=>{SS.E.push({d,t,...x})};
-N.mail=(from,sub,body,act)=>{SS.u.mail.unshift({d:SS.d,from,sub,body,act,rd:0}); if(SS.u.mail.length>80)SS.u.mail.length=80;};
+N.mail=(from,sub,body,act)=>{const K=NFM_I18N.keyOf;SS.u.mail.unshift({d:SS.d,from,sub,body,act,rd:0,fk:K(from),sk:K(sub),bk:K(body)}); if(SS.u.mail.length>80)SS.u.mail.length=80;};
 // турниры — см. js/comps.js
 N.trust=(d)=>{ SS.u.trust=Math.round(cl(SS.u.trust+d,0,100)); };
 N.checkJob=(big)=>{ const S=SS; if(S.u.trust<=12){ S.u.fired=1; N.offers(true); S._stop='fired'; return; }
@@ -115,13 +115,13 @@ N.checkJob=(big)=>{ const S=SS; if(S.u.trust<=12){ S.u.fired=1; N.offers(true); 
 N.offers=(fired)=>{ const S=SS; const my=S.T[S.me]; const all=Object.values(S.T).filter(t=>t.c!==S.me).sort((a,b)=>b.elo-a.elo);
  const ref=my.elo+(fired?-150:120)+ (S.u.trust-60)*3; let c=all.filter(t=>Math.abs(t.elo-ref)<160); if(c.length<3)c=all.filter(t=>Math.abs(t.elo-ref)<320);
  shuffle(c); const off=c.slice(0,fired?3:ri(1,2)).map(t=>t.c);
- if(fired){ N.mail('Федерация футбола','Вы уволены','К сожалению, федерация потеряла доверие к вашей работе и приняла решение расторгнуть контракт. Однако вашей кандидатурой заинтересовались другие федерации — выберите новую команду.',{type:'fired',off}); }
- else off.forEach(t=>N.mail('Федерация '+S.T[t].n,'Предложение о работе','Федерация футбола '+S.T[t].f+' '+S.T[t].n+' предлагает вам возглавить национальную сборную. Сила команды: '+N.starsHtml(N.stars(S.T[t]))+'.',{type:'offer',t})); };
+ if(fired){ N.mail(_t("Федерация футбола"),_t("Вы уволены"),_t("К сожалению, федерация потеряла доверие к вашей работе и приняла решение расторгнуть контракт. Однако вашей кандидатурой заинтересовались другие федерации — выберите новую команду."),{type:'fired',off}); }
+ else off.forEach(t=>N.mail(_t("Федерация {0}",(S.T[t].n)),_t("Предложение о работе"),`${_t("Федерация футбола {0} {1} предлагает вам возглавить национальную сборную. Сила команды",(S.T[t].f),(S.T[t].n))}: ${(N.starsHtml(N.stars(S.T[t])))}.`,{type:'offer',t})); };
 N.takeJob=(t)=>{ const S=SS; const old=S.me; S.me=t; S.u.fired=0; S.u.trust=55; S.u.call=[]; S.u.xi=null; S.u.instr={}; S.u.found=[];
  const tm=S.T[t]; const need=40-tm.pl.length; for(let i=0;i<need;i++){ const pos=SQ[i%SQ.length]; tm.pl.push(N.genPlayer(t,pos,Math.round(tm.r-8+gauss()*4),ri(18,26),{caps:ri(0,5)}).id); }
  for(const id of tm.pl) S.P[id].rh=S.P[id].rh||[];
  S.u.teams.push({c:t,from:S.d}); N.autoCall(); for(const c of Object.values(S.C)) if(c.stage!=='done'&&(c.teams||[]).includes(t)) N.setExpect(c);
- N.mail('Федерация футбола','Новая работа','Вы возглавили сборную '+tm.f+' '+tm.n+'. Удачи! Сформируйте вызов на ближайшее окно.'); N.ach('job'); };
+ N.mail(_t("Федерация футбола"),_t("Новая работа"),_t("Вы возглавили сборную {0} {1}. Удачи! Сформируйте вызов на ближайшее окно.",(tm.f),(tm.n))); N.ach('job'); };
 // ---------- вызов и состав ----------
 N.pool=(c)=>(N.T(c).pl||[]).map(id=>SS.P[id]).filter(p=>p&&!p.ret);
 N.autoCall=()=>{ const S=SS; const ps=N.pool(S.me).filter(p=>!p.inj).sort((a,b)=>(b.o+b.form)-(a.o+a.form)); const call=[]; const need={G:3,D:8,M:8,F:4};
@@ -152,7 +152,7 @@ N.playFix=(f,m)=>{ // m — завершённый Match
   const w=m.winner===side?1:m.winner===-1?0:-1; p.mor=cl(p.mor+(w>0?4:w<0?-4:0)+(P.rt>=7.5?3:P.rt<5.5?-3:0),5,100);
   if(official){ if(P.rc){p.sus=c.kind==='final'?1:ri(1,2);p.yc=0;p._ns=1;} else if(P.yc){p.yc+=P.yc; const lim=c.kind==='final'?2:3; if(p.yc>=lim){p.sus=1;p.yc=0;}} }
   if(P.inj){ const med=p.t===S.me?(1-0.1*(S.u.infra.med-1)):1; const x=R(); p.inj=Math.max(2,Math.round((x<.55?ri(3,10):x<.88?ri(11,35):ri(36,120))*med)); }
-  if(p.t===S.me&&user){ p.rh.push([S.d,P.rt,c.sh||'ТМ',P.g,P.a]); if(p.rh.length>120)p.rh.shift(); }
+  if(p.t===S.me&&user){ p.rh.push([S.d,P.rt,c.sh||_t("ТМ"),P.g,P.a]); if(p.rh.length>120)p.rh.shift(); }
  }
  if(user){ r.det={st:m.st,ps:Object.entries(m.ps).map(([id,P])=>[+id,S.P[id]?S.P[id].n:'?',P.side,P.rt,P.g,P.a,P.min,P.role,P.yc,P.rc,P.inj?1:0,P.sv]),ev:m.ev.filter(e=>['goal','yc','rc','sub','inj','pk','var'].includes(e.t)).map(e=>[e.ml||e.m,e.t,e.side,e.txt])}; f.u=1; }
  f.r=r; N.eloUpd(f,r.hg,r.ag); N.fifaUpd(f);
@@ -164,7 +164,7 @@ N.afterUser=(f,m)=>{ const S=SS; const side=f.h===S.me?0:1; const my=m.score[sid
  const we=1/(1+Math.pow(10,-(me.elo-opp.elo+(f.neu?0:side?-80:80))/400)); const act=res==='w'?1:res==='d'?0.5:0; const K=c.kind==='fr'?1.5:c.kind==='final'?5:3.5;
  N.trust(Math.round(K*(act-we)+(res==='w'&&c.kind!=='fr'?0.6:0))); S.u.bud+= (res==='w'?4:res==='d'?2:1)+(f.h===S.me?S.u.infra.stad-1:0);
  // не игравшие вызванные
- for(const id of S.u.call){ const p=S.P[id]; if(!m.ps[id]&&p){ p.mor=cl(p.mor-(p.o>=me.str?3:1),5,100); p.form=+(p.form*0.9+6.2*0.1).toFixed(2);} if(p&&p.prom){ if(!m.ps[id]||m.ps[id].from>0){p.mor=cl(p.mor-20,5,100); N.mail(p.n,'Обещание нарушено','Тренер, вы обещали мне место в стартовом составе. Я разочарован.');} p.prom=0; } }
+ for(const id of S.u.call){ const p=S.P[id]; if(!m.ps[id]&&p){ p.mor=cl(p.mor-(p.o>=me.str?3:1),5,100); p.form=+(p.form*0.9+6.2*0.1).toFixed(2);} if(p&&p.prom){ if(!m.ps[id]||m.ps[id].from>0){p.mor=cl(p.mor-20,5,100); N.mail(p.n,_t("Обещание нарушено"),_t("Тренер, вы обещали мне место в стартовом составе. Я разочарован."));} p.prom=0; } }
  if(my-op>=5)N.ach('rout'); if(res==='w'&&opp.elo>me.elo+150)N.ach('giant'); if(op===0&&c.kind!=='fr')N.ach('clean');
  const ws=S.F.filter(x=>x.u&&x.r).slice(-10); if(ws.length>=10&&ws.every(x=>x.r.w? x.r.w===S.me : (x.h===S.me?x.r.hg>x.r.ag:x.r.ag>x.r.hg)))N.ach('streak');
  for(const id in m.ps){ const P=m.ps[id]; if(P.side===side&&P.g>=3)N.ach('hat'); }
@@ -192,26 +192,26 @@ N.evFr=(e)=>{ const S=SS; const d=e.d; const busy=new Set(); for(const f of S.F)
  for(const c of Object.values(S.C)) if(c.kind==='final'&&c.stage!=='pending'&&c.stage!=='done') c.teams.forEach(t=>busy.add(t));
  const idle=shuffle(Object.keys(S.T).filter(c=>!busy.has(c)&&c!==S.me&&R()<0.7));
  const byConf={}; idle.forEach(c=>{(byConf[S.T[c].conf]=byConf[S.T[c].conf]||[]).push(c)}); const left=[];
- for(const k in byConf){ const l=byConf[k]; while(l.length>=2){ if(R()<.2){left.push(l.pop());continue;} const a=l.pop(); l.sort((x,y)=>Math.abs(S.T[x].elo-S.T[a].elo)-Math.abs(S.T[y].elo-S.T[a].elo)); const b=l.splice(Math.min(l.length-1,ri(0,3)),1)[0]; N.addFix(d,'FR',a,b,'Товарищеский матч'); } left.push(...l); }
- shuffle(left); while(left.length>=2){ N.addFix(d,'FR',left.pop(),left.pop(),'Товарищеский матч'); } };
+ for(const k in byConf){ const l=byConf[k]; while(l.length>=2){ if(R()<.2){left.push(l.pop());continue;} const a=l.pop(); l.sort((x,y)=>Math.abs(S.T[x].elo-S.T[a].elo)-Math.abs(S.T[y].elo-S.T[a].elo)); const b=l.splice(Math.min(l.length-1,ri(0,3)),1)[0]; N.addFix(d,'FR',a,b,_t("Товарищеский матч")); } left.push(...l); }
+ shuffle(left); while(left.length>=2){ N.addFix(d,'FR',left.pop(),left.pop(),_t("Товарищеский матч")); } };
 N.freeDates=()=>{ const S=SS; const y=+S.d.slice(0,4); const out=[]; for(const yy of [y,y+1]) for(const d of N.windowDates(yy)) if(d>S.d&&!N.busy(S.me,d)) out.push(d);
  // нельзя во время финального турнира
  return out.slice(0,8); };
-N.schedFriendly=(d,opp,home)=>{ const S=SS; if(N.busy(S.me,d)||N.busy(opp,d))return false; N.addFix(d,'FR',home?S.me:opp,home?opp:S.me,'Товарищеский матч'); S.u.bud=Math.max(0,S.u.bud); return true; };
+N.schedFriendly=(d,opp,home)=>{ const S=SS; if(N.busy(S.me,d)||N.busy(opp,d))return false; N.addFix(d,'FR',home?S.me:opp,home?opp:S.me,_t("Товарищеский матч")); S.u.bud=Math.max(0,S.u.bud); return true; };
 // ---------- события ----------
 N.evYear=(e)=>{ const S=SS; const y=+e.d.slice(0,4); const me=S.me; const notes=[];
  for(const c in S.T){ const t=S.T[c]; const target= c===me?40:23; const keep=[];
   for(const id of t.pl){ const p=S.P[id]; if(!p||p.ret)continue; p.age++; N.develop(p,c===me); 
    const retire = (p.age>=34&&R()<0.3+(p.age-34)*0.2)||(p.age>=31&&p.o<t.r-12&&R()<.35)||p.age>=40;
-   if(retire){ if(c===me){p.ret=S.d.slice(0,4); if(p.caps>=20)notes.push(p.n+' ('+p.age+', '+p.caps+' матчей)');} else delete S.P[id]; continue; }
+   if(retire){ if(c===me){p.ret=S.d.slice(0,4); if(p.caps>=20)notes.push(`${(p.n)} (${(p.age)}, ${_t("{0} матчей)",(p.caps))}`);} else delete S.P[id]; continue; }
    if(R()<.12) N.assignClub(p,c); keep.push(id); }
   // слабейших отсеиваем из широкого списка ИИ
   let pl=keep; if(c!==me&&pl.length>target+3){ pl.sort((a,b)=>S.P[b].o-S.P[a].o); pl.slice(target+3).forEach(id=>delete S.P[id]); pl=pl.slice(0,target+3); }
   const acad=c===me?S.u.infra.acad:1; const nYouth=Math.max(c===me?2+acad:1,target-pl.length);
   const gks=pl.filter(id=>S.P[id].pos==='GK').length;
-  for(let i=0;i<nYouth;i++){ const pos= gks+i<3&&i===0?'GK':pick(SQ); const p=N.genPlayer(c,pos,Math.round(t.r-14+gauss()*4+(acad-1)),ri(17,19),{caps:0,potB:(acad-1)*3}); pl.push(p.id); if(c===me&&p.pot>=t.r)notes.push('🌱 '+p.n+' ('+N.POS[pos][0]+', потенциал '+p.pot+')'); }
+  for(let i=0;i<nYouth;i++){ const pos= gks+i<3&&i===0?'GK':pick(SQ); const p=N.genPlayer(c,pos,Math.round(t.r-14+gauss()*4+(acad-1)),ri(17,19),{caps:0,potB:(acad-1)*3}); pl.push(p.id); if(c===me&&p.pot>=t.r)notes.push(`🌱 ${(p.n)} (${(N.POS[pos][0])}, ${_t("потенциал {0})",(p.pot))}`); }
   t.pl=pl; N.teamStr(c); }
- N.mail('Федерация футбола','Новый '+y+' год','Игроки стали старше на год. '+(notes.length?'Изменения в пуле: '+notes.join('; ')+'.':'')+' Доверие федерации: '+S.u.trust+'%.'); 
+ N.mail(_t("Федерация футбола"),_t("Новый {0} год",(y)),`${_t("Игроки стали старше на год. {0} Доверие федерации",(notes.length?`${_t("Изменения в пуле")}: ${(notes.join('; '))}.`:''))}: ${(S.u.trust)}%.`); 
  if(S.u.trust>=75&&R()<.5) N.offers(false);
  N.addEv((y+1)+'-01-01','year'); S._stop='year'; };
 N.develop=(p,user)=>{ const a=p.age; let d; const base=user?(1+0.15*(SS.u.infra.base-1)):1;
@@ -222,13 +222,13 @@ N.develop=(p,user)=>{ const a=p.age; let d; const base=user?(1+0.15*(SS.u.infra.
 N.evWin=(e)=>{ const S=SS; S.u.win++; S.u.scoutLeft=S.u.infra.scout; const my=S.F.filter(f=>!f.r&&(f.h===S.me||f.a===S.me)&&N.diffD(S.d,f.d)<=12);
  // тренировка
  N.training(); N.u21Window();
- N.mail('Штаб сборной','Международное окно',(my.length?'В ближайшее окно у нас '+my.length+' матч(а): '+my.map(f=>N.fmtD(f.d,1)+' — '+S.T[f.h===S.me?f.a:f.h].n).join(', ')+'.':'В этом окне у нас нет официальных матчей — можно назначить товарищеские игры (Соревнования → Товарищеские).')+' Проверьте вызов (18–23 игрока) и состав.'); S._stop='win'; };
+ N.mail(_t("Штаб сборной"),_t("Международное окно"),_t("{0} Проверьте вызов (18–23 игрока) и состав.",(my.length?`${_t("В ближайшее окно у нас {0} матч(а)",(my.length))}: ${(my.map(f=>N.fmtD(f.d,1)+' — '+S.T[f.h===S.me?f.a:f.h].n).join(', '))}.`:_t("В этом окне у нас нет официальных матчей — можно назначить товарищеские игры (Соревнования → Товарищеские).")))); S._stop='win'; };
 N.training=()=>{ const S=SS; const t=S.u.train; const base=1+0.25*(S.u.infra.base-1); const int=[0.6,1,1.5][t.i];
  const map={att:['att','tec'],def:['def','phy'],phys:['phy','spd'],tec:['pas','tec'],bal:['att','def','pas','tec','phy','spd'],gk:['gk']};
  for(const id of S.u.call){ const p=S.P[id]; if(!p)continue; const ks=(map[t.f]||map.bal).filter(k=>p.pos==='GK'?['gk','phy','pas'].includes(k)||t.f==='gk':k!=='gk'); const young=p.age<=24?1.5:p.age>=31?0.5:1; 
   if(p.o<p.pot||p.age<=29){ for(const k of ks) if(R()<0.22*int*base*young/ks.length*2) p[k]=Math.min(99,p[k]+1); }
   if(t.f==='rest'){p.fit=100;p.mor=cl(p.mor+4,5,100);} if(t.f==='tac'){p.form=+cl(p.form+0.25,3,10).toFixed(2);}
-  if(t.i===2&&R()<0.03){p.inj=ri(3,14); N.mail('Медицинский штаб','Травма на тренировке',p.n+' травмировался на интенсивной тренировке и выбыл на '+p.inj+' дн.');}
+  if(t.i===2&&R()<0.03){p.inj=ri(3,14); N.mail(_t("Медицинский штаб"),_t("Травма на тренировке"),_t("{0} травмировался на интенсивной тренировке и выбыл на {1} дн.",(p.n),(p.inj)));}
   if(t.i===0)p.fit=Math.min(100,p.fit+10); N.upd(p); }
  N.teamStr(S.me); };
 N.u21Window=()=>{ const S=SS; const me=S.T[S.me]; const yng=N.pool(S.me).filter(p=>p.age<=21&&!S.u.call.includes(p.id)).sort((a,b)=>b.o-a.o).slice(0,11);
@@ -267,25 +267,25 @@ N.runEvents=(nd)=>{ const S=SS; const evs=S.E.filter(e=>e.d===nd); S.E=S.E.filte
 N.passDays=(n)=>{ if(n<=0)return; const S=SS; const rec=n*6*(1+0.1*(S.u.infra.med-1)); for(const id in S.P){ const p=S.P[id]; if(p.ret)continue; if(p.fit<100)p.fit=Math.min(100,p.fit+rec); if(p.inj>0)p.inj=Math.max(0,p.inj-n); if(n>20)p.form=+(p.form+(6.5-p.form)*0.15).toFixed(2); if(n>20&&p.mor!==65)p.mor=Math.round(p.mor+(65-p.mor)*0.1); } };
 // ---------- пресс-конференции ----------
 N.genPress=(res,c,opp,my,op)=>{ const Q=[];
- if(res==='w') Q.push({q:'Победа над '+opp.n+' со счётом '+my+':'+op+'. Ваши впечатления?',a:[['Горжусь ребятами — они выложились полностью.',{mor:4,tr:1}],['Мы можем играть ещё лучше, расслабляться рано.',{mor:-1,form:.2,tr:2}],['Это была моя тактическая победа.',{mor:-4,tr:2}]]});
- else if(res==='l') Q.push({q:'Поражение '+my+':'+op+' от '+opp.n+'. Кто виноват?',a:[['Ответственность целиком на мне.',{mor:3,tr:-1}],['Некоторые игроки сыграли ниже своего уровня.',{mor:-5,form:.2,tr:1}],['Судейство повлияло на результат.',{mor:1,tr:-2}]]});
- else Q.push({q:'Ничья '+my+':'+op+'. Довольны результатом?',a:[['Справедливый итог, двигаемся дальше.',{mor:1}],['Мы должны были побеждать.',{mor:-2,form:.15,tr:1}],['Соперник был очень хорош.',{mor:2,tr:-1}]]});
- Q.push(pick([{q:'Болельщики требуют больше молодёжи в составе. Ваш ответ?',a:[['Молодые получат шанс, когда заслужат.',{tr:1}],['Да, мы будем обновлять состав.',{mor:-2,tr:2,young:4}],['Опыт сейчас важнее.',{mor:2,tr:-1}]]},
-  {q:'Какие цели у команды на ближайший турнир?',a:[['Только победа!',{mor:3,tr:2,risk:1}],['Идём от матча к матчу.',{mor:1}],['Мы — аутсайдеры, давления нет.',{mor:-1,tr:-2}]]},
-  {q:'Как вы оцениваете физическое состояние игроков?',a:[['Все в порядке, команда готова.',{mor:2}],['Есть проблемы с усталостью, будем ротировать.',{tr:1}],['Клубы перегружают игроков.',{mor:3,tr:-2}]]},
-  {q:'Ходят слухи о вашем уходе в другую сборную. Это правда?',a:[['Я полностью сосредоточен на этой команде.',{tr:3,mor:1}],['Никогда не говори никогда.',{tr:-4}],['Без комментариев.',{tr:-1}]]}]));
+ if(res==='w') Q.push({q:_t("Победа над {0} со счётом {1}:{2}. Ваши впечатления?",(opp.n),(my),(op)),a:[[_t("Горжусь ребятами — они выложились полностью."),{mor:4,tr:1}],[_t("Мы можем играть ещё лучше, расслабляться рано."),{mor:-1,form:.2,tr:2}],[_t("Это была моя тактическая победа."),{mor:-4,tr:2}]]});
+ else if(res==='l') Q.push({q:_t("Поражение {0}:{1} от {2}. Кто виноват?",(my),(op),(opp.n)),a:[[_t("Ответственность целиком на мне."),{mor:3,tr:-1}],[_t("Некоторые игроки сыграли ниже своего уровня."),{mor:-5,form:.2,tr:1}],[_t("Судейство повлияло на результат."),{mor:1,tr:-2}]]});
+ else Q.push({q:_t("Ничья {0}:{1}. Довольны результатом?",(my),(op)),a:[[_t("Справедливый итог, двигаемся дальше."),{mor:1}],[_t("Мы должны были побеждать."),{mor:-2,form:.15,tr:1}],[_t("Соперник был очень хорош."),{mor:2,tr:-1}]]});
+ Q.push(pick([{q:_t("Болельщики требуют больше молодёжи в составе. Ваш ответ?"),a:[[_t("Молодые получат шанс, когда заслужат."),{tr:1}],[_t("Да, мы будем обновлять состав."),{mor:-2,tr:2,young:4}],[_t("Опыт сейчас важнее."),{mor:2,tr:-1}]]},
+  {q:_t("Какие цели у команды на ближайший турнир?"),a:[[_t("Только победа!"),{mor:3,tr:2,risk:1}],[_t("Идём от матча к матчу."),{mor:1}],[_t("Мы — аутсайдеры, давления нет."),{mor:-1,tr:-2}]]},
+  {q:_t("Как вы оцениваете физическое состояние игроков?"),a:[[_t("Все в порядке, команда готова."),{mor:2}],[_t("Есть проблемы с усталостью, будем ротировать."),{tr:1}],[_t("Клубы перегружают игроков."),{mor:3,tr:-2}]]},
+  {q:_t("Ходят слухи о вашем уходе в другую сборную. Это правда?"),a:[[_t("Я полностью сосредоточен на этой команде."),{tr:3,mor:1}],[_t("Никогда не говори никогда."),{tr:-4}],[_t("Без комментариев."),{tr:-1}]]}]));
  return {c:c.n,Q}; };
 N.applyPress=(eff)=>{ const S=SS; if(eff.tr)N.trust(eff.tr); for(const id of S.u.call){ const p=S.P[id]; if(!p)continue; if(eff.mor)p.mor=cl(p.mor+eff.mor+ri(-1,1),5,100); if(eff.form)p.form=+cl(p.form+eff.form*(p.pers===2?1.5:p.pers===0?0.5:1),3,10).toFixed(2); }
  if(eff.young) N.pool(S.me).filter(p=>p.age<=22).forEach(p=>p.mor=cl(p.mor+eff.young,5,100)); };
 // ---------- разговоры с игроками ----------
-N.talk=(p,kind)=>{ const S=SS; if(p.talk===S.u.win)return 'С этим игроком вы уже говорили в этом окне.'; p.talk=S.u.win; let d=0,msg='';
+N.talk=(p,kind)=>{ const S=SS; if(p.talk===S.u.win)return _t("С этим игроком вы уже говорили в этом окне."); p.talk=S.u.win; let d=0,msg='';
  const good=p.form>=6.8;
- if(kind==='praise'){ d=good?ri(5,9):ri(1,4); if(p.pers===2&&good&&R()<.4){p.form=+(p.form-0.2).toFixed(2);msg='Игрок польщён, но может немного расслабиться.';} else msg=good?'Игрок воодушевлён вашей похвалой.':'Игрок благодарен, но знает, что может лучше.'; }
- else if(kind==='crit'){ if(p.pers===0){d=ri(-12,-6);msg='Игрок болезненно воспринял критику.';} else if(p.pers===2){d=ri(1,5);p.form=+cl(p.form+0.4,3,10).toFixed(2);msg='Игрок принял вызов и хочет доказать вашу неправоту!';} else {d=ri(-3,3);p.form=+cl(p.form+0.2,3,10).toFixed(2);msg='Игрок спокойно выслушал замечания.';} }
- else if(kind==='promise'){ d=ri(8,14); p.prom=1; msg='Игрок рад обещанию место в старте в следующем матче. Не подведите его!'; }
- else if(kind==='comp'){ if(p.pers===2){d=ri(-2,2);p.form=+cl(p.form+0.35,3,10).toFixed(2);msg='Конкуренция подстегнула игрока.';} else {d=ri(-7,-2);msg='Игрок обеспокоен своим местом в составе.';} }
- else if(kind==='rest'){ p.fit=Math.min(100,p.fit+15); d=ri(0,4); msg='Игрок благодарен за возможность восстановиться.'; }
- p.mor=cl(p.mor+d,5,100); return msg+' Мораль '+(d>=0?'+':'')+d+'.'; };
+ if(kind==='praise'){ d=good?ri(5,9):ri(1,4); if(p.pers===2&&good&&R()<.4){p.form=+(p.form-0.2).toFixed(2);msg=_t("Игрок польщён, но может немного расслабиться.");} else msg=good?_t("Игрок воодушевлён вашей похвалой."):_t("Игрок благодарен, но знает, что может лучше."); }
+ else if(kind==='crit'){ if(p.pers===0){d=ri(-12,-6);msg=_t("Игрок болезненно воспринял критику.");} else if(p.pers===2){d=ri(1,5);p.form=+cl(p.form+0.4,3,10).toFixed(2);msg=_t("Игрок принял вызов и хочет доказать вашу неправоту!");} else {d=ri(-3,3);p.form=+cl(p.form+0.2,3,10).toFixed(2);msg=_t("Игрок спокойно выслушал замечания.");} }
+ else if(kind==='promise'){ d=ri(8,14); p.prom=1; msg=_t("Игрок рад обещанию место в старте в следующем матче. Не подведите его!"); }
+ else if(kind==='comp'){ if(p.pers===2){d=ri(-2,2);p.form=+cl(p.form+0.35,3,10).toFixed(2);msg=_t("Конкуренция подстегнула игрока.");} else {d=ri(-7,-2);msg=_t("Игрок обеспокоен своим местом в составе.");} }
+ else if(kind==='rest'){ p.fit=Math.min(100,p.fit+15); d=ri(0,4); msg=_t("Игрок благодарен за возможность восстановиться."); }
+ p.mor=cl(p.mor+d,5,100); return _t("{0} Мораль {1}{2}.",(msg),(d>=0?'+':''),(d)); };
 // ---------- скаутинг ----------
 N.scout=()=>{ const S=SS; if(S.u.scoutLeft<=0)return null; S.u.scoutLeft--; const t=S.T[S.me]; const lvl=S.u.infra.scout; const found=[];
  const n=ri(2,3)+(lvl>=3?1:0);
@@ -294,16 +294,16 @@ N.scout=()=>{ const S=SS; if(S.u.scoutLeft<=0)return null; S.u.scoutLeft--; cons
   p.scouted=1; found.push(p.id); }
  S.u.found=found.concat(S.u.found||[]).slice(0,12); return found; };
 N.invite=(id)=>{ const S=SS; const p=S.P[id]; if(!p)return ''; const me=S.T[S.me]; let ch=0.8; if(p.dual){ const o=S.T[p.dual]; ch=cl(0.55+(me.elo-o.elo)/600 + (p.o<o.str-4?0.3:0),0.1,0.95); }
- S.u.found=S.u.found.filter(x=>x!==id); if(R()<ch){ delete p.scouted; S.T[S.me].pl.push(id); if(p.dual)N.ach('scout'); return '✅ '+p.n+' согласился выступать за сборную!'+(p.dual?' (отказался от '+S.T[p.dual].n+')':''); } delete S.P[id]; return '❌ '+p.n+' отказался'+(p.dual?' — он предпочёл '+S.T[p.dual].n:'')+'.'; };
+ S.u.found=S.u.found.filter(x=>x!==id); if(R()<ch){ delete p.scouted; S.T[S.me].pl.push(id); if(p.dual)N.ach('scout'); return `✅ ${_t("{0} согласился выступать за сборную!{1}",(p.n),(p.dual?` ${_t("(отказался от {0})",(S.T[p.dual].n))}`:''))}`; } delete S.P[id]; return `❌ ${_t("{0} отказался{1}.",(p.n),(p.dual?` — ${_t("он предпочёл {0}",(S.T[p.dual].n))}`:''))}`; };
 // ---------- инфраструктура ----------
-N.INFRA={base:['Тренировочная база','Быстрее прогресс игроков на сборах'],acad:['Молодёжная академия','Больше и талантливее воспитанники'],med:['Медицинский центр','Быстрее восстановление и лечение травм'],scout:['Скаутская служба','Больше поисков игроков за окно'],stad:['Национальный стадион','Больше доходов и поддержка болельщиков']};
+N.INFRA={base:[_t("Тренировочная база"),_t("Быстрее прогресс игроков на сборах")],acad:[_t("Молодёжная академия"),_t("Больше и талантливее воспитанники")],med:[_t("Медицинский центр"),_t("Быстрее восстановление и лечение травм")],scout:[_t("Скаутская служба"),_t("Больше поисков игроков за окно")],stad:[_t("Национальный стадион"),_t("Больше доходов и поддержка болельщиков")]};
 N.infraCost=l=>[0,40,80,140,220,0][l];
 N.upgrade=(k)=>{ const S=SS; const l=S.u.infra[k]; if(l>=5)return false; const c=N.infraCost(l); if(S.u.bud<c)return false; S.u.bud-=c; S.u.infra[k]++; if(Object.values(S.u.infra).every(x=>x>=3))N.ach('infra'); return true; };
 // ---------- достижения ----------
-N.ACH={first:['Первая победа','Выиграйте первый матч'],clean:['На замке','Официальный матч без пропущенных'],rout:['Разгром','Победа с разницей 5+ мячей'],giant:['Гроза фаворитов','Победите намного более сильного соперника'],hat:['Хет-трик','Игрок сборной забил 3 мяча в матче'],
- qual:['Путёвка','Выйдите в финальный турнир'],semi:['Четвёрка сильнейших','Дойдите до полуфинала турнира'],over:['Выше ожиданий','Превзойдите задачу федерации'],trophy:['Первый трофей','Выиграйте любой турнир'],cont:['Чемпион континента','Выиграйте континентальное первенство'],
- wc:['Чемпион мира','Выиграйте чемпионат мира'],streak:['Серия','10 побед подряд'],w50:['Полсотни','50 побед на посту'],job:['Новый вызов','Возглавьте другую сборную'],infra:['Строитель','Все объекты инфраструктуры 3 уровня+'],scout:['Находка','Пригласите игрока с двойным гражданством']};
-N.ach=(k)=>{ const S=SS; if(S.u.ach[k])return; S.u.ach[k]=S.d; N.mail('Достижение','🏅 '+N.ACH[k][0],N.ACH[k][1]+'.'); };
+N.ACH={first:[_t("Первая победа"),_t("Выиграйте первый матч")],clean:[_t("На замке"),_t("Официальный матч без пропущенных")],rout:[_t("Разгром"),_t("Победа с разницей 5+ мячей")],giant:[_t("Гроза фаворитов"),_t("Победите намного более сильного соперника")],hat:[_t("Хет-трик"),_t("Игрок сборной забил 3 мяча в матче")],
+ qual:[_t("Путёвка"),_t("Выйдите в финальный турнир")],semi:[_t("Четвёрка сильнейших"),_t("Дойдите до полуфинала турнира")],over:[_t("Выше ожиданий"),_t("Превзойдите задачу федерации")],trophy:[_t("Первый трофей"),_t("Выиграйте любой турнир")],cont:[_t("Чемпион континента"),_t("Выиграйте континентальное первенство")],
+ wc:[_t("Чемпион мира"),_t("Выиграйте чемпионат мира")],streak:[_t("Серия"),_t("10 побед подряд")],w50:[_t("Полсотни"),_t("50 побед на посту")],job:[_t("Новый вызов"),_t("Возглавьте другую сборную")],infra:[_t("Строитель"),`${_t("Все объекты инфраструктуры 3 уровня")}+`],scout:[_t("Находка"),_t("Пригласите игрока с двойным гражданством")]};
+N.ach=(k)=>{ const S=SS; if(S.u.ach[k])return; S.u.ach[k]=S.d; N.mail(_t("Достижение"),'🏅 '+N.ACH[k][0],N.ACH[k][1]+'.'); };
 })();
 // ---------- сохранение (LZW-сжатие) ----------
 (function(){ const N=globalThis.NFM; const LIM=60000;
@@ -321,3 +321,9 @@ N.ach=(k)=>{ const S=SS; if(S.u.ach[k])return; S.u.ach[k]=S.d; N.mail('Дост�
  N.serialize=(S)=>'L1'+N.lzw(JSON.stringify(S,(k,v)=>k[0]==='_'?undefined:v));
  N.deserialize=(s)=>JSON.parse(s.startsWith('L1')?N.unlzw(s.slice(2)):s);
 })();
+// перевод сохранённых строк на текущий язык (после загрузки сохранения)
+(function(){ const N=NFM; N.relang=S=>{ const I=NFM_I18N, by={}; N.TEAMS.forEach(t=>by[t.c]=t.n);
+ for(const c in S.T) if(by[c])S.T[c].n=by[c];
+ for(const id in S.C){ const c=S.C[id]; if(c.nk)c.n=I.re(c.nk); if(c.hk)c.sh=I.re(c.hk); }
+ (S.F||[]).forEach(f=>{ if(f.sk)f.st=I.re(f.sk); });
+ ((S.u&&S.u.mail)||[]).forEach(m=>{ if(m.fk)m.from=I.re(m.fk); if(m.sk)m.sub=I.re(m.sk); if(m.bk)m.body=I.re(m.bk); }); }; })();

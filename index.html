@@ -3,20 +3,30 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<meta name="theme-color" content="#071a2e">
-<title>Национальный Футбольный Менеджер</title>
+<meta name="theme-color" content="#050f1d">
+<title>National Football Manager</title>
+<link rel="preload" href="fonts/inter-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="css/fonts.css">
 <link rel="stylesheet" href="css/style.css">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚽</text></svg>">
 </head>
-<body>
+<body class="nonav">
 <div id="bg"></div>
-<div id="app">
- <header id="top"></header>
- <main id="view"></main>
+<div id="shell">
+ <nav id="side" class="nav" aria-label="menu"></nav>
+ <div id="app">
+  <header id="top"></header>
+  <main id="view"></main>
+ </div>
 </div>
-<div id="modal" class="hidden"><div class="mbox"></div></div>
-<div id="toast"></div>
+<nav id="bnav" class="nav" aria-label="menu"></nav>
+<div id="modal" class="hidden" role="dialog" aria-modal="true"><div class="mbox"></div></div>
+<div id="toast" aria-live="polite"></div>
+<script src="js/i18n.js"></script>
 <script src="js/data.js"></script>
+<script src="js/kits.js"></script>
+<script src="js/icons.js"></script>
+<script src="js/gfx.js"></script>
 <script src="js/names.js"></script>
 <script src="js/core.js"></script>
 <script src="js/comps.js"></script>

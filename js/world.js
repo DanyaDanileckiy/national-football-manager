@@ -45,8 +45,8 @@ const ARAB=['SA','IQ','QA','JO','AE','OM','BH','SY','PS','LB','KW','YE','EG','DZ
 const GULF=['SA','IQ','QA','AE','OM','BH','KW','YE'];
 const AFF=['TH','VN','ID','MY','PH','SG','MM','KH','LA','TL','BN'];
 const SAFF=['IN','PK','BD','NP','LK','MV','BT','AF'];
-const CONFN={UEFA:'УЕФА',CONMEBOL:'КОНМЕБОЛ',CONCACAF:'КОНКАКАФ',CAF:'КАФ',AFC:'АФК',OFC:'ОФК'};
-const YN={UEFA:'чемпионат Европы',CONMEBOL:'чемпионат Южной Америки',CONCACAF:'чемпионат КОНКАКАФ',CAF:'Кубок Африки',AFC:'Кубок Азии',OFC:'чемпионат Океании'};
+const CONFN={UEFA:_t("УЕФА"),CONMEBOL:_t("КОНМЕБОЛ"),CONCACAF:_t("КОНКАКАФ"),CAF:_t("КАФ"),AFC:_t("АФК"),OFC:_t("ОФК")};
+const YN={UEFA:_t("чемпионат Европы"),CONMEBOL:_t("чемпионат Южной Америки"),CONCACAF:_t("чемпионат КОНКАКАФ"),CAF:_t("Кубок Африки"),AFC:_t("Кубок Азии"),OFC:_t("чемпионат Океании")};
 N.kingsPick=(c)=>{ const S=G(); const H=S.T.TH; const ds=c.kor.map(k=>k.d[0]); const free=t=>!S.F.some(f=>!f.y&&ds.includes(f.d)&&(f.h===t||f.a===t));
  const cand=shuffle(Object.values(S.T).filter(t=>t.c!=='TH'&&Math.abs(t.pts-H.pts)<320&&free(t.c))); const out=['TH']; const used=new Set(['AFC']);
  for(const t of cand){ if(out.length>=4)break; if(!used.has(t.conf)){ used.add(t.conf); out.push(t.c); } } for(const t of cand){ if(out.length>=4)break; if(!out.includes(t.c)) out.push(t.c); } return out; };
@@ -54,39 +54,39 @@ N.buildExtras=(Y,endD)=>{ const S=G(); const A=Y,B=Y+1,C=Y+2,E=Y+3,F=Y+4; const 
  const topHost=(confs,n)=>pick(Object.values(S.T).filter(t=>!confs||confs.includes(t.conf)).sort((a,b)=>b.pts-a.pts).slice(0,n)).c;
  const Y_=(o)=>N.newComp({kind:'y',quick:1,yr:Y,neutral:1,rr:1,...o,id:id(o.id)});
  // отбор (быстрый турнир в одном месте: группы по 4, один круг)
- const qual=(key,n,conf,L,slots,d0,excl)=>{ const c=Y_({id:key,n,sh:'U-'+L+' отб.',conf,age:L,yq:1,gsize:4,gd:[d0,N.addD(d0,3),N.addD(d0,6)],slots,sel:{},excl:excl||[]}); ev(N.addD(d0,-30),c.id); return c; };
+ const qual=(key,n,conf,L,slots,d0,excl)=>{ const c=Y_({id:key,n,sh:_t("U-{0} отб.",(L)),conf,age:L,yq:1,gsize:4,gd:[d0,N.addD(d0,3),N.addD(d0,6)],slots,sel:{},excl:excl||[]}); ev(N.addD(d0,-30),c.id); return c; };
  const champ=(key,n,conf,L,size,y,m,d,o={})=>{ const ng=size<=10?2:size<=12?3:size<=16?4:size<=24?6:12; const per=2, best=size===12?2:size===24?4:size===48?8:0; const adv=per*ng+best; const nko=Math.round(Math.log2(adv));
   const ngd= size===10?5:3; const fd=fds(y,m,d,ngd,nko); const c=Y_({id:key,n,sh:'U-'+L,conf,age:L,fin:1,ng,ngFix:1,gd:fd.gd,kod:fd.kod,adv:{per,best},size,...o}); ev(N.addD(fd.gd[0],-25),c.id); return c; };
  // ===== U-17: ежегодный ЧМ на 48 команд =====
  const U17S={UEFA:11,CAF:10,AFC:9,CONCACAF:8,CONMEBOL:7,OFC:3};
- for(const y of [A,B,C,E]){ const src=[]; const host=topHost(null,40); for(const k in U17S){ const q=qual('U17Q'+k+y,'Отбор ЧМ U-17 '+y+' · '+CONFN[k],k,17,U17S[k],D(y,9,12),[host]); src.push({q:q.id}); }
-  champ('U17WC'+y,'Чемпионат мира U-17 '+y,'ALL',17,48,y,11,5,{host,src}); }
+ for(const y of [A,B,C,E]){ const src=[]; const host=topHost(null,40); for(const k in U17S){ const q=qual('U17Q'+k+y,`${_t("Отбор ЧМ U-17 {0}",(y))} · ${(CONFN[k])}`,k,17,U17S[k],D(y,9,12),[host]); src.push({q:q.id}); }
+  champ('U17WC'+y,_t("Чемпионат мира U-17 {0}",(y)),'ALL',17,48,y,11,5,{host,src}); }
  // ===== U-20: континентальные первенства и ЧМ (B и E) =====
  const U20={UEFA:[8,5,7,1],CONMEBOL:[10,4,1,20],AFC:[16,4,3,1],CAF:[12,4,4,10],CONCACAF:[12,4,6,1],OFC:[8,2,7,5]};
  for(const y of [B,E]){ const src=[];
   for(const k of ['OFC','CONMEBOL','AFC','CAF','CONCACAF','UEFA']){ const [size,top,m,d]=U20[k]; const d0=D(y,m,d); const o={};
-   if(N.confTeams(k).length>size){ const q=qual('U20Q'+k+y,'Отбор: '+YN[k]+' U-'+(k==='UEFA'?19:20)+' '+y,k,20,size,N.addD(d0,-60)); o.src=[{q:q.id}]; } else o.sel={};
-   const ch=champ('U20'+k+y,(k==='UEFA'?'Чемпионат Европы U-19 ':YN[k][0].toUpperCase()+YN[k].slice(1)+' U-20 ')+y,k,20,size,y,m,d,o); src.push({fin:ch.id,n:top}); }
-  champ('U20WC'+y,'Чемпионат мира U-20 '+y,'ALL',20,24,y,9,20,{host:topHost(['UEFA','CONMEBOL','AFC','CAF','CONCACAF'],40),src}); }
+   if(N.confTeams(k).length>size){ const q=qual('U20Q'+k+y,`${_t("Отбор")}: ${(YN[k])} U-${(k==='UEFA'?19:20)} ${(y)}`,k,20,size,N.addD(d0,-60)); o.src=[{q:q.id}]; } else o.sel={};
+   const ch=champ('U20'+k+y,(k==='UEFA'?`${_t("Чемпионат Европы U-19")} `:YN[k][0].toUpperCase()+YN[k].slice(1)+' U-20 ')+y,k,20,size,y,m,d,o); src.push({fin:ch.id,n:top}); }
+  champ('U20WC'+y,_t("Чемпионат мира U-20 {0}",(y)),'ALL',20,24,y,9,20,{host:topHost(['UEFA','CONMEBOL','AFC','CAF','CONCACAF'],40),src}); }
  // ===== U-21: молодёжные Евро (B и E) с отборами =====
- for(const [y,qy] of [[B,A],[E,C]]){ const host=topHost(['UEFA'],20); const q=N.newComp({id:id('U21Q'+y),n:'Отбор молодёжного чемпионата Европы U-21 '+y,sh:'U-21 отб.',conf:'UEFA',kind:'y',quick:1,yq:1,age:21,gsize:4,rr:2,gd:N.windowDates(qy).filter(d=>d.slice(5,7)>='09'),slots:15,excl:[host],yr:Y}); ev(D(qy,8,5),q.id);
-  champ('U21E'+y,'Молодёжный чемпионат Европы U-21 '+y,'UEFA',21,16,y,6,11,{host,src:[{q:q.id}]}); }
+ for(const [y,qy] of [[B,A],[E,C]]){ const host=topHost(['UEFA'],20); const q=N.newComp({id:id('U21Q'+y),n:_t("Отбор молодёжного чемпионата Европы U-21 {0}",(y)),sh:_t("U-21 отб."),conf:'UEFA',kind:'y',quick:1,yq:1,age:21,gsize:4,rr:2,gd:N.windowDates(qy).filter(d=>d.slice(5,7)>='09'),slots:15,excl:[host],yr:Y}); ev(D(qy,8,5),q.id);
+  champ('U21E'+y,_t("Молодёжный чемпионат Европы U-21 {0}",(y)),'UEFA',21,16,y,6,11,{host,src:[{q:q.id}]}); }
  // ===== Олимпийский турнир (U-23 + 3 игрока старше) =====
- const OQ={AFC:[16,C,1,8,'Кубок Азии U-23'],CAF:[8,B,11,20,'Кубок Африки U-23'],CONMEBOL:[10,C,1,15,'Олимпийский отбор КОНМЕБОЛ U-23'],CONCACAF:[8,C,3,1,'Олимпийский отбор КОНКАКАФ U-23'],OFC:[8,C,2,1,'Олимпийский отбор ОФК U-23']};
- const oq={}; for(const k in OQ){ const [size,y,m,d,nm]=OQ[k]; const d0=D(y,m,d); const o={}; if(N.confTeams(k).length>size){ const q=qual('OQQ'+k,'Отбор: '+nm+' '+y,k,23,size,N.addD(d0,-60)); o.src=[{q:q.id}]; } else o.sel={}; oq[k]=champ('OQ'+k,nm+' '+y,k,23,size,y,m,d,o); }
- const opo=Y_({id:'OQPO',n:'Олимпийский стыковой матч '+C,sh:'U-23 ст.',conf:'ALL',age:23,po:1,inter:1,src:[{fin:oq.AFC.id,at:3,n:1},{fin:oq.CAF.id,at:3,n:1}],kor:[{d:[D(C,4,10)],neu:1}],stopAt:1,rn:['Стыковой матч']}); ev(D(C,3,25),opo.id);
- champ('OLY','Олимпийский футбольный турнир '+C,'ALL',23,16,C,7,20,{host:topHost(['UEFA','CONMEBOL','AFC','CAF','CONCACAF'],30),src:[{fin:oq.OFC.id,n:1},{fin:id('U21E'+B),n:3},{fin:oq.AFC.id,n:3},{fin:oq.CAF.id,n:3},{fin:oq.CONMEBOL.id,n:2},{fin:oq.CONCACAF.id,n:2},{w:opo.id},{fin:id('U21E'+B),at:3,n:3}]});
+ const OQ={AFC:[16,C,1,8,_t("Кубок Азии U-23")],CAF:[8,B,11,20,_t("Кубок Африки U-23")],CONMEBOL:[10,C,1,15,_t("Олимпийский отбор КОНМЕБОЛ U-23")],CONCACAF:[8,C,3,1,_t("Олимпийский отбор КОНКАКАФ U-23")],OFC:[8,C,2,1,_t("Олимпийский отбор ОФК U-23")]};
+ const oq={}; for(const k in OQ){ const [size,y,m,d,nm]=OQ[k]; const d0=D(y,m,d); const o={}; if(N.confTeams(k).length>size){ const q=qual('OQQ'+k,`${_t("Отбор")}: ${(nm)} ${(y)}`,k,23,size,N.addD(d0,-60)); o.src=[{q:q.id}]; } else o.sel={}; oq[k]=champ('OQ'+k,nm+' '+y,k,23,size,y,m,d,o); }
+ const opo=Y_({id:'OQPO',n:_t("Олимпийский стыковой матч {0}",(C)),sh:_t("U-23 ст."),conf:'ALL',age:23,po:1,inter:1,src:[{fin:oq.AFC.id,at:3,n:1},{fin:oq.CAF.id,at:3,n:1}],kor:[{d:[D(C,4,10)],neu:1}],stopAt:1,rn:[_t("Стыковой матч")]}); ev(D(C,3,25),opo.id);
+ champ('OLY',_t("Олимпийский футбольный турнир {0}",(C)),'ALL',23,16,C,7,20,{host:topHost(['UEFA','CONMEBOL','AFC','CAF','CONCACAF'],30),src:[{fin:oq.OFC.id,n:1},{fin:id('U21E'+B),n:3},{fin:oq.AFC.id,n:3},{fin:oq.CAF.id,n:3},{fin:oq.CONMEBOL.id,n:2},{fin:oq.CONCACAF.id,n:2},{w:opo.id},{fin:id('U21E'+B),at:3,n:3}]});
  // ===== региональные турниры взрослых сборных =====
  const fin=(key,n,sh,list,size,ng,y,m,d,nko,o={})=>{ const fd=fds(y,m,d,o.ngd||3,nko,o.gap||4); const c=N.newComp({id:id(key),n,sh,conf:'ALL',kind:'final',minor:1,rr:1,ng,ngFix:1,gd:fd.gd,kod:fd.kod,adv:{per:2},neutral:1,sel:{list},size,yr:y,...o}); c.conf='ALL_R'; ev(N.addD(fd.gd[0],-30),c.id); return c; };
- fin('ARAB','Кубок арабских наций '+B,'КАН-А',ARAB,16,4,B,12,1,3,{host:pick(['SA','QA','AE','EG','MA','DZ'])});
- fin('GULF','Кубок Персидского залива '+C,'КПЗ',GULF,8,2,C,12,20,2,{host:pick(GULF)});
- fin('SAFF','Чемпионат Южной Азии '+C,'ЧЮА',SAFF,8,2,C,7,1,2,{gap:3,host:pick(SAFF.slice(0,4))});
- for(const y of [A,C]){ const g=[D(y,11,24),D(y,11,27),D(y,11,30),D(y,12,3),D(y,12,6)]; const c=N.newComp({id:id('AFF'+y),n:'Чемпионат Юго-Восточной Азии '+y,sh:'ЧЮВА',conf:'ALL_R',kind:'final',minor:1,rr:1,ng:2,ngFix:1,gd:g,adv:{per:2},kor:[{d:[D(y,12,10),D(y,12,13)]},{d:[D(y,12,17),D(y,12,20)]}],sel:{list:AFF},size:10,yr:y}); ev(D(y,10,25),c.id); }
- const kg=N.newComp({id:id('KINGS'),n:'Королевский кубок '+E,sh:'КК',conf:'ALL',kind:'po',po:1,cup:1,minor:1,host:'TH',sel:{kings:1},kor:[{d:[D(E,3,27)],neu:1},{d:[D(E,3,30)],neu:1}],stopAt:1,rn:['1/2 финала','Финал'],yr:E}); ev(D(E,3,26),kg.id);
- const fz=N.newComp({id:id('FINALISSIMA'),n:'Кубок чемпионов континентов '+F,sh:'КЧК',conf:'ALL',kind:'po',po:1,cup:1,minor:1,src:[{w:id('EURO')},{w:id('COPA')}],kor:[{d:[D(F,3,27)],neu:1}],stopAt:1,rn:['Финал'],yr:F}); ev(D(C,8,1),fz.id);
+ fin('ARAB',_t("Кубок арабских наций {0}",(B)),_t("КАН-А"),ARAB,16,4,B,12,1,3,{host:pick(['SA','QA','AE','EG','MA','DZ'])});
+ fin('GULF',_t("Кубок Персидского залива {0}",(C)),_t("КПЗ"),GULF,8,2,C,12,20,2,{host:pick(GULF)});
+ fin('SAFF',_t("Чемпионат Южной Азии {0}",(C)),_t("ЧЮА"),SAFF,8,2,C,7,1,2,{gap:3,host:pick(SAFF.slice(0,4))});
+ for(const y of [A,C]){ const g=[D(y,11,24),D(y,11,27),D(y,11,30),D(y,12,3),D(y,12,6)]; const c=N.newComp({id:id('AFF'+y),n:_t("Чемпионат Юго-Восточной Азии {0}",(y)),sh:_t("ЧЮВА"),conf:'ALL_R',kind:'final',minor:1,rr:1,ng:2,ngFix:1,gd:g,adv:{per:2},kor:[{d:[D(y,12,10),D(y,12,13)]},{d:[D(y,12,17),D(y,12,20)]}],sel:{list:AFF},size:10,yr:y}); ev(D(y,10,25),c.id); }
+ const kg=N.newComp({id:id('KINGS'),n:_t("Королевский кубок {0}",(E)),sh:_t("КК"),conf:'ALL',kind:'po',po:1,cup:1,minor:1,host:'TH',sel:{kings:1},kor:[{d:[D(E,3,27)],neu:1},{d:[D(E,3,30)],neu:1}],stopAt:1,rn:[`1/${_t("2 финала")}`,_t("Финал")],yr:E}); ev(D(E,3,26),kg.id);
+ const fz=N.newComp({id:id('FINALISSIMA'),n:_t("Кубок чемпионов континентов {0}",(F)),sh:_t("КЧК"),conf:'ALL',kind:'po',po:1,cup:1,minor:1,src:[{w:id('EURO')},{w:id('COPA')}],kor:[{d:[D(F,3,27)],neu:1}],stopAt:1,rn:[_t("Финал")],yr:F}); ev(D(C,8,1),fz.id);
  // чемпионат африканских наций и Кубок Восточной Азии — только игроки местных лиг
- for(const y of [B,E]){ const fd=fds(y,1,15,3,3,4); const c=N.newComp({id:id('CHAN'+y),n:'Чемпионат африканских наций (игроки местных лиг) '+y,sh:'ЧАН',conf:'CAF',kind:'loc',quick:1,fin:1,rr:1,ng:4,ngFix:1,gd:fd.gd,kod:fd.kod,adv:{per:2},neutral:1,sel:{top:16},size:16,yr:y}); ev(D(y-1,12,10),c.id);
-  const e=N.newComp({id:id('EAFF'+y),n:'Кубок Восточной Азии '+y,sh:'КВА',conf:'AFC',kind:'loc',quick:1,league:true,lw:1,rr:1,neutral:1,gd:[D(y,7,15),D(y,7,19),D(y,7,23)],src:[{list:['JP','KR','CN']},{list:['HK','TW','KP','MN','GU','MO'],n:1}],size:4,yr:y}); ev(D(y,6,20),e.id); }
+ for(const y of [B,E]){ const fd=fds(y,1,15,3,3,4); const c=N.newComp({id:id('CHAN'+y),n:_t("Чемпионат африканских наций (игроки местных лиг) {0}",(y)),sh:_t("ЧАН"),conf:'CAF',kind:'loc',quick:1,fin:1,rr:1,ng:4,ngFix:1,gd:fd.gd,kod:fd.kod,adv:{per:2},neutral:1,sel:{top:16},size:16,yr:y}); ev(D(y-1,12,10),c.id);
+  const e=N.newComp({id:id('EAFF'+y),n:_t("Кубок Восточной Азии {0}",(y)),sh:_t("КВА"),conf:'AFC',kind:'loc',quick:1,league:true,lw:1,rr:1,neutral:1,gd:[D(y,7,15),D(y,7,19),D(y,7,23)],src:[{list:['JP','KR','CN']},{list:['HK','TW','KP','MN','GU','MO'],n:1}],size:4,yr:y}); ev(D(y,6,20),e.id); }
  // ежемесячный рейтинг и клубные новости
  for(let y=A;y<=F;y++) for(let m=1;m<=12;m++){ const d=D(y,m,1); if(d>=S.d&&d<endD) N.addEv(d,'fn',{fn:'month'}); }
 };
@@ -97,7 +97,7 @@ N.y17Fill=()=>{ const S=G(); const t=S.T[S.me]; S.u.y17=(S.u.y17||[]).filter(id=
 const _evYear=N.evYear; N.evYear=(e)=>{ const S=G(); _evYear(e); const t=S.T[S.me]; const notes=[];
  for(const id of (S.u.y17||[])){ const p=S.P[id]; if(!p)continue; p.age++; N.develop(p,true); if(p.age>=18){ if(p.pot>=t.r-6||p.o>=t.r-12){ delete p.yth; t.pl.push(p.id); notes.push(p.n+' ('+N.POS[p.pos][0]+', '+p.o+'/'+p.pot+')'); } else delete S.P[id]; } }
  const pl=N.pool(S.me); if(pl.length>50){ const val=p=>p.o+(p.age<=22?(p.pot-p.o)*0.5:0)+(S.u.call.includes(p.id)?50:0); const drop=pl.sort((a,b)=>val(a)-val(b)).slice(0,pl.length-50); const ds=new Set(drop.map(p=>p.id)); t.pl=t.pl.filter(id=>!ds.has(id)); drop.forEach(p=>{ if(p.caps>0||(p.rh||[]).length){ p.ret=S.d.slice(0,4); p.rel=1; } else delete S.P[p.id]; }); }
- N.y17Fill(); if(notes.length) N.mail('Молодёжный штаб','Выпуск U-17','Из команды U-17 в общий пул сборной переходят: '+notes.join(', ')+'.');
+ N.y17Fill(); if(notes.length) N.mail(_t("Молодёжный штаб"),_t("Выпуск U-17"),`${_t("Из команды U-17 в общий пул сборной переходят")}: ${(notes.join(', '))}.`);
  const y=S.d.slice(0,4); if(S.yg) for(const k in S.yg) if(!k.endsWith(y)) delete S.yg[k]; };
 // ---------- клубная жизнь между окнами ----------
 const GR={ST:.55,LW:.35,RW:.35,AM:.28,LM:.18,RM:.18,CM:.1,DM:.05,LB:.04,RB:.04,CB:.05,GK:0};
@@ -106,37 +106,37 @@ function clubMonth(){ const S=G(); const m=+S.d.slice(5,7); const off=m===6||m==
   if(!off){ p.cf=Math.round(cl((p.cf||0)*0.5+gauss()*1.1,-3,3)*10)/10; const lv=N.leagueLvl(p.lg||S.me,p.div);
    const gm=pois(GR[p.pos]*4*Math.pow(cl(p.o/Math.max(40,lv),0.6,1.5),2)*(1+p.cf*0.15)); p.cg=(p.cg||0)+gm;
    p.form=+cl(p.form+(6.4+0.3*p.cf-p.form)*0.4,3,10).toFixed(2); p.mor=Math.round(cl(p.mor+p.cf,5,100));
-   if(key(p)){ if(gm>=3) items.push('🔥 '+p.n+' ('+p.club+') забил за месяц '+gm+' гол.'+' — отличная форма.'); else if(p.cf<=-2.2) items.push('🪑 '+p.n+' почти не играет за '+p.club+', форма падает.'); else if(p.cf>=2.4&&p.pos==='GK') items.push('🧤 '+p.n+' — серия сухих матчей за '+p.club+'.'); } }
-  if(!off&&!p.inj&&R()<0.022){ p.inj=R()<.7?ri(7,25):ri(26,90); if(key(p)) items.push('🚑 '+p.n+' травмирован в матче за '+p.club+' — пропустит около '+p.inj+' дн.'); }
+   if(key(p)){ if(gm>=3) items.push(`🔥 ${(p.n)} (${(p.club)}) ${_t("забил за месяц {0} гол. — отличная форма.",(gm))}`); else if(p.cf<=-2.2) items.push(`🪑 ${_t("{0} почти не играет за {1}, форма падает.",(p.n),(p.club))}`); else if(p.cf>=2.4&&p.pos==='GK') items.push(`🧤 ${(p.n)} — ${_t("серия сухих матчей за {0}.",(p.club))}`); } }
+  if(!off&&!p.inj&&R()<0.022){ p.inj=R()<.7?ri(7,25):ri(26,90); if(key(p)) items.push(`🚑 ${_t("{0} травмирован в матче за {1} — пропустит около {2} дн.",(p.n),(p.club),(p.inj))}`); }
   if((m===1||m===8)&&R()<0.07){ const old=p.club, oldL=N.leagueLvl(p.lg||S.me,p.div); const q={o:p.o+Math.round(gauss()*3)+(p.age<=24?2:0),t:p.t,pos:p.pos}; N.assignClub(q,S.me); if(q.club!==old){ p.club=q.club; p.lg=q.lg; p.div=q.div; const nl=N.leagueLvl(p.lg,p.div);
     if(nl>oldL+3){ p.mor=cl(p.mor+6,5,100); if(p.age<=27){ const k=pick(['att','def','pas','tec','phy','spd']); p[k]=Math.min(99,p[k]+1); N.upd(p); } } else if(nl<oldL-3) p.form=+cl(p.form+0.3,3,10).toFixed(2);
-    if(key(p)) items.push('✍️ Трансфер: '+p.n+' переходит из '+old+' в '+p.club+(S.T[p.lg]?' ('+S.T[p.lg].n+(p.div===2?', 2-й дивизион':'')+')':'')+(nl>oldL+3?' — шаг вверх.':nl<oldL-3?' — ради игровой практики.':'.')); } } }
- if(items.length) N.mail('Скаутская служба','Новости клубов',items.slice(0,9).join('\n')); }
+    if(key(p)) items.push(`✍️ ${_t("Трансфер: {0} переходит из {1} в {2}{3}{4}",(p.n),(old),(p.club),(S.T[p.lg]?' ('+S.T[p.lg].n+(p.div===2?`, ${_t("2-й дивизион")}`:'')+')':''),(nl>oldL+3?` — ${_t("шаг вверх.")}`:nl<oldL-3?` — ${_t("ради игровой практики.")}`:'.'))}`); } } }
+ if(items.length) N.mail(_t("Скаутская служба"),_t("Новости клубов"),items.slice(0,9).join('\n')); }
 // ---------- давление прессы и болельщиков ----------
 const _afterUser=N.afterUser; N.afterUser=(f,m)=>{ const S=G(); const pre=S.u.prs??30, preF=S.u.fan??60; _afterUser(f,m); const side=f.h===S.me?0:1; const c=S.C[f.c];
  const my=S.T[S.me], op=S.T[side?f.h:f.a]; const We=1/(Math.pow(10,-(my.pts-op.pts)/600)+1); const W=m.winner===side?1:m.winner===-1?0.5:0; const off=c.kind!=='fr';
  S.u.f5=(S.u.f5||[]).concat(W===1?'w':W===0.5?'d':'l').slice(-8); const st=S.u.f5; let ls=0,ws=0; for(let i=st.length-1;i>=0&&st[i]==='l';i--)ls++; for(let i=st.length-1;i>=0&&st[i]==='w';i--)ws++;
  const gd=m.score[side]-m.score[1-side];
  S.u.prs=Math.round(cl(pre+(We-W)*(off?24:10)+(ls>=3?6:0)-(ws>=3?4:0)+(gd<=-3?5:0),0,100)); S.u.fan=Math.round(cl(preF+(W-We)*(off?18:8)+(ws>=3?3:0)-(ls>=3?4:0)+(gd>=3?2:0),0,100));
- if(S.u.prs>=75&&pre<75){ N.mail('Пресса','Газеты требуют перемен','Серия неудач вызвала шквал критики. Журналисты обсуждают возможную отставку тренера. Давление прессы: '+S.u.prs+'%. Федерация будет строже оценивать результаты.'); for(const id of S.u.call){ const p=S.P[id]; if(p) p.mor=cl(p.mor-3,5,100); } }
- if(S.u.prs<=15&&pre>15) N.mail('Пресса','Пресса на нашей стороне','Журналисты хвалят работу тренерского штаба.');
- if(S.u.fan<=25&&preF>25) N.mail('Болельщики','Трибуны недовольны','Фанаты освистывают команду, посещаемость домашних матчей падает.');
- if(S.u.fan>=85&&preF<85) N.mail('Болельщики','Страна болеет за сборную!','Билеты на домашние матчи раскупают за минуты.'); };
+ if(S.u.prs>=75&&pre<75){ N.mail(_t("Пресса"),_t("Газеты требуют перемен"),_t("Серия неудач вызвала шквал критики. Журналисты обсуждают возможную отставку тренера. Давление прессы: {0}%. Федерация будет строже оценивать результаты.",(S.u.prs))); for(const id of S.u.call){ const p=S.P[id]; if(p) p.mor=cl(p.mor-3,5,100); } }
+ if(S.u.prs<=15&&pre>15) N.mail(_t("Пресса"),_t("Пресса на нашей стороне"),_t("Журналисты хвалят работу тренерского штаба."));
+ if(S.u.fan<=25&&preF>25) N.mail(_t("Болельщики"),_t("Трибуны недовольны"),_t("Фанаты освистывают команду, посещаемость домашних матчей падает."));
+ if(S.u.fan>=85&&preF<85) N.mail(_t("Болельщики"),_t("Страна болеет за сборную!"),_t("Билеты на домашние матчи раскупают за минуты.")); };
 const _trust=N.trust; N.trust=(d)=>_trust(d<0&&(G().u.prs??30)>=70?Math.round(d*1.3):d);
 // ---------- двойное гражданство и натурализация ----------
 function dualEvent(){ const S=G(); const me=S.T[S.me]; const opts=Object.values(S.T).filter(t=>t.c!==S.me&&Math.abs(t.pts-me.pts)<450); if(!opts.length) return; const O=pick(opts);
  const pos=pick(N.SQ.filter(p=>p!=='GK')); const p=N.genPlayer(S.me,pos,Math.round(me.r-5+gauss()*5),ri(18,23),{caps:0,pool:R()<.5?O.pool:me.pool,clubNat:R()<.5?O.c:S.me}); p.pend=1; p.dual=O.c;
- N.mail('Скаутская служба','Двойное гражданство: '+p.n,p.n+' ('+p.age+' лет, '+N.POS[p.pos][0]+', '+p.club+', сила '+p.o+', потенциал '+p.pot+') имеет право выступать за нас и за сборную '+O.f+' '+O.n+'. Игрок ещё не определился. Попробуем убедить его?',{type:'dual',pid:p.id,o:O.c}); }
+ N.mail(_t("Скаутская служба"),`${_t("Двойное гражданство")}: ${(p.n)}`,_t("{0} ({1} лет, {2}, {3}, сила {4}, потенциал {5}) имеет право выступать за нас и за сборную {6} {7}. Игрок ещё не определился. Попробуем убедить его?",(p.n),(p.age),(N.POS[p.pos][0]),(p.club),(p.o),(p.pot),(O.f),(O.n)),{type:'dual',pid:p.id,o:O.c}); }
 function natEvent(){ const S=G(); const me=S.T[S.me]; const F=pick(Object.values(S.T).filter(t=>t.c!==S.me&&t.r<me.r+5)); const pos=pick(N.SQ);
  const list=N.clubsOf(S.me); const p=N.genPlayer(S.me,pos,Math.round(me.r-3+gauss()*4),ri(25,30),{caps:0,pool:F.pool,club:pick(list.slice(0,10)),lg:S.me}); p.pend=1; p.natFrom=F.c;
- N.mail('Федерация футбола','Запрос на натурализацию',p.n+' ('+p.age+' лет, '+N.POS[p.pos][0]+', сила '+p.o+') — уроженец страны '+F.n+', уже пять лет играет за '+p.club+' и хочет получить паспорт, чтобы выступать за нас. Поддержка запроса стоит 10 единиц бюджета, часть болельщиков может отнестись к этому прохладно.',{type:'nat',pid:p.id}); }
+ N.mail(_t("Федерация футбола"),_t("Запрос на натурализацию"),_t("{0} ({1} лет, {2}, сила {3}) — уроженец страны {4}, уже пять лет играет за {5} и хочет получить паспорт, чтобы выступать за нас. Поддержка запроса стоит 10 единиц бюджета, часть болельщиков может отнестись к этому прохладно.",(p.n),(p.age),(N.POS[p.pos][0]),(p.o),(F.n),(p.club)),{type:'nat',pid:p.id}); }
 N.dualDecide=(i,yes)=>{ const S=G(); const m=S.u.mail[i]; if(!m||!m.act||m.act.done) return ''; m.act.done=1; const p=S.P[m.act.pid]; if(!p) return ''; const O=S.T[m.act.o], me=S.T[S.me]; delete p.pend;
  const ch=cl(0.45+(me.pts-O.pts)/1100+((S.u.fan??60)-55)/300+(p.o<me.str-4?0.12:0),0.1,0.9);
- if(yes&&R()<ch){ p.t=S.me; me.pl.push(p.id); N.teamStr(S.me); return p.n+' выбрал нашу сборную! Он добавлен в пул.'; }
- p.t=O.c; delete p.dual; O.pl.push(p.id); return yes?p.n+' после раздумий выбрал сборную '+O.n+'.':p.n+' будет выступать за '+O.n+'.'; };
+ if(yes&&R()<ch){ p.t=S.me; me.pl.push(p.id); N.teamStr(S.me); return _t("{0} выбрал нашу сборную! Он добавлен в пул.",(p.n)); }
+ p.t=O.c; delete p.dual; O.pl.push(p.id); return yes?_t("{0} после раздумий выбрал сборную {1}.",(p.n),(O.n)):_t("{0} будет выступать за {1}.",(p.n),(O.n)); };
 N.natDecide=(i,yes)=>{ const S=G(); const m=S.u.mail[i]; if(!m||!m.act||m.act.done) return ''; const p=S.P[m.act.pid]; if(!p) return '';
- if(yes){ if(S.u.bud<10) return 'Недостаточно бюджета (нужно 10).'; m.act.done=1; S.u.bud-=10; S.u.fan=Math.max(0,(S.u.fan??60)-4); delete p.pend; p.nat=p.natFrom; S.T[S.me].pl.push(p.id); N.teamStr(S.me); return p.n+' получил паспорт и может вызываться в сборную.'; }
- m.act.done=1; delete S.P[p.id]; return 'Запрос отклонён.'; };
+ if(yes){ if(S.u.bud<10) return _t("Недостаточно бюджета (нужно 10)."); m.act.done=1; S.u.bud-=10; S.u.fan=Math.max(0,(S.u.fan??60)-4); delete p.pend; p.nat=p.natFrom; S.T[S.me].pl.push(p.id); N.teamStr(S.me); return _t("{0} получил паспорт и может вызываться в сборную.",(p.n)); }
+ m.act.done=1; delete S.P[p.id]; return _t("Запрос отклонён."); };
 const _evWin=N.evWin; N.evWin=(e)=>{ _evWin(e); if(R()<0.3) dualEvent(); if(R()<0.1) natEvent(); };
 N.fn.month=()=>{ const S=G(); snapshot(); if(S.rkH.length>1) clubMonth(); S.u.prs=Math.round((S.u.prs??30)+(30-(S.u.prs??30))*0.08); S.u.fan=Math.round((S.u.fan??60)+(60-(S.u.fan??60))*0.08);
  for(let i=0;i<S.u.mail.length;i++){ const m=S.u.mail[i]; if(m.act&&!m.act.done&&N.diffD(m.d,S.d)>45){ if(m.act.type==='dual') N.dualDecide(i,false); else if(m.act.type==='nat'){ m.act.done=1; delete S.P[m.act.pid]; } } } };

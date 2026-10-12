@@ -1,0 +1,841 @@
+0|We zijn in
+1|te weinig data
+2|{0}Speelronde {1}
+3|Groep {0}
+4|Zestiende finale
+5|Achtste finale
+6|Kwartfinale
+7|Halve finale
+8|Finale
+9|Ronde {0}
+10|Heenwedstrijd
+11|Terugwedstrijd
+12|Onze tegenstanders{0}
+13|in groep {0}
+14|Onze tegenstander
+15|(thuis en uit, totaalscore; bij gelijke stand verlenging en strafschoppen, geen uitdoelpuntregel)
+16|(één wedstrijd; bij gelijkspel verlenging en strafschoppen)
+17|We stromen in vanaf de tweede ronde (vrijgeloot in de eerste).
+18|Staf van de jeugdelftallen
+19|Voetbalbond
+20|Loting
+21|We zijn op het eindtoernooi!
+22|UEFA Nations League
+23|NL
+24|CONCACAF Nations League
+25|CNL
+26|promotie!
+27|degradatie
+28|We hebben de groep gewonnen en spelen de volgende editie in League {0}!
+29|We zijn laatste geworden en degraderen de volgende editie naar League {0}.
+30|Promotie via de play-offs!
+31|We hebben de play-offs gewonnen en promoveren naar League {0}.
+32|Verlies in de play-offs
+33|We hebben de play-offs verloren en degraderen naar League {0}.
+34|League {0}
+35|Final Four
+36|{0}-F4
+37|Play-offs van de league
+38|{0}-PO
+39|Play-offs
+40|WK-kwalificatie {0}
+41|EK-kwalificatie {0}
+42|EKK
+43|EK-play-offs {0}
+44|EKP
+45|Halve finale van het pad
+46|Finale van het pad
+47|Europees kampioenschap {0}
+48|EK
+49|{0}UEFA
+50|WKK
+51|{0}UEFA-play-offs
+52|WKP
+53|{0}CONMEBOL
+54|Copa América {0}
+55|CA
+56|CONCACAF Gold Cup {0}
+57|GC
+58|{0}CONCACAF, 1e ronde
+59|WKK-1
+60|1e ronde
+61|{0}CONCACAF, 2e ronde
+62|WKK-2
+63|{0}CONCACAF, 3e ronde
+64|Kwalificatie Azië Cup {0}
+65|AZK
+66|Azië Cup {0}
+67|AZ
+68|{0}AFC, 1e ronde
+69|{0}AFC, 2e ronde
+70|{0}AFC, 3e ronde
+71|{0}AFC, 4e ronde
+72|WKK-4
+73|{0}AFC, 5e ronde
+74|WKK-5
+75|5e ronde
+76|Kwalificatie Afrika Cup {0}
+77|ACK
+78|Afrika Cup {0}
+79|AC
+80|{0}CAF
+81|{0}CAF, play-offs
+82|CAFP
+83|{0}OFC, 1e ronde
+84|{0}OFC, 2e ronde
+85|{0}OFC, eindronde
+86|OFC Nations Cup {0}
+87|ONC
+88|{0}intercontinentale play-offs
+89|ICP
+90|1e ronde play-offs
+91|Finale play-offs
+92|Wereldkampioenschap {0}
+93|WK
+94|uitschakeling in de groepsfase
+95|door de groepsfase komen
+96|halve finale
+97|finale
+98|titel
+99|Doel: de play-offs winnen.
+100|Doel: strijd leveren in de play-offs.
+101|Doel: de trofee winnen.
+102|Doel: een fatsoenlijk toernooi spelen.
+103|Doel van de bond: de volgende ronde halen.
+104|Doel: strijden om de volgende ronde.
+105|Doel van de bond: kwalificatie voor het eindtoernooi.
+106|Doel: met eer strijden; kwalificatie zou een bonus zijn.
+107|Doel: zo ver mogelijk komen.
+108|Doel: de favorieten partij geven.
+109|Doel: strijden om de groepswinst.
+110|Doel: degradatie voorkomen.
+111|Doel van de bond
+112|Nieuws
+113|winnaar
+114|{0} {1} wint het toernooi na een finalezege op {2}.
+115|Resultaat: ‘{0}’ — {1} Vertrouwen van de bond {2}{3}.
+116|play-offs gewonnen.
+117|play-offs verloren.
+118|door naar de volgende ronde!
+119|ticket binnen!
+120|verder kwamen we niet.
+121|kwalificatie gemist.
+122|we gaan door.
+123|we zijn uitgeschakeld.
+124|groepswinst.
+125|geen groepswinst.
+126|TROFEE! Het budget van de bond is verhoogd.
+127|Balans
+128|januari
+129|februari
+130|maart
+131|april
+132|mei
+133|juni
+134|juli
+135|augustus
+136|september
+137|oktober
+138|november
+139|december
+140|zo
+141|ma
+142|di
+143|wo
+144|do
+145|vr
+146|za
+147|Aanval
+148|Verdediging
+149|Passing
+150|Techniek
+151|Fysiek
+152|Snelheid
+153|Keepen
+154|Bondscoach
+155|Oefenwedstrijden
+156|OEF
+157|Welkom!
+158|Beste {0}, de bond verwelkomt u met genoegen als bondscoach van het nationale team van {1}. We verwachten goede resultaten van u. Uw eerste selectie is al samengesteld — controleer de selectie vóór de eerstvolgende interlandperiode.
+159|Je bent ontslagen
+160|Helaas heeft de bond het vertrouwen in je verloren en besloten je contract te ontbinden. Maar andere bonden tonen interesse — kies een nieuw nationaal team.
+161|Voetbalbond van {0}
+162|Baanaanbod
+163|De voetbalbond van {0} {1} biedt je aan om bondscoach van het nationale team te worden. Teamsterkte
+164|Nieuwe baan
+165|Je bent nu bondscoach van {0} {1}. Succes! Stel de selectie samen voor de volgende interlandperiode.
+166|Gebroken belofte
+167|Trainer, u beloofde me een basisplaats. Ik ben teleurgesteld.
+168|Oefenwedstrijd
+169|{0} interlands)
+170|potentieel {0})
+171|Gelukkig {0}
+172|De spelers zijn een jaar ouder geworden. {0} Vertrouwen van de bond
+173|Wijzigingen in de selectie
+174|Technische staf
+175|Interlandperiode
+176|{0} Controleer de selectie (18–23 spelers) en de opstelling.
+177|In deze interlandperiode spelen we {0} wedstrijd(en)
+178|In deze interlandperiode hebben we geen officiële wedstrijden — je kunt oefenwedstrijden plannen (Competities → Oefenwedstrijden).
+179|Medische staf
+180|Blessure op de training
+181|{0} raakte geblesseerd tijdens een zware training en ligt {1} dagen uit de roulatie.
+182|{1}:{2}-zege op {0}. Uw indrukken?
+183|Ik ben trots op de jongens — ze hebben alles gegeven.
+184|We kunnen nog beter; het is te vroeg om te verslappen.
+185|Dat was mijn tactische overwinning.
+186|{0}:{1}-nederlaag tegen {2}. Wie is schuldig?
+187|De verantwoordelijkheid ligt volledig bij mij.
+188|Sommige spelers haalden hun niveau niet.
+189|De scheidsrechter heeft de uitslag beïnvloed.
+190|{0}:{1} gelijkspel. Tevreden met het resultaat?
+191|Een terechte uitslag, we gaan verder.
+192|We hadden moeten winnen.
+193|De tegenstander was erg sterk.
+194|De fans willen meer jonge spelers in het team. Uw antwoord?
+195|Jonge spelers krijgen hun kans als ze die verdienen.
+196|Ja, we gaan de selectie verjongen.
+197|Op dit moment is ervaring belangrijker.
+198|Wat zijn de doelen van het team voor het volgende toernooi?
+199|Alleen de overwinning!
+200|We kijken van wedstrijd tot wedstrijd.
+201|We zijn de underdog, er ligt geen druk op ons.
+202|Hoe beoordeelt u de fysieke conditie van de spelers?
+203|Alles is in orde, het team is klaar.
+204|Er zijn vermoeidheidsproblemen, we gaan rouleren.
+205|De clubs overbelasten de spelers.
+206|Er gaan geruchten dat u naar een ander nationaal team vertrekt. Klopt dat?
+207|Ik ben volledig gefocust op dit team.
+208|Zeg nooit nooit.
+209|Geen commentaar.
+210|Je hebt deze interlandperiode al met deze speler gesproken.
+211|De speler voelt zich gevleid, maar kan wat verslappen.
+212|De lof heeft de speler gemotiveerd.
+213|De speler bedankt je, maar weet dat hij meer kan.
+214|De speler heeft de kritiek slecht opgevat.
+215|De speler gaat de uitdaging aan en wil bewijzen dat je ongelijk hebt!
+216|De speler luisterde rustig naar de opmerkingen.
+217|De speler is blij met de belofte om de volgende wedstrijd in de basis te starten. Stel hem niet teleur!
+218|De concurrentie heeft de speler geprikkeld.
+219|De speler maakt zich zorgen over zijn plek in het team.
+220|De speler waardeert de kans om uit te rusten.
+221|{0} Moreel {1}{2}.
+222|{0} heeft ingestemd om voor het nationale team te spelen!{1}
+223|(wees {0} af)
+224|{0} heeft bedankt{1}.
+225|hij koos voor {0}
+226|Trainingscentrum
+227|Snellere ontwikkeling van spelers tijdens trainingskampen
+228|Jeugdacademie
+229|Meer en talentvollere jeugdspelers
+230|Medisch centrum
+231|Sneller herstel en behandeling van blessures
+232|Scoutingafdeling
+233|Meer spelerszoekacties per interlandperiode
+234|Nationaal stadion
+235|Meer inkomsten en steun van de fans
+236|Eerste zege
+237|Win je eerste wedstrijd
+238|Op slot
+239|Een officiële wedstrijd zonder tegendoelpunt
+240|Monsterzege
+241|Win met 5 of meer doelpunten verschil
+242|Reuzendoder
+243|Versla een veel sterkere tegenstander
+244|Hattrick
+245|Een international scoort 3 keer in één wedstrijd
+246|Ticket
+247|Kwalificeer je voor een eindtoernooi
+248|Bij de laatste vier
+249|Bereik de halve finale van een toernooi
+250|Boven verwachting
+251|Overtref het doel van de bond
+252|Eerste trofee
+253|Win een willekeurig toernooi
+254|Continentaal kampioen
+255|Win het continentale kampioenschap
+256|Wereldkampioen
+257|Win het WK
+258|Reeks
+259|10 overwinningen op rij
+260|Halve honderd
+261|50 overwinningen als bondscoach
+262|Nieuwe uitdaging
+263|Word bondscoach van een ander land
+264|Bouwer
+265|Alle faciliteiten op niveau 3
+266|Vondst
+267|Selecteer een speler met een dubbele nationaliteit
+268|Prestatie
+269|UEFA (Europa)
+270|CONMEBOL (Zuid-Amerika)
+271|CONCACAF (Noord- en Midden-Amerika)
+272|CAF (Afrika)
+273|AFC (Azië)
+274|OFC (Oceanië)
+275|K
+276|CV
+277|LB
+278|RB
+279|VM
+280|CM
+281|AM
+282|LM
+283|RM
+284|LV
+285|RV
+286|SP
+287|Het regent, het veld is glad.
+288|Hitte — het wordt zwaar voor de spelers.
+289|Het sneeuwt.
+290|Harde wind.
+291|helder
+292|bewolkt
+293|regen
+294|hitte
+295|sneeuw
+296|wind
+297|1H
+298|Aftrap! De wedstrijd is begonnen.
+299|De scheidsrechter geeft het startsignaal.
+300|Daar gaan we!
+301|Buitenspel — de aanval van {0} wordt afgeblazen.
+302|De vlag gaat omhoog — buitenspel.
+303|{0} raakt geblesseerd en kan niet verder.
+304|Blessuretijd: {0} min.
+305|Rust. Stand: {0}.
+306|2H
+307|Pauze voor de verlenging.
+308|VERL
+309|Gelijke totaalscore ({0}:{1}) — verlenging!
+310|Gelijk na de reguliere speeltijd — verlenging!
+311|De bal ligt erin, maar na VAR-controle wordt het doelpunt van {0} afgekeurd
+312|buitenspel
+313|overtreding in de aanval
+314|hands
+315|vanaf de stip
+316|uit een directe vrije trap
+317|uit een vrije trap, in de kruising
+318|uit een vrije trap, over de muur
+319|met het hoofd
+320|met een kopbal na een voorzet
+321|laag in de hoek
+322|via de lat binnen
+323|van buiten het strafschopgebied
+324|na een snelle rush
+325|in de rebound
+326|met een zuivere afronding van dichtbij
+327|met een harde linkse knal
+328|in de verre hoek
+329|DOELPUNT! {0} ({1}) scoort {2}{3}! {4}
+330|Assist
+331|{0} neemt de strafschop — {1} stopt!
+332|keeper
+333|Vrije trap van {0} — {1} komt uit en plukt de bal.
+334|{0} schiet, maar {1} staat goed opgesteld.
+335|Prachtige redding! {0} tikt het schot van {1} weg.
+336|{0} schiet op doel — de keeper pakt de bal.
+337|Hoekschop voor de aanvallers. {0} neemt hem.
+338|{0} mist de strafschop!
+339|{0} neemt de vrije trap — de bal belandt tegen de muur.
+340|{0} schiet naast.
+341|over de lat!
+342|Een verdediger blokt het schot van {0}.
+343|Gevaar! {0} mist op een haar na.
+344|{0} probeert het van afstand — naast.
+345|Overtreding: {0} ({1}) gaat in de fout.
+346|Overtreding in het strafschopgebied! {0} haalt zijn tegenstander neer — strafschop!
+347|Overtreding net buiten de zestien: {0} haalt zijn tegenstander neer. Gevaarlijke vrije trap!
+348|Direct rood! {0} wordt weggestuurd na een grove overtreding.
+349|Tweede gele kaart — {0} moet eraf!
+350|Gele kaart
+351|Wissel bij {0}: {1} komt in de ploeg voor {2}.
+352|Strafschoppenserie!
+353|scoort
+354|mist
+355|Eindsignaal! {0} {1}
+356|(pen. {0})
+357|(n.v.)
+358|totaal {0}
+359|Annuleren
+360|Terug
+361|Start
+362|Selectie
+363|Tactiek
+364|Toernooien
+365|Post
+366|Statistieken
+367|Jeugd
+368|Training
+369|Bond
+370|Instellingen
+371|National
+372|Football Manager
+373|Meer
+374|Taal
+375|Laden niet mogelijk
+376|deze opslag komt uit een oude versie (v{0}). In versie 3 zijn de toernooien vernieuwd (play-offs, knock-outrondes met heen- en terugwedstrijden, Nations Leagues met promotie en degradatie), evenals de namen en gegevens van spelers — oude opslagbestanden zijn niet compatibel. Begin een nieuw spel.
+377|Neem een nationaal team over en leid het naar de glorie
+378|Nieuw spel
+379|Spel laden
+380|Hoe speel je
+381|210 nationale teams · 6 confederaties · kwalificaties, Nations Leagues, continentale toernooien en het WK.
+382|Alle namen en clubs zijn fictief.
+383|Jij bent de bondscoach. Tik op
+384|‘Doorgaan’
+385|om door de kalender te gaan: interlandperiodes (maart, juni, september, oktober, november), kwalificaties, Nations Leagues en eindtoernooien.
+386|Selectie
+387|kies vóór elke interlandperiode 18 tot 23 spelers.
+388|sleep of tik op spelers op het veld om ze te wisselen; een tweede tik opent de individuele instructies.
+389|Wedstrijd
+390|volg de acties, wijzig de tactiek en wissel live. Pauzeer wanneer je wilt.
+391|houd het vertrouwen in de gaten. Zakt het te ver, dan word je ontslagen. Succes levert budget op voor faciliteiten en aanbiedingen van andere landen.
+392|Begrepen
+393|Je naam
+394|Naam van de coach
+395|Kies een confederatie
+396|Wijzigen
+397|Sterkte {0}
+398|Favoriet: alleen overwinningen en titels worden verwacht.
+399|Sterk team: kwalificatie voor eindtoernooien is verplicht.
+400|Middenmoter: elke kwalificatie voor een eindtoernooi is een succes.
+401|Underdog: weinig druk, elke overwinning is een feest.
+402|Opslagslot
+403|Slot {0}{1}
+404|(bezet)
+405|Team overnemen
+406|De wereld wordt gemaakt: 210 nationale teams, ~5000 spelers…
+407|Hoofdmenu
+408|Doorgaan
+409|Geen komende wedstrijden. Plan een oefenwedstrijd via ‘Competities’.
+410|Vandaag wedstrijd
+411|over {0} dagen
+412|neutraal terrein
+413|thuis
+414|uit
+415|Vertrouwen van de bond
+416|Mediadruk
+417|Fans
+418|Budget
+419|W
+420|G
+421|V
+422|Geselecteerd
+423|Selectie / Oproep
+424|Competities
+425|Programma van het nationale team
+426|Geen wedstrijden gepland
+427|pen. {0}
+428|n.v.
+429|totaal {0}
+430|Simuleren…
+431|Wedstrijddag!
+432|Interlandperiode — controleer de selectie
+433|Loting — nieuw bericht
+434|Gelukkig nieuwjaar!
+435|Toernooi afgelopen — bekijk je post
+436|Geen berichten
+437|Aanbod accepteren
+438|Afwijzen
+439|Proberen hem over te halen
+440|Afzien
+441|Aanvraag steunen (−10 budget)
+442|Afwijzen
+443|Kies een nieuw nationaal team
+444|Sluiten
+445|Je bent nu bondscoach van {0}
+446|De bond heeft je ontslagen
+447|Maar je blijft niet zonder werk. Kies een van de aanbiedingen
+448|Meer spelers zoeken
+449|Gestopt
+450|Scoutingafdeling · niveau {0}
+451|Scouts zoeken spelers die speelgerechtigd zijn voor het nationale team, ook met dubbele nationaliteit (🛂). Resterende zoekacties deze interlandperiode
+452|Gevonden spelers
+453|{0} jaar
+454|ook {0} {1}
+455|Uitnodigen
+456|Nog niemand. Start een zoekactie.
+457|gestopt in {0}
+458|{0} interlands · {1} goals
+459|Nog niemand gestopt
+460|(18–23 nodig) · K {0} · VER {1} · MID {2} · AAN {3}
+461|Automatische selectie
+462|Alle
+463|VER
+464|MID
+465|AAN
+466|{0}d
+467|{0} jaar · {1} · {2} interlands, {3} goals
+468|V {0}
+469|M {0}
+470|Maximaal 23 spelers
+471|Selectie samengesteld
+472|Spelers gevonden
+473|Geen zoekacties meer over
+474|De geschiedenis verschijnt over een paar maanden.
+475|beste #{0} · slechtste
+476|Te weinig wedstrijden voor een grafiek
+477|enorm
+478|hoog
+479|kan groeien
+480|op zijn top
+481|gevoelig
+482|evenwichtig
+483|ambitieus
+484|{0} cm
+485|linksbenig
+486|rechtsbenig
+487|tweebenig
+488|voet
+489|(2e divisie)
+490|genaturaliseerd (geboren in {0})
+491|Bij de club: {0} · goals dit seizoen
+492|in topvorm
+493|uit vorm
+494|stabiel
+495|Potentieel
+496|Karakter
+497|Vorm
+498|Moreel
+499|Conditie
+500|Blessure: {0} dagen
+501|Schorsing: {0} wedstrijd(en)
+502|Gele kaarten (opgeteld)
+503|Wedstrijden
+504|Goals
+505|Assists
+506|Clean sheets
+507|Gemiddeld cijfer
+508|Cijfergeschiedenis onder jou (gele punten — goals)
+509|Praat met de speler
+510|Prijzen
+511|Bekritiseren
+512|Basisplaats beloven
+513|Waarschuwen voor concurrentie
+514|Rust geven
+515|Jeugdelftallen
+516|Uitslagen
+517|Spelers onder 21 spelen voor Jong (EK onder 21 en de kwalificatie in de UEFA), onder 23 in de olympische kwalificatie en op de Spelen (plus drie dispensatiespelers). Jeugdwedstrijden worden automatisch gesimuleerd; de sterkte is het gemiddelde van de 11 beste beschikbare spelers. De academie (niveau {0}) levert elk jaar nieuwe spelers af.
+518|{0} jaar · {1} · potentieel
+519|jeugdinterlands {0}
+520|In de A-selectie
+521|Selecteren
+522|Geen spelers onder 23 jaar
+523|Onder 17 (15–17 jaar) speelt de kwalificatie en het jaarlijkse WK onder 17. Op hun 18e stromen talenten door naar de A-selectie; de rest valt af. De beste junioren kunnen ook voor onder 20 spelen.
+524|O21 OEF
+525|(p. {0})
+526|Nog geen wedstrijden
+527|Overwinning
+528|Afgelopen
+529|Knock-outfase
+530|Groepsfase
+531|Nog geen toernooien
+532|{0}Pot {1}
+533|Hoofdfase
+534|Groepen met latere start
+535|De potten volgen de FIFA-ranking.{0}{1}
+536|Het gastland ({0}) is al in groep A geplaatst.
+537|Beperking: maximaal 2 UEFA-teams en 1 van elke andere confederatie per groep.
+538|De loting begint zo…
+539|Alles tonen
+540|Klaar
+541|Potten
+542|Bus parkeren
+543|Evenwicht
+544|Alles naar voren
+545|Laag
+546|Gemiddeld
+547|Hoog
+548|Langzaam
+549|Normaal
+550|Snel
+551|Gemengd
+552|Kort combineren
+553|Lange ballen
+554|Counter
+555|Standaard
+556|Vaker mee aanvallen
+557|Positie houden
+558|Vrije rol
+559|Mandekking
+560|Instelling
+561|Druk zetten
+562|Tempo
+563|Speelstijl
+564|Automatische opstelling
+565|Sleep een speler op een andere of tik twee spelers na elkaar aan om ze te wisselen. Een tweede tik opent de individuele instructie. Rode rand — buiten positie / niet beschikbaar.
+566|Bank
+567|Selecteer meer spelers
+568|Teaminstructies
+569|Beste opstelling ingesteld
+570|Individuele instructie
+571|Spelerskaart
+572|Evenwichtig
+573|Van alles wat
+574|Aanval en techniek
+575|Verdediging en fysiek
+576|Fysieke training
+577|Fysiek en snelheid
+578|Techniek en passing
+579|Passing en techniek
+580|Samenspel: vormverbetering
+581|Keepers
+582|Speciale keeperstraining
+583|Herstel
+584|Conditie en moreel, geen ontwikkeling
+585|Focus van het trainingskamp
+586|De training vindt aan het begin van elke interlandperiode plaats voor de geselecteerde spelers. Trainingscentrum: niveau {0}.
+587|Intensiteit
+588|Licht
+589|Normaal
+590|Hoog (blessurerisico)
+591|Conditie van de selectie
+592|{0} Zakt het naar 12%, dan word je ontslagen.
+593|De bond is enthousiast over je werk.
+594|De bond is tevreden.
+595|De bond maakt zich zorgen over de resultaten.
+596|Je baan staat op het spel!
+597|Doelen
+598|Doel
+599|Geen lopende toernooien
+600|Faciliteiten · budget
+601|Het budget groeit met overwinningen, kwalificaties voor eindtoernooien en titels.
+602|Loopbaan
+603|sinds {0}
+604|Faciliteit verbeterd!
+605|League {0}
+606|in de volgende editie
+607|Groepswinnaars promoveren, de nummers laatst degraderen{0}.
+608|de nummers 3 van A/B en de nummers 2 van B/C spelen play-offs in twee wedstrijden om de plek in de league
+609|Oefenwedstrijd plannen
+610|Afgelopen{0}
+611|winnaar {0}
+612|Er is nog geen toernooi begonnen
+613|Binnenkort
+614|Erelijst
+615|Nog leeg
+616|Standen
+617|Topscorers
+618|Stand
+619|Team
+620|G
+621|DS
+622|Ptn
+623|Plaatsen: {0}. Groene markering — staat nu op een kwalificatieplaats (de beste van gelijk geëindigde teams worden vergeleken op punten per wedstrijd).
+624|De beste {0} van elke groep en de {1} beste nummers drie gaan door naar de knock-outfase.
+625|pen. {0}
+626|Winnaar
+627|Alleen onze wedstrijden
+628|Speler
+629|Team
+630|D
+631|A
+632|Nog geen goals
+633|Heen
+634|Terug
+635|Geen vrije data in de komende interlandperiodes
+636|Datum (vrije interlanddata)
+637|Tegenstander
+638|Thuis spelen
+639|Plannen
+640|Wedstrijd gepland
+641|De tegenstander is op die datum bezet
+642|Spelers
+643|Records
+644|Ranking
+645|Trofeeën
+646|Gestopte spelers meetellen
+647|G — totaal aantal interlands, M — wedstrijden onder jou, Cf — gemiddeld cijfer onder jou. Tik op de kop om te sorteren.
+648|Ltd
+649|Str
+650|M
+651|CS
+652|Cf
+653|(gest.)
+654|Totaal aantal wedstrijden: {0}. Tik op een wedstrijd voor details (acties, statistieken, cijfers).
+655|Topscorers door de jaren heen
+656|Beschikbaar na afloop van de vierjarige cyclus
+657|Records van het nationale team (onder jou)
+658|Grootste overwinning
+659|Zwaarste nederlaag
+660|Zegereeks
+661|Ongeslagen reeks
+662|Clean sheets
+663|Balans als bondscoach
+664|goals {0}
+665|% overwinningen
+666|Spelersrecords
+667|Topscorer
+668|Meeste interlands
+669|Meeste assists
+670|Clean sheets (keeper)
+671|Beste gemiddelde cijfer (5+ wedstrijden)
+672|Beste cijfer in één wedstrijd
+673|FIFA-ranking · {0} {1}: #{2} ({3} punten) {4}
+674|SUM-formule: P = Pvoor + I·(W − We), We = 1/(10^(−dr/600)+1). I: oefenwedstrijd 10, NL (groepen) 15, NL-knock-out en kwalificatie 25, groepsfase van continentale toernooien 35 / knock-out 40, WK 50 / 60. Winst na strafschoppen — 0,75, verlies — 0,5. In de knock-outfase van eindtoernooien gaan geen punten verloren. Maandelijks bijgewerkt; de pijlen tonen de verandering ten opzichte van de vorige maand.
+675|Wereld
+676|Punten
+677|Nog geen trofeeën. Alles ligt nog voor je!
+678|Prestaties
+679|toeschouwers {0}
+680|Geen acties
+681|Balbezit
+682|Schoten
+683|Op doel
+684|xG (verwachte goals)
+685|Hoekschoppen
+686|Overtredingen
+687|Gele kaarten
+688|Rode kaarten
+689|Buitenspel
+690|Spelerscijfers {0}
+691|beste
+692|Opslagbestanden
+693|Het spel wordt na elke stap en wedstrijd automatisch in het huidige slot opgeslagen.
+694|Slot {0} {1}
+695|(huidig)
+696|leeg
+697|Opslaan
+698|Laden
+699|Exporteren naar bestand
+700|Importeren
+701|Standaardsnelheid
+702|Alleen hoofdmomenten in het verslag
+703|Naar hoofdmenu
+704|Origineel managerspel voor nationale teams. Alle namen, clubs en gegevens zijn fictief.
+705|Slot {0}
+706|Spel geladen
+707|Slot is leeg
+708|Laden mislukt
+709|Opgeslagen in slot {0}
+710|Opslag in slot {0} verwijderen?
+711|Geïmporteerd
+712|Voorbeschouwing
+713|Elo {0}
+714|thuiswedstrijd
+715|uitwedstrijd
+716|Scoutingrapport
+717|Formatie
+718|gemiddelde sterkte van de basiself
+719|Sleutelspelers
+720|Onderlinge duels onder jou
+721|Onze opstelling
+722|Niet beschikbaar
+723|De selectie moet uit 18–23 spelers bestaan (nu {0}).
+724|Wedstrijd starten
+725|Snelle simulatie
+726|Eerste van twee wedstrijden (totaalscore)
+727|terugwedstrijd: heen {0}; bij gelijke totaalscore verlenging en strafschoppen (geen uitdoelpunt)
+728|knock-out: bij gelijkspel verlenging en strafschoppen
+729|stadion met {0} plaatsen · {1} toeschouwers verwacht{2}
+730|uitverkocht, sterke steun van het thuispubliek
+731|tribunes halfleeg
+732|Druk
+733|Wissels
+734|Simuleren tot het einde
+735|Blessure! Voer een wissel door
+736|Verlenging
+737|Rust — je kunt de tactiek aanpassen
+738|Einde
+739|Wissels · nog {0}
+740|Kies een speler op het veld (links) en daarna een wisselspeler (rechts).
+741|Geen wisselspelers
+742|Wissel doorvoeren
+743|Wedstrijd hervatten
+744|Kies beide spelers
+745|Wissel niet mogelijk
+746|Tactiek tijdens de wedstrijd
+747|huidige behouden
+748|Individuele instructies
+749|Formatie gewijzigd
+750|Wedstrijdverslag
+751|Overwinning!
+752|Nederlaag
+753|Gelijkspel
+754|Door op totaalscore!
+755|Uitgeschakeld op totaalscore.
+756|Geen goals
+757|Persconferentie · {0} · vraag {1}
+758|Persconferentie afgelopen
+759|UEFA
+760|CONMEBOL
+761|CONCACAF
+762|CAF
+763|AFC
+764|OFC
+765|Europees kampioenschap
+766|Zuid-Amerikaans kampioenschap
+767|CONCACAF-kampioenschap
+768|Afrika Cup
+769|Azië Cup
+770|Oceanisch kampioenschap
+771|O{0}-kwal.
+772|Kwalificatie WK onder 17 {0}
+773|WK onder 17 {0}
+774|Kwalificatie
+775|EK onder 19
+776|WK onder 20 {0}
+777|Kwalificatie EK onder 21 {0}
+778|O21-kwal.
+779|EK onder 21 {0}
+780|Azië Cup onder 23
+781|Afrika Cup onder 23
+782|CONMEBOL olympische kwalificatie onder 23
+783|CONCACAF olympische kwalificatie onder 23
+784|OFC olympische kwalificatie onder 23
+785|Olympische play-off {0}
+786|O23-PO
+787|Play-off
+788|Olympisch voetbaltoernooi {0}
+789|Arab Cup {0}
+790|ARC
+791|Golf Cup {0}
+792|GOLF
+793|Zuid-Aziatisch kampioenschap {0}
+794|SAFF
+795|Zuidoost-Aziatisch kampioenschap {0}
+796|ASEAN
+797|King's Cup {0}
+798|KC
+799|Cup der continentale kampioenen {0}
+800|CCK
+801|African Nations Championship (spelers uit nationale competities) {0}
+802|CHAN
+803|Oost-Aziatisch kampioenschap {0}
+804|OAK
+805|Doorstroming uit O17
+806|Van onder 17 naar de A-selectie
+807|scoorde {0} keer deze maand — in topvorm.
+808|{0} speelt nauwelijks bij {1}; de vorm daalt.
+809|reeks clean sheets bij {0}.
+810|{0} raakte geblesseerd bij {1} — ongeveer {2} dagen uit.
+811|Transfer: {0} gaat van {1} naar {2}{3}{4}
+812|2e divisie
+813|een stap vooruit.
+814|op zoek naar speelminuten.
+815|Clubnieuws
+816|Pers
+817|De kranten eisen veranderingen
+818|De slechte reeks heeft een golf van kritiek veroorzaakt. Journalisten speculeren over een mogelijk ontslag van de bondscoach. Mediadruk: {0}%. De bond zal strenger naar de resultaten kijken.
+819|De pers staat achter ons
+820|Journalisten prijzen het werk van de technische staf.
+821|De fans zijn ontevreden
+822|De fans fluiten het team uit en de opkomst bij thuiswedstrijden daalt.
+823|Het hele land leeft mee met het nationale team!
+824|Kaartjes voor thuiswedstrijden zijn binnen enkele minuten uitverkocht.
+825|Dubbele nationaliteit
+826|{0} ({1} jaar, {2}, {3}, sterkte {4}, potentieel {5}) kan voor ons nationale team uitkomen en voor {6} {7}. Hij heeft nog geen keuze gemaakt. Zullen we proberen hem over te halen?
+827|Naturalisatieaanvraag
+828|{0} ({1} jaar, {2}, sterkte {3}) — afkomstig uit {4}, speelt al vijf jaar bij {5} en wil een paspoort om voor ons nationale team te spelen. De aanvraag steunen kost 10 eenheden budget; een deel van de fans kan er koeltjes op reageren.
+829|{0} heeft voor ons nationale team gekozen! Hij is aan de selectie toegevoegd.
+830|Na lang nadenken heeft {0} voor {1} gekozen.
+831|{0} gaat voor {1} spelen.
+832|Onvoldoende budget (10 nodig).
+833|{0} heeft een paspoort gekregen en kan nu worden geselecteerd.
+834|Aanvraag afgewezen.
+c_ENG|Engeland
+c_SCO|Schotland
+c_WAL|Wales
+c_NIR|Noord-Ierland
+c_CD|DR Congo
+c_CG|Congo

@@ -1,0 +1,841 @@
+0|We are in
+1|not enough dates
+2|{0}Matchday {1}
+3|Group {0}
+4|Round of 32
+5|Round of 16
+6|Quarter-final
+7|Semi-final
+8|Final
+9|Round {0}
+10|1st leg
+11|2nd leg
+12|Our opponents{0}
+13|in Group {0}
+14|Our opponent
+15|(two legs, aggregate score; if level — extra time and penalties, no away goals rule)
+16|(single match; if drawn — extra time and penalties)
+17|We start from the second round (bye in the first).
+18|Youth staff
+19|Football Federation
+20|Draw
+21|We are in the finals!
+22|UEFA Nations League
+23|NL
+24|CONCACAF Nations League
+25|CNL
+26|promotion!
+27|relegation
+28|We have won the group and will play in League {0} next season!
+29|We finished bottom and will drop to League {0} next season.
+30|Promoted via play-offs!
+31|We won the play-offs and move up to League {0}.
+32|Play-off defeat
+33|We lost the play-offs and drop to League {0}.
+34|League {0}
+35|Final Four
+36|{0}-F4
+37|League play-offs
+38|{0}-PO
+39|Play-offs
+40|World Cup {0} qualifying
+41|European Championship {0} qualifying
+42|EQ
+43|Euro {0} qualifying play-offs
+44|EPO
+45|Path semi-final
+46|Path final
+47|European Championship {0}
+48|EURO
+49|{0}UEFA
+50|WCQ
+51|{0}UEFA play-offs
+52|WCPO
+53|{0}CONMEBOL
+54|Copa América {0}
+55|CA
+56|CONCACAF Gold Cup {0}
+57|GC
+58|{0}CONCACAF, round 1
+59|WCQ-1
+60|Round 1
+61|{0}CONCACAF, round 2
+62|WCQ-2
+63|{0}CONCACAF, round 3
+64|Asian Cup {0} qualifying
+65|ACQ
+66|Asian Cup {0}
+67|AC
+68|{0}AFC, round 1
+69|{0}AFC, round 2
+70|{0}AFC, round 3
+71|{0}AFC, round 4
+72|WCQ-4
+73|{0}AFC, round 5
+74|WCQ-5
+75|Round 5
+76|Africa Cup {0} qualifying
+77|AFQ
+78|Africa Cup of Nations {0}
+79|AFCON
+80|{0}CAF
+81|{0}CAF, play-offs
+82|CAFPO
+83|{0}OFC, round 1
+84|{0}OFC, round 2
+85|{0}OFC, final round
+86|OFC Nations Cup {0}
+87|ONC
+88|{0}intercontinental play-offs
+89|ICPO
+90|Play-off round 1
+91|Play-off final
+92|World Cup {0}
+93|WC
+94|group-stage exit
+95|reach the knockouts
+96|semi-final
+97|final
+98|win
+99|Goal: win the play-offs.
+100|Goal: put up a fight in the play-offs.
+101|Goal: win the trophy.
+102|Goal: give a good account of ourselves.
+103|Federation goal: reach the next round.
+104|Goal: compete for a place in the next round.
+105|Federation goal: qualify for the finals.
+106|Goal: perform with dignity; qualifying would be a bonus.
+107|Goal: go further.
+108|Goal: challenge the favourites.
+109|Goal: fight for first place in the group.
+110|Goal: stay in the league.
+111|Federation goal
+112|News
+113|winner
+114|{0} {1} win the tournament, beating {2} in the final.
+115|Result: “{0}” — {1} Federation trust {2}{3}.
+116|play-offs won.
+117|play-offs lost.
+118|through to the next round!
+119|qualification secured!
+120|we could not go any further.
+121|we failed to qualify.
+122|we are through.
+123|we are out.
+124|first place in the group.
+125|no first place.
+126|TROPHY! The federation budget has been boosted.
+127|Summary
+128|January
+129|February
+130|March
+131|April
+132|May
+133|June
+134|July
+135|August
+136|September
+137|October
+138|November
+139|December
+140|Sun
+141|Mon
+142|Tue
+143|Wed
+144|Thu
+145|Fri
+146|Sat
+147|Attack
+148|Defence
+149|Passing
+150|Technique
+151|Physical
+152|Pace
+153|Goalkeeping
+154|Coach
+155|Friendlies
+156|FR
+157|Welcome!
+158|Dear {0}, the federation is delighted to welcome you as head coach of the {1} national team. We expect strong results from you. Your first squad has already been selected — check it before the next window.
+159|You have been sacked
+160|Unfortunately, the federation has lost confidence in your work and has decided to terminate your contract. However, other federations are interested in you — choose a new team.
+161|{0} Federation
+162|Job offer
+163|The {0} {1} Football Federation invites you to take charge of its national team. Team strength
+164|New job
+165|You are now in charge of {0} {1}. Good luck! Pick your squad for the next window.
+166|Promise broken
+167|Coach, you promised me a place in the starting line-up. I am disappointed.
+168|Friendly
+169|{0} caps)
+170|potential {0})
+171|Happy New Year {0}
+172|The players are a year older. {0} Federation trust
+173|Player pool changes
+174|National team staff
+175|International window
+176|{0} Check your squad (18–23 players) and the line-up.
+177|This window we play {0} match(es)
+178|There are no competitive matches in this window — you can arrange friendlies (Competitions → Friendlies).
+179|Medical staff
+180|Training injury
+181|{0} was injured in an intense training session and is out for {1} days.
+182|A {1}:{2} win over {0}. Your thoughts?
+183|I'm proud of the lads — they gave everything.
+184|We can play even better; it's too early to relax.
+185|That was my tactical victory.
+186|A {0}:{1} defeat to {2}. Who is to blame?
+187|The responsibility is entirely mine.
+188|Some players performed below their level.
+189|The refereeing affected the result.
+190|A {0}:{1} draw. Are you happy with the result?
+191|A fair result; we move on.
+192|We should have won.
+193|The opponents were very good.
+194|The fans want more young players in the team. Your answer?
+195|Young players will get their chance when they earn it.
+196|Yes, we will refresh the squad.
+197|Experience matters more right now.
+198|What are the team's goals for the upcoming tournament?
+199|Nothing but victory!
+200|We take it one game at a time.
+201|We are the underdogs; there's no pressure.
+202|How do you rate the players' fitness?
+203|Everything is fine; the team is ready.
+204|There are issues with fatigue; we will rotate.
+205|The clubs are overworking the players.
+206|There are rumours you are leaving for another national team. Is that true?
+207|I am fully focused on this team.
+208|Never say never.
+209|No comment.
+210|You have already spoken to this player during this window.
+211|The player is flattered, but may relax a little.
+212|The player is inspired by your praise.
+213|The player is grateful but knows he can do better.
+214|The player took the criticism badly.
+215|The player has accepted the challenge and wants to prove you wrong!
+216|The player listened calmly to your remarks.
+217|The player is delighted with the promise of a start in the next match. Don't let him down!
+218|The competition has spurred the player on.
+219|The player is worried about his place in the team.
+220|The player is grateful for the chance to recover.
+221|{0} Morale {1}{2}.
+222|{0} has agreed to play for the national team!{1}
+223|(turned down {0})
+224|{0} declined{1}.
+225|he chose {0}
+226|Training centre
+227|Faster player progress at camps
+228|Youth academy
+229|More and more talented graduates
+230|Medical centre
+231|Faster recovery and injury treatment
+232|Scouting network
+233|More player searches per window
+234|National stadium
+235|More revenue and fan support
+236|First win
+237|Win your first match
+238|Locked down
+239|A competitive match without conceding
+240|Thrashing
+241|Win by 5+ goals
+242|Giant killer
+243|Beat a much stronger opponent
+244|Hat-trick
+245|A national team player scores 3 goals in a match
+246|Ticket booked
+247|Qualify for a final tournament
+248|Final four
+249|Reach a tournament semi-final
+250|Beyond expectations
+251|Exceed the federation's target
+252|First trophy
+253|Win any tournament
+254|Continental champion
+255|Win your continental championship
+256|World champion
+257|Win the World Cup
+258|Streak
+259|10 wins in a row
+260|Half-century
+261|50 wins in charge
+262|New challenge
+263|Take charge of another national team
+264|Builder
+265|All infrastructure facilities at level 3
+266|Discovery
+267|Recruit a dual-nationality player
+268|Achievement
+269|UEFA (Europe)
+270|CONMEBOL (South America)
+271|CONCACAF (North & Central America)
+272|CAF (Africa)
+273|AFC (Asia)
+274|OFC (Oceania)
+275|GK
+276|CB
+277|LB
+278|RB
+279|DM
+280|CM
+281|AM
+282|LM
+283|RM
+284|LW
+285|RW
+286|ST
+287|It's raining; the pitch is slippery.
+288|Heat — it will be tough for the players.
+289|It's snowing.
+290|Strong wind.
+291|clear
+292|cloudy
+293|rain
+294|heat
+295|snow
+296|wind
+297|1H
+298|Kick-off! The match is under way.
+299|The referee blows the whistle to start the game.
+300|Here we go! The ball is in play.
+301|Offside — {0}'s attack breaks down.
+302|The flag is up — offside.
+303|{0} is injured and cannot continue.
+304|{0} min. added
+305|Half-time. Score {0}.
+306|2H
+307|Break before extra time.
+308|ET
+309|Level on aggregate ({0}:{1}) — extra time!
+310|Level after 90 minutes — extra time!
+311|The ball is in the net, but after a VAR review {0}'s goal is ruled out
+312|offside
+313|foul in attack
+314|handball
+315|from the penalty spot
+316|with a direct free kick
+317|with a free kick into the top corner
+318|with a free kick over the wall
+319|with a header
+320|heading in a cross
+321|low into the corner
+322|under the crossbar
+323|from the edge of the box
+324|after a quick dribble
+325|from the rebound
+326|with a precise close-range finish
+327|with a powerful left-footed strike
+328|into the far corner
+329|GOAL! {0} ({1}) scores {2}{3}! {4}
+330|Assist
+331|{0} takes the penalty — {1} saves!
+332|goalkeeper
+333|Free kick from {0} — {1} leaps to claim the ball.
+334|{0} shoots, but {1} is well placed.
+335|Great save! {1}'s shot is kept out by {0}.
+336|{0} gets a shot on target — the keeper gathers.
+337|Corner at the opponents' end. {0} takes it.
+338|{0} misses the penalty!
+339|{0} takes the free kick — it hits the wall.
+340|{0} shoots wide.
+341|over the bar!
+342|{0}'s shot is blocked by a defender.
+343|Close! {0} misses by a whisker.
+344|{0} tries his luck from distance — wide.
+345|Foul: {0} ({1}) commits a foul.
+346|Foul in the box! {0} brings down his opponent — penalty!
+347|Foul on the edge of the box: {0} brings down his opponent. Dangerous free kick!
+348|Straight red! {0} is sent off for a nasty foul.
+349|Second yellow — {0} is off!
+350|Yellow card
+351|Substitution for {0}: {1} replaces {2}.
+352|Penalty shoot-out!
+353|scores
+354|misses
+355|Full time! {0} {1}
+356|(pens {0})
+357|(a.e.t.)
+358|agg. {0}
+359|Cancel
+360|Back
+361|Home
+362|Squad
+363|Tactics
+364|Tournaments
+365|Mail
+366|Statistics
+367|Youth
+368|Training
+369|Federation
+370|Settings
+371|National
+372|Football Manager
+373|More
+374|Language
+375|Could not save
+376|this save is from an old version of the game (v{0}). Version 3 reworked the tournaments (play-offs, two-legged rounds, Nations Leagues with promotion and relegation), player names and data — old saves are incompatible. Please start a new game.
+377|Take charge of a national team and lead it to glory
+378|New game
+379|Load game
+380|How to play
+381|210 national teams · 6 confederations · qualifiers, Nations Leagues, continental championships and the World Cup.
+382|All names and clubs are fictional.
+383|You are the head coach of a national team. Press
+384|“Continue”
+385|to move through the calendar: international windows (March, June, September, October, November), qualifying tournaments, Nations Leagues, final tournaments.
+386|Squad call-up
+387|select 18–23 players before each window.
+388|drag or tap players on the pitch to swap them; tap again for individual instructions.
+389|Match
+390|follow the action, change tactics and make substitutions live. Pause at any time.
+391|keep an eye on trust. If it falls too low, you will be sacked. Success brings budget for infrastructure and offers from other national teams.
+392|Got it
+393|Your name
+394|Coach name
+395|Choose a confederation
+396|Change
+397|Strength {0}
+398|Favourite: only wins and trophies are expected.
+399|Strong team: qualifying for final tournaments is a must.
+400|Mid-table side: every final tournament appearance is a success.
+401|Underdog: little pressure, every win is a celebration.
+402|Save slot
+403|Slot {0}{1}
+404|(in use)
+405|Take charge
+406|Generating the world: 210 national teams, ~5000 players…
+407|Main menu
+408|Continue
+409|No upcoming matches. Arrange a friendly in the “Competitions” section.
+410|Match today
+411|in {0} days
+412|neutral venue
+413|home
+414|away
+415|Federation trust
+416|Press pressure
+417|Fans
+418|Budget
+419|W
+420|D
+421|L
+422|Called up
+423|Squad / Call-up
+424|Competitions
+425|Team calendar
+426|No scheduled matches
+427|pens {0}
+428|a.e.t.
+429|agg. {0}
+430|Simulating…
+431|Match day!
+432|International window — check your squad
+433|Draw — new message
+434|Happy New Year!
+435|Tournament over — check your mail
+436|No messages
+437|Accept the offer
+438|Decline
+439|Try to persuade him to choose us
+440|Do not pursue
+441|Support the request (−10 budget)
+442|Reject
+443|Choose a new national team
+444|Close
+445|You are now in charge of {0}
+446|The federation has dismissed you
+447|But you won't be out of work for long. Choose one of the offers
+448|Find more players
+449|Retired
+450|Scouting network · level {0}
+451|Scouts look for players eligible for the national team, including dual nationals (🛂). Searches left this window
+452|Players found
+453|{0} y.o.
+454|also {0} {1}
+455|Invite
+456|Nobody yet. Start a search.
+457|retired in {0}
+458|{0} caps · {1} goals
+459|No one has retired yet
+460|(18–23 needed) · GK {0} · DF {1} · MF {2} · FW {3}
+461|Auto call-up
+462|All
+463|DEF
+464|MID
+465|FWD
+466|{0}d
+467|{0} y.o. · {1} · {2} caps, {3} goals
+468|F {0}
+469|M {0}
+470|Maximum 23 players
+471|Squad selected
+472|Players found
+473|No searches left
+474|The history will appear in a couple of months.
+475|best #{0} · worst
+476|Not enough matches for a chart
+477|huge
+478|high
+479|room to grow
+480|at his peak
+481|sensitive
+482|level-headed
+483|ambitious
+484|{0} cm
+485|left
+486|right
+487|both feet
+488|foot
+489|(2nd division)
+490|naturalised (born in {0})
+491|At club: {0} · goals this season
+492|excellent form
+493|slump
+494|steady
+495|Potential
+496|Personality
+497|Form
+498|Morale
+499|Freshness
+500|Injury: {0} days
+501|Suspension: {0} match(es)
+502|Yellow cards (accumulated)
+503|Caps
+504|Goals
+505|Assists
+506|Clean sheets
+507|Avg. rating
+508|Rating history under you (yellow dots — goals)
+509|Talk to the player
+510|Praise
+511|Criticise
+512|Promise a starting place
+513|Warn about competition
+514|Give him a rest
+515|Youth teams
+516|Results
+517|Players under 21 play for the U-21s (the U-21 Euro and its UEFA qualifiers), under-23s play in Olympic qualifying and at the Olympics (plus three best players over 23). Youth matches are simulated automatically; team strength is the average of the best 11 available players. The academy (level {0}) produces new players every year.
+518|{0} y.o. · {1} · potential
+519|youth caps {0}
+520|In senior squad
+521|Call up
+522|No players under 23
+523|The U-17 team (ages 15–17) plays in qualifiers and the annual U-17 World Cup. At 18 the promising players join the senior pool; the rest are released. The best juniors can also play for the U-20s.
+524|U-21 FR
+525|(p. {0})
+526|No matches yet
+527|Victory
+528|Finished
+529|Knockout stage
+530|Group stage
+531|No tournaments yet
+532|{0}Pot {1}
+533|Main stage
+534|Late-start groups
+535|Pots are based on the FIFA ranking.{0}{1}
+536|The host ({0}) is placed in Group A in advance.
+537|Restriction: no more than 2 UEFA teams and no more than 1 team from each other confederation per group.
+538|The draw is starting…
+539|Show all
+540|Done
+541|Pots
+542|Park the bus
+543|Balanced
+544|All-out attack
+545|Low
+546|Medium
+547|High
+548|Slow
+549|Normal
+550|Fast
+551|Mixed
+552|Short passing
+553|Long balls
+554|Counter-attacks
+555|Default
+556|Get forward more
+557|Hold position
+558|Free role
+559|Man-marking
+560|Mentality
+561|Pressing
+562|Tempo
+563|Style
+564|Auto line-up
+565|Drag a player onto another, or tap two players in turn, to swap them. Tap again for individual instructions. Red outline — out of position / unavailable.
+566|Substitutes
+567|Call up more players
+568|Team instructions
+569|Best line-up selected
+570|Individual instruction
+571|Player profile
+572|Balanced
+573|A bit of everything
+574|Attack and technique
+575|Defence and physique
+576|Fitness
+577|Strength and pace
+578|Technique and passing
+579|Passing and technique
+580|Team play: form boost
+581|Goalkeepers
+582|Dedicated goalkeeper training
+583|Recovery
+584|Freshness and morale, no progress
+585|Camp focus
+586|Training takes place at the start of each international window for the called-up players. Training centre: level {0}.
+587|Intensity
+588|Light
+589|Normal
+590|High (injury risk)
+591|Condition of called-up players
+592|{0} If it drops to 12%, you will be sacked.
+593|The federation is delighted with your work.
+594|The federation is satisfied.
+595|The federation is concerned about the results.
+596|Your job is in danger!
+597|Goals
+598|Goal
+599|No active tournaments
+600|Infrastructure · budget
+601|The budget grows with wins, qualification for final tournaments and trophies.
+602|Career
+603|since {0}
+604|Facility upgraded!
+605|League {0}
+606|next season
+607|Group winners go up, bottom teams go down{0}.
+608|3rd-placed teams of A/B and 2nd-placed teams of B/C play two-legged play-offs for a place in the league
+609|Arrange a friendly
+610|Finished{0}
+611|winner {0}
+612|No tournaments have started yet
+613|Upcoming
+614|Winners archive
+615|Empty for now
+616|Tables
+617|Top scorers
+618|Table
+619|Team
+620|P
+621|GD
+622|Pts
+623|Spots: {0}. Green marker — currently in a qualifying position (best teams in the same position are compared by points per game).
+624|The top {0} of each group and the {1} best third-placed teams reach the knockout stage.
+625|pens {0}
+626|Champion
+627|Our matches only
+628|Player
+629|Team
+630|G
+631|A
+632|No goals yet
+633|1st
+634|2nd
+635|No free dates in the upcoming windows
+636|Date (free international window dates)
+637|Opponent
+638|Play at home
+639|Arrange
+640|Match arranged
+641|The opponent is busy on that date
+642|Players
+643|Records
+644|Ranking
+645|Trophies
+646|Include retired players
+647|P — total caps, M — matches under you, Rt — average rating under you. Tap a header to sort.
+648|Age
+649|OVR
+650|M
+651|CS
+652|Rt
+653|(ret.)
+654|Total matches: {0}. Tap a match for details (events, stats, ratings).
+655|Top scorers archive
+656|Available after the end of the four-year cycle
+657|Team records (under you)
+658|Biggest win
+659|Heaviest defeat
+660|Winning streak
+661|Unbeaten run
+662|Clean sheets
+663|Coaching record
+664|goals {0}
+665|Win percentage
+666|Player records
+667|Top scorer
+668|Most caps
+669|Most assists
+670|Clean sheets (goalkeeper)
+671|Best avg. rating (5+ matches)
+672|Best match rating
+673|FIFA Ranking · {0} {1}: #{2} ({3} points) {4}
+674|SUM formula: P = Pbefore + I·(W − We), We = 1/(10^(−dr/600)+1). I: friendly 10, NL (groups) 15, NL play-offs and qualifiers 25, continental finals group matches 35 / knockouts 40, World Cup 50 / 60. Shoot-out win — 0.75, loss — 0.5. No points are lost in the knockout stage of final tournaments. Updated monthly; arrows show the change since last month.
+675|World
+676|Points
+677|No trophies yet. It's all ahead of you!
+678|Achievements
+679|attendance {0}
+680|No events
+681|Possession
+682|Shots
+683|On target
+684|xG (expected goals)
+685|Corners
+686|Fouls
+687|Yellow cards
+688|Red cards
+689|Offsides
+690|Player ratings {0}
+691|best
+692|Saves
+693|The game is saved automatically to the current slot after every step and match.
+694|Slot {0} {1}
+695|(current)
+696|empty
+697|Save
+698|Load
+699|Export to file
+700|Import
+701|Default speed
+702|Key events only in the commentary
+703|Exit to main menu
+704|An original national team manager game. All names, clubs and data are fictional.
+705|Slot {0}
+706|Game loaded
+707|Slot is empty
+708|Could not load
+709|Saved to slot {0}
+710|Delete the save in slot {0}?
+711|Imported
+712|Pre-match
+713|Elo {0}
+714|home match
+715|away match
+716|Scouting report
+717|Formation
+718|average strength of the starting XI
+719|Key players
+720|Head-to-head under you
+721|Our line-up
+722|Unavailable
+723|The squad must contain 18–23 players (currently {0}).
+724|Kick off
+725|Quick simulation
+726|1st leg of two (aggregate)
+727|2nd leg: first leg {0}; if level on aggregate — extra time and penalties (no away goals rule)
+728|knockout: if drawn — extra time and penalties
+729|stadium capacity {0} · expected attendance {1}{2}
+730|sell-out crowd, fierce home support
+731|half-empty stands
+732|Momentum
+733|Substitutions
+734|Simulate to the end
+735|Injury! Make a substitution
+736|Extra time
+737|Half-time — you can change tactics
+738|Full time
+739|Substitutions · {0} left
+740|Choose a player on the pitch (left), then a substitute (right).
+741|No substitutes
+742|Make the substitution
+743|Resume the match
+744|Select both players
+745|Substitution not possible
+746|In-match tactics
+747|keep current
+748|Individual instructions
+749|Formation changed
+750|Match report
+751|Victory!
+752|Defeat
+753|Draw
+754|We go through on aggregate!
+755|We are out on aggregate.
+756|No goals
+757|Press conference · {0} · question {1}
+758|Press conference over
+759|UEFA
+760|CONMEBOL
+761|CONCACAF
+762|CAF
+763|AFC
+764|OFC
+765|European Championship
+766|South American Championship
+767|CONCACAF Championship
+768|Africa Cup of Nations
+769|Asian Cup
+770|Oceania Championship
+771|U-{0} Q
+772|U-17 World Cup {0} qualifying
+773|U-17 World Cup {0}
+774|Qualifying
+775|U-19 European Championship
+776|U-20 World Cup {0}
+777|U-21 European Championship {0} qualifying
+778|U-21 Q
+779|U-21 European Championship {0}
+780|U-23 Asian Cup
+781|U-23 Africa Cup of Nations
+782|CONMEBOL U-23 Olympic qualifying
+783|CONCACAF U-23 Olympic qualifying
+784|OFC U-23 Olympic qualifying
+785|Olympic play-off {0}
+786|U-23 PO
+787|Play-off
+788|Olympic football tournament {0}
+789|Arab Nations Cup {0}
+790|ANC
+791|Gulf Cup {0}
+792|GULF
+793|South Asian Championship {0}
+794|SAC
+795|Southeast Asian Championship {0}
+796|SEAC
+797|King's Cup {0}
+798|KC
+799|Continental Champions Cup {0}
+800|CCC
+801|African Nations Championship (domestic-league players) {0}
+802|CHAN
+803|East Asian Cup {0}
+804|EAC
+805|U-17 graduation
+806|Moving from the U-17s to the senior national team pool
+807|scored {0} goals this month — excellent form.
+808|{0} is barely playing for {1}; his form is dropping.
+809|a run of clean sheets for {0}.
+810|{0} was injured playing for {1} — out for about {2} days.
+811|Transfer: {0} moves from {1} to {2}{3}{4}
+812|2nd division
+813|a step up.
+814|for regular playing time.
+815|Club news
+816|Press
+817|The papers demand change
+818|A string of poor results has sparked a storm of criticism. Journalists are discussing the coach's possible dismissal. Press pressure: {0}%. The federation will judge results more harshly.
+819|The press is on our side
+820|Journalists praise the work of the coaching staff.
+821|The stands are unhappy
+822|The fans are booing the team and attendance at home matches is falling.
+823|The whole country is behind the team!
+824|Tickets for home matches sell out in minutes.
+825|Dual nationality
+826|{0} ({1} y.o., {2}, {3}, strength {4}, potential {5}) is eligible to play for us and for {6} {7}. He hasn't decided yet. Shall we try to persuade him?
+827|Naturalisation request
+828|{0} ({1} y.o., {2}, strength {3}) — born in {4}, has played for {5} for five years and wants a passport so he can play for us. Supporting the request costs 10 budget units; some fans may react coolly.
+829|{0} has chosen our national team! He has been added to the pool.
+830|After some thought, {0} has chosen {1}.
+831|{0} will play for {1}.
+832|Not enough budget (10 needed).
+833|{0} has received a passport and can now be called up.
+834|Request rejected.
+c_ENG|England
+c_SCO|Scotland
+c_WAL|Wales
+c_NIR|Northern Ireland
+c_CD|DR Congo
+c_CG|Congo

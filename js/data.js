@@ -10,12 +10,12 @@ CAF:`MA|Марокко|84|ar SN|Сенегал|81|afw NG|Нигерия|78|afw C
 AFC:`JP|Япония|82|jp IR|Иран|78|ir KR|Южная Корея|78|kr AU|Австралия|75|en UZ|Узбекистан|72|ca SA|Саудовская Аравия|70|ar IQ|Ирак|70|ar QA|Катар|69|ar JO|Иордания|69|ar AE|ОАЭ|68|ar OM|Оман|66|ar BH|Бахрейн|64|ar CN|Китай|64|cn SY|Сирия|63|ar PS|Палестина|62|ar ID|Индонезия|61|id VN|Вьетнам|61|vn TH|Таиланд|61|th KG|Киргизия|60|ca TJ|Таджикистан|60|ca LB|Ливан|59|ar KP|КНДР|58|kr KW|Кувейт|58|ar MY|Малайзия|57|id TM|Туркменистан|56|ca IN|Индия|55|in PH|Филиппины|54|id YE|Йемен|54|ar HK|Гонконг|53|cn AF|Афганистан|52|ir SG|Сингапур|51|id MM|Мьянма|50|th TW|Тайвань|48|cn BD|Бангладеш|47|in NP|Непал|46|in MV|Мальдивы|46|in KH|Камбоджа|46|th MN|Монголия|45|ca PK|Пакистан|44|in LA|Лаос|43|th LK|Шри-Ланка|42|in TL|Восточный Тимор|40|pt BT|Бутан|40|in GU|Гуам|39|pac BN|Бруней|38|id MO|Макао|38|cn`,
 OFC:`NZ|Новая Зеландия|66|en NC|Новая Каледония|52|fr SB|Соломоновы Острова|50|pac FJ|Фиджи|49|pac PF|Таити|48|fr PG|Папуа — Новая Гвинея|46|pac VU|Вануату|46|pac WS|Самоа|38|pac TO|Тонга|37|pac CK|Острова Кука|34|pac AS|Американское Самоа|30|pac`
 };
-N.CONFS = {UEFA:'УЕФА (Европа)',CONMEBOL:'КОНМЕБОЛ (Юж. Америка)',CONCACAF:'КОНКАКАФ (Сев. и Центр. Америка)',CAF:'КАФ (Африка)',AFC:'АФК (Азия)',OFC:'ОФК (Океания)'};
+N.CONFS = {UEFA:_t("УЕФА (Европа)"),CONMEBOL:_t("КОНМЕБОЛ (Юж. Америка)"),CONCACAF:_t("КОНКАКАФ (Сев. и Центр. Америка)"),CAF:_t("КАФ (Африка)"),AFC:_t("АФК (Азия)"),OFC:_t("ОФК (Океания)")};
 const FK={ENG:'gb-eng',SCO:'gb-sct',WAL:'gb-wls',NIR:'gb-nir'};
 N.flagKey=c=>FK[c]||c.toLowerCase();
 function flag(c){ return '<img class="fl" src="flags/'+N.flagKey(c)+'.svg" alt="'+c+'" loading="lazy">'; }
 N.TEAMS = [];
-for(const conf in RAW){ for(const tok of RAW[conf].split(/ (?=[A-Z]{2,3}\|)/)){ const [c,n,r,pool]=tok.trim().split('|'); N.TEAMS.push({c,n,r:+r,pool,conf,f:flag(c)}); } }
+for(const conf in RAW){ for(const tok of RAW[conf].split(/ (?=[A-Z]{2,3}\|)/)){ const [c,n,r,pool]=tok.trim().split('|'); N.TEAMS.push({c,n:NFM_I18N.country(c,n,N.flagKey(c).replace('gb-','').toUpperCase()),ru:n,r:+r,pool,conf,f:flag(c)}); } }
 
 const SPEC=`ES:es FR:fr+fr+fr+afwf+mag ENG:en+en+en+car PT:pt DE:de+de+de+tr+afwe NL:nl+nl+nl+car IT:it BE:be+be+fr+afwf HR:balk DK:scand CH:ch+de+balk+alb AT:de+de+balk NO:scand TR:tr UA:ua RS:balk PL:pl SE:se+se+balk SCO:sco+en CZ:cz HU:hu RU:ru GR:gr WAL:wal+en SK:cz RO:ro SI:balk GE:ge IE:ie+en AL:alb BA:balk NIR:ie+en+sco FI:fi IS:is MK:bg+alb ME:balk IL:il XK:alb BG:bg KZ:ca+ru BY:ru AM:am LU:fr+de+pt AZ:az CY:gr EE:ee LV:lv LT:lt FO:scand MD:ro MT:it+en AD:es+fr GI:en+es LI:de SM:it
 BR:br US:en+en+lat+car MX:lat CA:en+en+car+fr+balk PA:lat+car CR:lat JM:car HN:lat GT:lat CW:nl+car SV:lat HT:fr TT:car SR:nl+car NI:lat DO:lat CU:lat PR:lat+en AW:nl+car
@@ -24,7 +24,7 @@ JP:jp IR:ir KR:kr AU:en+en+balk+gr+it UZ:ca SA:ar IQ:ar QA:ar JO:ar AE:ar OM:ar 
 NZ:en NC:fr+pac SB:pac FJ:pac PF:fr+pac PG:pac VU:pac WS:pac TO:pac CK:pac AS:pac`;
 const SP={}; SPEC.split(/\s+/).forEach(x=>{const [c,v]=x.split(':'); SP[c]=v;});
 for(const t of N.TEAMS) t.pool = SP[t.c] || (t.conf==='CONMEBOL'?'lat':t.conf==='CONCACAF'?'car':'en');
-N.POS = {GK:['ВР','G'],CB:['ЦЗ','D'],LB:['ЛЗ','D'],RB:['ПЗ','D'],DM:['ОП','M'],CM:['ЦП','M'],AM:['АП','M'],LM:['ЛП','M'],RM:['ПП','M'],LW:['ЛВ','F'],RW:['ПВ','F'],ST:['НП','F']};
+N.POS = {GK:[_t("ВР"),'G'],CB:[_t("ЦЗ"),'D'],LB:[_t("ЛЗ"),'D'],RB:[_t("ПЗ"),'D'],DM:[_t("ОП"),'M'],CM:[_t("ЦП"),'M'],AM:[_t("АП"),'M'],LM:[_t("ЛП"),'M'],RM:[_t("ПП"),'M'],LW:[_t("ЛВ"),'F'],RW:[_t("ПВ"),'F'],ST:[_t("НП"),'F']};
 // схемы: [роль, x(0-100 ширина), y(0-100 от своих ворот)]
 N.FORMS = {
 '4-4-2':[['GK',50,5],['LB',15,25],['CB',38,20],['CB',62,20],['RB',85,25],['LM',15,55],['CM',38,50],['CM',62,50],['RM',85,55],['ST',38,82],['ST',62,82]],
