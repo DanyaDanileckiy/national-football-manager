@@ -30,30 +30,59 @@ N.roleOvr=(p,role)=>{ if(!p||!p.att&&!p.gk)return 30; return raw(p,role)*(0.7+0.
 N.ovr=p=>Math.round(raw(p,p.pos));
 N.upd=p=>{p.o=N.ovr(p);return p};
 let SS=null; N.setS=s=>{SS=s}; N.getS=()=>SS;
-function nameFor(pool){const P=N.NAMES[pool]||N.NAMES.en;return pick(P[0])+' '+pick(P[1])}
-function clubFor(o,team){ const t=N.T(team); if(o>=84&&R()<.85) return pick(N.CLUBS[0]); if(o>=77&&R()<.8) return pick(N.CLUBS[R()<.3?0:1]); if(o>=70&&R()<.65) return pick(N.CLUBS[R()<.4?1:2]); if(o>=64&&R()<.3) return pick(N.CLUBS[2]);
- return pick(N.LOCAL)+' ('+(t?t.n:'?')+')'; }
-N.clubFor=clubFor;
+// ---------- клубы ----------
+const FOREIGN={UEFA:'ENG:1 ES:1 DE:1 IT:1 FR:.9 PT:.45 NL:.45 BE:.4 TR:.4 SCO:.2 GR:.25 AT:.3 CH:.3 DK:.2 RU:.2 SA:.2 US:.15',
+ CONMEBOL:'ES:1 IT:.7 PT:.8 ENG:.8 FR:.5 DE:.4 BR:.6 AR:.5 MX:.6 US:.5 SA:.4 TR:.2',
+ CONCACAF:'US:1.2 MX:.9 ENG:.3 ES:.25 DE:.2 FR:.2 NL:.2 BE:.2 SCO:.3 PT:.2',
+ CAF:'FR:1 BE:.7 PT:.6 ENG:.7 ES:.5 IT:.5 DE:.5 TR:.5 SA:.5 QA:.2 AE:.2 CH:.2 DK:.15 US:.15',
+ AFC:'JP:.5 KR:.3 SA:.4 QA:.4 AE:.4 DE:.3 ENG:.3 NL:.2 BE:.25 PT:.2 CN:.2',OFC:'ENG:.5 US:.5 SCO:.3 AU:.6 NZ:.4'};
+const FW={}; for(const k in FOREIGN){ FW[k]=FOREIGN[k].split(' ').map(x=>{const [c,w]=x.split(':');return [c,+w]}); }
+function leagueLvl(cc,div){ const L=N.LEAGUES[cc]; const t=SS.T[cc]; let v=L?L[0]:(t?t.r-6:50); if(div===2)v-=13; return v; }
+function clubsOf(key){ const S=SS; S.clubs=S.clubs||{}; if(!S.clubs[key]){ const cc=key.split('_')[0]; const L=N.LEAGUES[cc]; const t=SS.T[cc]; const lang=L?L[1]:(t?t.pool.split('+')[0]:'en'); S.clubs[key]=N.clubList(cc,lang); } return S.clubs[key]; }
+N.assignClub=(p,nat)=>{ const S=SS; const t=S.T[nat]||S.T[p.t]; const o=p.o; const cands=[];
+ const add=(cc,div,w)=>{ if(!S.T[cc])return; const L=leagueLvl(cc,div); if(o>L+9||o<L-16)return; const fit=Math.exp(-Math.pow((o-(L-3))/6.5,2)); cands.push([cc,div,w*fit,L]); };
+ add(t.c,1,1.6); if(N.LEAGUES[t.c]) add(t.c,2,1.4);
+ for(const [cc,w] of FW[t.conf]||[]) if(cc!==t.c) add(cc,1,w*(t.r<70?0.7:1));
+ if(t.pool.includes('mag')||t.pool.includes('afwf')) add('FR',1,.8);
+ let ch; if(!cands.length){ ch=[t.c,1,1,leagueLvl(t.c,1)]; } else { let s=cands.reduce((a,c)=>a+c[2],0), r=R()*s; ch=cands[cands.length-1]; for(const c of cands){ r-=c[2]; if(r<=0){ch=c;break;} } }
+ const [cc,div,,L]=ch; const list=clubsOf(cc+(div===2?'_2':'')); const idx=Math.round(cl((L+8-o)/22*17+gauss()*1.5,0,17));
+ p.club=list[Math.min(list.length-1,idx)]; p.lg=cc; p.div=div===2?2:undefined; };
+N.clubFor=(o,team)=>{ const p={o,t:team}; N.assignClub(p,team); return p.club; };
+// ---------- игроки ----------
+const HB={GK:190,CB:187,LB:178,RB:178,DM:182,CM:179,AM:176,LM:175,RM:175,LW:174,RW:174,ST:183};
+const AGEW=[[18,2],[19,4],[20,6],[21,8],[22,9],[23,10],[24,11],[25,11],[26,11],[27,11],[28,10],[29,9],[30,8],[31,6],[32,4],[33,3],[34,2],[35,1]];
+N.randAge=(gk)=>{ let s=0; for(const [,w] of AGEW)s+=w; let r=R()*s; for(const [a,w] of AGEW){ r-=w; if(r<=0) return Math.min(37,a+(gk&&R()<.5?ri(1,2):0)); } return 27; };
+function takenSet(team){ const S=SS; const t=S.T[team]; const set=new Set(); if(t&&t.pl) for(const id of t.pl){ const q=S.P[id]; if(q&&!q.ret) set.add(q.nf?q.n:q.sn); } return set; }
 N.genPlayer=(team,pos,target,age,opt={})=>{
- const S=SS; const t=N.T(team); const p={id:S.nid++,n:nameFor(opt.pool||t.pool),t:team,pos,age:age||ri(19,33)};
- const w=RW[pos]; const key=Object.keys(w).sort((a,b)=>w[b]-w[a]);
+ const S=SS; const t=N.T(team); const nm=N.genName(opt.pool||t.pool,opt.taken||takenSet(team)); const p={id:S.nid++,n:nm.n,sn:nm.sn,t:team,pos,age:age||N.randAge(pos==='GK')}; if(nm.nf)p.nf=1;
+ const w=RW[pos];
  for(const k of N.ATTRS){ if(k==='gk') p.gk = pos==='GK'?target+gauss()*3:ri(8,20); else if(pos==='GK') p[k]= k==='phy'||k==='pas'||k==='spd'?target-12+gauss()*6:ri(15,35); else p[k]= (w[k]?target+gauss()*4:target-16+gauss()*8); }
  for(let it=0;it<3;it++){ const d=target-raw(p,pos); for(const k of N.ATTRS){ if(pos==='GK'&&k!=='gk'&&!w[k])continue; if(pos!=='GK'&&k==='gk')continue; p[k]+=d; } }
  for(const k of N.ATTRS) p[k]=Math.round(cl(p[k],5,99));
  N.upd(p);
- const a=p.age; p.pot=Math.round(cl(p.o+(a<=20?ri(4,16):a<=23?ri(1,9):a<=26?ri(0,4):0)+(opt.potB||0),p.o,97));
- p.form=+(6+R()).toFixed(1); p.mor=ri(55,78); p.fit=100; p.inj=0; p.sus=0; p.yc=0; p.club=opt.club||clubFor(p.o,team);
- p.caps=opt.caps??Math.max(0,Math.round((a-19)*R()*4*(p.o/80))); p.g=0;p.a=0;p.cs=0; p.g0=0; p.pers=ri(0,2); p.rh=[];
+ const a=p.age; p.pot=Math.round(cl(p.o+(a<=19?ri(6,18):a<=21?ri(4,13):a<=23?ri(1,8):a<=26?ri(0,3):0)+(opt.potB||0),p.o,97));
+ const pl=String(t.pool); let hm=0; if(/jp|kr|cn|vn|th|id|in/.test(pl))hm=-4; else if(/scand|se|nl|balk|is|de|be/.test(pl))hm=2; else if(/lat|pt|br|mag|ar/.test(pl))hm=-1;
+ p.h=Math.round(HB[pos]+hm+gauss()*4.5+(p.phy-70)*0.08); const lp=['LB','LM','LW'].includes(pos)?.68:pos==='CB'?.22:.18; p.ft=R()<.06?'B':R()<lp?'L':'R';
+ p.form=+(6+R()).toFixed(1); p.mor=ri(55,78); p.fit=100; p.inj=0; p.sus=0; p.yc=0;
+ if(opt.club){p.club=opt.club;p.lg=opt.lg;} else N.assignClub(p,opt.clubNat||team);
+ p.caps=opt.caps??0; p.g=0;p.a=0;p.cs=0; p.pers=ri(0,2); p.rh=[];
  if(opt.dual)p.dual=opt.dual;
- S.P[p.id]=p; return p;
+ S.P[p.id]=p; if(t&&t.pl&&opt.addToPool) t.pl.push(p.id); return p;
 };
 const SQ=['GK','GK','GK','CB','CB','CB','CB','LB','RB','LB','RB','DM','DM','CM','CM','CM','AM','LM','RM','LW','RW','ST','ST'];
-N.genPool=(team,size)=>{ const t=N.T(team); const r=t.r; const ids=[];
+N.SQ=SQ;
+N.genPool=(team,size)=>{ const t=N.T(team); const r=t.r; const ids=[]; t.pl=ids; const taken=new Set();
  for(let i=0;i<size;i++){ const pos=SQ[i%SQ.length]; const tier=Math.floor(i/SQ.length);
-  const target = tier===0? r+3-((i*0.45))*0.5-((i>=11)?2.5:0)+gauss()*2.5 : r-7-tier*2+gauss()*3; const age= tier>0&&R()<.5?ri(18,22):ri(19,33);
-  ids.push(N.genPlayer(team,pos,Math.round(cl(target,25,95)),age).id); }
- for(const id of ids){ const p=SS.P[id]; if(p.age<24) p.caps=Math.min(p.caps,ri(0,10)); if(p.o<r-6) p.caps=Math.floor(p.caps/3); const g=N.POS[p.pos][1]; p.g=Math.round(p.caps*(g==='F'?0.32:g==='M'?0.1:g==='D'?0.03:0)*(0.5+R())); p.a=Math.round(p.caps*(g==='M'?0.12:g==='F'?0.12:0.03)*(0.5+R())); if(g==='G')p.cs=Math.round(p.caps*0.3*R()); }
- t.pl=ids; return ids; };
+  const target = tier===0? r+3-((i*0.45))*0.5-((i>=11)?2.5:0)+gauss()*2.5 : r-7-tier*2+gauss()*3; const age= tier>0&&R()<.5?ri(18,22):N.randAge(pos==='GK');
+  ids.push(N.genPlayer(team,pos,Math.round(cl(target,25,95)),age,{taken}).id); }
+ // история выступлений: основные игроки — больше матчей и голов
+ const ps=ids.map(id=>SS.P[id]); const byPos={}; for(const p of ps){ const g=N.POS[p.pos][1]; (byPos[g]=byPos[g]||[]).push(p); }
+ const starters={G:1,D:4,M:4,F:2}, squad={G:3,D:8,M:8,F:4};
+ for(const g in byPos){ byPos[g].sort((a,b)=>b.o-a.o).forEach((p,k)=>{ const yrs=Math.max(0,p.age-19-(p.o<r-4?2:0)); const rate= k<starters[g]?ri(5,8):k<squad[g]?ri(2,5):R()*1.2;
+   p.caps=Math.round(Math.min(185,yrs*rate*(0.7+R()*0.5))); if(p.age<=20)p.caps=Math.min(p.caps,ri(0,6));
+   const gr= p.pos==='ST'?0.38:p.pos==='LW'||p.pos==='RW'?0.24:p.pos==='AM'?0.18:g==='M'?0.07:g==='D'?0.03:0; p.g=Math.round(p.caps*gr*(0.55+R()*0.8)*(k<starters[g]?1.15:0.8));
+   p.a=Math.round(p.caps*(g==='M'?0.11:g==='F'?0.12:g==='D'?0.04:0.003)*(0.5+R()*0.9)); if(g==='G')p.cs=Math.round(p.caps*(0.25+0.15*(r-60)/30)*(0.6+R()*0.6)); }); }
+ return ids; };
 // ---------- сборные ----------
 N.T=c=>SS&&SS.T[c];
 N.stars=t=>{const s=cl(Math.round(((t.str||t.r)-46)/8.5*2)/2,0.5,5);return s};
@@ -68,7 +97,7 @@ N.autoLineup=(players,form)=>{ const F=N.FORMS[form]; const used=new Set(); cons
  return {form,xi,bench}; };
 // ---------- новая игра ----------
 N.newGame=(team,coach)=>{
- const S={v:2,d:'2026-08-01',me:team,coach:coach||'Тренер',nid:1,nfid:1,P:{},T:{},C:{},F:[],E:[],arch:[],
+ const S={v:3,clubs:{},nl:{},d:'2026-08-01',me:team,coach:coach||'Тренер',nid:1,nfid:1,P:{},T:{},C:{},F:[],E:[],arch:[],
   u:{trust:55,call:[],xi:null,tac:{ment:0,press:1,tempo:1,width:1,style:'mix'},instr:{},train:{f:'bal',i:1},infra:{base:1,acad:1,med:1,scout:1,stad:1},bud:30,scoutLeft:1,mail:[],tro:[],ach:{},stat:{w:0,d:0,l:0,gf:0,ga:0},u21:{res:[]},teams:[{c:team,from:'2026-08-01'}],found:[],press:null,win:0,expect:{}},log:[]};
  SS=S; for(const t of N.TEAMS){ S.T[t.c]={...t,elo:Math.round(1000+(t.r-40)*20+gauss()*25),form:pick(['4-3-3','4-2-3-1','4-4-2','4-3-3','4-2-3-1','3-5-2','4-1-4-1','5-3-2']),pl:[]}; }
  for(const c in S.T) N.genPool(c, c===team?40:23);
@@ -79,123 +108,7 @@ N.newGame=(team,coach)=>{
  N.runEvents(S.d); S._stop=null; return S; };
 N.addEv=(d,t,x)=>{SS.E.push({d,t,...x})};
 N.mail=(from,sub,body,act)=>{SS.u.mail.unshift({d:SS.d,from,sub,body,act,rd:0}); if(SS.u.mail.length>80)SS.u.mail.length=80;};
-// ---------- турниры ----------
-function makeGroups(teams,maxSize,nGroups){ const sorted=teams.slice().sort((a,b)=>N.T(b).elo-N.T(a).elo); const g=nGroups||Math.ceil(sorted.length/maxSize);
- const G=Array.from({length:g},(_,i)=>({n:String.fromCharCode(65+i),t:[]}));
- for(let i=0;i<sorted.length;i+=g){ const pot=shuffle(sorted.slice(i,i+g)); const order=shuffle(G.map((_,k)=>k)).sort((a,b)=>G[a].t.length-G[b].t.length); pot.forEach((c,k)=>G[order[k]].t.push(c)); }
- return G; }
-N.makeGroups=makeGroups;
-function rr(teams,double){ const a=teams.slice(); if(a.length%2)a.push(null); const n=a.length, rounds=[];
- for(let r=0;r<n-1;r++){ const rd=[]; for(let i=0;i<n/2;i++){ const h=a[i],w=a[n-1-i]; if(h&&w) rd.push(r%2?[w,h]:[h,w]); } rounds.push(rd); a.splice(1,0,a.pop()); }
- if(double) return rounds.concat(rounds.map(rd=>rd.map(([h,w])=>[w,h]))); return rounds; }
-N.addFix=(d,c,h,a,st,x={})=>{ const f={id:SS.nfid++,d,c,h,a,st,...x}; SS.F.push(f); return f; };
-N.drawComp=(c,teams)=>{ c.groups= c.league? [{n:'',t:teams.slice()}] : makeGroups(teams,c.gsize||4,c.ng);
- if(c.host){ // хозяин в группе A
-  const gA=c.groups[0]; if(!gA.t.includes(c.host)){ const g=c.groups.find(g=>g.t.includes(c.host)); const sw=gA.t[0]; g.t[g.t.indexOf(c.host)]=sw; gA.t[0]=c.host; } }
- for(const g of c.groups){ const rounds=rr(g.t,c.rr===2); rounds.forEach((rd,i)=>{ const d=c.gd[Math.min(i,c.gd.length-1)]; rd.forEach(([h,a])=>{ if(a===c.host)[h,a]=[a,h]; N.addFix(d,c.id,h,a,(c.league?'':'Группа '+g.n+', ')+'тур '+(i+1),{g:g.n,neu:c.neutral&&h!==c.host&&a!==c.host?1:0, })}); }); if(rounds.length>c.gd.length) console.warn('мало дат',c.id,rounds.length,c.gd.length); }
- c.stage='groups'; c.teams=teams.slice(); };
-N.table=(c,gn)=>{ const g=c.groups.find(x=>x.n===gn); const T={}; g.t.forEach(t=>T[t]={t,p:0,w:0,d:0,l:0,gf:0,ga:0,pts:0});
- for(const f of SS.F){ if(f.c!==c.id||f.g!==gn||!f.r||f.ko)continue; const H=T[f.h],A=T[f.a]; if(!H||!A)continue; const [x,y]=[f.r.hg,f.r.ag]; H.p++;A.p++;H.gf+=x;H.ga+=y;A.gf+=y;A.ga+=x; if(x>y){H.w++;A.l++;H.pts+=3}else if(x<y){A.w++;H.l++;A.pts+=3}else{H.d++;A.d++;H.pts++;A.pts++} }
- return Object.values(T).sort((a,b)=>b.pts-a.pts||(b.gf-b.ga)-(a.gf-a.ga)||b.gf-a.gf||N.T(b.t).elo-N.T(a.t).elo); };
-N.ranking=(c)=>{ // упорядоченный список: все первые, затем вторые...
- const tabs=c.groups.map(g=>N.table(c,g.n)); const out=[]; const mx=Math.max(...tabs.map(t=>t.length));
- for(let pos=0;pos<mx;pos++){ const tier=tabs.map(t=>t[pos]).filter(Boolean).map(r=>({...r,pos})); const norm=r=>{ const tab=tabs.find(t=>t.some(x=>x.t===r.t)); const n=tab.length; return n>1&&r.p? [r.pts/r.p,(r.gf-r.ga)/r.p,r.gf/r.p]:[0,0,0]; };
-  tier.sort((a,b)=>{const A=norm(a),B=norm(b);return B[0]-A[0]||B[1]-A[1]||B[2]-A[2]}); out.push(...tier); }
- return out; };
-function bracketOrder(n){ let o=[1]; while(o.length<n){ const m=o.length*2; o=o.flatMap(x=>[x,m+1-x]); } return o; }
-const RN={32:'1/16 финала',16:'1/8 финала',8:'1/4 финала',4:'1/2 финала',2:'Финал'};
-N.RN=RN;
-function startKO(c){ let q; const rk=N.ranking(c);
- if(c.adv.per===1) q=rk.filter(r=>r.pos===0); else { q=rk.filter(r=>r.pos<c.adv.per); q=q.concat(rk.filter(r=>r.pos===c.adv.per).slice(0,c.adv.best||0)); }
- const seeds=q.map(r=>r.t); const n=seeds.length; const ord=bracketOrder(n); const pairs=[];
- for(let i=0;i<n;i+=2) pairs.push([seeds[ord[i]-1],seeds[ord[i+1]-1]]);
- c.ko=[]; c.stage='ko'; makeRound(c,pairs); }
-function makeRound(c,pairs){ const ri_=c.ko.length; const d=c.kod[ri_]; const n=pairs.length*2; const st=RN[n]||('Раунд '+(ri_+1));
- c.ko.push(pairs.map(([h,a])=>{ if(a===c.host)[h,a]=[a,h]; const f=N.addFix(d,c.id,h,a,st,{ko:1,neu:(c.neutral||c.koNeu)&&h!==c.host?1:0}); return {h,a,f:f.id}; })); }
-N.onFixDone=(f)=>{ const c=SS.C[f.c]; if(!c||c.kind==='fr')return;
- if(c.stage==='groups'){ if(SS.F.some(x=>x.c===c.id&&!x.r&&!x.ko))return; if(c.adv){ startKO(c); } else { c.stage='done'; c.fin=SS.d; N.compDone(c); } return; }
- if(c.stage==='ko'){ const rd=c.ko[c.ko.length-1]; const fx=rd.map(t=>SS.F.find(x=>x.id===t.f)); if(fx.some(x=>!x.r))return; const ws=fx.map(x=>x.r.w);
-  if(ws.length===1){ c.stage='done'; c.w=ws[0]; c.ru= ws[0]===fx[0].h?fx[0].a:fx[0].h; c.fin=SS.d; N.compDone(c); return; }
-  const pairs=[]; for(let i=0;i<ws.length;i+=2) pairs.push([ws[i],ws[i+1]]); makeRound(c,pairs); } };
-N.qualified=(c)=>c.qual||[];
-N.newComp=(o)=>{ const c={stage:'pending',groups:[],rr:2,gsize:4,...o}; SS.C[c.id]=c; return c; };
-N.topElo=(conf,n,excl=[])=>Object.values(SS.T).filter(t=>t.conf===conf&&!excl.includes(t.c)).sort((a,b)=>b.elo-a.elo).slice(0,n).map(t=>t.c);
-N.confTeams=(conf)=>Object.values(SS.T).filter(t=>t.conf===conf).map(t=>t.c);
-function finalsDates(y,m,d0,ngd,nko,gap=4){ const s=N.ds(y,m,d0); const gd=[]; for(let i=0;i<ngd;i++)gd.push(N.addD(s,i*gap)); const kod=[]; let cur=N.addD(gd[gd.length-1],5); for(let i=0;i<nko;i++){kod.push(cur);cur=N.addD(cur,i>=nko-3?4:4);} return {gd,kod}; }
-function chooseHost(conf,top){ const c=N.topElo(conf,top); return pick(c); }
-N.buildCycle=(Y)=>{ const S=SS; const A=Y,B=Y+1,C=Y+2,E=Y+3,F=Y+4; const id=s=>s+'_'+Y;
- const euroHost=chooseHost('UEFA',18), afHost=chooseHost('CAF',20), acHost=chooseHost('AFC',14);
- const wcHost=pick(Object.values(S.T).filter(t=>t.conf!=='OFC').sort((a,b)=>b.elo-a.elo).slice(0,25)).c;
- const addQual=(key,n,sh,conf,dates,gsize,drawD,excl,slots,league)=>{ const c=N.newComp({id:id(key),n,sh,conf,kind:'qual',gd:dates,gsize,league,slots,excl:excl||[],yr:Y}); N.addEv(drawD,'draw',{c:c.id}); return c; };
- // Лига наций УЕФА (A и C годы)
- for(const y of [A,C]){ const dts=wd([[y,9],[y,10],[y,11]]); const fd=y===A?Y+'-08-01':y+'-08-01';
-  ['A','B','C','D'].forEach((L,i)=>{ const c=N.newComp({id:id('UNL'+L+y),n:'Лига наций УЕФА '+y+'/'+((y+1)%100)+' · Лига '+L,sh:'ЛН-'+L,conf:'UEFA',kind:'nl',gd:dts,gsize:4,yr:y,nl:i,adv:L==='A'?{per:1}:null,kod:L==='A'?[N.ds(y+1,6,10),N.ds(y+1,6,14)]:null,koNeu:1});
-   N.addEv(fd,'draw',{c:c.id}); }); }
- // Лига наций КОНКАКАФ
- ['A','B'].forEach((L,i)=>{ N.newComp({id:id('CNL'+L),n:'Лига наций КОНКАКАФ '+A+'/'+(B%100)+' · Лига '+L,sh:'ЛНК-'+L,conf:'CONCACAF',kind:'nl',gd:wd([[A,9],[A,10],[A,11]]),gsize:4,yr:A,nl:i,adv:L==='A'?{per:1}:null,kod:L==='A'?[N.ds(B,3,20),N.ds(B,3,24)]:null,koNeu:1}); N.addEv(Y+'-08-01','draw',{c:id('CNL'+L)}); });
- // Кубок Африки
- addQual('AFQ','Отбор Кубка Африки '+B,'ОКА','CAF',wd([[A,9],[A,10],[A,11]]),4,Y+'-08-01',[afHost],23);
- let fd=finalsDates(B,6,20,3,4); N.newComp({rr:1,id:id('AFCON'),n:'Кубок Африки '+B,sh:'КАН',conf:'CAF',kind:'final',gd:fd.gd,kod:fd.kod,ng:6,adv:{per:2,best:4},host:afHost,neutral:1,src:[{q:id('AFQ'),n:23}],yr:B}); N.addEv(N.ds(B,4,15),'draw',{c:id('AFCON')});
- // Кубок Азии
- addQual('ACQ','Отбор Кубка Азии '+B,'ОКАз','AFC',wd([[A,9],[A,10],[A,11]]),4,Y+'-08-01',[acHost],23);
- fd=finalsDates(B,1,10,3,4); N.newComp({rr:1,id:id('ASIAN'),n:'Кубок Азии '+B,sh:'КА',conf:'AFC',kind:'final',gd:fd.gd,kod:fd.kod,ng:6,adv:{per:2,best:4},host:acHost,neutral:1,src:[{q:id('ACQ'),n:23}],yr:B}); N.addEv(N.ds(A,12,5),'draw',{c:id('ASIAN')});
- // Евро
- addQual('EQ','Отбор чемпионата Европы '+C,'ОЧЕ','UEFA',wd([[B,3],[B,6],[B,9],[B,10],[B,11]]),6,N.ds(B,2,1),[euroHost],23);
- fd=finalsDates(C,6,11,3,4); N.newComp({rr:1,id:id('EURO'),n:'Чемпионат Европы '+C,sh:'ЧЕ',conf:'UEFA',kind:'final',gd:fd.gd,kod:fd.kod,ng:6,adv:{per:2,best:4},host:euroHost,neutral:1,src:[{q:id('EQ'),n:23}],yr:C}); N.addEv(N.ds(C,3,1),'draw',{c:id('EURO')});
- // Золотой кубок (B и E)
- for(const y of [B,E]){ const f2=finalsDates(y,6,20,3,3); N.newComp({rr:1,id:id('GOLD'+y),n:'Золотой кубок КОНКАКАФ '+y,sh:'ЗК',conf:'CONCACAF',kind:'final',gd:f2.gd,kod:f2.kod,ng:4,adv:{per:2},neutral:1,src:[{top:'CONCACAF',n:16}],yr:y}); N.addEv(N.ds(y,5,10),'draw',{c:id('GOLD'+y)}); }
- // Копа Америка
- fd=finalsDates(C,6,14,3,3); N.newComp({rr:1,id:id('COPA'),n:'Копа Америка '+C,sh:'КоА',conf:'CONMEBOL',kind:'final',gd:fd.gd,kod:fd.kod,ng:4,adv:{per:2},neutral:1,src:[{top:'CONMEBOL',n:10},{top:'CONCACAF',n:6}],yr:C}); N.addEv(N.ds(C,4,20),'draw',{c:id('COPA')});
- // Кубок наций ОФК
- fd=finalsDates(C,6,6,3,2,3); N.newComp({rr:1,id:id('OFCNC'),n:'Кубок наций ОФК '+C,sh:'КНО',conf:'OFC',kind:'final',gd:fd.gd,kod:fd.kod,ng:2,adv:{per:2},neutral:1,src:[{top:'OFC',n:8}],yr:C}); N.addEv(N.ds(C,4,20),'draw',{c:id('OFCNC')});
- // Отбор ЧМ
- const exW=[wcHost];
- addQual('WQ_CONMEBOL','Отбор ЧМ-'+F+' · КОНМЕБОЛ','ОЧМ','CONMEBOL',wd([[B,9],[B,10],[B,11],[C,3],[C,9],[C,10],[C,11],[E,3],[E,6]]),10,N.ds(B,8,1),exW,6,true);
- const d10=wd([[C,9],[C,10],[C,11],[E,3],[E,6]]);
- addQual('WQ_UEFA','Отбор ЧМ-'+F+' · УЕФА','ОЧМ','UEFA',wd([[E,3],[E,6],[E,9],[E,10],[E,11]]),6,N.ds(E,1,20),exW,16);
- addQual('WQ_CAF','Отбор ЧМ-'+F+' · КАФ','ОЧМ','CAF',d10,6,N.ds(C,8,1),exW,9);
- addQual('WQ_AFC','Отбор ЧМ-'+F+' · АФК','ОЧМ','AFC',d10,6,N.ds(C,8,1),exW,8);
- addQual('WQ_CONCACAF','Отбор ЧМ-'+F+' · КОНКАКАФ','ОЧМ','CONCACAF',d10,6,N.ds(C,8,1),exW,6);
- addQual('WQ_OFC','Отбор ЧМ-'+F+' · ОФК','ОЧМ','OFC',d10,6,N.ds(C,8,1),exW,1);
- fd=finalsDates(F,6,11,3,5); N.newComp({rr:1,id:id('WC'),n:'Чемпионат мира '+F,sh:'ЧМ',conf:'ALL',kind:'final',gd:fd.gd,kod:fd.kod,ng:12,adv:{per:2,best:8},host:wcHost,neutral:1,
-  src:[{q:id('WQ_UEFA'),n:16},{q:id('WQ_CONMEBOL'),n:6},{q:id('WQ_CAF'),n:9},{q:id('WQ_AFC'),n:8},{q:id('WQ_CONCACAF'),n:6},{q:id('WQ_OFC'),n:1},{q:id('WQ_AFC'),n:9},{q:id('WQ_CONMEBOL'),n:7},{q:id('WQ_CAF'),n:10},{q:id('WQ_CONCACAF'),n:7}],size:48,yr:F});
- N.addEv(N.ds(E,12,10),'draw',{c:id('WC')});
- // окна и товарищеские
- const endD=N.ds(F,8,1); for(const y of [A,B,C,E,F]){ for(const d of N.windowDates(y)) if(d>S.d&&d<endD){ N.addEv(d,'fr'); } for(const m of [3,6,9,10,11]){ const d=N.ds(y,m,WIN[m][0]-6); if(d>S.d&&d<endD) N.addEv(d,'win',{m}); } }
- N.addEv(N.ds(F,8,1),'cycle',{y:F});
- S.cyc={Y,euroHost,afHost,acHost,wcHost};
-};
-N.resolveSrc=(c)=>{ const out=[]; if(c.host)out.push(c.host); const size=c.size||(c.ng*4);
- for(const s of c.src){ let list; if(s.q){ const q=SS.C[s.q]; list=N.ranking(q).map(r=>r.t).slice(0,s.n); } else list=N.topElo(s.top,s.n,out);
-  for(const t of list){ if(out.length>=size)break; if(!out.includes(t)) out.push(t); } }
- return out.slice(0,size); };
-N.evDraw=(e)=>{ const c=SS.C[e.c]; let teams;
- if(c.kind==='nl'){ const ts=Object.values(SS.T).filter(t=>t.conf===c.conf).sort((a,b)=>b.elo-a.elo).map(t=>t.c); const per=16; teams= c.conf==='CONCACAF'&&c.nl===1? ts.slice(16): c.nl<3||c.conf!=='UEFA'?ts.slice(c.nl*per,c.nl*per+per):ts.slice(48); }
- else if(c.kind==='qual') teams=N.confTeams(c.conf).filter(t=>!c.excl.includes(t));
- else teams=N.resolveSrc(c);
- if(c.kind==='final') c.ng = Math.round(teams.length/4);
- N.drawComp(c,teams);
- if(teams.includes(SS.me)){ const g=c.groups.find(g=>g.t.includes(SS.me)); N.mail('Федерация футбола','Жеребьёвка: '+c.n,(c.kind==='final'?'Мы участвуем в финальном турнире! ':'')+'Наши соперники'+(g.n?' по группе '+g.n:'')+': '+g.t.filter(t=>t!==SS.me).map(t=>SS.T[t].f+' '+SS.T[t].n).join(', ')+'. '+N.expectText(c)); SS._stop='draw'; N.setExpect(c); }
-};
-// ---------- ожидания федерации ----------
-N.lvlNames=['вылет в группе','выход из группы','1/8 финала','1/4 финала','полуфинал','финал','победа'];
-N.expectLevel=(c)=>{ const ts=(c.teams||[]).slice().sort((a,b)=>SS.T[b].elo-SS.T[a].elo); const rk=ts.indexOf(SS.me); if(rk<0)return null; const n=ts.length;
- if(c.kind==='qual'||c.kind==='nl'){ const slots=c.kind==='nl'?Math.max(1,Math.round(n/4)):c.slots; return rk<slots*0.8?1:0; }
- const pct=rk/n; return pct<0.04?5:pct<0.1?4:pct<0.25?3:pct<0.5?(n>=24?2:1):pct<0.75?1:0; };
-N.expectText=(c)=>{ const l=N.expectLevel(c); if(l===null)return ''; if(c.kind==='qual') return l?'Задача федерации: выйти в финальный турнир.':'Задача: достойно выступить, борьба за выход будет бонусом.'; if(c.kind==='nl') return l?'Задача: побороться за первое место в группе.':'Задача: сохранить место в лиге.'; return 'Задача федерации: '+N.lvlNames[l]+'.'; };
-N.setExpect=(c)=>{ if(c){SS.u.expect[c.id]=N.expectLevel(c);} };
-N.achievedLevel=(c)=>{ const me=SS.me; if(c.kind==='qual'){ const q=N.ranking(c).slice(0,c.slots).map(r=>r.t); return q.includes(me)?1:0; }
- if(c.kind==='nl'){ const g=c.groups.find(g=>g.t.includes(me)); return N.table(c,g.n)[0].t===me?1:0; }
- if(!c.ko||!c.ko.length) return 0; if(c.w===me) return 6; let lv=0; c.ko.forEach((rd)=>{ if(rd.some(t=>t.h===me||t.a===me)){ const n=rd.length*2; lv= n===2?5:n===4?4:n===8?3:n===16?2:1; } }); return lv; };
-N.compDone=(c)=>{ const S=SS; const me=S.me; const inC=(c.teams||[]).includes(me);
- if(c.kind==='final'||(c.kind==='nl'&&c.ko)){ const w=c.w; if(w) N.mail('Новости',(c.n)+': победитель — '+S.T[w].n,S.T[w].f+' '+S.T[w].n+' выигрывает турнир, обыграв в финале '+S.T[c.ru].n+'.'); }
- if(inC){ const ex=S.u.expect[c.id]??N.expectLevel(c); const got=N.achievedLevel(c); const k=c.kind==='final'?7:c.kind==='qual'?12:4; const dt=Math.round(cl((got-ex)*k,-30,25));
-  N.trust(dt); let txt='Итог турнира «'+c.n+'»: '+(c.kind==='qual'?(got?'путёвка завоёвана!':'выйти не удалось.'):c.kind==='nl'?(got?'первое место в группе.':'без первого места.'):N.lvlNames[got]+'.')+' Доверие федерации '+(dt>=0?'+':'')+dt+'.';
-  if(c.kind==='qual'&&got){S.u.bud+=25; N.ach('qual');}
-  if(c.w===me){ S.u.tro.push({n:c.n,yr:c.yr||S.d.slice(0,4),t:me,d:S.d}); S.u.bud+=c.kind==='final'?80:40; txt+=' 🏆 ТРОФЕЙ! Бюджет федерации пополнен.'; N.ach('trophy'); if(c.id.startsWith('WC'))N.ach('wc'); if(c.kind==='final'&&c.id.match(/EURO|COPA|AFCON|ASIAN|GOLD|OFCNC/))N.ach('cont'); }
-  if(c.kind==='final'){ S.u.bud+=got*8; if(got>=4)N.ach('semi'); if(got>ex)N.ach('over'); }
-  N.mail('Федерация футбола','Итоги: '+c.n,txt); S._stop='comp'; N.checkJob(c.kind==='final'); }
-};
+// турниры — см. js/comps.js
 N.trust=(d)=>{ SS.u.trust=Math.round(cl(SS.u.trust+d,0,100)); };
 N.checkJob=(big)=>{ const S=SS; if(S.u.trust<=12){ S.u.fired=1; N.offers(true); S._stop='fired'; return; }
  if(big&&S.u.trust>=70) N.offers(false); };
@@ -220,15 +133,15 @@ N.setup=(c,fx)=>{ const S=SS; const t=S.T[c];
  if(c===S.me){ if(!N.validXI()){ const old=S.u.xi; N.autoXI(old&&old.form); } const x=S.u.xi; const F=N.FORMS[x.form];
   const avail=new Set(S.u.call.filter(id=>!S.P[id].inj&&!S.P[id].sus));
   return {code:c,n:t.n,user:true,on:x.s.map((id,i)=>({p:S.P[id],role:F[i][0]})),bench:x.b.filter(id=>avail.has(id)&&!x.s.includes(id)).slice(0,12).map(id=>S.P[id]),tac:{...S.u.tac},instr:{...S.u.instr},subsLeft:fx&&fx.c==='FR'?6:5}; }
- const ps=N.pool(c).filter(p=>!p.inj&&!p.sus).sort((a,b)=>b.o-a.o).slice(0,23); const lu=N.autoLineup(ps,t.form); const F=N.FORMS[t.form];
+ const ps=N.pool(c).filter(p=>!p.inj&&!p.sus).sort((a,b)=>b.o*(0.8+0.2*b.fit/100)-a.o*(0.8+0.2*a.fit/100)).slice(0,23); const lu=N.autoLineup(ps,t.form); const F=N.FORMS[t.form];
  const ment = 0; return {code:c,n:t.n,on:lu.xi.map((p,i)=>({p,role:F[i][0]})).filter(e=>e.p),bench:lu.bench,tac:{ment,press:1,tempo:1,style:'mix'},instr:{}}; };
 // ---------- результаты ----------
 N.eloUpd=(f,hg,ag)=>{ const H=SS.T[f.h],A=SS.T[f.a]; const ha=f.neu?0:(f.hostA?-80:80); const we=1/(1+Math.pow(10,-(H.elo-A.elo+ha)/400)); const c=SS.C[f.c];
  const K=c.kind==='fr'?18:c.kind==='final'?(f.ko?50:40):32; const gd=Math.abs(hg-ag); const G=gd<=1?1:gd===2?1.5:(11+gd)/8; const w=hg>ag?1:hg<ag?0:0.5; const d=Math.round(K*G*(w-we)); H.elo+=d; A.elo-=d; };
 N.playFix=(f,m)=>{ // m — завершённый Match
  const S=SS; const c=S.C[f.c]; const official=c.kind!=='fr'; const r={hg:m.score[0],ag:m.score[1],et:m.extra?1:0,pen:m.pens?m.pens.slice():null,sc:[]};
- r.w = m.winner===0?f.h:m.winner===1?f.a:null;
- for(const e of m.ev) if(e.t==='goal'){ const p=S.P[e.p]; r.sc.push([e.p,p?p.n:'?',e.side,e.m,e.pen?1:0,e.p2||0]); }
+ r.w = m.winner===0?f.h:m.winner===1?f.a:null; if(m.agg){ r.w= m.aggW===0?f.h:m.aggW===1?f.a:null; r.agg=[m.tot(0),m.tot(1)]; } if(f.vn){ r.wx=f.vn.wx; r.att=f.vn.att; }
+ for(const e of m.ev) if(e.t==='goal'){ const p=S.P[e.p]; r.sc.push([e.p,p?p.n:'?',e.side,e.ml||e.m,e.pen?1:(e.fk?2:0),e.p2||0]); }
  const user = f.h===S.me||f.a===S.me;
  const teams=[f.h,f.a];
  // сняты дисквалификации (отбыли)
@@ -238,10 +151,10 @@ N.playFix=(f,m)=>{ // m — завершённый Match
   p.form=+cl(p.form*0.55+P.rt*0.45,3,10).toFixed(2);
   const w=m.winner===side?1:m.winner===-1?0:-1; p.mor=cl(p.mor+(w>0?4:w<0?-4:0)+(P.rt>=7.5?3:P.rt<5.5?-3:0),5,100);
   if(official){ if(P.rc){p.sus=c.kind==='final'?1:ri(1,2);p.yc=0;p._ns=1;} else if(P.yc){p.yc+=P.yc; const lim=c.kind==='final'?2:3; if(p.yc>=lim){p.sus=1;p.yc=0;}} }
-  if(P.inj){ const med=p.t===S.me?(1-0.1*(S.u.infra.med-1)):1; p.inj=Math.round(ri(4,40)*med); }
+  if(P.inj){ const med=p.t===S.me?(1-0.1*(S.u.infra.med-1)):1; const x=R(); p.inj=Math.max(2,Math.round((x<.55?ri(3,10):x<.88?ri(11,35):ri(36,120))*med)); }
   if(p.t===S.me&&user){ p.rh.push([S.d,P.rt,c.sh||'ТМ',P.g,P.a]); if(p.rh.length>120)p.rh.shift(); }
  }
- if(user){ r.det={st:m.st,ps:Object.entries(m.ps).map(([id,P])=>[+id,S.P[id]?S.P[id].n:'?',P.side,P.rt,P.g,P.a,P.min,P.role,P.yc,P.rc,P.inj?1:0,P.sv]),ev:m.ev.filter(e=>['goal','yc','rc','sub','inj','pk'].includes(e.t)).map(e=>[e.m,e.t,e.side,e.txt])}; f.u=1; }
+ if(user){ r.det={st:m.st,ps:Object.entries(m.ps).map(([id,P])=>[+id,S.P[id]?S.P[id].n:'?',P.side,P.rt,P.g,P.a,P.min,P.role,P.yc,P.rc,P.inj?1:0,P.sv]),ev:m.ev.filter(e=>['goal','yc','rc','sub','inj','pk','var'].includes(e.t)).map(e=>[e.ml||e.m,e.t,e.side,e.txt])}; f.u=1; }
  f.r=r; N.eloUpd(f,r.hg,r.ag);
  if(user) N.afterUser(f,m);
  N.onFixDone(f);
@@ -260,7 +173,19 @@ N.afterUser=(f,m)=>{ const S=SS; const side=f.h===S.me?0:1; const my=m.score[sid
  // пресс-конференция
  if(R()<(c.kind==='fr'?0.3:0.65)) S.u.press=N.genPress(res,c,opp,my,op);
 };
-N.simFix=(f)=>{ const h=N.setup(f.h,f), a=N.setup(f.a,f); const m=new N.Match(h,a,{ko:!!f.ko,neutral:!!f.neu,autoUser:true}); m.sim(); N.playFix(f,m); return m; };
+// стадион, погода, посещаемость
+const NORTH=new Set(['RU','BY','UA','FI','SE','NO','IS','EE','LV','LT','PL','CZ','SK','DK','FO','SCO','NIR','IE','KZ','CA','US','DE','NL','BE','AT','CH','HU','RO','RS','KP','KR','JP','MN','CN']);
+const HOT=new Set(['QA','AE','SA','KW','BH','OM','IQ','EG','SD','ML','NE','TD','MR','SN','NG','GH','CI','BF','IN','PK','TH','VN','KH','MY','ID','SG','MX','BR','CO','VE','PY','JM','HN','SV','GT','CR','PA']);
+N.venue=(f)=>{ if(f.vn) return f.vn; const S=SS; const c=S.C[f.c]; const ht=S.T[f.h], at=S.T[f.a]; const host= f.neu? (c&&c.host?c.host:f.h) : f.h; const m=+f.d.slice(5,7);
+ const hostT=S.T[host]; const hot=HOT.has(host)||(m>=6&&m<=8&&!NORTH.has(host)), cold=NORTH.has(host)&&(m>=11||m<=3);
+ const r=R(); let wx= cold&&r<.12?'snow': r<.2?'rain': hot&&r<.55?'heat': r<.3?'wind': r<.55?'cloud':'clear';
+ const big= c&&c.kind==='final'; let cap=Math.round(cl(6000+(hostT.elo-1050)*55+ (R()-.5)*8000, 4000, 85000)/500)*500; if(big) cap=Math.max(cap, ri(35,80)*1000); if(f.neu&&!big) cap=Math.min(cap,ri(15,40)*1000);
+ const imp=(c&&c.kind==='fr'?0:0.15)+(f.ko?0.12:0)+(big?0.2:0); const opp=(at.elo+ht.elo)/2; let fill=cl(0.42+imp+(opp-1500)/1500+(R()-.5)*0.25+(ht.elo<1300?-0.08:0),0.2,1);
+ if(f.neu&&!big) fill=cl(fill-0.2,0.15,1);
+ f.vn={wx,cap,att:Math.round(cap*fill/100)*100,fill:+fill.toFixed(2)}; return f.vn; };
+N.matchOpts=(f,auto)=>{ const v=N.venue(f); let agg=null; if(f.leg===2){ const l1=N.fixById(f.l1); if(l1&&l1.r) agg=[l1.r.ag,l1.r.hg]; }
+ return {ko:!!f.ko&&f.leg!==1,neutral:!!f.neu,agg,wx:v.wx,hf:f.neu?0:0.55+0.45*v.fill,autoUser:!!auto}; };
+N.simFix=(f)=>{ const h=N.setup(f.h,f), a=N.setup(f.a,f); const m=new N.Match(h,a,N.matchOpts(f,true)); m.sim(); N.playFix(f,m); return m; };
 // ---------- товарищеские ----------
 N.busy=(c,d)=>SS.F.some(f=>f.d===d&&(f.h===c||f.a===c));
 N.evFr=(e)=>{ const S=SS; const d=e.d; const busy=new Set(); for(const f of S.F) if(f.d===d){busy.add(f.h);busy.add(f.a);} // команды в финальном турнире не играют
@@ -314,7 +239,7 @@ N.u21Window=()=>{ const S=SS; const me=S.T[S.me]; const yng=N.pool(S.me).filter(
  S.u.u21.res.unshift({d:S.d,o:opp.c,s:[g1,g2],sc}); S.u.u21.res=S.u.u21.res.slice(0,20); };
 function pois(l){let L=Math.exp(-l),k=0,p=1;do{k++;p*=R()}while(p>L);return k-1}
 N.evCycle=(e)=>{ const S=SS; // архив старых турниров
- for(const c of Object.values(S.C)) if(c.stage==='done'&&c.kind!=='fr'){ S.arch.push({id:c.id,n:c.n,w:c.w||(c.groups[0]&&N.table(c,c.groups[0].n)[0].t),kind:c.kind,ts:N.topScorers(c.id).slice(0,5),yr:c.yr}); delete S.C[c.id]; }
+ for(const c of Object.values(S.C)) if(c.stage==='done'&&c.kind!=='fr'){ S.arch.push({id:c.id,n:c.n,w:c.w||(c.groups&&c.groups[0]&&!c.po?N.table(c,c.groups[0].n)[0].t:null),kind:c.kind,ts:N.topScorers(c.id).slice(0,5),yr:c.yr}); delete S.C[c.id]; }
  S.F=S.F.filter(f=>f.u||(S.C[f.c]&&f.c!=='FR')||(!f.r)); N.buildCycle(e.y); N.runEvents(S.d); };
 N.topScorers=(cid)=>{ const m={}; for(const f of SS.F){ if(f.c!==cid||!f.r)continue; for(const s of f.r.sc){ const k=s[0]; const team=s[2]===0?f.h:f.a; if(!m[k])m[k]={id:k,n:s[1],t:team,g:0,a:0}; m[k].g++; } for(const s of f.r.sc) if(s[5]){ const k=s[5]; if(!m[k]){const p=SS.P[k]; m[k]={id:k,n:p?p.n:'?',t:s[2]===0?f.h:f.a,g:0,a:0};} m[k].a++; } }
  return Object.values(m).filter(x=>x.g>0).sort((a,b)=>b.g-a.g||b.a-a.a); };
@@ -337,9 +262,9 @@ N.advance=(opt={})=>{ const S=SS; S._stop=null; let guard=0;
   if(opt.until&&S.d>=opt.until) return {stop:'until'};
  } return {stop:'guard'}; };
 N.runEvents=(nd)=>{ const S=SS; const evs=S.E.filter(e=>e.d===nd); S.E=S.E.filter(e=>e.d!==nd);
- const ord={cycle:0,year:1,draw:2,win:3,fr:4}; evs.sort((a,b)=>ord[a.t]-ord[b.t]);
- for(const e of evs){ if(e.t==='draw')N.evDraw(e); else if(e.t==='fr')N.evFr(e); else if(e.t==='year')N.evYear(e); else if(e.t==='win')N.evWin(e); else if(e.t==='cycle')N.evCycle(e); } };
-N.passDays=(n)=>{ if(n<=0)return; const S=SS; const rec=n*8*(1+0.1*(S.u.infra.med-1)); for(const id in S.P){ const p=S.P[id]; if(p.ret)continue; if(p.fit<100)p.fit=Math.min(100,p.fit+rec); if(p.inj>0)p.inj=Math.max(0,p.inj-n); if(n>20)p.form=+(p.form+(6.5-p.form)*0.15).toFixed(2); if(n>20&&p.mor!==65)p.mor=Math.round(p.mor+(65-p.mor)*0.1); } };
+ const ord={cycle:0,year:1,fn:2,draw:3,win:4,fr:5}; evs.sort((a,b)=>ord[a.t]-ord[b.t]);
+ for(const e of evs){ if(e.t==='draw')N.evDraw(e); else if(e.t==='fr')N.evFr(e); else if(e.t==='year')N.evYear(e); else if(e.t==='win')N.evWin(e); else if(e.t==='cycle')N.evCycle(e); else if(e.t==='fn'&&N.fn[e.fn])N.fn[e.fn](e); } };
+N.passDays=(n)=>{ if(n<=0)return; const S=SS; const rec=n*6*(1+0.1*(S.u.infra.med-1)); for(const id in S.P){ const p=S.P[id]; if(p.ret)continue; if(p.fit<100)p.fit=Math.min(100,p.fit+rec); if(p.inj>0)p.inj=Math.max(0,p.inj-n); if(n>20)p.form=+(p.form+(6.5-p.form)*0.15).toFixed(2); if(n>20&&p.mor!==65)p.mor=Math.round(p.mor+(65-p.mor)*0.1); } };
 // ---------- пресс-конференции ----------
 N.genPress=(res,c,opp,my,op)=>{ const Q=[];
  if(res==='w') Q.push({q:'Победа над '+opp.n+' со счётом '+my+':'+op+'. Ваши впечатления?',a:[['Горжусь ребятами — они выложились полностью.',{mor:4,tr:1}],['Мы можем играть ещё лучше, расслабляться рано.',{mor:-1,form:.2,tr:2}],['Это была моя тактическая победа.',{mor:-4,tr:2}]]});
@@ -365,7 +290,7 @@ N.talk=(p,kind)=>{ const S=SS; if(p.talk===S.u.win)return 'С этим игро�
 N.scout=()=>{ const S=SS; if(S.u.scoutLeft<=0)return null; S.u.scoutLeft--; const t=S.T[S.me]; const lvl=S.u.infra.scout; const found=[];
  const n=ri(2,3)+(lvl>=3?1:0);
  for(let i=0;i<n;i++){ const dual=R()<0.4; const pos=pick(SQ); const strong=Object.values(S.T).filter(x=>x.conf==='UEFA'&&x.r>=74&&x.c!==S.me); const dn=dual?pick(strong):null;
-  const p=N.genPlayer(S.me,pos,Math.round(t.r-6+gauss()*5+lvl*1.5),ri(18,27),{caps:0,dual:dn?dn.c:null,pool:dn&&R()<.5?dn.pool:null,club: dn?N.clubFor(t.r+4,dn.c):undefined});
+  const p=N.genPlayer(S.me,pos,Math.round(t.r-6+gauss()*5+lvl*1.5),ri(18,27),{caps:0,dual:dn?dn.c:null,pool:dn&&R()<.5?dn.pool:null,clubNat: dn?dn.c:undefined});
   p.scouted=1; found.push(p.id); }
  S.u.found=found.concat(S.u.found||[]).slice(0,12); return found; };
 N.invite=(id)=>{ const S=SS; const p=S.P[id]; if(!p)return ''; const me=S.T[S.me]; let ch=0.8; if(p.dual){ const o=S.T[p.dual]; ch=cl(0.55+(me.elo-o.elo)/600 + (p.o<o.str-4?0.3:0),0.1,0.95); }
