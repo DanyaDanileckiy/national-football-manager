@@ -156,3 +156,120 @@ Los gastos superan los ingresos. Reduce personal o mantenimiento.
 ¡Hemos ganado el derecho a organizar el torneo! La selección se clasifica automáticamente.
 Nuestra candidatura perdió la votación. Anfitrión del torneo
 Anfitrión del torneo
+Proveedor de equipación
+Honorarios de partidos
+Estadísticas mundiales
+Equipaciones
+Concentración
+Sede
+Local
+Visitante
+Campo neutral
+Pedir condiciones
+Recibe {0}
+Paga {0}
+El rival ha roto las negociaciones.
+¡El rival acepta sus condiciones!
+Negociación del partido
+Ranking FIFA del rival
+fuerza
+Público esperado
+Honorario del partido
+ronda {0} de 3
+Más taquilla ≈ {0}
+El honorario depende de la fuerza y el ranking del rival, de su atractivo y del público esperado.
+Aceptar
+Contraoferta
+Número positivo: lo que quiere recibir; negativo: lo que está dispuesto a pagar.
+El rival ha hecho una nueva oferta.
+Fecha ya ocupada
+Negociaciones terminadas
+Antes de «{0}» (en {1} días) la concentración tiene efecto completo.
+No hay torneo final próximo: la concentración tiene la mitad de efecto.
+Concentración ya realizada
+Lugar y clima
+Duración
+{0} días
+La concentración mejora la compenetración y la forma física, con un pequeño riesgo de lesiones. El calor y la altitud ayudan antes de torneos en climas cálidos.
+Realizar concentración
+Concentraciones anteriores
+compenetración
+lesiones
+Concentración terminada: compenetración +{0}
+Resultados mundiales
+Los resultados aparecerán tras la primera ventana internacional.
+Los 15 partidos clave
+{0} — {1}: {2} partidos jugados. Ordenados por importancia: fase, ranking, sorpresas.
+pen.
+Sorpresa
+Fútbol mundial
+Aún no hay noticias.
+Diseñador de equipaciones
+Expectación por la camiseta
+Ventas de merchandising: ×{0} (expectación, resultados, estrellas, ánimo de la afición)
+Local
+Visitante
+Diseño
+Color principal
+Color del diseño
+Detalles
+Paleta con los colores de la bandera.
+Lanzar nueva equipación
+Se puede lanzar una equipación cada 10 meses
+Colecciones
+Contrato hasta {0}
+{0} al año
+Prima por título: {0}
+Prima por clasificación: {0}
+El proveedor paga las nuevas equipaciones.
+Sin proveedor. Las ofertas dependen del ranking y los éxitos.
+{0} años
+Firmar
+¡Nueva equipación lanzada! Expectación: {0}
+Contrato firmado
+Fuerza de los equipos
+Subidas y bajadas
+Goles por equipo
+3 meses
+Año
+Los datos aparecerán tras el primer mes de juego.
+Mayores subidas
+Mayores bajadas
+La fuerza es la valoración global de la plantilla sobre 100; se registra cada mes.
+FIFA
+Este ciclo
+Histórico
+Goles internacionales de jugadores actuales y retirados.
+Desde {0}
+Mayores goleadas
+Rachas de victorias
+Rachas invictas
+Según los partidos del historial guardado.
+Sin proveedor
+expectación
+Partidos de otras selecciones: {0}. Los resultados principales están en «Noticias».
+Nueva York
+Los Ángeles
+Doha
+Dubái
+Riad
+Londres
+Shanghái
+Sídney
+Base propia
+España (templado)
+EAU (calor)
+Alpes (altitud)
+Tailandia (húmedo)
+Contrato firmado con {0} por {1} años.
+Lisa
+Rayas verticales
+Rayas horizontales
+Banda diagonal
+Mitades
+Chevrón
+Raya diplomática
+Franja pectoral
+El contrato con {0} ha vencido. Revise las nuevas ofertas.
+Emparejamientos según el ranking FIFA; equipos de la misma confederación no se cruzan en la primera ronda.
+Todos los equipos son de una confederación, así que no hay restricciones adicionales.

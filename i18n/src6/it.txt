@@ -156,3 +156,120 @@ Le spese superano le entrate. Riduci staff o manutenzione.
 Abbiamo ottenuto l'organizzazione del torneo! La nazionale è qualificata di diritto.
 La nostra candidatura ha perso il voto. Ospite del torneo
 Ospite del torneo
+Sponsor tecnico
+Ingaggi delle partite
+Statistiche mondiali
+Divise
+Ritiro
+Sede
+Casa
+Trasferta
+Campo neutro
+Chiedi condizioni
+Ricevi {0}
+Paghi {0}
+L'avversario ha interrotto le trattative.
+L'avversario accetta le tue condizioni!
+Trattativa per la partita
+Ranking FIFA dell'avversario
+forza
+Spettatori previsti
+Ingaggio della partita
+round {0} di 3
+Più incasso biglietti ≈ {0}
+L'ingaggio dipende da forza e ranking dell'avversario, dal tuo richiamo e dagli spettatori previsti.
+Accetta
+Controproposta
+Numero positivo: quanto vuoi ricevere; negativo: quanto sei disposto a pagare.
+L'avversario ha fatto una nuova offerta.
+Data già occupata
+Trattative concluse
+Prima di «{0}» (tra {1} gg) il ritiro ha pieno effetto.
+Nessuna fase finale in vista: il ritiro ha metà effetto.
+Ritiro già svolto
+Luogo e clima
+Durata
+{0} giorni
+Il ritiro migliora intesa e condizione fisica, con un piccolo rischio di infortuni. Caldo e altura aiutano prima di tornei in climi caldi.
+Svolgi ritiro
+Ritiri precedenti
+intesa
+infortuni
+Ritiro concluso: intesa +{0}
+Risultati dal mondo
+I risultati appariranno dopo la prima finestra internazionale.
+Le 15 partite principali
+{0} — {1}: {2} partite giocate. Ordinate per importanza: fase, ranking, sorprese.
+rig.
+Sorpresa
+Calcio mondiale
+Ancora nessuna notizia.
+Designer divise
+Entusiasmo per la maglia
+Vendite merchandising: ×{0} (entusiasmo, risultati, stelle, umore dei tifosi)
+Casa
+Trasferta
+Motivo
+Colore principale
+Colore del motivo
+Rifiniture
+Palette con i colori della bandiera.
+Lancia nuova divisa
+Una nuova divisa si può lanciare ogni 10 mesi
+Collezioni
+Contratto fino al {0}
+{0} all'anno
+Bonus trofeo: {0}
+Bonus qualificazione: {0}
+Lo sponsor paga le nuove divise.
+Nessuno sponsor tecnico. Le offerte dipendono da ranking e successi.
+{0} anni
+Firma
+Nuova divisa lanciata! Entusiasmo: {0}
+Contratto firmato
+Forza delle squadre
+Crescite e cali
+Gol delle squadre
+3 mesi
+Anno
+I dati appariranno dopo il primo mese di gioco.
+Maggiori crescite
+Maggiori cali
+La forza è la valutazione complessiva della rosa su 100; rilevata ogni mese.
+FIFA
+Questo ciclo
+Di sempre
+Gol in nazionale di giocatori attuali ed ex.
+Dal {0}
+Vittorie più larghe
+Serie di vittorie
+Serie di imbattibilità
+In base alle partite della cronologia salvata.
+Nessuno sponsor tecnico
+entusiasmo
+Partite giocate dalle altre nazionali: {0}. I risultati principali sono in «Notizie».
+New York
+Los Angeles
+Doha
+Dubai
+Riad
+Londra
+Shanghai
+Sydney
+Base abituale
+Spagna (temperato)
+EAU (caldo)
+Alpi (altura)
+Thailandia (umido)
+Firmato contratto con {0} per {1} anni.
+Tinta unita
+Strisce verticali
+Strisce orizzontali
+Fascia diagonale
+Metà
+Chevron
+Gessato
+Banda sul petto
+Il contratto con {0} è scaduto. Valuta le nuove offerte.
+Accoppiamenti secondo il ranking FIFA; squadre della stessa confederazione non si affrontano al primo turno.
+Tutte le squadre sono di una sola confederazione: nessuna restrizione aggiuntiva.

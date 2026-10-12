@@ -156,3 +156,120 @@ Pengeluaran melebihi pemasukan. Kurangi staf atau perawatan.
 Kita memenangkan hak menjadi tuan rumah turnamen! Timnas lolos otomatis.
 Pencalonan kita kalah dalam pemungutan suara. Tuan rumah turnamen
 Tuan rumah turnamen
+Sponsor apparel
+Honor pertandingan
+Statistik dunia
+Jersei
+Pemusatan latihan
+Tempat
+Kandang
+Tandang
+Tempat netral
+Minta syarat
+Anda menerima {0}
+Anda membayar {0}
+Lawan memutus negosiasi.
+Lawan menerima syarat Anda!
+Negosiasi pertandingan
+Peringkat FIFA lawan
+kekuatan
+Perkiraan penonton
+Honor pertandingan
+putaran {0} dari 3
+Ditambah pendapatan tiket ≈ {0}
+Honor bergantung pada kekuatan dan peringkat lawan, daya tarik Anda, dan perkiraan penonton.
+Terima
+Tawaran balik
+Angka positif: yang ingin Anda terima; negatif: yang bersedia Anda bayar.
+Lawan mengajukan tawaran baru.
+Tanggal sudah terisi
+Negosiasi selesai
+Sebelum «{0}» ({1} hari lagi) pemusatan berefek penuh.
+Tidak ada turnamen final dekat — efek pemusatan setengahnya.
+Pemusatan sudah dilakukan
+Lokasi dan iklim
+Durasi
+{0} hari
+Pemusatan meningkatkan kekompakan dan kebugaran, dengan sedikit risiko cedera. Panas dan dataran tinggi membantu sebelum turnamen di iklim panas.
+Adakan pemusatan
+Pemusatan sebelumnya
+kekompakan
+cedera
+Pemusatan selesai: kekompakan +{0}
+Hasil dunia
+Hasil akan muncul setelah jeda internasional pertama.
+15 laga terpenting
+{0} — {1}: {2} laga dimainkan. Urut menurut kepentingan: babak, peringkat, kejutan.
+pen.
+Kejutan
+Sepak bola dunia
+Belum ada berita.
+Desainer jersei
+Antusiasme jersei
+Penjualan merchandise: ×{0} (antusiasme, hasil, bintang, suasana suporter)
+Kandang
+Tandang
+Motif
+Warna utama
+Warna motif
+Aksen
+Palet dari warna bendera.
+Rilis jersei baru
+Jersei baru bisa dirilis setiap 10 bulan
+Koleksi
+Kontrak hingga {0}
+{0} per tahun
+Bonus trofi: {0}
+Bonus lolos turnamen: {0}
+Sponsor membiayai jersei baru.
+Tidak ada sponsor apparel. Tawaran bergantung pada peringkat dan prestasi.
+{0} thn
+Tanda tangan
+Jersei baru dirilis! Antusiasme: {0}
+Kontrak ditandatangani
+Kekuatan tim
+Naik dan turun
+Gol tim
+3 bulan
+Tahun
+Data akan muncul setelah bulan pertama permainan.
+Kenaikan terbesar
+Penurunan terbesar
+Kekuatan adalah nilai keseluruhan skuad skala 100; dicatat tiap bulan.
+FIFA
+Siklus ini
+Sepanjang masa
+Gol internasional pemain aktif dan mantan.
+Sejak {0}
+Kemenangan terbesar
+Rentetan kemenangan
+Rentetan tak terkalahkan
+Berdasarkan laga dalam riwayat tersimpan.
+Tidak ada sponsor apparel
+antusiasme
+Laga negara lain: {0}. Hasil utama ada di «Berita».
+New York
+Los Angeles
+Doha
+Dubai
+Riyadh
+London
+Shanghai
+Sydney
+Markas sendiri
+Spanyol (sedang)
+UEA (panas)
+Alpen (dataran tinggi)
+Thailand (lembap)
+Kontrak dengan {0} selama {1} tahun ditandatangani.
+Polos
+Garis vertikal
+Garis horizontal
+Selempang
+Belahan
+Chevron
+Garis tipis
+Pita dada
+Kontrak dengan {0} berakhir. Tinjau tawaran baru.
+Pasangan diunggulkan menurut peringkat FIFA; tim satu konfederasi tidak bertemu di babak pertama.
+Semua tim dari satu konfederasi, jadi tidak ada batasan tambahan.

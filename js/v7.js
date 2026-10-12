@@ -17,7 +17,7 @@ const _init=V6.init; V6.init=(S)=>{ _init(S); V7.init(S); };
 function snap(S){ const m=S.d.slice(0,7); if(S.strH.length&&S.strH[S.strH.length-1].d===m) S.strH.pop();
  S.strH.push({d:m,v:S.strO.map(c=>S.T[c]?Math.round((S.T[c].str||N.teamStr(c))*10):0).join(',')}); if(S.strH.length>96) S.strH.shift(); }
 const vals=h=>h._a||(h._a=h.v.split(',').map(x=>+x/10));
-V7.strAt=(c,back)=>{ const S=G(); const H=S.strH; const i=H.length-1-back; if(i<0) return null; const k=S.strO.indexOf(c); return k<0?null:vals(H[i])[k]; };
+V7.strAt=(c,back)=>{ const S=G(); const H=S.strH; if(H.length<2&&back>0) return null; const i=Math.max(0,H.length-1-back); const k=S.strO.indexOf(c); return k<0?null:vals(H[i])[k]; };
 V7.strD=(c,back)=>{ const a=V7.strAt(c,0), b=V7.strAt(c,back); return a==null||b==null?null:+(a-b).toFixed(1); };
 V7.strHist=c=>{ const S=G(); const k=S.strO.indexOf(c); return k<0?[]:S.strH.map(h=>[h.d,vals(h)[k]]); };
 V7.movers=(back,n=8,conf)=>{ const S=G(); const L=S.strO.filter(c=>S.T[c]&&(!conf||S.T[c].conf===conf)).map(c=>({c,d:V7.strD(c,back)})).filter(x=>x.d!=null);
@@ -90,7 +90,7 @@ V7.camp=(loc,days)=>{ const S=G(); const u=S.u; const L=V7.CAMPS.find(x=>x[0]===
 V7.SUP=['Volantis','Kestrel Sport','Orbita','Taiga Athletic','Meridian','Corvo','Arrowline','Solenne','Bravura','Nimbus Kit'];
 V7.kitOffers=()=>{ const S=G(); const u=S.u; const rk=rankOf(S.me); const tro=u.tro.filter(t=>N.diffD(t.d,S.d)<1460).length; const base=0.4+7*Math.pow(1-rk/212,2.4)+0.5*tro+(u.kit.hype-50)/80;
  const used=new Set(); u.kit.off=[0,1,2].map(i=>{ let n; do n=pick(V7.SUP); while(used.has(n)); used.add(n); const y=[2,3,4,5,6][ri(0,4)]; const k=0.8+R()*0.45-(y-4)*0.02;
-  return {n,y,fee:+Math.max(0.05,base*k).toFixed(2),bt:+(base*k*1.2+0.3).toFixed(2),bq:+(base*k*0.5+0.1).toFixed(2),mk:+(0.08+R()*0.14).toFixed(2)}; }); return u.kit.off; };
+  return {n,y,fee:+Math.max(0.05,base*k).toFixed(2),bt:+(base*k*0.6+0.3).toFixed(2),bq:+(base*k*0.25+0.1).toFixed(2),mk:+(0.08+R()*0.14).toFixed(2)}; }); return u.kit.off; };
 V7.signKit=(i)=>{ const S=G(); const u=S.u; const o=u.kit.off[i]; if(!o) return false; u.kit.sup={...o,from:S.d,until:N.addD(S.d,o.y*365)}; u.kit.off=[]; u.kit.hype=Math.min(100,u.kit.hype+4); N.mail(_t("Федерация футбола"),_t("Технический спонсор"),_t("Подписан контракт с {0} на {1} г.",o.n,o.y)); return true; };
 V7.PAT=['plain','stripes','hoops','sash','halves','chevron','pin','band'];
 V7.PATN={plain:()=>_t("Однотонная"),stripes:()=>_t("Вертикальные полосы"),hoops:()=>_t("Горизонтальные полосы"),sash:()=>_t("Диагональная лента"),halves:()=>_t("Половины"),chevron:()=>_t("Шеврон"),pin:()=>_t("Тонкие полосы"),band:()=>_t("Поперечная полоса")};
@@ -100,22 +100,23 @@ V7.kitCost=()=>2.5;
 V7.canRelease=()=>{ const S=G(); const r=S.u.kit.rel; return !r||N.diffD(r,S.d)>=300; };
 V7.release=(home,away)=>{ const S=G(); const u=S.u; if(!V7.canRelease()) return {err:_t("Новую форму можно выпускать раз в 10 месяцев")}; const cost=u.kit.sup?0:V7.kitCost(); if(u.bud<cost) return {err:_t("Недостаточно бюджета")};
  if(cost) add('build',-cost); const prev=u.kit.cur; let nov=10; if(prev){ if(prev.home.p!==home.p) nov+=8; if(prev.home.c1!==home.c1) nov+=6; if(prev.away.p!==away.p) nov+=4; } else nov+=10;
- const stars=S.T[S.me].pl.map(id=>S.P[id]).filter(p=>p&&p.o>=82).length; const g=Math.round(nov+((u.fan??60)-50)/4+stars*2+R()*8); u.kit.hype=cl(Math.round(u.kit.hype*0.5+30+g),10,100);
+ const stars=S.T[S.me].pl.map(id=>S.P[id]).filter(p=>p&&p.o>=82).length; const g=Math.round(nov+((u.fan??60)-50)/4+Math.min(8,stars)+R()*6); u.kit.hype=cl(Math.round(u.kit.hype*0.45+18+g),10,100);
  u.kit.cur={home,away,d:S.d,h0:u.kit.hype}; u.kit.rel=S.d; u.kit.hist.unshift({d:S.d,home,away,hype:u.kit.hype}); if(u.kit.hist.length>10) u.kit.hist.length=10; return {hype:u.kit.hype}; };
 const _kit=N.kit; N.kit=(c)=>{ const S=G(); if(S&&c===S.me&&S.u.kit&&S.u.kit.cur){ const h=S.u.kit.cur.home; return [h.c1,h.c2]; } return _kit(c); };
 V7.merchK=()=>{ const S=G(); const u=S.u; if(!u.kit) return 1; const stars=S.T[S.me].pl.map(id=>S.P[id]).filter(p=>p&&p.o>=84).length; const form=(S.T[S.me].fl||[]).slice(-6); return +(0.55+u.kit.hype/110+stars*0.04+((u.fan??60)-60)/200).toFixed(3); };
 function kitMonth(S){ const u=S.u; const k=u.kit; k.hype=Math.round(cl(k.hype+(55-k.hype)*0.04+((u.fan??60)-60)/40,5,100));
  if(k.sup){ add('kit',k.sup.fee/12); if(S.d>=k.sup.until){ N.mail(_t("Федерация футбола"),_t("Технический спонсор"),_t("Контракт с {0} истёк. Изучите новые предложения.",k.sup.n)); k.sup=null; V7.kitOffers(); } }
  else if(!k.off.length||S.d.slice(5,7)==='01') V7.kitOffers();
- const t=u.tro.length; if(k.sup&&t>(k.tro??t)){ add('kit',k.sup.bt); } k.tro=t; }
+ const t=u.tro.length; if(k.sup&&t>(k.tro??t)){ add('kit',k.sup.bt); } k.tro=t;
+ k.qd=k.qd||[]; for(const c of Object.values(S.C)) if(c.kind==='final'&&!c.age&&!c.minor&&c.teams&&c.teams.includes(S.me)&&!k.qd.includes(c.id)){ k.qd.push(c.id); if(k.qd.length>30) k.qd.shift(); if(k.sup&&N.diffD(k.sup.from,S.d)>0) add('kit',k.sup.bq); } }
 // ---------- жеребьёвка: межконтинентальный плей-офф с разведением конфедераций ----------
 const _sk=N.startKO; N.startKO=(c,seeds,pairs)=>{ if(pairs||c.conf!=='ALL'||!c.po||c.cup||c.paths) return _sk(c,seeds,pairs);
  const S=G(); const pt=x=>S.T[x].pts??S.T[x].elo; let s=c.seedElo?seeds.slice():seeds.slice().sort((a,b)=>pt(b)-pt(a)); const byes=c.byes?s.slice(0,c.byes):null; if(byes) s=s.slice(c.byes); const n=s.length; if(n<2||n%2) return _sk(c,seeds,pairs);
  const cf=x=>S.T[x]&&S.T[x].conf; const top=s.slice(0,n/2), bot=s.slice(n/2).reverse();
  for(let i=0;i<top.length;i++) if(cf(top[i])===cf(bot[i])){ for(let j=0;j<bot.length;j++){ if(j===i) continue; if(cf(top[i])!==cf(bot[j])&&cf(top[j])!==cf(bot[i])){ [bot[i],bot[j]]=[bot[j],bot[i]]; break; } } }
  const pr=top.map((t,i)=>[t,bot[i]]); c.sepOK=pr.every(([a,b])=>cf(a)!==cf(b))?1:0; _sk(c,seeds,pr); c.byeT=byes; };
-V7.drawRule=(c)=>{ if(!c) return ''; if(c.conf==='ALL') return c.po?_t("Пары составлены по рейтингу ФИФА; команды одной конфедерации не встречаются друг с другом в первом раунде."):_t("Корзины — по рейтингу ФИФА. В группе не более 2 команд УЕФА и не более 1 команды от каждой другой конфедерации.");
- return _t("Корзины — по рейтингу ФИФА. Все участники из одной конфедерации."); };
+V7.drawRule=(c)=>{ if(!c) return ''; if(c.conf==='ALL') return c.po?_t("Пары составлены по рейтингу ФИФА; команды одной конфедерации не встречаются друг с другом в первом раунде."):_t("Ограничение: в группе не более 2 команд УЕФА и не более 1 команды от каждой другой конфедерации.");
+ return _t("Все участники — из одной конфедерации, поэтому дополнительных ограничений нет."); };
 // ---------- мировая статистика ----------
 V7.cycStart=()=>{ const S=G(); return S.cyc&&S.cyc.Y?N.ds(S.cyc.Y,8,1):String(+S.d.slice(0,4)-1)+'-08-01'; };
 V7.stats=()=>{ const S=G(); const from=V7.cycStart(); const g={}, sc={}, big=[], strk={}, cur={};

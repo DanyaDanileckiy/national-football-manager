@@ -156,3 +156,120 @@ Giderler gelirleri aşıyor. Personeli veya bakımı azaltın.
 Turnuvaya ev sahipliği hakkını kazandık! Takım otomatik olarak katılıyor.
 Adaylığımız oylamayı kaybetti. Turnuva ev sahibi
 Turnuva ev sahibi
+Forma sponsoru
+Maç ücretleri
+Dünya istatistikleri
+Formalar
+Hazırlık kampı
+Maç yeri
+İç saha
+Deplasman
+Tarafsız saha
+Koşulları sor
+{0} alırsınız
+{0} ödersiniz
+Rakip görüşmeleri kesti.
+Rakip koşullarınızı kabul ediyor!
+Maç görüşmesi
+Rakibin FIFA sıralaması
+güç
+Beklenen seyirci
+Maç ücreti
+tur {0}/3
+Artı bilet geliri ≈ {0}
+Ücret rakibin gücüne ve sıralamasına, sizin çekiciliğinize ve beklenen seyirciye bağlıdır.
+Kabul et
+Karşı teklif
+Pozitif sayı almak istediğiniz, negatif sayı ödemeye razı olduğunuz tutardır.
+Rakip yeni bir teklif yaptı.
+Tarih zaten dolu
+Görüşmeler sona erdi
+«{0}» öncesinde ({1} gün sonra) kamp tam etki verir.
+Yakında final turnuvası yok — kampın etkisi yarıya iner.
+Kamp zaten yapıldı
+Yer ve iklim
+Süre
+{0} gün
+Kamp uyumu ve kondisyonu artırır; küçük bir sakatlık riski vardır. Sıcak ve yüksek rakım, sıcak iklimdeki turnuvalar öncesinde faydalıdır.
+Kamp yap
+Önceki kamplar
+uyum
+sakatlıklar
+Kamp tamamlandı: uyum +{0}
+Dünyadan sonuçlar
+Sonuçlar ilk uluslararası aradan sonra görünecek.
+En önemli 15 maç
+{0} — {1}: {2} maç oynandı. Önem sırasına göre: turnuva aşaması, sıralama, sürprizler.
+pen.
+Sürpriz
+Dünya futbolu
+Henüz haber yok.
+Forma tasarımcısı
+Forma ilgisi
+Ürün satışları: ×{0} (ilgi, sonuçlar, yıldızlar, taraftar havası)
+İç saha
+Deplasman
+Desen
+Ana renk
+Desen rengi
+Detaylar
+Palet bayrak renklerinden oluşur.
+Yeni forma çıkar
+Yeni forma 10 ayda bir çıkarılabilir
+Koleksiyonlar
+Sözleşme bitişi: {0}
+Yılda {0}
+Kupa primi: {0}
+Turnuvaya katılım primi: {0}
+Yeni formaların masrafını sponsor öder.
+Forma sponsoru yok. Teklifler sıralamaya ve başarıya bağlıdır.
+{0} yıl
+İmzala
+Yeni forma çıktı! İlgi: {0}
+Sözleşme imzalandı
+Takım gücü
+Yükselenler ve düşenler
+Takım golleri
+3 ay
+Yıl
+Veriler ilk oyun ayından sonra görünecek.
+En çok yükselenler
+En çok düşenler
+Güç, kadronun 100 puanlık genel değerlendirmesidir; her ay kaydedilir.
+FIFA
+Bu döngü
+Tüm zamanlar
+Mevcut ve eski oyuncuların milli takım golleri.
+{0} tarihinden beri
+En farklı galibiyetler
+Galibiyet serileri
+Yenilmezlik serileri
+Kayıtlı geçmişteki maçlara göre.
+Forma sponsoru yok
+ilgi
+Diğer milli takımların maçları: {0}. Önemli sonuçlar «Haberler» bölümünde.
+New York
+Los Angeles
+Doha
+Dubai
+Riyad
+Londra
+Şanghay
+Sidney
+Kendi tesisimiz
+İspanya (ılıman)
+BAE (sıcak)
+Alpler (yüksek rakım)
+Tayland (nemli)
+{0} ile {1} yıllık sözleşme imzalandı.
+Düz
+Dikey çizgili
+Yatay çizgili
+Çapraz şerit
+İki renkli
+Şerit (V)
+İnce çizgili
+Göğüs bandı
+{0} ile sözleşme sona erdi. Yeni teklifleri inceleyin.
+Eşleşmeler FIFA sıralamasına göre; aynı konfederasyondan takımlar ilk turda karşılaşmaz.
+Tüm takımlar tek bir konfederasyondan, bu yüzden ek kısıtlama yok.

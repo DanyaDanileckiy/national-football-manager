@@ -156,3 +156,120 @@ As despesas superam as receitas. Reduza pessoal ou manutenção.
 Ganhámos o direito de organizar o torneio! A seleção qualifica-se automaticamente.
 A nossa candidatura perdeu a votação. Anfitrião do torneio
 Anfitrião do torneio
+Fornecedor de material
+Cachês de jogos
+Estatísticas mundiais
+Uniformes
+Período de treinos
+Local
+Casa
+Fora
+Campo neutro
+Pedir condições
+Você recebe {0}
+Você paga {0}
+O adversário rompeu as negociações.
+O adversário aceita as suas condições!
+Negociação do jogo
+Ranking FIFA do adversário
+força
+Público esperado
+Cachê do jogo
+rodada {0} de 3
+Mais bilheteria ≈ {0}
+O cachê depende da força e do ranking do adversário, do seu apelo e do público esperado.
+Aceitar
+Contraproposta
+Número positivo: quanto quer receber; negativo: quanto aceita pagar.
+O adversário fez uma nova oferta.
+Data já ocupada
+Negociações encerradas
+Antes de «{0}» (em {1} dias) o período de treinos tem efeito total.
+Nenhum torneio final próximo — o efeito é reduzido pela metade.
+Período de treinos já realizado
+Local e clima
+Duração
+{0} dias
+Os treinos melhoram o entrosamento e a forma física, com pequeno risco de lesões. Calor e altitude ajudam antes de torneios em clima quente.
+Realizar treinos
+Períodos anteriores
+entrosamento
+lesões
+Treinos concluídos: entrosamento +{0}
+Resultados mundiais
+Os resultados aparecerão após a primeira data FIFA.
+Os 15 jogos principais
+{0} — {1}: {2} jogos disputados. Ordenados por importância: fase, ranking, zebras.
+pên.
+Zebra
+Futebol mundial
+Ainda sem notícias.
+Designer de uniformes
+Expectativa pelo uniforme
+Vendas de produtos: ×{0} (expectativa, resultados, estrelas, humor da torcida)
+Casa
+Fora
+Padrão
+Cor principal
+Cor do padrão
+Acabamento
+Paleta com as cores da bandeira.
+Lançar novo uniforme
+É possível lançar um uniforme a cada 10 meses
+Coleções
+Contrato até {0}
+{0} por ano
+Bônus por título: {0}
+Bônus por classificação: {0}
+O fornecedor paga os novos uniformes.
+Sem fornecedor. As ofertas dependem do ranking e dos êxitos.
+{0} anos
+Assinar
+Novo uniforme lançado! Expectativa: {0}
+Contrato assinado
+Força das seleções
+Altas e quedas
+Gols das seleções
+3 meses
+Ano
+Os dados aparecerão após o primeiro mês de jogo.
+Maiores altas
+Maiores quedas
+A força é a avaliação geral do elenco em 100 pontos; registrada mensalmente.
+FIFA
+Este ciclo
+De todos os tempos
+Gols por seleções de jogadores atuais e antigos.
+Desde {0}
+Maiores goleadas
+Sequências de vitórias
+Sequências invictas
+Com base nos jogos do histórico salvo.
+Sem fornecedor
+expectativa
+Jogos de outras seleções: {0}. Os principais resultados estão em «Notícias».
+Nova York
+Los Angeles
+Doha
+Dubai
+Riad
+Londres
+Xangai
+Sydney
+Base própria
+Espanha (temperado)
+EAU (calor)
+Alpes (altitude)
+Tailândia (úmido)
+Contrato assinado com {0} por {1} anos.
+Liso
+Listras verticais
+Listras horizontais
+Faixa diagonal
+Metades
+Chevron
+Risca de giz
+Faixa no peito
+O contrato com {0} terminou. Veja as novas ofertas.
+Confrontos definidos pelo ranking FIFA; seleções da mesma confederação não se enfrentam na primeira fase.
+Todas as seleções são de uma confederação, então não há restrições adicionais.

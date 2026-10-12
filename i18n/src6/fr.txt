@@ -156,3 +156,120 @@ Les dépenses dépassent les revenus. Réduisez le personnel ou l'entretien.
 Nous avons obtenu l'organisation du tournoi ! La sélection est qualifiée d'office.
 Notre candidature a perdu le vote. Hôte du tournoi
 Hôte du tournoi
+Équipementier
+Cachets de match
+Statistiques mondiales
+Maillots
+Stage de préparation
+Lieu
+Domicile
+Extérieur
+Terrain neutre
+Demander les conditions
+Vous recevez {0}
+Vous payez {0}
+L'adversaire a rompu les négociations.
+L'adversaire accepte vos conditions !
+Négociation du match
+Classement FIFA de l'adversaire
+force
+Affluence attendue
+Cachet du match
+tour {0} sur 3
+Plus recettes billetterie ≈ {0}
+Le cachet dépend de la force et du classement de l'adversaire, de votre attractivité et de l'affluence attendue.
+Accepter
+Contre-proposition
+Nombre positif : ce que vous voulez recevoir ; négatif : ce que vous êtes prêt à payer.
+L'adversaire a fait une nouvelle offre.
+Date déjà prise
+Négociations terminées
+Avant « {0} » (dans {1} j), le stage a son plein effet.
+Pas de phase finale à venir — le stage a moitié moins d'effet.
+Stage déjà effectué
+Lieu et climat
+Durée
+{0} jours
+Le stage améliore les automatismes et la forme physique, avec un léger risque de blessure. Chaleur et altitude aident avant un tournoi sous climat chaud.
+Organiser le stage
+Stages précédents
+automatismes
+blessures
+Stage terminé : automatismes +{0}
+Résultats mondiaux
+Les résultats apparaîtront après la première fenêtre internationale.
+Les 15 matchs majeurs
+{0} — {1} : {2} matchs joués. Classés par importance : phase, classements, surprises.
+t.a.b.
+Surprise
+Football mondial
+Pas encore de nouvelles.
+Créateur de maillots
+Engouement maillot
+Ventes de produits : ×{0} (engouement, résultats, stars, moral des supporters)
+Domicile
+Extérieur
+Motif
+Couleur principale
+Couleur du motif
+Finitions
+Palette aux couleurs du drapeau.
+Sortir un nouveau maillot
+Un nouveau maillot peut sortir tous les 10 mois
+Collections
+Contrat jusqu'au {0}
+{0} par an
+Prime par trophée : {0}
+Prime de qualification : {0}
+L'équipementier paie les nouveaux maillots.
+Pas d'équipementier. Les offres dépendent du classement et des succès.
+{0} ans
+Signer
+Nouveau maillot sorti ! Engouement : {0}
+Contrat signé
+Force des équipes
+Hausses et baisses
+Buts des équipes
+3 mois
+Année
+Les données apparaîtront après le premier mois de jeu.
+Plus fortes hausses
+Plus fortes baisses
+La force est la note globale de l'effectif sur 100 ; relevés mensuels.
+FIFA
+Ce cycle
+Tous les temps
+Buts en sélection des joueurs actuels et anciens.
+Depuis le {0}
+Plus larges victoires
+Séries de victoires
+Séries sans défaite
+D'après les matchs de l'historique sauvegardé.
+Pas d'équipementier
+engouement
+Matchs joués par les autres nations : {0}. Les principaux résultats sont dans « Actualités ».
+New York
+Los Angeles
+Doha
+Dubaï
+Riyad
+Londres
+Shanghai
+Sydney
+Base habituelle
+Espagne (tempéré)
+EAU (chaleur)
+Alpes (altitude)
+Thaïlande (humide)
+Contrat signé avec {0} pour {1} ans.
+Uni
+Rayures verticales
+Cerceaux
+Écharpe
+Moitiés
+Chevron
+Fines rayures
+Bande pectorale
+Le contrat avec {0} a expiré. Étudiez les nouvelles offres.
+Paires établies selon le classement FIFA ; deux équipes d'une même confédération ne se rencontrent pas au premier tour.
+Toutes les équipes viennent d'une même confédération : aucune restriction supplémentaire.

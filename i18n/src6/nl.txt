@@ -156,3 +156,120 @@ Uitgaven zijn hoger dan inkomsten. Bezuinig op personeel of onderhoud.
 We hebben het toernooi binnengehaald! De ploeg plaatst zich automatisch.
 Ons bod verloor de stemming. Gastland
 Gastland van het toernooi
+Kledingsponsor
+Wedstrijdgages
+Wereldstatistieken
+Tenues
+Trainingskamp
+Locatie
+Thuis
+Uit
+Neutraal terrein
+Voorwaarden vragen
+U ontvangt {0}
+U betaalt {0}
+De tegenstander heeft de onderhandelingen afgebroken.
+De tegenstander accepteert uw voorwaarden!
+Wedstrijdonderhandeling
+FIFA-ranking tegenstander
+sterkte
+Verwacht publiek
+Wedstrijdgage
+ronde {0} van 3
+Plus kaartverkoop ≈ {0}
+De gage hangt af van sterkte en ranking van de tegenstander, uw aantrekkingskracht en het verwachte publiek.
+Accepteren
+Tegenbod
+Positief getal: wat u wilt ontvangen; negatief: wat u wilt betalen.
+De tegenstander heeft een nieuw bod gedaan.
+Datum al bezet
+Onderhandelingen beëindigd
+Vóór „{0}” (over {1} dagen) heeft het kamp volledig effect.
+Geen eindtoernooi in zicht — het kamp heeft half effect.
+Kamp al gehouden
+Locatie en klimaat
+Duur
+{0} dagen
+Een kamp verbetert de geoliedheid en fitheid, met een klein blessurerisico. Hitte en hoogte helpen vóór toernooien in een warm klimaat.
+Kamp houden
+Eerdere kampen
+geoliedheid
+blessures
+Kamp voltooid: geoliedheid +{0}
+Wereldresultaten
+Resultaten verschijnen na de eerste interland-periode.
+De 15 belangrijkste wedstrijden
+{0} — {1}: {2} wedstrijden gespeeld. Op belang: fase, ranking, verrassingen.
+pen.
+Verrassing
+Wereldvoetbal
+Nog geen nieuws.
+Tenue-ontwerper
+Shirt-hype
+Merchandise: ×{0} (hype, resultaten, sterren, stemming fans)
+Thuis
+Uit
+Patroon
+Hoofdkleur
+Patroonkleur
+Afwerking
+Palet in de vlagkleuren.
+Nieuw tenue uitbrengen
+Een nieuw tenue kan elke 10 maanden
+Collecties
+Contract tot {0}
+{0} per jaar
+Titelbonus: {0}
+Kwalificatiebonus: {0}
+De sponsor betaalt nieuwe tenues.
+Geen kledingsponsor. Aanbiedingen hangen af van ranking en succes.
+{0} jr
+Tekenen
+Nieuw tenue uitgebracht! Hype: {0}
+Contract getekend
+Teamsterkte
+Stijgers en dalers
+Doelpunten per team
+3 maanden
+Jaar
+Gegevens verschijnen na de eerste speelmaand.
+Grootste stijgers
+Grootste dalers
+Sterkte is de totale selectiewaardering op 100; maandelijks vastgelegd.
+FIFA
+Deze cyclus
+Aller tijden
+Interlanddoelpunten van huidige en oud-spelers.
+Sinds {0}
+Grootste overwinningen
+Winstreeksen
+Ongeslagen reeksen
+Op basis van gespeelde wedstrijden in de opgeslagen historie.
+Geen kledingsponsor
+hype
+Wedstrijden van andere landen: {0}. Belangrijkste uitslagen staan bij „Nieuws”.
+New York
+Los Angeles
+Doha
+Dubai
+Riyad
+Londen
+Shanghai
+Sydney
+Eigen basis
+Spanje (gematigd)
+VAE (hitte)
+Alpen (hoogte)
+Thailand (vochtig)
+Contract getekend met {0} voor {1} jaar.
+Effen
+Verticale strepen
+Horizontale strepen
+Sjerp
+Helften
+Chevron
+Krijtstreep
+Borstband
+Het contract met {0} is verlopen. Bekijk de nieuwe aanbiedingen.
+Duels volgens FIFA-ranking; teams uit dezelfde confederatie treffen elkaar niet in de eerste ronde.
+Alle teams komen uit één confederatie, dus geen extra beperkingen.

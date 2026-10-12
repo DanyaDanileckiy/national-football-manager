@@ -156,3 +156,120 @@ Die Ausgaben übersteigen die Einnahmen. Reduziere Personal oder Unterhalt.
 Wir haben den Zuschlag für das Turnier erhalten! Die Mannschaft ist automatisch qualifiziert.
 Unsere Bewerbung hat die Abstimmung verloren. Gastgeber
 Gastgeber des Turniers
+Ausrüster
+Spielgagen
+Weltstatistik
+Trikots
+Trainingslager
+Spielort
+Heim
+Auswärts
+Neutraler Ort
+Konditionen anfragen
+Sie erhalten {0}
+Sie zahlen {0}
+Der Gegner hat die Verhandlungen abgebrochen.
+Der Gegner akzeptiert Ihre Bedingungen!
+Spielverhandlung
+FIFA-Rang des Gegners
+Stärke
+Erwartete Zuschauer
+Spielgage
+Runde {0} von 3
+Plus Ticketeinnahmen ≈ {0}
+Die Gage hängt von Stärke und Rang des Gegners, Ihrer Attraktivität und den erwarteten Zuschauern ab.
+Annehmen
+Gegenangebot
+Positive Zahl: was Sie erhalten wollen; negative: was Sie zu zahlen bereit sind.
+Der Gegner hat ein neues Angebot gemacht.
+Termin bereits belegt
+Verhandlungen beendet
+Vor „{0}“ (in {1} Tagen) wirkt das Lager voll.
+Kein Endturnier in Sicht — das Lager wirkt nur halb.
+Lager bereits abgehalten
+Ort und Klima
+Dauer
+{0} Tage
+Ein Lager verbessert Eingespieltheit und Fitness, mit leichtem Verletzungsrisiko. Hitze und Höhe helfen vor Turnieren in heißem Klima.
+Lager abhalten
+Frühere Lager
+Eingespieltheit
+Verletzungen
+Lager beendet: Eingespieltheit +{0}
+Weltergebnisse
+Ergebnisse erscheinen nach dem ersten Länderspielfenster.
+Die 15 wichtigsten Spiele
+{0} — {1}: {2} Spiele. Sortiert nach Bedeutung: Turnierphase, Ranglisten, Überraschungen.
+i. E.
+Sensation
+Weltfußball
+Noch keine Nachrichten.
+Trikotdesigner
+Trikot-Hype
+Merchandising: ×{0} (Hype, Ergebnisse, Stars, Fanstimmung)
+Heim
+Auswärts
+Muster
+Hauptfarbe
+Musterfarbe
+Besatz
+Palette aus den Flaggenfarben.
+Neues Trikot herausbringen
+Ein neues Trikot ist alle 10 Monate möglich
+Kollektionen
+Vertrag bis {0}
+{0} pro Jahr
+Titelbonus: {0}
+Qualifikationsbonus: {0}
+Der Ausrüster bezahlt neue Trikots.
+Kein Ausrüster. Angebote hängen von Rang und Erfolg ab.
+{0} J.
+Unterschreiben
+Neues Trikot erschienen! Hype: {0}
+Vertrag unterschrieben
+Mannschaftsstärke
+Aufsteiger und Absteiger
+Tore der Teams
+3 Monate
+Jahr
+Daten erscheinen nach dem ersten Spielmonat.
+Größte Steigerung
+Größter Rückgang
+Stärke ist die Gesamtbewertung des Kaders (100 Punkte); monatliche Momentaufnahmen.
+FIFA
+Dieser Zyklus
+Ewige Liste
+Länderspieltore aktiver und ehemaliger Spieler.
+Seit {0}
+Höchste Siege
+Siegesserien
+Ungeschlagen-Serien
+Auf Basis der gespeicherten Spiele.
+Kein Ausrüster
+Hype
+Spiele anderer Nationen: {0}. Die wichtigsten Ergebnisse unter „Nachrichten“.
+New York
+Los Angeles
+Doha
+Dubai
+Riad
+London
+Shanghai
+Sydney
+Eigene Basis
+Spanien (gemäßigt)
+VAE (Hitze)
+Alpen (Höhe)
+Thailand (feucht)
+Vertrag mit {0} über {1} Jahre unterschrieben.
+Einfarbig
+Längsstreifen
+Querstreifen
+Schärpe
+Hälften
+Chevron
+Nadelstreifen
+Brustband
+Der Vertrag mit {0} ist ausgelaufen. Prüfen Sie neue Angebote.
+Paarungen nach FIFA-Rang gesetzt; Teams derselben Konföderation treffen in Runde 1 nicht aufeinander.
+Alle Teams stammen aus einer Konföderation, daher keine weiteren Einschränkungen.

@@ -156,3 +156,120 @@ Wydatki przewyższają przychody. Ogranicz personel lub utrzymanie.
 Zdobyliśmy prawo organizacji turnieju! Reprezentacja kwalifikuje się automatycznie.
 Nasza kandydatura przegrała głosowanie. Gospodarz turnieju
 Gospodarz turnieju
+Dostawca strojów
+Honoraria za mecze
+Statystyki światowe
+Stroje
+Zgrupowanie
+Miejsce
+U siebie
+Na wyjeździe
+Teren neutralny
+Zapytaj o warunki
+Otrzymujesz {0}
+Płacisz {0}
+Rywal zerwał negocjacje.
+Rywal przyjmuje twoje warunki!
+Negocjacje meczu
+Ranking FIFA rywala
+siła
+Oczekiwana frekwencja
+Honorarium za mecz
+runda {0} z 3
+Plus wpływy z biletów ≈ {0}
+Kwota zależy od siły i rankingu rywala, twojej atrakcyjności i oczekiwanej frekwencji.
+Przyjmij
+Kontroferta
+Liczba dodatnia — ile chcesz otrzymać; ujemna — ile możesz zapłacić.
+Rywal złożył nową ofertę.
+Termin już zajęty
+Negocjacje zakończone
+Przed „{0}” (za {1} dni) zgrupowanie daje pełny efekt.
+Brak turnieju finałowego w pobliżu — efekt o połowę mniejszy.
+Zgrupowanie już się odbyło
+Miejsce i klimat
+Czas trwania
+{0} dni
+Zgrupowanie poprawia zgranie i formę fizyczną, z niewielkim ryzykiem kontuzji. Upał i wysokość pomagają przed turniejami w gorącym klimacie.
+Zorganizuj zgrupowanie
+Poprzednie zgrupowania
+zgranie
+kontuzje
+Zgrupowanie zakończone: zgranie +{0}
+Wyniki ze świata
+Wyniki pojawią się po pierwszym okienku reprezentacyjnym.
+15 najważniejszych meczów
+{0} — {1}: rozegrano {2} meczów. Według wagi: faza turnieju, ranking, niespodzianki.
+k.
+Sensacja
+Futbol światowy
+Brak wiadomości.
+Projektant strojów
+Zainteresowanie strojem
+Sprzedaż gadżetów: ×{0} (zainteresowanie, wyniki, gwiazdy, nastroje kibiców)
+Domowy
+Wyjazdowy
+Wzór
+Kolor główny
+Kolor wzoru
+Wykończenie
+Paleta w barwach flagi.
+Wydaj nowy strój
+Nowy strój można wydać co 10 miesięcy
+Kolekcje
+Kontrakt do {0}
+{0} rocznie
+Premia za trofeum: {0}
+Premia za awans na turniej: {0}
+Dostawca płaci za nowe stroje.
+Brak dostawcy strojów. Oferty zależą od rankingu i sukcesów.
+{0} l.
+Podpisz
+Nowy strój wydany! Zainteresowanie: {0}
+Kontrakt podpisany
+Siła drużyn
+Wzrosty i spadki
+Gole drużyn
+3 miesiące
+Rok
+Dane pojawią się po pierwszym miesiącu gry.
+Największe wzrosty
+Największe spadki
+Siła to ogólna ocena kadry w skali 100; zapisywana co miesiąc.
+FIFA
+Ten cykl
+Wszech czasów
+Gole w reprezentacji obecnych i byłych zawodników.
+Od {0}
+Najwyższe zwycięstwa
+Serie zwycięstw
+Serie bez porażki
+Na podstawie meczów w zapisanej historii.
+Brak dostawcy strojów
+zainteresowanie
+Mecze innych reprezentacji: {0}. Najważniejsze wyniki w „Aktualnościach”.
+Nowy Jork
+Los Angeles
+Doha
+Dubaj
+Rijad
+Londyn
+Szanghaj
+Sydney
+Własna baza
+Hiszpania (umiarkowany)
+ZEA (upał)
+Alpy (wysokość)
+Tajlandia (wilgotny)
+Podpisano kontrakt z {0} na {1} lat.
+Gładki
+Pionowe pasy
+Poziome pasy
+Szarfa
+Połówki
+Szewron
+Prążki
+Pas na piersi
+Kontrakt z {0} wygasł. Przejrzyj nowe oferty.
+Pary według rankingu FIFA; drużyny z tej samej konfederacji nie trafiają na siebie w pierwszej rundzie.
+Wszystkie drużyny są z jednej konfederacji, więc nie ma dodatkowych ograniczeń.

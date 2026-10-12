@@ -166,7 +166,7 @@ function drawRender(c){ const log=c.drawLog; const k=Math.min(st.dr.k,log.length
  const G={}; c.groups.forEach(g=>G[g.n]=[]); log.slice(0,k).forEach(x=>G[x[2]].push(x[1]));
  const pots=(c.pots||[]).flatMap((part,pi)=>part.map((pot,i)=>({n:_t("{0}Корзина {1}",((c.pots.length>1)?[_t("Основная часть"),_t("Группы позднего старта")][pi]+' · ':''),(i+1)),t:pot})));
  const nm=t=>`<span class="${t===S.me?'gold b':''}">${T(t).f} ${esc(T(t).n)}</span>`;
- V().innerHTML=`<div class="card nm"><h3>${esc(c.n)}</h3><div class="sm mut">${_t("Корзины сформированы по рейтингу ФИФА.{0}{1}",c.host?` ${_t("Хозяин ({0}) заранее помещён в группу A.",(esc(T(c.host).n)))}`:'',c.conf==='ALL'?` ${_t("Ограничение: в группе не более 2 команд УЕФА и не более 1 команды от каждой другой конфедерации.")}`:'')}</div>
+ V().innerHTML=`<div class="card nm"><h3>${esc(c.n)}</h3><div class="sm mut">${_t("Корзины сформированы по рейтингу ФИФА.{0}{1}",c.host?` ${_t("Хозяин ({0}) заранее помещён в группу A.",(esc(T(c.host).n)))}`:'',' '+(N.v7?N.v7.drawRule(c):''))}</div>
  ${last?`<div class="ctr" style="margin:10px 0;font-size:18px">🎲 ${nm(last[1])} → <b>${_t("Группа {0}",last[2])}</b></div>`:`<div class="ctr mut" style="margin:10px 0">${_t("Жеребьёвка начинается…")}</div>`}
  <div class="grid2"><button class="btn" onclick="UI.drawSkip()">⏩ ${_t("Показать всё")}</button><button class="btn g" onclick="UI.home()">${_t("Готово")}</button></div></div>
  <div class="grid2">${c.groups.map(g=>`<div class="card" style="margin:0 0 8px"><h3>${_t("Группа {0}",g.n)}</h3>${(G[g.n]||[]).map(t=>`<div class="sm">${nm(t)}</div>`).join('')}${'<div class="sm mut">·</div>'.repeat(Math.max(0,g.t.length-(G[g.n]||[]).length))}</div>`).join('')}</div>

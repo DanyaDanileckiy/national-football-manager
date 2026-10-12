@@ -156,3 +156,120 @@ Výdaje převyšují příjmy. Omezte personál nebo údržbu.
 Získali jsme pořadatelství turnaje! Reprezentace postupuje automaticky.
 Naše kandidatura prohrála hlasování. Pořadatel turnaje
 Pořadatel turnaje
+Dodavatel dresů
+Honoráře za zápasy
+Světové statistiky
+Dresy
+Soustředění
+Místo
+Doma
+Venku
+Neutrální půda
+Zjistit podmínky
+Dostanete {0}
+Zaplatíte {0}
+Soupeř přerušil jednání.
+Soupeř přijímá vaše podmínky!
+Jednání o zápase
+Žebříček FIFA soupeře
+síla
+Očekávaná návštěva
+Honorář za zápas
+kolo {0} ze 3
+Plus vstupné ≈ {0}
+Částka závisí na síle a žebříčku soupeře, vaší atraktivitě a očekávané návštěvě.
+Přijmout
+Protinávrh
+Kladné číslo — kolik chcete dostat; záporné — kolik jste ochotni zaplatit.
+Soupeř předložil novou nabídku.
+Termín je obsazen
+Jednání ukončeno
+Před „{0}“ (za {1} dní) má soustředění plný účinek.
+Žádný závěrečný turnaj na obzoru — účinek je poloviční.
+Soustředění již proběhlo
+Místo a klima
+Délka
+{0} dní
+Soustředění zlepšuje sehranost a kondici, s malým rizikem zranění. Horko a nadmořská výška pomáhají před turnaji v horkém klimatu.
+Uspořádat soustředění
+Předchozí soustředění
+sehranost
+zranění
+Soustředění skončilo: sehranost +{0}
+Výsledky ze světa
+Výsledky se objeví po prvním reprezentačním okně.
+15 nejdůležitějších zápasů
+{0} — {1}: odehráno {2} zápasů. Podle důležitosti: fáze, žebříček, překvapení.
+pen.
+Překvapení
+Světový fotbal
+Zatím žádné zprávy.
+Návrhář dresů
+Zájem o dres
+Prodej suvenýrů: ×{0} (zájem, výsledky, hvězdy, nálada fanoušků)
+Domácí
+Venkovní
+Vzor
+Hlavní barva
+Barva vzoru
+Lemování
+Paleta v barvách vlajky.
+Vydat nový dres
+Nový dres lze vydat jednou za 10 měsíců
+Kolekce
+Smlouva do {0}
+{0} ročně
+Bonus za trofej: {0}
+Bonus za postup na turnaj: {0}
+Dodavatel platí nové dresy.
+Bez dodavatele dresů. Nabídky závisí na žebříčku a úspěších.
+{0} let
+Podepsat
+Nový dres vydán! Zájem: {0}
+Smlouva podepsána
+Síla týmů
+Vzestupy a pády
+Góly týmů
+3 měsíce
+Rok
+Data se objeví po prvním měsíci hry.
+Největší vzestupy
+Největší pády
+Síla je celkové hodnocení kádru na stupnici 100; zaznamenává se měsíčně.
+FIFA
+Tento cyklus
+Všech dob
+Reprezentační góly současných i bývalých hráčů.
+Od {0}
+Nejvyšší výhry
+Série výher
+Série bez porážky
+Podle odehraných zápasů v uložené historii.
+Bez dodavatele dresů
+zájem
+Zápasy ostatních reprezentací: {0}. Hlavní výsledky jsou v „Zprávách“.
+New York
+Los Angeles
+Dauhá
+Dubaj
+Rijád
+Londýn
+Šanghaj
+Sydney
+Vlastní základna
+Španělsko (mírné)
+SAE (horko)
+Alpy (nadmořská výška)
+Thajsko (vlhko)
+Podepsána smlouva s {0} na {1} let.
+Jednobarevný
+Svislé pruhy
+Vodorovné pruhy
+Šerpa
+Poloviny
+Šipka
+Proužky
+Pás přes hruď
+Smlouva s {0} vypršela. Prohlédněte si nové nabídky.
+Dvojice podle žebříčku FIFA; týmy ze stejné konfederace se v prvním kole nepotkají.
+Všechny týmy jsou z jedné konfederace, takže žádná další omezení neplatí.

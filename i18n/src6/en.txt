@@ -156,3 +156,120 @@ Expenses exceed income. Cut staff or facility upkeep.
 We have won the right to host the tournament! The team qualifies automatically.
 Our bid lost the vote. Tournament host
 Tournament host
+Kit supplier
+Match fees
+World statistics
+Kits
+Training camp
+Venue
+Home
+Away
+Neutral venue
+Request terms
+You receive {0}
+You pay {0}
+The opponent has broken off talks.
+The opponent accepts your terms!
+Match negotiation
+Opponent's FIFA ranking
+strength
+Expected attendance
+Match fee
+round {0} of 3
+Plus ticket revenue ≈ {0}
+The fee depends on the opponent's strength and ranking, your appeal and the expected attendance.
+Accept
+Counter-offer
+A positive number is what you want to receive; a negative one is what you are willing to pay.
+The opponent has made a new offer.
+Date already taken
+Talks ended
+Before "{0}" (in {1} days) the camp has its full effect.
+No finals tournament coming up — the camp has half the effect.
+Camp already held
+Location and climate
+Duration
+{0} days
+A camp improves team familiarity and player fitness, with a small injury risk. Heat and altitude camps help before tournaments in hot climates.
+Hold camp
+Past camps
+familiarity
+injuries
+Camp complete: familiarity +{0}
+World results
+Results will appear after the first international window.
+Top 15 matches
+{0} — {1}: {2} matches played. Ranked by importance: tournament stage, team rankings, upsets.
+pen.
+Upset
+World football
+No news yet.
+Kit designer
+Kit hype
+Merchandise sales: ×{0} (hype, results, stars, fan mood)
+Home
+Away
+Pattern
+Main colour
+Pattern colour
+Trim
+Palette uses the flag colours.
+Release new kit
+A new kit can be released once every 10 months
+Collections
+Contract until {0}
+{0} per year
+Trophy bonus: {0}
+Tournament qualification bonus: {0}
+The supplier pays for new kit releases.
+No kit supplier. Offers depend on ranking and success.
+{0} yrs
+Sign
+New kit released! Hype: {0}
+Contract signed
+Team strength
+Risers and fallers
+Team goals
+3 months
+Year
+Data will appear after the first month of play.
+Biggest risers
+Biggest fallers
+Strength is the overall 100-point squad rating; snapshots are taken monthly.
+FIFA
+This cycle
+All time
+International goals by current and former players.
+Since {0}
+Biggest wins
+Winning streaks
+Unbeaten streaks
+Based on played matches in the saved history.
+No kit supplier
+hype
+Matches played by other nations: {0}. Top results are in "News".
+New York
+Los Angeles
+Doha
+Dubai
+Riyadh
+London
+Shanghai
+Sydney
+Home base
+Spain (temperate)
+UAE (heat)
+Alps (altitude)
+Thailand (humid)
+Signed a contract with {0} for {1} years.
+Plain
+Vertical stripes
+Hoops
+Sash
+Halves
+Chevron
+Pinstripes
+Chest band
+The contract with {0} has expired. Review the new offers.
+Pairs are seeded by FIFA ranking; teams from the same confederation cannot meet in the first round.
+All teams are from one confederation, so no extra restrictions apply.
