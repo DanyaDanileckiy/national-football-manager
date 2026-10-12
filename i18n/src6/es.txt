@@ -1,0 +1,158 @@
+Estadio de noche
+Césped clásico
+Azul medianoche
+Claro
+Arena / Retro
+Autoguardado
+trampa
+jugado
+El autoguardado se hace tras cada paso y partido. 20 ranuras manuales.
+Economía y estadios
+Ranking FIFA
+Análisis
+Historia
+Candidaturas
+Trucos
+Patrocinadores
+Derechos de TV
+Entradas
+Merchandising
+Premios y bonificaciones
+Personal
+Instalaciones
+Mantenimiento de estadios
+Obras y candidaturas
+Ingresos: patrocinadores (según ranking y éxitos), TV, entradas (asistencia × aforo), premios, merchandising. Gastos: personal, instalaciones, estadios.
+Este mes
+12 meses
+Total
+Cuerpo técnico
+Un mejor cuerpo técnico acelera el entrenamiento y reduce el riesgo de lesiones. Coste: {0} al mes por nivel.
+Estadios
+calidad
+reforma
+en construcción
+Hacer principal
+Ampliar en 10 000
+Mejorar calidad
+El estadio principal acoge los partidos en casa; el más grande, las eliminatorias. La calidad aumenta la asistencia y la ventaja de local.
+Construir estadio
+Ciudad
+Construir
+Coste
+plazo
+meses
+Indica una ciudad
+Construcción iniciada
+Presupuesto insuficiente
+Obras iniciadas
+La federación puede presentar candidatura a torneos de su confederación. El Mundial está abierto a todos salvo a las confederaciones de los dos últimos anfitriones (rotación: {0}). Puntuación: estadios, infraestructura, ranking, presupuesto. El anfitrión se clasifica automáticamente. Tasa: 10.
+Anfitrión
+Rivales
+sin coanfitrión
+Tu confederación no puede presentar candidatura
+Candidatura presentada
+puntuación
+Retirar
+Estadios de {0}+: {1} de {2}
+Presentar candidatura
+Anfitriones del Mundial
+Movimientos
+Historial del equipo
+Top 10
+Puntos por partido
+Cambios este mes
+Suben
+Bajan
+Mayores subidas y caídas (histórico)
+En el juego (mensual)
+Archivo 1993–2025 (generado)
+Top 10: últimos {0} meses
+Mes
+gol
+a puerta
+fuera / bloqueado
+tamaño = xG
+Estadísticas avanzadas
+p
+Paradas
+Penaltis parados
+xG en contra − encajados
+Goles − xG
+Mano a mano
+Penaltis
+Precisión de pase
+Entradas
+Intercepciones
+Duelos ganados
+Mapa de tiros
+Mapa de calor: último partido
+Comparar
+Editar atributos
+Más pases precisos
+Mapa de calor del jugador
+Comparación
+Cara a cara
+Récords de la selección
+Esquemas
+Salón de la Fama
+1v1
+Pen.
+Pase %
+Ent.
+Int.
+Duelo %
+Parada %
+Las estadísticas aparecerán tras los primeros partidos.
+General
+Edad
+Total: archivo antes de 2026 (generado) + partidos en el juego
+Goles
+Partida con trucos: los récords no cuentan
+Mayor victoria
+Mayor derrota
+Racha invicta más larga
+contigo
+Goleadores (histórico)
+Los jugadores de años pasados y los resultados anteriores a 2026 son generados y ficticios.
+Resultados por esquema
+Compenetración: {0}% · balón parado: {1}%
+Por ciclos de 4 años
+Por torneos
+g
+Leyendas retiradas: 30+ partidos o 12+ goles.
+Los campeones de grandes torneos antes de 2026 son los países ganadores reales. * — archivo generado. ● — jugado en esta carrera.
+Mostrar todo
+Balón parado
+Defensas
+Centrocampistas
+Delanteros
+Modo automático
+El asistente elige el enfoque por líneas y la intensidad antes de cada concentración: descanso si hay cansancio, compenetración tras cambiar de esquema, balón parado antes de partidos importantes.
+Enfoque por líneas
+Riesgo de lesión por concentración
+Centro de entrenamiento: nivel {0}.
+Compenetración
+Plan individual
+El entrenamiento se realiza al inicio de cada ventana internacional para los convocados.
+como su línea
+Tema
+Mostrar menú de trucos
+Activar trucos marca la partida como «trampa»: los logros y récords dejan de contar.
+Abrir menú de trucos
+¿Activar trucos en esta carrera? La partida quedará marcada como «trampa» para siempre.
+Partida marcada como «trampa»: los logros y récords no cuentan.
+Dinero ilimitado
+Confianza máxima
+Instalaciones y estadios instantáneos
+Ganar siempre
+Abre la ficha de un jugador de tu selección y pulsa «Editar atributos».
+Dirigir cualquier selección
+¿Dirigir a {0}?
+Estadio listo
+Las obras del estadio en {0} han terminado. Aforo: {1}.
+Presupuesto en negativo
+Los gastos superan los ingresos. Reduce personal o mantenimiento.
+¡Hemos ganado el derecho a organizar el torneo! La selección se clasifica automáticamente.
+Nuestra candidatura perdió la votación. Anfitrión del torneo
+Anfitrión del torneo

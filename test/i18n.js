@@ -6,7 +6,7 @@ global.localStorage=undefined; require(D+'/js/i18n.js'); const LANGS=NFM_I18N.LA
 const {execSync}=require('child_process'); const cur=execSync('node '+D+'/tools/i18n-keys.js',{encoding:'utf8'}); const now=JSON.parse(fs.readFileSync(D+'/i18n/keys.json','utf8'));
 let bad=0; const err=m=>{ bad++; if(bad<60)console.log('✗',m); };
 if(Object.keys(now).join()!==ids.join()) err('keys.json устарел — запустите tools/i18n-keys.js и обновите переводы');
-const master=fs.readFileSync(D+'/i18n/master.txt','utf8').trim().split('\n'); if(master.join()!==ids.join()) err('master.txt не совпадает с keys.json');
+const master=fs.readFileSync(D+'/i18n/master.txt','utf8').trim().split('\n').concat(fs.existsSync(D+'/i18n/master6.txt')?fs.readFileSync(D+'/i18n/master6.txt','utf8').trim().split('\n'):[]); const ms=new Set(master); if(ids.some(id=>!ms.has(id))) err('master.txt + master6.txt не покрывают keys.json: '+ids.filter(id=>!ms.has(id)).map(id=>keys[id]).slice(0,5).join(' | '));
 const ph=s=>(s.match(/\{\d+\}/g)||[]).sort().join(',');
 const CY=/[А-Яа-яЁёЇїІіЄєҐґ]/;
 for(const l of LANGS){ const file=D+'/i18n/'+l+'.js'; if(!fs.existsSync(file)){ err(l+': нет файла'); continue; }

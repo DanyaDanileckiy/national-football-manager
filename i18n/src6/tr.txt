@@ -1,0 +1,158 @@
+Gece stadı
+Klasik çim
+Gece mavisi
+Açık
+Kum / Retro
+Otomatik kayıt
+hile
+oynandı
+Her adım ve maçtan sonra otomatik kayıt. 20 manuel yuva.
+Ekonomi ve stadyumlar
+FIFA sıralaması
+Analiz
+Tarih
+Ev sahipliği adaylıkları
+Hileler
+Sponsorlar
+Yayın hakları
+Biletler
+Ürün satışı
+Ödüller ve primler
+Personel
+Tesisler
+Stadyum bakımı
+İnşaat ve adaylıklar
+Gelir: sponsorlar (sıralama ve başarıya göre), yayın, biletler (seyirci × kapasite), ödüller, ürünler. Gider: personel, tesisler, stadyumlar.
+Bu ay
+12 ay
+Toplam
+Teknik ekip
+Daha iyi ekip antrenmanı hızlandırır ve sakatlık riskini azaltır. Maliyet: seviye başına ayda {0}.
+Stadyumlar
+kalite
+yenileme
+yapım aşamasında
+Ana stadyum yap
+10.000 genişlet
+Kaliteyi artır
+Ana stadyum iç saha maçlarını, en büyüğü eleme maçlarını ağırlar. Kalite seyirciyi ve iç saha avantajını artırır.
+Stadyum inşa et
+Şehir
+İnşa et
+Maliyet
+süre
+ay
+Bir şehir girin
+İnşaat başladı
+Bütçe yetersiz
+Çalışmalar başladı
+Federasyon kendi konfederasyonunun turnuvalarına aday olabilir. Dünya Kupası, son iki ev sahibinin konfederasyonları hariç herkese açıktır (rotasyon: {0}). Puan: stadyumlar, altyapı, sıralama, bütçe. Ev sahibi otomatik katılır. Başvuru ücreti: 10.
+Ev sahibi
+Rakipler
+ortak ev sahibi yok
+Konfederasyonunuz aday olamaz
+Adaylık sunuldu
+puan
+Geri çek
+{0}+ stadyumlar: {1} / {2}
+Adaylık sun
+Dünya Kupası ev sahipleri
+Hareketler
+Takım geçmişi
+İlk 10
+Maç başına puan
+Bu ayki değişiklikler
+Yükselenler
+Düşenler
+En büyük yükseliş ve düşüşler (tüm zamanlar)
+Oyunda (aylık)
+Arşiv 1993–2025 (üretilmiş)
+İlk 10: son {0} ay
+Ay
+gol
+isabetli
+isabetsiz / blok
+boyut = xG
+Gelişmiş istatistikler
+m
+Kurtarışlar
+Kurtarılan penaltılar
+Yenen xG − yenen gol
+Gol − xG
+Bire bir
+Penaltılar
+Pas isabeti
+Top kapma
+Araya girme
+Kazanılan ikili mücadele
+Şut haritası
+Isı haritası: son maç
+Karşılaştır
+Özellikleri düzenle
+En çok isabetli pas
+Oyuncu ısı haritası
+Karşılaştırma
+Rekabet geçmişi
+Milli takım rekorları
+Dizilişler
+Şöhretler Müzesi
+1e1
+Pen.
+Pas %
+Kap.
+Ara.
+İkili %
+Kurt. %
+İstatistikler ilk maçlardan sonra görünecek.
+Genel
+Yaş
+Toplam: 2026 öncesi arşiv (üretilmiş) + oyundaki maçlar
+Goller
+Hileli kayıt: rekorlar sayılmaz
+En farklı galibiyet
+En farklı yenilgi
+En uzun yenilmezlik serisi
+sizin döneminizde
+Golcüler (tüm zamanlar)
+Geçmiş yılların oyuncuları ve 2026 öncesi sonuçlar üretilmiş ve kurgusaldır.
+Dizilişe göre sonuçlar
+Uyum: {0}% · duran toplar: {1}%
+4 yıllık döngülere göre
+Turnuvalara göre
+g
+Emekli efsaneler: 30+ maç veya 12+ gol.
+2026 öncesi büyük turnuvaların kazananları gerçek ülkelerdir. * — üretilmiş arşiv. ● — bu kariyerde oynandı.
+Tümünü göster
+Duran toplar
+Defans
+Orta saha
+Forvet
+Otomatik mod
+Asistan her kamptan önce hat odağını ve yoğunluğu seçer: yorgunlukta dinlenme, yeni dizilişte uyum, büyük maçlardan önce duran toplar.
+Hatlara göre odak
+Kamp başına sakatlık riski
+Antrenman tesisi: seviye {0}.
+Uyum
+Bireysel plan
+Antrenman, davet edilen oyuncular için her uluslararası arada başta yapılır.
+hattı gibi
+Tema
+Hile menüsünü göster
+Hileleri açmak kaydı «hile» olarak işaretler: başarımlar ve rekorlar artık sayılmaz.
+Hile menüsünü aç
+Bu kariyer için hileler açılsın mı? Kayıt sonsuza dek «hile» olarak işaretlenecek.
+Kayıt «hile» olarak işaretli: başarımlar ve rekorlar sayılmaz.
+Sınırsız para
+Maksimum güven
+Anında tesis ve stadyum
+Hep kazan
+Milli takımınızdan bir oyuncunun kartını açın ve «Özellikleri düzenle»ye dokunun.
+Herhangi bir milli takımı çalıştır
+{0} çalıştırılsın mı?
+Stadyum hazır
+{0} şehrindeki stadyum çalışmaları tamamlandı. Kapasite: {1}.
+Bütçe ekside
+Giderler gelirleri aşıyor. Personeli veya bakımı azaltın.
+Turnuvaya ev sahipliği hakkını kazandık! Takım otomatik olarak katılıyor.
+Adaylığımız oylamayı kaybetti. Turnuva ev sahibi
+Turnuva ev sahibi

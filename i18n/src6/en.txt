@@ -1,0 +1,158 @@
+Stadium Night
+Classic Pitch
+Midnight Blue
+Light Clean
+Sand / Retro
+Autosave
+cheat
+played
+Autosave runs after every step and match. 20 manual slots.
+Economy & stadiums
+FIFA ranking
+Analytics
+History
+Hosting bids
+Cheats
+Sponsors
+TV rights
+Tickets
+Merchandise
+Prize money & bonuses
+Staff
+Facilities
+Stadium upkeep
+Construction & bids
+Income: sponsors (scaled by ranking and success), TV, tickets (attendance × capacity), prize money, merchandise. Expenses: staff, facilities, stadiums.
+This month
+12 mo.
+Total
+Coaching staff
+Better staff speeds up training and lowers injury risk. Cost: {0} per month per level.
+Stadiums
+quality
+renovation
+under construction
+Make main stadium
+Expand by 10,000
+Improve quality
+The main stadium hosts home matches; the largest one hosts play-offs. Quality raises attendance and home advantage.
+Build a stadium
+City
+Build
+Cost
+time
+mo.
+Enter a city
+Construction started
+Not enough budget
+Works started
+The federation can bid for tournaments of its own confederation. The World Cup is open to all except the confederations of the last two hosts (rotation: {0}). Bid score: stadiums, infrastructure, ranking, budget. The host qualifies automatically. Bid fee: 10.
+Host
+Rivals
+no co-host
+Your confederation cannot bid
+Bid submitted
+score
+Withdraw
+Stadiums of {0}+: {1} of {2}
+Submit bid
+World Cup hosts
+Movers
+Team history
+Top 10
+Points per match
+Changes this month
+Climbers
+Fallers
+Biggest climbs and falls (all time)
+In-game (monthly)
+Archive 1993–2025 (generated)
+Top 10: last {0} months
+Month
+goal
+on target
+off target / blocked
+size = xG
+Advanced stats
+m
+Saves
+Penalties saved
+xG against − conceded
+Goals − xG
+One-on-ones
+Penalties
+Pass accuracy
+Tackles
+Interceptions
+Duels won
+Shot map
+Heatmap: last match
+Compare
+Edit attributes
+Most accurate passes
+Player heatmap
+Comparison
+Head-to-head
+Team records
+Formations
+Hall of Fame
+1v1
+Pen.
+Pass %
+Tkl.
+Int.
+Duel %
+Save %
+Stats will appear after the first matches.
+Overall
+Age
+Total: archive before 2026 (generated) + in-game matches
+Goals
+Cheat save: records are not counted
+Biggest win
+Biggest defeat
+Longest unbeaten run
+under you
+Top scorers (all time)
+Players of past years and results before 2026 are generated and fictional.
+Results by formation
+Familiarity: {0}% · set pieces: {1}%
+By 4-year cycle
+By tournament
+g
+Retired legends: 30+ caps or 12+ goals.
+Winners of major tournaments before 2026 are the real winning countries. * — generated archive. ● — played in this career.
+Show all
+Set pieces
+Defenders
+Midfielders
+Forwards
+Auto mode
+Your assistant picks group focus and intensity before every camp: rest when tired, familiarity after a new formation, set pieces before big matches.
+Focus by line
+Injury risk per camp
+Training base: level {0}.
+Familiarity
+Individual plan
+Training takes place at the start of every international window for called-up players.
+same as line
+Theme
+Show cheats menu
+Enabling cheats marks the save as "cheat": achievements and records no longer count.
+Open cheats menu
+Enable cheats for this career? The save will be marked as "cheat" forever.
+This save is marked as "cheat": achievements and records are not counted.
+Unlimited money
+Max trust
+Instant facilities & stadiums
+Always win
+Open a player card from your national team and tap "Edit attributes".
+Take over any national team
+Take over {0}?
+Stadium ready
+Works on the stadium in {0} are complete. Capacity: {1}.
+Budget in the red
+Expenses exceed income. Cut staff or facility upkeep.
+We have won the right to host the tournament! The team qualifies automatically.
+Our bid lost the vote. Tournament host
+Tournament host

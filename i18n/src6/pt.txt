@@ -1,0 +1,158 @@
+Estádio à noite
+Relvado clássico
+Azul meia-noite
+Claro
+Areia / Retrô
+Gravação automática
+batota
+jogado
+A gravação automática ocorre após cada passo e jogo. 20 espaços manuais.
+Economia e estádios
+Ranking FIFA
+Análise
+História
+Candidaturas
+Truques
+Patrocinadores
+Direitos de TV
+Bilheteira
+Merchandising
+Prémios e bónus
+Pessoal
+Instalações
+Manutenção de estádios
+Obras e candidaturas
+Receitas: patrocinadores (conforme ranking e sucesso), TV, bilhetes (público × capacidade), prémios, merchandising. Despesas: pessoal, instalações, estádios.
+Este mês
+12 meses
+Total
+Equipa técnica
+Uma equipa técnica melhor acelera o treino e reduz o risco de lesões. Custo: {0} por mês por nível.
+Estádios
+qualidade
+remodelação
+em construção
+Tornar principal
+Ampliar em 10 000
+Melhorar qualidade
+O estádio principal recebe os jogos em casa; o maior recebe o mata-mata. A qualidade aumenta o público e a vantagem de jogar em casa.
+Construir estádio
+Cidade
+Construir
+Custo
+prazo
+meses
+Indique uma cidade
+Construção iniciada
+Orçamento insuficiente
+Obras iniciadas
+A federação pode candidatar-se a torneios da sua confederação. O Mundial está aberto a todos, exceto às confederações dos dois últimos anfitriões (rotação: {0}). Pontuação: estádios, infraestrutura, ranking, orçamento. O anfitrião qualifica-se automaticamente. Taxa: 10.
+Anfitrião
+Rivais
+sem coanfitrião
+A sua confederação não pode candidatar-se
+Candidatura enviada
+pontuação
+Retirar
+Estádios de {0}+: {1} de {2}
+Enviar candidatura
+Anfitriões do Mundial
+Movimentos
+Histórico da equipa
+Top 10
+Pontos por jogo
+Alterações este mês
+Sobem
+Descem
+Maiores subidas e quedas (sempre)
+No jogo (mensal)
+Arquivo 1993–2025 (gerado)
+Top 10: últimos {0} meses
+Mês
+golo
+à baliza
+para fora / bloqueado
+tamanho = xG
+Estatísticas avançadas
+j
+Defesas
+Penáltis defendidos
+xG contra − sofridos
+Golos − xG
+Um contra um
+Penáltis
+Precisão de passe
+Desarmes
+Interceções
+Duelos ganhos
+Mapa de remates
+Mapa de calor: último jogo
+Comparar
+Editar atributos
+Mais passes certos
+Mapa de calor do jogador
+Comparação
+Confrontos diretos
+Recordes da seleção
+Esquemas
+Hall da Fama
+1v1
+Pen.
+Passe %
+Des.
+Int.
+Duelo %
+Defesa %
+As estatísticas aparecerão após os primeiros jogos.
+Geral
+Idade
+Total: arquivo antes de 2026 (gerado) + jogos no jogo
+Golos
+Jogo com truques: os recordes não contam
+Maior vitória
+Maior derrota
+Maior série invicta
+consigo
+Melhores marcadores (sempre)
+Jogadores de anos passados e resultados antes de 2026 são gerados e fictícios.
+Resultados por esquema
+Entrosamento: {0}% · bolas paradas: {1}%
+Por ciclos de 4 anos
+Por torneio
+g
+Lendas retiradas: 30+ jogos ou 12+ golos.
+Os vencedores dos grandes torneios antes de 2026 são os países vencedores reais. * — arquivo gerado. ● — jogado nesta carreira.
+Mostrar tudo
+Bolas paradas
+Defesas
+Médios
+Avançados
+Modo automático
+O assistente escolhe o foco por setores e a intensidade antes de cada estágio: descanso se houver cansaço, entrosamento após novo esquema, bolas paradas antes de jogos importantes.
+Foco por setor
+Risco de lesão por estágio
+Centro de treino: nível {0}.
+Entrosamento
+Plano individual
+O treino realiza-se no início de cada janela internacional para os convocados.
+como o setor
+Tema
+Mostrar menu de truques
+Ativar truques marca o jogo como «batota»: conquistas e recordes deixam de contar.
+Abrir menu de truques
+Ativar truques nesta carreira? O jogo ficará marcado como «batota» para sempre.
+Jogo marcado como «batota»: conquistas e recordes não contam.
+Dinheiro ilimitado
+Confiança máxima
+Instalações e estádios instantâneos
+Ganhar sempre
+Abra o cartão de um jogador da sua seleção e toque em «Editar atributos».
+Assumir qualquer seleção
+Assumir {0}?
+Estádio pronto
+As obras no estádio em {0} terminaram. Capacidade: {1}.
+Orçamento negativo
+As despesas superam as receitas. Reduza pessoal ou manutenção.
+Ganhámos o direito de organizar o torneio! A seleção qualifica-se automaticamente.
+A nossa candidatura perdeu a votação. Anfitrião do torneio
+Anfitrião do torneio

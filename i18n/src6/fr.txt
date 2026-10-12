@@ -1,0 +1,158 @@
+Stade de nuit
+Pelouse classique
+Bleu minuit
+Clair
+Sable / Rétro
+Sauvegarde auto
+triche
+joué
+Sauvegarde auto après chaque étape et match. 20 emplacements manuels.
+Économie et stades
+Classement FIFA
+Analyse
+Histoire
+Candidatures
+Triches
+Sponsors
+Droits TV
+Billetterie
+Produits dérivés
+Primes et bonus
+Personnel
+Installations
+Entretien des stades
+Travaux et candidatures
+Revenus : sponsors (selon classement et succès), TV, billetterie (affluence × capacité), primes, produits dérivés. Dépenses : personnel, installations, stades.
+Ce mois
+12 mois
+Total
+Staff technique
+Un meilleur staff accélère l'entraînement et réduit le risque de blessure. Coût : {0} par mois et par niveau.
+Stades
+qualité
+rénovation
+en construction
+Définir comme principal
+Agrandir de 10 000
+Améliorer la qualité
+Le stade principal accueille les matchs à domicile ; le plus grand, les phases finales. La qualité augmente l'affluence et l'avantage du terrain.
+Construire un stade
+Ville
+Construire
+Coût
+durée
+mois
+Indiquez une ville
+Construction lancée
+Budget insuffisant
+Travaux lancés
+La fédération peut se porter candidate aux tournois de sa confédération. La Coupe du monde est ouverte à tous sauf aux confédérations des deux derniers hôtes (rotation : {0}). Note : stades, infrastructures, classement, budget. L'hôte est qualifié d'office. Frais : 10.
+Hôte
+Rivaux
+sans co-organisateur
+Votre confédération ne peut pas candidater
+Candidature déposée
+note
+Retirer
+Stades de {0}+ : {1} sur {2}
+Déposer la candidature
+Hôtes de la Coupe du monde
+Mouvements
+Historique de l'équipe
+Top 10
+Points par match
+Changements ce mois
+En hausse
+En baisse
+Plus fortes hausses et chutes (historique)
+En jeu (mensuel)
+Archive 1993–2025 (générée)
+Top 10 : {0} derniers mois
+Mois
+but
+cadré
+non cadré / contré
+taille = xG
+Statistiques avancées
+m
+Arrêts
+Penaltys arrêtés
+xG concédés − buts encaissés
+Buts − xG
+Face-à-face
+Penaltys
+Précision des passes
+Tacles
+Interceptions
+Duels gagnés
+Carte des tirs
+Carte de chaleur : dernier match
+Comparer
+Modifier les attributs
+Le plus de passes réussies
+Carte de chaleur du joueur
+Comparaison
+Confrontations
+Records de la sélection
+Schémas
+Panthéon
+1c1
+Pen.
+Passes %
+Tac.
+Int.
+Duels %
+Arrêts %
+Les statistiques apparaîtront après les premiers matchs.
+Général
+Âge
+Total : archive avant 2026 (générée) + matchs en jeu
+Buts
+Partie avec triche : records non comptés
+Plus large victoire
+Plus lourde défaite
+Plus longue série sans défaite
+sous vos ordres
+Meilleurs buteurs (historique)
+Les joueurs des années passées et les résultats avant 2026 sont générés et fictifs.
+Résultats par schéma
+Automatismes : {0}% · coups de pied arrêtés : {1}%
+Par cycles de 4 ans
+Par tournoi
+b
+Légendes retraitées : 30+ sélections ou 12+ buts.
+Les vainqueurs des grands tournois avant 2026 sont les vrais pays vainqueurs. * — archive générée. ● — joué dans cette carrière.
+Tout afficher
+Coups de pied arrêtés
+Défenseurs
+Milieux
+Attaquants
+Mode auto
+L'adjoint choisit l'axe de travail et l'intensité avant chaque rassemblement : repos en cas de fatigue, automatismes après un nouveau schéma, coups de pied arrêtés avant les grands matchs.
+Axe par ligne
+Risque de blessure par stage
+Centre d'entraînement : niveau {0}.
+Automatismes
+Plan individuel
+L'entraînement a lieu au début de chaque fenêtre internationale pour les joueurs convoqués.
+comme la ligne
+Thème
+Afficher le menu de triche
+Activer la triche marque la sauvegarde comme « triche » : succès et records ne comptent plus.
+Ouvrir le menu de triche
+Activer la triche pour cette carrière ? La sauvegarde sera marquée « triche » pour toujours.
+Sauvegarde marquée « triche » : succès et records ne comptent pas.
+Argent illimité
+Confiance maximale
+Installations et stades instantanés
+Toujours gagner
+Ouvrez la fiche d'un joueur de votre sélection et touchez « Modifier les attributs ».
+Prendre n'importe quelle sélection
+Prendre {0} ?
+Stade prêt
+Les travaux du stade de {0} sont terminés. Capacité : {1}.
+Budget dans le rouge
+Les dépenses dépassent les revenus. Réduisez le personnel ou l'entretien.
+Nous avons obtenu l'organisation du tournoi ! La sélection est qualifiée d'office.
+Notre candidature a perdu le vote. Hôte du tournoi
+Hôte du tournoi

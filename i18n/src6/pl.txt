@@ -1,0 +1,158 @@
+Stadion nocą
+Klasyczna murawa
+Granat nocy
+Jasny
+Piasek / Retro
+Autozapis
+oszustwo
+grano
+Autozapis po każdym kroku i meczu. 20 ręcznych slotów.
+Finanse i stadiony
+Ranking FIFA
+Analityka
+Historia
+Kandydatury
+Kody
+Sponsorzy
+Prawa TV
+Bilety
+Gadżety
+Nagrody i premie
+Personel
+Obiekty
+Utrzymanie stadionów
+Budowy i kandydatury
+Przychody: sponsorzy (zależnie od rankingu i sukcesów), TV, bilety (frekwencja × pojemność), nagrody, gadżety. Wydatki: personel, obiekty, stadiony.
+Ten miesiąc
+12 mies.
+Razem
+Sztab szkoleniowy
+Lepszy sztab przyspiesza trening i zmniejsza ryzyko kontuzji. Koszt: {0} miesięcznie za poziom.
+Stadiony
+jakość
+przebudowa
+w budowie
+Ustaw jako główny
+Powiększ o 10 000
+Popraw jakość
+Główny stadion gości mecze u siebie, największy — fazę pucharową. Jakość zwiększa frekwencję i atut własnego boiska.
+Zbuduj stadion
+Miasto
+Zbuduj
+Koszt
+czas
+mies.
+Podaj miasto
+Budowa rozpoczęta
+Za mały budżet
+Prace rozpoczęte
+Federacja może kandydować do turniejów swojej konfederacji. Mundial jest otwarty dla wszystkich poza konfederacjami dwóch ostatnich gospodarzy (rotacja: {0}). Ocena: stadiony, infrastruktura, ranking, budżet. Gospodarz kwalifikuje się automatycznie. Opłata: 10.
+Gospodarz
+Rywale
+bez współgospodarza
+Twoja konfederacja nie może kandydować
+Kandydatura złożona
+ocena
+Wycofaj
+Stadiony od {0}: {1} z {2}
+Złóż kandydaturę
+Gospodarze MŚ
+Zmiany
+Historia drużyny
+Top 10
+Punkty za mecze
+Zmian w tym miesiącu
+Awanse
+Spadki
+Największe awanse i spadki (wszech czasów)
+W grze (miesięcznie)
+Archiwum 1993–2025 (wygenerowane)
+Top 10: ostatnie {0} mies.
+Miesiąc
+gol
+celne
+niecelne / zablokowane
+rozmiar = xG
+Zaawansowane statystyki
+m
+Obrony
+Obronione karne
+xG przeciw − stracone
+Gole − xG
+Sam na sam
+Rzuty karne
+Celność podań
+Odbiory
+Przechwyty
+Wygrane pojedynki
+Mapa strzałów
+Mapa cieplna: ostatni mecz
+Porównaj
+Edytuj atrybuty
+Najwięcej celnych podań
+Mapa cieplna zawodnika
+Porównanie
+Bilans bezpośredni
+Rekordy reprezentacji
+Ustawienia
+Galeria sław
+1n1
+Karne
+Podania %
+Odb.
+Przech.
+Pojed. %
+Obrony %
+Statystyki pojawią się po pierwszych meczach.
+Ogólna
+Wiek
+Razem: archiwum sprzed 2026 (wygenerowane) + mecze w grze
+Bramki
+Zapis z kodami: rekordy się nie liczą
+Najwyższe zwycięstwo
+Najwyższa porażka
+Najdłuższa seria bez porażki
+za twojej kadencji
+Strzelcy (wszech czasów)
+Zawodnicy z dawnych lat i wyniki sprzed 2026 są wygenerowane i fikcyjne.
+Wyniki wg ustawienia
+Zgranie: {0}% · stałe fragmenty: {1}%
+Wg cykli 4-letnich
+Wg turniejów
+g
+Legendy po karierze: 30+ meczów lub 12+ goli.
+Zwycięzcy wielkich turniejów przed 2026 to prawdziwe kraje-zwycięzcy. * — archiwum wygenerowane. ● — rozegrane w tej karierze.
+Pokaż wszystko
+Stałe fragmenty
+Obrońcy
+Pomocnicy
+Napastnicy
+Tryb auto
+Asystent sam wybiera akcent formacji i intensywność przed każdym zgrupowaniem: odpoczynek przy zmęczeniu, zgranie po zmianie ustawienia, stałe fragmenty przed ważnymi meczami.
+Akcent według formacji
+Ryzyko kontuzji na zgrupowanie
+Baza treningowa: poziom {0}.
+Zgranie
+Plan indywidualny
+Trening odbywa się na początku każdego okna reprezentacyjnego dla powołanych.
+jak formacja
+Motyw
+Pokaż menu kodów
+Włączenie kodów oznacza zapis jako „oszustwo”: osiągnięcia i rekordy przestają się liczyć.
+Otwórz menu kodów
+Włączyć kody w tej karierze? Zapis zostanie na zawsze oznaczony jako „oszustwo”.
+Zapis oznaczony jako „oszustwo”: osiągnięcia i rekordy się nie liczą.
+Nieograniczone pieniądze
+Maksymalne zaufanie
+Natychmiastowe obiekty i stadiony
+Zawsze wygrywaj
+Otwórz kartę zawodnika swojej reprezentacji i dotknij „Edytuj atrybuty”.
+Przejmij dowolną reprezentację
+Przejąć {0}?
+Stadion gotowy
+Prace na stadionie w mieście {0} zakończone. Pojemność: {1}.
+Budżet na minusie
+Wydatki przewyższają przychody. Ogranicz personel lub utrzymanie.
+Zdobyliśmy prawo organizacji turnieju! Reprezentacja kwalifikuje się automatycznie.
+Nasza kandydatura przegrała głosowanie. Gospodarz turnieju
+Gospodarz turnieju

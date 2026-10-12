@@ -1,0 +1,158 @@
+Stadion bei Nacht
+Klassischer Rasen
+Mitternachtsblau
+Hell
+Sand / Retro
+Autospeichern
+Cheat
+gespielt
+Autospeichern nach jedem Schritt und Spiel. 20 manuelle Plätze.
+Finanzen & Stadien
+FIFA-Rangliste
+Analyse
+Geschichte
+Turnierbewerbungen
+Cheats
+Sponsoren
+TV-Rechte
+Tickets
+Merchandising
+Prämien & Boni
+Personal
+Einrichtungen
+Stadionunterhalt
+Bau & Bewerbungen
+Einnahmen: Sponsoren (abhängig von Rang und Erfolg), TV, Tickets (Zuschauer × Kapazität), Prämien, Merchandising. Ausgaben: Personal, Einrichtungen, Stadien.
+Dieser Monat
+12 Mon.
+Gesamt
+Trainerstab
+Ein besserer Stab beschleunigt das Training und senkt das Verletzungsrisiko. Kosten: {0} pro Monat und Stufe.
+Stadien
+Qualität
+Umbau
+im Bau
+Zum Hauptstadion machen
+Um 10.000 erweitern
+Qualität verbessern
+Das Hauptstadion richtet Heimspiele aus, das größte die K.-o.-Spiele. Qualität erhöht Zuschauerzahl und Heimvorteil.
+Stadion bauen
+Stadt
+Bauen
+Kosten
+Dauer
+Mon.
+Stadt angeben
+Bau begonnen
+Budget reicht nicht
+Arbeiten begonnen
+Der Verband kann sich für Turniere seiner Konföderation bewerben. Die WM steht allen offen außer den Konföderationen der letzten beiden Gastgeber (Rotation: {0}). Bewertung: Stadien, Infrastruktur, Rang, Budget. Der Gastgeber ist automatisch qualifiziert. Gebühr: 10.
+Gastgeber
+Rivalen
+ohne Mitausrichter
+Deine Konföderation kann sich nicht bewerben
+Bewerbung eingereicht
+Wertung
+Zurückziehen
+Stadien ab {0}: {1} von {2}
+Bewerbung einreichen
+WM-Gastgeber
+Bewegung
+Teamverlauf
+Top 10
+Punkte pro Spiel
+Änderungen diesen Monat
+Aufsteiger
+Absteiger
+Größte Sprünge und Stürze (ewig)
+Im Spiel (monatlich)
+Archiv 1993–2025 (generiert)
+Top 10: letzte {0} Monate
+Monat
+Tor
+aufs Tor
+vorbei / geblockt
+Größe = xG
+Erweiterte Statistik
+Sp
+Paraden
+Elfmeter gehalten
+xG gegen − Gegentore
+Tore − xG
+Eins-gegen-eins
+Elfmeter
+Passquote
+Tacklings
+Abgefangene Bälle
+Zweikämpfe gewonnen
+Schusskarte
+Heatmap: letztes Spiel
+Vergleichen
+Attribute bearbeiten
+Meiste angekommene Pässe
+Spieler-Heatmap
+Vergleich
+Direkter Vergleich
+Rekorde der Auswahl
+Formationen
+Ruhmeshalle
+1v1
+Elf.
+Pass %
+Tck.
+Abf.
+Zwk. %
+Parade %
+Statistiken erscheinen nach den ersten Spielen.
+Gesamt
+Alter
+Summe: Archiv vor 2026 (generiert) + Spiele im Spiel
+Tore
+Cheat-Spielstand: Rekorde zählen nicht
+Höchster Sieg
+Höchste Niederlage
+Längste Serie ohne Niederlage
+unter dir
+Torschützen (ewig)
+Spieler früherer Jahre und Ergebnisse vor 2026 sind generiert und fiktiv.
+Ergebnisse nach Formation
+Eingespieltheit: {0}% · Standards: {1}%
+Nach 4-Jahres-Zyklen
+Nach Turnieren
+T
+Legenden im Ruhestand: 30+ Spiele oder 12+ Tore.
+Sieger großer Turniere vor 2026 sind die echten Siegerländer. * — generiertes Archiv. ● — in dieser Karriere gespielt.
+Alle zeigen
+Standards
+Abwehr
+Mittelfeld
+Angriff
+Auto-Modus
+Der Assistent wählt vor jedem Lehrgang Schwerpunkt und Intensität: Erholung bei Müdigkeit, Eingespieltheit nach neuer Formation, Standards vor wichtigen Spielen.
+Schwerpunkt pro Mannschaftsteil
+Verletzungsrisiko pro Lehrgang
+Trainingszentrum: Stufe {0}.
+Eingespieltheit
+Individueller Plan
+Training findet zu Beginn jedes Länderspielfensters für die nominierten Spieler statt.
+wie Mannschaftsteil
+Design
+Cheat-Menü anzeigen
+Cheats markieren den Spielstand als „Cheat“: Erfolge und Rekorde zählen nicht mehr.
+Cheat-Menü öffnen
+Cheats für diese Karriere aktivieren? Der Spielstand wird dauerhaft als „Cheat“ markiert.
+Spielstand als „Cheat“ markiert: Erfolge und Rekorde zählen nicht.
+Unbegrenztes Geld
+Maximales Vertrauen
+Sofortige Einrichtungen & Stadien
+Immer gewinnen
+Öffne die Karte eines Spielers deiner Auswahl und tippe auf „Attribute bearbeiten“.
+Beliebige Nationalmannschaft übernehmen
+{0} übernehmen?
+Stadion fertig
+Die Arbeiten am Stadion in {0} sind abgeschlossen. Kapazität: {1}.
+Budget im Minus
+Die Ausgaben übersteigen die Einnahmen. Reduziere Personal oder Unterhalt.
+Wir haben den Zuschlag für das Turnier erhalten! Die Mannschaft ist automatisch qualifiziert.
+Unsere Bewerbung hat die Abstimmung verloren. Gastgeber
+Gastgeber des Turniers

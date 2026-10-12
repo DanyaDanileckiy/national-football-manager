@@ -1,0 +1,158 @@
+Stadion v noci
+Klasický trávník
+Půlnoční modrá
+Světlý
+Písek / retro
+Automatické uložení
+cheat
+hráno
+Automatické uložení po každém kroku a zápase. 20 ručních slotů.
+Ekonomika a stadiony
+Žebříček FIFA
+Analýza
+Historie
+Kandidatury
+Cheaty
+Sponzoři
+Televizní práva
+Vstupenky
+Suvenýry
+Prémie a bonusy
+Personál
+Zařízení
+Údržba stadionů
+Stavby a kandidatury
+Příjmy: sponzoři (podle žebříčku a úspěchů), TV, vstupenky (návštěva × kapacita), prémie, suvenýry. Výdaje: personál, zařízení, stadiony.
+Tento měsíc
+12 měs.
+Celkem
+Trenérský štáb
+Lepší štáb zrychluje trénink a snižuje riziko zranění. Cena: {0} měsíčně za úroveň.
+Stadiony
+kvalita
+rekonstrukce
+ve výstavbě
+Nastavit jako hlavní
+Rozšířit o 10 000
+Zlepšit kvalitu
+Hlavní stadion hostí domácí zápasy, největší vyřazovací. Kvalita zvyšuje návštěvnost a výhodu domácího prostředí.
+Postavit stadion
+Město
+Postavit
+Cena
+doba
+měs.
+Zadejte město
+Stavba zahájena
+Nedostatek rozpočtu
+Práce zahájeny
+Svaz může kandidovat na turnaje své konfederace. MS jsou otevřena všem kromě konfederací posledních dvou pořadatelů (rotace: {0}). Hodnocení: stadiony, infrastruktura, žebříček, rozpočet. Pořadatel postupuje automaticky. Poplatek: 10.
+Pořadatel
+Soupeři
+bez spolupořadatele
+Vaše konfederace nemůže kandidovat
+Kandidatura podána
+hodnocení
+Stáhnout
+Stadiony od {0}: {1} z {2}
+Podat kandidaturu
+Pořadatelé MS
+Pohyb
+Historie týmu
+Top 10
+Body za zápasy
+Změn za měsíc
+Stoupající
+Klesající
+Největší vzestupy a pády (celkově)
+Ve hře (měsíčně)
+Archiv 1993–2025 (vygenerováno)
+Top 10: posledních {0} měs.
+Měsíc
+gól
+na branku
+mimo / zblokováno
+velikost = xG
+Pokročilé statistiky
+z
+Zákroky
+Chycené penalty
+xG proti − obdrženo
+Góly − xG
+Sólo na brankáře
+Penalty
+Přesnost přihrávek
+Odebrání míče
+Zachycené přihrávky
+Vyhrané souboje
+Mapa střel
+Teplotní mapa: poslední zápas
+Porovnat
+Upravit atributy
+Nejvíce přesných přihrávek
+Teplotní mapa hráče
+Porovnání
+Vzájemné zápasy
+Rekordy reprezentace
+Rozestavení
+Síň slávy
+1v1
+Pen.
+Přihr. %
+Odeb.
+Zach.
+Soub. %
+Zákr. %
+Statistiky se objeví po prvních zápasech.
+Celkový
+Věk
+Celkem: archiv před 2026 (vygenerováno) + zápasy ve hře
+Góly
+Uložení s cheaty: rekordy se nezapočítávají
+Nejvyšší výhra
+Nejvyšší prohra
+Nejdelší série bez porážky
+za vás
+Střelci (celkově)
+Hráči minulých let a výsledky před rokem 2026 jsou vygenerované a smyšlené.
+Výsledky podle rozestavení
+Sehranost: {0}% · standardky: {1}%
+Podle 4letých cyklů
+Podle turnajů
+g
+Legendy po kariéře: 30+ zápasů nebo 12+ gólů.
+Vítězové velkých turnajů před rokem 2026 jsou skutečné vítězné země. * — vygenerovaný archiv. ● — hráno v této kariéře.
+Zobrazit vše
+Standardní situace
+Obránci
+Záložníci
+Útočníci
+Automatický režim
+Asistent před každým srazem zvolí zaměření řad a intenzitu: odpočinek při únavě, sehranost po novém rozestavení, standardky před důležitými zápasy.
+Zaměření podle řad
+Riziko zranění na sraz
+Tréninkové centrum: úroveň {0}.
+Sehranost
+Individuální plán
+Trénink probíhá na začátku každého reprezentačního okna pro nominované hráče.
+jako řada
+Motiv
+Zobrazit menu cheatů
+Zapnutí cheatů označí uložení jako „cheat“: úspěchy a rekordy se přestanou započítávat.
+Otevřít menu cheatů
+Zapnout cheaty pro tuto kariéru? Uložení bude navždy označeno jako „cheat“.
+Uložení označeno jako „cheat“: úspěchy a rekordy se nezapočítávají.
+Neomezené peníze
+Maximální důvěra
+Okamžitá zařízení a stadiony
+Vždy vyhrát
+Otevřete kartu hráče své reprezentace a klepněte na „Upravit atributy“.
+Převzít libovolnou reprezentaci
+Převzít {0}?
+Stadion hotov
+Práce na stadionu ve městě {0} jsou hotové. Kapacita: {1}.
+Rozpočet v minusu
+Výdaje převyšují příjmy. Omezte personál nebo údržbu.
+Získali jsme pořadatelství turnaje! Reprezentace postupuje automaticky.
+Naše kandidatura prohrála hlasování. Pořadatel turnaje
+Pořadatel turnaje

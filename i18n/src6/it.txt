@@ -1,0 +1,158 @@
+Stadio di notte
+Prato classico
+Blu mezzanotte
+Chiaro
+Sabbia / Retrò
+Salvataggio automatico
+trucco
+giocato
+Salvataggio automatico dopo ogni passo e partita. 20 slot manuali.
+Economia e stadi
+Ranking FIFA
+Analisi
+Storia
+Candidature
+Trucchi
+Sponsor
+Diritti TV
+Biglietti
+Merchandising
+Premi e bonus
+Staff
+Strutture
+Manutenzione stadi
+Lavori e candidature
+Entrate: sponsor (in base a ranking e successi), TV, biglietti (spettatori × capienza), premi, merchandising. Uscite: staff, strutture, stadi.
+Questo mese
+12 mesi
+Totale
+Staff tecnico
+Uno staff migliore accelera gli allenamenti e riduce il rischio di infortuni. Costo: {0} al mese per livello.
+Stadi
+qualità
+ristrutturazione
+in costruzione
+Rendi principale
+Amplia di 10.000
+Migliora qualità
+Lo stadio principale ospita le gare in casa; il più grande i playoff. La qualità aumenta spettatori e vantaggio casalingo.
+Costruisci stadio
+Città
+Costruisci
+Costo
+durata
+mesi
+Indica una città
+Costruzione avviata
+Budget insufficiente
+Lavori avviati
+La federazione può candidarsi ai tornei della propria confederazione. Il Mondiale è aperto a tutti tranne alle confederazioni degli ultimi due ospiti (rotazione: {0}). Punteggio: stadi, infrastrutture, ranking, budget. L'ospite è qualificato di diritto. Tassa: 10.
+Ospite
+Rivali
+senza co-organizzatore
+La tua confederazione non può candidarsi
+Candidatura presentata
+punteggio
+Ritira
+Stadi da {0}+: {1} su {2}
+Presenta candidatura
+Ospiti del Mondiale
+Movimenti
+Storico squadra
+Top 10
+Punti per partita
+Variazioni del mese
+In salita
+In discesa
+Maggiori salite e cadute (storico)
+Nel gioco (mensile)
+Archivio 1993–2025 (generato)
+Top 10: ultimi {0} mesi
+Mese
+gol
+in porta
+fuori / murato
+dimensione = xG
+Statistiche avanzate
+p
+Parate
+Rigori parati
+xG subiti − gol subiti
+Gol − xG
+Uno contro uno
+Rigori
+Precisione passaggi
+Contrasti
+Intercetti
+Duelli vinti
+Mappa dei tiri
+Heatmap: ultima partita
+Confronta
+Modifica attributi
+Più passaggi riusciti
+Heatmap del giocatore
+Confronto
+Scontri diretti
+Record della nazionale
+Moduli
+Hall of Fame
+1v1
+Rig.
+Pass. %
+Contr.
+Interc.
+Duelli %
+Parate %
+Le statistiche compariranno dopo le prime partite.
+Generale
+Età
+Totale: archivio prima del 2026 (generato) + partite nel gioco
+Gol
+Partita con trucchi: record non validi
+Vittoria più larga
+Sconfitta più pesante
+Più lunga striscia di imbattibilità
+con te
+Marcatori (storico)
+I giocatori degli anni passati e i risultati prima del 2026 sono generati e fittizi.
+Risultati per modulo
+Intesa: {0}% · palle inattive: {1}%
+Per cicli di 4 anni
+Per torneo
+g
+Leggende ritirate: 30+ presenze o 12+ gol.
+I vincitori dei grandi tornei prima del 2026 sono i veri paesi vincitori. * — archivio generato. ● — giocato in questa carriera.
+Mostra tutto
+Palle inattive
+Difensori
+Centrocampisti
+Attaccanti
+Modalità auto
+L'assistente sceglie focus per reparto e intensità prima di ogni raduno: riposo se stanchi, intesa dopo un nuovo modulo, palle inattive prima delle gare importanti.
+Focus per reparto
+Rischio infortuni per raduno
+Centro sportivo: livello {0}.
+Intesa
+Piano individuale
+L'allenamento si svolge all'inizio di ogni finestra internazionale per i convocati.
+come il reparto
+Tema
+Mostra menu trucchi
+Attivare i trucchi segna il salvataggio come «trucco»: obiettivi e record non contano più.
+Apri menu trucchi
+Attivare i trucchi per questa carriera? Il salvataggio sarà segnato come «trucco» per sempre.
+Salvataggio segnato come «trucco»: obiettivi e record non contano.
+Soldi illimitati
+Fiducia massima
+Strutture e stadi istantanei
+Vinci sempre
+Apri la scheda di un giocatore della tua nazionale e tocca «Modifica attributi».
+Guida qualsiasi nazionale
+Guidare {0}?
+Stadio pronto
+I lavori allo stadio di {0} sono terminati. Capienza: {1}.
+Budget in rosso
+Le spese superano le entrate. Riduci staff o manutenzione.
+Abbiamo ottenuto l'organizzazione del torneo! La nazionale è qualificata di diritto.
+La nostra candidatura ha perso il voto. Ospite del torneo
+Ospite del torneo

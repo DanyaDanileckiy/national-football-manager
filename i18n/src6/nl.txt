@@ -1,0 +1,158 @@
+Stadion bij nacht
+Klassiek gras
+Middernachtblauw
+Licht
+Zand / Retro
+Autosave
+cheat
+gespeeld
+Autosave na elke stap en wedstrijd. 20 handmatige slots.
+Financiën & stadions
+FIFA-ranking
+Analyse
+Geschiedenis
+Organisatiebiedingen
+Cheats
+Sponsors
+Tv-rechten
+Kaartverkoop
+Merchandise
+Prijzengeld & bonussen
+Personeel
+Faciliteiten
+Stadiononderhoud
+Bouw & biedingen
+Inkomsten: sponsors (op basis van ranking en succes), tv, kaartjes (bezoekers × capaciteit), prijzengeld, merchandise. Uitgaven: personeel, faciliteiten, stadions.
+Deze maand
+12 mnd.
+Totaal
+Technische staf
+Een betere staf versnelt de training en verlaagt het blessurerisico. Kosten: {0} per maand per niveau.
+Stadions
+kwaliteit
+renovatie
+in aanbouw
+Hoofdstadion maken
+Uitbreiden met 10.000
+Kwaliteit verbeteren
+Het hoofdstadion ontvangt thuiswedstrijden, het grootste de knock-outduels. Kwaliteit verhoogt bezoekersaantal en thuisvoordeel.
+Stadion bouwen
+Stad
+Bouwen
+Kosten
+duur
+mnd.
+Voer een stad in
+Bouw gestart
+Te weinig budget
+Werkzaamheden gestart
+De bond kan bieden op toernooien van de eigen confederatie. Het WK staat open voor iedereen behalve de confederaties van de laatste twee gastlanden (rotatie: {0}). Score: stadions, infrastructuur, ranking, budget. Het gastland plaatst zich automatisch. Inschrijfgeld: 10.
+Gastland
+Rivalen
+zonder medeorganisator
+Jouw confederatie kan niet bieden
+Bod ingediend
+score
+Intrekken
+Stadions vanaf {0}: {1} van {2}
+Bod indienen
+WK-gastlanden
+Beweging
+Teamgeschiedenis
+Top 10
+Punten per wedstrijd
+Wijzigingen deze maand
+Stijgers
+Dalers
+Grootste stijgingen en dalingen (aller tijden)
+In het spel (maandelijks)
+Archief 1993–2025 (gegenereerd)
+Top 10: laatste {0} maanden
+Maand
+goal
+op doel
+naast / geblokt
+grootte = xG
+Geavanceerde statistieken
+w
+Reddingen
+Penalty's gestopt
+xG tegen − tegengoals
+Goals − xG
+Een-op-een
+Penalty's
+Passnauwkeurigheid
+Tackles
+Onderscheppingen
+Duels gewonnen
+Schotkaart
+Heatmap: laatste wedstrijd
+Vergelijken
+Attributen bewerken
+Meeste geslaagde passes
+Spelersheatmap
+Vergelijking
+Onderling
+Records van de ploeg
+Formaties
+Hall of Fame
+1v1
+Pen.
+Pass %
+Tkl.
+Ond.
+Duel %
+Redding %
+Statistieken verschijnen na de eerste wedstrijden.
+Totaal
+Leeftijd
+Totaal: archief vóór 2026 (gegenereerd) + wedstrijden in het spel
+Goals
+Cheat-save: records tellen niet
+Grootste overwinning
+Grootste nederlaag
+Langste reeks zonder verlies
+onder jou
+Topscorers (aller tijden)
+Spelers uit vroegere jaren en uitslagen vóór 2026 zijn gegenereerd en fictief.
+Resultaten per formatie
+Ingespeeldheid: {0}% · spelhervattingen: {1}%
+Per 4-jarige cyclus
+Per toernooi
+g
+Gestopte legendes: 30+ interlands of 12+ goals.
+Winnaars van grote toernooien vóór 2026 zijn de echte winnende landen. * — gegenereerd archief. ● — gespeeld in deze carrière.
+Alles tonen
+Spelhervattingen
+Verdedigers
+Middenvelders
+Aanvallers
+Automodus
+De assistent kiest vóór elk trainingskamp focus per linie en intensiteit: rust bij vermoeidheid, ingespeeldheid na een nieuwe formatie, spelhervattingen vóór grote duels.
+Focus per linie
+Blessurerisico per trainingskamp
+Trainingscomplex: niveau {0}.
+Ingespeeldheid
+Individueel plan
+De training vindt plaats aan het begin van elke interlandperiode voor de opgeroepen spelers.
+zoals linie
+Thema
+Cheatmenu tonen
+Cheats markeren de save als 'cheat': prestaties en records tellen niet meer.
+Cheatmenu openen
+Cheats inschakelen voor deze carrière? De save wordt voorgoed als 'cheat' gemarkeerd.
+Save gemarkeerd als 'cheat': prestaties en records tellen niet.
+Onbeperkt geld
+Maximaal vertrouwen
+Directe faciliteiten & stadions
+Altijd winnen
+Open de kaart van een speler van jouw ploeg en tik op 'Attributen bewerken'.
+Elk land overnemen
+{0} overnemen?
+Stadion klaar
+De werkzaamheden aan het stadion in {0} zijn klaar. Capaciteit: {1}.
+Budget in het rood
+Uitgaven zijn hoger dan inkomsten. Bezuinig op personeel of onderhoud.
+We hebben het toernooi binnengehaald! De ploeg plaatst zich automatisch.
+Ons bod verloor de stemming. Gastland
+Gastland van het toernooi
