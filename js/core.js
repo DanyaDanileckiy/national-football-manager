@@ -260,6 +260,7 @@ N.advance=(opt={})=>{ const S=SS; S._stop=null; let guard=0;
   if(N.userFixToday()&&!opt.autoUser) return {stop:'match',f:N.userFixToday()};
   if(S._stop&&!opt.autoUser&&!opt.noStop) return {stop:S._stop};
   if(opt.until&&S.d>=opt.until) return {stop:'until'};
+  if(opt.steps&&guard>=opt.steps) return {stop:'step'};
  } return {stop:'guard'}; };
 N.runEvents=(nd)=>{ const S=SS; const evs=S.E.filter(e=>e.d===nd); S.E=S.E.filter(e=>e.d!==nd);
  const ord={cycle:0,year:1,fn:2,draw:3,win:4,fr:5}; evs.sort((a,b)=>ord[a.t]-ord[b.t]);

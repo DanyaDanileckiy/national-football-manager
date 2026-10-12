@@ -2,7 +2,7 @@
 // поэтому почти всегда не совпадают с реальными людьми; дополнительно действует стоп-лист известных футболистов.
 (function(){
 const N = globalThis.NFM = globalThis.NFM || {};
-const R=Math.random, pick=a=>a[Math.floor(R()*a.length)], W=s=>s?s.split(' ').map(x=>x.replace(/_/g,' ')):[];
+const R=()=>(N._rng||Math.random)(), pick=a=>a[Math.floor(R()*a.length)], W=s=>s?s.split(' ').map(x=>x.replace(/_/g,' ')):[];
 // f — имена, r — корни фамилий, x — окончания, l — готовые фамилии (lp — доля), p — приставки (pp — доля), nf — фамилия впереди,
 // t — окончания городов, c — приставки клубов, cs — окончания клубов
 const G={

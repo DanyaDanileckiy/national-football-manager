@@ -8,7 +8,7 @@ const W = { // веса вклада роли в атаку / оборону / �
  mid:{GK:0,CB:.2,LB:.35,RB:.35,DM:.9,CM:1,LM:.8,RM:.8,AM:.9,LW:.4,RW:.4,ST:.3},
  shot:{GK:0,CB:.35,LB:.3,RB:.3,DM:.5,CM:1,LM:1.4,RM:1.4,AM:2.4,LW:3,RW:3,ST:5}
 };
-const NORM={att:4.66,def:5.6,mid:5.3};
+N.MW=W; const NORM={att:4.66,def:5.6,mid:5.3};
 function pick(arr,wf){let s=0;const w=arr.map(x=>{const v=Math.max(0,wf(x));s+=v;return v});let r=R()*s;for(let i=0;i<arr.length;i++){r-=w[i];if(r<=0)return arr[i]}return arr[arr.length-1]}
 const T = (a)=>a[Math.floor(R()*a.length)];
 const nm = p=>p? p.n.split(' ').slice(-1)[0] : '?';

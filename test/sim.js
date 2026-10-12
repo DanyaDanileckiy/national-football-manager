@@ -1,8 +1,8 @@
 // Headless-тест: node test/sim.js [лет] [команда]
 globalThis.console=console;
-require('../js/i18n.js');require('../js/data.js');require('../js/names.js');require('../js/core.js');require('../js/comps.js');require('../js/world.js');require('../js/match.js');
+require('../js/i18n.js');require('../js/data.js');require('../js/names.js');require('../js/core.js');require('../js/comps.js');require('../js/world.js');require('../js/match.js');require('../js/v6.js');
 const N=NFM; const years=+(process.argv[2]||4.5), team=process.argv[3]||'RU';
-const t0=Date.now(); const S=N.newGame(team,'Тест'); N.setS(S);
+const t0=Date.now(); const S=N.newGame(team,'Тест'); N.setS(S); N.v6.init(S);
 const until=N.ds(2026+Math.floor(years),1+Math.round((years%1)*12),1);
 let n=0,goals=0,hw=0,dr=0,favW=0,favN=0,ups=0, dist={}; const seen=new Set();
 const allF=[]; const ev={var:0,pen:0,fk:0,yc:0,rc:0,inj:0,et:0,ps:0,add:0,hn:0,hw:0,hd:0}; const _pf=N.playFix; N.playFix=(f,m)=>{_pf(f,m); allF.push(f); for(const e of m.ev){ if(e.t==='var')ev.var++; if(e.t==='goal'&&e.pen)ev.pen++; if(e.t==='goal'&&e.fk)ev.fk++; if(e.t==='yc')ev.yc++; if(e.t==='rc')ev.rc++; if(e.t==='inj')ev.inj++; if(e.t==='add')ev.add++; } if(m.extra)ev.et++; if(m.pens)ev.ps++; if(!f.neu){ const H=S.T[f.h],A=S.T[f.a]; if(Math.abs(H.r-A.r)<4){ev.hn++; if(m.score[0]>m.score[1])ev.hw++; else if(m.score[0]===m.score[1])ev.hd++;}} };

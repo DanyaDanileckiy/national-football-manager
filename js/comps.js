@@ -81,7 +81,7 @@ function srcList(s,out){ const S=G(); const id=s.q||s.from||s.w||s.ru||s.byes||s
 N.finOrder=(c)=>{ const out=[]; const add=t=>{ if(t&&!out.includes(t)) out.push(t); }; add(c.w); add(c.ru);
  for(let i=(c.ko||[]).length-2;i>=0;i--){ const los=c.ko[i].map(t=>t.w===t.h?t.a:t.h).sort((a,b)=>pts(b)-pts(a)); los.forEach(add); }
  if(c.groups&&c.groups.length) N.ranking(c).forEach(r=>add(r.t)); (c.q||[]).forEach(add); return out; };
-N.resolveSrc=(c,pre=[])=>{ const out=pre.slice(); if(c.host&&!out.includes(c.host))out.unshift(c.host); const size=c.size||999;
+N.resolveSrc=(c,pre=[])=>{ const out=pre.slice(); if(c.host&&!out.includes(c.host))out.unshift(c.host); if(c.co&&!out.includes(c.co))out.splice(1,0,c.co); const size=c.size||999;
  for(const s of c.src||[]) for(const t of srcList(s,out)){ if(out.length>=size)break; if(!out.includes(t)) out.push(t); }
  return out.slice(0,size); };
 function selTeams(c){ const S=G(); const minus=new Set((c.sel.minus||[]).flatMap(id=>(S.C[id]&&S.C[id].teams)||[]));
@@ -151,10 +151,10 @@ function nlEdition(conf,y,ko){ const cfg=NLS[conf]; const S=G(); const dts=wd([[
 }
 // ---------- календарь цикла ----------
 function finalsDates(y,m,d0,ngd,nko,gap=4){ const s=N.ds(y,m,d0); const gd=[]; for(let i=0;i<ngd;i++)gd.push(N.addD(s,i*gap)); const kod=[]; let cur=N.addD(gd[gd.length-1],5); for(let i=0;i<nko;i++){kod.push(cur);cur=N.addD(cur,4);} return {gd,kod}; }
-function chooseHost(conf,top,ex=[]){ return pick(N.topElo(conf,top,ex)); }
+function chooseHost(conf,top,ex=[],k,yr){ const S=G(); const h=S.hosts&&S.hosts[k+yr]; if(h&&S.T[h]&&!ex.includes(h)) return h; return pick(N.topElo(conf,top,ex)); }
 N.buildCycle=(Y)=>{ const S=G(); const A=Y,B=Y+1,C=Y+2,E=Y+3,F=Y+4; const id=s=>s+'_'+Y; const D=N.ds; const W=(y,m)=>wd([[y,m]]); const WW=(...l)=>wd(l);
- const euroHost=chooseHost('UEFA',18), afHost=chooseHost('CAF',20), af2Host=chooseHost('CAF',20,[afHost]), acHost=chooseHost('AFC',14);
- const wcHost=pick(Object.values(S.T).filter(t=>t.conf!=='OFC').sort((a,b)=>b.elo-a.elo).slice(0,25)).c; const hc=S.T[wcHost].conf; const h=conf=>hc===conf?1:0;
+ const euroHost=chooseHost('UEFA',18,[],'EURO',C), afHost=chooseHost('CAF',20,[],'AFCON',B), af2Host=chooseHost('CAF',20,[afHost],'AFCON2',E), acHost=chooseHost('AFC',14,[],'ASIAN',B);
+ const rot=N.wcRot?N.wcRot():[]; const wcHost=(S.hosts&&S.hosts['WC'+F]&&S.T[S.hosts['WC'+F]])?S.hosts['WC'+F]:pick(Object.values(S.T).filter(t=>t.conf!=='OFC'&&!rot.includes(t.conf)).sort((a,b)=>b.elo-a.elo).slice(0,25)).c; const hc=S.T[wcHost].conf; const h=conf=>hc===conf?1:0;
  const ev=(d,c)=>N.addEv(d,'draw',{c}); const Q=(o,d)=>{ const c=N.newComp({kind:'qual',yr:Y,...o,id:id(o.id)}); ev(d,c.id); return c; };
  const exW=[wcHost]; const wcN=`${_t("Отбор ЧМ-{0}",(F))} · `;
  // ===== УЕФА =====

@@ -31,20 +31,24 @@ function nav(){ const on=!!S&&!['title','newgame','match','post','fired'].includ
 function navGo(k){ closeM(); if(k==='hub')return home(); st.stack=[['hub',null]]; go(k,null,true); }
 function more(){ const un=S.u.mail.filter(m=>!m.rd).length; modal(`<div class="tiles" style="margin:0">${NAVI.slice(4).map(x=>`<div class="tile" onclick="UI.nav('${x[0]}')"><span class="i">${ic(x[1])}</span>${x[2]()}${x[0]==='mail'&&un?`<span class="bd">${un}</span>`:''}</div>`).join('')}<div class="tile" onclick="UI.langPick()"><span class="i">${ic('languages')}</span>${_t("Язык")}</div></div>`); }
 function langPick(){ modal(`<h2>${ic('languages')} ${_t("Язык")} · Language</h2><div class="langs">${I.LANGS.map(([c,n])=>`<div class="lng ${c===I.lang?'on':''}" lang="${c}" dir="${['he','ar','fa'].includes(c)?'rtl':'ltr'}" onclick="UI.setLang('${c}')" tabindex="0" role="button"><span>${n}</span><span class="code">${c}</span></div>`).join('')}</div>`); }
-function setLang(c){ try{ localStorage.setItem('nfm_lang',c); }catch(e){} if(c===I.lang){ I.first=false; closeM(); return; } if(S){ save(); try{ sessionStorage.setItem('nfm_resume',String(S.slot||1)); }catch(e){} } location.reload(); }
+function setLang(c){ try{ localStorage.setItem('nfm_lang',c); }catch(e){} if(c===I.lang){ I.first=false; closeM(); return; } if(S){ save(); try{ sessionStorage.setItem('nfm_resume','0'); }catch(e){} return flush().then(()=>location.reload()); } location.reload(); }
 function go(name,arg,noPush){ if(st.cur&&!noPush&&st.cur!=='match'&&st.cur!=='post')st.stack.push([st.cur,st.arg]); st.cur=name; st.arg=arg; st.sel=null; const v=V(); v.style.animation='none'; void v.offsetWidth; v.style.animation=''; SCR[name](arg); nav(); window.scrollTo(0,0); }
 function back(){ const p=st.stack.pop(); if(!p)return go('hub',null,true); go(p[0],p[1],true); }
 function home(){ st.stack=[]; go('hub',null,true); }
 const meta=()=>JSON.parse(localStorage.getItem('nfm_meta')||'{}');
-function save(slot){ slot=slot||S.slot||1; S.slot=slot; try{ localStorage.setItem('nfm_s'+slot,N.serialize(S)); const m=meta(); m[slot]={t:S.me,d:S.d,c:S.coach,ts:Date.now()}; localStorage.setItem('nfm_meta',JSON.stringify(m)); return true;}catch(e){ toast(`⚠️ ${_t("Не удалось сохранить")}: ${(e.message)}`); return false;} }
-function load(slot){ const s=localStorage.getItem('nfm_s'+slot); if(!s)return false; const L=N.deserialize(s); oldCheck(L); N.relang(L); S=L; S.slot=slot; N.setS(S); fixFlags(); return true; }
+let saveQ=null, saving=null;
+function save(slot){ if(!S)return false; const man=slot!=null&&slot!==0; const k=man?slot:0; if(man)S.slot=slot; const snap=S; const m=meta(); m[k]={t:S.me,d:S.d,c:S.coach,ts:Date.now(),ch:S.cheat?1:0,nm:S.T[S.me].n}; try{localStorage.setItem('nfm_meta',JSON.stringify(m));}catch(e){}
+ const run=()=>{ saving=N.Store.put(k,snap).catch(e=>toast(`⚠️ ${_t("Не удалось сохранить")}: ${esc(e.message)}`,'err')).finally(()=>{saving=null;}); return saving; };
+ if(man) return run(); if(saveQ) return true; saveQ=1; N.idle(()=>{ saveQ=null; run(); },800); return true; }
+function flush(){ return (saving||Promise.resolve()).then(()=>{ if(saveQ){ saveQ=null; return N.Store.put(0,S); } }); }
+async function load(slot){ await flush(); const L=await N.Store.get(slot); if(!L)return false; oldCheck(L); N.relang(L); S=L; if(slot)S.slot=slot; N.setS(S); fixFlags(); N.v6&&N.v6.init(S); return true; }
 function oldCheck(L){ if(L&&L.v===3){ N.migrate(L); return; } if(!L||(L.v||1)<3) throw new Error(_t("это сохранение старой версии игры (v{0}). В версии 3 переработаны турниры (стыки, двухматчевые раунды, Лиги наций с повышением и вылетом), имена и данные игроков — старые сохранения несовместимы. Пожалуйста, начните новую игру.",((L&&L.v)||1))); }
 function fixFlags(){ for(const t of N.TEAMS) if(S.T[t.c]) S.T[t.c].f=t.f; }
 const SCR={};
 SCR.title=()=>{ $('#top').innerHTML=''; const m=meta(); const any=Object.keys(m).length;
  V().innerHTML=`<div class="logo">${N.crest()}<h1>${_t("Национальный")}<small>${_t("Футбольный Менеджер")}</small></h1><p>${_t("Возглавьте сборную и приведите её к славе")}</p></div>
  <div class="card"><button class="btn g w big" onclick="UI.go('newgame')">${ic('play')} ${_t("Новая игра")}</button>
- ${any?`<div style="height:10px"></div><button class="btn w big" onclick="UI.slots()">${ic('upload')} ${_t("Загрузить игру")}</button>`:''}
+ ${any?`<div style="height:10px"></div>${UI.lastBtn()}<div style="height:10px"></div><button class="btn w big" onclick="UI.slots()">${ic('upload')} ${_t("Загрузить игру")}</button>`:''}
  <div style="height:10px"></div><div class="grid2"><button class="btn gh" onclick="UI.help()">${ic('circle-help')} ${_t("Как играть")}</button><button class="btn gh" onclick="UI.langPick()">${ic('languages')} ${(I.LANGS.find(x=>x[0]===I.lang)||[])[1]}</button></div></div>
  <p class="ctr mut sm">${_t("210 сборных · 6 конфедераций · отборы, Лиги наций, континентальные первенства и чемпионат мира.")}<br>${_t("Все имена и клубы вымышлены.")}</p>`; if(I.first) setTimeout(langPick,200); };
 function help(){ modal(`<h2>${_t("Как играть")}</h2><p>${_t("Вы — главный тренер сборной. Нажимайте")} <b>${_t("«Продолжить»")}</b>, ${_t("чтобы двигаться по календарю: международные окна (март, июнь, сентябрь, октябрь, ноябрь), отборочные турниры, Лиги наций, финальные турниры.")}</p><p><b>${_t("Вызов")}:</b> ${_t("перед каждым окном выберите 18–23 игрока.")} <b>${_t("Тактика")}:</b> ${_t("перетаскивайте или нажимайте игроков на поле, чтобы менять их местами; повторное нажатие — индивидуальная установка.")}</p><p><b>${_t("Матч")}:</b> ${_t("следите за событиями, меняйте тактику и делайте замены прямо по ходу игры. Пауза — в любой момент.")}</p><p><b>${_t("Федерация")}:</b> ${_t("следите за доверием. Если оно упадёт слишком низко — вас уволят. Успехи приносят бюджет на инфраструктуру и предложения от других сборных.")}</p><button class="btn w" onclick="UI.closeM()">${_t("Понятно")}</button>`); }
@@ -61,7 +65,7 @@ function pickTeam(c){ const t=N.TEAMS.find(x=>x.c===c); const diff=t.r>=84?_t("�
  <h3 class="mut sm">${_t("Слот сохранения")}</h3><div class="tabs">${[1,2,3].map(i=>`<div class="tab ${i===free?'on':''}" id="sl${i}" onclick="UI.st.slot=${i};document.querySelectorAll('[id^=sl]').forEach(e=>e.classList.remove('on'));this.classList.add('on')">${_t("Слот {0}{1}",i,m[i]?` ${_t("(занят)")}`:'')}</div>`).join('')}</div>
  <div style="height:10px"></div><button class="btn g w big" onclick="UI.start('${c}')">${_t("Возглавить сборную")}</button><div style="height:6px"></div><button class="btn gh w" onclick="UI.closeM()">${_t("Назад")}</button>`); st.slot=free; }
 function start(c){ closeM(); V().innerHTML=`<div class="card ctr"><span class="sp"></span> ${_t("Генерация мира: 210 сборных, ~5000 игроков…")}</div>`;
- setTimeout(()=>{ const name=(st.ng.name||'').trim()||_t("Тренер"); PREF.coach=name; savePref(); S=N.newGame(c,name); S.slot=st.slot||1; save(); st.ng=null; home(); },30); }
+ setTimeout(()=>{ const name=(st.ng.name||'').trim()||_t("Тренер"); PREF.coach=name; savePref(); S=N.newGame(c,name); N.v6&&N.v6.init(S); const mm=meta(); let fs=1; while(fs<20&&mm[fs])fs++; if(!mm[fs])save(fs); save(); st.ng=null; home(); },30); }
 function nextUser(){ return S.F.filter(f=>!f.r&&!f.y&&(f.h===S.me||f.a===S.me)).sort((a,b)=>a.d<b.d?-1:1); }
 function cName(f){ const c=S.C[f.c]; return c?c.n:_t("Матч"); }
 function rank(c){ return N.fifaRank(c); }
@@ -91,10 +95,10 @@ function fixRow(f,showComp=true){ const r=f.r; const me=f.h===S.me||f.a===S.me; 
 function cont(){ if(S.u.fired) return go('fired');
  const uf=N.userFixToday(); if(uf) return go('prematch',uf.id);
  const b=$('#cont'); if(b){b.disabled=true;b.innerHTML=`<span class="sp"></span> ${_t("Симуляция…")}`;}
- setTimeout(()=>{ const r=N.advance(); save(); if(r.stop==='fired') return go('fired');
+ N.v6.advance().then(r=>{ save(); if(r.stop==='fired') return go('fired');
   if(r.stop==='draw'&&S._drawC){ const id=S._drawC; S._drawC=null; return go('draw',id); }
   const msg={match:`⚽ ${_t("День матча!")}`,win:`🌍 ${_t("Международное окно — проверьте вызов")}`,draw:`🎲 ${_t("Жеребьёвка — новое письмо")}`,year:`🎆 ${_t("Новый год!")}`,comp:`🏁 ${_t("Турнир завершён — смотрите почту")}`}[r.stop]; if(msg)toast(msg);
-  home(); },20); }
+  home(); }); }
 SCR.mail=()=>{ top(_t("Почта")); V().innerHTML=`<div class="card">${S.u.mail.map((m,i)=>`<div class="row c" onclick="UI.openMail(${i})"><span>${m.act&&!m.act.done?'⭐':m.rd?'📭':'📬'}</span><div class="f1"><div class="${m.rd?'':'b'}">${esc(m.sub)}</div><div class="sm mut">${esc(m.from)} · ${N.fmtD(m.d,1)}</div></div></div>`).join('')||`<div class="mut">${_t("Писем нет")}</div>`}</div>`; };
 function openMail(i){ const m=S.u.mail[i]; m.rd=1; let act='';
  if(m.act&&m.act.type==='offer'&&!m.act.done) act=`<button class="btn g w" onclick="UI.acceptJob(${i})">${_t("Принять предложение")}</button><div style="height:6px"></div><button class="btn w" onclick="UI.S().u.mail[${i}].act.done=1;UI.closeM();UI.refresh()">${_t("Отказаться")}</button>`;
@@ -270,20 +274,20 @@ function ratingsHTML(ps,f){ const side=s=>ps.filter(p=>p[2]===s&&p[6]>0).sort((a
  const mvp=ps.filter(p=>p[6]>0).sort((a,b)=>b[3]-a[3])[0];
  return `<div class="card"><h3>${_t("Оценки игроков {0}",mvp?`· ${_t("лучший")}: ${(esc(mvp[1]))} ${(rtB(mvp[3]))}`:'')}</h3><div class="grid2"><div><div class="ctr b">${tf(f.h)}</div>${col(0)}</div><div><div class="ctr b">${tf(f.a)}</div>${col(1)}</div></div></div>`; }
 SCR.settings=()=>{ top(_t("Настройки")); const m=meta();
- V().innerHTML=`<div class="card"><h3>${ic('languages')} ${_t("Язык")}</h3><button class="btn w" onclick="UI.langPick()">${ic('globe')} ${(I.LANGS.find(x=>x[0]===I.lang)||[])[1]}</button></div><div class="card"><h3>${ic('save')} ${_t("Сохранения")}</h3><div class="sm mut">${_t("Игра автоматически сохраняется в текущий слот после каждого шага и матча.")}</div>${[1,2,3].map(i=>`<div class="row"><div class="f1"><div class="b">${_t("Слот {0} {1}",i,S&&S.slot===i?`<span class="grn sm">${_t("(текущий)")}</span>`:'')}</div><div class="sm mut">${m[i]?(N.TEAMS.find(t=>t.c===m[i].t)||{f:''}).f+' '+esc(m[i].c)+' · '+N.fmtD(m[i].d,1):_t("пусто")}</div></div><button class="btn sm g" onclick="UI.saveTo(${i})">${_t("Сохранить")}</button>${m[i]?`<button class="btn sm" onclick="UI.loadFrom(${i})">${_t("Загрузить")}</button><button class="btn sm r" onclick="UI.delSlot(${i})">✕</button>`:''}</div>`).join('')}
+ V().innerHTML=`<div class="card"><h3>${ic('languages')} ${_t("Язык")}</h3><button class="btn w" onclick="UI.langPick()">${ic('globe')} ${(I.LANGS.find(x=>x[0]===I.lang)||[])[1]}</button></div><div class="card"><h3>${ic('save')} ${_t("Сохранения")}</h3>${UI.slotList(true)}
  <div style="height:8px"></div><div class="grid2"><button class="btn" onclick="UI.exportSave()">⬇ ${_t("Экспорт в файл")}</button><label class="btn">⬆ ${_t("Импорт")}<input type="file" accept=".nfm,.txt" style="display:none" onchange="UI.importSave(this)"></label></div></div>
  <div class="card"><h3>${_t("Матч")}</h3><div class="sm mut">${_t("Скорость по умолчанию")}</div><div class="tabs">${['×1','×2','×4','×8'].map((n,i)=>`<div class="tab ${PREF.spd===i?'on':''}" onclick="UI.PREF.spd=${i};UI.savePref();UI.refresh()">${n}</div>`).join('')}</div>
  <label class="ck" style="margin-top:8px"><input type="checkbox" ${PREF.brief?'checked':''} onchange="UI.PREF.brief=this.checked;UI.savePref()"> ${_t("Только ключевые события в комментариях")}</label></div>
  <div class="card"><h3>${_t("Тренер")}</h3><input type="text" value="${esc(S.coach)}" onchange="UI.S().coach=this.value;UI.save()"></div>
  <div class="card"><button class="btn w" onclick="UI.save();UI.st.stack=[];UI.go('title',null,true)">🏠 ${_t("Выйти в главное меню")}</button></div>
  <p class="sm mut ctr">${_t("Оригинальная игра в жанре «менеджер сборной». Все имена, клубы и данные вымышлены.")}</p>`; };
-function slots(){ const m=meta(); modal(`<h2>${_t("Загрузить игру")}</h2>${[1,2,3].map(i=>m[i]?`<div class="row c" onclick="UI.loadFrom(${i})"><div class="f1"><div class="b">${_t("Слот {0}",i)}</div><div class="sm mut">${(N.TEAMS.find(t=>t.c===m[i].t)||{f:''}).f} ${esc(m[i].c)} · ${N.fmtD(m[i].d,1)}</div></div>›</div>`:'').join('')}<button class="btn gh w" onclick="UI.closeM()">${_t("Отмена")}</button>`); }
-function loadFrom(i){ closeM(); try{ if(load(i)){ toast(_t("Игра загружена")); home(); } else toast(_t("Слот пуст")); }catch(e){ modal(`<h2>${_t("Не удалось загрузить")}</h2><div class="sm">${(esc(e.message))}</div><div style="height:10px"></div><button class="btn gh w" onclick="UI.closeM()">OK</button>`); } }
-function saveTo(i){ if(save(i)) toast(_t("Сохранено в слот {0}",(i))); refresh(); }
+function slots(){ modal(`<h2>${_t("Загрузить игру")}</h2>${UI.slotList(false)}<button class="btn gh w" onclick="UI.closeM()">${_t("Отмена")}</button>`); }
+function loadFrom(i){ closeM(); N.v6&&N.v6.busy(true); load(i).then(ok=>{ N.v6&&N.v6.busy(false); if(ok){ toast(_t("Игра загружена")); home(); } else toast(_t("Слот пуст")); }).catch(e=>{ N.v6&&N.v6.busy(false); modal(`<h2>${_t("Не удалось загрузить")}</h2><div class="sm">${(esc(e.message))}</div><div style="height:10px"></div><button class="btn gh w" onclick="UI.closeM()">OK</button>`); }); }
+function saveTo(i){ Promise.resolve(save(i)).then(()=>{ toast(_t("Сохранено в слот {0}",(i))); refresh(); }); }
 function delSlot(i){ ask(_t("Удалить сохранение в слоте {0}?",(i)),'✕',()=>delSlot2(i)); }
-function delSlot2(i){ localStorage.removeItem('nfm_s'+i); const m=meta(); delete m[i]; localStorage.setItem('nfm_meta',JSON.stringify(m)); refresh(); }
+function delSlot2(i){ N.Store.del(i); const m=meta(); delete m[i]; localStorage.setItem('nfm_meta',JSON.stringify(m)); if(st.cur==='title'){closeM();slots();} refresh(); }
 function exportSave(){ const blob=new Blob([N.serialize(S)],{type:'text/plain'}); const a=document.createElement('a'); a.href=URL.createObjectURL(blob); a.download='nfm_'+S.me+'_'+S.d+'.nfm'; a.click(); }
-function importSave(inp){ const f=inp.files[0]; if(!f)return; f.text().then(t=>{ try{ const L=N.deserialize(t); oldCheck(L); N.relang(L); S=L; N.setS(S); fixFlags(); S.slot=S.slot||1; save(); toast(_t("Импортировано")); home(); }catch(e){ modal(`<h2>${_t("Не удалось загрузить")}</h2><div class="sm">${(esc(e.message))}</div><div style="height:10px"></div><button class="btn gh w" onclick="UI.closeM()">OK</button>`); } }); }
+function importSave(inp){ const f=inp.files[0]; if(!f)return; f.text().then(t=>{ try{ const L=N.deserialize(t); oldCheck(L); N.relang(L); S=L; N.setS(S); fixFlags(); N.v6&&N.v6.init(S); save(); toast(_t("Импортировано")); home(); }catch(e){ modal(`<h2>${_t("Не удалось загрузить")}</h2><div class="sm">${(esc(e.message))}</div><div style="height:10px"></div><button class="btn gh w" onclick="UI.closeM()">OK</button>`); } }); }
 SCR.prematch=(fid)=>{ const f=S.F.find(x=>x.id===fid); if(!f||f.r)return home(); top(_t("Перед матчем")); const opp=f.h===S.me?f.a:f.h; const o=T(opp);
  const n=S.u.call.length; const ok=n>=18&&n<=23; if(!N.validXI()) N.autoXI(S.u.xi&&S.u.xi.form);
  const os=N.setup(opp,f); const key=os.on.slice().sort((a,b)=>b.p.o-a.p.o).slice(0,3);
@@ -379,5 +383,6 @@ function pressAns(i){ const p=S.u.press; const q=p.Q[st.pq]; N.applyPress(q.a[i]
 function refresh(){ if(st.cur&&SCR[st.cur]&&st.cur!=='match'&&st.cur!=='post'){ const y=window.scrollY; SCR[st.cur](st.arg); nav(); window.scrollTo(0,y); } }
 window.UI={nav:navGo,more,langPick,setLang,ask,delSlot2,drawSkip,mailAct,go,back,home,st,S:()=>S,PREF,savePref,save,closeM,refresh,cont,help,pickTeam,start,openMail,acceptJob,takeJ,toggleCall,autoCall,doScout,invite,player,talk,setForm,autoXIbtn,setTac,setInstr,upg,friendly,doFriendly,matchDet,slots,loadFrom,saveTo,delSlot,exportSave,importSave,startMatch,quickMatch,pp,spd,play,subsM,subPick,doSubBtn,tacM,mTac,mInstr,mForm,simEnd,afterPost,pressAns};
 document.title=_t("Национальный")+' '+_t("Футбольный Менеджер");
-(function boot(){ let r=null; try{ r=sessionStorage.getItem('nfm_resume'); sessionStorage.removeItem('nfm_resume'); }catch(e){} if(r){ try{ if(load(+r)) return home(); }catch(e){} } go('title',null,true); })();
+window.UIX={SCR,st,top,V,$,modal,closeM,toast,ask,save,flush,load,meta,refresh,esc,ic,T,tf,tn,posB,rtB,rtC,stars,short,avgR,PREF,savePref,go,home,back,player,rank,mv,fixRow,num,spark,rkChart,nav,scx,getS:()=>S,setS:x=>{S=x;N.setS(x);}};
+UIX.boot=function(){ let r=null; try{ r=sessionStorage.getItem('nfm_resume'); sessionStorage.removeItem('nfm_resume'); }catch(e){} N.v6&&N.v6.applyTheme(); const t=()=>go('title',null,true); if(r!=null){ load(+r).then(ok=>ok?home():t()).catch(t); return; } t(); };
 })();
