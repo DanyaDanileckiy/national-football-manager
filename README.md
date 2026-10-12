@@ -1,62 +1,147 @@
-# Национальный Футбольный Менеджер
+<p align="center"><a href="https://danyadanileckiy.github.io/national-football-manager/"><img src="docs/banner.webp" alt="Сборная: Футбольный Менеджер" width="100%"></a></p>
 
-Браузерный менеджер национальной сборной (по мотивам жанра True Football National Manager). Полностью на русском, оригинальный код, все имена игроков и клубов вымышлены. Статический сайт (HTML/CSS/JS), без сборки.
+<h1 align="center">Сборная: Футбольный Менеджер</h1>
+<p align="center"><b>Браузерный менеджер национальной сборной: 210 стран, все турниры мира, рейтинг ФИФА, 20 языков — бесплатно и офлайн.</b></p>
 
-**Играть:** https://danyadanileckiy.github.io/national-football-manager/
+<p align="center">
+<a href="https://danyadanileckiy.github.io/national-football-manager/"><img src="https://img.shields.io/badge/%D0%B8%D0%B3%D1%80%D0%B0%D1%82%D1%8C_%D0%B2_%D0%B1%D1%80%D0%B0%D1%83%D0%B7%D0%B5%D1%80%D0%B5-22d37a?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Play"></a>
+<a href="https://github.com/DanyaDanileckiy/national-football-manager/releases/latest"><img src="https://img.shields.io/github/v/release/DanyaDanileckiy/national-football-manager?style=for-the-badge&color=3b82f6&label=release" alt="Release"></a>
+<a href="https://github.com/DanyaDanileckiy/national-football-manager/releases"><img src="https://img.shields.io/github/downloads/DanyaDanileckiy/national-football-manager/total?style=for-the-badge&color=f59e0b&label=downloads" alt="Downloads"></a>
+<img src="https://img.shields.io/badge/languages-20-8b5cf6?style=for-the-badge" alt="20 languages">
+<img src="https://img.shields.io/badge/vanilla-JS-f7df1e?style=for-the-badge&logo=javascript&logoColor=black" alt="Vanilla JS">
+<img src="https://img.shields.io/badge/offline-ready-0e9f57?style=for-the-badge" alt="Offline">
+</p>
 
-## Возможности
-- 210 сборных из 6 конфедераций, рейтинг силы (звёзды), Эло-рейтинг, SVG-флаги (flag-icons, MIT)
-- Четырёхлетний цикл с реальными датами окон (март/июнь/сентябрь/октябрь/ноябрь): Лиги наций УЕФА и КОНКАКАФ, отборы ЧЕ, Кубков Африки и Азии, отборы ЧМ по конфедерациям, Евро, Копа Америка, Кубок Азии, Кубок Африки, Золотой кубок, Кубок наций ОФК, ЧМ на 48 команд (12 групп + 1/16)
-- Реалистичные форматы (v3): двухматчевые раунды по сумме (без правила выездного гола, д.в. и пенальти), стыки УЕФА (пути) к ЧМ и Евро, межконтинентальные стыки (6 команд, 2 путёвки), многоэтапные отборы АФК/КОНКАКАФ/ОФК, единая лига КОНМЕБОЛ на 18 туров, стыки КАФ; Лиги наций УЕФА (A–D) и КОНКАКАФ (A–C) с повышением/вылетом между розыгрышами, 1/4 финала, «Финал четырёх» и стыками за место в лиге
-- Вымышленные имена в латинице по языковым группам (уникальные фамилии в составе), клубы по уровню лиг, рост, рабочая нога, история матчей/голов на старте
-- Матч: преимущество своего поля зависит от заполняемости стадиона, нейтральные поля на турнирах, погода, добавленное время, VAR, голы со штрафных и пенальти, накопление усталости в окне
-- Рейтинг ФИФА по формуле SUM (ежемесячные снимки, стрелки, график), корзины всех жеребьёвок по рейтингу; анимированная жеребьёвка с ограничениями по конфедерациям
-- Молодёжные и прочие турниры (v4): ЧМ U-17 (ежегодно, 48 команд) с отборами, континентальные первенства U-19/U-20 и ЧМ U-20, молодёжный Евро U-21 с отбором, олимпийские отборы U-23 и Олимпийский турнир (U-23 + 3 старше), Кубок чемпионов континентов, Кубок арабских наций, Кубок Персидского залива, чемпионат Юго-Восточной Азии, Чемпионат африканских наций (местные лиги), Кубок Восточной Азии, чемпионат Южной Азии, Королевский кубок
-- Клубная жизнь между окнами (форма, голы, травмы, трансферы), давление прессы и настроение болельщиков, двойное гражданство и натурализация
-- Все матчи мира симулируются тем же движком — таблицы, бомбардиры, сетки живые
-- Пул игроков: позиции, возраст, клуб, 7 навыков, форма, мораль, свежесть, потенциал, характер; травмы, карточки и дисквалификации, старение, завершение карьеры, воспитанники академии, скаутинг игроков с двойным гражданством
-- Вызов 18–23, схема и состав drag/tap на поле, командные и индивидуальные установки
-- Поминутный движок: владение, удары, xG, фолы, угловые, карточки, травмы, 2D-поле с мячом, комментарии, пауза/скорость, замены и тактика по ходу, доп. время и пенальти, оценки игроков
-- Пресс-конференции, разговоры с игроками, доверие федерации, увольнение и предложения от других сборных, инфраструктура, тренировки, U-21
-- Статистика: история оценок игрока (график), сухие матчи, голы/передачи, история матчей с деталями, бомбардиры по турнирам, рекорды, рейтинг, трофеи и достижения
-- 3 слота сохранений в localStorage (LZW-сжатие) + экспорт/импорт файла
+<p align="center">
+<a href="https://danyadanileckiy.github.io/national-football-manager/"><img src="https://img.shields.io/badge/%E2%96%B6_%D0%98%D0%B3%D1%80%D0%B0%D1%82%D1%8C-22d37a?style=for-the-badge" height="44" alt="Играть"></a>&nbsp;
+<a href="https://github.com/DanyaDanileckiy/national-football-manager/releases/download/v8.0/NationalFootballManager-8.0.0-portable.exe"><img src="https://img.shields.io/badge/%D0%A1%D0%BA%D0%B0%D1%87%D0%B0%D1%82%D1%8C_%D0%B4%D0%BB%D1%8F_Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white" height="44" alt="Windows"></a>&nbsp;
+<a href="https://github.com/DanyaDanileckiy/national-football-manager/releases/download/v8.0/NationalFootballManager-8.0.apk"><img src="https://img.shields.io/badge/%D0%A1%D0%BA%D0%B0%D1%87%D0%B0%D1%82%D1%8C_%D0%B4%D0%BB%D1%8F_Android-3DDC84?style=for-the-badge&logo=android&logoColor=white" height="44" alt="Android"></a>
+</p>
 
-## Тест
-`node test/sim.js 8 FR` — headless-симуляция двух циклов (≈7000 матчей), проверка результативности и силы фаворитов. `node test/calib.js` — калибровка движка. `node test/fmt.js` — проверка форматов цикла (нет двух матчей в день у команды, 48 участников ЧМ, перемещения в Лигах наций).
+<p align="center">🌐 <b>Русский</b> · <a href="README.en.md">English</a> · <a href="README.es.md">Español</a> · <a href="README.pt.md">Português</a> · <a href="README.de.md">Deutsch</a> · <a href="README.fr.md">Français</a> · <a href="README.uk.md">Українська</a> · <a href="README.pl.md">Polski</a> · <a href="README.he.md">עברית</a> · <a href="README.zh.md">中文</a> · <a href="README.ja.md">日本語</a></p>
 
-Сохранения версии 3 автоматически обновляются до версии 4; сохранения версии 2 и старше несовместимы — игра сообщает об этом и предлагает начать заново.
+---
 
-## Update 5: design & languages
-- New design system (css/style.css, Inter + Oswald fonts, OFL licence), Lucide icons (ISC licence), kit colours worked out from each nation's flag (js/kits.js), and original SVG badges and trophies (js/gfx.js). Bottom nav bar on phones, sidebar on desktop, broadcast-style match screen with a momentum graph and timeline, toast notifications.
-- i18n: `_t("Russian source", …)` with hashed keys. There are 20 languages (ru en es pt de fr it pl uk he ar tr ja zh ko nl cs id hi fa), with RTL for he/ar/fa. Country names come from Intl.DisplayNames.
-  Source files are in `i18n/src/<lang>.txt` (format `index|text`, indexed by `i18n/master.txt`). Build with `node tools/build-i18n.js`; check with `node test/i18n.js`.
+## ⚽ Об игре
 
-## Update 6: depth, economy, hosting, themes
-- Stats: per-shot map with xG, player heatmaps (last match), pass accuracy, tackles, interceptions, duels; goals − xG, 1v1 and penalty conversion; GK save %, penalties saved, xGA − conceded; last-5 ratings in the call-up list; two-player radar comparison; head-to-head vs every nation; team records; results by formation; coach stats per tournament and per 4-year cycle; Hall of Fame.
-- History: real winners (countries only) of major tournaments before 2026, a generated archive for the rest, generated 1993–2025 ranking history, and fictional past legends and records (clearly marked as generated).
-- Saves: 20 manual slots plus a separate autosave. Saves go to IndexedDB with gzip compression and are written asynchronously.
-- Performance: calendar simulation runs in small chunks with a loading overlay, so the UI doesn't freeze.
-- FIFA ranking: monthly movers, biggest climbers and fallers, team history chart, points gained or lost per match, confederation filter, top-10 timeline.
-- Economy and stadiums: sponsors, TV, tickets, prize money and merchandise against staff, facility and stadium costs. You can build or expand stadiums in different cities; the main stadium affects attendance, home advantage and hosting bids.
-- Training: focus per line or per player (attack, defence, set pieces, fitness, tactics familiarity, GK, rest), intensity vs injury risk, staff quality, and an Auto mode.
-- Hosting bids: you can bid only in your own confederation. The World Cup uses a rotation rule. AI rivals bid too, there is a vote with mail results, an optional co-host, and the host qualifies automatically.
-- Optional cheats (enable in Settings): the save is marked as a cheat save and achievements stop counting.
-- 5 themes: Stadium Night, Classic Pitch, Midnight Blue, Light, Sand/Retro.
+**«Сборная: Футбольный Менеджер»** — это менеджер национальной сборной в духе классики жанра. Вы становитесь главным тренером любой из 210 сборных, вызываете игроков, выбираете тактику, проводите матчи в поминутном движке и ведёте страну через отборы, Лиги наций, континентальные чемпионаты и чемпионат мира. Между окнами — рейтинг ФИФА, жеребьёвки, экономика федерации, стадионы, заявки на проведение турниров и новости со всего мира.
 
-## Обновление 7
-- Товарищеские матчи с переговорами: соперник, дом/выезд/нейтральный город, гонорар (сила, рейтинг ФИФА, привлекательность, посещаемость), принять/отказаться/встречное предложение (до 3 раундов).
-- Тренировочные сборы: место и климат, 5/10/14 дней, стоимость; +сыгранность и готовность, небольшой риск травм; полный эффект — перед финальным турниром.
-- Новости: «Мировые итоги» после каждого окна — 15 важнейших матчей других сборных (стадия, рейтинг, сенсации) со счётом и авторами голов; новости клубов.
-- Жеребьёвки: корзины по рейтингу ФИФА; ограничение конфедераций во всех межконфедерационных турнирах (ЧМ, Олимпиада, юношеские ЧМ); межконтинентальные стыки — без пар одной конфедерации в 1-м раунде; правило показывается на экране жеребьёвки. Проверка: `node test/draw.js`.
-- Экипировка: контракты с техническим спонсором (сумма, срок, бонусы за трофей и выход на турнир), дизайнер домашней/гостевой формы (узоры, цвета флага, SVG), ажиотаж влияет на мерчендайз.
-- Мировая статистика: бомбардиры (цикл/всё время), голы команд, рекорды и серии, сила команд со снимками каждый месяц: изменения за месяц/3 месяца/год, лидеры роста и падения, график по команде, сортируемая таблица с фильтром конфедераций.
+Игра работает прямо в браузере на телефоне и компьютере, без регистрации и интернета после первой загрузки. Есть версии для Windows и Android.
 
-## Обновление 8 «Полировка»
-- Стабильность: если здоровых игроков меньше 11, состав добирается из пула, а при необходимости — экстренным вызовом; движок матча устойчив к неполным составам (раньше авторежим падал на 11–14-м сезоне).
-- Движок матча: мягче влияние разницы в силе (xG и владение), игра по счёту (лидер при +2 сбавляет, отстающий давит), сильнее домашнее преимущество. Итог 20-сезонного QA: ничьи ~22%, 1:1 ~10%, фаворит по рейтингу ~63%, разгромы на 5+ ~3%, голы ~2.55, равные дома ~47% побед.
-- Развитие: молодёжь и самокоррекция держат среднюю силу сборных стабильной; ИИ-сборные проходят такие же сборы и молодёжные окна, как сборная игрока, тренировка не поднимает выше потенциала.
-- Экономика: призовые — отдельной статьёй, а не остатком; содержание федерации зависит от размера страны, программа развития ФИФА для всех; стадионы окупаются при хорошей посещаемости; при долгом минусе бюджета доверие падает сильнее.
-- Сейв: старые молодёжные турниры сводятся к таблицам и бомбардирам, старые чужие товарищеские удаляются, подробности храним только для 40 последних матчей — сейв ~4 МБ после 20 сезонов (было 5.2), сезон считается быстрее.
-- Хозяева турниров: ЧМ — не чаще раза в 20 лет на страну (включая соорганизацию), континентальные — раз в 12 лет; маленьким странам для ЧМ/Евро нужен соорганизатор.
-- Доверие: победа в официальном матче всегда добавляет доверие, штраф за турнир ограничен, доверие восстанавливается при нормальных результатах; увольнение — только при плохой форме в последних 12 официальных матчах.
-- QA: `node test/qa20.js 20 FR 1` (лет, сборная, сид; результат в /tmp/nfm-qa) и сводка `node test/qa_report.js`.
+> ℹ️ Все имена игроков, тренеров и клубов вымышлены и сгенерированы. Совпадения с реальными людьми случайны.
+
+## ✨ Возможности
+
+### 🌍 Мир футбола
+- 210 сборных из 6 конфедераций, Эло и звёздный рейтинг силы
+- Рейтинг ФИФА по формуле SUM: ежемесячные снимки, движение, лидеры роста и падения, история с 1993 года
+- Все турниры: ЧМ на 48 команд, Евро, Копа Америка, Кубки Африки, Азии, Золотой кубок, Лиги наций УЕФА и КОНКАКАФ, стыки, Олимпиада, молодёжные ЧМ и ЧЕ
+- Все матчи мира симулируются тем же движком — живые таблицы, сетки и бомбардиры
+
+### 🎲 Жеребьёвки и турниры
+- Анимированные жеребьёвки с корзинами по рейтингу ФИФА
+- Правило конфедераций во всех межконтинентальных турнирах
+- Заявки на проведение турниров, голосование, соорганизаторы и ротация ЧМ
+
+### ⚽ Матч и тактика
+- Поминутный движок: владение, удары, xG, карточки, VAR, погода, добавленное время
+- 2D-поле, график моментума, комментарии, пауза и скорость ×4
+- Замены и тактика по ходу игры, доп. время и серии пенальти, оценки игроков
+- Схемы, командные и индивидуальные установки, drag & drop состава
+
+### 👥 Команда
+- Вызов 18–23 игроков, 7 навыков, форма, мораль, потенциал, характер
+- Тренировки по линиям и игрокам с автоматическим режимом, тренировочные сборы
+- Молодёжь U-21, академия, двойное гражданство и натурализация
+- Пресс-конференции, разговоры с игроками, доверие федерации и увольнение
+
+### 💰 Федерация и экономика
+- Спонсоры, ТВ, билеты, призовые и мерчендайз против расходов
+- Строительство и расширение стадионов в разных городах
+- Технический спонсор и дизайнер домашней и гостевой формы
+- Товарищеские матчи с переговорами о гонораре
+
+### 📊 Статистика и новости
+- Карты ударов с xG, тепловые карты, радар сравнения игроков
+- Мировая статистика: бомбардиры, рекорды, серии, сила команд
+- «Мировые итоги» после каждого окна, новости клубов, Зал славы
+
+### 🎨 Удобство
+- 20 языков интерфейса, включая RTL (иврит, арабский, фарси)
+- 5 тем: Ночной стадион, Классический газон, Полночный синий, Светлая, Песок/ретро
+- 20 слотов сохранения + автосейв, экспорт и импорт, работа офлайн
+- Необязательные читы (сейв помечается)
+
+## 📸 Скриншоты
+
+### 📱 Телефон
+
+<table>
+<tr><td align="center" width="25%"><img src="docs/screenshots/ru_ph_hub.webp" alt="Главное меню" width="200"><br><sub>Главное меню</sub></td><td align="center" width="25%"><img src="docs/screenshots/ru_ph_match.webp" alt="Матч в прямом эфире" width="200"><br><sub>Матч в прямом эфире</sub></td><td align="center" width="25%"><img src="docs/screenshots/ru_ph_rank.webp" alt="Рейтинг ФИФА" width="200"><br><sub>Рейтинг ФИФА</sub></td><td align="center" width="25%"><img src="docs/screenshots/ru_ph_draw.webp" alt="Жеребьёвка" width="200"><br><sub>Жеребьёвка</sub></td></tr>
+<tr><td align="center" width="25%"><img src="docs/screenshots/ru_ph_wstat.webp" alt="Мировая статистика" width="200"><br><sub>Мировая статистика</sub></td><td align="center" width="25%"><img src="docs/screenshots/ru_ph_light_kits.webp" alt="Дизайнер формы" width="200"><br><sub>Дизайнер формы</sub></td><td align="center" width="25%"><img src="docs/screenshots/ru_ph_eco.webp" alt="Экономика и стадионы" width="200"><br><sub>Экономика и стадионы</sub></td><td align="center" width="25%"><img src="docs/screenshots/ru_ph_light_hub.webp" alt="Светлая тема" width="200"><br><sub>Светлая тема</sub></td></tr>
+<tr><td align="center" width="25%"><img src="docs/screenshots/en_ph_hub.webp" alt="English · тема «Песок»" width="200"><br><sub>English · тема «Песок»</sub></td><td align="center" width="25%"><img src="docs/screenshots/en_ph_match.webp" alt="Матч (English)" width="200"><br><sub>Матч (English)</sub></td><td align="center" width="25%"><img src="docs/screenshots/en_ph_rank.webp" alt="FIFA ranking (English)" width="200"><br><sub>FIFA ranking (English)</sub></td><td align="center" width="25%"><img src="docs/screenshots/he_ph_hub.webp" alt="עברית · RTL" width="200"><br><sub>עברית · RTL</sub></td></tr>
+</table>
+
+### 🖥️ Компьютер
+
+<table>
+<tr><td align="center" width="50%"><img src="docs/screenshots/ru_dt_hub.webp" alt="Главное меню · тема «Классический газон»" width="420"><br><sub>Главное меню · тема «Классический газон»</sub></td><td align="center" width="50%"><img src="docs/screenshots/ru_dt_match.webp" alt="Матч в прямом эфире" width="420"><br><sub>Матч в прямом эфире</sub></td></tr>
+<tr><td align="center" width="50%"><img src="docs/screenshots/ru_dt_rank.webp" alt="Рейтинг ФИФА" width="420"><br><sub>Рейтинг ФИФА</sub></td><td align="center" width="50%"><img src="docs/screenshots/ru_dt_draw.webp" alt="Жеребьёвка" width="420"><br><sub>Жеребьёвка</sub></td></tr>
+<tr><td align="center" width="50%"><img src="docs/screenshots/ru_dt_wstat.webp" alt="Мировая статистика" width="420"><br><sub>Мировая статистика</sub></td><td align="center" width="50%"><img src="docs/screenshots/ru_dt_eco.webp" alt="Экономика и стадионы" width="420"><br><sub>Экономика и стадионы</sub></td></tr>
+<tr><td align="center" width="50%"><img src="docs/screenshots/ru_dt_blue_kits.webp" alt="Дизайнер формы · тема «Полночный синий»" width="420"><br><sub>Дизайнер формы · тема «Полночный синий»</sub></td><td align="center" width="50%"><img src="docs/screenshots/en_dt_match.webp" alt="Матч (English)" width="420"><br><sub>Матч (English)</sub></td></tr>
+</table>
+
+## 🚀 Как играть и установить
+
+| | |
+|---|---|
+| 🌐 **Браузер** | Просто откройте страницу игры — работает на телефоне и ПК, можно «Добавить на главный экран» → [https://danyadanileckiy.github.io/national-football-manager/](https://danyadanileckiy.github.io/national-football-manager/) |
+| 🪟 **Windows** | Скачайте портативный файл и запустите — установка не нужна: [`NationalFootballManager-8.0.0-portable.exe`](https://github.com/DanyaDanileckiy/national-football-manager/releases/download/v8.0/NationalFootballManager-8.0.0-portable.exe) |
+| 🤖 **Android** | Скачайте и установите APK: [`NationalFootballManager-8.0.apk`](https://github.com/DanyaDanileckiy/national-football-manager/releases/download/v8.0/NationalFootballManager-8.0.apk) |
+| 💻 **Локально** | Клонируйте репозиторий и откройте `index.html` или запустите `python3 -m http.server` |
+
+> ⚠️ **Windows SmartScreen:** файл не подписан, поэтому Windows может показать «Система Windows защитила ваш компьютер». Нажмите **«Подробнее» → «Выполнить в любом случае»**.
+>
+> ⚠️ **Android:** при установке APK разрешите **«Установку из неизвестных источников»** для браузера или файлового менеджера (Настройки → Безопасность).
+
+💾 Сохранения хранятся локально на устройстве (IndexedDB). Для переноса между устройствами используйте экспорт и импорт в меню сохранений.
+
+## 🛠️ Технологии
+
+- Чистый HTML, CSS и JavaScript — **без сборки, фреймворков и зависимостей**
+- Статический сайт на GitHub Pages, полностью работает офлайн
+- Сохранения в IndexedDB со сжатием gzip, симуляция небольшими порциями без зависания интерфейса
+- i18n: 20 языков, названия стран через `Intl.DisplayNames`, исходники переводов в `i18n/src`
+- Windows-версия — Electron (portable), Android — Capacitor (`packaging/`)
+
+## 🧪 Тесты
+
+```bash
+node test/sim.js 8 FR     # симуляция двух циклов (~7000 матчей)
+node test/fmt.js          # проверка форматов турниров
+node test/draw.js         # проверка жеребьёвок
+node test/i18n.js         # полнота переводов
+node test/qa20.js 20 FR 1 && node test/qa_report.js   # 20-сезонный QA и отчёт
+```
+
+## 🗺️ Планы
+
+- [ ] Клубная карьера тренера между сборными
+- [ ] Онлайн-таблица рекордов
+- [ ] Больше достижений и сценариев
+- [ ] Подпись Windows-сборки и публикация в магазинах
+
+📜 Подробная история изменений — в [CHANGELOG.md](CHANGELOG.md).
+
+## 🙏 Благодарности
+
+- Флаги — [flag-icons](https://github.com/lipis/flag-icons) (MIT)
+- Шрифты — [Inter](https://rsms.me/inter/) и [Oswald](https://fonts.google.com/specimen/Oswald) (SIL Open Font License)
+- Иконки — [Lucide](https://lucide.dev) (ISC)
+- Вдохновлено классическими менеджерами национальных сборных; весь код оригинальный
+
+## 📄 Лицензия
+
+Файл лицензии пока не добавлен — все права на код принадлежат автору. Сторонние ресурсы распространяются по своим лицензиям (см. `flags/`, `fonts/`).
+
+<p align="center"><sub>Сделано с ❤️ для любителей футбола · <a href="https://danyadanileckiy.github.io/national-football-manager/">Играть сейчас</a></sub></p>
