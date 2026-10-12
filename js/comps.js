@@ -3,21 +3,31 @@
 const N = globalThis.NFM;
 const {R,cl,ri,pick,shuffle}=N; const G=()=>N.getS();
 const WIN=N.WIN; const wd=(list)=>list.flatMap(([y,m])=>WIN[m].map(d=>N.ds(y,m,d)));
-const elo=c=>G().T[c].elo;
+const elo=c=>G().T[c].elo; const pts=c=>{ const t=G().T[c]; return t.pts??t.elo; };
 // ---------- группы ----------
-function makeGroups(teams,maxSize,nGroups,start=0){ const sorted=teams.slice().sort((a,b)=>elo(b)-elo(a)); const g=nGroups||Math.ceil(sorted.length/maxSize);
- const Gs=Array.from({length:g},(_,i)=>({n:String.fromCharCode(65+start+i),t:[]}));
- for(let i=0;i<sorted.length;i+=g){ const pot=shuffle(sorted.slice(i,i+g)); const order=shuffle(Gs.map((_,k)=>k)).sort((a,b)=>Gs[a].t.length-Gs[b].t.length); pot.forEach((c,k)=>Gs[order[k]].t.push(c)); }
- return Gs; }
+function makeGroups(teams,maxSize,nGroups,start=0,opt={}){ const S=G(); const sorted=teams.slice().sort((a,b)=>pts(b)-pts(a)); const host=opt.host&&sorted.includes(opt.host)?opt.host:null;
+ if(host){ sorted.splice(sorted.indexOf(host),1); sorted.unshift(host); } const g=nGroups||Math.ceil(sorted.length/maxSize);
+ const conf=t=>S.T[t].conf; const capOf=k=>k==='UEFA'?2:1; const pots=[]; for(let i=0;i<sorted.length;i+=g) pots.push(sorted.slice(i,i+g));
+ for(let tries=0;tries<(opt.cap?80:1);tries++){ const Gs=Array.from({length:g},(_,i)=>({n:String.fromCharCode(65+start+i),t:[]})); const log=[]; let ok=true;
+  for(let pi=0;pi<pots.length&&ok;pi++){ const pot=shuffle(pots[pi].slice()); if(pi===0&&host){ pot.splice(pot.indexOf(host),1); pot.unshift(host); }
+   const used=new Set(), res=[]; let nodes=0;
+   const okc=(t,k)=>!opt.cap||Gs[k].t.filter(x=>conf(x)===conf(t)).length<capOf(conf(t));
+   const dfs=(i)=>{ if(i===pot.length) return true; if(++nodes>20000) return false; const t=pot[i]; const cand=(pi===0&&host===t)?[0]:shuffle(Gs.map((_,k)=>k)).filter(k=>Gs[k].t.length===pi&&!used.has(k)&&okc(t,k)).sort((x,y)=>x-y);
+    // жеребьёвка как в реальности: первая допустимая группа по алфавиту, с проверкой, что остальные команды корзины можно разместить
+    for(const k of cand){ used.add(k); res[i]=k; if(dfs(i+1)) return true; used.delete(k); } return false; };
+   if(!dfs(0)){ ok=false; break; }
+   pot.forEach((t,i)=>{ Gs[res[i]].t.push(t); log.push([pi,t,Gs[res[i]].n]); }); }
+  if(ok){ Gs.log=log; Gs.pots=pots; return Gs; } }
+ return makeGroups(teams,maxSize,nGroups,start,{host:opt.host}); }
 N.makeGroups=makeGroups;
 function rr(teams,double){ const a=shuffle(teams.slice()); if(a.length%2)a.push(null); const n=a.length, rounds=[];
  for(let r=0;r<n-1;r++){ const rd=[]; for(let i=0;i<n/2;i++){ const h=a[i],w=a[n-1-i]; if(h&&w) rd.push((r+i)%2?[w,h]:[h,w]); } rounds.push(rd); a.splice(1,0,a.pop()); }
  if(double) return rounds.concat(rounds.map(rd=>rd.map(([h,w])=>[w,h]))); return rounds; }
 N.rr=rr;
-N.addFix=(d,c,h,a,st,x={})=>{ const S=G(); const f={id:S.nfid++,d,c,h,a,st,...x}; S.F.push(f); return f; };
+N.addFix=(d,c,h,a,st,x={})=>{ const S=G(); const f={id:S.nfid++,d,c,h,a,st,...x}; const C=S.C[c]; if(C&&C.quick) f.y=1; S.F.push(f); return f; };
 N.drawComp=(c,teams,parts)=>{ const S=G();
  parts = parts || [{t:teams,gsize:c.gsize||4,ng:c.ng,gd:c.gd}];
- c.groups=[]; for(const p of parts){ if(!p.t.length)continue; const gs= c.league? [{n:'',t:p.t.slice()}] : makeGroups(p.t,p.gsize||4,p.ng,c.groups.length); gs.forEach(g=>g.gd=p.gd); c.groups.push(...gs); }
+ c.groups=[]; c.drawLog=null; c.pots=null; for(const p of parts){ if(!p.t.length)continue; const gs= c.league? [{n:'',t:p.t.slice()}] : makeGroups(p.t,p.gsize||4,p.ng,c.groups.length,{host:c.host,cap:c.conf==='ALL'}); if(gs.log){ c.drawLog=(c.drawLog||[]).concat(gs.log); c.pots=(c.pots||[]).concat([gs.pots]); } gs.forEach(g=>g.gd=p.gd); c.groups.push(...gs); }
  if(c.host&&c.groups.length>1){ const gA=c.groups[0]; if(!gA.t.includes(c.host)){ const g=c.groups.find(g=>g.t.includes(c.host)); if(g){ const sw=gA.t[0]; g.t[g.t.indexOf(c.host)]=sw; gA.t[0]=c.host; } } }
  for(const g of c.groups){ const rounds=rr(g.t,c.rr!==1); const gd=g.gd||c.gd; if(rounds.length>gd.length) console.warn('мало дат',c.id,rounds.length,gd.length);
   rounds.forEach((rd,i)=>{ const d=gd[Math.min(i,gd.length-1)]; rd.forEach(([h,a])=>{ if(a===c.host)[h,a]=[a,h]; N.addFix(d,c.id,h,a,(c.league?'':'Группа '+g.n+', ')+'тур '+(i+1),{g:g.n,neu:c.neutral&&h!==c.host&&a!==c.host?1:0}); }); }); delete g.gd; }
@@ -48,51 +58,55 @@ N.fixById=(id)=>{ const S=G(); if(!S._fx||S._fxN!==S.F.length){ S._fx=new Map(S.
 N.onFixDone=(f)=>{ const S=G(); const c=S.C[f.c]; if(!c||c.kind==='fr')return;
  if(c.stage==='groups'){ if(S.F.some(x=>x.c===c.id&&!x.r&&!x.ko))return;
   if(c.adv){ const rk=N.ranking(c); let q=rk.filter(r=>r.pos<c.adv.per); q=q.concat(rk.filter(r=>r.pos===c.adv.per).slice(0,c.adv.best||0)); N.startKO(c,q.map(r=>r.t)); }
-  else { c.stage='done'; c.fin=S.d; c.q=N.ranking(c).slice(0,c.slots||0).map(r=>r.t); N.compDone(c); } return; }
+  else { c.stage='done'; c.fin=S.d; c.q=N.ranking(c).slice(0,c.slots||0).map(r=>r.t); if(c.lw){ const rk=N.ranking(c); c.w=rk[0].t; c.ru=rk[1]&&rk[1].t; } N.compDone(c); } return; }
  if(c.stage==='ko'){ const rd=c.ko[c.ko.length-1]; const fx=rd.map(t=>N.fixById(t.f)); if(fx.some(x=>!x||!x.r))return; rd.forEach((t,i)=>t.w=fx[i].r.w); const ws=rd.map(t=>t.w);
   if(c.byeT){ const pairs=c.byeT.map((b,i)=>[b,ws[i]]); c.byeT=null; makeRound(c,pairs); return; }
   if(ws.length<=(c.stopAt||1)){ c.q=ws; if(ws.length===1){ c.w=ws[0]; c.ru= ws[0]===rd[0].h?rd[0].a:rd[0].h; } c.stage='done'; c.fin=S.d; N.compDone(c); return; }
   const K=kor(c,c.ko.length); const pairs=[]; for(let i=0;i<ws.length;i+=2){ let p=[ws[i],ws[i+1]]; if(!K.neu&&K.d.length===1&&R()<.5)p.reverse(); pairs.push(p); } makeRound(c,pairs); } };
-N.qualOf=(c)=>c? (c.q || (c.kind==='qual'&&c.groups&&c.groups.length? N.ranking(c).slice(0,c.slots).map(r=>r.t):[])) : [];
+N.qualOf=(c)=>c? (c.q || ((c.kind==='qual'||c.yq)&&c.groups&&c.groups.length? N.ranking(c).slice(0,c.slots).map(r=>r.t):[])) : [];
 N.qualified=N.qualOf;
 N.newComp=(o)=>{ const c={stage:'pending',groups:[],rr:2,gsize:4,...o}; G().C[c.id]=c; return c; };
-N.topElo=(conf,n,excl=[])=>Object.values(G().T).filter(t=>t.conf===conf&&!excl.includes(t.c)).sort((a,b)=>b.elo-a.elo).slice(0,n).map(t=>t.c);
+N.topElo=(conf,n,excl=[])=>Object.values(G().T).filter(t=>t.conf===conf&&!excl.includes(t.c)).sort((a,b)=>pts(b.c)-pts(a.c)).slice(0,n).map(t=>t.c);
 N.confTeams=(conf)=>Object.values(G().T).filter(t=>t.conf===conf).map(t=>t.c);
 // ---------- участники ----------
-function srcList(s,out){ const S=G(); const id=s.q||s.from||s.w||s.ru||s.byes; const C=id&&S.C[id];
- if(s.top) return N.topElo(s.top,s.n,out); if(!C) return [];
+function srcList(s,out){ const S=G(); const id=s.q||s.from||s.w||s.ru||s.byes||s.fin; const C=id&&S.C[id];
+ if(s.top) return N.topElo(s.top,s.n,out); if(s.list) return s.list.filter(t=>S.T[t]&&!out.includes(t)).sort((a,b)=>pts(b)-pts(a)).slice(0,s.n??99); if(!C) return [];
+ if(s.fin) return N.finOrder(C).slice(s.at||0,(s.at||0)+s.n);
  if(s.q) return N.qualOf(C).slice(0,s.n??99);
  if(s.from){ const a=C.slots||0; return N.ranking(C).slice(a,a+s.n).map(r=>r.t); }
  if(s.w) return C.q||(C.w?[C.w]:[]);
  if(s.ru) return C.ru?[C.ru]:[];
  if(s.byes) return C.byeL||[];
  return []; }
+N.finOrder=(c)=>{ const out=[]; const add=t=>{ if(t&&!out.includes(t)) out.push(t); }; add(c.w); add(c.ru);
+ for(let i=(c.ko||[]).length-2;i>=0;i--){ const los=c.ko[i].map(t=>t.w===t.h?t.a:t.h).sort((a,b)=>pts(b)-pts(a)); los.forEach(add); }
+ if(c.groups&&c.groups.length) N.ranking(c).forEach(r=>add(r.t)); (c.q||[]).forEach(add); return out; };
 N.resolveSrc=(c,pre=[])=>{ const out=pre.slice(); if(c.host&&!out.includes(c.host))out.unshift(c.host); const size=c.size||999;
  for(const s of c.src||[]) for(const t of srcList(s,out)){ if(out.length>=size)break; if(!out.includes(t)) out.push(t); }
  return out.slice(0,size); };
 function selTeams(c){ const S=G(); const minus=new Set((c.sel.minus||[]).flatMap(id=>(S.C[id]&&S.C[id].teams)||[]));
- let all=N.confTeams(c.conf).filter(t=>!(c.excl||[]).includes(t)&&!minus.has(t)).sort((a,b)=>elo(b)-elo(a)); const s=c.sel;
+ let all=(c.sel.list||N.confTeams(c.conf)).filter(t=>S.T[t]&&!(c.excl||[]).includes(t)&&!minus.has(t)).sort((a,b)=>pts(b)-pts(a)); const s=c.sel; if(s.kings) return N.kingsPick(c);
  if(s.bot){ const k= s.bot==='afc'? Math.max(0,2*(all.length-36)) : s.bot; return all.slice(all.length-k); }
  if(s.top) all=all.slice(0,s.top); return all; }
 N.evDraw=(e)=>{ const S=G(); const c=S.C[e.c]; if(!c||c.stage!=='pending')return; let teams;
  if(c.kind==='nl') teams=N.nlTeams(c.conf,c.lg);
- else if(c.sel){ teams=selTeams(c); if(c.src) teams=N.resolveSrc(c,teams); }
+ else if(c.sel){ teams=selTeams(c); if(c.host&&!teams.includes(c.host)) teams.unshift(c.host); if(c.size) teams=teams.slice(0,c.size); if(c.src) teams=N.resolveSrc(c,teams); }
  else if(c.src) teams=N.resolveSrc(c);
  else teams=N.confTeams(c.conf).filter(t=>!(c.excl||[]).includes(t));
- if(c.byeTop){ const srt=teams.slice().sort((a,b)=>elo(b)-elo(a)); c.byeL=srt.slice(0,c.byeTop); teams=teams.filter(t=>!c.byeL.includes(t)); }
+ if(c.byeTop){ const srt=teams.slice().sort((a,b)=>pts(b)-pts(a)); c.byeL=srt.slice(0,c.byeTop); teams=teams.filter(t=>!c.byeL.includes(t)); }
  if(!teams.length){ c.stage='done'; c.teams=[]; c.q=[]; return; }
- if(c.po){ const seeds=c.seedElo? teams.slice().sort((a,b)=>elo(b)-elo(a)) : teams; if(c.stopAuto) c.stopAt=Math.floor(seeds.length/2); c.teams=teams.slice(); N.startKO(c,seeds); }
+ if(c.po){ const seeds=c.seedElo? teams.slice().sort((a,b)=>pts(b)-pts(a)) : teams; if(c.stopAuto) c.stopAt=Math.floor(seeds.length/2); c.teams=teams.slice(); N.startKO(c,seeds); }
  else { let parts=null;
   if(c.busyOf){ const busy=new Set(c.busyOf.flatMap(id=>(S.C[id]&&S.C[id].teams)||[])); const b=teams.filter(t=>busy.has(t)), r=teams.filter(t=>!busy.has(t));
    parts=[{t:r,ng:Math.min(c.ngR,Math.max(1,Math.floor(r.length/4))),gd:c.gd},{t:b,ng:Math.ceil(b.length/4),gd:c.gdB}]; }
-  if(c.kind==='final') c.ng=Math.round(teams.length/4);
+  if(c.kind==='final'&&!c.ngFix) c.ng=Math.round(teams.length/4);
   N.drawComp(c,teams,parts); }
  N.drawMail(c); };
 N.drawMail=(c)=>{ const S=G(); if(!(c.teams||[]).includes(S.me)) return; let txt='';
  if(c.groups&&c.groups.length&&c.stage==='groups'){ const g=c.groups.find(g=>g.t.includes(S.me)); txt='Наши соперники'+(g.n?' по группе '+g.n:'')+': '+g.t.filter(t=>t!==S.me).map(t=>S.T[t].f+' '+S.T[t].n).join(', ')+'.'; }
  else if(c.ko&&c.ko[0]){ const t=c.ko[0].find(t=>t.h===S.me||t.a===S.me); if(t){ const o=t.h===S.me?t.a:t.h; const f=N.fixById(t.f); txt='Наш соперник: '+S.T[o].f+' '+S.T[o].n+(t.f1?' (два матча, по сумме; при равенстве — д.в. и пенальти, гол на выезде не учитывается)':' (один матч, при ничьей — д.в. и пенальти)')+'.'; }
   else txt='Мы стартуем со второго раунда (свободны в первом).'; }
- N.mail('Федерация футбола','Жеребьёвка: '+c.n,(c.kind==='final'?'Мы участвуем в финальном турнире! ':'')+txt+' '+N.expectText(c)); S._stop='draw'; N.setExpect(c); };
+ N.mail(c.quick&&c.kind==='y'?'Молодёжный штаб':'Федерация футбола','Жеребьёвка: '+c.n,(c.kind==='final'||c.fin?'Мы участвуем в финальном турнире! ':'')+txt+' '+N.expectText(c)); N.setExpect(c); if(!c.quick){ S._stop='draw'; if(c.drawLog) S._drawC=c.id; } };
 // ---------- Лиги наций ----------
 const NLS={UEFA:{L:['A','B','C','D'],sz:[16,16,16,99],p:'UNL',n:'Лига наций УЕФА',sh:'ЛН'},CONCACAF:{L:['A','B','C'],sz:[16,12,99],p:'CNL',n:'Лига наций КОНКАКАФ',sh:'ЛНК'}};
 N.NLS=NLS;
@@ -186,23 +200,27 @@ N.buildCycle=(Y)=>{ const S=G(); const A=Y,B=Y+1,C=Y+2,E=Y+3,F=Y+4; const id=s=>
  ev(D(F,4,2),id('WC'));
  // окна и товарищеские
  const endD=N.ds(F,8,1); for(const y of [A,B,C,E,F]){ for(const d of N.windowDates(y)) if(d>S.d&&d<endD){ N.addEv(d,'fr'); } for(const m of [3,6,9,10,11]){ const d=N.ds(y,m,WIN[m][0]-6); if(d>S.d&&d<endD) N.addEv(d,'win',{m}); } }
+ if(N.buildExtras) N.buildExtras(Y,endD);
  N.addEv(endD,'cycle',{y:F});
  S.cyc={Y,euroHost,afHost,af2Host,acHost,wcHost};
 };
 // ---------- ожидания федерации ----------
 N.lvlNames=['вылет в группе','выход из группы','1/8 финала','1/4 финала','полуфинал','финал','победа'];
-const isKOonly=c=>c.po||(c.kind==='nl'&&!c.lg);
+const isKOonly=c=>c.po||(c.kind==='nl'&&!c.lg); const isQ=c=>c.kind==='qual'||c.yq;
 N.expectLevel=(c)=>{ const S=G(); const ts=(c.teams||[]).slice().sort((a,b)=>S.T[b].elo-S.T[a].elo); const rk=ts.indexOf(S.me); if(rk<0)return null; const n=ts.length;
+ if(c.cup) return rk===0?6:5;
  if(isKOonly(c)){ if(c.nlpo){ const m=(c.meta||[]).find(m=>m.hi===S.me||m.lo===S.me); if(!m) return 0; return S.T[S.me].elo>=S.T[m.hi===S.me?m.lo:m.hi].elo?1:0; } const slots=c.stopAt||1; return rk<slots*0.8?1:0; }
- if(c.kind==='qual'||c.kind==='nl'){ const slots=c.kind==='nl'?Math.max(1,Math.round(n/4)):c.slots; return rk<slots*0.8?1:0; }
+ if(isQ(c)||c.kind==='nl'){ const slots=c.kind==='nl'?Math.max(1,Math.round(n/4)):c.slots; return rk<slots*0.8?1:0; }
  const pct=rk/n; return pct<0.04?5:pct<0.1?4:pct<0.25?3:pct<0.5?(n>=24?2:1):pct<0.75?1:0; };
 N.expectText=(c)=>{ const l=N.expectLevel(c); if(l===null)return '';
  if(c.nlpo) return l?'Задача: выиграть стыки.':'Задача: дать бой в стыках.';
- if(c.kind==='qual'||c.po) return c.inter? (l?'Задача федерации: пройти в следующий раунд.':'Задача: побороться за выход в следующий раунд.') : (l?'Задача федерации: выйти в финальный турнир.':'Задача: достойно выступить, борьба за выход будет бонусом.');
+ if(isQ(c)||c.po) return c.cup?(l?'Задача: выиграть трофей.':'Задача: достойно сыграть.'):c.inter? (l?'Задача федерации: пройти в следующий раунд.':'Задача: побороться за выход в следующий раунд.') : (l?'Задача федерации: выйти в финальный турнир.':'Задача: достойно выступить, борьба за выход будет бонусом.');
  if(c.kind==='nl') return isKOonly(c)?(l?'Задача: пройти дальше.':'Задача: дать бой фаворитам.'):(l?'Задача: побороться за первое место в группе.':'Задача: сохранить место в лиге.'); return 'Задача федерации: '+N.lvlNames[l]+'.'; };
 N.setExpect=(c)=>{ if(c){G().u.expect[c.id]=N.expectLevel(c);} };
 N.achievedLevel=(c)=>{ const S=G(); const me=S.me;
- if(c.kind==='qual'||c.po) return N.qualOf(c).includes(me)?1:0;
+ if(c.po&&c.cup) return c.w===me?6:(c.teams||[]).includes(me)?(c.ko&&c.ko.length>1&&c.ko[c.ko.length-1].some(t=>t.h===me||t.a===me)?5:4):0;
+ if(isQ(c)||c.po) return N.qualOf(c).includes(me)?1:0;
+ if(c.lw) return c.w===me?6:c.ru===me?5:0;
  if(c.kind==='nl'){ if(isKOonly(c)) return (c.q||[]).includes(me)?1:0; const g=c.groups.find(g=>g.t.includes(me)); return g&&N.table(c,g.n)[0].t===me?1:0; }
  if(!c.ko||!c.ko.length) return 0; if(c.w===me) return 6; let lv=0; c.ko.forEach((rd)=>{ if(rd.some(t=>t.h===me||t.a===me)){ const n=rd.length*2; lv= n===2?5:n===4?4:n===8?3:n===16?2:1; } }); return lv; };
 N.compDone=(c)=>{ const S=G(); const me=S.me; const inC=(c.teams||[]).includes(me);
@@ -210,11 +228,11 @@ N.compDone=(c)=>{ const S=G(); const me=S.me; const inC=(c.teams||[]).includes(m
  if(c.nlpo) N.nlPODone(c);
  if((c.kind==='final'||(c.kind==='nl'&&c.w))&&c.w) N.mail('Новости',(c.n)+': победитель — '+S.T[c.w].n,S.T[c.w].f+' '+S.T[c.w].n+' выигрывает турнир, обыграв в финале '+S.T[c.ru].n+'.');
  if(c.id.startsWith('WC_')||c.id.startsWith('EURO_')) {} 
- if(inC){ const ex=S.u.expect[c.id]??N.expectLevel(c); const got=N.achievedLevel(c); const q=c.kind==='qual'||c.po; const k=c.kind==='final'?7:q?(c.inter?6:12):4; const dt=Math.round(cl((got-ex)*k,-30,25));
+ if(inC){ const ex=S.u.expect[c.id]??N.expectLevel(c); const got=N.achievedLevel(c); const q=(isQ(c)||c.po)&&!c.cup; const k=c.quick?2:c.minor?3:c.kind==='final'?7:q?(c.inter?6:12):4; const dt=Math.round(cl((got-ex)*k,-30,25));
   N.trust(dt); let txt='Итог: «'+c.n+'» — '+(c.nlpo?(got?'стыки выиграны.':'стыки проиграны.'):q?(got?(c.inter?'выход в следующий раунд!':'путёвка завоёвана!'):(c.inter?'дальше пройти не удалось.':'выйти не удалось.')):c.kind==='nl'?(isKOonly(c)?(got?'проходим дальше.':'выбываем.'):(got?'первое место в группе.':'без первого места.')):N.lvlNames[got]+'.')+' Доверие федерации '+(dt>=0?'+':'')+dt+'.';
-  if(q&&got&&!c.inter&&!c.nlpo){S.u.bud+=25; N.ach('qual');}
-  if(c.w===me&&!c.po){ S.u.tro.push({n:c.n,yr:c.yr||S.d.slice(0,4),t:me,d:S.d}); S.u.bud+=c.kind==='final'?80:40; txt+=' 🏆 ТРОФЕЙ! Бюджет федерации пополнен.'; N.ach('trophy'); if(c.id.startsWith('WC'))N.ach('wc'); if(c.kind==='final'&&c.id.match(/EURO|COPA|AFCON|ASIAN|GOLD|OFCNC/))N.ach('cont'); }
-  if(c.kind==='final'){ S.u.bud+=got*8; if(got>=4)N.ach('semi'); if(got>ex)N.ach('over'); }
-  N.mail('Федерация футбола','Итоги: '+c.n,txt); S._stop='comp'; N.checkJob(c.kind==='final'); }
+  if(q&&got&&!c.inter&&!c.nlpo&&!c.quick){S.u.bud+=25; N.ach('qual');}
+  if(c.w===me&&(!c.po||c.cup)){ S.u.tro.push({n:c.n,yr:c.yr||S.d.slice(0,4),t:me,d:S.d}); S.u.bud+=c.quick?10:c.minor?25:c.kind==='final'?80:40; txt+=' 🏆 ТРОФЕЙ! Бюджет федерации пополнен.'; N.ach('trophy'); if(c.id.startsWith('WC'))N.ach('wc'); if(c.kind==='final'&&!c.minor&&c.id.match(/EURO|COPA|AFCON|ASIAN|GOLD|OFCNC/))N.ach('cont'); }
+  if(c.kind==='final'&&!c.minor){ S.u.bud+=got*8; if(got>=4)N.ach('semi'); if(got>ex)N.ach('over'); }
+  N.mail(c.quick&&c.kind==='y'?'Молодёжный штаб':'Федерация футбола','Итоги: '+c.n,txt); if(!c.quick) S._stop='comp'; N.checkJob(c.kind==='final'); }
 };
 })();

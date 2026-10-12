@@ -37,8 +37,8 @@ const FOREIGN={UEFA:'ENG:1 ES:1 DE:1 IT:1 FR:.9 PT:.45 NL:.45 BE:.4 TR:.4 SCO:.2
  CAF:'FR:1 BE:.7 PT:.6 ENG:.7 ES:.5 IT:.5 DE:.5 TR:.5 SA:.5 QA:.2 AE:.2 CH:.2 DK:.15 US:.15',
  AFC:'JP:.5 KR:.3 SA:.4 QA:.4 AE:.4 DE:.3 ENG:.3 NL:.2 BE:.25 PT:.2 CN:.2',OFC:'ENG:.5 US:.5 SCO:.3 AU:.6 NZ:.4'};
 const FW={}; for(const k in FOREIGN){ FW[k]=FOREIGN[k].split(' ').map(x=>{const [c,w]=x.split(':');return [c,+w]}); }
-function leagueLvl(cc,div){ const L=N.LEAGUES[cc]; const t=SS.T[cc]; let v=L?L[0]:(t?t.r-6:50); if(div===2)v-=13; return v; }
-function clubsOf(key){ const S=SS; S.clubs=S.clubs||{}; if(!S.clubs[key]){ const cc=key.split('_')[0]; const L=N.LEAGUES[cc]; const t=SS.T[cc]; const lang=L?L[1]:(t?t.pool.split('+')[0]:'en'); S.clubs[key]=N.clubList(cc,lang); } return S.clubs[key]; }
+N.leagueLvl=(a,b)=>leagueLvl(a,b); function leagueLvl(cc,div){ const L=N.LEAGUES[cc]; const t=SS.T[cc]; let v=L?L[0]:(t?t.r-6:50); if(div===2)v-=13; return v; }
+N.clubsOf=clubsOf; function clubsOf(key){ const S=SS; S.clubs=S.clubs||{}; if(!S.clubs[key]){ const cc=key.split('_')[0]; const L=N.LEAGUES[cc]; const t=SS.T[cc]; const lang=L?L[1]:(t?t.pool.split('+')[0]:'en'); S.clubs[key]=N.clubList(cc,lang); } return S.clubs[key]; }
 N.assignClub=(p,nat)=>{ const S=SS; const t=S.T[nat]||S.T[p.t]; const o=p.o; const cands=[];
  const add=(cc,div,w)=>{ if(!S.T[cc])return; const L=leagueLvl(cc,div); if(o>L+9||o<L-16)return; const fit=Math.exp(-Math.pow((o-(L-3))/6.5,2)); cands.push([cc,div,w*fit,L]); };
  add(t.c,1,1.6); if(N.LEAGUES[t.c]) add(t.c,2,1.4);
@@ -97,10 +97,10 @@ N.autoLineup=(players,form)=>{ const F=N.FORMS[form]; const used=new Set(); cons
  return {form,xi,bench}; };
 // ---------- новая игра ----------
 N.newGame=(team,coach)=>{
- const S={v:3,clubs:{},nl:{},d:'2026-08-01',me:team,coach:coach||'Тренер',nid:1,nfid:1,P:{},T:{},C:{},F:[],E:[],arch:[],
+ const S={v:4,clubs:{},nl:{},d:'2026-08-01',me:team,coach:coach||'Тренер',nid:1,nfid:1,P:{},T:{},C:{},F:[],E:[],arch:[],
   u:{trust:55,call:[],xi:null,tac:{ment:0,press:1,tempo:1,width:1,style:'mix'},instr:{},train:{f:'bal',i:1},infra:{base:1,acad:1,med:1,scout:1,stad:1},bud:30,scoutLeft:1,mail:[],tro:[],ach:{},stat:{w:0,d:0,l:0,gf:0,ga:0},u21:{res:[]},teams:[{c:team,from:'2026-08-01'}],found:[],press:null,win:0,expect:{}},log:[]};
  SS=S; for(const t of N.TEAMS){ S.T[t.c]={...t,elo:Math.round(1000+(t.r-40)*20+gauss()*25),form:pick(['4-3-3','4-2-3-1','4-4-2','4-3-3','4-2-3-1','3-5-2','4-1-4-1','5-3-2']),pl:[]}; }
- for(const c in S.T) N.genPool(c, c===team?40:23);
+ N.seedPts(S); for(const c in S.T) N.genPool(c, c===team?40:23); S.u.prs=30; S.u.fan=60; S.u.yres=[]; N.y17Fill();
  for(const c in S.T) N.teamStr(c);
  S.C.FR={id:'FR',n:'Товарищеские матчи',sh:'ТМ',kind:'fr',groups:[],stage:'groups'};
  N.buildCycle(2026);
@@ -155,7 +155,7 @@ N.playFix=(f,m)=>{ // m — завершённый Match
   if(p.t===S.me&&user){ p.rh.push([S.d,P.rt,c.sh||'ТМ',P.g,P.a]); if(p.rh.length>120)p.rh.shift(); }
  }
  if(user){ r.det={st:m.st,ps:Object.entries(m.ps).map(([id,P])=>[+id,S.P[id]?S.P[id].n:'?',P.side,P.rt,P.g,P.a,P.min,P.role,P.yc,P.rc,P.inj?1:0,P.sv]),ev:m.ev.filter(e=>['goal','yc','rc','sub','inj','pk','var'].includes(e.t)).map(e=>[e.ml||e.m,e.t,e.side,e.txt])}; f.u=1; }
- f.r=r; N.eloUpd(f,r.hg,r.ag);
+ f.r=r; N.eloUpd(f,r.hg,r.ag); N.fifaUpd(f);
  if(user) N.afterUser(f,m);
  N.onFixDone(f);
 };
@@ -181,14 +181,14 @@ N.venue=(f)=>{ if(f.vn) return f.vn; const S=SS; const c=S.C[f.c]; const ht=S.T[
  const r=R(); let wx= cold&&r<.12?'snow': r<.2?'rain': hot&&r<.55?'heat': r<.3?'wind': r<.55?'cloud':'clear';
  const big= c&&c.kind==='final'; let cap=Math.round(cl(6000+(hostT.elo-1050)*55+ (R()-.5)*8000, 4000, 85000)/500)*500; if(big) cap=Math.max(cap, ri(35,80)*1000); if(f.neu&&!big) cap=Math.min(cap,ri(15,40)*1000);
  const imp=(c&&c.kind==='fr'?0:0.15)+(f.ko?0.12:0)+(big?0.2:0); const opp=(at.elo+ht.elo)/2; let fill=cl(0.42+imp+(opp-1500)/1500+(R()-.5)*0.25+(ht.elo<1300?-0.08:0),0.2,1);
- if(f.neu&&!big) fill=cl(fill-0.2,0.15,1);
+ if(f.neu&&!big) fill=cl(fill-0.2,0.15,1); if(!f.neu&&f.h===S.me) fill=cl(fill+((S.u.fan??60)-55)/250,0.15,1);
  f.vn={wx,cap,att:Math.round(cap*fill/100)*100,fill:+fill.toFixed(2)}; return f.vn; };
 N.matchOpts=(f,auto)=>{ const v=N.venue(f); let agg=null; if(f.leg===2){ const l1=N.fixById(f.l1); if(l1&&l1.r) agg=[l1.r.ag,l1.r.hg]; }
  return {ko:!!f.ko&&f.leg!==1,neutral:!!f.neu,agg,wx:v.wx,hf:f.neu?0:0.55+0.45*v.fill,autoUser:!!auto}; };
 N.simFix=(f)=>{ const h=N.setup(f.h,f), a=N.setup(f.a,f); const m=new N.Match(h,a,N.matchOpts(f,true)); m.sim(); N.playFix(f,m); return m; };
 // ---------- товарищеские ----------
-N.busy=(c,d)=>SS.F.some(f=>f.d===d&&(f.h===c||f.a===c));
-N.evFr=(e)=>{ const S=SS; const d=e.d; const busy=new Set(); for(const f of S.F) if(f.d===d){busy.add(f.h);busy.add(f.a);} // команды в финальном турнире не играют
+N.busy=(c,d)=>SS.F.some(f=>f.d===d&&!f.y&&(f.h===c||f.a===c));
+N.evFr=(e)=>{ const S=SS; const d=e.d; const busy=new Set(); for(const f of S.F) if(f.d===d&&!f.y){busy.add(f.h);busy.add(f.a);} // команды в финальном турнире не играют
  for(const c of Object.values(S.C)) if(c.kind==='final'&&c.stage!=='pending'&&c.stage!=='done') c.teams.forEach(t=>busy.add(t));
  const idle=shuffle(Object.keys(S.T).filter(c=>!busy.has(c)&&c!==S.me&&R()<0.7));
  const byConf={}; idle.forEach(c=>{(byConf[S.T[c].conf]=byConf[S.T[c].conf]||[]).push(c)}); const left=[];
@@ -204,7 +204,7 @@ N.evYear=(e)=>{ const S=SS; const y=+e.d.slice(0,4); const me=S.me; const notes=
   for(const id of t.pl){ const p=S.P[id]; if(!p||p.ret)continue; p.age++; N.develop(p,c===me); 
    const retire = (p.age>=34&&R()<0.3+(p.age-34)*0.2)||(p.age>=31&&p.o<t.r-12&&R()<.35)||p.age>=40;
    if(retire){ if(c===me){p.ret=S.d.slice(0,4); if(p.caps>=20)notes.push(p.n+' ('+p.age+', '+p.caps+' матчей)');} else delete S.P[id]; continue; }
-   if(R()<.12) p.club=N.clubFor(p.o,c); keep.push(id); }
+   if(R()<.12) N.assignClub(p,c); keep.push(id); }
   // слабейших отсеиваем из широкого списка ИИ
   let pl=keep; if(c!==me&&pl.length>target+3){ pl.sort((a,b)=>S.P[b].o-S.P[a].o); pl.slice(target+3).forEach(id=>delete S.P[id]); pl=pl.slice(0,target+3); }
   const acad=c===me?S.u.infra.acad:1; const nYouth=Math.max(c===me?2+acad:1,target-pl.length);
@@ -244,8 +244,8 @@ N.evCycle=(e)=>{ const S=SS; // архив старых турниров
 N.topScorers=(cid)=>{ const m={}; for(const f of SS.F){ if(f.c!==cid||!f.r)continue; for(const s of f.r.sc){ const k=s[0]; const team=s[2]===0?f.h:f.a; if(!m[k])m[k]={id:k,n:s[1],t:team,g:0,a:0}; m[k].g++; } for(const s of f.r.sc) if(s[5]){ const k=s[5]; if(!m[k]){const p=SS.P[k]; m[k]={id:k,n:p?p.n:'?',t:s[2]===0?f.h:f.a,g:0,a:0};} m[k].a++; } }
  return Object.values(m).filter(x=>x.g>0).sort((a,b)=>b.g-a.g||b.a-a.a); };
 // ---------- шаг календаря ----------
-N.userFixToday=()=>SS.F.find(f=>f.d===SS.d&&!f.r&&(f.h===SS.me||f.a===SS.me));
-N.processToday=()=>{ const S=SS; for(const f of S.F.filter(f=>f.d===S.d&&!f.r)){ if(f.h===S.me||f.a===S.me)continue; N.simFix(f); } };
+N.userFixToday=()=>SS.F.find(f=>f.d===SS.d&&!f.r&&!f.y&&(f.h===SS.me||f.a===SS.me));
+N.processToday=()=>{ const S=SS; for(const f of S.F.filter(f=>f.d===S.d&&!f.r)){ if(f.y){ N.quickFix(f); continue; } if(f.h===S.me||f.a===S.me)continue; N.simFix(f); } };
 N.advance=(opt={})=>{ const S=SS; S._stop=null; let guard=0;
  while(guard++<2000){
   const uf=N.userFixToday(); if(uf&&!opt.autoUser) return {stop:'match',f:uf};
