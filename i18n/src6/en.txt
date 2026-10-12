@@ -273,3 +273,6 @@ Chest band
 The contract with {0} has expired. Review the new offers.
 Pairs are seeded by FIFA ranking; teams from the same confederation cannot meet in the first round.
 All teams are from one confederation, so no extra restrictions apply.
+FIFA development programme
+Federation running costs
+We hosted this tournament recently — a new bid is not possible yet

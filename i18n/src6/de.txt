@@ -273,3 +273,6 @@ Brustband
 Der Vertrag mit {0} ist ausgelaufen. Prüfen Sie neue Angebote.
 Paarungen nach FIFA-Rang gesetzt; Teams derselben Konföderation treffen in Runde 1 nicht aufeinander.
 Alle Teams stammen aus einer Konföderation, daher keine weiteren Einschränkungen.
+FIFA-Förderprogramm
+Betriebskosten des Verbands
+Wir waren erst kürzlich Gastgeber dieses Turniers — eine neue Bewerbung ist noch nicht möglich

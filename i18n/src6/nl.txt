@@ -273,3 +273,6 @@ Borstband
 Het contract met {0} is verlopen. Bekijk de nieuwe aanbiedingen.
 Duels volgens FIFA-ranking; teams uit dezelfde confederatie treffen elkaar niet in de eerste ronde.
 Alle teams komen uit één confederatie, dus geen extra beperkingen.
+FIFA-ontwikkelingsprogramma
+Exploitatiekosten van de bond
+We hebben dit toernooi onlangs georganiseerd — een nieuwe kandidatuur is nog niet mogelijk

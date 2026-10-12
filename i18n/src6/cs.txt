@@ -273,3 +273,6 @@ Pás přes hruď
 Smlouva s {0} vypršela. Prohlédněte si nové nabídky.
 Dvojice podle žebříčku FIFA; týmy ze stejné konfederace se v prvním kole nepotkají.
 Všechny týmy jsou z jedné konfederace, takže žádná další omezení neplatí.
+Rozvojový program FIFA
+Provozní náklady svazu
+Tento turnaj jsme nedávno pořádali — nová kandidatura zatím není možná

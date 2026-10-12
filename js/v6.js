@@ -73,19 +73,24 @@ const _pf=N.playFix; N.playFix=(f,m)=>{ _pf(f,m); const S=G(); if(!f.u||!f.r||!f
  // билеты и ТВ
  const c=S.C[f.c]; const kind=c?c.kind:'fr'; const rk=rankOf(S.me);
  add('tv',+(((kind==='final'?2:kind==='fr'?0.4:1))*(1+(210-rk)/280)).toFixed(2));
- if(f.vn&&f.vn.st&&(f.h===S.me||(c&&(c.host===S.me||c.co===S.me)))) add('tix',+((f.vn.att/10000)*(0.3+0.06*(f.vn.q||3))*(kind==='fr'?0.8:1.2)).toFixed(2));
+ if(f.vn&&f.vn.st&&(f.h===S.me||(c&&(c.host===S.me||c.co===S.me)))) add('tix',+((f.vn.att/10000)*(0.45+0.09*(f.vn.q||3))*(kind==='fr'?0.9:1.3)).toFixed(2));
 };
 // сыгранность в силе команды
 const _calc=MP.calc; MP.calc=function(){ _calc.call(this); const S=G(); if(!S||!S.u.fam) return; for(const s of [0,1]) if(this.t[s].user&&this.str[s]){ const k=1+0.03*(S.u.fam.tac-50)/50; this.str[s].a*=k; this.str[s].d*=k; this.str[s].m*=k; } };
 // ---------- экономика ----------
 function add(k,v){ const S=G(); const m=S.u.eco.m; m[k]=+((m[k]||0)+v).toFixed(2); S.u.bud=+(S.u.bud+v).toFixed(2); }
 V6.add=add;
+const ECO={ops:8}; V6.ECO=ECO;
+// призовые/бонусы — явной статьёй (раньше считались остатком)
+N.prize=(v)=>{ const S=G(); if(S.u.eco) add('prize',v); else S.u.bud=+(S.u.bud+v).toFixed(2); };
 V6.ecoMonth=()=>{ const S=G(); const u=S.u; const rk=rankOf(S.me); const tro=u.tro.filter(t=>N.diffD(t.d,S.d)<1460).length;
- add('spon',+(0.3+2.3*Math.pow(1-rk/211,2)+0.2*tro+(u.trust-50)/120).toFixed(2));
- add('merch',+((((u.fan??60)/100)*1.4*(1-rk/260)+0.1)*(N.v7&&u.kit?N.v7.merchK():1)).toFixed(2));
+ add('spon',+(0.2+1.5*Math.pow(1-rk/211,2)+0.15*tro+(u.trust-50)/150).toFixed(2));
+ add('fifa',0.8); // программа развития ФИФА
+ { const tr=S.T[S.me].r; add('ops',-+(0.3+ECO.ops*Math.pow(cl((tr-35)/60,0,1),3)).toFixed(2)); } // содержание федерации ~ размер страны
+ add('merch',+((((u.fan??60)/100)*0.8*(1-rk/260)+0.05)*(N.v7&&u.kit?N.v7.merchK():1)).toFixed(2));
  add('staff',-+(0.35*u.staff).toFixed(2));
  add('fac',-+(0.12*Object.values(u.infra).reduce((a,b)=>a+b,0)).toFixed(2));
- add('stad',-+((u.st||[]).filter(s=>!s.rd).reduce((a,s)=>a+s.cap/1000*0.0028*(1+0.2*s.q),0)).toFixed(2));
+ add('stad',-+((u.st||[]).filter(s=>!s.rd).reduce((a,s)=>a+s.cap/1000*0.0013*(1+0.2*s.q),0)).toFixed(2));
  // строительство
  for(const s of u.st||[]) if(s.rd&&s.rd<=S.d){ const done=s.up; delete s.rd; if(s.up){ if(s.up.cap)s.cap+=s.up.cap; if(s.up.q)s.q=Math.min(5,s.q+1); delete s.up; } N.mail(_t("Федерация футбола"),_t("Стадион готов"),_t("Работы на стадионе в городе {0} завершены. Вместимость: {1}.",s.city,NFM_I18N.num(s.cap))); }
  if(S.cheat&&u.chm) u.bud=Math.max(u.bud,9999);
@@ -93,7 +98,7 @@ V6.ecoMonth=()=>{ const S=G(); const u=S.u; const rk=rankOf(S.me); const tro=u.t
  // итог месяца: «прочее» — призовые и бонусы за результаты
  const rec=Object.values(u.eco.m).reduce((a,b)=>a+b,0); const other=+(u.bud-u.eco.b0-rec).toFixed(2); if(Math.abs(other)>0.01) u.eco.m.prize=+((u.eco.m.prize||0)+other).toFixed(2);
  u.eco.h.push({d:S.d.slice(0,7),...u.eco.m}); if(u.eco.h.length>36) u.eco.h.shift(); u.eco.m={}; u.bud=Math.round(u.bud*10)/10; u.eco.b0=u.bud;
- if(u.bud<0&&!S.cheat){ N.trust(-2); N.mail(_t("Федерация футбола"),_t("Бюджет в минусе"),_t("Расходы превышают доходы. Сократите персонал или содержание объектов.")); } };
+ if(u.bud<0&&!S.cheat){ N.trust(u.bud<-25?-4:-2); N.mail(_t("Федерация футбола"),_t("Бюджет в минусе"),_t("Расходы превышают доходы. Сократите персонал или содержание объектов.")); } };
 const _month=N.fn.month; N.fn.month=(e)=>{ _month(e); if(G().u.eco) V6.ecoMonth(); };
 V6.STAFF=[0,1,2,3,4,5];
 // стадионы: строительство и расширение
@@ -126,7 +131,7 @@ N.training=()=>{ const S=G(); const t=S.u.tr2; if(!t) return; if(t.auto) V6.auto
  let tacN=0,spN=0; const inj=[0.004,0.012,0.035][t.i]*(1-0.1*(S.u.infra.med-1))*(1-0.05*(S.u.staff-2));
  for(const id of S.u.call){ const p=S.P[id]; if(!p) continue; const g=N.POS[p.pos][1]; const foc=t.pl[id]||t.g[g]||'bal';
   const ks=(map[foc]||map.bal).filter(k=>p.pos==='GK'?['gk','phy','pas'].includes(k):k!=='gk'); const young=p.age<=24?1.5:p.age>=31?0.5:1;
-  if(p.o<p.pot||p.age<=29){ for(const k of ks) if(R()<0.22*int*staff*young/ks.length*2) p[k]=Math.min(99,p[k]+1); }
+  if(p.o<p.pot){ for(const k of ks) if(R()<0.22*int*staff*young/ks.length*2) p[k]=Math.min(99,p[k]+1); }
   if(foc==='rest'){ p.fit=100; p.mor=cl(p.mor+4,5,100); } if(foc==='fit') p.fit=Math.min(100,p.fit+8); if(foc==='tac'){ tacN++; p.form=+cl(p.form+0.15,3,10).toFixed(2); } if(foc==='sp') spN++;
   if(t.i===0) p.fit=Math.min(100,p.fit+10); else if(t.i===2) p.fit=Math.max(60,p.fit-6);
   if(foc!=='rest'&&R()<inj){ p.inj=ri(3,14); N.mail(_t("Медицинский штаб"),_t("Травма на тренировке"),_t("{0} травмировался на интенсивной тренировке и выбыл на {1} дн.",(p.n),(p.inj))); }
@@ -139,12 +144,19 @@ V6.cheatOn=()=>{ const S=G(); S.cheat=1; };
 // ---------- заявки на проведение турниров ----------
 const BIDK={EURO:{conf:'UEFA',need:6,cap:30000,n:()=>_t("Чемпионат Европы {0}"),off:2},ASIAN:{conf:'AFC',need:5,cap:20000,n:()=>_t("Кубок Азии {0}"),off:1},AFCON:{conf:'CAF',need:5,cap:20000,n:()=>_t("Кубок Африки {0}"),off:1},AFCON2:{conf:'CAF',need:5,cap:20000,n:()=>_t("Кубок Африки {0}"),off:3},WC:{conf:'ALL',need:10,cap:40000,n:()=>_t("Чемпионат мира {0}"),off:4}};
 V6.BIDK=BIDK;
-N.wcRot=()=>{ const S=G(); return (S.wcH||[]).slice(-2).map(x=>x.conf); };
+const WCH0=[{y:2026,c:'US',conf:'CONCACAF'}];
+N.wcRot=()=>{ const S=G(); return (S.wcH||WCH0).slice(-2).map(x=>x.conf); };
 function openBids(Y){ const S=G(); const F=Y+4; const vote=(m,d)=>N.ds(Y+3,m,d);
  const list=[['ASIAN',vote(3,15)],['AFCON',vote(3,15)],['WC',vote(5,20)],['EURO',vote(9,20)],['AFCON2',vote(9,20)]].map(([k,vd])=>({k,yr:F+BIDK[k].off,vd,u:null,res:null}));
  S.bids={Y:F,list}; for(const b of list) if(vd(b)>S.d) N.addEv(b.vd,'fn',{fn:'bidv',k:b.k}); function vd(b){return b.vd;} }
 V6.openBids=openBids;
-V6.eligible=(b,c)=>{ const S=G(); const t=S.T[c||S.me]; const K=BIDK[b.k]; if(K.conf==='ALL') return t.conf!=='OFC'||true?!N.wcRot().includes(t.conf):false; return t.conf===K.conf; };
+// кулдаун хозяев: ЧМ — не чаще раза в 20 лет (включая соорганизацию), континентальные — раз в 12 лет
+V6.COOL={WC:20,EURO:12,ASIAN:12,AFCON:12,AFCON2:12};
+V6.recentHost=(k,c,yr)=>{ const S=G(); const cd=V6.COOL[k]||12; if(k==='WC'&&(S.wcH||WCH0).some(x=>(x.c===c||x.co===c)&&x.y<yr&&x.y>yr-cd)) return true;
+ const keys=k==='AFCON'||k==='AFCON2'?['AFCON','AFCON2']:[k]; for(const kk of keys) for(let y=yr-cd+1;y<yr;y++){ if((S.hosts||{})[kk+y]===c||(S.hostsCo||{})[kk+y]===c) return true; } return false; };
+V6.cooldown=(b,c)=>V6.recentHost(b.k,c||G().me,b.yr);
+V6.confOK=(b,c)=>{ const S=G(); const t=S.T[c||S.me]; const K=BIDK[b.k]; if(K.conf==='ALL') return !N.wcRot().includes(t.conf); return t.conf===K.conf; };
+V6.eligible=(b,c)=>V6.confOK(b,c)&&!V6.cooldown(b,c);
 V6.bidPower=(c,co)=>{ const S=G(); const me=c===S.me; const K=null; const t=S.T[c];
  const sts=me?S.u.st.filter(s=>!s.rd||s.rd<'9999'):null; let stad,inf,qual,bud;
  if(me){ const all=S.u.st; stad=all.filter(s=>s.cap>=20000).length+all.filter(s=>s.cap>=40000).length*0.5; qual=all.reduce((a,s)=>a+s.q,0)/Math.max(1,all.length); inf=Object.values(S.u.infra).reduce((a,b)=>a+b,0)/5; bud=S.u.bud; }
@@ -155,13 +167,21 @@ V6.bidScore=(b,c,co)=>{ const K=BIDK[b.k]; const a=V6.bidPower(c); let st=a.stad
 V6.bidReq=(b)=>{ const S=G(); const K=BIDK[b.k]; const big=S.u.st.filter(s=>!s.rd&&s.cap>=K.cap*0.5).length; return {need:K.need,cap:K.cap,have:big}; };
 V6.submitBid=(k,co)=>{ const S=G(); const b=S.bids&&S.bids.list.find(x=>x.k===k); if(!b||b.res||b.u) return false; if(S.u.bud<10) return false; S.u.bud-=10; S.u.eco.b0-=10; S.u.eco.m.build=+((S.u.eco.m.build||0)-10).toFixed(2); b.u={co:co||null}; return true; };
 V6.withdraw=(k)=>{ const S=G(); const b=S.bids.list.find(x=>x.k===k); if(b&&!b.res) b.u=null; };
-V6.rivals=(b)=>{ const S=G(); const K=BIDK[b.k]; const r=rng(hs('rv'+b.k+b.yr)); const ex=new Set([S.me]); for(const x of S.bids.list) if(x.res&&x.res.w) ex.add(x.res.w);
- let pool=Object.values(S.T).filter(t=>!ex.has(t.c)&&(K.conf==='ALL'?t.conf!=='OFC'&&!N.wcRot().includes(t.conf):t.conf===K.conf)).sort((a,b)=>b.elo-a.elo).slice(0,K.conf==='ALL'?20:12);
- const n=2+Math.floor(r()*3); const out=[]; while(out.length<n&&pool.length){ const t=wpick(pool,t=>Math.pow(t.r-50,2),r); pool=pool.filter(x=>x!==t); out.push(t.c); } return out; };
+V6.rivalsCo=(b)=>{ const S=G(); const K=BIDK[b.k]; const r=rng(hs('rv'+b.k+b.yr)); const ex=new Set([S.me]); for(const x of S.bids.list) if(x.res&&x.res.w){ ex.add(x.res.w); if(x.res.co) ex.add(x.res.co); }
+ const ok=t=>!ex.has(t.c)&&(K.conf==='ALL'?t.conf!=='OFC'&&!N.wcRot().includes(t.conf):t.conf===K.conf)&&!V6.recentHost(b.k,t.c,b.yr);
+ let pool=Object.values(S.T).filter(ok).sort((a,b)=>b.elo-a.elo).slice(0,K.conf==='ALL'?20:12);
+ const n=2+Math.floor(r()*3); const out=[]; const used=new Set();
+ while(out.length<n&&pool.length){ const t=wpick(pool,t=>Math.pow(t.r-50,2),r); pool=pool.filter(x=>x!==t); if(used.has(t.c)) continue;
+  // вместимость: маленькой стране нужен соорганизатор, без него заявка не проходит требования
+  const st=V6.bidPower(t.c).stad; let co=null;
+  if(st<K.need){ const cs=Object.values(S.T).filter(x=>x.c!==t.c&&x.conf===t.conf&&!used.has(x.c)&&ok(x)).map(x=>[x.c,V6.bidPower(x.c).stad]).sort((a,b)=>b[1]-a[1]);
+   if(cs.length&&st+cs[0][1]*0.8>=K.need) co=cs[0][0]; else continue; }
+  used.add(t.c); if(co) used.add(co); out.push({c:t.c,co}); } return out; };
+V6.rivals=(b)=>V6.rivalsCo(b).map(x=>x.c);
 N.fn.bidv=(e)=>{ const S=G(); const b=S.bids&&S.bids.list.find(x=>x.k===e.k); if(!b||b.res) return;
- const cands=V6.rivals(b).map(c=>({c,co:null,s:V6.bidScore(b,c)+R()*8})); if(b.u&&V6.eligible(b)) cands.push({c:S.me,co:b.u.co,s:V6.bidScore(b,S.me,b.u.co)+R()*8,me:1});
+ const cands=V6.rivalsCo(b).map(x=>({c:x.c,co:x.co,s:V6.bidScore(b,x.c,x.co)+R()*8})); if(b.u&&V6.eligible(b)) cands.push({c:S.me,co:b.u.co,s:V6.bidScore(b,S.me,b.u.co)+R()*8,me:1});
  cands.sort((x,y)=>y.s-x.s); const w=cands[0]; b.res={w:w.c,co:w.co,sc:cands.map(x=>[x.c,Math.round(x.s)])};
- S.hosts[b.k+b.yr]=w.c; if(w.co) S.hostsCo[b.k+b.yr]=w.co; if(b.k==='WC') S.wcH.push({y:b.yr,c:w.c,conf:S.T[w.c].conf});
+ S.hosts[b.k+b.yr]=w.c; if(w.co) S.hostsCo[b.k+b.yr]=w.co; if(b.k==='WC') S.wcH.push({y:b.yr,c:w.c,co:w.co||undefined,conf:S.T[w.c].conf});
  const nm=BIDK[b.k].n().replace('{0}',b.yr); const list=cands.map((x,i)=>`${i+1}. ${S.T[x.c].f} ${S.T[x.c].n}${x.co?' + '+S.T[x.co].n:''} — ${Math.round(x.s)}`).join('<br>');
  if(b.u){ if(w.me){ N.trust(8); S.u.fan=Math.min(100,(S.u.fan??60)+10); N.mail(_t("Федерация футбола"),`🎉 ${nm}`,`${_t("Мы выиграли право провести турнир! Сборная квалифицирована автоматически.")}<br>${list}`); }
   else N.mail(_t("Федерация футбола"),nm,`${_t("Наша заявка проиграла голосование. Хозяин турнира")}: ${S.T[w.c].n}.<br>${list}`); }

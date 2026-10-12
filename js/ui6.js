@@ -27,7 +27,7 @@ const _hub=SCR.hub; SCR.hub=()=>{ _hub(); const s=S(); const tl=(i,t,fn)=>`<div 
  const tiles=V().querySelector('.tiles.hub'); if(tiles) tiles.insertAdjacentHTML('afterend',extra); else V().insertAdjacentHTML('beforeend',extra);
  const k=V().querySelector('.kpis'); if(k&&s.cheat) k.insertAdjacentHTML('beforeend',`<span class="chip"><b class="red">${_t("чит")}</b></span>`); };
 // ===== экономика и стадионы =====
-const ECO=()=>({spon:_t("Спонсоры"),tv:_t("ТВ-права"),tix:_t("Билеты"),merch:_t("Мерчендайз"),kit:_t("Технический спонсор"),fee:_t("Гонорары за матчи"),prize:_t("Призовые и бонусы"),staff:_t("Персонал"),fac:_t("Объекты"),stad:_t("Содержание стадионов"),build:_t("Стройка и заявки")});
+const ECO=()=>({spon:_t("Спонсоры"),tv:_t("ТВ-права"),tix:_t("Билеты"),merch:_t("Мерчендайз"),kit:_t("Технический спонсор"),fee:_t("Гонорары за матчи"),prize:_t("Призовые и бонусы"),staff:_t("Персонал"),fac:_t("Объекты"),stad:_t("Содержание стадионов"),build:_t("Стройка и заявки"),fifa:_t("Программа развития ФИФА"),ops:_t("Содержание федерации")});
 SCR.eco=()=>{ top(_t("Экономика и стадионы")); const s=S(), u=s.u; const E=ECO(); const h=u.eco.h.slice(-12); const sum={}; for(const m of h) for(const k in E) sum[k]=(sum[k]||0)+(m[k]||0);
  const cur=u.eco.m; const row=(k)=>{ const v=sum[k]||0, c=cur[k]||0; return `<tr><td class="l">${E[k]}</td><td class="${c<0?'red':c>0?'grn':'mut'}">${sign(c)}</td><td class="${v<0?'red':v>0?'grn':'mut'}">${sign(v)}</td></tr>`; };
  const inc=Object.keys(E).filter(k=>(sum[k]||0)>=0&&k!=='staff'&&k!=='fac'&&k!=='stad'&&k!=='build'), exp=['staff','fac','stad','build'];
@@ -59,7 +59,7 @@ SCR.bids=()=>{ top(_t("Заявки на турниры")); const s=S(); const b
   const riv=x.res?'':`<div class="xs mut">${_t("Соперники")}: ${V6.rivals(x).map(c=>`${fl(c)} ${esc(T(c).n)} (~${Math.round(V6.bidScore(x,c))})`).join(', ')}</div>`;
   const coSel=`<select id="co_${x.k}"><option value="">${_t("без соорганизатора")}</option>${Object.values(s.T).filter(t=>t.c!==s.me&&(K.conf==='ALL'?t.conf===me.conf:t.conf===K.conf)).sort((a,b)=>a.n.localeCompare(b.n)).map(t=>`<option value="${t.c}">${esc(t.n)}</option>`).join('')}</select>`;
   return `<div class="card"><h3>${N.fmtD(x.vd,1)} · ${esc(nm)}</h3>${res}${riv}
-  ${x.res?'':!el?`<div class="sm red">${_t("Ваша конфедерация не может подать заявку")}</div>`:x.u?`<div class="sm grn">${_t("Заявка подана")}${x.u.co?' + '+esc(T(x.u.co).n):''} · ${_t("оценка")} ~${my}</div><button class="btn sm" onclick="UI.v6wd('${x.k}')">${_t("Отозвать")}</button>`:
+  ${x.res?'':!el?`<div class="sm red">${V6.confOK(x)?_t("Мы недавно принимали этот турнир — повторная заявка пока невозможна"):_t("Ваша конфедерация не может подать заявку")}</div>`:x.u?`<div class="sm grn">${_t("Заявка подана")}${x.u.co?' + '+esc(T(x.u.co).n):''} · ${_t("оценка")} ~${my}</div><button class="btn sm" onclick="UI.v6wd('${x.k}')">${_t("Отозвать")}</button>`:
    `<div class="sm">${_t("Стадионов от {0}: {1} из {2}",num(K.cap/2),rq.have,rq.need)} · ${_t("оценка")} ~${my}</div><div class="grid2">${coSel}<button class="btn g" onclick="UI.v6bid('${x.k}')">${_t("Подать заявку")}</button></div>`}</div>`; }).join('')}
  <div class="card"><h3>${_t("Хозяева ЧМ")}</h3>${s.wcH.map(x=>`<div class="row"><span>${x.y}</span><div class="f1">${tf(x.c)} ${esc(T(x.c).n)}</div><span class="sm mut">${x.conf}</span></div>`).join('')}</div>`; };
 function v6bid(k){ const co=(document.getElementById('co_'+k)||{}).value||null; if(V6.submitBid(k,co)){ toast(_t("Заявка подана")); save(); refresh(); } else toast(_t("Недостаточно бюджета")); }

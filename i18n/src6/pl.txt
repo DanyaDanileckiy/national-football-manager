@@ -273,3 +273,6 @@ Pas na piersi
 Kontrakt z {0} wygasł. Przejrzyj nowe oferty.
 Pary według rankingu FIFA; drużyny z tej samej konfederacji nie trafiają na siebie w pierwszej rundzie.
 Wszystkie drużyny są z jednej konfederacji, więc nie ma dodatkowych ograniczeń.
+Program rozwoju FIFA
+Koszty utrzymania federacji
+Niedawno organizowaliśmy ten turniej — nowa kandydatura nie jest jeszcze możliwa

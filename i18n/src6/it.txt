@@ -273,3 +273,6 @@ Banda sul petto
 Il contratto con {0} è scaduto. Valuta le nuove offerte.
 Accoppiamenti secondo il ranking FIFA; squadre della stessa confederazione non si affrontano al primo turno.
 Tutte le squadre sono di una sola confederazione: nessuna restrizione aggiuntiva.
+Programma di sviluppo FIFA
+Costi di gestione della federazione
+Abbiamo ospitato questo torneo di recente: una nuova candidatura non è ancora possibile

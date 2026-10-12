@@ -273,3 +273,6 @@ Faixa no peito
 O contrato com {0} terminou. Veja as novas ofertas.
 Confrontos definidos pelo ranking FIFA; seleções da mesma confederação não se enfrentam na primeira fase.
 Todas as seleções são de uma confederação, então não há restrições adicionais.
+Programa de desenvolvimento da FIFA
+Custos de funcionamento da federação
+Recebemos este torneio recentemente — ainda não é possível uma nova candidatura

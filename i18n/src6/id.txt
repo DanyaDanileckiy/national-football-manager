@@ -273,3 +273,6 @@ Pita dada
 Kontrak dengan {0} berakhir. Tinjau tawaran baru.
 Pasangan diunggulkan menurut peringkat FIFA; tim satu konfederasi tidak bertemu di babak pertama.
 Semua tim dari satu konfederasi, jadi tidak ada batasan tambahan.
+Program pengembangan FIFA
+Biaya operasional federasi
+Kami baru saja menjadi tuan rumah turnamen ini — pengajuan baru belum dimungkinkan

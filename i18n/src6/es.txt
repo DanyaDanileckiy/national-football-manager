@@ -273,3 +273,6 @@ Franja pectoral
 El contrato con {0} ha vencido. Revise las nuevas ofertas.
 Emparejamientos según el ranking FIFA; equipos de la misma confederación no se cruzan en la primera ronda.
 Todos los equipos son de una confederación, así que no hay restricciones adicionales.
+Programa de desarrollo de la FIFA
+Gastos de funcionamiento de la federación
+Acogimos este torneo hace poco: aún no es posible una nueva candidatura
