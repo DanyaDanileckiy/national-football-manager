@@ -72,7 +72,7 @@ const _pf=N.playFix; N.playFix=(f,m)=>{ _pf(f,m); const S=G(); if(!f.u||!f.r||!f
  const fam=S.u.fam; if(f.r.fm){ if(fam.f===f.r.fm) fam.tac=Math.min(100,fam.tac+2); else { fam.f=f.r.fm; fam.tac=Math.round(fam.tac*0.65); } }
  // билеты и ТВ
  const c=S.C[f.c]; const kind=c?c.kind:'fr'; const rk=rankOf(S.me);
- add('tv',+(((kind==='final'?3:kind==='fr'?0.6:1.5))*(1+(210-rk)/280)).toFixed(2));
+ add('tv',+(((kind==='final'?2:kind==='fr'?0.4:1))*(1+(210-rk)/280)).toFixed(2));
  if(f.vn&&f.vn.st&&(f.h===S.me||(c&&(c.host===S.me||c.co===S.me)))) add('tix',+((f.vn.att/10000)*(0.3+0.06*(f.vn.q||3))*(kind==='fr'?0.8:1.2)).toFixed(2));
 };
 // сыгранность в силе команды
@@ -81,7 +81,7 @@ const _calc=MP.calc; MP.calc=function(){ _calc.call(this); const S=G(); if(!S||!
 function add(k,v){ const S=G(); const m=S.u.eco.m; m[k]=+((m[k]||0)+v).toFixed(2); S.u.bud=+(S.u.bud+v).toFixed(2); }
 V6.add=add;
 V6.ecoMonth=()=>{ const S=G(); const u=S.u; const rk=rankOf(S.me); const tro=u.tro.filter(t=>N.diffD(t.d,S.d)<1460).length;
- add('spon',+(0.5+3.2*Math.pow(1-rk/211,2)+0.25*tro+(u.trust-50)/100).toFixed(2));
+ add('spon',+(0.3+2.3*Math.pow(1-rk/211,2)+0.2*tro+(u.trust-50)/120).toFixed(2));
  add('merch',+(((u.fan??60)/100)*1.4*(1-rk/260)+0.1).toFixed(2));
  add('staff',-+(0.35*u.staff).toFixed(2));
  add('fac',-+(0.12*Object.values(u.infra).reduce((a,b)=>a+b,0)).toFixed(2));

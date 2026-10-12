@@ -30,3 +30,15 @@
 - New design system (css/style.css, Inter + Oswald fonts, OFL licence), Lucide icons (ISC licence), kit colours worked out from each nation's flag (js/kits.js), and original SVG badges and trophies (js/gfx.js). Bottom nav bar on phones, sidebar on desktop, broadcast-style match screen with a momentum graph and timeline, toast notifications.
 - i18n: `_t("Russian source", …)` with hashed keys. There are 20 languages (ru en es pt de fr it pl uk he ar tr ja zh ko nl cs id hi fa), with RTL for he/ar/fa. Country names come from Intl.DisplayNames.
   Source files are in `i18n/src/<lang>.txt` (format `index|text`, indexed by `i18n/master.txt`). Build with `node tools/build-i18n.js`; check with `node test/i18n.js`.
+
+## Update 6: depth, economy, hosting, themes
+- Stats: per-shot map with xG, player heatmaps (last match), pass accuracy, tackles, interceptions, duels; goals − xG, 1v1 and penalty conversion; GK save %, penalties saved, xGA − conceded; last-5 ratings in the call-up list; two-player radar comparison; head-to-head vs every nation; team records; results by formation; coach stats per tournament and per 4-year cycle; Hall of Fame.
+- History: real winners (countries only) of major tournaments before 2026, a generated archive for the rest, generated 1993–2025 ranking history, and fictional past legends and records (clearly marked as generated).
+- Saves: 20 manual slots plus a separate autosave. Saves go to IndexedDB with gzip compression and are written asynchronously.
+- Performance: calendar simulation runs in small chunks with a loading overlay, so the UI doesn't freeze.
+- FIFA ranking: monthly movers, biggest climbers and fallers, team history chart, points gained or lost per match, confederation filter, top-10 timeline.
+- Economy and stadiums: sponsors, TV, tickets, prize money and merchandise against staff, facility and stadium costs. You can build or expand stadiums in different cities; the main stadium affects attendance, home advantage and hosting bids.
+- Training: focus per line or per player (attack, defence, set pieces, fitness, tactics familiarity, GK, rest), intensity vs injury risk, staff quality, and an Auto mode.
+- Hosting bids: you can bid only in your own confederation. The World Cup uses a rotation rule. AI rivals bid too, there is a vote with mail results, an optional co-host, and the host qualifies automatically.
+- Optional cheats (enable in Settings): the save is marked as a cheat save and achievements stop counting.
+- 5 themes: Stadium Night, Classic Pitch, Midnight Blue, Light, Sand/Retro.
