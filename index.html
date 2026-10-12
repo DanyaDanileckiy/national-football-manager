@@ -1,92 +1,24 @@
-<!DOCTYPE html><html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Сборная: Футбольный Менеджер</title>
-<style>
-body{margin:0;font-family:system-ui,sans-serif;background:linear-gradient(#0b2a4a,#123d2a);color:#fff;min-height:100vh}
-#app{max-width:640px;margin:auto;padding:8px}
-.hdr{background:#0a1e36;border-radius:14px 14px 0 0;text-align:center;font-size:26px;padding:10px;border:1px solid #fff3}
-.panel{background:#0006;border:1px solid #fff3;padding:10px;margin:6px 0;border-radius:6px}
-.grid{display:grid;grid-template-columns:1fr 1fr;gap:6px}
-.btn{background:#2a4a6a99;border:1px solid #fff4;color:#fff;padding:18px;font-size:19px;text-align:center;cursor:pointer;border-radius:4px}
-.btn:hover{background:#3a6a9acc}.sm{padding:8px;font-size:15px}
-table{width:100%;border-collapse:collapse}td,th{padding:4px;text-align:center}td.l{text-align:left}
-.me{color:#6f6}.row{display:flex;justify-content:space-between;align-items:center;padding:6px;border-bottom:1px solid #fff2}
-.sel{background:#2a5a2a88}.f{font-size:22px}.score{font-size:44px;text-align:center}
-.com{background:#fff1;padding:10px;border-radius:8px;min-height:24px;text-align:center}
-select{font-size:16px;padding:6px;width:100%}.pos{color:#fd6;width:34px;display:inline-block}
-.bar{height:8px;background:#c33}.bar>div{height:100%;background:#eee}
-</style></head><body><div id="app"></div>
-<script>
-const T=[["Россия","🇷🇺",78,"EUR"],["Германия","🇩🇪",86,"EUR"],["Франция","🇫🇷",88,"EUR"],["Испания","🇪🇸",86,"EUR"],["Англия","🏴",86,"EUR"],["Италия","🇮🇹",84,"EUR"],["Португалия","🇵🇹",85,"EUR"],["Нидерланды","🇳🇱",83,"EUR"],["Бельгия","🇧🇪",82,"EUR"],["Хорватия","🇭🇷",81,"EUR"],["Дания","🇩🇰",79,"EUR"],["Швейцария","🇨🇭",78,"EUR"],["Польша","🇵🇱",76,"EUR"],["Украина","🇺🇦",76,"EUR"],["Сербия","🇷🇸",76,"EUR"],["Швеция","🇸🇪",75,"EUR"],["Чехия","🇨🇿",74,"EUR"],["Австрия","🇦🇹",76,"EUR"],["Турция","🇹🇷",76,"EUR"],["Норвегия","🇳🇴",75,"EUR"],["Шотландия","🏴",73,"EUR"],["Словакия","🇸🇰",71,"EUR"],["Словения","🇸🇮",70,"EUR"],["Венгрия","🇭🇺",72,"EUR"],["Греция","🇬🇷",71,"EUR"],["Румыния","🇷🇴",70,"EUR"],["Финляндия","🇫🇮",66,"EUR"],["Беларусь","🇧🇾",62,"EUR"],["Казахстан","🇰🇿",61,"EUR"],["Кипр","🇨🇾",58,"EUR"],["Мальта","🇲🇹",52,"EUR"],["Армения","🇦🇲",60,"EUR"],["Грузия","🇬🇪",68,"EUR"],["Израиль","🇮🇱",64,"EUR"],["Исландия","🇮🇸",63,"EUR"],["Албания","🇦🇱",66,"EUR"]];
-const FN=["Александр","Матвей","Андрей","Юрий","Константин","Георгий","Игорь","Дмитрий","Роман","Денис","Алексей","Фёдор","Максим","Артём","Илья","Кирилл","Никита","Сергей","Павел","Олег","Виктор","Антон","Егор","Тимур"];
-const LN=["Максоненко","Софанов","Ленов","Журков","Рошин","Дзюкин","Дивалов","Биранов","Зубков","Чебышов","Маринчук","Селиманов","Чилов","Головкин","Миранчиков","Барманов","Сафонкин","Кузяев","Ерохов","Обляков","Глушенко","Захарян","Мостовой","Фомин","Карпин","Акинфин","Дзагоев","Смолин"];
-const POS=["GK","GK","GK","LB","RB","CB","CB","CB","CB","LB","DM","CM","CM","CM","AM","LM","RM","LW","RW","ST","ST","ST","CB","CM","ST","GK","RB","AM"];
-const r=(a,b)=>a+Math.floor(Math.random()*(b-a+1)),pick=a=>a[r(0,a.length-1)];
-let S;
-function mkPlayer(base,i){return{n:pick(FN)+" "+pick(LN),p:POS[i%POS.length],age:r(19,34),lv:Math.max(40,Math.min(95,base+r(-10,6))),caps:0,goals:0,cs:0,rat:[],mor:70}}
-function newGame(ti){
- S={me:ti,date:[2027,1],teams:T.map((t,i)=>({name:t[0],fl:t[1],str:t[2],id:i,players:Array.from({length:28},(_,k)=>mkPlayer(t[2],k))})),
-  trust:60,form:"4-4-2",style:"Сбалансированно",called:[],log:[],stage:"qual",trophies:[]};
- let others=S.teams.map(t=>t.id).filter(i=>i!=ti).sort(()=>Math.random()-.5);
- S.group=[ti,...others.slice(0,5)];S.table={};S.group.forEach(i=>S.table[i]={p:0,w:0,d:0,l:0,gf:0,ga:0,pts:0});
- S.fixtures=roundRobin(S.group);S.round=0;
- S.called=autoCall();save();menu();
-}
-function roundRobin(ids){let a=[...ids],rounds=[];for(let k=0;k<a.length-1;k++){let rd=[];for(let i=0;i<a.length/2;i++)rd.push([a[i],a[a.length-1-i]]);rounds.push(rd);a.splice(1,0,a.pop())}return rounds.concat(rounds.map(rd=>rd.map(([h,a])=>[a,h])))}
-function autoCall(){let ps=S.teams[S.me].players.map((p,i)=>[p,i]);let gk=ps.filter(x=>x[0].p=="GK").sort((a,b)=>b[0].lv-a[0].lv).slice(0,3),o=ps.filter(x=>x[0].p!="GK").sort((a,b)=>b[0].lv-a[0].lv).slice(0,20);return[...gk,...o].map(x=>x[1])}
-function save(){localStorage.nfm=JSON.stringify(S)}
-const A=document.getElementById("app"),h=s=>A.innerHTML=s,tn=i=>S.teams[i].fl+" "+S.teams[i].name;
-function start(){if(localStorage.nfm){S=JSON.parse(localStorage.nfm);menu()}else pickTeam()}
-function pickTeam(){h(`<div class=hdr>Новая игра</div><div class=panel>Выберите сборную:</div>`+T.map((t,i)=>`<div class="row btn sm" onclick="newGame(${i})"><span class=f>${t[1]} ${t[0]}</span><span>${"★".repeat(Math.round((t[2]-45)/9))}</span></div>`).join(""))}
-function nextMatch(){if(S.stage=="qual"){for(let[hh,a]of S.fixtures[S.round])if(hh==S.me||a==S.me)return[hh,a]}if(S.stage=="cup")return S.cupMatch;return null}
-function menu(){let nm=nextMatch();let st=S.stage=="qual"?"Отбор к Чемпионату Мира, тур "+(S.round+1)+"/10":S.stage=="cup"?"Чемпионат Мира: "+S.cupName:"Сезон окончен";
- h(`<div class=hdr>${S.date[0]}.${String(S.date[1]).padStart(2,"0")}</div><div class=panel style="text-align:center">Доверие федерации: <b>${S.trust}%</b><br>Следующий матч:<br>${st}<div class=f style="margin:10px">${nm?tn(nm[0])+" — "+tn(nm[1]):"—"}</div></div>
- <div class=grid><div class=btn onclick="${nm?"prematch()":"newSeason()"}">⚽ ${nm?"Продолжить":"Новый цикл"}</div><div class=btn onclick="squad()">👕 Вызов</div>
- <div class=btn onclick="tactics()">📋 Тактика</div><div class=btn onclick="table()">🏆 Соревнования</div>
- <div class=btn onclick="stats()">📊 Статистика</div><div class=btn onclick="if(confirm('Начать заново?')){localStorage.removeItem('nfm');pickTeam()}">🔄 Новая игра</div></div>
- <div class=panel>Трофеи: ${S.trophies.join(", ")||"пока нет"}</div>`)}
-function squad(){let ps=S.teams[S.me].players;h(`<div class=hdr>${S.teams[S.me].fl} Вызов</div><div class=panel>Выберите от 18 до 23 игроков. Вызвано: <b id=cnt>${S.called.length}</b></div>`+
- ps.map((p,i)=>`<div class="row ${S.called.includes(i)?"sel":""}" onclick="tog(${i},this)"><span><span class=pos>${p.p}</span>${p.n} <small>(${p.age}, ${p.caps}/${p.goals})</small></span><b style="color:${p.lv>75?"#6f6":"#fd6"}">${p.lv}</b></div>`).join("")+`<div class=btn onclick="if(S.called.length>=18){save();menu()}else alert('Минимум 18')">Готово</div>`)}
-function tog(i,el){let k=S.called.indexOf(i);if(k>=0)S.called.splice(k,1);else if(S.called.length<23)S.called.push(i);else return;el.classList.toggle("sel");cnt.textContent=S.called.length}
-function tactics(){const F=["4-4-2","4-3-3","4-2-3-1","3-5-2","5-3-2","4-5-1"],ST=["Оборонительно","Контратаки","Сбалансированно","Владение мячом","Атакующе"];
- h(`<div class=hdr>Тактика</div><div class=panel>Схема<select onchange="S.form=this.value;save()">${F.map(f=>`<option ${f==S.form?"selected":""}>${f}</option>`).join("")}</select><br><br>Стиль игры<select onchange="S.style=this.value;save()">${ST.map(f=>`<option ${f==S.style?"selected":""}>${f}</option>`).join("")}</select></div><div class=btn onclick=menu()>Назад</div>`)}
-function lineup(ti){let t=S.teams[ti],ids=ti==S.me?S.called:t.players.map((_,i)=>i);let ps=ids.map(i=>t.players[i]);let gk=ps.filter(p=>p.p=="GK").sort((a,b)=>b.lv-a.lv)[0],o=ps.filter(p=>p.p!="GK").sort((a,b)=>b.lv-a.lv).slice(0,10);return[gk,...o]}
-function power(xi,ti){let s=xi.reduce((a,p)=>a+p.lv*(0.8+p.mor/350),0)/11;if(ti==S.me){s+={"Атакующе":1,"Оборонительно":-1,"Владение мячом":1}[S.style]||0}return s}
-let M;
-function prematch(){let[hh,a]=nextMatch();let hx=lineup(hh),ax=lineup(a);M={h:hh,a,hx,ax,hg:0,ag:0,min:0,ev:[],shots:[0,0],poss:50,ratings:new Map([...hx,...ax].map(p=>[p,6.5])),timer:null};
- h(`<div class=hdr>Пресс-конференция</div><div class=panel>Журналист: «Каковы ваши ожидания от матча против ${S.teams[hh==S.me?a:hh].name}?»</div>
- <div class="btn sm" onclick="press(1)">«Мы уверены в победе!»</div><div class="btn sm" onclick="press(0)">«Соперник силён, будем работать.»</div><div class="btn sm" onclick="press(-1)">«Без комментариев.»</div>`)}
-function press(k){let roll=Math.random();S.called.forEach(i=>{let p=S.teams[S.me].players[i];p.mor=Math.max(30,Math.min(100,p.mor+(k==1?(roll>.4?6:-6):k==0?3:-3)))});matchScreen();M.timer=setInterval(tick,180)}
-function matchScreen(){let b=M.poss;h(`<div class=hdr style="font-size:18px">${S.stage=="qual"?"Отбор к ЧМ":"Чемпионат Мира"}</div><div class=panel><div style="display:flex;justify-content:space-around;align-items:center"><div class=f>${tn(M.h)}</div><div class=score>${M.hg}:${M.ag}</div><div class=f>${tn(M.a)}</div></div><div style="text-align:center;font-size:22px">${M.min}'</div>
- <div class=bar><div style="width:${b}%"></div></div><small>Владение ${b}% — ${100-b}% · Удары ${M.shots[0]} — ${M.shots[1]}</small></div>
- <div class=com id=com>${M.ev[0]||"Матч начинается!"}</div><div class=panel style="max-height:200px;overflow:auto;font-size:14px">${M.ev.slice(1,30).map(e=>"<div>"+e+"</div>").join("")}</div>
- <div class=grid><div class="btn sm" onclick="M.fast=!M.fast">⏩ Быстрее</div><div class="btn sm" onclick="clearInterval(M.timer);tactics2()">📋 Тактика</div></div>`)}
-function tactics2(){tactics();A.querySelector(".btn:last-child").setAttribute("onclick","matchScreen();M.timer=setInterval(tick,180)");A.querySelector(".btn:last-child").textContent="Вернуться к матчу"}
-const C=["Навес в штрафную!","Опасная атака по флангу","Мяч в центре поля","Угловой","Фол в центре поля","Удар издалека — мимо","Отличный отбор!","Штрафной удар"];
-function tick(){for(let k=0;k<(M.fast?5:1);k++){if(M.min>=90){return endMatch()}M.min++;let ph=power(M.hx,M.h)+2,pa=power(M.ax,M.a);let pr=ph/(ph+pa);M.poss=Math.round(M.poss*0.9+pr*100*0.1);
- if(Math.random()<0.16){let att=Math.random()<pr?0:1,xi=att?M.ax:M.hx,dxi=att?M.hx:M.ax;M.shots[att]++;let sh=pick(xi.slice(5)),gk=dxi[0];let chance=0.28*sh.lv/(sh.lv+gk.lv)*2*(0.7+Math.random()*0.6);
-  if(Math.random()<chance){att?M.ag++:M.hg++;sh._g=(sh._g||0)+1;M.ratings.set(sh,M.ratings.get(sh)+1.2);M.ratings.set(gk,M.ratings.get(gk)-0.5);M.ev.unshift(`⚽ ${M.min}' ГОЛ! ${sh.n} (${S.teams[att?M.a:M.h].name})`)}
-  else{M.ratings.set(gk,M.ratings.get(gk)+0.3);M.ev.unshift(`${M.min}' ${sh.n} бьёт — ${Math.random()<.5?"сейв вратаря "+gk.n:"мимо ворот"}`)}}
- else if(Math.random()<.1)M.ev.unshift(M.min+"' "+pick(C))}
- matchScreen()}
-function endMatch(){clearInterval(M.timer);let me=S.me,[hh,a]=[M.h,M.a];
- for(let[xi,gf,ga]of[[M.hx,M.hg,M.ag],[M.ax,M.ag,M.hg]])xi.forEach((p,i)=>{let rt=Math.max(3,Math.min(10,M.ratings.get(p)+(gf>ga?.5:gf<ga?-.5:0)+Math.random()-.5));p.rat.push(+rt.toFixed(1));p.caps++;p.goals+=p._g||0;delete p._g;if(i==0&&ga==0)p.cs++});
- let myg=hh==me?M.hg:M.ag,opg=hh==me?M.ag:M.hg;S.trust=Math.max(0,Math.min(100,S.trust+(myg>opg?4:myg<opg?-5:0)));
- S.log.push(`${tn(hh)} ${M.hg}:${M.ag} ${tn(a)}`);
- if(S.stage=="qual"){simRound(true);S.round++;S.date[1]+=1;if(S.date[1]>12){S.date[1]=1;S.date[0]++}if(S.round>=10)finishQual()}
- else cupResult(myg,opg);
- save();
- h(`<div class=hdr>Итог матча</div><div class=panel><div class=score>${M.hg}:${M.ag}</div><div style="text-align:center">${tn(hh)} — ${tn(a)}</div></div><div class=panel><b>Оценки игроков</b>${(hh==me?M.hx:M.ax).map(p=>`<div class=row><span>${p.n}</span><b>${p.rat.at(-1)}</b></div>`).join("")}</div><div class=btn onclick=menu()>Продолжить</div>`)}
-function addRes(h_,a_,hg,ag){for(let[t,f,g]of[[h_,hg,ag],[a_,ag,hg]]){let r_=S.table[t];r_.p++;r_.gf+=f;r_.ga+=g;if(f>g){r_.w++;r_.pts+=3}else if(f==g){r_.d++;r_.pts++}else r_.l++}}
-function quickSim(h_,a_){let ph=S.teams[h_].str+3,pa=S.teams[a_].str;let g=s=>{let n=0;for(let i=0;i<6;i++)if(Math.random()<s/(ph+pa)*0.45)n++;return n};return[g(ph),g(pa)]}
-function simRound(){for(let[hh,a]of S.fixtures[S.round]){if(hh==S.me||a==S.me)addRes(hh,a,M.hg,M.ag);else{let[x,y]=quickSim(hh,a);addRes(hh,a,x,y)}}}
-function sorted(){return[...S.group].sort((x,y)=>{let a=S.table[x],b=S.table[y];return b.pts-a.pts||(b.gf-b.ga)-(a.gf-a.ga)||b.gf-a.gf})}
-function finishQual(){let pos=sorted().indexOf(S.me);if(pos<2){S.stage="cup";S.cupR=0;S.cupNames=["1/8 финала","1/4 финала","Полуфинал","Финал"];newCupMatch();alert("Вы вышли на Чемпионат Мира!")}else{S.stage="done";S.trust-=15;alert("Отбор провален: "+(pos+1)+" место.")}}
-function newCupMatch(){let pool=S.teams.map(t=>t.id).filter(i=>i!=S.me).sort((a,b)=>S.teams[b].str-S.teams[a].str).slice(0,16+S.cupR*-3);S.cupName=S.cupNames[S.cupR];S.cupMatch=[S.me,pick(pool)]}
-function cupResult(m,o){if(m==o){m+=Math.random()<.5?1:0;alert("Серия пенальти... "+(m>o?"победа!":"поражение."))}
- if(m>o){S.cupR++;if(S.cupR>3){S.trophies.push("Чемпионат Мира "+S.date[0]);S.trust=100;S.stage="done";alert("🏆 ВЫ ЧЕМПИОНЫ МИРА!")}else newCupMatch()}else{S.stage="done";alert("Вылет: "+S.cupName)}}
-function newSeason(){S.date[0]+=1;S.teams.forEach(t=>t.players.forEach((p,i)=>{p.age++;if(p.age<27)p.lv=Math.min(95,p.lv+r(0,4));else if(p.age>30)p.lv-=r(1,4);if(p.age>36)t.players[i]=Object.assign(mkPlayer(t.str,i),{age:r(18,20),lv:Math.max(40,t.str-r(4,14))})}));
- let others=S.teams.map(t=>t.id).filter(i=>i!=S.me).sort(()=>Math.random()-.5);S.group=[S.me,...others.slice(0,5)];S.table={};S.group.forEach(i=>S.table[i]={p:0,w:0,d:0,l:0,gf:0,ga:0,pts:0});S.fixtures=roundRobin(S.group);S.round=0;S.stage="qual";S.called=autoCall();save();menu()}
-function table(){h(`<div class=hdr>Отбор к ЧМ — группа</div><div class=panel><table><tr><th></th><th class=l>Команда</th><th>И</th><th>В</th><th>Н</th><th>П</th><th>Г</th><th>О</th></tr>${sorted().map((i,k)=>{let t=S.table[i];return`<tr class="${i==S.me?"me":""}"><td>${k+1}</td><td class=l>${tn(i)}</td><td>${t.p}</td><td>${t.w}</td><td>${t.d}</td><td>${t.l}</td><td>${t.gf}:${t.ga}</td><td><b>${t.pts}</b></td></tr>`}).join("")}</table></div><div class=panel><b>Мои матчи</b>${S.log.slice(-10).reverse().map(l=>"<div>"+l+"</div>").join("")||"—"}</div><div class=btn onclick=menu()>Назад</div>`)}
-function stats(){let ps=S.teams[S.me].players.filter(p=>p.caps);h(`<div class=hdr>Статистика</div><div class=panel><table><tr><th class=l>Игрок</th><th>Игры</th><th>Голы</th><th>Сухие</th><th>Ср. оценка</th><th class=l>Последние</th></tr>${ps.sort((a,b)=>b.caps-a.caps).map(p=>`<tr><td class=l><span class=pos>${p.p}</span>${p.n}</td><td>${p.caps}</td><td>${p.goals}</td><td>${p.p=="GK"?p.cs:"-"}</td><td>${(p.rat.reduce((a,b)=>a+b,0)/p.rat.length).toFixed(2)}</td><td class=l><small>${p.rat.slice(-5).join(" ")}</small></td></tr>`).join("")||"<tr><td>Ещё нет сыгранных матчей</td></tr>"}</table></div><div class=btn onclick=menu()>Назад</div>`)}
-start();
-</script></body></html>
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#071a2e">
+<title>Национальный Футбольный Менеджер</title>
+<link rel="stylesheet" href="css/style.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚽</text></svg>">
+</head>
+<body>
+<div id="bg"></div>
+<div id="app">
+ <header id="top"></header>
+ <main id="view"></main>
+</div>
+<div id="modal" class="hidden"><div class="mbox"></div></div>
+<div id="toast"></div>
+<script src="js/data.js"></script>
+<script src="js/core.js"></script>
+<script src="js/match.js"></script>
+<script src="js/ui.js"></script>
+</body>
+</html>
