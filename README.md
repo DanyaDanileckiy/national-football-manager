@@ -25,3 +25,8 @@
 `node test/sim.js 8 FR` — headless-симуляция двух циклов (≈7000 матчей), проверка результативности и силы фаворитов. `node test/calib.js` — калибровка движка. `node test/fmt.js` — проверка форматов цикла (нет двух матчей в день у команды, 48 участников ЧМ, перемещения в Лигах наций).
 
 Сохранения версии 3 автоматически обновляются до версии 4; сохранения версии 2 и старше несовместимы — игра сообщает об этом и предлагает начать заново.
+
+## Update 5: design & languages
+- New design system (css/style.css, Inter + Oswald fonts, OFL licence), Lucide icons (ISC licence), kit colours worked out from each nation's flag (js/kits.js), and original SVG badges and trophies (js/gfx.js). Bottom nav bar on phones, sidebar on desktop, broadcast-style match screen with a momentum graph and timeline, toast notifications.
+- i18n: `_t("Russian source", …)` with hashed keys. There are 20 languages (ru en es pt de fr it pl uk he ar tr ja zh ko nl cs id hi fa), with RTL for he/ar/fa. Country names come from Intl.DisplayNames.
+  Source files are in `i18n/src/<lang>.txt` (format `index|text`, indexed by `i18n/master.txt`). Build with `node tools/build-i18n.js`; check with `node test/i18n.js`.
