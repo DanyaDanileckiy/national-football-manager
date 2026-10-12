@@ -20,7 +20,7 @@ V6.init=(S)=>{ if(!S) return; N.setS(S); const u=S.u;
  S.v6=1; };
 // стадионы по умолчанию
 function genStadiums(c){ const S=G(); const t=S.T[c]; return seeded('st'+c,r=>{ const n=cl(Math.round((t.r-38)/7+r()*1.5),1,9); const out=[]; const used=new Set();
-  for(let i=0;i<n;i++){ let city; for(let k=0;k<20;k++){ city=N.townName(t.pool); if(!used.has(city))break; } used.add(city);
+  for(let i=0;i<n;i++){ let city; for(let k=0;k<20;k++){ city=N.townName(t.pool); if(!used.has(city))break; } city=city.charAt(0).toUpperCase()+city.slice(1); used.add(city);
    const big=Math.max(8,Math.round((11+(t.r-40)*0.8)*(i===0?1.35:0.95-i*0.07)+r()*7)); const cap=cl(big,6,90)*1000; const q=cl(Math.round((t.r-40)/12+r()*1.5),1,5);
    out.push({id:i+1,city,cap,q,main:i===0?1:0}); }
   return out; }); }
@@ -85,7 +85,7 @@ V6.ecoMonth=()=>{ const S=G(); const u=S.u; const rk=rankOf(S.me); const tro=u.t
  add('merch',+(((u.fan??60)/100)*1.4*(1-rk/260)+0.1).toFixed(2));
  add('staff',-+(0.35*u.staff).toFixed(2));
  add('fac',-+(0.12*Object.values(u.infra).reduce((a,b)=>a+b,0)).toFixed(2));
- add('stad',-+((u.st||[]).filter(s=>!s.rd).reduce((a,s)=>a+s.cap/1000*0.007*(1+0.2*s.q),0)).toFixed(2));
+ add('stad',-+((u.st||[]).filter(s=>!s.rd).reduce((a,s)=>a+s.cap/1000*0.0028*(1+0.2*s.q),0)).toFixed(2));
  // строительство
  for(const s of u.st||[]) if(s.rd&&s.rd<=S.d){ const done=s.up; delete s.rd; if(s.up){ if(s.up.cap)s.cap+=s.up.cap; if(s.up.q)s.q=Math.min(5,s.q+1); delete s.up; } N.mail(_t("Федерация футбола"),_t("Стадион готов"),_t("Работы на стадионе в городе {0} завершены. Вместимость: {1}.",s.city,NFM_I18N.num(s.cap))); }
  if(S.cheat&&u.chm) u.bud=Math.max(u.bud,9999);
@@ -170,23 +170,23 @@ const _bc=N.buildCycle; N.buildCycle=(Y)=>{ const S=G(); _bc(Y); // соорга
  for(const k in BIDK){ const yr=Y+BIDK[k].off; const co=S.hostsCo&&S.hostsCo[k+yr]; const id=(k==='AFCON2'?'AFCON2':k)+'_'+Y; const c=S.C[id]; if(co&&c&&!c.co&&c.host!==co){ c.co=co; for(const q of Object.values(S.C)) if(q.kind==='qual'&&q.yr===Y&&q.excl&&(q.conf===c.conf||c.conf==='ALL')) q.excl.push(co); } }
  if(S.v6){ if(S.C['WC_'+Y]&&!S.wcH.some(x=>x.y===Y+4)) S.wcH.push({y:Y+4,c:S.C['WC_'+Y].host,conf:S.T[S.C['WC_'+Y].host].conf}); openBids(Y); } };
 // ---------- история (сгенерированная) ----------
-const REAL={WC:['Чемпионат мира {0}','ALL','1930 UY,1934 IT,1938 IT,1950 UY,1954 DE,1958 BR,1962 BR,1966 ENG,1970 BR,1974 DE,1978 AR,1982 IT,1986 AR,1990 DE,1994 BR,1998 FR,2002 BR,2006 IT,2010 ES,2014 DE,2018 FR,2022 AR'],
- EURO:['Чемпионат Европы {0}','UEFA','1960 RU,1964 ES,1968 IT,1972 DE,1976 CZ,1980 DE,1984 FR,1988 NL,1992 DK,1996 DE,2000 FR,2004 GR,2008 ES,2012 ES,2016 PT,2021 IT,2024 ES'],
- COPA:['Копа Америка {0}','CONMEBOL','1916 UY,1917 UY,1919 BR,1920 UY,1921 AR,1922 BR,1923 UY,1924 UY,1925 AR,1926 UY,1927 AR,1929 AR,1935 UY,1937 AR,1939 PE,1941 AR,1942 UY,1945 AR,1946 AR,1947 AR,1949 BR,1953 PY,1955 AR,1956 UY,1957 AR,1959 AR,1963 BO,1967 UY,1975 PE,1979 PY,1983 UY,1987 UY,1989 BR,1991 AR,1993 AR,1995 UY,1997 BR,1999 BR,2001 CO,2004 BR,2007 BR,2011 UY,2015 CL,2016 CL,2019 BR,2021 AR,2024 AR'],
- GOLD:['Золотой кубок КОНКАКАФ {0}','CONCACAF','1991 US,1993 MX,1996 MX,1998 MX,2000 CA,2002 US,2003 MX,2005 US,2007 US,2009 MX,2011 MX,2013 US,2015 MX,2017 US,2019 MX,2021 US,2023 MX,2025 MX'],
- ASIAN:['Кубок Азии {0}','AFC','1956 KR,1960 KR,1964 IL,1968 IR,1972 IR,1976 IR,1980 KW,1984 SA,1988 SA,1992 JP,1996 SA,2000 JP,2004 JP,2007 IQ,2011 JP,2015 AU,2019 QA,2023 QA'],
- AFCON:['Кубок Африки {0}','CAF','1957 EG,1959 EG,1962 ET,1963 GH,1965 GH,1968 CD,1970 SD,1972 CG,1974 CD,1976 MA,1978 GH,1980 NG,1982 GH,1984 CM,1986 EG,1988 CM,1990 DZ,1992 CI,1994 NG,1996 ZA,1998 EG,2000 CM,2002 CM,2004 TN,2006 EG,2008 EG,2010 EG,2012 ZM,2013 NG,2015 CI,2017 CM,2019 DZ,2021 SN,2023 CI'],
- OFCNC:['Кубок наций ОФК {0}','OFC','1973 NZ,1980 AU,1996 AU,1998 NZ,2000 AU,2002 NZ,2004 AU,2008 NZ,2012 PF,2016 NZ,2024 NZ'],
- AFF:['Чемпионат Юго-Восточной Азии {0}','AFC','1996 TH,1998 SG,2000 TH,2002 TH,2004 SG,2007 SG,2008 VN,2010 MY,2012 SG,2014 TH,2016 TH,2018 VN,2020 TH,2022 TH,2024 VN'],
- EAFF:['Кубок Восточной Азии {0}','AFC','2003 KR,2005 CN,2008 KR,2010 CN,2013 JP,2015 KR,2017 KR,2019 KR,2022 JP'],
- CHAN:['Чемпионат африканских наций (игроки местных лиг) {0}','CAF','2009 CD,2011 TN,2014 LY,2016 CD,2018 MA,2020 MA,2022 SN'],
- FIN:['Кубок чемпионов континентов {0}','ALL','1985 FR,1993 AR,2022 AR']};
+const REAL={WC:[()=>_t("Чемпионат мира {0}",''),'ALL','1930 UY,1934 IT,1938 IT,1950 UY,1954 DE,1958 BR,1962 BR,1966 ENG,1970 BR,1974 DE,1978 AR,1982 IT,1986 AR,1990 DE,1994 BR,1998 FR,2002 BR,2006 IT,2010 ES,2014 DE,2018 FR,2022 AR'],
+ EURO:[()=>_t("Чемпионат Европы {0}",''),'UEFA','1960 RU,1964 ES,1968 IT,1972 DE,1976 CZ,1980 DE,1984 FR,1988 NL,1992 DK,1996 DE,2000 FR,2004 GR,2008 ES,2012 ES,2016 PT,2021 IT,2024 ES'],
+ COPA:[()=>_t("Копа Америка {0}",''),'CONMEBOL','1916 UY,1917 UY,1919 BR,1920 UY,1921 AR,1922 BR,1923 UY,1924 UY,1925 AR,1926 UY,1927 AR,1929 AR,1935 UY,1937 AR,1939 PE,1941 AR,1942 UY,1945 AR,1946 AR,1947 AR,1949 BR,1953 PY,1955 AR,1956 UY,1957 AR,1959 AR,1963 BO,1967 UY,1975 PE,1979 PY,1983 UY,1987 UY,1989 BR,1991 AR,1993 AR,1995 UY,1997 BR,1999 BR,2001 CO,2004 BR,2007 BR,2011 UY,2015 CL,2016 CL,2019 BR,2021 AR,2024 AR'],
+ GOLD:[()=>_t("Золотой кубок КОНКАКАФ {0}",''),'CONCACAF','1991 US,1993 MX,1996 MX,1998 MX,2000 CA,2002 US,2003 MX,2005 US,2007 US,2009 MX,2011 MX,2013 US,2015 MX,2017 US,2019 MX,2021 US,2023 MX,2025 MX'],
+ ASIAN:[()=>_t("Кубок Азии {0}",''),'AFC','1956 KR,1960 KR,1964 IL,1968 IR,1972 IR,1976 IR,1980 KW,1984 SA,1988 SA,1992 JP,1996 SA,2000 JP,2004 JP,2007 IQ,2011 JP,2015 AU,2019 QA,2023 QA'],
+ AFCON:[()=>_t("Кубок Африки {0}",''),'CAF','1957 EG,1959 EG,1962 ET,1963 GH,1965 GH,1968 CD,1970 SD,1972 CG,1974 CD,1976 MA,1978 GH,1980 NG,1982 GH,1984 CM,1986 EG,1988 CM,1990 DZ,1992 CI,1994 NG,1996 ZA,1998 EG,2000 CM,2002 CM,2004 TN,2006 EG,2008 EG,2010 EG,2012 ZM,2013 NG,2015 CI,2017 CM,2019 DZ,2021 SN,2023 CI'],
+ OFCNC:[()=>_t("Кубок наций ОФК {0}",''),'OFC','1973 NZ,1980 AU,1996 AU,1998 NZ,2000 AU,2002 NZ,2004 AU,2008 NZ,2012 PF,2016 NZ,2024 NZ'],
+ AFF:[()=>_t("Чемпионат Юго-Восточной Азии {0}",''),'AFC','1996 TH,1998 SG,2000 TH,2002 TH,2004 SG,2007 SG,2008 VN,2010 MY,2012 SG,2014 TH,2016 TH,2018 VN,2020 TH,2022 TH,2024 VN'],
+ EAFF:[()=>_t("Кубок Восточной Азии {0}",''),'AFC','2003 KR,2005 CN,2008 KR,2010 CN,2013 JP,2015 KR,2017 KR,2019 KR,2022 JP'],
+ CHAN:[()=>_t("Чемпионат африканских наций (игроки местных лиг) {0}",''),'CAF','2009 CD,2011 TN,2014 LY,2016 CD,2018 MA,2020 MA,2022 SN'],
+ FIN:[()=>_t("Кубок чемпионов континентов {0}",''),'ALL','1985 FR,1993 AR,2022 AR']};
 // сгенерированные архивы для прочих турниров (вымышленные результаты)
-const GEN={KINGS:['Королевский кубок {0}','ALL',1968,2024,2,'TH MY KR JP CN IQ SG ID VN KP UZ SY'],U21:['Отбор молодёжного чемпионата Европы U-21 {0}','UEFA',1978,2025,2,null]};
+const GEN={KINGS:[()=>_t("Королевский кубок {0}",''),'ALL',1968,2024,2,'TH MY KR JP CN IQ SG ID VN KP UZ SY']};
 V6.archive=()=>{ const S=G(); const out=[];
- for(const k in REAL){ const [nk,conf,l]=REAL[k]; out.push({k,n:_t(nk,''),conf,real:1,ed:l.split(',').map(x=>{const [y,c]=x.split(' '); return {y:+y,w:c};}).filter(e=>S.T[e.w]).reverse()}); }
+ for(const k in REAL){ const [nk,conf,l]=REAL[k]; out.push({k,n:nk().trim(),conf,real:1,ed:l.split(',').map(x=>{const [y,c]=x.split(' '); return {y:+y,w:c};}).filter(e=>S.T[e.w]).reverse()}); }
  const k='KINGS'; const [nk,conf,y0,y1,st,pool]=GEN.KINGS; const ps=pool.split(' ').filter(c=>S.T[c]); const ed=seeded('arK',r=>{ const a=[]; for(let y=y1;y>=y0;y-=st) a.push({y,w:wpick(ps,c=>Math.pow(Math.max(1,S.T[c].r-45),2.2)*(c==='TH'?3:1),r)}); return a; });
- out.push({k,n:_t(nk,''),conf,gen:1,ed});
+ out.push({k,n:nk().trim(),conf,gen:1,ed});
  // турниры, сыгранные в этой карьере
  for(const a of S.arch.concat(Object.values(S.C).filter(c=>c.stage==='done'&&c.w).map(c=>({id:c.id,n:c.n,w:c.w,kind:c.kind,yr:c.yr})))){ if(!a.w) continue; const kk=a.id.replace(/\d*_?\d+$/,'').replace(/_$/,''); const key={AFCON2:'AFCON',GOLD:'GOLD'}[kk]||kk; let e=out.find(x=>x.k===key); if(!e){ e={k:key,n:String(a.n).replace(/\s*\d{4}(\/\d+)?\s*$/,''),conf:'',ed:[],game:1}; out.push(e); } e.ed.unshift({y:a.yr||+(String(a.id).match(/\d{4}/)||[0])[0],w:a.w,g:1}); }
  for(const e of out) e.ed.sort((a,b)=>b.y-a.y); return out; };
