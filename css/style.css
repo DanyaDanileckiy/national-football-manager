@@ -88,3 +88,9 @@ label.ck{display:flex;align-items:center;gap:8px}
 .trophy{display:inline-flex;flex-direction:column;align-items:center;width:31%;margin:1%;background:var(--panel2);border-radius:12px;padding:10px 4px;font-size:12px;text-align:center}
 .trophy .i{font-size:34px}
 .ach{opacity:.4}.ach.on{opacity:1}
+
+.fl{display:inline-block;width:1.4em;height:1.05em;object-fit:cover;border-radius:.22em;box-shadow:0 0 0 1px rgba(255,255,255,.25),0 2px 5px rgba(0,0,0,.45);vertical-align:-.18em;background:#234}
+.flag .fl{vertical-align:middle}
+.sb .tm .flag .fl{margin:0 auto 4px;display:block}
+.vs .flag .fl{display:block;margin:0 auto}
+.hs{background:linear-gradient(90deg,var(--gold) 50%,rgba(245,197,66,.3) 50%);-webkit-background-clip:text;background-clip:text;color:transparent}

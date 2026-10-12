@@ -57,7 +57,7 @@ N.genPool=(team,size)=>{ const t=N.T(team); const r=t.r; const ids=[];
 // ---------- сборные ----------
 N.T=c=>SS&&SS.T[c];
 N.stars=t=>{const s=cl(Math.round(((t.str||t.r)-46)/8.5*2)/2,0.5,5);return s};
-N.starsHtml=s=>{let h='';for(let i=1;i<=5;i++)h+= s>=i?'★':s>=i-.5?'⯪':'☆';return h};
+N.starsHtml=s=>{let h='';for(let i=1;i<=5;i++)h+= s>=i?'★':s>=i-.5?'<span class="hs">★</span>':'☆';return h};
 N.teamStr=c=>{ const t=N.T(c); const ps=t.pl.map(id=>SS.P[id]).filter(p=>p&&!p.ret); const lu=N.autoLineup(ps,t.form||'4-3-3'); let s=0; lu.xi.forEach((p,i)=>s+=p?N.roleOvr(p,N.FORMS[lu.form][i][0]):30); t.str=Math.round(s/11*10)/10; return t.str; };
 N.autoLineup=(players,form)=>{ const F=N.FORMS[form]; const used=new Set(); const xi=new Array(11).fill(null);
  const order=F.map((s,i)=>i).sort((a,b)=>(F[a][0]==='GK'?-1:0)-(F[b][0]==='GK'?-1:0));

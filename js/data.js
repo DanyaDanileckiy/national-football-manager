@@ -11,8 +11,9 @@ AFC:`JP|Япония|82|jp IR|Иран|78|ir KR|Южная Корея|78|kr AU|�
 OFC:`NZ|Новая Зеландия|66|en NC|Новая Каледония|52|fr SB|Соломоновы Острова|50|pac FJ|Фиджи|49|pac PF|Таити|48|fr PG|Папуа — Новая Гвинея|46|pac VU|Вануату|46|pac WS|Самоа|38|pac TO|Тонга|37|pac CK|Острова Кука|34|pac AS|Американское Самоа|30|pac`
 };
 N.CONFS = {UEFA:'УЕФА (Европа)',CONMEBOL:'КОНМЕБОЛ (Юж. Америка)',CONCACAF:'КОНКАКАФ (Сев. и Центр. Америка)',CAF:'КАФ (Африка)',AFC:'АФК (Азия)',OFC:'ОФК (Океания)'};
-const SPECIAL = {ENG:'🏴\u{E0067}\u{E0062}\u{E0065}\u{E006E}\u{E0067}\u{E007F}',SCO:'🏴\u{E0067}\u{E0062}\u{E0073}\u{E0063}\u{E0074}\u{E007F}',WAL:'🏴\u{E0067}\u{E0062}\u{E0077}\u{E006C}\u{E0073}\u{E007F}',NIR:'🇬🇧'};
-function flag(c){ if(SPECIAL[c]) return SPECIAL[c]; return String.fromCodePoint(...[...c].map(ch=>0x1F1E6+ch.charCodeAt(0)-65)); }
+const FK={ENG:'gb-eng',SCO:'gb-sct',WAL:'gb-wls',NIR:'gb-nir'};
+N.flagKey=c=>FK[c]||c.toLowerCase();
+function flag(c){ return '<img class="fl" src="flags/'+N.flagKey(c)+'.svg" alt="'+c+'" loading="lazy">'; }
 N.TEAMS = [];
 for(const conf in RAW){ for(const tok of RAW[conf].split(/ (?=[A-Z]{2,3}\|)/)){ const [c,n,r,pool]=tok.trim().split('|'); N.TEAMS.push({c,n,r:+r,pool,conf,f:flag(c)}); } }
 

@@ -22,7 +22,8 @@ function back(){ const p=st.stack.pop(); if(!p)return go('hub',null,true); go(p[
 function home(){ st.stack=[]; go('hub',null,true); }
 const meta=()=>JSON.parse(localStorage.getItem('nfm_meta')||'{}');
 function save(slot){ slot=slot||S.slot||1; S.slot=slot; try{ localStorage.setItem('nfm_s'+slot,N.serialize(S)); const m=meta(); m[slot]={t:S.me,d:S.d,c:S.coach,ts:Date.now()}; localStorage.setItem('nfm_meta',JSON.stringify(m)); return true;}catch(e){ toast('⚠️ Не удалось сохранить: '+e.message); return false;} }
-function load(slot){ const s=localStorage.getItem('nfm_s'+slot); if(!s)return false; S=N.deserialize(s); S.slot=slot; N.setS(S); return true; }
+function load(slot){ const s=localStorage.getItem('nfm_s'+slot); if(!s)return false; S=N.deserialize(s); S.slot=slot; N.setS(S); fixFlags(); return true; }
+function fixFlags(){ for(const t of N.TEAMS) if(S.T[t.c]) S.T[t.c].f=t.f; }
 const SCR={};
 SCR.title=()=>{ $('#top').innerHTML=''; const m=meta(); const any=Object.keys(m).length;
  V().innerHTML=`<div class="logo"><div class="ball">⚽</div><h1>Национальный<br>Футбольный Менеджер</h1><p>Возглавьте сборную и приведите её к славе</p></div>
@@ -32,7 +33,7 @@ SCR.title=()=>{ $('#top').innerHTML=''; const m=meta(); const any=Object.keys(m)
  <p class="ctr mut sm">210 сборных · 6 конфедераций · отборы, Лиги наций, континентальные первенства и чемпионат мира.<br>Все имена и клубы вымышлены.</p>`; };
 function help(){ modal(`<h2>Как играть</h2><p>Вы — главный тренер сборной. Нажимайте <b>«Продолжить»</b>, чтобы двигаться по календарю: международные окна (март, июнь, сентябрь, октябрь, ноябрь), отборочные турниры, Лиги наций, финальные турниры.</p><p><b>Вызов:</b> перед каждым окном выберите 18–23 игрока. <b>Тактика:</b> перетаскивайте или нажимайте игроков на поле, чтобы менять их местами; повторное нажатие — индивидуальная установка.</p><p><b>Матч:</b> следите за событиями, меняйте тактику и делайте замены прямо по ходу игры. Пауза — в любой момент.</p><p><b>Федерация:</b> следите за доверием. Если оно упадёт слишком низко — вас уволят. Успехи приносят бюджет на инфраструктуру и предложения от других сборных.</p><button class="btn w" onclick="UI.closeM()">Понятно</button>`); }
 SCR.newgame=()=>{ top('Новая игра'); st.ng=st.ng||{conf:null,name:PREF.coach||''};
- const confs=Object.keys(N.CONFS); const ic={UEFA:'🇪🇺',CONMEBOL:'🌎',CONCACAF:'🌎',CAF:'🌍',AFC:'🌏',OFC:'🌏'};
+ const confs=Object.keys(N.CONFS); const ic={UEFA:'🌍',CONMEBOL:'🌎',CONCACAF:'🌎',CAF:'🌍',AFC:'🌏',OFC:'🌏'};
  if(!st.ng.conf){ V().innerHTML=`<div class="card"><h3>Ваше имя</h3><input type="text" id="cn" placeholder="Имя тренера" value="${esc(st.ng.name)}" oninput="UI.st.ng.name=this.value"></div>
  <div class="card"><h3>Выберите конфедерацию</h3>${confs.map(c=>`<div class="row c" onclick="UI.st.ng.conf='${c}';UI.go('newgame',null,true)"><span class="flag">${ic[c]}</span><div class="f1 b">${N.CONFS[c]}</div><span class="mut">${N.TEAMS.filter(t=>t.conf===c).length} ›</span></div>`).join('')}</div>`; return; }
  const ts=N.TEAMS.filter(t=>t.conf===st.ng.conf).sort((a,b)=>b.r-a.r);
@@ -183,7 +184,7 @@ SCR.comp=(id)=>{ const c=S.C[id]; if(!c)return back(); top(c.n); const tab=st.ta
  V().innerHTML=`<div class="tabs">${tabs.map(([k,n])=>`<div class="tab ${tab===k?'on':''}" onclick="UI.st.tab.c='${k}';UI.refresh()">${n}</div>`).join('')}</div>`+body; };
 function friendly(){ const ds=N.freeDates(); if(!ds.length) return toast('Нет свободных дат в ближайших окнах');
  const me=T(S.me); const opps=Object.values(S.T).filter(t=>t.c!==S.me).sort((a,b)=>Math.abs(a.elo-me.elo)-Math.abs(b.elo-me.elo)).slice(0,70).sort((a,b)=>b.elo-a.elo);
- modal(`<h2>Товарищеский матч</h2><div class="sm mut">Дата (свободные даты международных окон)</div><select id="frd">${ds.map(d=>`<option value="${d}">${N.fmtD(d)}</option>`).join('')}</select><div style="height:8px"></div><div class="sm mut">Соперник</div><select id="fro">${opps.map(t=>`<option value="${t.c}">${t.f} ${t.n} — ${N.starsHtml(N.stars(t))}</option>`).join('')}</select>
+ modal(`<h2>Товарищеский матч</h2><div class="sm mut">Дата (свободные даты международных окон)</div><select id="frd">${ds.map(d=>`<option value="${d}">${N.fmtD(d)}</option>`).join('')}</select><div style="height:8px"></div><div class="sm mut">Соперник</div><select id="fro">${opps.map(t=>`<option value="${t.c}">${t.n} — ${N.stars(t)}★</option>`).join('')}</select>
  <div style="height:8px"></div><label class="ck"><input type="checkbox" id="frh" checked> Играем дома</label><div style="height:10px"></div><button class="btn g w" onclick="UI.doFriendly()">Назначить</button><div style="height:6px"></div><button class="btn gh w" onclick="UI.closeM()">Отмена</button>`); }
 function doFriendly(){ const d=$('#frd').value,o=$('#fro').value,h=$('#frh').checked; if(N.schedFriendly(d,o,h)){ toast('Матч назначен: '+N.fmtD(d,1)+' — '+T(o).n); save(); closeM(); refresh(); } else toast('Соперник занят в эту дату'); }
 SCR.stats=()=>{ top('Статистика'); const tab=st.tab.s||'pl'; const tabs=[['pl','Игроки'],['mt','Матчи'],['sc','Бомбардиры'],['rec','Рекорды'],['rk','Рейтинг'],['tr','Трофеи']];
@@ -228,7 +229,7 @@ function loadFrom(i){ closeM(); try{ if(load(i)){ toast('Игра загруже
 function saveTo(i){ if(save(i)) toast('Сохранено в слот '+i); refresh(); }
 function delSlot(i){ if(!confirm('Удалить сохранение в слоте '+i+'?'))return; localStorage.removeItem('nfm_s'+i); const m=meta(); delete m[i]; localStorage.setItem('nfm_meta',JSON.stringify(m)); refresh(); }
 function exportSave(){ const blob=new Blob([N.serialize(S)],{type:'text/plain'}); const a=document.createElement('a'); a.href=URL.createObjectURL(blob); a.download='nfm_'+S.me+'_'+S.d+'.nfm'; a.click(); }
-function importSave(inp){ const f=inp.files[0]; if(!f)return; f.text().then(t=>{ try{ S=N.deserialize(t); N.setS(S); S.slot=S.slot||1; save(); toast('Импортировано'); home(); }catch(e){ toast('Ошибка файла'); } }); }
+function importSave(inp){ const f=inp.files[0]; if(!f)return; f.text().then(t=>{ try{ S=N.deserialize(t); N.setS(S); fixFlags(); S.slot=S.slot||1; save(); toast('Импортировано'); home(); }catch(e){ toast('Ошибка файла'); } }); }
 SCR.prematch=(fid)=>{ const f=S.F.find(x=>x.id===fid); if(!f||f.r)return home(); top('Перед матчем'); const opp=f.h===S.me?f.a:f.h; const o=T(opp);
  const n=S.u.call.length; const ok=n>=18&&n<=23; if(!N.validXI()) N.autoXI(S.u.xi&&S.u.xi.form);
  const os=N.setup(opp,f); const key=os.on.slice().sort((a,b)=>b.p.o-a.p.o).slice(0,3);
