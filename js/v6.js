@@ -82,7 +82,7 @@ function add(k,v){ const S=G(); const m=S.u.eco.m; m[k]=+((m[k]||0)+v).toFixed(2
 V6.add=add;
 V6.ecoMonth=()=>{ const S=G(); const u=S.u; const rk=rankOf(S.me); const tro=u.tro.filter(t=>N.diffD(t.d,S.d)<1460).length;
  add('spon',+(0.3+2.3*Math.pow(1-rk/211,2)+0.2*tro+(u.trust-50)/120).toFixed(2));
- add('merch',+(((u.fan??60)/100)*1.4*(1-rk/260)+0.1).toFixed(2));
+ add('merch',+((((u.fan??60)/100)*1.4*(1-rk/260)+0.1)*(N.v7&&u.kit?N.v7.merchK():1)).toFixed(2));
  add('staff',-+(0.35*u.staff).toFixed(2));
  add('fac',-+(0.12*Object.values(u.infra).reduce((a,b)=>a+b,0)).toFixed(2));
  add('stad',-+((u.st||[]).filter(s=>!s.rd).reduce((a,s)=>a+s.cap/1000*0.0028*(1+0.2*s.q),0)).toFixed(2));

@@ -1,6 +1,6 @@
 // Headless-тест: node test/sim.js [лет] [команда]
 globalThis.console=console;
-require('../js/i18n.js');require('../js/data.js');require('../js/names.js');require('../js/core.js');require('../js/comps.js');require('../js/world.js');require('../js/match.js');require('../js/v6.js');
+require('../js/i18n.js');require('../js/data.js');require('../js/names.js');require('../js/core.js');require('../js/comps.js');require('../js/world.js');require('../js/match.js');require('../js/v6.js');require('../js/v7.js');
 const N=NFM; const years=+(process.argv[2]||4.5), team=process.argv[3]||'RU';
 const t0=Date.now(); const S=N.newGame(team,'Тест'); N.setS(S); N.v6.init(S);
 const until=N.ds(2026+Math.floor(years),1+Math.round((years%1)*12),1);

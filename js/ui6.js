@@ -27,7 +27,7 @@ const _hub=SCR.hub; SCR.hub=()=>{ _hub(); const s=S(); const tl=(i,t,fn)=>`<div 
  const tiles=V().querySelector('.tiles.hub'); if(tiles) tiles.insertAdjacentHTML('afterend',extra); else V().insertAdjacentHTML('beforeend',extra);
  const k=V().querySelector('.kpis'); if(k&&s.cheat) k.insertAdjacentHTML('beforeend',`<span class="chip"><b class="red">${_t("чит")}</b></span>`); };
 // ===== экономика и стадионы =====
-const ECO=()=>({spon:_t("Спонсоры"),tv:_t("ТВ-права"),tix:_t("Билеты"),merch:_t("Мерчендайз"),prize:_t("Призовые и бонусы"),staff:_t("Персонал"),fac:_t("Объекты"),stad:_t("Содержание стадионов"),build:_t("Стройка и заявки")});
+const ECO=()=>({spon:_t("Спонсоры"),tv:_t("ТВ-права"),tix:_t("Билеты"),merch:_t("Мерчендайз"),kit:_t("Технический спонсор"),fee:_t("Гонорары за матчи"),prize:_t("Призовые и бонусы"),staff:_t("Персонал"),fac:_t("Объекты"),stad:_t("Содержание стадионов"),build:_t("Стройка и заявки")});
 SCR.eco=()=>{ top(_t("Экономика и стадионы")); const s=S(), u=s.u; const E=ECO(); const h=u.eco.h.slice(-12); const sum={}; for(const m of h) for(const k in E) sum[k]=(sum[k]||0)+(m[k]||0);
  const cur=u.eco.m; const row=(k)=>{ const v=sum[k]||0, c=cur[k]||0; return `<tr><td class="l">${E[k]}</td><td class="${c<0?'red':c>0?'grn':'mut'}">${sign(c)}</td><td class="${v<0?'red':v>0?'grn':'mut'}">${sign(v)}</td></tr>`; };
  const inc=Object.keys(E).filter(k=>(sum[k]||0)>=0&&k!=='staff'&&k!=='fac'&&k!=='stad'&&k!=='build'), exp=['staff','fac','stad','build'];
@@ -204,5 +204,4 @@ function v6take(c){ X.ask(_t("Возглавить {0}?",T(c).n),'✓',()=>{ N.t
 function v6edit(id){ const p=S().P[id]; const K=[...N.ATTRS,'pot']; modal(`<h2>${esc(p.n)}</h2>${K.map(k=>`<div class="row"><div class="f1">${k==='pot'?_t("Потенциал"):N.ATTRN[k]}</div><input type="number" min="1" max="99" value="${p[k]}" id="ed_${k}" style="width:80px"></div>`).join('')}<div class="grid2"><button class="btn g" onclick="UI.v6edit2(${id})">${_t("Сохранить")}</button><button class="btn gh" onclick="UI.closeM()">${_t("Отмена")}</button></div>`); }
 function v6edit2(id){ const p=S().P[id]; for(const k of [...N.ATTRS,'pot']){ const v=+document.getElementById('ed_'+k).value; if(v>=1&&v<=99) p[k]=Math.round(v); } N.upd(p); if(p.pot<p.o)p.pot=p.o; N.teamStr(S().me); save(); closeM(); UI.player(id); }
 Object.assign(UI,{v6cost,v6build,v6exp,v6main,v6bid,v6wd,v6auto,v6pl,v6theme,v6cheat,v6chApply,v6take,v6edit,v6edit2});
-X.boot();
 })();
