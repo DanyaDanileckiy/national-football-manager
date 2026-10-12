@@ -1,0 +1,6 @@
+{
+  "appId": "io.github.danyadanileckiy.nfm",
+  "appName": "Сборная: Футбольный Менеджер",
+  "webDir": "www",
+  "android": { "allowMixedContent": false, "backgroundColor": "#050f1d" }
+}

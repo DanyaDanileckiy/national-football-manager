@@ -1,0 +1,11 @@
+node_modules/
+dist/
+electron/app/
+android/www/
+android/android/app/build/
+android/android/.gradle/
+android/android/build/
+android/android/local.properties
+android/android/app/src/main/assets/public/
+*.keystore
+*.jks
