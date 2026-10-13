@@ -727,3 +727,48 @@ Perdiendo
 Perdiendo por 2+
 Ganando por 1
 Ganando
+Por qué esta alineación
+Por qué esta táctica
+Por qué este plan de entrenamiento
+Auto
+mejor once y suplentes
+sistema, roles e instrucciones según el rival
+plan de entrenamiento
+Es una sugerencia de tu asistente: puedes cambiar cualquier ajuste manualmente.
+No se pudo elegir automáticamente
+amistoso
+Convocados los {0} mejores jugadores disponibles por nivel y forma: 3 porteros y recambio en cada línea.
+Lesionados y sancionados no juegan: {0}.
+{0} empiezan en el banquillo: frescura de solo {1}% — un jugador cansado rinde menos y se lesiona más.
+Partido amistoso: una oportunidad para los jóvenes: {0}.
+Partido eliminatorio ({0}): juegan los mejores, aunque estén algo cansados.
+Líderes en el once: {0} ({1}) y {2} ({3}).
+Valoración media del once en sus posiciones: {0}. {1} jugadores en el banquillo, incluido un portero.
+{0}, porque el rival tiene bandas fuertes y tus centrocampistas son técnicos (técnica {1}).
+{0}, porque el rival tiene bandas fuertes: los interiores abiertos de este sistema cubren las bandas.
+{0}, porque tus centrocampistas son técnicos (técnica {1}): este sistema les da el balón en el centro.
+{0}: un sistema compacto con cinco o seis jugadores defensivos ante un rival más fuerte.
+{0}: tus delanteros son rápidos ({1}), el sistema es ideal para ataques rápidos.
+{0}: con este sistema tu equipo es más fuerte (valoración {1}).
+No hay próximo partido: instrucciones equilibradas.
+Sois claramente superiores ({0} frente a {1} del rival): atacamos con línea alta y presión.
+Sois algo superiores ({0} frente a {1}): enfoque valiente, pero sin riesgos.
+El rival es claramente superior ({0} frente a {1}): defendemos atrás y salimos al contraataque.
+El rival es algo superior ({0} frente a {1}): línea baja y ataques rápidos a los espacios.
+Fuerzas similares ({0} y {1}): instrucciones equilibradas.
+Los jugadores están cansados (frescura media {0}%): sin presión agotadora ni ritmo excesivo.
+Partido eliminatorio ({0}): entradas prudentes y perder tiempo cuando vamos ganando.
+Marcaje estrecho a {0}: el mejor atacante del rival (ataque {1}).
+Roles adaptados a los jugadores: por ejemplo, {0} — «{1}» ({2}% de idoneidad).
+{0} jugadores están cansados (frescura por debajo del 80%): carga ligera, el centro del campo descansa.
+Una plantilla joven (edad media {0}) aguanta una carga alta: así los jugadores progresan más rápido.
+Faltan {1} días para un partido importante ({0}): carga normal para no arriesgar lesiones.
+Carga normal: progreso sin riesgo innecesario de lesiones.
+La compenetración táctica es solo del {0}%: los centrocampistas trabajan la táctica.
+Se acerca un partido importante y el balón parado está ensayado al {0}%: el centro del campo entrena jugadas a balón parado.
+La defensa es más débil que el ataque ({0} frente a {1}): los defensas trabajan la defensa.
+Descanso individual: {0} — frescura por debajo del 75%.
+Los jóvenes talentos con gran potencial ({0}) reciben un plan de desarrollo individual.
+Los delanteros trabajan el ataque y los porteros, su juego.
+Toca el gráfico o desliza el dedo por él para ver los detalles.
+Cambio debido al partido: {0}

@@ -390,3 +390,10 @@ table.t10{width:100%;border-collapse:collapse;font-size:12.5px}table.t10 td,tabl
 .start10{border:1px solid rgba(246,196,69,.45)}
 .g10{display:grid;grid-template-columns:1fr 1fr;gap:4px 8px}.g10 select{padding:6px 8px;min-height:36px}
 .cond10 select.mn{flex:0 0 76px;min-width:0}.cond10 select:first-of-type{flex:2}
+/* v10.1: кнопка «Авто» и объяснение */
+.a101b{display:flex;flex-direction:column;align-items:center;gap:2px;font-size:17px;font-weight:800;margin:0 0 10px;padding:12px}
+.a101b .xs{font-weight:500;opacity:.85}
+.a101{border:1px solid rgba(34,211,122,.45);background:linear-gradient(180deg,rgba(34,211,122,.12),rgba(34,211,122,.03))}
+.a101 ul{margin:8px 0 6px;padding-inline-start:20px}.a101 li{margin:4px 0;line-height:1.35}
+.chtip{position:absolute;z-index:5;background:var(--card,#0f1b2b);border:1px solid var(--line);border-radius:10px;padding:6px 8px;font-size:13px;box-shadow:0 6px 20px rgba(0,0,0,.45);pointer-events:none}
+.ch10w{margin-bottom:4px}

@@ -727,3 +727,48 @@ Perdendo
 Perdendo por 2+
 Vencendo por 1
 Vencendo
+Por que esta escalação
+Por que esta tática
+Por que este plano de treino
+Auto
+melhor onze e suplentes
+esquema, funções e instruções contra o adversário
+plano de treino
+Isto é uma sugestão do seu assistente — pode alterar qualquer definição manualmente.
+Não foi possível escolher automaticamente
+amistoso
+Convocados os {0} melhores jogadores disponíveis por nível e forma: 3 goleiros e reservas para cada setor.
+Lesionados e suspensos não jogam: {0}.
+{0} começam no banco: frescor de apenas {1}% — um jogador cansado rende menos e se lesiona mais.
+Amistoso — uma chance para os jovens: {0}.
+Jogo eliminatório ({0}) — jogam os mais fortes, mesmo um pouco cansados.
+Líderes no onze inicial: {0} ({1}) e {2} ({3}).
+Avaliação média do onze inicial nas suas posições: {0}. {1} jogadores no banco, incluindo um goleiro.
+{0}, porque o adversário tem laterais fortes e os seus meio-campistas são técnicos (técnica {1}).
+{0}, porque o adversário tem laterais fortes — os meias abertos deste esquema protegem as alas.
+{0}, porque os seus meio-campistas são técnicos (técnica {1}) — o esquema lhes dá a bola no meio.
+{0} — um esquema compacto com cinco ou seis jogadores defensivos contra um adversário mais forte.
+{0} — os seus atacantes são rápidos ({1}), o esquema serve para ataques rápidos.
+{0} — neste esquema a sua equipe é mais forte (avaliação {1}).
+Sem próximo jogo — instruções equilibradas.
+Vocês são claramente mais fortes ({0} contra {1} do adversário) — atacamos com linha alta e pressão.
+Vocês são um pouco mais fortes ({0} contra {1}) — postura ousada, mas sem riscos.
+O adversário é claramente mais forte ({0} contra {1}) — defendemos atrás e saímos no contra-ataque.
+O adversário é um pouco mais forte ({0} contra {1}) — linha baixa e ataques rápidos nos espaços.
+Forças parecidas ({0} e {1}) — instruções equilibradas.
+Os jogadores estão cansados (frescor médio {0}%) — sem pressão desgastante nem ritmo excessivo.
+Jogo eliminatório ({0}) — desarmes cuidadosos e gastar tempo quando estivermos vencendo.
+Marcação cerrada em {0}: o melhor jogador ofensivo do adversário (ataque {1}).
+Funções escolhidas para os jogadores: por exemplo, {0} — «{1}» ({2}% de adequação).
+{0} jogadores estão cansados (frescor abaixo de 80%) — carga leve, o meio-campo recupera.
+Um elenco jovem (idade média {0}) aguenta carga alta — assim os jogadores evoluem mais rápido.
+Faltam {1} dias para um jogo importante ({0}) — carga normal para não arriscar lesões.
+Carga normal: progresso sem risco desnecessário de lesões.
+O entrosamento tático é de apenas {0}% — os meio-campistas treinam a tática.
+Um jogo importante se aproxima e as bolas paradas estão treinadas em {0}% — o meio-campo treina bolas paradas.
+A defesa é mais fraca que o ataque ({0} contra {1}) — os defensores treinam a marcação.
+Descanso individual: {0} — frescor abaixo de 75%.
+Jovens talentos com grande potencial ({0}) recebem um plano individual de desenvolvimento.
+Os atacantes treinam o ataque e os goleiros, o seu jogo.
+Toque no gráfico ou deslize o dedo por ele para ver os detalhes.
+Mudança causada pelo jogo: {0}

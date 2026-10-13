@@ -15,7 +15,7 @@ N.fifaUpd=(f)=>{ const S=G(); const c=S.C[f.c]; const I=N.fifaI(c,f); if(!I||!f.
 N.fifaOrder=()=>Object.values(G().T).sort((a,b)=>b.pts-a.pts).map(t=>t.c);
 N.fifaRank=(c)=>{ const S=G(); if(!S._rkc||S._rkcD!==S.d+S.F.length){ S._rkc={}; N.fifaOrder().forEach((x,i)=>S._rkc[x]=i+1); S._rkcD=S.d+S.F.length; } return S._rkc[c]; };
 function snapshot(){ const S=G(); const o=N.fifaOrder(); S.rkPrev=S.rkCur||null; S.rkCur={d:S.d,pos:Object.fromEntries(o.map((c,i)=>[c,i+1]))};
- S.rkH=S.rkH||[]; S.rkH.push({d:S.d,o:o.join(',')}); if(S.rkH.length>160) S.rkH.shift();
+ S.rkH=S.rkH||[]; S.rkH.push({d:S.d,o:o.join(','),p:o.map(c=>Math.round(S.T[c].pts)).join(',')}); if(S.rkH.length>160) S.rkH.shift();
  S.u.rkMe=S.u.rkMe||[]; S.u.rkMe.push([S.d,S.me,S.rkCur.pos[S.me],Math.round(S.T[S.me].pts)]); if(S.u.rkMe.length>200) S.u.rkMe.shift(); }
 N.rkMove=(c)=>{ const S=G(); if(!S.rkPrev||!S.rkCur) return 0; return (S.rkPrev.pos[c]||0)-(S.rkCur.pos[c]||0); };
 // ---------- сила молодёжных команд ----------

@@ -727,3 +727,48 @@ Tertinggal
 Tertinggal 2+
 Unggul 1 gol
 Unggul
+Mengapa susunan pemain ini
+Mengapa taktik ini
+Mengapa rencana latihan ini
+Otomatis
+starting XI terbaik dan cadangan
+formasi, peran, dan instruksi sesuai lawan
+rencana latihan
+Ini saran asisten Anda — setiap pengaturan bisa diubah secara manual.
+Gagal memilih secara otomatis
+persahabatan
+Memanggil {0} pemain terbaik yang tersedia berdasarkan level dan performa: 3 kiper dan cadangan untuk setiap lini.
+Pemain cedera dan skorsing tidak bermain: {0}.
+{0} mulai dari bangku cadangan: kebugaran hanya {1}% — pemain lelah lebih lemah dan lebih sering cedera.
+Laga persahabatan — kesempatan bagi pemain muda: {0}.
+Laga gugur ({0}) — pemain terkuat dimainkan meski sedikit lelah.
+Pemimpin di starting XI: {0} ({1}) dan {2} ({3}).
+Rating rata-rata starting XI di posisinya: {0}. {1} pemain di bangku cadangan, termasuk seorang kiper.
+{0}, karena lawan punya sayap yang kuat dan gelandang Anda teknis (teknik {1}).
+{0}, karena lawan punya sayap yang kuat — gelandang sayap dalam formasi ini menjaga sisi lapangan.
+{0}, karena gelandang Anda teknis (teknik {1}) — formasi ini memberi mereka bola di tengah.
+{0} — formasi rapat dengan lima atau enam pemain bertahan melawan lawan yang lebih kuat.
+{0} — penyerang Anda cepat ({1}), formasi ini cocok untuk serangan cepat.
+{0} — skuad Anda paling kuat dalam formasi ini (rating {1}).
+Tidak ada laga berikutnya — instruksi seimbang.
+Anda jelas lebih kuat ({0} lawan {1} milik lawan) — kita menyerang dengan garis tinggi dan pressing.
+Anda sedikit lebih kuat ({0} lawan {1}) — pendekatan berani tanpa risiko.
+Lawan jelas lebih kuat ({0} lawan {1}) — kita bertahan dalam dan menyerang balik.
+Lawan sedikit lebih kuat ({0} lawan {1}) — garis rendah dan serangan cepat ke ruang kosong.
+Kekuatan kira-kira seimbang ({0} dan {1}) — instruksi seimbang.
+Para pemain lelah (kebugaran rata-rata {0}%) — tanpa pressing yang menguras tenaga dan tempo terlalu tinggi.
+Laga gugur ({0}) — tekel hati-hati dan mengulur waktu saat unggul.
+Penjagaan ketat pada {0}: pemain menyerang terbaik lawan (serangan {1}).
+Peran dipilih sesuai pemain: misalnya, {0} — "{1}" (cocok {2}%).
+{0} pemain lelah (kebugaran di bawah 80%) — beban ringan, lini tengah memulihkan diri.
+Skuad muda (usia rata-rata {0}) mampu menahan beban tinggi — pemain jadi berkembang lebih cepat.
+{1} hari lagi menuju laga penting ({0}) — beban normal agar tidak berisiko cedera.
+Beban normal: kemajuan tanpa risiko cedera yang tidak perlu.
+Kekompakan taktik baru {0}% — para gelandang berlatih taktik.
+Laga penting sudah dekat dan bola mati baru terlatih {0}% — lini tengah berlatih bola mati.
+Pertahanan lebih lemah dari serangan ({0} lawan {1}) — para bek berlatih bertahan.
+Istirahat individu: {0} — kebugaran di bawah 75%.
+Talenta muda berpotensi besar ({0}) mendapat rencana pengembangan individu.
+Penyerang berlatih menyerang, kiper berlatih menjaga gawang.
+Ketuk grafik atau geser jari di atasnya untuk melihat detail.
+Perubahan karena pertandingan: {0}

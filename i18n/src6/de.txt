@@ -727,3 +727,48 @@ Rückstand
 Rückstand 2+
 1 Tor vorn
 Führung
+Warum diese Aufstellung
+Warum diese Taktik
+Warum dieser Trainingsplan
+Auto
+beste Elf und Ersatzspieler
+Formation, Rollen und Anweisungen gegen den Gegner
+Trainingsplan
+Das ist ein Vorschlag deines Assistenten — du kannst jede Einstellung von Hand ändern.
+Automatische Auswahl nicht möglich
+Freundschaftsspiel
+Die {0} besten verfügbaren Spieler nach Stärke und Form nominiert: 3 Torhüter und Ersatz für jede Reihe.
+Verletzte und gesperrte Spieler fehlen: {0}.
+{0} beginnen auf der Bank: Frische nur {1}% — ein müder Spieler ist schwächer und verletzt sich öfter.
+Freundschaftsspiel — eine Chance für junge Spieler: {0}.
+K.-o.-Spiel ({0}) — die Stärksten spielen, auch wenn sie etwas müde sind.
+Leader in der Startelf: {0} ({1}) und {2} ({3}).
+Durchschnittliche Bewertung der Startelf auf ihren Positionen: {0}. {1} Spieler auf der Bank, darunter ein Torhüter.
+{0}, weil der Gegner starke Flügel hat und deine Mittelfeldspieler technisch stark sind (Technik {1}).
+{0}, weil der Gegner starke Flügel hat — die äußeren Mittelfeldspieler dieser Formation sichern die Seiten.
+{0}, weil deine Mittelfeldspieler technisch stark sind (Technik {1}) — die Formation bringt sie im Zentrum ins Spiel.
+{0} — eine kompakte Formation mit fünf oder sechs Defensivspielern gegen einen stärkeren Gegner.
+{0} — deine Stürmer sind schnell ({1}), die Formation passt zu schnellen Angriffen.
+{0} — in dieser Formation ist dein Kader am stärksten (Bewertung {1}).
+Kein anstehendes Spiel — ausgewogene Anweisungen.
+Ihr seid deutlich stärker ({0} gegen {1} beim Gegner) — wir greifen an, mit hoher Linie und Pressing.
+Ihr seid etwas stärker ({0} gegen {1}) — mutig, aber ohne Risiko.
+Der Gegner ist deutlich stärker ({0} gegen {1}) — wir stehen tief und kontern.
+Der Gegner ist etwas stärker ({0} gegen {1}) — tiefe Linie und schnelle Angriffe in freie Räume.
+Etwa gleich stark ({0} und {1}) — ausgewogene Anweisungen.
+Die Spieler sind müde (durchschnittliche Frische {0}%) — kein kräftezehrendes Pressing und kein extremes Tempo.
+K.-o.-Spiel ({0}) — vorsichtige Zweikämpfe und Zeitspiel bei Führung.
+Enge Manndeckung für {0}: der beste Offensivspieler des Gegners (Angriff {1}).
+Rollen passend zu den Spielern: zum Beispiel {0} — „{1}“ ({2}% Eignung).
+{0} Spieler sind müde (Frische unter 80%) — leichte Belastung, das Mittelfeld regeneriert.
+Ein junger Kader (Durchschnittsalter {0}) verträgt hohe Belastung — so entwickeln sich die Spieler schneller.
+Noch {1} Tage bis zum wichtigen Spiel ({0}) — normale Belastung, um keine Verletzungen zu riskieren.
+Normale Belastung: Fortschritt ohne unnötiges Verletzungsrisiko.
+Die taktische Eingespieltheit liegt nur bei {0}% — das Mittelfeld trainiert Taktik.
+Ein wichtiges Spiel steht an und Standards sitzen erst zu {0}% — das Mittelfeld trainiert Standards.
+Die Abwehr ist schwächer als der Angriff ({0} gegen {1}) — die Verteidiger trainieren Defensivarbeit.
+Individuelle Pause: {0} — Frische unter 75%.
+Junge Talente mit großem Potenzial ({0}) erhalten einen individuellen Entwicklungsplan.
+Stürmer trainieren den Angriff, Torhüter ihr Torwartspiel.
+Tippe auf das Diagramm oder fahre mit dem Finger darüber, um Details zu sehen.
+Änderung durch das Spiel: {0}

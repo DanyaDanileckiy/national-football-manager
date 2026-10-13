@@ -727,3 +727,48 @@ In svantaggio
 Sotto di 2+
 Avanti di 1
 In vantaggio
+Perché questa formazione
+Perché questa tattica
+Perché questo piano di allenamento
+Auto
+migliori undici e riserve
+modulo, ruoli e istruzioni in base all'avversario
+piano di allenamento
+È un suggerimento del tuo assistente — puoi modificare qualsiasi impostazione a mano.
+Impossibile scegliere automaticamente
+amichevole
+Convocati i {0} migliori giocatori disponibili per livello e forma: 3 portieri e ricambi per ogni reparto.
+Infortunati e squalificati non giocano: {0}.
+{0} partono dalla panchina: freschezza solo {1}% — un giocatore stanco rende meno e si infortuna più spesso.
+Amichevole — un'occasione per i giovani: {0}.
+Partita a eliminazione diretta ({0}) — giocano i più forti, anche se un po' stanchi.
+Leader nell'undici titolare: {0} ({1}) e {2} ({3}).
+Valutazione media dell'undici titolare nei loro ruoli: {0}. {1} giocatori in panchina, tra cui un portiere.
+{0}, perché l'avversario ha fasce forti e i tuoi centrocampisti sono tecnici (tecnica {1}).
+{0}, perché l'avversario ha fasce forti — gli esterni di centrocampo di questo modulo coprono le fasce.
+{0}, perché i tuoi centrocampisti sono tecnici (tecnica {1}) — il modulo dà loro palla al centro.
+{0} — un modulo compatto con cinque o sei giocatori difensivi contro un avversario più forte.
+{0} — i tuoi attaccanti sono veloci ({1}), il modulo è adatto alle ripartenze rapide.
+{0} — con questo modulo la tua rosa è più forte (valutazione {1}).
+Nessuna partita in arrivo — istruzioni equilibrate.
+Siete nettamente più forti ({0} contro {1} dell'avversario) — attacchiamo con linea alta e pressing.
+Siete un po' più forti ({0} contro {1}) — approccio coraggioso, ma senza rischi.
+L'avversario è nettamente più forte ({0} contro {1}) — difendiamo bassi e colpiamo in contropiede.
+L'avversario è un po' più forte ({0} contro {1}) — linea bassa e attacchi rapidi negli spazi.
+Forze simili ({0} e {1}) — istruzioni equilibrate.
+I giocatori sono stanchi (freschezza media {0}%) — niente pressing sfiancante né ritmo eccessivo.
+Partita a eliminazione diretta ({0}) — contrasti prudenti e perdita di tempo quando siamo in vantaggio.
+Marcatura stretta su {0}: il miglior giocatore offensivo avversario (attacco {1}).
+Ruoli scelti in base ai giocatori: per esempio, {0} — «{1}» (adatto al {2}%).
+{0} giocatori sono stanchi (freschezza sotto l'80%) — carico leggero, il centrocampo recupera.
+Una rosa giovane (età media {0}) regge un carico alto — così i giocatori crescono più in fretta.
+Mancano {1} giorni a una partita importante ({0}) — carico normale per non rischiare infortuni.
+Carico normale: progressi senza rischi inutili di infortunio.
+L'intesa tattica è solo al {0}% — i centrocampisti lavorano sulla tattica.
+Si avvicina una partita importante e i calci piazzati sono provati solo al {0}% — il centrocampo allena i calci piazzati.
+La difesa è più debole dell'attacco ({0} contro {1}) — i difensori lavorano sulla fase difensiva.
+Riposo individuale: {0} — freschezza sotto il 75%.
+I giovani talenti con grande potenziale ({0}) ricevono un piano di crescita individuale.
+Gli attaccanti lavorano sull'attacco, i portieri sul loro gioco.
+Tocca il grafico o scorri il dito lungo di esso per vedere i dettagli.
+Variazione dovuta alla partita: {0}

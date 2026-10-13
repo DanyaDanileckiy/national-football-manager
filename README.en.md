@@ -50,6 +50,7 @@ The game runs right in your browser on phone or desktop — no sign-up, and no i
 - Formations, team and individual instructions, drag & drop line-ups
 - v10: 13 formations, player roles with suitability, instruction sliders, set pieces, 7 one-tap styles, conditional instructions and auto-subs, A/B/C tactic slots, opposition instructions, tactical familiarity
 - v10: interactive FIFA ranking (changes, search, filters, team chart, compare), settings screen (difficulty, injuries, fatigue, weather, currency, units, font size); careers start on 1 January 2027
+- v10.1: an «Auto» button on the squad, tactics and training screens that explains its choice in plain words; saves about a third smaller, seasons simulate ~20% faster
 
 ### 👥 Your squad
 - Call up 18–23 players with 7 skills, form, morale, potential and personality

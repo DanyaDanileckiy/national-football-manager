@@ -1,7 +1,7 @@
 // Влияние тактики на матч: node test/tactics.js [матчей на вариант] [команда] [соперник]
 // Каждый вариант сравнивается с базовой (стандартной) тактикой против одного и того же соперника на нейтральном поле.
 const seed=7; let s=seed>>>0; Math.random=()=>{s=(s+0x6D2B79F5)|0;let t=Math.imul(s^s>>>15,1|s);t=t+Math.imul(t^t>>>7,61|t)^t;return((t^t>>>14)>>>0)/4294967296;};
-['i18n','data','names','core','comps','world','match','v6','v7','v9','v10'].forEach(f=>require('../js/'+f+'.js'));
+['i18n','data','names','core','comps','world','match','v6','v7','v9','v10','v101'].forEach(f=>require('../js/'+f+'.js'));
 const N=NFM; const n=+(process.argv[2]||1200), A=process.argv[3]||'PL', B=process.argv[4]||'UA';
 const S=N.newGame(A,'T'); N.setS(S); N.v6.init(S);
 const DEF=()=>JSON.parse(JSON.stringify(N.v10.DEF));

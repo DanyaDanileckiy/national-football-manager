@@ -727,3 +727,48 @@ Gerideyiz
 2+ gerideyiz
 1 golle öndeyiz
 Öndeyiz
+Neden bu kadro
+Neden bu taktik
+Neden bu antrenman planı
+Otomatik
+en iyi 11 ve yedekler
+rakibe göre diziliş, roller ve talimatlar
+antrenman planı
+Bu yardımcınızın önerisi — her ayarı elle değiştirebilirsiniz.
+Otomatik seçim yapılamadı
+hazırlık
+Seviye ve forma göre en iyi {0} uygun oyuncu çağrıldı: 3 kaleci ve her hat için yedek.
+Sakat ve cezalı oyuncular oynamıyor: {0}.
+{0} yedek kulübesinde başlıyor: tazelik sadece %{1} — yorgun oyuncu daha zayıftır ve daha sık sakatlanır.
+Hazırlık maçı — gençler için fırsat: {0}.
+Eleme maçı ({0}) — biraz yorgun olsalar da en güçlüler oynuyor.
+İlk 11'in liderleri: {0} ({1}) ve {2} ({3}).
+İlk 11'in kendi mevkilerindeki ortalama reytingi {0}. Yedekte bir kaleci dahil {1} oyuncu var.
+{0}, çünkü rakibin kanatları güçlü ve orta saha oyuncularınız teknik (teknik {1}).
+{0}, çünkü rakibin kanatları güçlü — bu dizilişteki kanat orta sahalar kenarları kapatıyor.
+{0}, çünkü orta saha oyuncularınız teknik (teknik {1}) — diziliş topu onlara merkezde veriyor.
+{0} — daha güçlü rakibe karşı beş-altı savunma oyunculu sıkı bir diziliş.
+{0} — forvetleriniz hızlı ({1}), diziliş hızlı ataklara uygun.
+{0} — kadronuz en güçlü bu dizilişte (reyting {1}).
+Yaklaşan maç yok — dengeli talimatlar.
+Belirgin şekilde daha güçlüsünüz ({0}, rakipte {1}) — yüksek savunma hattı ve presle hücum ediyoruz.
+Biraz daha güçlüsünüz ({0}, rakipte {1}) — cesur ama risksiz bir yaklaşım.
+Rakip belirgin şekilde daha güçlü ({0}, bizde {1}) — geride savunup kontrataklarla vuruyoruz.
+Rakip biraz daha güçlü ({0}, bizde {1}) — derin hat ve boş alanlara hızlı ataklar.
+Güçler aşağı yukarı eşit ({0} ve {1}) — dengeli talimatlar.
+Oyuncular yorgun (ortalama tazelik %{0}) — yorucu pres ve aşırı yüksek tempo yok.
+Eleme maçı ({0}) — öndeyken dikkatli müdahale ve zaman geçirme.
+{0} adamadam markaja alınıyor: rakibin en iyi hücum oyuncusu (hücum {1}).
+Roller oyunculara göre seçildi: örneğin {0} — "{1}" (uygunluk %{2}).
+{0} oyuncu yorgun (tazelik %80'in altında) — hafif yük, orta saha dinleniyor.
+Genç kadro (yaş ortalaması {0}) yüksek yükü kaldırabilir — oyuncular böyle daha hızlı gelişir.
+Önemli maça ({0}) {1} gün var — sakatlık riskine girmemek için normal yük.
+Normal yük: gereksiz sakatlık riski olmadan gelişim.
+Taktik uyum sadece %{0} — orta saha taktik çalışıyor.
+Önemli bir maç yaklaşıyor ve duran toplar sadece %{0} çalışıldı — orta saha duran top çalışıyor.
+Savunma hücumdan zayıf ({0}, hücum {1}) — savunmacılar savunma çalışıyor.
+Bireysel dinlenme: {0} — tazelik %75'in altında.
+Büyük potansiyelli genç yetenekler ({0}) bireysel gelişim planı alıyor.
+Forvetler hücum, kaleciler kalecilik çalışıyor.
+Ayrıntıları görmek için grafiğe dokunun veya parmağınızı üzerinde kaydırın.
+Değişime yol açan maç: {0}

@@ -727,3 +727,48 @@ Achter
 2+ achter
 1 doelpunt voor
 Voor
+Waarom deze opstelling
+Waarom deze tactiek
+Waarom dit trainingsplan
+Auto
+beste elftal en wissels
+formatie, rollen en instructies tegen de tegenstander
+trainingsplan
+Dit is een voorstel van je assistent — je kunt elke instelling handmatig aanpassen.
+Automatisch kiezen is niet gelukt
+oefenwedstrijd
+De {0} beste beschikbare spelers op niveau en vorm opgeroepen: 3 keepers en vervangers voor elke linie.
+Geblesseerde en geschorste spelers doen niet mee: {0}.
+{0} beginnen op de bank: frisheid slechts {1}% — een vermoeide speler is zwakker en raakt vaker geblesseerd.
+Oefenwedstrijd — een kans voor jonge spelers: {0}.
+Knock-outwedstrijd ({0}) — de sterksten spelen, ook als ze wat vermoeid zijn.
+Leiders in de basis: {0} ({1}) en {2} ({3}).
+Gemiddelde beoordeling van de basiself op hun posities: {0}. {1} spelers op de bank, onder wie een keeper.
+{0}, omdat de tegenstander sterke flanken heeft en jouw middenvelders technisch zijn (techniek {1}).
+{0}, omdat de tegenstander sterke flanken heeft — de buitenste middenvelders in deze formatie dekken de zijkanten af.
+{0}, omdat jouw middenvelders technisch zijn (techniek {1}) — de formatie geeft ze de bal centraal.
+{0} — een compacte formatie met vijf of zes verdedigende spelers tegen een sterkere tegenstander.
+{0} — jouw aanvallers zijn snel ({1}), de formatie past bij snelle aanvallen.
+{0} — in deze formatie is jouw selectie het sterkst (beoordeling {1}).
+Geen komende wedstrijd — gebalanceerde instructies.
+Jullie zijn duidelijk sterker ({0} tegen {1} bij de tegenstander) — we vallen aan met een hoge linie en druk.
+Jullie zijn iets sterker ({0} tegen {1}) — gedurfd, maar zonder risico.
+De tegenstander is duidelijk sterker ({0} tegen {1}) — we verdedigen diep en loeren op de counter.
+De tegenstander is iets sterker ({0} tegen {1}) — lage linie en snelle aanvallen in de ruimte.
+De krachten zijn ongeveer gelijk ({0} en {1}) — gebalanceerde instructies.
+De spelers zijn vermoeid (gemiddelde frisheid {0}%) — geen slopende druk en geen extreem tempo.
+Knock-outwedstrijd ({0}) — voorzichtig tackelen en tijd rekken bij een voorsprong.
+Strakke dekking op {0}: de beste aanvallende speler van de tegenstander (aanval {1}).
+Rollen afgestemd op de spelers: bijvoorbeeld {0} — "{1}" ({2}% geschikt).
+{0} spelers zijn vermoeid (frisheid onder 80%) — lichte belasting, het middenveld herstelt.
+Een jonge selectie (gemiddelde leeftijd {0}) kan een hoge belasting aan — zo groeien spelers sneller.
+Nog {1} dagen tot een belangrijke wedstrijd ({0}) — normale belasting om blessures te voorkomen.
+Normale belasting: vooruitgang zonder onnodig blessurerisico.
+De tactische afstemming is slechts {0}% — de middenvelders trainen op tactiek.
+Er komt een belangrijke wedstrijd aan en standaardsituaties zitten pas voor {0}% — het middenveld traint standaardsituaties.
+De verdediging is zwakker dan de aanval ({0} tegen {1}) — de verdedigers trainen op verdedigen.
+Individuele rust: {0} — frisheid onder 75%.
+Jonge talenten met veel potentie ({0}) krijgen een individueel ontwikkelplan.
+Aanvallers trainen op aanvallen, keepers op hun keeperswerk.
+Tik op de grafiek of sleep je vinger erover om details te zien.
+Verandering door de wedstrijd: {0}

@@ -40,7 +40,10 @@ N.roleSuit=(p,k)=>{ if(!p) return 0; const a=p.att||40,d=p.def||40,pa=p.pas||40,
   cm:pa*.5+d*.25+a*.25,b2b:ph*.45+d*.25+a*.3,ap:pa*.5+t*.5,am:pa*.4+t*.3+a*.3,ss:a*.65+t*.35,wm:pa*.4+t*.3+ph*.3,wf:a*.5+t*.5,w:t*.5+pa*.3+ph*.2,if:a*.6+t*.4,
   af:a*.8+t*.2,tm:hh*.5+ph*.3+a*.2,p:a,f9:t*.5+pa*.5,pf:ph*.5+d*.2+a*.3}[k];
  return Math.round(f==null?50:f); };
-const rk=(e,tac)=>{ const k=e.pr||N.ROLEDEF[e.role]; const m=RL[k]||{}; if(!e.pr||!m) return null; const sc=N.roleSuit(e.p,k); const o=Math.max(40,N.roleOvr(e.p,e.role)); const kf=cl(0.75+(sc-o+6)/40,0.35,1.15); return {m,kf}; };
+{ const _rs=N.roleSuit; N.roleSuit=(p,k)=>{ if(!p) return 0; const sg=((((((p.att|0)*128+(p.def|0))*128+(p.pas|0))*128+(p.tec|0))*128+(p.phy|0))*128+(p.spd|0))*128+(p.gk|0); let c=p._su; if(!c||c.s!==sg||c.h!==p.h){ c={s:sg,h:p.h}; Object.defineProperty(p,'_su',{value:c,writable:true,configurable:true,enumerable:false}); } const v=c[k]; return v!==undefined?v:(c[k]=_rs(p,k)); }; }
+const rk0=(e)=>{ const k=e.pr||N.ROLEDEF[e.role]; const m=RL[k]||{}; if(!e.pr||!m) return null; const sc=N.roleSuit(e.p,k); const o=Math.max(40,N.roleOvr(e.p,e.role)); const kf=cl(0.75+(sc-o+6)/40,0.35,1.15); return {m,kf}; };
+// v10.1: результат зависит только от роли и атрибутов — кэшируется на записи игрока в матче
+const rk=(e,tac)=>{ const c=e._rkc; if(c&&c.pr===e.pr&&c.role===e.role&&c.p===e.p) return c.v; const v=rk0(e); Object.defineProperty(e,'_rkc',{value:{pr:e.pr,role:e.role,p:e.p,v},writable:true,configurable:true,enumerable:false}); return v; };
 const rm=(r,f,dft=1)=>{ if(!r||r.m[f]==null) return dft; return 1+(r.m[f]-1)*r.kf; };
 const ra=(r,f)=>{ if(!r||r.m[f]==null) return 0; return r.m[f]*r.kf; };
 // эффекты командных установок (все шкалы 0..2, середина 1 — «стандартно»)

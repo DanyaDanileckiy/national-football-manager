@@ -63,7 +63,7 @@ V10.switchSlot=(m,s,sl)=>{ const tm=m.t[s]; const keep={sp:tm.tac.sp,cond:tm.tac
 const AIF=['4-3-3','4-2-3-1','4-4-2','4-1-4-1','3-5-2','5-3-2','4-4-1-1','3-4-3','4-1-2-1-2','5-4-1'];
 const hs=(s)=>{ let h=0; for(let i=0;i<s.length;i++) h=(h*31+s.charCodeAt(i))>>>0; return h; };
 N.aiTac=(c,fx,ps)=>{ const S=G(); const t=S.T[c];
- const mk=S.d.slice(0,7); if(!t.f10||t.f10.m!==mk){ let best=t.form||'4-3-3', bv=-1; const top=ps.slice(0,18);
+ const mk=S.d.slice(0,4)+'q'+((+S.d.slice(5,7)-1)/3|0); /* v10.1: схема ИИ — раз в квартал */ if(!t.f10||t.f10.m!==mk){ let best=t.form||'4-3-3', bv=-1; const top=ps.slice(0,18);
    for(const f of AIF){ const lu=N.autoLineup(top,f); const F=N.FORMS[f]; let v=0; lu.xi.forEach((p,i)=>v+=p?N.roleOvr(p,F[i][0]):30); v+= (f===t.form?2:0); if(v>bv){bv=v;best=f;} }
    t.f10={m:mk,f:best}; t.form=best; }
  let form=t.f10.f; const tac={ment:0,press:1,tempo:1,line:1,width:1,pass:1,style:'mix',tackle:1};

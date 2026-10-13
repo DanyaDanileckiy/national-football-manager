@@ -1,5 +1,5 @@
 // Проверка жеребьёвок: node test/draw.js [лет]
-require('../js/i18n.js');require('../js/data.js');require('../js/names.js');require('../js/core.js');require('../js/comps.js');require('../js/world.js');require('../js/match.js');require('../js/v6.js');require('../js/v7.js');require('../js/v9.js');require('../js/v10.js');
+require('../js/i18n.js');require('../js/data.js');require('../js/names.js');require('../js/core.js');require('../js/comps.js');require('../js/world.js');require('../js/match.js');require('../js/v6.js');require('../js/v7.js');require('../js/v9.js');require('../js/v10.js');require('../js/v101.js');
 const N=NFM; const S=N.newGame('FR','Тест'); N.setS(S); N.v6.init(S); const years=+(process.argv[2]||5);
 const KO=[],GR=new Map(); const _sk=N.startKO; N.startKO=(c,se,pa)=>{ _sk(c,se,pa); if(c.conf==='ALL'&&c.po&&!c.cup&&c.ko.length===1) KO.push([c.id,c.ko[0].map(p=>[p.h,p.a])]); };
 const _m=N.fn.month; N.fn.month=e=>{ _m(e); for(const c of Object.values(S.C)) if(c.conf==='ALL'&&c.groups&&c.groups.length>1&&!GR.has(c.id)) GR.set(c.id,c.groups.map(g=>g.t.slice())); };

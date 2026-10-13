@@ -24,9 +24,16 @@ const RW={GK:{gk:.82,phy:.08,pas:.05,spd:.05},CB:{def:.5,phy:.25,spd:.1,pas:.1,t
 const COMPAT={CB:{LB:.9,RB:.9,DM:.85},LB:{RB:.94,LM:.9,CB:.85},RB:{LB:.94,RM:.9,CB:.85},DM:{CM:.96,CB:.85},CM:{DM:.94,AM:.93},AM:{CM:.93,ST:.88,LW:.88,RW:.88},LM:{RM:.93,LW:.93,LB:.85,AM:.86},RM:{LM:.93,RW:.93,RB:.85,AM:.86},LW:{RW:.95,LM:.93,ST:.88},RW:{LW:.95,RM:.93,ST:.88},ST:{LW:.88,RW:.88,AM:.88}};
 N.ATTRS=['att','def','pas','tec','phy','spd','gk'];
 N.ATTRN={att:_t("Атака"),def:_t("Оборона"),pas:_t("Пас"),tec:_t("Техника"),phy:_t("Физика"),spd:_t("Скорость"),gk:_t("Вратарь")};
-function raw(p,role){const w=RW[role];let s=0;for(const k in w)s+=w[k]*(p[k]||0);return s}
-N.compat=(pos,role)=>{ if(pos===role)return 1; if(pos==='GK'||role==='GK')return .35; const c=COMPAT[pos]&&COMPAT[pos][role]; if(c)return c; const g1=N.POS[pos][1],g2=N.POS[role][1]; if(g1===g2)return .82; if((g1+g2).match(/DF|FD/))return .55; return .7; };
-N.roleOvr=(p,role)=>{ if(!p||!p.att&&!p.gk)return 30; return raw(p,role)*(0.7+0.3*N.compat(p.pos,role)); };
+// v10.1: веса ролей как массивы (быстрее for-in), порядок суммирования тот же
+const RWA={}; for(const r in RW) RWA[r]=Object.keys(RW[r]).map(k=>[k,RW[r][k]]);
+function raw(p,role){const w=RWA[role];let s=0;for(let i=0;i<w.length;i++){const x=w[i];s+=x[1]*(p[x[0]]||0);}return s}
+const CPT={}; N.compat=(pos,role)=>{ const t=CPT[pos]||(CPT[pos]={}); const c=t[role]; return c!==undefined?c:(t[role]=compat0(pos,role)); };
+const compat0=(pos,role)=>{ if(pos===role)return 1; if(pos==='GK'||role==='GK')return .35; const c=COMPAT[pos]&&COMPAT[pos][role]; if(c)return c; const g1=N.POS[pos][1],g2=N.POS[role][1]; if(g1===g2)return .82; if((g1+g2).match(/DF|FD/))return .55; return .7; };
+N.roleOvr=(p,role)=>{ if(!p||!p.att&&!p.gk)return 30;
+ // v10.1: кэш по набору атрибутов (поля с «_» в сейв не попадают)
+ const sg=((((((p.att|0)*128+(p.def|0))*128+(p.pas|0))*128+(p.tec|0))*128+(p.phy|0))*128+(p.spd|0))*128+(p.gk|0);
+ let c=p._ro; if(!c||c.s!==sg||c.p!==p.pos){ c=p._ro={s:sg,p:p.pos}; Object.defineProperty(p,'_ro',{value:c,writable:true,configurable:true,enumerable:false}); }
+ const v=c[role]; if(v!==undefined) return v; return c[role]=raw(p,role)*(0.7+0.3*N.compat(p.pos,role)); };
 N.ovr=p=>Math.round(raw(p,p.pos));
 N.upd=p=>{p.o=N.ovr(p);return p};
 let SS=null; N.setS=s=>{SS=s}; N.getS=()=>SS;
@@ -91,7 +98,8 @@ N.teamStr=c=>{ const t=N.T(c); const ps=t.pl.map(id=>SS.P[id]).filter(p=>p&&!p.r
 N.autoLineup=(players,form)=>{ const F=N.FORMS[form]; const used=new Set(); const xi=new Array(11).fill(null);
  const order=F.map((s,i)=>i).sort((a,b)=>(F[a][0]==='GK'?-1:0)-(F[b][0]==='GK'?-1:0));
  const avail=players.filter(p=>!p.inj&&!p.sus).sort((a,b)=>b.o-a.o);
- for(const i of order){ const role=F[i][0]; let best=null,bv=-1; for(const p of avail){ if(used.has(p.id))continue; const v=N.roleOvr(p,role)*(0.9+0.1*(p.fit/100)); if(v>bv){bv=v;best=p} } if(best){used.add(best.id);xi[i]=best} }
+ const ff=avail.map(p=>0.9+0.1*(p.fit/100)), uz=new Uint8Array(avail.length);
+ for(const i of order){ const role=F[i][0]; let best=-1,bv=-1; for(let j=0;j<avail.length;j++){ if(uz[j])continue; const v=N.roleOvr(avail[j],role)*ff[j]; if(v>bv){bv=v;best=j} } if(best>=0){uz[best]=1;used.add(avail[best].id);xi[i]=avail[best]} }
  const rest=avail.filter(p=>!used.has(p.id)); const bench=[]; const gk=rest.find(p=>p.pos==='GK'); if(gk)bench.push(gk);
  for(const p of rest){ if(bench.length>=12)break; if(!bench.includes(p))bench.push(p); }
  return {form,xi,bench}; };
@@ -350,8 +358,8 @@ N.ach=(k)=>{ const S=SS; if(S.u.ach[k])return; S.u.ach[k]=S.d; N.mail(_t("Дос
    else { dict=[]; next=256; e=get(c); }
    parts.push(e); prev=c; }
   let len=0; for(const p of parts)len+=p.length; const u=new Uint8Array(len); let o=0; for(const p of parts){u.set(p,o);o+=p.length;} return new TextDecoder().decode(u); };
- N.serialize=(S)=>'L1'+N.lzw(JSON.stringify(S,(k,v)=>k[0]==='_'?undefined:v));
- N.deserialize=(s)=>JSON.parse(s.startsWith('L1')?N.unlzw(s.slice(2)):s);
+ N.serialize=(S)=>'L1'+N.lzw(JSON.stringify(N.pack?N.pack(S):S,(k,v)=>k[0]==='_'?undefined:v));
+ N.deserialize=(s)=>{ const L=JSON.parse(s.startsWith('L1')?N.unlzw(s.slice(2)):s); return N.unpack?N.unpack(L):L; };
 })();
 // перевод сохранённых строк на текущий язык (после загрузки сохранения)
 (function(){ const N=NFM; N.relang=S=>{ const I=NFM_I18N, by={}; N.TEAMS.forEach(t=>by[t.c]=t.n);

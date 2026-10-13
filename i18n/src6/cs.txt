@@ -727,3 +727,48 @@ Prohráváme
 Prohráváme o 2+
 Vedeme o 1
 Vedeme
+Proč tato sestava
+Proč tato taktika
+Proč tento tréninkový plán
+Auto
+nejlepší jedenáctka a náhradníci
+rozestavení, role a pokyny proti soupeři
+tréninkový plán
+Toto je návrh asistenta — jakékoli nastavení můžete ručně změnit.
+Automatický výběr se nezdařil
+přátelský
+Nominováno {0} nejlepších dostupných hráčů podle úrovně a formy: 3 brankáři a náhrady do každé řady.
+Zranění a suspendovaní nehrají: {0}.
+{0} začnou na lavičce: svěžest jen {1}% — unavený hráč je slabší a častěji se zraní.
+Přátelský zápas — šance pro mladé: {0}.
+Vyřazovací zápas ({0}) — hrají nejsilnější, i když jsou trochu unavení.
+Lídři v základní sestavě: {0} ({1}) a {2} ({3}).
+Průměrné hodnocení základní sestavy na jejich pozicích: {0}. Na lavičce je {1} hráčů včetně brankáře.
+{0}, protože soupeř má silná křídla a vaši záložníci jsou techničtí (technika {1}).
+{0}, protože soupeř má silná křídla — krajní záložníci v tomto rozestavení kryjí strany.
+{0}, protože vaši záložníci jsou techničtí (technika {1}) — rozestavení jim dává míč ve středu.
+{0} — kompaktní rozestavení s pěti až šesti obrannými hráči proti silnějšímu soupeři.
+{0} — vaši útočníci jsou rychlí ({1}), rozestavení se hodí pro rychlé útoky.
+{0} — v tomto rozestavení je váš tým nejsilnější (hodnocení {1}).
+Žádný nadcházející zápas — vyvážené pokyny.
+Jste výrazně silnější ({0} proti {1} u soupeře) — útočíme, vysoká obranná linie a presink.
+Jste o něco silnější ({0} proti {1}) — odvážně, ale bez rizika.
+Soupeř je výrazně silnější ({0} proti {1}) — hrajeme z obrany a chytáme ho na brejky.
+Soupeř je o něco silnější ({0} proti {1}) — nízká linie a rychlé útoky do volných prostorů.
+Síly jsou zhruba vyrovnané ({0} a {1}) — vyvážené pokyny.
+Hráči jsou unavení (průměrná svěžest {0}%) — bez vyčerpávajícího presinku a extrémního tempa.
+Vyřazovací zápas ({0}) — opatrné zákroky a zdržování hry při vedení.
+Těsné krytí hráče {0}: nejlepší útočný hráč soupeře (útok {1}).
+Role vybrané podle hráčů: například {0} — „{1}“ (vhodnost {2}%).
+{0} hráčů je unavených (svěžest pod 80%) — lehká zátěž, záloha regeneruje.
+Mladý tým (průměrný věk {0}) zvládne vysokou zátěž — hráči se tak rozvíjejí rychleji.
+Do důležitého zápasu ({0}) zbývá {1} dní — normální zátěž, abychom neriskovali zranění.
+Normální zátěž: pokrok bez zbytečného rizika zranění.
+Sehranost rozestavení je jen {0}% — záložníci trénují taktiku.
+Blíží se důležitý zápas a standardní situace jsou nacvičené jen na {0}% — záloha trénuje standardky.
+Obrana je slabší než útok ({0} proti {1}) — obránci trénují bránění.
+Individuální odpočinek: {0} — svěžest pod 75%.
+Mladé talenty s velkým potenciálem ({0}) dostávají individuální plán rozvoje.
+Útočníci trénují útok, brankáři svou hru.
+Klepněte na graf nebo po něm přejeďte prstem a zobrazí se podrobnosti.
+Změna kvůli zápasu: {0}

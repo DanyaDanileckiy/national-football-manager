@@ -727,3 +727,48 @@ Przegrywamy
 Przegrywamy 2+
 Prowadzimy 1 bramką
 Prowadzimy
+Dlaczego taki skład
+Dlaczego taka taktyka
+Dlaczego taki plan treningowy
+Auto
+najlepsza jedenastka i rezerwowi
+ustawienie, role i polecenia pod rywala
+plan treningowy
+To propozycja asystenta — każde ustawienie możesz zmienić ręcznie.
+Nie udało się dobrać automatycznie
+towarzyski
+Powołano {0} najlepszych dostępnych zawodników według poziomu i formy: 3 bramkarzy i zmienników na każdą formację.
+Kontuzjowani i zawieszeni nie grają: {0}.
+{0} zaczynają na ławce: świeżość tylko {1}% — zmęczony zawodnik jest słabszy i częściej doznaje kontuzji.
+Mecz towarzyski — szansa dla młodych: {0}.
+Mecz pucharowy ({0}) — grają najsilniejsi, nawet jeśli są trochę zmęczeni.
+Liderzy w wyjściowym składzie: {0} ({1}) i {2} ({3}).
+Średnia ocena wyjściowej jedenastki na ich pozycjach: {0}. Na ławce {1} zawodników, w tym bramkarz.
+{0}, ponieważ rywal ma silne skrzydła, a twoi pomocnicy są techniczni (technika {1}).
+{0}, ponieważ rywal ma silne skrzydła — boczni pomocnicy w tym ustawieniu zabezpieczają flanki.
+{0}, ponieważ twoi pomocnicy są techniczni (technika {1}) — ustawienie daje im piłkę w środku.
+{0} — zwarte ustawienie z pięcioma–sześcioma graczami defensywnymi przeciw silniejszemu rywalowi.
+{0} — twoi napastnicy są szybcy ({1}), ustawienie pasuje do szybkich ataków.
+{0} — w tym ustawieniu twój skład jest najsilniejszy (ocena {1}).
+Brak najbliższego meczu — zrównoważone polecenia.
+Jesteście wyraźnie silniejsi ({0} wobec {1} u rywala) — atakujemy wysoką linią i pressingiem.
+Jesteście nieco silniejsi ({0} wobec {1}) — odważnie, ale bez ryzyka.
+Rywal jest wyraźnie silniejszy ({0} wobec {1}) — gramy z głębokiej obrony i z kontry.
+Rywal jest nieco silniejszy ({0} wobec {1}) — niska linia i szybkie ataki w wolne strefy.
+Siły mniej więcej równe ({0} i {1}) — zrównoważone polecenia.
+Zawodnicy są zmęczeni (średnia świeżość {0}%) — bez wyczerpującego pressingu i bardzo szybkiego tempa.
+Mecz pucharowy ({0}) — ostrożne odbiory i granie na czas przy prowadzeniu.
+Ścisłe krycie {0}: to najlepszy ofensywny zawodnik rywala (atak {1}).
+Role dobrane do zawodników: na przykład {0} — „{1}” (pasuje w {2}%).
+{0} zawodników jest zmęczonych (świeżość poniżej 80%) — lekkie obciążenie, pomoc się regeneruje.
+Młody skład (średni wiek {0}) zniesie duże obciążenie — tak zawodnicy rozwijają się szybciej.
+Do ważnego meczu ({0}) zostało {1} dni — normalne obciążenie, by nie ryzykować kontuzji.
+Normalne obciążenie: postęp bez zbędnego ryzyka kontuzji.
+Zgranie taktyczne to tylko {0}% — pomocnicy ćwiczą taktykę.
+Zbliża się ważny mecz, a stałe fragmenty są przećwiczone w {0}% — pomoc trenuje stałe fragmenty.
+Obrona jest słabsza od ataku ({0} wobec {1}) — obrońcy ćwiczą grę w defensywie.
+Indywidualny odpoczynek: {0} — świeżość poniżej 75%.
+Młode talenty z dużym potencjałem ({0}) dostają indywidualny plan rozwoju.
+Napastnicy ćwiczą atak, bramkarze — swoją grę.
+Dotknij wykresu lub przesuń po nim palcem, aby zobaczyć szczegóły.
+Zmiana z powodu meczu: {0}

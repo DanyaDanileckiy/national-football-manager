@@ -727,3 +727,48 @@ Mené
 Mené de 2+
 Devant d'un but
 Devant
+Pourquoi cette composition
+Pourquoi cette tactique
+Pourquoi ce plan d'entraînement
+Auto
+meilleur onze et remplaçants
+système, rôles et consignes selon l'adversaire
+plan d'entraînement
+C'est une suggestion de votre adjoint — vous pouvez modifier chaque réglage à la main.
+Impossible de choisir automatiquement
+amical
+Les {0} meilleurs joueurs disponibles selon le niveau et la forme sont convoqués : 3 gardiens et des remplaçants à chaque ligne.
+Blessés et suspendus ne jouent pas : {0}.
+{0} commencent sur le banc : fraîcheur de seulement {1}% — un joueur fatigué est moins fort et se blesse plus souvent.
+Match amical — une chance pour les jeunes : {0}.
+Match à élimination directe ({0}) — les plus forts jouent, même un peu fatigués.
+Leaders du onze de départ : {0} ({1}) et {2} ({3}).
+Note moyenne du onze de départ à leurs postes : {0}. {1} joueurs sur le banc, dont un gardien.
+{0}, parce que l'adversaire a des côtés forts et que vos milieux sont techniques (technique {1}).
+{0}, parce que l'adversaire a des côtés forts — les milieux excentrés de ce système couvrent les ailes.
+{0}, parce que vos milieux sont techniques (technique {1}) — ce système leur donne le ballon dans l'axe.
+{0} — un système compact avec cinq ou six joueurs défensifs face à un adversaire plus fort.
+{0} — vos attaquants sont rapides ({1}), ce système convient aux attaques rapides.
+{0} — c'est dans ce système que votre effectif est le plus fort (note {1}).
+Pas de prochain match — consignes équilibrées.
+Vous êtes nettement plus forts ({0} contre {1} pour l'adversaire) — on attaque avec une ligne haute et du pressing.
+Vous êtes un peu plus forts ({0} contre {1}) — approche audacieuse, mais sans risque.
+L'adversaire est nettement plus fort ({0} contre {1}) — on défend bas et on joue le contre.
+L'adversaire est un peu plus fort ({0} contre {1}) — ligne basse et attaques rapides dans les espaces.
+Forces à peu près égales ({0} et {1}) — consignes équilibrées.
+Les joueurs sont fatigués (fraîcheur moyenne {0}%) — pas de pressing épuisant ni de rythme trop élevé.
+Match à élimination directe ({0}) — tacles prudents et gestion du temps quand on mène.
+Marquage serré sur {0} : le meilleur joueur offensif adverse (attaque {1}).
+Rôles adaptés aux joueurs : par exemple, {0} — « {1} » ({2}% d'adéquation).
+{0} joueurs sont fatigués (fraîcheur sous 80%) — charge légère, le milieu récupère.
+Un effectif jeune (âge moyen {0}) supporte une charge élevée — les joueurs progressent plus vite.
+Encore {1} jours avant un match important ({0}) — charge normale pour éviter les blessures.
+Charge normale : progrès sans risque inutile de blessure.
+Les automatismes tactiques ne sont qu'à {0}% — les milieux travaillent la tactique.
+Un match important approche et les coups de pied arrêtés ne sont maîtrisés qu'à {0}% — le milieu travaille les coups de pied arrêtés.
+La défense est plus faible que l'attaque ({0} contre {1}) — les défenseurs travaillent la défense.
+Repos individuel : {0} — fraîcheur sous 75%.
+Les jeunes talents à fort potentiel ({0}) reçoivent un plan de progression individuel.
+Les attaquants travaillent l'attaque, les gardiens leur jeu.
+Touchez le graphique ou faites glisser le doigt dessus pour voir les détails.
+Changement dû au match : {0}

@@ -10,9 +10,10 @@ const lang=(saved&&has(saved))?saved:(G.document?detect():'ru');
 const hash=s=>{ let h=0x811c9dc5; for(let i=0;i<s.length;i++){ h^=s.charCodeAt(i); h=Math.imul(h,0x01000193)>>>0; } return h.toString(36); };
 const I=G.NFM_I18N={lang,LANGS,first:!saved,hash,rtl:!!(LANGS.find(x=>x[0]===lang)||[])[2],D:null};
 G.NFM_LANG=d=>{ I.D=d; };
-const hist=new Map();
-G._t=function(k,...a){ let s=k; if(I.D){ const v=I.D[hash(k)]; if(v!=null)s=v; } s=s.replace(/\{(\d+)\}/g,(m,i)=>a[i]==null?'':a[i]);
- hist.set(s,[k,a]); if(hist.size>400){ hist.delete(hist.keys().next().value); } return s; };
+const hist=new Map(); const NA=[];
+const HC=new Map(); const hk=k=>{ let h=HC.get(k); if(h===undefined){ h=hash(k); HC.set(k,h); } return h; };
+G._t=function(k,...a){ let s=k; if(I.D){ const v=I.D[hk(k)]; if(v!=null)s=v; } if(s.indexOf('{')>=0) s=s.replace(/\{(\d+)\}/g,(m,i)=>a[i]==null?'':a[i]);
+ if(hist.size>=400&&!hist.has(s)) hist.delete(hist.keys().next().value); hist.set(s,a.length?[k,a]:[k,NA]); return s; };
 // ключ и аргументы для строки, только что полученной из _t (чтобы перевести сохранённые данные при смене языка)
 I.keyOf=s=>{ const v=hist.get(s); return v?[v[0],v[1].map(x=>typeof x==='string'||typeof x==='number'?x:'')]:null; };
 I.re=(nk)=>nk?_t(nk[0],...nk[1]):null;

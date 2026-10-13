@@ -727,3 +727,48 @@ Losing
 Losing by 2+
 Leading by 1
 Leading
+Why this lineup
+Why these tactics
+Why this training plan
+Auto
+best XI and substitutes
+formation, roles and instructions for the opponent
+training plan
+This is your assistant's suggestion — you can change any setting manually.
+Could not pick automatically
+friendly
+Called up the {0} best available players by level and form: 3 goalkeepers and cover for every line.
+Injured and suspended players are out: {0}.
+{0} start on the bench: freshness only {1}% — a tired player is weaker and gets injured more often.
+Friendly match — a chance for young players: {0}.
+Knockout match ({0}) — the strongest players start, even if slightly tired.
+Leaders in the starting XI: {0} ({1}) and {2} ({3}).
+Average rating of the starting XI in their positions is {0}. {1} players on the bench, including a goalkeeper.
+{0}, because the opponent has strong flanks and your midfielders are technical (technique {1}).
+{0}, because the opponent has strong flanks — wide midfielders in this formation cover the wings.
+{0}, because your midfielders are technical (technique {1}) — this formation gives them the ball in the centre.
+{0} — a compact formation with five or six defensive players against a stronger opponent.
+{0} — your forwards are fast ({1}), so this formation suits quick attacks.
+{0} — your squad is strongest in this formation (rating {1}).
+No upcoming match — balanced instructions.
+You are clearly stronger ({0} vs {1} for the opponent) — we attack with a high line and pressing.
+You are slightly stronger ({0} vs {1}) — a bold approach, but without risk.
+The opponent is clearly stronger ({0} vs {1}) — we defend deep and hit them on the counter.
+The opponent is slightly stronger ({0} vs {1}) — a low line and quick attacks into space.
+The teams are roughly equal ({0} and {1}) — balanced instructions.
+The players are tired (average freshness {0}%) — no exhausting pressing or very high tempo.
+Knockout match ({0}) — careful tackling and time-wasting when we are ahead.
+Tight marking on {0}: the opponent's best attacking player (attack {1}).
+Roles are chosen to fit the players: for example, {0} — "{1}" ({2}% fit).
+{0} players are tired (freshness below 80%) — light load, the midfield recovers.
+A young squad (average age {0}) can handle a high load — players develop faster this way.
+{1} days until an important match ({0}) — normal load to avoid injuries.
+Normal load: progress without unnecessary injury risk.
+Tactical familiarity is only {0}% — the midfielders work on tactics.
+An important match is coming and set pieces are only {0}% rehearsed — the midfield trains set pieces.
+Defence is weaker than attack ({0} vs {1}) — the defenders work on defending.
+Individual rest: {0} — freshness below 75%.
+Young talents with high potential ({0}) get an individual development plan.
+Forwards work on attacking, goalkeepers on goalkeeping.
+Tap the chart or drag your finger along it to see details.
+Change caused by the match: {0}
