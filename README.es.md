@@ -48,6 +48,7 @@ El juego funciona directamente en el navegador del móvil o del ordenador, sin r
 - Campo 2D, gráfico de dominio, comentarios, pausa y velocidad ×4
 - Cambios y táctica durante el partido, prórroga y penaltis, notas de los jugadores
 - Formaciones, instrucciones de equipo e individuales, alineación con arrastrar y soltar
+- v10: 13 sistemas, roles de jugador, deslizadores de instrucciones, balón parado, 7 estilos, instrucciones condicionales y cambios automáticos, tácticas A/B/C, instrucciones contra el rival; ranking FIFA interactivo y ajustes; inicio el 1 de enero de 2027
 
 ### 👥 Tu plantilla
 - Convoca de 18 a 23 jugadores con 7 habilidades, forma, moral, potencial y carácter

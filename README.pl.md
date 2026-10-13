@@ -48,6 +48,7 @@ Gra działa bezpośrednio w przeglądarce na telefonie i komputerze — bez reje
 - Boisko 2D, wykres przewagi, komentarz, pauza i prędkość ×4
 - Zmiany i taktyka w trakcie meczu, dogrywka i rzuty karne, oceny zawodników
 - Ustawienia, polecenia drużynowe i indywidualne, skład metodą przeciągnij i upuść
+- v10: 13 ustawień, role zawodników, suwaki poleceń, stałe fragmenty, 7 stylów, polecenia warunkowe i automatyczne zmiany, taktyki A/B/C, polecenia wobec rywala; interaktywny ranking FIFA i ustawienia; start 1 stycznia 2027
 
 ### 👥 Twoja kadra
 - Powołaj 18–23 zawodników: 7 umiejętności, forma, morale, potencjał i charakter

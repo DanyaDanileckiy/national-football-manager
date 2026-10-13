@@ -48,6 +48,7 @@ Le jeu tourne directement dans le navigateur, sur mobile comme sur ordinateur, s
 - Terrain 2D, graphique de domination, commentaires, pause et vitesse ×4
 - Remplacements et tactique en cours de match, prolongations et tirs au but, notes des joueurs
 - Schémas, consignes collectives et individuelles, composition en glisser-déposer
+- v10 : 13 schémas, rôles des joueurs, curseurs de consignes, coups de pied arrêtés, 7 styles, consignes conditionnelles et remplacements auto, tactiques A/B/C, consignes contre l'adversaire ; classement FIFA interactif et réglages ; début le 1er janvier 2027
 
 ### 👥 Votre effectif
 - Convoquez 18 à 23 joueurs : 7 compétences, forme, moral, potentiel et caractère

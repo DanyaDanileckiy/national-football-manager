@@ -48,6 +48,7 @@ O jogo roda direto no navegador do celular ou do computador, sem cadastro e sem 
 - Campo 2D, gráfico de pressão, narração, pausa e velocidade ×4
 - Substituições e ajustes táticos durante o jogo, prorrogação e pênaltis, notas dos jogadores
 - Formações, instruções coletivas e individuais, escalação arrastando e soltando
+- v10: 13 sistemas, funções dos jogadores, controlos de instruções, bolas paradas, 7 estilos, instruções condicionais e substituições automáticas, táticas A/B/C, instruções contra o adversário; ranking FIFA interativo e definições; início a 1 de janeiro de 2027
 
 ### 👥 Seu elenco
 - Convoque de 18 a 23 jogadores com 7 atributos, forma, moral, potencial e personalidade

@@ -3,7 +3,7 @@
 const N = globalThis.NFM = globalThis.NFM || {};
 const R=Math.random, cl=(v,a,b)=>v<a?a:v>b?b:v;
 // калибровка (Update #8): компрессия силы, игра по счёту, домашнее преимущество
-const QK=1.16, QE=1.3, LD3=0.45, LD2=0.65, LD1=0.85, TR1=1.25, XE=0.35, HA=0.1, HD=0.06, TD=0.6, PM=1.7, HQ=0.28;
+const QK=+(typeof process!=="undefined"&&process.env.NFM_QK||0.94), QE=1.3, LD3=0.45, LD2=0.65, LD1=0.85, TR1=1.25, XE=0.35, HA=0.1, HD=0.06, TD=0.5, PM=1.7, HQ=0.28;
 const W = { // веса вклада роли в атаку / оборону / центр
  att:{GK:0,CB:.08,LB:.25,RB:.25,DM:.2,CM:.4,LM:.6,RM:.6,AM:.8,LW:.95,RW:.95,ST:1},
  def:{GK:0,CB:1,LB:.8,RB:.8,DM:.8,CM:.5,LM:.4,RM:.4,AM:.25,LW:.12,RW:.12,ST:.1},
@@ -47,12 +47,12 @@ const ra=(r,f)=>{ if(!r||r.m[f]==null) return 0; return r.m[f]*r.kf; };
 function tfx(tac){ const v=k=>(tac[k]??1)-1; const ment=tac.ment||0, dp=v('press'), dl=v('line'), dw=v('width'), dt=v('tempo'), dd=v('pass'), dk=v('tackle');
  const x={poss:0,q:1,qO:1,xg:1,xgO:1,foul:1,card:1,offO:1,fat:1,corner:1,head:1,focus:tac.focus||'m'};
  x.fat*=1+0.03*ment;
- x.poss+=0.02*dp; x.qO*=1-0.05*dp;
+ x.poss+=0.02*dp; x.qO*=1-0.03*dp;
  x.poss+=0.02*dl; x.qO*=1-0.06*dl; x.xgO*=1+0.14*dl; x.offO*=1+0.7*dl;
  x.q*=1+0.04*dw; x.corner*=1+0.3*dw; x.head*=1+0.3*dw; x.xg*=1-0.03*dw; x.qO*=1+0.03*dw;
  x.poss-=0.02*dt; x.fat*=1+0.08*dt;
  x.poss-=0.03*dd; x.q*=1+0.05*dd; x.xg*=1-0.06*dd; x.head*=1+0.35*dd;
- if(tac.style==='poss'){ x.poss+=0.05; x.q*=0.96; x.qO*=0.95; x.fat*=0.95; x.xg*=1.03; } else if(tac.style==='counter'){ x.poss-=0.05; x.xg*=1.08; }
+ if(tac.style==='poss'){ x.poss+=0.05; x.q*=0.96; x.qO*=0.98; x.fat*=0.95; x.xg*=1.03; } else if(tac.style==='counter'){ x.poss-=0.05; x.xg*=1.08; }
  if(tac.trap){ x.offO*=2.5; x.qO*=0.96; x.xgO*=1.07; }
  x.foul*=1+0.4*dk; x.card*=1+0.5*dk; x.qO*=1-0.035*dk;
  if(x.focus==='c'){ x.xg*=1.05; x.q*=0.97; x.head*=0.8; } else if(x.focus==='w'){ x.corner*=1.2; x.head*=1.3; x.q*=1.02; x.xg*=0.97; }
@@ -81,7 +81,7 @@ class Match{
     a+=W.att[e.role]*v*ia; d+=W.def[e.role]*v*id; m+=W.mid[e.role]*v*im; }
    a/=NORM.att; d/=NORM.def; m/=NORM.mid;
    { let wa=0,wd=0,wm=0; for(const e of tm.on){ if(e.role==='GK') continue; wa+=W.att[e.role]; wd+=W.def[e.role]; wm+=W.mid[e.role]; } // схемы: частичная нормировка, чтобы схема давала компромисс, а не чистую прибавку
-    if(wa>0){ a/=Math.pow(wa/NORM.att,0.7); d/=Math.pow(wd/NORM.def,0.7); m/=Math.pow(wm/NORM.mid,0.8); } }
+    if(wa>0){ a/=Math.pow(wa/NORM.att,1); d/=Math.pow(wd/NORM.def,0.85); m/=Math.pow(wm/NORM.mid,0.9); } }
    const ment=tac.ment||0, press=tac.press??1, tempo=tac.tempo??1;
    a*=1+0.06*ment; d*=1-0.045*ment; m*=1+0.03*(press-1);
    if(tac.style==='counter'){m*=0.95;d*=1.03} m*=1-0.02*((tac.pass??1)-1); fx.qO*=1-0.08*pr;
@@ -97,12 +97,12 @@ class Match{
   if(this.inAdd) this.addK++; else this.min++;
   const [A,B]=this.str;
   // владение
-  let pH = 0.5 + (A.m-B.m)/(A.m+B.m)*PM + (A.fx.poss-B.fx.poss)*0.55; pH=cl(pH,.22,.78);
+  let pH = 0.5 + (A.m-B.m)/(A.m+B.m)*PM + (A.fx.poss-B.fx.poss)*0.45; pH=cl(pH,.22,.78);
   const s = R()<pH?0:1, o=1-s; this.possSide=s; this.st[s].poss++;
   const X=this.str[s], Y=this.str[o];
   const bx = s===0? 55+R()*25 : 45-R()*25; const kf=[[cl(bx+(R()-.5)*20,5,95),15+R()*70],[bx,20+R()*60]];
   // атака
-  let ratio = X.a/Y.d; if(ratio>1.12)ratio=Math.min(1.45,1.12+(ratio-1.12)*0.4); if(ratio<0.89)ratio=0.89-(0.89-ratio)*0.4; let q = QK*0.236*Math.pow(ratio,QE)*(1+0.12*(X.tempo-1))*X.fx.q*Y.fx.qO*(1-0.5*X.fx.poss);
+  let ratio = X.a/Y.d; if(ratio>1.12)ratio=Math.min(1.45,1.12+(ratio-1.12)*0.4); if(ratio<0.89)ratio=0.89-(0.89-ratio)*0.4; let q = QK*0.236*Math.pow(ratio,QE)*(1+0.12*(X.tempo-1))*X.fx.q*Y.fx.qO*(1-0.9*X.fx.poss);
   { const lead=this.score[s]-this.score[o]; if(lead>=3)q*=LD3; else if(lead>=2)q*=LD2; else if(lead===1&&this.min>=60)q*=LD1; else if(lead===-1&&this.min>=60)q*=TR1; else if(lead===0&&this.min>=70)q*=TD; }
   if(X.style==='counter' && pH<.5) q*=1.06; if(this.wasting(s)) q*=0.85; if(this.wasting(o)) q*=0.88; if(this.hf>0) q*= s===0?1+HQ*this.hf/0.85:1-HQ*0.5*this.hf/0.85;
   if(this.onPitch(s).length<11) q*=0.92; if(this.onPitch(o).length<11) q*=1.08; if(this.wx==='snow')q*=0.94; else if(this.wx==='rain')q*=0.98;

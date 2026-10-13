@@ -48,6 +48,8 @@ The game runs right in your browser on phone or desktop — no sign-up, and no i
 - 2D pitch, momentum graph, commentary, pause and ×4 speed
 - In-game subs and tactics, extra time and penalty shoot-outs, player ratings
 - Formations, team and individual instructions, drag & drop line-ups
+- v10: 13 formations, player roles with suitability, instruction sliders, set pieces, 7 one-tap styles, conditional instructions and auto-subs, A/B/C tactic slots, opposition instructions, tactical familiarity
+- v10: interactive FIFA ranking (changes, search, filters, team chart, compare), settings screen (difficulty, injuries, fatigue, weather, currency, units, font size); careers start on 1 January 2027
 
 ### 👥 Your squad
 - Call up 18–23 players with 7 skills, form, morale, potential and personality
@@ -126,6 +128,7 @@ node test/sim.js 8 FR     # simulate two cycles (~7000 matches)
 node test/fmt.js          # check tournament formats
 node test/draw.js         # check draws
 node test/i18n.js         # translation completeness
+node test/tactics.js 3000  # effect size of every tactical option
 node test/qa20.js 20 FR 1 && node test/qa_report.js   # 20-season QA and report
 ```
 

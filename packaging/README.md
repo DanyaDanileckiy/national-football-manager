@@ -10,6 +10,7 @@
 cd packaging/electron && npm ci
 WINEPREFIX=~/.wine-subtrack npm run dist:win   # на Linux нужен wine
 ```
+Хук `afterpack.js` (resedit) вписывает иконку и версию в exe — wine этого сделать не может, поэтому `signAndEditExecutable` выключен.
 Результат: `dist/NationalFootballManager-<ver>-portable.exe`. Сохранения (IndexedDB) хранятся в `%APPDATA%\NationalFootballManager`.
 
 ## Android (Capacitor 7)

@@ -48,6 +48,7 @@ Das Spiel läuft direkt im Browser auf Handy und PC — ohne Anmeldung und nach 
 - 2D-Spielfeld, Momentum-Grafik, Kommentar, Pause und ×4-Tempo
 - Wechsel und Taktik während des Spiels, Verlängerung und Elfmeterschießen, Spielerbewertungen
 - Formationen, Mannschafts- und Einzelanweisungen, Aufstellung per Drag & Drop
+- v10: 13 Formationen, Spielerrollen, Anweisungs-Regler, Standards, 7 Spielstile, bedingte Anweisungen und Auto-Wechsel, Taktik-Slots A/B/C, Gegner-Anweisungen; interaktive FIFA-Weltrangliste und Einstellungen; Start am 1. Januar 2027
 
 ### 👥 Dein Kader
 - 18–23 Spieler nominieren: 7 Fähigkeiten, Form, Moral, Potenzial und Charakter
