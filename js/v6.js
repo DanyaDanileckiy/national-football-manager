@@ -78,7 +78,7 @@ const _pf=N.playFix; N.playFix=(f,m)=>{ _pf(f,m); const S=G(); if(!f.u||!f.r||!f
 // сыгранность в силе команды
 const _calc=MP.calc; MP.calc=function(){ _calc.call(this); const S=G(); if(!S||!S.u.fam) return; for(const s of [0,1]) if(this.t[s].user&&this.str[s]){ const k=1+0.03*(S.u.fam.tac-50)/50; this.str[s].a*=k; this.str[s].d*=k; this.str[s].m*=k; } };
 // ---------- экономика ----------
-function add(k,v){ const S=G(); const m=S.u.eco.m; m[k]=+((m[k]||0)+v).toFixed(2); S.u.bud=+(S.u.bud+v).toFixed(2); }
+function add(k,v){ const S=G(); v=+v; if(!isFinite(v)) return; if(!isFinite(S.u.bud)) S.u.bud=0; /* v10.1: защита от NaN */ const m=S.u.eco.m; m[k]=+((m[k]||0)+v).toFixed(2); S.u.bud=+(S.u.bud+v).toFixed(2); }
 V6.add=add;
 const ECO={ops:8}; V6.ECO=ECO;
 // призовые/бонусы — явной статьёй (раньше считались остатком)

@@ -6,7 +6,7 @@ const seg=(cur,list,fn)=>`<div class="tabs seg">${list.map(([k,n])=>`<div class=
 const f1=v=>(v>0?'+':v<0?'−':'')+Math.abs(v).toFixed(1);
 const arrow=d=>d>0?`<b class="grn">▲${d}</b>`:d<0?`<b class="red">▼${-d}</b>`:`<span class="mut">=</span>`;
 // ===================== общие утилиты интерфейса =====================
-UI.money=(v)=>{ const c=PREF.cur||'€'; const k={'€':1,'$':1.08,'£':0.85,'₽':95,'¥':160}[c]||1; const x=v*k; return c==='₽'||c==='¥'?`${I.num(Math.round(x))} ${_t("млн")} ${c}`:`${c}${I.num(+x.toFixed(1))}${_t("М")}`; };
+UI.money=(v)=>{ v=+v||0; if(v<0) return '−'+UI.money(-v); /* v10.1: долг показывается со знаком минус */ const c=PREF.cur||'€'; const k={'€':1,'$':1.08,'£':0.85,'₽':95,'¥':160}[c]||1; const x=v*k; return c==='₽'||c==='¥'?`${I.num(Math.round(x))} ${_t("млн")} ${c}`:`${c}${I.num(+x.toFixed(1))}${_t("М")}`; };
 UI.height=(h)=>{ if(PREF.units==='imp'){ const inch=Math.round(h/2.54); return `${Math.floor(inch/12)}′${inch%12}″`; } return _t("{0} см",h); };
 UI.asvSkip=()=>{ const s=S(); const m=PREF.asv||0; if(!s||!m) return false; if(m===4) return true; const last=s._asv||'0000-00-00'; const gap=m===1?1:m===2?7:30; if(N.diffD&&last!=='0000-00-00'&&N.diffD(last,s.d)<gap) return true; s._asv=s.d; return false; };
 const applyFont=()=>{ if(typeof document==='undefined') return; document.body.style.zoom=String(PREF.fs||1); }; applyFont();

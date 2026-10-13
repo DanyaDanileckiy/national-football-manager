@@ -35,7 +35,7 @@ SCR.eco=()=>{ top(_t("Экономика и стадионы")); const s=S(), u=
  const bars=h.map(m=>{ const n=Object.keys(E).reduce((a,k)=>a+(m[k]||0),0); return n; }); const mx=Math.max(1,...bars.map(Math.abs));
  const chart=bars.length?`<svg viewBox="0 0 ${bars.length*24} 80" class="spark" preserveAspectRatio="none">${bars.map((v,i)=>`<rect x="${i*24+3}" y="${v>=0?40-v/mx*38:40}" width="18" height="${Math.max(1,Math.abs(v)/mx*38)}" fill="${v>=0?'var(--acc)':'var(--red)'}" rx="3"><title>${h[i].d}: ${sign(v)}</title></rect>`).join('')}<line x1="0" x2="${bars.length*24}" y1="40" y2="40" stroke="var(--line2)"/></svg>`:'';
  const sts=u.st.slice().sort((a,b)=>b.main-a.main||b.cap-a.cap);
- V().innerHTML=`<div class="card"><h3>${ic('sparkles')} ${_t("Бюджет")}: <span class="gold">${num(Math.round(u.bud*10)/10)}</span></h3>
+ V().innerHTML=`<div class="card"><h3>${ic('sparkles')} ${_t("Бюджет")}: <span class="${u.bud<0?'red':'gold'}">${u.bud<0?'−':''}${num(Math.abs(Math.round(u.bud*10)/10))}</span></h3>
  <div class="sm mut">${_t("Доходы: спонсоры (зависят от рейтинга и успехов), ТВ, билеты (посещаемость × вместимость), призовые, мерчендайз. Расходы: персонал, объекты, стадионы.")}</div>${chart}
  <table><tr><th class="l"></th><th>${_t("Этот месяц")}</th><th>${_t("12 мес.")}</th></tr>${inc.map(row).join('')}${exp.map(row).join('')}<tr><td class="l b">${_t("Итого")}</td><td></td><td class="b ${net<0?'red':'grn'}">${sign(net)}</td></tr></table></div>
  <div class="card"><h3>${ic('users')} ${_t("Штаб тренеров")}: ${'■'.repeat(u.staff)}${'□'.repeat(5-u.staff)}</h3><div class="sm mut">${_t("Качество штаба ускоряет тренировки и снижает риск травм. Стоимость: {0} в месяц за уровень.",0.35)}</div>
