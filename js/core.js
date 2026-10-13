@@ -146,9 +146,10 @@ N.setup=(c,fx)=>{ const S=SS; const t=S.T[c];
  if(c===S.me){ if(!N.validXI()){ const old=S.u.xi; N.autoXI(old&&old.form); } const x=S.u.xi; const F=N.FORMS[x.form];
   const avail=new Set(S.u.call.filter(id=>!S.P[id].inj&&!S.P[id].sus));
   N.fillXI(c,x,F);
-  return {code:c,n:t.n,user:true,on:x.s.map((id,i)=>({p:S.P[id],role:F[i][0]})).filter(e=>e.p),bench:x.b.filter(id=>avail.has(id)&&!x.s.includes(id)).slice(0,12).map(id=>S.P[id]),tac:{...S.u.tac},instr:{...S.u.instr},subsLeft:fx&&fx.c==='FR'?6:5}; }
- const ps=N.pool(c).filter(p=>!p.inj&&!p.sus).sort((a,b)=>b.o*(0.8+0.2*b.fit/100)-a.o*(0.8+0.2*a.fit/100)).slice(0,23); if(ps.length<16) ps.push(...N.emergency(c,16-ps.length)); const lu=N.autoLineup(ps,t.form); const F=N.FORMS[t.form];
- const ment = 0; return {code:c,n:t.n,on:lu.xi.map((p,i)=>({p,role:F[i][0]})).filter(e=>e.p),bench:lu.bench,tac:{ment,press:1,tempo:1,style:'mix'},instr:{}}; };
+  const tac=JSON.parse(JSON.stringify(S.u.tac||{})); const FR=(N.FORMR||{})[x.form]||{};
+  return {code:c,n:t.n,user:true,on:x.s.map((id,i)=>({p:S.P[id],role:F[i][0],pr:(tac.roles||{})[i]||FR[i]||null})).filter(e=>e.p),bench:x.b.filter(id=>avail.has(id)&&!x.s.includes(id)).slice(0,12).map(id=>S.P[id]),tac,form:x.form,instr:{...S.u.instr},subsLeft:fx&&fx.c==='FR'?6:5}; }
+ const ps=N.pool(c).filter(p=>!p.inj&&!p.sus).sort((a,b)=>b.o*(0.8+0.2*b.fit/100)-a.o*(0.8+0.2*a.fit/100)).slice(0,23); if(ps.length<16) ps.push(...N.emergency(c,16-ps.length)); const ai=N.aiTac?N.aiTac(c,fx,ps):{form:t.form,tac:{ment:0,press:1,tempo:1,style:'mix'}}; const lu=N.autoLineup(ps,ai.form); const F=N.FORMS[ai.form]; const FR=(N.FORMR||{})[ai.form]||{};
+ return {code:c,n:t.n,on:lu.xi.map((p,i)=>({p,role:F[i][0],pr:FR[i]||null})).filter(e=>e.p),bench:lu.bench,tac:ai.tac,form:ai.form,instr:{}}; };
 // ---------- результаты ----------
 N.eloUpd=(f,hg,ag)=>{ const H=SS.T[f.h],A=SS.T[f.a]; const ha=f.neu?0:(f.hostA?-80:80); const we=1/(1+Math.pow(10,-(H.elo-A.elo+ha)/400)); const c=SS.C[f.c];
  const K=c.kind==='fr'?18:c.kind==='final'?(f.ko?50:40):32; const gd=Math.abs(hg-ag); const G=gd<=1?1:gd===2?1.5:(11+gd)/8; const w=hg>ag?1:hg<ag?0:0.5; const d=Math.round(K*G*(w-we)); H.elo+=d; A.elo-=d; };

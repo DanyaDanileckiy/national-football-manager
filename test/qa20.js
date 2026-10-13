@@ -1,6 +1,6 @@
 // QA harness: node test/qa20.js YEARS TEAM SEED
 const seed=+(process.argv[4]||1); let s=seed>>>0; Math.random=()=>{s=(s+0x6D2B79F5)|0;let t=Math.imul(s^s>>>15,1|s);t=t+Math.imul(t^t>>>7,61|t)^t;return((t^t>>>14)>>>0)/4294967296;};
-['i18n','data','names','core','comps','world','match','v6','v7','v9'].forEach(f=>require('../js/'+f+'.js'));
+['i18n','data','names','core','comps','world','match','v6','v7','v9','v10'].forEach(f=>require('../js/'+f+'.js'));
 const N=NFM, years=+(process.argv[2]||20), team=process.argv[3]||'FR';
 const errs=[]; const oe=console.error; process.on('uncaughtException',e=>{errs.push(String(e.stack).slice(0,300));});
 const _su=N.setup; let nullXI=0; N.setup=(c,fx)=>{const r=_su(c,fx); if(r.on.length<11||r.on.some(e=>!e.p))nullXI++; return r;};
