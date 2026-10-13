@@ -29,7 +29,7 @@ const RL={
  cm:{}, b2b:{ia:1.18,id:1.1,fat:1.18,sh:1.25}, ap:{as:2,im:1.12,ia:1.12,id:.8},
  am:{}, ss:{sh:1.7,ia:1.15,im:.9,id:.8},
  wm:{}, wf:{}, w:{as:1.5,cross:1.18,sh:.8}, if:{sh:1.6,ia:1.12,as:.8},
- af:{}, tm:{hd:2.2,sh:1.1,as:1.3,im:.9}, p:{sh:1.6,ia:1.08,im:.7,id:.6}, f9:{sh:.7,as:1.8,im:1.35}, pf:{pr:.25,fat:1.15,id:1.6,sh:.9}
+ af:{}, tm:{hd:2.2,sh:1.1,as:1.3,im:.9,xg:1.05}, p:{sh:1.6,xg:1.12,ia:1.08,im:.8,id:.7}, f9:{sh:.7,as:1.8,im:1.35}, pf:{pr:.25,fat:1.15,id:1.6,sh:.9}
 };
 N.RL=RL;
 N.ROLEOPT={GK:['gk','sk'],CB:['cd','bpd','stp'],LB:['fb','wb','ifb'],RB:['fb','wb','ifb'],DM:['dm','anc','dlp','bwm'],CM:['cm','b2b','dlp','ap','bwm'],AM:['am','ap','ss'],LM:['wm','w','if','wb'],RM:['wm','w','if','wb'],LW:['wf','w','if'],RW:['wf','w','if'],ST:['af','tm','p','f9','pf']};
@@ -73,13 +73,15 @@ class Match{
  eff(e){const p=e.p;return N.roleOvr(p,e.role)*(0.72+0.28*p._mfit/100)*(1+((p.form||6)-6)*0.015)*(0.95+0.1*(p.mor??60)/100)}
  calc(){
   this.str=[0,1].map(s=>{ const tm=this.t[s], tac=tm.tac||{}; const op=(this.t[1-s].tac||{}).opp; let a=0,d=0,m=0,gk=40; const fx=tfx(tac); let pr=0;
-   for(const e of tm.on){ if(e.off) continue; const r=rk(e,tac); if(r){ pr+=ra(r,'pr'); fx.poss+=ra(r,'poss'); if(r.m.xgO) fx.xgO*=rm(r,'xgO'); } }
+   for(const e of tm.on){ if(e.off) continue; const r=rk(e,tac); if(r){ pr+=ra(r,'pr'); fx.poss+=ra(r,'poss'); if(r.m.foul) fx.foul*=1+(rm(r,'foul')-1)*0.15; if(r.m.xgO) fx.xgO*=rm(r,'xgO'); } }
    for(const e of tm.on){ if(e.off) continue; const v=this.eff(e); if(e.role==='GK'){gk=v;continue}
     let ia=1,id=1,im=1; const ins=(tm.instr||{})[e.p.id]; const r=rk(e,tac); if(r){ ia*=rm(r,'ia'); id*=rm(r,'id'); im*=rm(r,'im'); }
     if(op&&op.mark&&op.mark===e.p.id){ ia*=0.88; im*=0.93; }
     if(ins==='att'){ia=1.15;id=0.85} else if(ins==='hold'){ia=0.85;id=1.12} else if(ins==='free'){ia=1.08;id=0.95}
     a+=W.att[e.role]*v*ia; d+=W.def[e.role]*v*id; m+=W.mid[e.role]*v*im; }
    a/=NORM.att; d/=NORM.def; m/=NORM.mid;
+   { let wa=0,wd=0,wm=0; for(const e of tm.on){ if(e.role==='GK') continue; wa+=W.att[e.role]; wd+=W.def[e.role]; wm+=W.mid[e.role]; } // схемы: частичная нормировка, чтобы схема давала компромисс, а не чистую прибавку
+    if(wa>0){ a/=Math.pow(wa/NORM.att,0.7); d/=Math.pow(wd/NORM.def,0.7); m/=Math.pow(wm/NORM.mid,0.8); } }
    const ment=tac.ment||0, press=tac.press??1, tempo=tac.tempo??1;
    a*=1+0.06*ment; d*=1-0.045*ment; m*=1+0.03*(press-1);
    if(tac.style==='counter'){m*=0.95;d*=1.03} m*=1-0.02*((tac.pass??1)-1); fx.qO*=1-0.08*pr;
@@ -95,14 +97,14 @@ class Match{
   if(this.inAdd) this.addK++; else this.min++;
   const [A,B]=this.str;
   // владение
-  let pH = 0.5 + (A.m-B.m)/(A.m+B.m)*PM + (A.fx.poss-B.fx.poss)*0.8; pH=cl(pH,.22,.78);
+  let pH = 0.5 + (A.m-B.m)/(A.m+B.m)*PM + (A.fx.poss-B.fx.poss)*0.55; pH=cl(pH,.22,.78);
   const s = R()<pH?0:1, o=1-s; this.possSide=s; this.st[s].poss++;
   const X=this.str[s], Y=this.str[o];
   const bx = s===0? 55+R()*25 : 45-R()*25; const kf=[[cl(bx+(R()-.5)*20,5,95),15+R()*70],[bx,20+R()*60]];
   // атака
-  let ratio = X.a/Y.d; if(ratio>1.12)ratio=Math.min(1.45,1.12+(ratio-1.12)*0.4); if(ratio<0.89)ratio=0.89-(0.89-ratio)*0.4; let q = QK*0.236*Math.pow(ratio,QE)*(1+0.12*(X.tempo-1))*X.fx.q*Y.fx.qO;
+  let ratio = X.a/Y.d; if(ratio>1.12)ratio=Math.min(1.45,1.12+(ratio-1.12)*0.4); if(ratio<0.89)ratio=0.89-(0.89-ratio)*0.4; let q = QK*0.236*Math.pow(ratio,QE)*(1+0.12*(X.tempo-1))*X.fx.q*Y.fx.qO*(1-0.5*X.fx.poss);
   { const lead=this.score[s]-this.score[o]; if(lead>=3)q*=LD3; else if(lead>=2)q*=LD2; else if(lead===1&&this.min>=60)q*=LD1; else if(lead===-1&&this.min>=60)q*=TR1; else if(lead===0&&this.min>=70)q*=TD; }
-  if(X.style==='counter' && pH<.5) q*=1.06; if(this.wasting(s)) q*=0.85; if(this.wasting(o)) q*=0.93; if(this.hf>0) q*= s===0?1+HQ*this.hf/0.85:1-HQ*0.5*this.hf/0.85;
+  if(X.style==='counter' && pH<.5) q*=1.06; if(this.wasting(s)) q*=0.85; if(this.wasting(o)) q*=0.88; if(this.hf>0) q*= s===0?1+HQ*this.hf/0.85:1-HQ*0.5*this.hf/0.85;
   if(this.onPitch(s).length<11) q*=0.92; if(this.onPitch(o).length<11) q*=1.08; if(this.wx==='snow')q*=0.94; else if(this.wx==='rain')q*=0.98;
   q=cl(q,.04,.55);
   if(R()<q) this.shot(s,ratio,kf);
@@ -137,7 +139,7 @@ class Match{
   if(!sh) return;
   const gkE = this.onPitch(o).find(e=>e.role==='GK'); const gkV = gkE?this.eff(gkE)*rm(rk(gkE,op.tac||{}),'sv'):35;
   let xg = (0.025+0.36*Math.pow(R(),3.1))*Math.pow(ratio,XE)*(1-0.07*(this.str[s].tempo-1))*fx.xg*this.str[o].fx.xgO;
-  if(isHead) xg*=0.8; if(this.wx==='wind')xg*=0.95;
+  xg*=rm(rk(sh,tac),'xg'); if(isHead) xg*=0.8; if(this.wx==='wind')xg*=0.95;
   xg=cl(xg,.01,.7);
   this._resolveShot(s,sh,xg,gkE,gkV,kf,false,isHead);
  }

@@ -375,3 +375,18 @@ body.nonav #toast{bottom:calc(20px + var(--sab))}
 .mtr{display:grid;grid-template-columns:minmax(0,1fr) auto minmax(0,1fr);gap:8px;align-items:center;margin-top:2px}.mtr .ell{min-width:0}
 .scx2{font-family:var(--fd);font-size:18px;text-align:center;min-width:44px;display:flex;flex-direction:column;align-items:center;line-height:1.1}.scx2 small{font-family:var(--f);font-size:10px;color:var(--mut);font-weight:400}
 :is(body[data-th=light],body[data-th=sand]) .dlab{color:#b3261e;background:rgba(220,60,60,.1)}:is(body[data-th=light],body[data-th=sand]) .derby .dt,:is(body[data-th=light],body[data-th=sand]) .derby h2{color:#b3261e}
+/* Update #10 */
+.seg{flex-wrap:wrap}.seg .tab{padding:6px 12px;min-height:34px}
+.sl10{padding:8px 0;border-bottom:1px solid var(--line)}.sl10:last-child{border:0}
+.sl10 input[type=range]{width:100%;accent-color:var(--acc);height:28px;margin:4px 0}
+.rl10{padding:6px 0;border-bottom:1px solid var(--line)}.rl10 select{margin:4px 0}
+.tok .r10{font-size:8.5px;line-height:1.05;opacity:.9;max-width:70px;white-space:normal}
+.cond10{display:flex;flex-wrap:wrap;gap:6px;align-items:center;padding:6px 0;border-bottom:1px solid var(--line)}.cond10 select{width:auto;flex:1;min-width:84px}
+.pre10.on{outline:2px solid var(--acc)}
+.rk10h{display:flex;gap:12px;align-items:center;cursor:pointer;border:1px solid rgba(34,211,122,.45);background:linear-gradient(90deg,rgba(34,211,122,.16),transparent)}.rk10h .i{font-size:26px;color:var(--acc)}
+.rk10l .row{content-visibility:auto;contain-intrinsic-size:auto 52px}.rk10r.me{background:rgba(34,211,122,.10)}.rkn{min-width:30px}
+.ch10{width:100%;height:auto}.ch10 .ct{font-size:9px;fill:var(--mut,#8aa)}
+table.t10{width:100%;border-collapse:collapse;font-size:12.5px}table.t10 td,table.t10 th{padding:5px 3px;border-bottom:1px solid var(--line);text-align:center}table.t10 .l{text-align:start}.tw{overflow-x:auto}
+.start10{border:1px solid rgba(246,196,69,.45)}
+.g10{display:grid;grid-template-columns:1fr 1fr;gap:4px 8px}.g10 select{padding:6px 8px;min-height:36px}
+.cond10 select.mn{flex:0 0 76px;min-width:0}.cond10 select:first-of-type{flex:2}
