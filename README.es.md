@@ -66,6 +66,11 @@ El juego funciona directamente en el navegador del móvil o del ordenador, sin r
 - Estadísticas mundiales: goleadores, récords, rachas, fuerza de los equipos
 - Resumen de resultados mundiales tras cada ventana, noticias de clubes, Salón de la Fama
 
+### 🏆 Carrera y rivalidades
+- ~60 derbis y rivalidades que nacen en las eliminatorias: cara a cara, titulares de prensa, más en juego
+- Carrera de entrenador: reputación, contrato, ofertas de trabajo, dimisión y búsqueda de nueva selección
+- 44 logros y 12 escenarios con objetivo y plazo; consejos para novatos
+
 ### 🎨 Comodidad
 - 20 idiomas de interfaz, incluido RTL (hebreo, árabe, persa)
 - 5 temas: Noche de estadio, Césped clásico, Azul medianoche, Claro, Arena/retro

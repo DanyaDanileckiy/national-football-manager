@@ -66,6 +66,11 @@ O jogo roda direto no navegador do celular ou do computador, sem cadastro e sem 
 - Estatísticas mundiais: artilheiros, recordes, sequências, força das seleções
 - Resumo dos resultados mundiais após cada data FIFA, notícias dos clubes, Hall da Fama
 
+### 🏆 Carreira e rivalidades
+- ~60 clássicos e rivalidades que nascem no mata-mata: confronto direto, manchetes, mais em jogo
+- Carreira de treinador: reputação, contrato, propostas de emprego, demissão e busca de nova seleção
+- 44 conquistas e 12 cenários com objetivo e prazo; dicas para iniciantes
+
 ### 🎨 Conforto
 - 20 idiomas de interface, incluindo RTL (hebraico, árabe, persa)
 - 5 temas: Noite de estádio, Gramado clássico, Azul meia-noite, Claro, Areia/retrô

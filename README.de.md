@@ -66,6 +66,11 @@ Das Spiel läuft direkt im Browser auf Handy und PC — ohne Anmeldung und nach 
 - Weltstatistik: Torjäger, Rekorde, Serien, Teamstärke
 - Weltergebnisse nach jedem Länderspielfenster, Vereinsnews, Ruhmeshalle
 
+### 🏆 Karriere und Rivalitäten
+- ~60 Derbys und in der K.-o.-Runde entstehende Rivalitäten: direkter Vergleich, Schlagzeilen, höhere Einsätze
+- Trainerkarriere: Ansehen, Vertrag, Jobangebote, Rücktritt und Suche nach einem neuen Nationalteam
+- 44 Erfolge und 12 Szenarien mit Ziel und Frist; Tipps für Einsteiger
+
 ### 🎨 Komfort
 - 20 Sprachen, inklusive RTL (Hebräisch, Arabisch, Persisch)
 - 5 Themes: Stadionnacht, Klassischer Rasen, Mitternachtsblau, Hell, Sand/Retro

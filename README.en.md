@@ -66,6 +66,11 @@ The game runs right in your browser on phone or desktop — no sign-up, and no i
 - World stats: top scorers, records, streaks, team strength
 - A world results digest after every window, club news, Hall of Fame
 
+### 🏆 Career and rivalries
+- ~60 derbies plus rivalries born in the knockouts: head-to-head, press headlines, higher stakes
+- Coaching career: reputation, contract, job offers, resigning and finding a new national team
+- 44 achievements and 12 scenarios with a goal and deadline; tips for newcomers
+
 ### 🎨 Comfort
 - 20 UI languages, including RTL (Hebrew, Arabic, Persian)
 - 5 themes: Stadium Night, Classic Pitch, Midnight Blue, Light, Sand/Retro

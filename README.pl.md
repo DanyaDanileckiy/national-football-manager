@@ -66,6 +66,11 @@ Gra działa bezpośrednio w przeglądarce na telefonie i komputerze — bez reje
 - Statystyki światowe: strzelcy, rekordy, serie, siła drużyn
 - Podsumowanie wyników ze świata po każdym oknie, wieści klubowe, Galeria sław
 
+### 🏆 Kariera i rywalizacje
+- ~60 derbów i rywalizacje rodzące się w fazie pucharowej: bilans bezpośredni, nagłówki prasy, wyższa stawka
+- Kariera trenera: reputacja, kontrakt, oferty pracy, dymisja i szukanie nowej reprezentacji
+- 44 osiągnięcia i 12 scenariuszy z celem i terminem; wskazówki dla początkujących
+
 ### 🎨 Wygoda
 - 20 języków interfejsu, w tym RTL (hebrajski, arabski, perski)
 - 5 motywów: Nocny stadion, Klasyczna murawa, Nocny granat, Jasny, Piasek/retro

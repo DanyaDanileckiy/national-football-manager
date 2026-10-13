@@ -66,6 +66,11 @@ Le jeu tourne directement dans le navigateur, sur mobile comme sur ordinateur, s
 - Statistiques mondiales : buteurs, records, séries, force des équipes
 - Résumé des résultats mondiaux après chaque fenêtre, actualités des clubs, Panthéon
 
+### 🏆 Carrière et rivalités
+- ~60 derbys et des rivalités nées en phase finale : face-à-face, gros titres, enjeux accrus
+- Carrière d'entraîneur : réputation, contrat, offres d'emploi, démission et recherche d'une nouvelle sélection
+- 44 succès et 12 scénarios avec objectif et échéance ; astuces pour débutants
+
 ### 🎨 Confort
 - 20 langues d'interface, dont le RTL (hébreu, arabe, persan)
 - 5 thèmes : Nuit au stade, Pelouse classique, Bleu nuit, Clair, Sable/rétro
