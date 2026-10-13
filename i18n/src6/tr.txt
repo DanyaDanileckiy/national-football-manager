@@ -281,3 +281,251 @@ Oyundan çıkılsın mı?
 Ana menüye dönülsün mü?
 Tam ekran modu
 Oynarken ekranı açık tut
+halen
+Büyük derbi
+Derbi
+Rekabet
+Bir rekabet doğuyor
+{1} ile {2} eleme turlarında {0}. kez karşılaştı
+Yakında: {0} – {1}. Bütün ülke bekliyor
+Farklı galibiyet! Derbinin galibi: {0}
+Derbinin galibi: {0}
+Derbide beraberlik: kimse geri adım atmadı
+Bütün ülke bu maçı izliyor. Galibiyet güveni ve morali yükseltir, yenilgi her zamankinden çok acıtır.
+Özel maç: güven ve moral daha sert dalgalanır, ev sahibi tribünler daha yüksek sesle destek verir.
+Bu oyundaki maçlar: {0} · {1}–{2}–{3} (G–B–M)
+Karşılıklı maçlar
+Takım profili
+Derbi bizim! Ülke bayram ediyor.
+Derbide beraberlik — taraftar daha fazlasını bekliyordu.
+Derbi kaybedildi — eleştiriler sert olacak.
+Bu oyunda
+Galibiyet
+Beraberlik
+Mağlubiyet
+Bu takımlar bu oyunda henüz karşılaşmadı.
+2026 öncesi arşiv (oluşturulmuş)
+Son karşılaşmalar
+Derbiler ve rakipler
+Ayrıntılar
+yeni
+Belirgin rakip yok — rekabetler eleme turlarında doğar.
+{0} rakipleri
+Manşetler
+Şimdilik sakin.
+sizin maçınız
+Senaryo
+{0} tarihine kadar
+Grafik kariyeriniz ilerledikçe dolacak.
+İtibar
+Efsane
+Mesleğin yıldızı
+Saygın uzman
+Sağlam profesyonel
+Gelecek vadeden teknik direktör
+Acemi
+kovuldu
+istifa
+sözleşme bitti
+ayrıldı
+Teknik direktörlük kariyeri
+en yüksek {0}
+{0} tarihinden beri işsiz
+Teklifler
+Mevcut sözleşme
+{0} ay kaldı
+Federasyon {0} yıllık uzatma teklif ediyor.
+Uzat
+Sözleşme uzatılmayacak.
+İş teklifleri
+İstifa et
+Derbi galibiyetleri
+Görev geçmişi
+Henüz kupa yok.
+İstifa mı? Milli takımdan ayrılıp teklif bekleyeceksiniz.
+Sözleşme uzatıldı
+Uzatmayı reddettiniz
+İşsiz
+İstifa ettiniz
+Sözleşme bitti
+{0} aydır işsiz
+Henüz arayan yok. İtibarınız ne kadar yüksekse teklifler o kadar çabuk gelir.
+Bir ay bekle
+3 ay bekle
+Kariyeri bitir
+Teklifsiz 12 aydan sonra kullanılabilir
+Teklif bekleniyor…
+Yeni iş teklifi!
+Teknik direktörlük kariyerinizi bitirmek mi? Oyun sona erecek.
+Kariyer sona erdi
+Milli takımlar
+Başarım açıldı
+Bu oyunda
+Tüm kayıtlarda
+Hileli kayıt: başarımlar sayılmaz
+Başka bir oyunda açıldı
+Hedef: turnuvayı kazanmak
+Hedef: final turnuvasına katılmak
+Hedef: FIFA sıralamasında birinci olmak
+Hedef: «{0}» aşaması veya ötesi
+Senaryolar
+Son tarih: {0}
+Tamamlandı
+Başarısız
+Devam ediyor
+Hedefi ve süresi belli hazır başlangıçlar. Hedefe ulaşın, sonuç ve başarım kazanın; kariyer her durumda sürer.
+Zorluk
+Senaryoyu başlat
+Senaryo sonucu
+Senaryo tamamlandı!
+Senaryo başarısız
+Hedefe ulaşmadan milli takımdan ayrıldınız.
+Gün
+Kariyere devam et
+Hedefli ve süreli {0} başlangıç
+«Devam» takvimi bir sonraki etkinliğe ilerletir: milli ara, maç veya kura.
+Kadro: her aradan önce 18–23 oyuncu çağırın. Başlangıç için otomatik davet yeterli.
+Taktik: diziliş ve talimatları seçin. Yer değiştirmek için sahadaki oyunculara dokunun.
+Federasyonun güveni. Galibiyetler artırır; çok düşerse kovulursunuz.
+FIFA sıralaması kura torbalarını belirler. Takımınızın yerini takip edin.
+Ekonomi: bütçe, sponsorlar ve stadyumlar. Uzun süreli açık güveni zedeler.
+Kariyer: itibar, sözleşme ve diğer milli takımlardan teklifler.
+Posta, antrenman ve ayarlar burada. İpuçları Ayarlar'dan yeniden izlenebilir.
+Çağırmak için oyuncuları işaretleyin. Otomatik davet en güçlü sağlıklı oyuncuları seçer.
+Bir oyuncuya, sonra diğerine dokunun — yer değiştirirler. Tekrar dokunmak bireysel talimatı açar.
+Bu bir derbi! Riskler yüksek: güven ve moral daha çok değişir, tribünler daha yüksek sesle destekler.
+Maçı değişiklik ve taktikle canlı oynayın — ya da hızlıca sonucu alın.
+Maç sırasında duraklatabilir, taktik değiştirebilir ve oyuncu değişikliği yapabilirsiniz.
+Sıralamadaki hareket, takım geçmişi, ilk 10 ve her maçın puanı.
+Federasyonun kalem kalem gelir ve giderleri. Stadyumlar da burada inşa edilip büyütülür.
+İpuçlarını istediğiniz zaman kapatabilir veya yeniden görebilirsiniz.
+İtibar, beklentilerin üzerindeki sonuçlar ve kupalarla artar. Diğer takımlardan gelen teklifler buna bağlıdır.
+Başarımlar her kayıtta ve bu cihazdaki genel listede saklanır.
+İpucu
+İpuçlarını kapat
+Atla
+İleri
+İpuçları kapatıldı. Ayarlar'dan yeniden açabilirsiniz.
+Yeni başlayanlar için ipuçları
+Güncelleme 9, ana ekranlar için adım adım ipuçları ekliyor: davet, taktik, maç, sıralama, ekonomi ve ayarlar. Bu kayıt için açılsın mı?
+Hayır, teşekkürler
+Aç
+İpuçlarını göster
+Yeniden göster
+İpuçları yeniden açıldı
+Kızgın rekabet
+Amerika Süperklasiği
+Dünyanın en eski derbisi
+İber derbisi
+Río de la Plata derbisi
+CONCACAF klasiği
+Doğu Asya klasiği
+Mağrip derbisi
+Komşu derbisi
+İskandinav derbisi
+Balkan derbisi
+Ege derbisi
+Manş derbisi
+Avrupa klasiği
+Körfez derbisi
+Tasman derbisi
+Batı Afrika derbisi
+Güneydoğu Asya derbisi
+Pasifik derbisi
+And derbisi
+Orta Amerika derbisi
+Britanya derbisi
+Yeni rekabet
+Eleme turlarındaki bir karşılaşmanın daha ardından basın yeni bir rekabetten söz ediyor: {0} – {1}. Artık bu maçlar özel.
+Federasyon sözleşmenizi feshetti. Henüz teklif yok — biri sizi hatırlayana kadar beklemeniz gerekecek.
+İtibarınız: {0}.
+İstifa kabul edildi
+Federasyon istifanızı kabul etti ve emekleriniz için teşekkür ediyor.
+Sözleşme {0} tarihine kadar uzatıldı.
+{0} {1} Futbol Federasyonu milli takımını size emanet etmeye hazır.
+Sözleşme uzatma
+Sözleşmeniz {0} tarihinde bitiyor. Federasyon {1} yıl uzatmayı teklif ediyor.
+Sözleşme uzatılmayacak
+Federasyon {0} tarihinde biten sözleşmenizi uzatmayı düşünmüyor. Yeni bir iş aramaya başlayın.
+Sözleşmenizin süresi doldu. Emekleriniz için teşekkürler! Diğer federasyonların teklifleri «Kariyer» bölümünde.
+Onluk
+Görevde 10 galibiyet
+Yüzlük
+Görevde 100 galibiyet
+Yüz gol
+Takımlarınız 100 gol attı
+Geri dönüş
+İki gol gerideyken kazanın
+Çelik sinirler
+Penaltı atışlarını kazanın
+Uluslar Ligi
+Uluslar Ligi'ni kazanın
+Finalist
+Büyük bir turnuvada finale yükselin
+Dünya sahnesinde
+Takımınızı Dünya Kupası'na götürün
+Altın Ayakkabı
+Oyuncunuz büyük bir turnuvanın gol kralı olsun
+Koleksiyoncu
+3 kupa kazanın
+Hanedan
+10 kupa kazanın
+Meslekte bir isim
+Teknik direktör itibarı 50+
+Kulübenin efsanesi
+Teknik direktör itibarı 80+
+Gezgin
+Üç milli takımı çalıştırın
+Uzun soluklu
+10 yıllık teknik direktörlük kariyeri
+Acı ders
+Kovuldunuz
+Uzatma
+Federasyonla sözleşmenizi uzatın
+Değerimi bilirim
+Bir iş teklifini reddedin
+100'ler Kulübü
+Oyuncunuz milli takımda 100 maça ulaşsın
+Hücum efsanesi
+Takımınızdan bir oyuncu 50 gol atsın
+Bir numara
+FIFA sıralamasında zirveye çıkın
+Elit
+FIFA sıralamasında ilk 10'a girin
+Derbi bizim
+Bir derbi kazanın
+Derbi kralı
+10 derbi galibiyeti
+Aşağılama
+Bir derbiyi 3+ gol farkla kazanın
+Rekabetler eleme turlarında doğar
+Senarist
+Herhangi bir senaryoyu tamamlayın
+Senaryo ustası
+3 farklı senaryoyu tamamlayın (tüm kayıtlarda)
+San Marino'yu Euro'ya götür
+Avrupa'nın en mütevazı takımı final turnuvası hayal ediyor. Euro 2028 veya 2032'ye katılın.
+İtalya'yı zirveye geri taşı
+Dört kez dünya şampiyonu olan takım Dünya Kupalarını kaçırdı. 2034 sonuna kadar Dünya Kupası'nı veya Euro'yu kazanın.
+Vietnam Dünya Kupası'nda
+Büyük hayalleri olan küçük bir Asya takımı. 2030 veya 2034 Dünya Kupası'na katılın.
+Yeşil Burun Adaları, Afrika şampiyonu
+Ada takımı kıtayı daha önce de şaşırttı. 2033 sonuna kadar Afrika Uluslar Kupası'nı kazanın.
+Brezilya'nın altıncı yıldızı
+Ülke altıncı kupayı bekliyor. 2030 Dünya Kupası'nı kazanın.
+Acı yıllara son
+İngiltere 1966'dan beri büyük bir kupa bekliyor. 2032 sonuna kadar Dünya Kupası'nı veya Euro'yu kazanın.
+İzlanda destanı
+Masalı tekrarlayın: 2032 sonuna kadar Euro'da en az çeyrek finale yükselin.
+Hindistan: Asya'da atılım
+2031 sonuna kadar Asya Kupası'nda eleme turlarına kalın.
+Kiviler Dünya Kupası'nda
+Okyanusya elemelerini kazanın ve Yeni Zelanda'yı 2030 Dünya Kupası'na götürün.
+Tahtı koru
+Arjantin ölçüttür. 2028 sonunda FIFA sıralamasında birinci olun.
+Curaçao: CONCACAF sansasyonu
+2031 sonuna kadar Altın Kupa'da yarı finale yükselin.
+Almanya: yeniden başlangıç
+Başarısızlıkların ardından yeniden zirvede: 2030 Dünya Kupası'nda yarı finale yükselin.
+Senaryo hedefine ulaşıldı! Kariyerinize devam edebilirsiniz.
+Senaryo hedefine ulaşılamadı. Kariyer senaryosuz devam ediyor.

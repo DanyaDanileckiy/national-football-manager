@@ -281,3 +281,251 @@ Wyjdź
 Wyjść do menu głównego?
 Tryb pełnoekranowy
 Nie wygaszaj ekranu podczas gry
+obecnie
+Wielkie derby
+Derby
+Rywalizacja
+Narodziny rywalizacji
+{1} i {2} zmierzyły się w fazie pucharowej już {0} razy
+Wkrótce mecz: {0} – {1}. Kraj czeka
+Pogrom! Zwycięzca derbów: {0}
+Zwycięzca derbów: {0}
+Remis w derbach: nikt nie ustąpił
+Cały kraj ogląda ten mecz. Zwycięstwo podniesie zaufanie i morale, porażka zaboli bardziej niż zwykle.
+Mecz szczególny: zaufanie i morale wahają się mocniej, a kibice gospodarzy dopingują głośniej.
+Mecze w tej grze: {0} · {1}–{2}–{3} (Z–R–P)
+Bilans bezpośredni
+Profil drużyny
+Derby nasze! Kraj świętuje.
+Remis w derbach — kibice liczyli na więcej.
+Przegrane derby — krytyka będzie ostra.
+W tej grze
+Zwycięstwa
+Remisy
+Porażki
+Te drużyny nie grały jeszcze ze sobą w tej grze.
+Archiwum sprzed 2026 (wygenerowane)
+Ostatnie mecze
+Derby i rywale
+Szczegóły
+nowe
+Brak wyraźnych rywali — rywalizacje rodzą się w fazie pucharowej.
+Rywale reprezentacji {0}
+Nagłówki
+Na razie cisza.
+twój mecz
+Scenariusz
+do {0}
+Wykres będzie się wypełniał w trakcie kariery.
+Reputacja
+Legenda
+Gwiazda zawodu
+Uznany fachowiec
+Solidny profesjonalista
+Obiecujący trener
+Nowicjusz
+zwolniony
+dymisja
+koniec kontraktu
+odszedł
+Kariera trenerska
+maksimum {0}
+Bez pracy od {0}
+Oferty
+Obecny kontrakt
+zostało {0} mies.
+Federacja proponuje przedłużenie o {0} lat.
+Przedłuż
+Kontrakt nie zostanie przedłużony.
+Oferty pracy
+Podaj się do dymisji
+Wygrane derby
+Historia pracy
+Na razie brak trofeów.
+Podać się do dymisji? Opuścisz reprezentację i będziesz czekać na oferty.
+Kontrakt przedłużony
+Odrzuciłeś przedłużenie
+Bez pracy
+Podałeś się do dymisji
+Kontrakt wygasł
+bez pracy od {0} mies.
+Na razie nikt nie dzwoni. Im wyższa reputacja, tym szybciej przychodzą oferty.
+Czekaj miesiąc
+Czekaj 3 miesiące
+Zakończ karierę
+Dostępne po 12 miesiącach bez ofert
+Oczekiwanie na oferty…
+Nowa oferta pracy!
+Zakończyć karierę trenerską? Gra się skończy.
+Kariera zakończona
+Reprezentacje
+Osiągnięcie odblokowane
+W tej grze
+We wszystkich zapisach
+Zapis z kodami: osiągnięcia się nie liczą
+Odblokowane w innej grze
+Cel: wygrać turniej
+Cel: awans do turnieju finałowego
+Cel: pierwsze miejsce w rankingu FIFA
+Cel: etap «{0}» lub dalej
+Scenariusze
+Termin: do {0}
+Wykonany
+Nieudany
+W toku
+Gotowe starty z celem i terminem. Osiągnij cel, a otrzymasz wynik i osiągnięcie; kariera i tak toczy się dalej.
+Trudność
+Rozpocznij scenariusz
+Wynik scenariusza
+Scenariusz wykonany!
+Scenariusz nieudany
+Opuściłeś reprezentację przed osiągnięciem celu.
+Dni
+Kontynuuj karierę
+{0} startów z celem i terminem
+«Dalej» przesuwa kalendarz do następnego wydarzenia: okna reprezentacyjnego, meczu lub losowania.
+Kadra: przed każdym oknem powołaj 18–23 zawodników. Na początek wystarczy autopowołanie.
+Taktyka: wybierz ustawienie i polecenia. Dotknij zawodników na boisku, aby zamienić ich miejscami.
+Zaufanie federacji. Zwycięstwa je podnoszą; jeśli spadnie zbyt nisko — zostaniesz zwolniony.
+Ranking FIFA decyduje o koszykach losowań. Śledź pozycję swojej reprezentacji.
+Ekonomia: budżet, sponsorzy i stadiony. Długi deficyt uderza w zaufanie.
+Kariera: reputacja, kontrakt i oferty od innych reprezentacji.
+Tu są poczta, treningi i ustawienia. Wskazówki można powtórzyć w ustawieniach.
+Zaznaczaj zawodników, aby ich powołać. Autopowołanie wybierze najlepszych zdrowych graczy.
+Dotknij jednego zawodnika, potem drugiego — zamienią się miejscami. Ponowne dotknięcie otwiera polecenia indywidualne.
+To derby! Stawka jest wyższa: zaufanie i morale zmieniają się mocniej, a trybuny dopingują głośniej.
+Rozegraj mecz na żywo ze zmianami i taktyką — albo szybko poznaj wynik.
+W trakcie meczu możesz zatrzymać grę, zmienić taktykę i przeprowadzić zmiany.
+Zmiany w rankingu, historia drużyny, top 10 i punkty za każdy mecz.
+Przychody i wydatki federacji według pozycji. Tutaj też buduje się i rozbudowuje stadiony.
+Wskazówki możesz w każdej chwili wyłączyć lub pokazać ponownie.
+Reputacja rośnie dzięki wynikom ponad oczekiwania i trofeom. Od niej zależą oferty od innych reprezentacji.
+Osiągnięcia są zapisywane w każdym zapisie gry i w ogólnej klasyfikacji na tym urządzeniu.
+Wskazówka
+Wyłącz wskazówki
+Pomiń
+Dalej
+Wskazówki wyłączone. Włączysz je ponownie w ustawieniach.
+Wskazówki dla początkujących
+Aktualizacja 9 dodaje wskazówki krok po kroku do głównych ekranów: powołania, taktyka, mecz, ranking, ekonomia i ustawienia. Włączyć je dla tego zapisu?
+Nie, dziękuję
+Włącz
+Pokazuj wskazówki
+Pokaż ponownie
+Wskazówki znów włączone
+Zażarta rywalizacja
+Superklasyk obu Ameryk
+Najstarsze derby świata
+Derby iberyjskie
+Derby La Platy
+Klasyk CONCACAF
+Klasyk Azji Wschodniej
+Derby Maghrebu
+Derby sąsiadów
+Derby skandynawskie
+Derby bałkańskie
+Derby egejskie
+Derby przez kanał La Manche
+Klasyk europejski
+Derby Zatoki Perskiej
+Derby transtasmańskie
+Derby Afryki Zachodniej
+Derby Azji Południowo-Wschodniej
+Derby Pacyfiku
+Derby andyjskie
+Derby Ameryki Środkowej
+Derby brytyjskie
+Nowa rywalizacja
+Po kolejnym starciu w fazie pucharowej dziennikarze mówią o nowej rywalizacji: {0} – {1}. Od teraz te mecze są wyjątkowe.
+Federacja rozwiązała kontrakt. Na razie brak ofert — trzeba poczekać, aż ktoś sobie o tobie przypomni.
+Twoja reputacja: {0}.
+Dymisja przyjęta
+Federacja przyjęła twoją dymisję i dziękuje za pracę.
+Kontrakt przedłużony do {0}.
+Federacja piłkarska {0} {1} jest gotowa powierzyć ci swoją reprezentację.
+Przedłużenie kontraktu
+Twój kontrakt wygasa {0}. Federacja proponuje przedłużenie o {1} lat.
+Kontrakt nie zostanie przedłużony
+Federacja nie zamierza przedłużać twojego kontraktu, który wygasa {0}. Zacznij szukać nowej pracy.
+Twój kontrakt wygasł. Dziękujemy za pracę! Oferty innych federacji znajdziesz w dziale «Kariera».
+Dziesiątka
+10 zwycięstw na stanowisku
+Setka
+100 zwycięstw na stanowisku
+Sto goli
+Twoje reprezentacje strzeliły 100 goli
+Powrót
+Wygraj, przegrywając dwoma golami
+Nerwy ze stali
+Wygraj serię rzutów karnych
+Liga Narodów
+Wygraj Ligę Narodów
+Finalista
+Dojdź do finału dużego turnieju
+Na światowej scenie
+Wprowadź reprezentację na mistrzostwa świata
+Złoty But
+Twój zawodnik zostaje królem strzelców dużego turnieju
+Kolekcjoner
+Zdobądź 3 trofea
+Dynastia
+Zdobądź 10 trofeów
+Nazwisko w zawodzie
+Reputacja trenera 50+
+Legenda ławki
+Reputacja trenera 80+
+Wędrowiec
+Poprowadź trzy reprezentacje
+Długodystansowiec
+10 lat kariery trenerskiej
+Gorzka lekcja
+Zostałeś zwolniony
+Przedłużenie
+Przedłuż kontrakt z federacją
+Znam swoją wartość
+Odrzuć ofertę pracy
+Klub 100
+Twój zawodnik osiąga 100 występów w reprezentacji
+Legenda ataku
+Zawodnik twojej reprezentacji strzela 50 goli
+Numer jeden
+Prowadź w rankingu FIFA
+Elita
+Wejdź do top 10 rankingu FIFA
+Derby są nasze
+Wygraj derby
+Władca derbów
+10 wygranych derbów
+Upokorzenie
+Wygraj derby różnicą 3+ goli
+Rywalizacje rodzą się w fazie pucharowej
+Scenarzysta
+Wykonaj dowolny scenariusz
+Mistrz scenariuszy
+Wykonaj 3 różne scenariusze (we wszystkich zapisach)
+Wprowadź San Marino na Euro
+Najskromniejsza reprezentacja Europy marzy o turnieju finałowym. Awansuj na Euro 2028 lub 2032.
+Przywróć Włochy na szczyt
+Czterokrotni mistrzowie świata opuszczali mundiale. Wygraj mistrzostwa świata lub Europy do końca 2034 roku.
+Wietnam na mundialu
+Mała azjatycka reprezentacja z wielkimi ambicjami. Awansuj na mistrzostwa świata 2030 lub 2034.
+Republika Zielonego Przylądka mistrzem Afryki
+Wyspiarska reprezentacja już zaskakiwała kontynent. Wygraj Puchar Narodów Afryki do końca 2033 roku.
+Szósta gwiazdka Brazylii
+Kraj czeka na szósty tytuł. Wygraj mistrzostwa świata 2030.
+Koniec lat bólu
+Anglia czeka na wielkie trofeum od 1966 roku. Wygraj mistrzostwa świata lub Europy do końca 2032 roku.
+Islandzka saga
+Powtórz bajkę: dojdź co najmniej do ćwierćfinału Euro do końca 2032 roku.
+Indie: przełom w Azji
+Awansuj do fazy pucharowej Pucharu Azji do końca 2031 roku.
+Kiwi na mundialu
+Wygraj eliminacje w Oceanii i wprowadź Nową Zelandię na mistrzostwa świata 2030.
+Utrzymać tron
+Argentyna to wzór. Zakończ 2028 rok na pierwszym miejscu rankingu FIFA.
+Curaçao: sensacja CONCACAF
+Dojdź do półfinału Złotego Pucharu do końca 2031 roku.
+Niemcy: restart
+Po porażkach z powrotem w elicie: dojdź do półfinału mistrzostw świata 2030.
+Cel scenariusza osiągnięty! Możesz kontynuować karierę.
+Cel scenariusza nieosiągnięty. Kariera toczy się dalej bez scenariusza.

@@ -281,3 +281,251 @@ Salir
 ¿Salir al menú principal?
 Pantalla completa
 Mantener la pantalla encendida al jugar
+act.
+Gran derbi
+Derbi
+Rivalidad
+Nace una rivalidad
+{1} y {2} ya se han enfrentado {0} veces en eliminatorias
+Se acerca el partido: {0} – {1}. El país espera
+¡Goleada! Ganador del derbi: {0}
+Ganador del derbi: {0}
+Empate en el derbi: nadie cedió
+Todo el país mira este partido. Una victoria elevará la confianza y la moral; una derrota dolerá más de lo normal.
+Partido especial: la confianza y la moral oscilan más y la afición local aprieta más fuerte.
+Partidos en la partida: {0} · {1}–{2}–{3} (G–E–P)
+Cara a cara
+Perfil del equipo
+¡El derbi es nuestro! El país lo celebra.
+Empate en el derbi: la afición esperaba más.
+Derbi perdido: las críticas serán duras.
+En esta partida
+Victorias
+Empates
+Derrotas
+Estos equipos aún no se han enfrentado en esta partida.
+Archivo anterior a 2026 (generado)
+Últimos enfrentamientos
+Derbis y rivales
+Detalles
+nueva
+Sin rivales claros: las rivalidades nacen en las eliminatorias.
+Rivales de {0}
+Titulares
+Todo tranquilo por ahora.
+tu partido
+Escenario
+hasta {0}
+El gráfico se irá completando a lo largo de tu carrera.
+Reputación
+Leyenda
+Estrella de la profesión
+Especialista reconocido
+Profesional sólido
+Entrenador prometedor
+Novato
+destituido
+dimisión
+contrato vencido
+se marchó
+Carrera de entrenador
+máximo {0}
+Sin trabajo desde {0}
+Ofertas
+Contrato actual
+quedan {0} meses
+La federación ofrece una renovación de {0} años.
+Renovar
+El contrato no se renovará.
+Ofertas de trabajo
+Dimitir
+Victorias en derbis
+Historial laboral
+Aún no hay trofeos.
+¿Dimitir? Dejarás la selección y esperarás ofertas.
+Contrato renovado
+Rechazaste la renovación
+Sin trabajo
+Has dimitido
+Contrato vencido
+sin trabajo {0} meses
+Nadie llama todavía. Cuanto mayor sea tu reputación, antes llegarán las ofertas.
+Esperar un mes
+Esperar 3 meses
+Retirarse
+Disponible tras 12 meses sin ofertas
+Esperando ofertas…
+¡Nueva oferta de trabajo!
+¿Terminar tu carrera de entrenador? La partida acabará.
+Carrera terminada
+Selecciones
+Logro desbloqueado
+En esta partida
+En todas las partidas
+Partida con trucos: los logros no cuentan
+Desbloqueado en otra partida
+Objetivo: ganar el torneo
+Objetivo: clasificarse para la fase final
+Objetivo: número uno del ranking FIFA
+Objetivo: fase «{0}» o mejor
+Escenarios
+Plazo: hasta {0}
+Cumplido
+Fallido
+En curso
+Inicios preparados con objetivo y plazo. Cumple el objetivo y obtendrás un resultado y un logro; tu carrera continúa en cualquier caso.
+Dificultad
+Empezar escenario
+Resultado del escenario
+¡Escenario cumplido!
+Escenario fallido
+Dejaste la selección antes de cumplir el objetivo.
+Días
+Continuar carrera
+{0} inicios con objetivo y plazo
+«Continuar» avanza el calendario hasta el próximo evento: una ventana internacional, un partido o un sorteo.
+Plantilla: convoca a 18–23 jugadores antes de cada ventana. Para empezar basta con la convocatoria automática.
+Táctica: elige un sistema e instrucciones. Toca a los jugadores en el campo para intercambiarlos.
+Confianza de la federación. Las victorias la aumentan; si cae demasiado, te destituirán.
+El ranking FIFA decide los bombos de los sorteos. Sigue la posición de tu selección.
+Economía: presupuesto, patrocinadores y estadios. Un déficit prolongado daña la confianza.
+Carrera: reputación, contrato y ofertas de otras selecciones.
+Aquí están el correo, los entrenamientos y los ajustes. Puedes repetir los consejos en Ajustes.
+Marca a los jugadores para convocarlos. La convocatoria automática elige a los mejores disponibles.
+Toca un jugador y luego otro: cambiarán de posición. Un segundo toque abre las instrucciones individuales.
+¡Es un derbi! Hay más en juego: la confianza y la moral cambian más y la grada empuja más fuerte.
+Juega el partido en directo con cambios y táctica, o consigue el resultado rápido.
+Durante el partido puedes pausar, cambiar la táctica y hacer cambios.
+Movimientos en el ranking, historial del equipo, top 10 y puntos de cada partido.
+Ingresos y gastos de la federación por partidas. Aquí también se construyen y amplían estadios.
+Puedes desactivar los consejos o volver a verlos en cualquier momento.
+La reputación sube con resultados por encima de lo esperado y con trofeos. De ella dependen las ofertas de otras selecciones.
+Los logros se guardan en cada partida y en el registro general de este dispositivo.
+Consejo
+Desactivar consejos
+Omitir
+Siguiente
+Consejos desactivados. Puedes reactivarlos en Ajustes.
+Consejos para novatos
+La actualización 9 añade consejos paso a paso para las pantallas principales: convocatoria, táctica, partido, ranking, economía y ajustes. ¿Activarlos para esta partida?
+No, gracias
+Activar
+Mostrar consejos
+Ver de nuevo
+Consejos reactivados
+Rivalidad encarnizada
+Superclásico de las Américas
+El derbi más antiguo del mundo
+Derbi ibérico
+Derbi del Río de la Plata
+Clásico de la CONCACAF
+Clásico de Asia Oriental
+Derbi del Magreb
+Derbi de vecinos
+Derbi escandinavo
+Derbi balcánico
+Derbi del Egeo
+Derbi del Canal de la Mancha
+Clásico europeo
+Derbi del Golfo
+Derbi transtasmánico
+Derbi de África Occidental
+Derbi del Sudeste Asiático
+Derbi del Pacífico
+Derbi andino
+Derbi centroamericano
+Derbi británico
+Nueva rivalidad
+Tras otro cruce en eliminatorias, la prensa habla de una nueva rivalidad: {0} – {1}. A partir de ahora estos partidos son especiales.
+La federación ha rescindido tu contrato. Aún no hay ofertas: tendrás que esperar a que alguien se acuerde de ti.
+Tu reputación: {0}.
+Dimisión aceptada
+La federación ha aceptado tu dimisión y te agradece el trabajo.
+Contrato renovado hasta {0}.
+La Federación de Fútbol {0} {1} está dispuesta a confiarte su selección nacional.
+Renovación de contrato
+Tu contrato vence el {0}. La federación ofrece renovarlo por {1} años.
+El contrato no se renovará
+La federación no piensa renovar tu contrato, que vence el {0}. Empieza a buscar un nuevo trabajo.
+Tu contrato ha vencido. ¡Gracias por tu trabajo! Las ofertas de otras federaciones están en la sección «Carrera».
+Diez de diez
+10 victorias en el cargo
+Centenario
+100 victorias en el cargo
+Cien goles
+Tus selecciones han marcado 100 goles
+Remontada
+Gana tras ir perdiendo por dos goles
+Nervios de acero
+Gana una tanda de penaltis
+Liga de Naciones
+Gana la Liga de Naciones
+Finalista
+Llega a la final de un gran torneo
+En el escenario mundial
+Lleva a tu selección al Mundial
+Bota de Oro
+Tu jugador es el máximo goleador de un gran torneo
+Coleccionista
+Gana 3 trofeos
+Dinastía
+Gana 10 trofeos
+Un nombre en la profesión
+Reputación de entrenador 50+
+Leyenda del banquillo
+Reputación de entrenador 80+
+Nómada
+Dirige a tres selecciones
+Larga trayectoria
+10 años de carrera como entrenador
+Lección amarga
+Te han destituido
+Renovación
+Renueva tu contrato con la federación
+Sé lo que valgo
+Rechaza una oferta de trabajo
+Club de los 100
+Tu jugador llega a 100 partidos con la selección
+Leyenda del ataque
+Un jugador de tu selección marca 50 goles
+Número uno
+Lidera el ranking FIFA
+Élite
+Entra en el top 10 del ranking FIFA
+El derbi es nuestro
+Gana un derbi
+Rey del derbi
+10 victorias en derbis
+Humillación
+Gana un derbi por 3 o más goles
+Las rivalidades nacen en las eliminatorias
+Guionista
+Completa cualquier escenario
+Maestro de escenarios
+Completa 3 escenarios distintos (en todas las partidas)
+Lleva a San Marino a la Eurocopa
+La selección más modesta de Europa sueña con una fase final. Clasifícate para la Eurocopa 2028 o 2032.
+Devuelve a Italia a la cima
+Los cuatro veces campeones del mundo se han perdido Mundiales. Gana el Mundial o la Eurocopa antes de que termine 2034.
+Vietnam en el Mundial
+Una pequeña selección asiática con grandes ambiciones. Clasifícate para el Mundial 2030 o 2034.
+Cabo Verde, campeón de África
+La selección isleña ya ha sorprendido al continente. Gana la Copa África antes de que termine 2033.
+La sexta estrella de Brasil
+El país espera el hexa. Gana el Mundial 2030.
+Fin de los años de dolor
+Inglaterra espera un gran título desde 1966. Gana el Mundial o la Eurocopa antes de que termine 2032.
+Saga islandesa
+Repite el cuento de hadas: llega al menos a cuartos de la Eurocopa antes de que termine 2032.
+India: el despegue en Asia
+Llega a las eliminatorias de la Copa Asiática antes de que termine 2031.
+Los kiwis en el Mundial
+Gana la clasificación de Oceanía y lleva a Nueva Zelanda al Mundial 2030.
+Mantener el trono
+Argentina es la referencia. Termina 2028 en el primer puesto del ranking FIFA.
+Curazao: la sensación de la CONCACAF
+Llega a las semifinales de la Copa Oro antes de que termine 2031.
+Alemania: reinicio
+De vuelta a la élite tras los fracasos: llega a las semifinales del Mundial 2030.
+¡Objetivo del escenario cumplido! Puedes seguir con tu carrera.
+Objetivo del escenario no cumplido. Tu carrera continúa sin el escenario.

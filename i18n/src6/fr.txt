@@ -281,3 +281,251 @@ Quitter
 Revenir au menu principal ?
 Mode plein écran
 Garder l’écran allumé pendant le jeu
+auj.
+Grand derby
+Derby
+Rivalité
+Naissance d'une rivalité
+{1} et {2} se sont déjà affrontés {0} fois en phase à élimination directe
+Bientôt : {0} – {1}. Tout le pays attend
+Correction ! Vainqueur du derby : {0}
+Vainqueur du derby : {0}
+Nul dans le derby : personne n'a cédé
+Tout le pays regarde ce match. Une victoire renforcera la confiance et le moral, une défaite fera plus mal que d'habitude.
+Match spécial : confiance et moral fluctuent davantage, le public à domicile pousse plus fort.
+Matchs dans la partie : {0} · {1}–{2}–{3} (V–N–D)
+Face-à-face
+Profil de l'équipe
+Le derby est à nous ! Le pays exulte.
+Nul dans le derby — les supporters attendaient mieux.
+Derby perdu — les critiques seront sévères.
+Dans cette partie
+Victoires
+Nuls
+Défaites
+Ces équipes ne se sont pas encore affrontées dans cette partie.
+Archives avant 2026 (générées)
+Dernières confrontations
+Derbys et rivaux
+Détails
+nouvelle
+Pas de rival évident — les rivalités naissent en phase finale.
+Rivaux de {0}
+Gros titres
+Calme plat pour l'instant.
+votre match
+Scénario
+jusqu'au {0}
+Le graphique se remplira au fil de votre carrière.
+Réputation
+Légende
+Star du métier
+Spécialiste reconnu
+Professionnel solide
+Entraîneur prometteur
+Débutant
+limogé
+démission
+fin de contrat
+parti
+Carrière d'entraîneur
+max. {0}
+Sans poste depuis {0}
+Offres
+Contrat actuel
+encore {0} mois
+La fédération propose une prolongation de {0} ans.
+Prolonger
+Le contrat ne sera pas prolongé.
+Offres d'emploi
+Démissionner
+Derbys gagnés
+Parcours
+Pas encore de trophée.
+Démissionner ? Vous quitterez la sélection et attendrez des offres.
+Contrat prolongé
+Vous avez refusé la prolongation
+Sans poste
+Vous avez démissionné
+Contrat terminé
+sans poste depuis {0} mois
+Personne n'appelle encore. Plus votre réputation est haute, plus les offres arrivent vite.
+Attendre un mois
+Attendre 3 mois
+Prendre sa retraite
+Disponible après 12 mois sans offre
+En attente d'offres…
+Nouvelle offre d'emploi !
+Mettre fin à votre carrière d'entraîneur ? La partie sera terminée.
+Carrière terminée
+Sélections
+Succès débloqué
+Dans cette partie
+Toutes sauvegardes
+Sauvegarde avec triche : les succès ne comptent pas
+Débloqué dans une autre partie
+Objectif : gagner le tournoi
+Objectif : se qualifier pour la phase finale
+Objectif : numéro un au classement FIFA
+Objectif : stade «{0}» ou mieux
+Scénarios
+Échéance : {0}
+Réussi
+Échoué
+En cours
+Des départs prêts à jouer avec un objectif et une échéance. Atteignez l'objectif pour obtenir un résultat et un succès ; la carrière continue dans tous les cas.
+Difficulté
+Lancer le scénario
+Bilan du scénario
+Scénario réussi !
+Scénario échoué
+Vous avez quitté la sélection avant d'atteindre l'objectif.
+Jours
+Poursuivre la carrière
+{0} départs avec objectif et échéance
+«Continuer» avance le calendrier jusqu'au prochain événement : fenêtre internationale, match ou tirage.
+Effectif : convoquez 18 à 23 joueurs avant chaque fenêtre. Pour commencer, la convocation automatique suffit.
+Tactique : choisissez un système et des consignes. Touchez les joueurs sur le terrain pour les permuter.
+Confiance de la fédération. Les victoires l'augmentent ; si elle tombe trop bas, vous serez limogé.
+Le classement FIFA détermine les chapeaux des tirages. Surveillez la place de votre sélection.
+Économie : budget, sponsors et stades. Un déficit prolongé nuit à la confiance.
+Carrière : réputation, contrat et offres d'autres sélections.
+Messagerie, entraînements et réglages sont ici. Les astuces peuvent être revues dans les Réglages.
+Cochez des joueurs pour les convoquer. La convocation automatique choisit les meilleurs joueurs en forme.
+Touchez un joueur puis un autre : ils échangent leurs places. Un nouveau toucher ouvre les consignes individuelles.
+C'est un derby ! L'enjeu est plus grand : confiance et moral bougent davantage, les tribunes poussent plus fort.
+Jouez le match en direct avec changements et tactique — ou obtenez vite le résultat.
+Pendant le match, vous pouvez faire pause, changer de tactique et effectuer des changements.
+Évolution au classement, historique de l'équipe, top 10 et points de chaque match.
+Recettes et dépenses de la fédération par poste. C'est aussi ici qu'on construit et agrandit les stades.
+Vous pouvez désactiver les astuces ou les revoir à tout moment.
+La réputation monte avec des résultats au-dessus des attentes et des trophées. Les offres d'autres sélections en dépendent.
+Les succès sont enregistrés dans chaque sauvegarde et dans le bilan global de cet appareil.
+Astuce
+Désactiver les astuces
+Passer
+Suivant
+Astuces désactivées. Réactivez-les dans les Réglages.
+Astuces pour débutants
+La mise à jour 9 ajoute des astuces pas à pas pour les écrans principaux : convocations, tactique, match, classement, économie et réglages. Les activer pour cette sauvegarde ?
+Non merci
+Activer
+Afficher les astuces
+Revoir
+Astuces réactivées
+Rivalité acharnée
+Superclásico des Amériques
+Le plus vieux derby du monde
+Derby ibérique
+Derby du Río de la Plata
+Classique de la CONCACAF
+Classique d'Asie de l'Est
+Derby du Maghreb
+Derby des voisins
+Derby scandinave
+Derby des Balkans
+Derby de la mer Égée
+Derby de la Manche
+Classique européen
+Derby du Golfe
+Derby trans-Tasman
+Derby d'Afrique de l'Ouest
+Derby d'Asie du Sud-Est
+Derby du Pacifique
+Derby andin
+Derby d'Amérique centrale
+Derby britannique
+Nouvelle rivalité
+Après une nouvelle confrontation à élimination directe, la presse parle d'une nouvelle rivalité : {0} – {1}. Désormais, ces matchs sont à part.
+La fédération a résilié votre contrat. Pas encore d'offre — il faudra attendre qu'on se souvienne de vous.
+Votre réputation : {0}.
+Démission acceptée
+La fédération a accepté votre démission et vous remercie pour votre travail.
+Contrat prolongé jusqu'au {0}.
+La fédération de football {0} {1} est prête à vous confier sa sélection nationale.
+Prolongation de contrat
+Votre contrat expire le {0}. La fédération propose de le prolonger de {1} ans.
+Pas de prolongation
+La fédération ne compte pas prolonger votre contrat, qui expire le {0}. Commencez à chercher un nouveau poste.
+Votre contrat est arrivé à terme. Merci pour votre travail ! Les offres d'autres fédérations sont dans la rubrique «Carrière».
+Dix sur dix
+10 victoires en poste
+Centenaire
+100 victoires en poste
+Cent buts
+Vos sélections ont marqué 100 buts
+Remontada
+Gagnez après avoir été mené de deux buts
+Nerfs d'acier
+Remportez une séance de tirs au but
+Ligue des nations
+Remportez la Ligue des nations
+Finaliste
+Atteignez la finale d'un grand tournoi
+Sur la scène mondiale
+Qualifiez votre sélection pour la Coupe du monde
+Soulier d'or
+Votre joueur termine meilleur buteur d'un grand tournoi
+Collectionneur
+Remportez 3 trophées
+Dynastie
+Remportez 10 trophées
+Un nom dans le métier
+Réputation d'entraîneur 50+
+Légende du banc
+Réputation d'entraîneur 80+
+Nomade
+Entraînez trois sélections
+Longévité
+10 ans de carrière d'entraîneur
+Leçon amère
+Vous avez été limogé
+Prolongation
+Prolongez votre contrat avec la fédération
+Je connais ma valeur
+Refusez une offre d'emploi
+Club des 100
+Votre joueur atteint 100 sélections
+Légende de l'attaque
+Un joueur de votre sélection marque 50 buts
+Numéro un
+Prenez la tête du classement FIFA
+Élite
+Entrez dans le top 10 du classement FIFA
+Le derby est à nous
+Gagnez un derby
+Roi du derby
+10 derbys gagnés
+Humiliation
+Gagnez un derby par 3 buts d'écart ou plus
+Les rivalités naissent en phase à élimination directe
+Scénariste
+Réussissez un scénario
+Maître des scénarios
+Réussissez 3 scénarios différents (toutes sauvegardes)
+Emmène Saint-Marin à l'Euro
+La plus modeste sélection d'Europe rêve d'une phase finale. Qualifiez-vous pour l'Euro 2028 ou 2032.
+Ramène l'Italie au sommet
+Le quadruple champion du monde a manqué des Coupes du monde. Gagnez la Coupe du monde ou l'Euro d'ici fin 2034.
+Le Vietnam en Coupe du monde
+Une petite sélection asiatique aux grandes ambitions. Qualifiez-vous pour la Coupe du monde 2030 ou 2034.
+Cap-Vert, champion d'Afrique
+La sélection insulaire a déjà surpris le continent. Gagnez la CAN d'ici fin 2033.
+La sixième étoile du Brésil
+Le pays attend l'« hexa ». Gagnez la Coupe du monde 2030.
+La fin des années de souffrance
+L'Angleterre attend un grand titre depuis 1966. Gagnez la Coupe du monde ou l'Euro d'ici fin 2032.
+Saga islandaise
+Rejouez le conte de fées : atteignez au moins les quarts de l'Euro d'ici fin 2032.
+Inde : la percée en Asie
+Atteignez la phase à élimination directe de la Coupe d'Asie d'ici fin 2031.
+Les Kiwis au Mondial
+Remportez les qualifications d'Océanie et menez la Nouvelle-Zélande à la Coupe du monde 2030.
+Garder le trône
+L'Argentine est la référence. Terminez 2028 à la première place du classement FIFA.
+Curaçao : la sensation de la CONCACAF
+Atteignez les demi-finales de la Gold Cup d'ici fin 2031.
+Allemagne : redémarrage
+Retour dans l'élite après les échecs : atteignez les demi-finales de la Coupe du monde 2030.
+Objectif du scénario atteint ! Vous pouvez poursuivre votre carrière.
+Objectif du scénario non atteint. La carrière continue sans le scénario.

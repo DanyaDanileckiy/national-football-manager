@@ -281,3 +281,251 @@ Exit
 Exit to main menu?
 Fullscreen mode
 Keep screen on while playing
+now
+Great derby
+Derby
+Rivalry
+A rivalry is born
+{1} and {2} have now met {0} times in the knockouts
+Coming up: {0} vs {1}. The nation is waiting
+Thrashing! Derby winner: {0}
+Derby winner: {0}
+Derby draw: neither side gave way
+The whole country is watching. A win will lift trust and morale; a defeat will hurt more than usual.
+Special match: bigger swings in trust and morale, and a louder home crowd.
+In-game meetings: {0} · {1}–{2}–{3} (W–D–L)
+Head-to-head
+Team profile
+The derby is ours! The nation celebrates.
+Derby draw — the fans expected more.
+Derby lost — the criticism will be harsh.
+In this game
+Wins
+Draws
+Losses
+These teams haven't met in this game yet.
+Pre-2026 archive (generated)
+Recent meetings
+Derbies and rivals
+Details
+new
+No clear rivals — rivalries are born in the knockouts.
+Rivals of {0}
+Headlines
+All quiet for now.
+your match
+Scenario
+until {0}
+The chart will fill in as your career goes on.
+Reputation
+Legend
+Star of the profession
+Renowned specialist
+Solid professional
+Promising coach
+Newcomer
+sacked
+resigned
+contract expired
+moved on
+Coaching career
+peak {0}
+Out of work since {0}
+Offers
+Current contract
+{0} months left
+The federation offers a {0}-year extension.
+Extend
+The contract will not be extended.
+Job offers
+Resign
+Derby wins
+Job history
+No trophies yet.
+Resign? You will leave the national team and wait for offers.
+Contract extended
+You declined the extension
+Out of work
+You resigned
+Contract expired
+out of work for {0} months
+Nobody is calling yet. The higher your reputation, the sooner offers arrive.
+Wait a month
+Wait 3 months
+Retire
+Available after 12 months without offers
+Waiting for offers…
+New job offer!
+End your coaching career? The game will be over.
+Career over
+National teams
+Achievement unlocked
+In this game
+Across all saves
+Save with cheats: achievements don't count
+Unlocked in another game
+Goal: win the tournament
+Goal: qualify for the finals
+Goal: number one in the FIFA ranking
+Goal: reach the «{0}» stage or better
+Scenarios
+Deadline: {0}
+Completed
+Failed
+In progress
+Ready-made starts with a goal and a deadline. Reach the goal to get a result and an achievement; your career goes on either way.
+Difficulty
+Start scenario
+Scenario result
+Scenario completed!
+Scenario failed
+You left the national team before reaching the goal.
+Days
+Continue career
+{0} starts with a goal and deadline
+«Continue» moves the calendar to the next event: an international window, a match or a draw.
+Squad: call up 18–23 players before each window. Auto call-up is fine to start with.
+Tactics: choose a formation and instructions. Tap players on the pitch to swap them.
+Federation trust. Wins raise it; if it drops too low, you'll be sacked.
+The FIFA ranking decides the draw pots. Keep an eye on your team's position.
+Economy: budget, sponsors and stadiums. A long deficit hurts trust.
+Career: reputation, contract and offers from other national teams.
+Mail, training and settings are here. Tips can be replayed in Settings.
+Tick players to call them up. Auto call-up picks the strongest fit players.
+Tap one player, then another, and they swap places. Tapping again opens individual instructions.
+It's a derby! The stakes are higher: trust and morale swing more, and the stands roar louder.
+Play the match live with substitutions and tactics — or get a quick result.
+During the match you can pause, change tactics and make substitutions.
+Ranking movement, team history, the top 10 and points for every match.
+Federation income and spending by item. Stadiums are built and expanded here too.
+You can turn tips off or replay them at any time.
+Reputation grows with results above expectations and trophies. Offers from other teams depend on it.
+Achievements are stored in each save and in the overall record on this device.
+Tip
+Turn off tips
+Skip
+Next
+Tips turned off. You can turn them back on in Settings.
+Tips for newcomers
+Update 9 adds step-by-step tips for the main screens: call-ups, tactics, match, ranking, economy and settings. Turn them on for this save?
+No, thanks
+Turn on
+Show tips
+Replay
+Tips turned on again
+Bitter rivalry
+Superclásico of the Americas
+The world's oldest derby
+Iberian derby
+River Plate derby
+CONCACAF classic
+East Asian classic
+Maghreb derby
+Neighbours' derby
+Scandinavian derby
+Balkan derby
+Aegean derby
+Cross-Channel derby
+European classic
+Gulf derby
+Trans-Tasman derby
+West African derby
+Southeast Asian derby
+Pacific derby
+Andean derby
+Central American derby
+British derby
+New rivalry
+After another knockout meeting, the press is talking about a new rivalry: {0} vs {1}. From now on these matches are special.
+The federation has terminated your contract. No offers yet — you will have to wait until someone remembers you.
+Your reputation: {0}.
+Resignation accepted
+The federation has accepted your resignation and thanks you for your work.
+Contract extended until {0}.
+The {0} {1} Football Federation is ready to entrust you with its national team.
+Contract extension
+Your contract expires on {0}. The federation offers to extend it by {1} years.
+Contract will not be extended
+The federation does not plan to extend your contract, which expires on {0}. Start looking for a new job.
+Your contract has expired. Thank you for your work! Offers from other federations are in the «Career» section.
+Perfect ten
+10 wins in charge
+Century
+100 wins in charge
+Hundred goals
+Your teams have scored 100 goals
+Comeback
+Win after trailing by two goals
+Nerves of steel
+Win a penalty shootout
+Nations League
+Win the Nations League
+Finalist
+Reach the final of a major tournament
+On the world stage
+Take your team to the World Cup
+Golden Boot
+Your player is the top scorer of a major tournament
+Collector
+Win 3 trophies
+Dynasty
+Win 10 trophies
+A name in the profession
+Coach reputation 50+
+Legend of the dugout
+Coach reputation 80+
+Nomad
+Coach three national teams
+Long haul
+A 10-year coaching career
+Bitter lesson
+Get sacked
+Extension
+Extend your contract with the federation
+I know my worth
+Turn down a job offer
+Club 100
+Your player reaches 100 caps
+Attacking legend
+A player of your team scores 50 goals
+Number one
+Top the FIFA ranking
+Elite
+Reach the FIFA top 10
+The derby is ours
+Win a derby
+Derby master
+10 derby wins
+Humiliation
+Win a derby by 3+ goals
+Rivalries are born in the knockouts
+Screenwriter
+Complete any scenario
+Scenario master
+Complete 3 different scenarios (across all saves)
+Take San Marino to the Euros
+Europe's most modest team dreams of a major tournament. Qualify for Euro 2028 or 2032.
+Bring Italy back to the top
+The four-time world champions have been missing World Cups. Win the World Cup or the Euros by the end of 2034.
+Vietnam at the World Cup
+A small Asian team with big ambitions. Qualify for the 2030 or 2034 World Cup.
+Cape Verde, champions of Africa
+The island nation has surprised the continent before. Win the Africa Cup of Nations by the end of 2033.
+Brazil's sixth star
+The country is waiting for the hexa. Win the 2030 World Cup.
+End the years of hurt
+England have been waiting for a major trophy since 1966. Win the World Cup or the Euros by the end of 2032.
+Icelandic saga
+Repeat the fairy tale: reach at least the Euro quarter-finals by the end of 2032.
+India: a breakthrough in Asia
+Reach the Asian Cup knockouts by the end of 2031.
+Kiwis at the World Cup
+Win Oceania qualifying and take New Zealand to the 2030 World Cup.
+Keep the throne
+Argentina are the benchmark. Be first in the FIFA ranking at the end of 2028.
+Curaçao: the CONCACAF sensation
+Reach the Gold Cup semi-finals by the end of 2031.
+Germany: reboot
+Back to the elite after setbacks: reach the 2030 World Cup semi-finals.
+Scenario goal achieved! You can carry on with your career.
+Scenario goal not achieved. Your career continues without the scenario.

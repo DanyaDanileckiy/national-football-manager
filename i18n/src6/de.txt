@@ -281,3 +281,251 @@ Beenden
 Zum Hauptmenü zurückkehren?
 Vollbildmodus
 Bildschirm beim Spielen anlassen
+heute
+Großes Derby
+Derby
+Rivalität
+Eine Rivalität ist geboren
+{1} und {2} trafen bereits {0}-mal in der K.-o.-Runde aufeinander
+Demnächst: {0} – {1}. Das Land fiebert mit
+Kantersieg! Derbysieger: {0}
+Derbysieger: {0}
+Remis im Derby: keiner gab nach
+Das ganze Land schaut zu. Ein Sieg stärkt Vertrauen und Moral, eine Niederlage schmerzt mehr als sonst.
+Besonderes Spiel: Vertrauen und Moral schwanken stärker, die Heimfans sind lauter.
+Spiele in diesem Spielstand: {0} · {1}–{2}–{3} (S–U–N)
+Direkter Vergleich
+Teamprofil
+Das Derby gehört uns! Das Land jubelt.
+Remis im Derby – die Fans hatten mehr erwartet.
+Derby verloren – die Kritik wird hart.
+In diesem Spielstand
+Siege
+Unentschieden
+Niederlagen
+Diese Teams sind in diesem Spielstand noch nicht aufeinandergetroffen.
+Archiv vor 2026 (generiert)
+Letzte Duelle
+Derbys und Rivalen
+Details
+neu
+Keine klaren Rivalen – Rivalitäten entstehen in der K.-o.-Runde.
+Rivalen von {0}
+Schlagzeilen
+Noch ist alles ruhig.
+Ihr Spiel
+Szenario
+bis {0}
+Das Diagramm füllt sich im Lauf Ihrer Karriere.
+Ansehen
+Legende
+Star der Branche
+Anerkannter Fachmann
+Solider Profi
+Vielversprechender Trainer
+Neuling
+entlassen
+Rücktritt
+Vertrag ausgelaufen
+gewechselt
+Trainerkarriere
+Höchstwert {0}
+Ohne Job seit {0}
+Angebote
+Aktueller Vertrag
+noch {0} Monate
+Der Verband bietet eine Verlängerung um {0} Jahre an.
+Verlängern
+Der Vertrag wird nicht verlängert.
+Jobangebote
+Zurücktreten
+Derbysiege
+Stationen
+Noch keine Titel.
+Zurücktreten? Sie verlassen die Nationalmannschaft und warten auf Angebote.
+Vertrag verlängert
+Sie haben die Verlängerung abgelehnt
+Ohne Job
+Sie sind zurückgetreten
+Vertrag ausgelaufen
+seit {0} Monaten ohne Job
+Noch ruft niemand an. Je höher Ihr Ansehen, desto schneller kommen Angebote.
+Einen Monat warten
+3 Monate warten
+Karriere beenden
+Verfügbar nach 12 Monaten ohne Angebote
+Warten auf Angebote…
+Neues Jobangebot!
+Trainerkarriere beenden? Das Spiel ist dann vorbei.
+Karriere beendet
+Nationalteams
+Erfolg freigeschaltet
+In diesem Spielstand
+In allen Spielständen
+Spielstand mit Cheats: Erfolge zählen nicht
+In einem anderen Spielstand freigeschaltet
+Ziel: das Turnier gewinnen
+Ziel: Qualifikation für die Endrunde
+Ziel: Platz eins der FIFA-Weltrangliste
+Ziel: Runde «{0}» oder weiter
+Szenarien
+Frist: bis {0}
+Erfüllt
+Gescheitert
+Läuft
+Fertige Starts mit Ziel und Frist. Erreichen Sie das Ziel und erhalten Sie ein Ergebnis und einen Erfolg; die Karriere geht in jedem Fall weiter.
+Schwierigkeit
+Szenario starten
+Szenario-Ergebnis
+Szenario erfüllt!
+Szenario gescheitert
+Sie haben die Nationalmannschaft verlassen, bevor das Ziel erreicht war.
+Tage
+Karriere fortsetzen
+{0} Starts mit Ziel und Frist
+«Weiter» springt im Kalender zum nächsten Ereignis: Länderspielfenster, Spiel oder Auslosung.
+Kader: Berufen Sie vor jedem Fenster 18–23 Spieler. Für den Anfang reicht die automatische Nominierung.
+Taktik: Wählen Sie Formation und Anweisungen. Tippen Sie Spieler auf dem Feld an, um sie zu tauschen.
+Vertrauen des Verbands. Siege steigern es; sinkt es zu tief, werden Sie entlassen.
+Die FIFA-Weltrangliste bestimmt die Lostöpfe. Behalten Sie die Position Ihres Teams im Blick.
+Finanzen: Budget, Sponsoren und Stadien. Ein langes Defizit schadet dem Vertrauen.
+Karriere: Ansehen, Vertrag und Angebote anderer Nationalteams.
+Post, Training und Einstellungen finden Sie hier. Die Tipps lassen sich in den Einstellungen wiederholen.
+Markieren Sie Spieler, um sie zu berufen. Die automatische Nominierung wählt die stärksten fitten Spieler.
+Tippen Sie einen Spieler und dann einen anderen an – sie tauschen die Plätze. Erneutes Tippen öffnet die Einzelanweisung.
+Es ist Derby! Es steht mehr auf dem Spiel: Vertrauen und Moral schwanken stärker, die Tribünen sind lauter.
+Spielen Sie das Spiel live mit Wechseln und Taktik – oder holen Sie sich schnell das Ergebnis.
+Während des Spiels können Sie pausieren, die Taktik ändern und wechseln.
+Bewegung in der Rangliste, Teamhistorie, Top 10 und Punkte für jedes Spiel.
+Einnahmen und Ausgaben des Verbands nach Posten. Hier werden auch Stadien gebaut und ausgebaut.
+Sie können die Tipps jederzeit ausschalten oder erneut anzeigen.
+Das Ansehen steigt mit Ergebnissen über den Erwartungen und mit Titeln. Davon hängen Angebote anderer Teams ab.
+Erfolge werden in jedem Spielstand und in der Gesamtwertung auf diesem Gerät gespeichert.
+Tipp
+Tipps ausschalten
+Überspringen
+Weiter
+Tipps ausgeschaltet. In den Einstellungen wieder einschalten.
+Tipps für Einsteiger
+Update 9 bringt Schritt-für-Schritt-Tipps zu den wichtigsten Bildschirmen: Nominierung, Taktik, Spiel, Rangliste, Finanzen und Einstellungen. Für diesen Spielstand einschalten?
+Nein, danke
+Einschalten
+Tipps anzeigen
+Erneut zeigen
+Tipps wieder eingeschaltet
+Erbitterte Rivalität
+Superclásico der Amerikas
+Das älteste Derby der Welt
+Iberisches Derby
+Río-de-la-Plata-Derby
+CONCACAF-Klassiker
+Ostasiatischer Klassiker
+Maghreb-Derby
+Nachbarschaftsderby
+Skandinavisches Derby
+Balkanderby
+Ägäis-Derby
+Derby über den Ärmelkanal
+Europäischer Klassiker
+Golfderby
+Trans-Tasman-Derby
+Westafrikanisches Derby
+Südostasiatisches Derby
+Pazifik-Derby
+Andenderby
+Mittelamerikanisches Derby
+Britisches Derby
+Neue Rivalität
+Nach einem weiteren K.-o.-Duell spricht die Presse von einer neuen Rivalität: {0} – {1}. Ab jetzt sind diese Spiele etwas Besonderes.
+Der Verband hat Ihren Vertrag aufgelöst. Noch keine Angebote – Sie müssen warten, bis sich jemand an Sie erinnert.
+Ihr Ansehen: {0}.
+Rücktritt angenommen
+Der Verband hat Ihren Rücktritt angenommen und dankt Ihnen für Ihre Arbeit.
+Vertrag verlängert bis {0}.
+Der Fußballverband {0} {1} möchte Ihnen seine Nationalmannschaft anvertrauen.
+Vertragsverlängerung
+Ihr Vertrag läuft am {0} aus. Der Verband bietet eine Verlängerung um {1} Jahre an.
+Vertrag wird nicht verlängert
+Der Verband plant nicht, Ihren am {0} auslaufenden Vertrag zu verlängern. Suchen Sie sich eine neue Stelle.
+Ihr Vertrag ist ausgelaufen. Danke für Ihre Arbeit! Angebote anderer Verbände finden Sie unter «Karriere».
+Zehn auf einen Streich
+10 Siege im Amt
+Hundert
+100 Siege im Amt
+Hundert Tore
+Ihre Teams haben 100 Tore erzielt
+Comeback
+Gewinnen Sie nach einem Zwei-Tore-Rückstand
+Nerven aus Stahl
+Gewinnen Sie ein Elfmeterschießen
+Nations League
+Gewinnen Sie die Nations League
+Finalist
+Erreichen Sie das Finale eines großen Turniers
+Auf der Weltbühne
+Führen Sie Ihr Team zur Weltmeisterschaft
+Goldener Schuh
+Ihr Spieler wird Torschützenkönig eines großen Turniers
+Sammler
+Gewinnen Sie 3 Titel
+Dynastie
+Gewinnen Sie 10 Titel
+Ein Name in der Branche
+Trainer-Ansehen 50+
+Legende an der Seitenlinie
+Trainer-Ansehen 80+
+Nomade
+Trainieren Sie drei Nationalteams
+Langer Atem
+10 Jahre Trainerkarriere
+Bittere Lektion
+Sie wurden entlassen
+Verlängerung
+Verlängern Sie Ihren Vertrag mit dem Verband
+Ich kenne meinen Wert
+Lehnen Sie ein Jobangebot ab
+Club 100
+Ihr Spieler erreicht 100 Länderspiele
+Sturmlegende
+Ein Spieler Ihres Teams erzielt 50 Tore
+Nummer eins
+Führen Sie die FIFA-Weltrangliste an
+Elite
+Erreichen Sie die Top 10 der FIFA-Weltrangliste
+Das Derby gehört uns
+Gewinnen Sie ein Derby
+Derbykönig
+10 Derbysiege
+Demütigung
+Gewinnen Sie ein Derby mit 3+ Toren Unterschied
+Rivalitäten entstehen in der K.-o.-Runde
+Drehbuchautor
+Erfüllen Sie ein beliebiges Szenario
+Szenario-Meister
+Erfüllen Sie 3 verschiedene Szenarien (über alle Spielstände)
+San Marino zur EM führen
+Europas bescheidenstes Team träumt von einer Endrunde. Qualifizieren Sie sich für die EM 2028 oder 2032.
+Italien zurück an die Spitze
+Der viermalige Weltmeister verpasste mehrere WMs. Gewinnen Sie bis Ende 2034 die WM oder die EM.
+Vietnam bei der WM
+Ein kleines asiatisches Team mit großen Ambitionen. Qualifizieren Sie sich für die WM 2030 oder 2034.
+Kap Verde, Afrikameister
+Das Inselteam hat den Kontinent schon überrascht. Gewinnen Sie bis Ende 2033 den Afrika-Cup.
+Brasiliens sechster Stern
+Das Land wartet auf den sechsten Titel. Gewinnen Sie die WM 2030.
+Schluss mit den Jahren des Schmerzes
+England wartet seit 1966 auf einen großen Titel. Gewinnen Sie bis Ende 2032 die WM oder die EM.
+Isländische Saga
+Wiederholen Sie das Märchen: Erreichen Sie bis Ende 2032 mindestens das EM-Viertelfinale.
+Indien: Durchbruch in Asien
+Erreichen Sie bis Ende 2031 die K.-o.-Runde der Asienmeisterschaft.
+Kiwis bei der WM
+Gewinnen Sie die Ozeanien-Qualifikation und führen Sie Neuseeland zur WM 2030.
+Den Thron verteidigen
+Argentinien ist der Maßstab. Stehen Sie Ende 2028 auf Platz eins der FIFA-Weltrangliste.
+Curaçao: die CONCACAF-Sensation
+Erreichen Sie bis Ende 2031 das Halbfinale des Gold Cup.
+Deutschland: Neustart
+Nach Rückschlägen zurück in die Elite: Erreichen Sie das Halbfinale der WM 2030.
+Szenario-Ziel erreicht! Sie können Ihre Karriere fortsetzen.
+Szenario-Ziel verfehlt. Die Karriere geht ohne Szenario weiter.

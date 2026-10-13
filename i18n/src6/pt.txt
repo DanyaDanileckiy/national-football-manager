@@ -281,3 +281,251 @@ Sair
 Sair para o menu principal?
 Modo de tela cheia
 Manter a tela ligada durante o jogo
+atual
+Grande clássico
+Clássico
+Rivalidade
+Nasce uma rivalidade
+{1} e {2} já se enfrentaram {0} vezes no mata-mata
+Vem aí: {0} x {1}. O país está à espera
+Goleada! Vencedor do clássico: {0}
+Vencedor do clássico: {0}
+Empate no clássico: ninguém cedeu
+O país inteiro assiste a este jogo. Uma vitória aumenta a confiança e o moral; uma derrota dói mais que o normal.
+Jogo especial: confiança e moral oscilam mais e a torcida da casa empurra mais forte.
+Jogos na partida: {0} · {1}–{2}–{3} (V–E–D)
+Confronto direto
+Perfil da equipe
+O clássico é nosso! O país comemora.
+Empate no clássico — a torcida esperava mais.
+Clássico perdido — as críticas serão duras.
+Nesta partida
+Vitórias
+Empates
+Derrotas
+Estas equipes ainda não se enfrentaram nesta partida.
+Arquivo antes de 2026 (gerado)
+Últimos confrontos
+Clássicos e rivais
+Detalhes
+nova
+Sem rivais claros — as rivalidades nascem no mata-mata.
+Rivais de {0}
+Manchetes
+Tudo calmo por enquanto.
+seu jogo
+Cenário
+até {0}
+O gráfico será preenchido ao longo da carreira.
+Reputação
+Lenda
+Estrela da profissão
+Especialista reconhecido
+Profissional sólido
+Treinador promissor
+Novato
+demitido
+renúncia
+contrato encerrado
+saiu
+Carreira de treinador
+máximo {0}
+Sem emprego desde {0}
+Propostas
+Contrato atual
+faltam {0} meses
+A federação oferece uma renovação de {0} anos.
+Renovar
+O contrato não será renovado.
+Propostas de emprego
+Pedir demissão
+Vitórias em clássicos
+Histórico profissional
+Ainda sem troféus.
+Pedir demissão? Você deixará a seleção e aguardará propostas.
+Contrato renovado
+Você recusou a renovação
+Sem emprego
+Você pediu demissão
+Contrato encerrado
+sem emprego há {0} meses
+Ninguém ligou ainda. Quanto maior a reputação, mais rápido chegam as propostas.
+Esperar um mês
+Esperar 3 meses
+Encerrar carreira
+Disponível após 12 meses sem propostas
+Aguardando propostas…
+Nova proposta de emprego!
+Encerrar sua carreira de treinador? O jogo vai terminar.
+Carreira encerrada
+Seleções
+Conquista desbloqueada
+Nesta partida
+Em todos os jogos salvos
+Jogo com trapaças: conquistas não contam
+Desbloqueada em outra partida
+Objetivo: vencer o torneio
+Objetivo: classificar-se para a fase final
+Objetivo: primeiro lugar no ranking da FIFA
+Objetivo: fase «{0}» ou melhor
+Cenários
+Prazo: até {0}
+Concluído
+Fracassado
+Em andamento
+Inícios prontos com objetivo e prazo. Cumpra o objetivo e ganhe um resultado e uma conquista; a carreira continua de qualquer jeito.
+Dificuldade
+Iniciar cenário
+Resultado do cenário
+Cenário concluído!
+Cenário fracassado
+Você deixou a seleção antes de cumprir o objetivo.
+Dias
+Continuar carreira
+{0} inícios com objetivo e prazo
+«Continuar» avança o calendário até o próximo evento: uma data FIFA, um jogo ou um sorteio.
+Elenco: convoque 18–23 jogadores antes de cada data FIFA. Para começar, a convocação automática basta.
+Tática: escolha esquema e instruções. Toque nos jogadores em campo para trocá-los de lugar.
+Confiança da federação. Vitórias a aumentam; se cair demais, você será demitido.
+O ranking da FIFA define os potes dos sorteios. Acompanhe a posição da sua seleção.
+Economia: orçamento, patrocinadores e estádios. Um déficit prolongado prejudica a confiança.
+Carreira: reputação, contrato e propostas de outras seleções.
+E-mail, treinos e configurações ficam aqui. As dicas podem ser revistas nas Configurações.
+Marque os jogadores para convocá-los. A convocação automática escolhe os melhores em condições.
+Toque em um jogador e depois em outro — eles trocam de lugar. Um novo toque abre as instruções individuais.
+É clássico! Vale mais: confiança e moral mudam mais e a arquibancada apoia mais alto.
+Jogue a partida ao vivo com substituições e tática — ou veja o resultado rápido.
+Durante o jogo você pode pausar, mudar a tática e fazer substituições.
+Movimento no ranking, histórico da equipe, top 10 e pontos de cada jogo.
+Receitas e despesas da federação por item. Aqui também se constroem e ampliam estádios.
+Você pode desligar as dicas ou revê-las a qualquer momento.
+A reputação cresce com resultados acima do esperado e com troféus. As propostas de outras seleções dependem dela.
+As conquistas ficam guardadas em cada jogo salvo e no registro geral deste dispositivo.
+Dica
+Desligar dicas
+Pular
+Próxima
+Dicas desligadas. Ligue-as de novo nas Configurações.
+Dicas para iniciantes
+A atualização 9 traz dicas passo a passo para as telas principais: convocação, tática, partida, ranking, economia e configurações. Ativá-las neste jogo salvo?
+Não, obrigado
+Ativar
+Mostrar dicas
+Ver de novo
+Dicas reativadas
+Rivalidade feroz
+Superclássico das Américas
+O clássico mais antigo do mundo
+Clássico ibérico
+Clássico do Rio da Prata
+Clássico da CONCACAF
+Clássico do Leste Asiático
+Clássico do Magrebe
+Clássico dos vizinhos
+Clássico escandinavo
+Clássico dos Bálcãs
+Clássico do Egeu
+Clássico do Canal da Mancha
+Clássico europeu
+Clássico do Golfo
+Clássico transtasmânico
+Clássico da África Ocidental
+Clássico do Sudeste Asiático
+Clássico do Pacífico
+Clássico andino
+Clássico centro-americano
+Clássico britânico
+Nova rivalidade
+Depois de mais um duelo no mata-mata, a imprensa fala de uma nova rivalidade: {0} x {1}. A partir de agora, esses jogos são especiais.
+A federação rescindiu seu contrato. Ainda não há propostas — será preciso esperar até alguém se lembrar de você.
+Sua reputação: {0}.
+Demissão aceita
+A federação aceitou sua demissão e agradece pelo trabalho.
+Contrato renovado até {0}.
+A Federação de Futebol {0} {1} está pronta para lhe confiar a sua seleção nacional.
+Renovação de contrato
+Seu contrato termina em {0}. A federação propõe renová-lo por {1} anos.
+O contrato não será renovado
+A federação não pretende renovar seu contrato, que termina em {0}. Comece a procurar um novo emprego.
+Seu contrato terminou. Obrigado pelo trabalho! As propostas de outras federações estão na seção «Carreira».
+Dez em dez
+10 vitórias no cargo
+Centenário
+100 vitórias no cargo
+Cem gols
+Suas seleções marcaram 100 gols
+Virada
+Vença depois de estar perdendo por dois gols
+Nervos de aço
+Vença uma disputa de pênaltis
+Liga das Nações
+Vença a Liga das Nações
+Finalista
+Chegue à final de um grande torneio
+No palco mundial
+Leve sua seleção à Copa do Mundo
+Chuteira de Ouro
+Seu jogador é o artilheiro de um grande torneio
+Colecionador
+Ganhe 3 troféus
+Dinastia
+Ganhe 10 troféus
+Um nome na profissão
+Reputação de treinador 50+
+Lenda do banco
+Reputação de treinador 80+
+Nômade
+Treine três seleções
+Longa estrada
+10 anos de carreira de treinador
+Lição amarga
+Você foi demitido
+Renovação
+Renove o contrato com a federação
+Sei o meu valor
+Recuse uma proposta de emprego
+Clube dos 100
+Seu jogador chega a 100 jogos pela seleção
+Lenda do ataque
+Um jogador da sua seleção marca 50 gols
+Número um
+Lidere o ranking da FIFA
+Elite
+Entre no top 10 do ranking da FIFA
+O clássico é nosso
+Vença um clássico
+Dono do clássico
+10 vitórias em clássicos
+Humilhação
+Vença um clássico por 3 ou mais gols
+As rivalidades nascem no mata-mata
+Roteirista
+Conclua qualquer cenário
+Mestre dos cenários
+Conclua 3 cenários diferentes (em todos os jogos salvos)
+Leve San Marino à Euro
+A seleção mais modesta da Europa sonha com uma fase final. Classifique-se para a Euro 2028 ou 2032.
+Devolva a Itália ao topo
+Os tetracampeões mundiais vêm ficando fora de Copas. Vença a Copa do Mundo ou a Euro até o fim de 2034.
+Vietnã na Copa do Mundo
+Uma pequena seleção asiática com grandes ambições. Classifique-se para a Copa de 2030 ou 2034.
+Cabo Verde, campeão da África
+A seleção insular já surpreendeu o continente. Vença a Copa Africana de Nações até o fim de 2033.
+A sexta estrela do Brasil
+O país espera o hexa. Vença a Copa do Mundo de 2030.
+Fim dos anos de sofrimento
+A Inglaterra espera um grande título desde 1966. Vença a Copa do Mundo ou a Euro até o fim de 2032.
+Saga islandesa
+Repita o conto de fadas: chegue pelo menos às quartas da Euro até o fim de 2032.
+Índia: a arrancada na Ásia
+Chegue ao mata-mata da Copa da Ásia até o fim de 2031.
+Kiwis na Copa
+Vença as eliminatórias da Oceania e leve a Nova Zelândia à Copa de 2030.
+Manter o trono
+A Argentina é a referência. Termine 2028 em primeiro no ranking da FIFA.
+Curaçao: a sensação da CONCACAF
+Chegue às semifinais da Copa Ouro até o fim de 2031.
+Alemanha: recomeço
+De volta à elite após os fracassos: chegue às semifinais da Copa de 2030.
+Objetivo do cenário cumprido! Você pode continuar a carreira.
+Objetivo do cenário não cumprido. A carreira continua sem o cenário.

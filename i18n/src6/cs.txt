@@ -281,3 +281,251 @@ Ukončit
 Odejít do hlavní nabídky?
 Režim celé obrazovky
 Nevypínat obrazovku během hry
+dosud
+Velké derby
+Derby
+Rivalita
+Zrod rivality
+{1} a {2} se ve vyřazovací fázi utkaly už {0}×
+Brzy zápas: {0} – {1}. Celá země čeká
+Debakl! Vítěz derby: {0}
+Vítěz derby: {0}
+Remíza v derby: nikdo neustoupil
+Celá země sleduje tento zápas. Výhra zvedne důvěru i morálku, prohra zabolí víc než obvykle.
+Výjimečný zápas: důvěra a morálka kolísají víc, domácí tribuny fandí hlasitěji.
+Zápasy v této hře: {0} · {1}–{2}–{3} (V–R–P)
+Vzájemné zápasy
+Profil týmu
+Derby je naše! Země jásá.
+Remíza v derby — fanoušci čekali víc.
+Prohrané derby — kritika bude tvrdá.
+V této hře
+Výhry
+Remízy
+Prohry
+Tyto týmy se v této hře ještě nepotkaly.
+Archiv před rokem 2026 (generovaný)
+Poslední zápasy
+Derby a rivalové
+Podrobnosti
+nová
+Žádní jasní rivalové — rivality se rodí ve vyřazovací fázi.
+Rivalové reprezentace {0}
+Titulky
+Zatím klid.
+váš zápas
+Scénář
+do {0}
+Graf se bude plnit v průběhu kariéry.
+Reputace
+Legenda
+Hvězda oboru
+Uznávaný odborník
+Solidní profesionál
+Nadějný trenér
+Nováček
+odvolán
+rezignace
+smlouva vypršela
+odešel
+Trenérská kariéra
+maximum {0}
+Bez práce od {0}
+Nabídky
+Současná smlouva
+zbývá {0} měs.
+Svaz nabízí prodloužení o {0} let.
+Prodloužit
+Smlouva nebude prodloužena.
+Pracovní nabídky
+Rezignovat
+Výhry v derby
+Pracovní historie
+Zatím žádné trofeje.
+Rezignovat? Opustíte reprezentaci a budete čekat na nabídky.
+Smlouva prodloužena
+Odmítli jste prodloužení
+Bez práce
+Rezignovali jste
+Smlouva vypršela
+bez práce {0} měs.
+Zatím nikdo nevolá. Čím vyšší reputace, tím rychleji přijdou nabídky.
+Počkat měsíc
+Počkat 3 měsíce
+Ukončit kariéru
+Dostupné po 12 měsících bez nabídek
+Čekání na nabídky…
+Nová pracovní nabídka!
+Ukončit trenérskou kariéru? Hra skončí.
+Kariéra ukončena
+Reprezentace
+Úspěch odemčen
+V této hře
+Ve všech uloženích
+Uložení s cheaty: úspěchy se nepočítají
+Odemčeno v jiné hře
+Cíl: vyhrát turnaj
+Cíl: postup na závěrečný turnaj
+Cíl: první místo v žebříčku FIFA
+Cíl: fáze «{0}» nebo dál
+Scénáře
+Termín: do {0}
+Splněno
+Nesplněno
+Probíhá
+Připravené starty s cílem a termínem. Splňte cíl a získáte výsledek i úspěch; kariéra pokračuje v každém případě.
+Obtížnost
+Spustit scénář
+Výsledek scénáře
+Scénář splněn!
+Scénář nesplněn
+Opustili jste reprezentaci dřív, než jste splnili cíl.
+Dní
+Pokračovat v kariéře
+{0} startů s cílem a termínem
+«Pokračovat» posune kalendář k další události: reprezentační přestávce, zápasu nebo losu.
+Kádr: před každou přestávkou povolejte 18–23 hráčů. Pro začátek stačí automatická nominace.
+Taktika: zvolte rozestavení a pokyny. Klepnutím na hráče na hřišti je prohodíte.
+Důvěra svazu. Výhry ji zvyšují; pokud klesne příliš nízko, budete odvoláni.
+Žebříček FIFA určuje koše při losech. Sledujte postavení své reprezentace.
+Ekonomika: rozpočet, sponzoři a stadiony. Dlouhodobý schodek poškozuje důvěru.
+Kariéra: reputace, smlouva a nabídky jiných reprezentací.
+Pošta, tréninky a nastavení jsou tady. Tipy lze zopakovat v nastavení.
+Označte hráče, které chcete povolat. Automatická nominace vybere nejsilnější zdravé hráče.
+Klepněte na jednoho hráče a pak na druhého — vymění si místa. Opětovné klepnutí otevře individuální pokyn.
+Je to derby! Sázky jsou vyšší: důvěra a morálka se mění víc, tribuny fandí hlasitěji.
+Odehrajte zápas živě se střídáním a taktikou — nebo rychle získejte výsledek.
+Během zápasu můžete hru pozastavit, měnit taktiku a střídat.
+Pohyb v žebříčku, historie týmu, top 10 a body za každý zápas.
+Příjmy a výdaje svazu podle položek. Tady se také stavějí a rozšiřují stadiony.
+Tipy můžete kdykoli vypnout nebo zobrazit znovu.
+Reputace roste s výsledky nad očekávání a s trofejemi. Závisí na ní nabídky jiných reprezentací.
+Úspěchy se ukládají v každém uložení i v celkovém přehledu na tomto zařízení.
+Tip
+Vypnout tipy
+Přeskočit
+Další
+Tipy vypnuty. Znovu je zapnete v nastavení.
+Tipy pro nováčky
+Aktualizace 9 přidává tipy krok za krokem k hlavním obrazovkám: nominace, taktika, zápas, žebříček, ekonomika a nastavení. Zapnout je pro toto uložení?
+Ne, díky
+Zapnout
+Zobrazovat tipy
+Zobrazit znovu
+Tipy opět zapnuty
+Zarputilá rivalita
+Superclásico Amerik
+Nejstarší derby světa
+Iberské derby
+Derby Río de la Plata
+Klasika CONCACAF
+Klasika východní Asie
+Derby Maghrebu
+Sousedské derby
+Skandinávské derby
+Balkánské derby
+Egejské derby
+Derby přes Lamanšský průliv
+Evropská klasika
+Derby Perského zálivu
+Transtasmánské derby
+Západoafrické derby
+Derby jihovýchodní Asie
+Tichomořské derby
+Andské derby
+Středoamerické derby
+Britské derby
+Nová rivalita
+Po dalším střetnutí ve vyřazovací fázi novináři mluví o nové rivalitě: {0} – {1}. Od teď jsou tyto zápasy výjimečné.
+Svaz s vámi rozvázal smlouvu. Zatím žádné nabídky — budete muset počkat, až si na vás někdo vzpomene.
+Vaše reputace: {0}.
+Rezignace přijata
+Svaz přijal vaši rezignaci a děkuje za práci.
+Smlouva prodloužena do {0}.
+Fotbalový svaz {0} {1} je připraven svěřit vám svou reprezentaci.
+Prodloužení smlouvy
+Vaše smlouva vyprší {0}. Svaz nabízí prodloužení o {1} let.
+Smlouva nebude prodloužena
+Svaz neplánuje prodloužit vaši smlouvu, která vyprší {0}. Začněte hledat novou práci.
+Vaše smlouva vypršela. Děkujeme za práci! Nabídky jiných svazů najdete v sekci «Kariéra».
+Desítka
+10 výher ve funkci
+Stovka
+100 výher ve funkci
+Sto gólů
+Vaše reprezentace vstřelily 100 gólů
+Obrat
+Vyhrajte po ztrátě dvou gólů
+Ocelové nervy
+Vyhrajte penaltový rozstřel
+Liga národů
+Vyhrajte Ligu národů
+Finalista
+Dojděte do finále velkého turnaje
+Na světové scéně
+Doveďte reprezentaci na mistrovství světa
+Zlatá kopačka
+Váš hráč je nejlepším střelcem velkého turnaje
+Sběratel
+Vyhrajte 3 trofeje
+Dynastie
+Vyhrajte 10 trofejí
+Jméno v oboru
+Reputace trenéra 50+
+Legenda lavičky
+Reputace trenéra 80+
+Nomád
+Veďte tři reprezentace
+Vytrvalec
+10 let trenérské kariéry
+Hořká zkušenost
+Byli jste odvoláni
+Prodloužení
+Prodlužte smlouvu se svazem
+Znám svou cenu
+Odmítněte pracovní nabídku
+Klub 100
+Váš hráč dosáhne 100 startů za reprezentaci
+Legenda útoku
+Hráč vaší reprezentace vstřelí 50 gólů
+Jednička
+Veďte žebříček FIFA
+Elita
+Pronikněte do top 10 žebříčku FIFA
+Derby je naše
+Vyhrajte derby
+Pán derby
+10 výher v derby
+Ponížení soupeře
+Vyhrajte derby o 3+ góly
+Rivality se rodí ve vyřazovací fázi
+Scenárista
+Splňte libovolný scénář
+Mistr scénářů
+Splňte 3 různé scénáře (ve všech uloženích)
+Doveď San Marino na Euro
+Nejskromnější reprezentace Evropy sní o závěrečném turnaji. Postupte na Euro 2028 nebo 2032.
+Vrať Itálii na vrchol
+Čtyřnásobní mistři světa vynechali několik šampionátů. Vyhrajte MS nebo Euro do konce roku 2034.
+Vietnam na mistrovství světa
+Malá asijská reprezentace s velkými ambicemi. Postupte na MS 2030 nebo 2034.
+Kapverdy mistrem Afriky
+Ostrovní reprezentace už kontinent překvapila. Vyhrajte Africký pohár národů do konce roku 2033.
+Šestá hvězda Brazílie
+Země čeká na šestý titul. Vyhrajte MS 2030.
+Konec let bolesti
+Anglie čeká na velkou trofej od roku 1966. Vyhrajte MS nebo Euro do konce roku 2032.
+Islandská sága
+Zopakujte pohádku: dojděte do konce roku 2032 alespoň do čtvrtfinále Eura.
+Indie: průlom v Asii
+Postupte do vyřazovací fáze Asijského poháru do konce roku 2031.
+Kiwi na mistrovství světa
+Vyhrajte kvalifikaci Oceánie a doveďte Nový Zéland na MS 2030.
+Udržet trůn
+Argentina je měřítkem. Buďte na konci roku 2028 první v žebříčku FIFA.
+Curaçao: senzace CONCACAF
+Dojděte do semifinále Zlatého poháru do konce roku 2031.
+Německo: restart
+Po nezdarech zpět mezi elitu: dojděte do semifinále MS 2030.
+Cíl scénáře splněn! Můžete pokračovat v kariéře.
+Cíl scénáře nesplněn. Kariéra pokračuje bez scénáře.

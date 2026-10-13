@@ -281,3 +281,251 @@ Afsluiten
 Naar het hoofdmenu?
 Volledig scherm
 Scherm aan houden tijdens het spelen
+nu
+Grote derby
+Derby
+Rivaliteit
+Een rivaliteit is geboren
+{1} en {2} troffen elkaar al {0} keer in de knock-outfase
+Binnenkort: {0} – {1}. Het land wacht in spanning
+Monsterzege! Winnaar van de derby: {0}
+Winnaar van de derby: {0}
+Gelijkspel in de derby: niemand gaf toe
+Het hele land kijkt naar deze wedstrijd. Een zege vergroot vertrouwen en moraal, een nederlaag komt harder aan dan normaal.
+Bijzondere wedstrijd: vertrouwen en moraal schommelen sterker en het thuispubliek steunt luider.
+Duels in dit spel: {0} · {1}–{2}–{3} (W–G–V)
+Onderling
+Teamprofiel
+De derby is van ons! Het land juicht.
+Gelijkspel in de derby — de fans hadden meer verwacht.
+Derby verloren — de kritiek zal hard zijn.
+In dit spel
+Zeges
+Gelijk
+Nederlagen
+Deze teams hebben elkaar in dit spel nog niet ontmoet.
+Archief vóór 2026 (gegenereerd)
+Laatste duels
+Derby's en rivalen
+Details
+nieuw
+Geen duidelijke rivalen — rivaliteiten ontstaan in de knock-outfase.
+Rivalen van {0}
+Krantenkoppen
+Nog alles rustig.
+jouw wedstrijd
+Scenario
+tot {0}
+De grafiek vult zich naarmate je carrière vordert.
+Reputatie
+Legende
+Ster van het vak
+Gerenommeerd specialist
+Degelijke vakman
+Veelbelovende trainer
+Nieuwkomer
+ontslagen
+opgestapt
+contract afgelopen
+vertrokken
+Trainerscarrière
+hoogste {0}
+Zonder baan sinds {0}
+Aanbiedingen
+Huidig contract
+nog {0} maanden
+De bond biedt een verlenging van {0} jaar aan.
+Verlengen
+Het contract wordt niet verlengd.
+Baanaanbiedingen
+Opstappen
+Derbyzeges
+Loopbaan
+Nog geen prijzen.
+Opstappen? Je verlaat het nationale team en wacht op aanbiedingen.
+Contract verlengd
+Je hebt de verlenging afgewezen
+Zonder baan
+Je bent opgestapt
+Contract afgelopen
+{0} maanden zonder baan
+Nog niemand belt. Hoe hoger je reputatie, hoe sneller de aanbiedingen komen.
+Een maand wachten
+3 maanden wachten
+Carrière beëindigen
+Beschikbaar na 12 maanden zonder aanbiedingen
+Wachten op aanbiedingen…
+Nieuw baanaanbod!
+Je trainerscarrière beëindigen? Het spel is dan voorbij.
+Carrière beëindigd
+Nationale teams
+Prestatie ontgrendeld
+In dit spel
+In alle opslagen
+Opslag met cheats: prestaties tellen niet mee
+Ontgrendeld in een ander spel
+Doel: het toernooi winnen
+Doel: plaatsing voor het eindtoernooi
+Doel: nummer één op de FIFA-ranking
+Doel: fase «{0}» of verder
+Scenario's
+Deadline: {0}
+Gehaald
+Mislukt
+Bezig
+Kant-en-klare starts met een doel en een deadline. Haal het doel voor een uitslag en een prestatie; je carrière gaat hoe dan ook door.
+Moeilijkheid
+Scenario starten
+Uitslag van het scenario
+Scenario gehaald!
+Scenario mislukt
+Je hebt het nationale team verlaten voordat het doel gehaald was.
+Dagen
+Carrière voortzetten
+{0} starts met doel en deadline
+«Doorgaan» zet de kalender door naar het volgende moment: een interlandperiode, wedstrijd of loting.
+Selectie: roep vóór elke periode 18–23 spelers op. In het begin volstaat automatisch oproepen.
+Tactiek: kies een formatie en instructies. Tik op spelers op het veld om ze te wisselen.
+Vertrouwen van de bond. Zeges verhogen het; zakt het te ver, dan word je ontslagen.
+De FIFA-ranking bepaalt de potten bij lotingen. Houd de positie van je team in de gaten.
+Financiën: budget, sponsors en stadions. Een langdurig tekort schaadt het vertrouwen.
+Carrière: reputatie, contract en aanbiedingen van andere nationale teams.
+Post, training en instellingen vind je hier. Tips kun je in Instellingen opnieuw bekijken.
+Vink spelers aan om ze op te roepen. Automatisch oproepen kiest de sterkste fitte spelers.
+Tik op een speler en dan op een andere — ze wisselen van plek. Nogmaals tikken opent individuele instructies.
+Het is een derby! Er staat meer op het spel: vertrouwen en moraal schommelen sterker en de tribunes zijn luider.
+Speel de wedstrijd live met wissels en tactiek — of krijg snel de uitslag.
+Tijdens de wedstrijd kun je pauzeren, de tactiek aanpassen en wisselen.
+Bewegingen op de ranking, teamhistorie, de top 10 en punten per wedstrijd.
+Inkomsten en uitgaven van de bond per post. Hier bouw en vergroot je ook stadions.
+Je kunt de tips altijd uitzetten of opnieuw bekijken.
+Reputatie groeit met resultaten boven verwachting en met prijzen. Aanbiedingen van andere teams hangen ervan af.
+Prestaties worden opgeslagen in elke opslag en in het totaaloverzicht op dit apparaat.
+Tip
+Tips uitzetten
+Overslaan
+Volgende
+Tips uitgezet. Zet ze in Instellingen weer aan.
+Tips voor beginners
+Update 9 voegt stapsgewijze tips toe voor de belangrijkste schermen: oproepen, tactiek, wedstrijd, ranking, financiën en instellingen. Aanzetten voor deze opslag?
+Nee, bedankt
+Aanzetten
+Tips tonen
+Opnieuw bekijken
+Tips weer aangezet
+Verbeten rivaliteit
+Superclásico van de Amerika's
+De oudste derby ter wereld
+Iberische derby
+Río de la Plata-derby
+CONCACAF-klassieker
+Oost-Aziatische klassieker
+Maghreb-derby
+Burenderby
+Scandinavische derby
+Balkanderby
+Egeïsche derby
+Derby over het Kanaal
+Europese klassieker
+Golfderby
+Trans-Tasmaanse derby
+West-Afrikaanse derby
+Zuidoost-Aziatische derby
+Pacifische derby
+Andesderby
+Midden-Amerikaanse derby
+Britse derby
+Nieuwe rivaliteit
+Na alweer een knock-outduel spreekt de pers van een nieuwe rivaliteit: {0} – {1}. Vanaf nu zijn deze wedstrijden bijzonder.
+De bond heeft je contract ontbonden. Nog geen aanbiedingen — je moet wachten tot iemand aan je denkt.
+Je reputatie: {0}.
+Ontslag aanvaard
+De bond heeft je ontslag aanvaard en bedankt je voor je werk.
+Contract verlengd tot {0}.
+De voetbalbond {0} {1} wil je zijn nationale team toevertrouwen.
+Contractverlenging
+Je contract loopt af op {0}. De bond biedt aan het met {1} jaar te verlengen.
+Contract wordt niet verlengd
+De bond is niet van plan je contract, dat op {0} afloopt, te verlengen. Ga op zoek naar een nieuwe baan.
+Je contract is afgelopen. Bedankt voor je werk! Aanbiedingen van andere bonden staan onder «Carrière».
+Tien uit tien
+10 zeges als bondscoach
+Honderd
+100 zeges als bondscoach
+Honderd goals
+Je teams scoorden 100 goals
+Comeback
+Win na een achterstand van twee goals
+Zenuwen van staal
+Win een strafschoppenserie
+Nations League
+Win de Nations League
+Finalist
+Bereik de finale van een groot toernooi
+Op het wereldtoneel
+Breng je team naar het WK
+Gouden Schoen
+Je speler wordt topscorer van een groot toernooi
+Verzamelaar
+Win 3 prijzen
+Dynastie
+Win 10 prijzen
+Een naam in het vak
+Trainersreputatie 50+
+Legende van de dug-out
+Trainersreputatie 80+
+Nomade
+Train drie nationale teams
+Lange adem
+10 jaar trainerscarrière
+Bittere les
+Je bent ontslagen
+Verlenging
+Verleng je contract met de bond
+Ik weet wat ik waard ben
+Wijs een baanaanbod af
+Club van 100
+Je speler bereikt 100 interlands
+Aanvalslegende
+Een speler van je team scoort 50 goals
+Nummer één
+Leid de FIFA-ranking
+Elite
+Kom in de top 10 van de FIFA-ranking
+De derby is van ons
+Win een derby
+Derbykoning
+10 derbyzeges
+Vernedering
+Win een derby met 3+ goals verschil
+Rivaliteiten ontstaan in de knock-outfase
+Scenarioschrijver
+Voltooi een scenario
+Scenariomeester
+Voltooi 3 verschillende scenario's (in alle opslagen)
+Breng San Marino naar het EK
+Het bescheidenste team van Europa droomt van een eindtoernooi. Plaats je voor het EK 2028 of 2032.
+Breng Italië terug naar de top
+De viervoudig wereldkampioen miste WK's. Win het WK of het EK vóór eind 2034.
+Vietnam op het WK
+Een klein Aziatisch team met grote ambities. Plaats je voor het WK 2030 of 2034.
+Kaapverdië, kampioen van Afrika
+Het eilandteam verraste het continent al eerder. Win de Afrika Cup vóór eind 2033.
+Brazilië's zesde ster
+Het land wacht op de zesde titel. Win het WK 2030.
+Einde aan de jaren van pijn
+Engeland wacht sinds 1966 op een grote prijs. Win het WK of het EK vóór eind 2032.
+IJslandse saga
+Herhaal het sprookje: haal vóór eind 2032 minstens de kwartfinale van het EK.
+India: doorbraak in Azië
+Haal vóór eind 2031 de knock-outfase van de Azië Cup.
+Kiwi's op het WK
+Win de kwalificatie in Oceanië en breng Nieuw-Zeeland naar het WK 2030.
+De troon behouden
+Argentinië is de maatstaf. Sta eind 2028 bovenaan de FIFA-ranking.
+Curaçao: de CONCACAF-sensatie
+Haal vóór eind 2031 de halve finale van de Gold Cup.
+Duitsland: herstart
+Na teleurstellingen terug bij de elite: haal de halve finale van het WK 2030.
+Scenariodoel gehaald! Je kunt je carrière voortzetten.
+Scenariodoel niet gehaald. Je carrière gaat verder zonder scenario.

@@ -281,3 +281,251 @@ Keluar
 Keluar ke menu utama?
 Mode layar penuh
 Biarkan layar tetap menyala saat bermain
+skrg
+Derbi besar
+Derbi
+Rivalitas
+Lahirnya rivalitas
+{1} dan {2} sudah bertemu {0} kali di fase gugur
+Segera: {0} vs {1}. Seluruh negeri menanti
+Pesta gol! Pemenang derbi: {0}
+Pemenang derbi: {0}
+Derbi imbang: tak ada yang mengalah
+Seluruh negeri menonton laga ini. Kemenangan akan menaikkan kepercayaan dan moral, kekalahan akan lebih menyakitkan dari biasanya.
+Laga istimewa: kepercayaan dan moral berayun lebih besar, dukungan suporter tuan rumah lebih lantang.
+Pertemuan di permainan ini: {0} · {1}–{2}–{3} (M–S–K)
+Rekor pertemuan
+Profil tim
+Derbi milik kita! Seluruh negeri bersorak.
+Derbi imbang — suporter berharap lebih.
+Kalah di derbi — kritik akan keras.
+Di permainan ini
+Menang
+Seri
+Kalah
+Kedua tim belum pernah bertemu di permainan ini.
+Arsip sebelum 2026 (dibuat otomatis)
+Pertemuan terakhir
+Derbi dan rival
+Detail
+baru
+Tidak ada rival yang jelas — rivalitas lahir di fase gugur.
+Rival {0}
+Berita utama
+Masih sepi.
+laga Anda
+Skenario
+hingga {0}
+Grafik akan terisi seiring perjalanan karier.
+Reputasi
+Legenda
+Bintang profesi
+Spesialis ternama
+Profesional tangguh
+Pelatih menjanjikan
+Pendatang baru
+dipecat
+mundur
+kontrak habis
+pindah
+Karier pelatih
+tertinggi {0}
+Menganggur sejak {0}
+Tawaran
+Kontrak saat ini
+sisa {0} bulan
+Federasi menawarkan perpanjangan {0} tahun.
+Perpanjang
+Kontrak tidak akan diperpanjang.
+Tawaran kerja
+Mengundurkan diri
+Kemenangan derbi
+Riwayat kerja
+Belum ada trofi.
+Mengundurkan diri? Anda akan meninggalkan timnas dan menunggu tawaran.
+Kontrak diperpanjang
+Anda menolak perpanjangan
+Menganggur
+Anda mengundurkan diri
+Kontrak habis
+menganggur {0} bulan
+Belum ada yang menelepon. Makin tinggi reputasi, makin cepat tawaran datang.
+Tunggu sebulan
+Tunggu 3 bulan
+Pensiun
+Tersedia setelah 12 bulan tanpa tawaran
+Menunggu tawaran…
+Tawaran kerja baru!
+Akhiri karier kepelatihan? Permainan akan berakhir.
+Karier berakhir
+Timnas
+Pencapaian terbuka
+Di permainan ini
+Di semua simpanan
+Simpanan dengan cheat: pencapaian tidak dihitung
+Terbuka di permainan lain
+Target: juara turnamen
+Target: lolos ke putaran final
+Target: peringkat satu FIFA
+Target: babak «{0}» atau lebih
+Skenario
+Batas waktu: {0}
+Berhasil
+Gagal
+Berjalan
+Awal siap main dengan target dan batas waktu. Capai target untuk mendapat hasil dan pencapaian; karier tetap berlanjut apa pun hasilnya.
+Kesulitan
+Mulai skenario
+Hasil skenario
+Skenario berhasil!
+Skenario gagal
+Anda meninggalkan timnas sebelum target tercapai.
+Hari
+Lanjutkan karier
+{0} awal dengan target dan batas waktu
+«Lanjut» memajukan kalender ke acara berikutnya: jeda internasional, laga, atau undian.
+Skuad: panggil 18–23 pemain sebelum tiap jeda. Untuk awal, panggilan otomatis sudah cukup.
+Taktik: pilih formasi dan instruksi. Ketuk pemain di lapangan untuk menukar posisi.
+Kepercayaan federasi. Kemenangan menaikkannya; jika terlalu rendah, Anda dipecat.
+Peringkat FIFA menentukan pot undian. Pantau posisi timnas Anda.
+Ekonomi: anggaran, sponsor, dan stadion. Defisit panjang merusak kepercayaan.
+Karier: reputasi, kontrak, dan tawaran dari timnas lain.
+Surat, latihan, dan pengaturan ada di sini. Tips bisa diulang di Pengaturan.
+Tandai pemain untuk dipanggil. Panggilan otomatis memilih pemain terkuat yang fit.
+Ketuk satu pemain lalu pemain lain — mereka bertukar tempat. Ketukan kedua membuka instruksi individu.
+Ini derbi! Taruhannya lebih tinggi: kepercayaan dan moral lebih berayun, tribun lebih bergemuruh.
+Mainkan laga secara langsung dengan pergantian dan taktik — atau dapatkan hasil cepat.
+Selama laga Anda bisa menjeda, mengubah taktik, dan melakukan pergantian.
+Pergerakan peringkat, sejarah tim, 10 besar, dan poin setiap laga.
+Pendapatan dan pengeluaran federasi per pos. Di sini juga stadion dibangun dan diperluas.
+Anda bisa mematikan tips atau melihatnya lagi kapan saja.
+Reputasi naik lewat hasil di atas ekspektasi dan trofi. Tawaran dari tim lain bergantung padanya.
+Pencapaian disimpan di setiap simpanan dan di rekor keseluruhan perangkat ini.
+Tips
+Matikan tips
+Lewati
+Berikutnya
+Tips dimatikan. Nyalakan lagi di Pengaturan.
+Tips untuk pemula
+Pembaruan 9 menambahkan tips langkah demi langkah untuk layar utama: pemanggilan, taktik, laga, peringkat, ekonomi, dan pengaturan. Nyalakan untuk simpanan ini?
+Tidak, terima kasih
+Nyalakan
+Tampilkan tips
+Lihat lagi
+Tips dinyalakan lagi
+Rivalitas sengit
+Superclásico Amerika
+Derbi tertua di dunia
+Derbi Iberia
+Derbi Río de la Plata
+Klasik CONCACAF
+Klasik Asia Timur
+Derbi Maghreb
+Derbi tetangga
+Derbi Skandinavia
+Derbi Balkan
+Derbi Aegea
+Derbi Selat Inggris
+Klasik Eropa
+Derbi Teluk
+Derbi Trans-Tasman
+Derbi Afrika Barat
+Derbi Asia Tenggara
+Derbi Pasifik
+Derbi Andes
+Derbi Amerika Tengah
+Derbi Britania
+Rivalitas baru
+Setelah satu lagi pertemuan di fase gugur, pers membicarakan rivalitas baru: {0} vs {1}. Mulai sekarang laga ini istimewa.
+Federasi memutus kontrak Anda. Belum ada tawaran — Anda harus menunggu sampai ada yang mengingat Anda.
+Reputasi Anda: {0}.
+Pengunduran diri diterima
+Federasi menerima pengunduran diri Anda dan berterima kasih atas kerja Anda.
+Kontrak diperpanjang hingga {0}.
+Federasi Sepak Bola {0} {1} siap memercayakan timnasnya kepada Anda.
+Perpanjangan kontrak
+Kontrak Anda berakhir pada {0}. Federasi menawarkan perpanjangan {1} tahun.
+Kontrak tidak diperpanjang
+Federasi tidak berencana memperpanjang kontrak Anda yang berakhir pada {0}. Mulailah mencari pekerjaan baru.
+Kontrak Anda telah berakhir. Terima kasih atas kerja Anda! Tawaran dari federasi lain ada di bagian «Karier».
+Sepuluh besar
+10 kemenangan selama menjabat
+Seratus
+100 kemenangan selama menjabat
+Seratus gol
+Timnas Anda mencetak 100 gol
+Comeback
+Menang setelah tertinggal dua gol
+Saraf baja
+Menangkan adu penalti
+Nations League
+Juarai Nations League
+Finalis
+Capai final turnamen besar
+Di panggung dunia
+Bawa timnas Anda ke Piala Dunia
+Sepatu Emas
+Pemain Anda jadi top skor turnamen besar
+Kolektor
+Raih 3 trofi
+Dinasti
+Raih 10 trofi
+Nama di dunia kepelatihan
+Reputasi pelatih 50+
+Legenda bangku cadangan
+Reputasi pelatih 80+
+Pengembara
+Latih tiga timnas
+Jalan panjang
+10 tahun karier kepelatihan
+Pelajaran pahit
+Anda dipecat
+Perpanjangan
+Perpanjang kontrak dengan federasi
+Tahu nilai diri
+Tolak sebuah tawaran kerja
+Klub 100
+Pemain Anda mencapai 100 caps
+Legenda lini serang
+Pemain timnas Anda mencetak 50 gol
+Nomor satu
+Puncaki peringkat FIFA
+Elite
+Masuk 10 besar peringkat FIFA
+Derbi milik kita
+Menangkan sebuah derbi
+Raja derbi
+10 kemenangan derbi
+Penghinaan
+Menangkan derbi dengan selisih 3+ gol
+Rivalitas lahir di fase gugur
+Penulis skenario
+Selesaikan skenario apa pun
+Master skenario
+Selesaikan 3 skenario berbeda (di semua simpanan)
+Bawa San Marino ke Euro
+Tim paling sederhana di Eropa bermimpi tampil di putaran final. Lolos ke Euro 2028 atau 2032.
+Kembalikan Italia ke puncak
+Juara dunia empat kali ini sempat absen di Piala Dunia. Juarai Piala Dunia atau Euro sebelum akhir 2034.
+Vietnam di Piala Dunia
+Timnas Asia kecil dengan ambisi besar. Lolos ke Piala Dunia 2030 atau 2034.
+Tanjung Verde, juara Afrika
+Timnas kepulauan ini pernah mengejutkan benua. Juarai Piala Afrika sebelum akhir 2033.
+Bintang keenam Brasil
+Negeri ini menanti gelar keenam. Juarai Piala Dunia 2030.
+Akhiri tahun-tahun penderitaan
+Inggris menanti trofi besar sejak 1966. Juarai Piala Dunia atau Euro sebelum akhir 2032.
+Saga Islandia
+Ulangi dongengnya: capai setidaknya perempat final Euro sebelum akhir 2032.
+India: terobosan di Asia
+Capai fase gugur Piala Asia sebelum akhir 2031.
+Kiwi di Piala Dunia
+Menangkan kualifikasi Oseania dan bawa Selandia Baru ke Piala Dunia 2030.
+Pertahankan takhta
+Argentina adalah tolok ukur. Jadilah nomor satu peringkat FIFA di akhir 2028.
+Curaçao: sensasi CONCACAF
+Capai semifinal Piala Emas sebelum akhir 2031.
+Jerman: mulai ulang
+Kembali ke elite setelah kegagalan: capai semifinal Piala Dunia 2030.
+Target skenario tercapai! Anda bisa melanjutkan karier.
+Target skenario tidak tercapai. Karier berlanjut tanpa skenario.
