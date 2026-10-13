@@ -1,7 +1,7 @@
 {
   "name": "national-football-manager",
   "productName": "Сборная Футбольный Менеджер",
-  "version": "8.0.0",
+  "version": "8.1.0",
   "description": "Сборная: Футбольный Менеджер",
   "author": "DanyaDanileckiy",
   "main": "main.js",

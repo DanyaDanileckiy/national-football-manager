@@ -331,3 +331,16 @@ body[data-th=pitch] .mbox{background:linear-gradient(180deg,rgba(18,66,36,.97),r
 body[data-th=pitch] .tile{background:linear-gradient(160deg,rgba(40,120,60,.55),rgba(10,40,20,.7))}body[data-th=blue] .tile{background:linear-gradient(160deg,rgba(60,70,170,.55),rgba(14,18,60,.7))}
 body[data-th=pitch] .tst{background:rgba(8,36,18,.96)}body[data-th=blue] .tst{background:rgba(14,18,60,.96)}
 .grid2>*{min-width:0}
+/* 8.1: безопасные зоны (вырез, жестовая панель) и отступ кнопок от краёв */
+:root{--sat:env(safe-area-inset-top,0px);--sab:env(safe-area-inset-bottom,0px);--sal:env(safe-area-inset-left,0px);--sar:env(safe-area-inset-right,0px)}
+#app{padding-left:calc(12px + var(--sal));padding-right:calc(12px + var(--sar));padding-bottom:calc(var(--nav) + 26px + var(--sab))}
+body.nonav #app{padding-bottom:calc(30px + var(--sab))}
+#top{padding-top:calc(10px + var(--sat));margin-inline:calc(-12px - var(--sal)) calc(-12px - var(--sar));padding-inline:calc(12px + var(--sal)) calc(12px + var(--sar))}
+#top:empty{display:block;padding:0;height:var(--sat);border:0}
+#bnav{height:calc(var(--nav) + var(--sab));padding-bottom:var(--sab);padding-inline:calc(6px + var(--sal)) calc(6px + var(--sar))}
+#modal{padding:calc(8px + var(--sat)) var(--sar) 0 var(--sal)}
+#modal .mbox{max-height:calc(100% - 8px);padding-bottom:calc(18px + var(--sab));padding-inline:calc(16px) calc(16px)}
+#toast{bottom:calc(var(--nav) + 16px + var(--sab));padding-inline:calc(12px + var(--sal)) calc(12px + var(--sar))}
+body.nonav #toast{bottom:calc(20px + var(--sab))}
+#side{padding-top:calc(18px + var(--sat));padding-inline-start:calc(12px + var(--sal))}
+.ctl{padding-bottom:4px}

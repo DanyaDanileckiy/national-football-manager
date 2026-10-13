@@ -14,8 +14,8 @@
 
 <p align="center">
 <a href="https://danyadanileckiy.github.io/national-football-manager/"><img src="https://img.shields.io/badge/%E2%96%B6_Jouer-22d37a?style=for-the-badge" height="44" alt="Jouer"></a>&nbsp;
-<a href="https://github.com/DanyaDanileckiy/national-football-manager/releases/download/v8.0/NationalFootballManager-8.0.0-portable.exe"><img src="https://img.shields.io/badge/T%C3%A9l%C3%A9charger_pour_Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white" height="44" alt="Windows"></a>&nbsp;
-<a href="https://github.com/DanyaDanileckiy/national-football-manager/releases/download/v8.0/NationalFootballManager-8.0.apk"><img src="https://img.shields.io/badge/T%C3%A9l%C3%A9charger_pour_Android-3DDC84?style=for-the-badge&logo=android&logoColor=white" height="44" alt="Android"></a>
+<a href="https://github.com/DanyaDanileckiy/national-football-manager/releases/latest/download/NationalFootballManager-Windows-portable.exe"><img src="https://img.shields.io/badge/T%C3%A9l%C3%A9charger_pour_Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white" height="44" alt="Windows"></a>&nbsp;
+<a href="https://github.com/DanyaDanileckiy/national-football-manager/releases/latest/download/NationalFootballManager-Android.apk"><img src="https://img.shields.io/badge/T%C3%A9l%C3%A9charger_pour_Android-3DDC84?style=for-the-badge&logo=android&logoColor=white" height="44" alt="Android"></a>
 </p>
 
 <p align="center">🌐 <a href="README.md">Русский</a> · <a href="README.en.md">English</a> · <a href="README.es.md">Español</a> · <a href="README.pt.md">Português</a> · <a href="README.de.md">Deutsch</a> · <b>Français</b> · <a href="README.uk.md">Українська</a> · <a href="README.pl.md">Polski</a> · <a href="README.he.md">עברית</a> · <a href="README.zh.md">中文</a> · <a href="README.ja.md">日本語</a></p>
@@ -96,8 +96,8 @@ Le jeu tourne directement dans le navigateur, sur mobile comme sur ordinateur, s
 | | |
 |---|---|
 | 🌐 **Navigateur** | Ouvrez simplement la page du jeu — ça marche sur mobile et PC, et vous pouvez l'« Ajouter à l'écran d'accueil » → [https://danyadanileckiy.github.io/national-football-manager/](https://danyadanileckiy.github.io/national-football-manager/) |
-| 🪟 **Windows** | Téléchargez le fichier portable et lancez-le, sans installation : [`NationalFootballManager-8.0.0-portable.exe`](https://github.com/DanyaDanileckiy/national-football-manager/releases/download/v8.0/NationalFootballManager-8.0.0-portable.exe) |
-| 🤖 **Android** | Téléchargez et installez l'APK : [`NationalFootballManager-8.0.apk`](https://github.com/DanyaDanileckiy/national-football-manager/releases/download/v8.0/NationalFootballManager-8.0.apk) |
+| 🪟 **Windows** | Téléchargez le fichier portable et lancez-le, sans installation : [`NationalFootballManager-Windows-portable.exe`](https://github.com/DanyaDanileckiy/national-football-manager/releases/latest/download/NationalFootballManager-Windows-portable.exe) |
+| 🤖 **Android** | Téléchargez et installez l'APK : [`NationalFootballManager-Android.apk`](https://github.com/DanyaDanileckiy/national-football-manager/releases/latest/download/NationalFootballManager-Android.apk) |
 | 💻 **En local** | Clonez le dépôt et ouvrez `index.html`, ou lancez `python3 -m http.server` |
 
 > ⚠️ **Windows SmartScreen:** le fichier n'est pas signé, Windows peut donc afficher « Windows a protégé votre ordinateur ». Cliquez sur **« Informations complémentaires » → « Exécuter quand même »**.

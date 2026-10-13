@@ -276,3 +276,8 @@ Tüm takımlar tek bir konfederasyondan, bu yüzden ek kısıtlama yok.
 FIFA gelişim programı
 Federasyon işletme giderleri
 Bu turnuvaya yakın zamanda ev sahipliği yaptık — henüz yeni bir aday başvurusu yapılamaz
+Oyundan çıkılsın mı?
+Çık
+Ana menüye dönülsün mü?
+Tam ekran modu
+Oynarken ekranı açık tut

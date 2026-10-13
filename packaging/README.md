@@ -19,4 +19,4 @@ export ANDROID_HOME=/path/to/android-sdk     # platforms;android-35, build-tools
 export NFM_KEYSTORE=/path/nfm-release.jks NFM_KEYSTORE_PASSWORD=...   # без них APK получится неподписанным
 npm run build:apk
 ```
-Результат: `android/app/build/outputs/apk/release/app-release.apk`. Ориентация портретная. Кнопка «Назад» закрывает окно → возвращает на предыдущий экран → в главное меню → по двойному нажатию выходит из игры.
+Результат: `android/app/build/outputs/apk/release/app-release.apk`. Ориентация портретная, полноэкранный иммерсивный режим (системные панели появляются свайпом), отрисовка под вырезом (shortEdges). Кнопка «Назад» закрывает окно → возвращает на предыдущий экран → в главное меню → показывает вопрос «Выйти из игры?» (игра сохраняется перед выходом). JS-мост `window.NFMNative`: `exit()`, `keepOn(bool)`.

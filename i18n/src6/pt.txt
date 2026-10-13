@@ -276,3 +276,8 @@ Todas as seleções são de uma confederação, então não há restrições adi
 Programa de desenvolvimento da FIFA
 Custos de funcionamento da federação
 Recebemos este torneio recentemente — ainda não é possível uma nova candidatura
+Sair do jogo?
+Sair
+Sair para o menu principal?
+Modo de tela cheia
+Manter a tela ligada durante o jogo

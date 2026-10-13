@@ -14,8 +14,8 @@
 
 <p align="center">
 <a href="https://danyadanileckiy.github.io/national-football-manager/"><img src="https://img.shields.io/badge/%E2%96%B6_%D7%A9%D7%97%D7%A7%D7%95_%D7%A2%D7%9B%D7%A9%D7%99%D7%95-22d37a?style=for-the-badge" height="44" alt="שחקו עכשיו"></a>&nbsp;
-<a href="https://github.com/DanyaDanileckiy/national-football-manager/releases/download/v8.0/NationalFootballManager-8.0.0-portable.exe"><img src="https://img.shields.io/badge/%D7%94%D7%95%D7%A8%D7%93%D7%94_%D7%9C--Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white" height="44" alt="Windows"></a>&nbsp;
-<a href="https://github.com/DanyaDanileckiy/national-football-manager/releases/download/v8.0/NationalFootballManager-8.0.apk"><img src="https://img.shields.io/badge/%D7%94%D7%95%D7%A8%D7%93%D7%94_%D7%9C%D7%90%D7%A0%D7%93%D7%A8%D7%95%D7%90%D7%99%D7%93-3DDC84?style=for-the-badge&logo=android&logoColor=white" height="44" alt="Android"></a>
+<a href="https://github.com/DanyaDanileckiy/national-football-manager/releases/latest/download/NationalFootballManager-Windows-portable.exe"><img src="https://img.shields.io/badge/%D7%94%D7%95%D7%A8%D7%93%D7%94_%D7%9C--Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white" height="44" alt="Windows"></a>&nbsp;
+<a href="https://github.com/DanyaDanileckiy/national-football-manager/releases/latest/download/NationalFootballManager-Android.apk"><img src="https://img.shields.io/badge/%D7%94%D7%95%D7%A8%D7%93%D7%94_%D7%9C%D7%90%D7%A0%D7%93%D7%A8%D7%95%D7%90%D7%99%D7%93-3DDC84?style=for-the-badge&logo=android&logoColor=white" height="44" alt="Android"></a>
 </p>
 
 <p align="center">🌐 <a href="README.md">Русский</a> · <a href="README.en.md">English</a> · <a href="README.es.md">Español</a> · <a href="README.pt.md">Português</a> · <a href="README.de.md">Deutsch</a> · <a href="README.fr.md">Français</a> · <a href="README.uk.md">Українська</a> · <a href="README.pl.md">Polski</a> · <b>עברית</b> · <a href="README.zh.md">中文</a> · <a href="README.ja.md">日本語</a></p>
@@ -98,8 +98,8 @@
 | | |
 |---|---|
 | 🌐 **דפדפן** | פשוט פתחו את דף המשחק — עובד בטלפון ובמחשב, ואפשר "להוסיף למסך הבית" → [https://danyadanileckiy.github.io/national-football-manager/](https://danyadanileckiy.github.io/national-football-manager/) |
-| 🪟 **Windows** | הורידו את הקובץ הנייד והריצו — בלי התקנה: [`NationalFootballManager-8.0.0-portable.exe`](https://github.com/DanyaDanileckiy/national-football-manager/releases/download/v8.0/NationalFootballManager-8.0.0-portable.exe) |
-| 🤖 **Android** | הורידו והתקינו את ה-APK: [`NationalFootballManager-8.0.apk`](https://github.com/DanyaDanileckiy/national-football-manager/releases/download/v8.0/NationalFootballManager-8.0.apk) |
+| 🪟 **Windows** | הורידו את הקובץ הנייד והריצו — בלי התקנה: [`NationalFootballManager-Windows-portable.exe`](https://github.com/DanyaDanileckiy/national-football-manager/releases/latest/download/NationalFootballManager-Windows-portable.exe) |
+| 🤖 **Android** | הורידו והתקינו את ה-APK: [`NationalFootballManager-Android.apk`](https://github.com/DanyaDanileckiy/national-football-manager/releases/latest/download/NationalFootballManager-Android.apk) |
 | 💻 **מקומית** | שכפלו את המאגר ופתחו את `index.html` או הריצו `python3 -m http.server` |
 
 > ⚠️ **Windows SmartScreen:** הקובץ אינו חתום דיגיטלית, ולכן Windows עשויה להציג "Windows הגנה על המחשב שלך". לחצו על **"מידע נוסף" ← "הפעל בכל זאת"**.

@@ -276,3 +276,8 @@ Wszystkie drużyny są z jednej konfederacji, więc nie ma dodatkowych ogranicze
 Program rozwoju FIFA
 Koszty utrzymania federacji
 Niedawno organizowaliśmy ten turniej — nowa kandydatura nie jest jeszcze możliwa
+Wyjść z gry?
+Wyjdź
+Wyjść do menu głównego?
+Tryb pełnoekranowy
+Nie wygaszaj ekranu podczas gry

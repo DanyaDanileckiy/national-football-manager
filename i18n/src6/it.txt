@@ -276,3 +276,8 @@ Tutte le squadre sono di una sola confederazione: nessuna restrizione aggiuntiva
 Programma di sviluppo FIFA
 Costi di gestione della federazione
 Abbiamo ospitato questo torneo di recente: una nuova candidatura non è ancora possibile
+Uscire dal gioco?
+Esci
+Tornare al menu principale?
+Modalità a schermo intero
+Mantieni lo schermo acceso durante il gioco

@@ -276,3 +276,8 @@ Toutes les équipes viennent d'une même confédération : aucune restriction su
 Programme de développement de la FIFA
 Frais de fonctionnement de la fédération
 Nous avons accueilli ce tournoi récemment — une nouvelle candidature n'est pas encore possible
+Quitter le jeu ?
+Quitter
+Revenir au menu principal ?
+Mode plein écran
+Garder l’écran allumé pendant le jeu

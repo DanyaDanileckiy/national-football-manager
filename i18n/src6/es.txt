@@ -276,3 +276,8 @@ Todos los equipos son de una confederación, así que no hay restricciones adici
 Programa de desarrollo de la FIFA
 Gastos de funcionamiento de la federación
 Acogimos este torneo hace poco: aún no es posible una nueva candidatura
+¿Salir del juego?
+Salir
+¿Salir al menú principal?
+Pantalla completa
+Mantener la pantalla encendida al jugar

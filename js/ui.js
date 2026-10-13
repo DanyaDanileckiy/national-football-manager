@@ -279,7 +279,7 @@ SCR.settings=()=>{ top(_t("Настройки")); const m=meta();
  <div class="card"><h3>${_t("Матч")}</h3><div class="sm mut">${_t("Скорость по умолчанию")}</div><div class="tabs">${['×1','×2','×4','×8'].map((n,i)=>`<div class="tab ${PREF.spd===i?'on':''}" onclick="UI.PREF.spd=${i};UI.savePref();UI.refresh()">${n}</div>`).join('')}</div>
  <label class="ck" style="margin-top:8px"><input type="checkbox" ${PREF.brief?'checked':''} onchange="UI.PREF.brief=this.checked;UI.savePref()"> ${_t("Только ключевые события в комментариях")}</label></div>
  <div class="card"><h3>${_t("Тренер")}</h3><input type="text" value="${esc(S.coach)}" onchange="UI.S().coach=this.value;UI.save()"></div>
- <div class="card"><button class="btn w" onclick="UI.save();UI.st.stack=[];UI.go('title',null,true)">🏠 ${_t("Выйти в главное меню")}</button></div>
+ <div class="card"><button class="btn w" onclick="UI.toMenu()">🏠 ${_t("Выйти в главное меню")}</button></div>
  <p class="sm mut ctr">${_t("Оригинальная игра в жанре «менеджер сборной». Все имена, клубы и данные вымышлены.")}</p>`; };
 function slots(){ modal(`<h2>${_t("Загрузить игру")}</h2>${UI.slotList(false)}<button class="btn gh w" onclick="UI.closeM()">${_t("Отмена")}</button>`); }
 function loadFrom(i){ closeM(); N.v6&&N.v6.busy(true); load(i).then(ok=>{ N.v6&&N.v6.busy(false); if(ok){ toast(_t("Игра загружена")); home(); } else toast(_t("Слот пуст")); }).catch(e=>{ N.v6&&N.v6.busy(false); modal(`<h2>${_t("Не удалось загрузить")}</h2><div class="sm">${(esc(e.message))}</div><div style="height:10px"></div><button class="btn gh w" onclick="UI.closeM()">OK</button>`); }); }
