@@ -529,3 +529,201 @@ Niemcy: restart
 Po porażkach z powrotem w elicie: dojdź do półfinału mistrzostw świata 2030.
 Cel scenariusza osiągnięty! Możesz kontynuować karierę.
 Cel scenariusza nieosiągnięty. Kariera toczy się dalej bez scenariusza.
+Faul w polu karnym przy rożnym — rzut karny!
+Rzut rożny wykonuje {0}.
+Żółta kartka za grę na czas
+{0}: taktyka zmienia się zgodnie z planem
+Kalendarz
+Symulujemy jesień 2026 — kariera zacznie się 1 stycznia 2027
+mln
+Bramkarz-libero
+Środkowy obrońca
+Obrońca rozgrywający
+Stoper agresywny
+Boczny obrońca
+Wahadłowy
+Odwrócony boczny obrońca
+Defensywny pomocnik
+Kotwica
+Cofnięty rozgrywający
+Odbiorca piłki
+Środkowy pomocnik
+Box-to-box
+Wysunięty rozgrywający
+Ofensywny pomocnik
+Cofnięty napastnik
+Boczny pomocnik
+Skrzydłowy napastnik
+Skrzydłowy
+Odwrócony skrzydłowy
+Napastnik
+Wysoki napastnik
+Lis pola karnego
+Fałszywa dziewiątka
+Pressujący napastnik
+atak
+obrona
+kontrola piłki
+strzały
+podania
+gra głową
+zmęczenie
+pressing
+faule
+dośrodkowania
+posiadanie
+okazje rywala
+obrony
+skuteczność
+rola zrównoważona
+Więcej graczy w ataku — więcej strzałów obu drużyn.
+Niska
+Średnia
+Wysoka
+Linia obrony
+Wysoka linia zawęża boisko i łapie na spalonego, ale zostawia miejsce za plecami.
+Wysoki pressing odbiera piłkę i daje posiadanie, ale męczy i powoduje więcej fauli.
+Wąsko
+Normalnie
+Szeroko
+Szerokość
+Gra szeroka — więcej dośrodkowań i rożnych, wąska — gęściej w środku.
+Szybkie tempo — więcej ataków, ale gorsze okazje i zmęczeni zawodnicy.
+Krótkie
+Bezpośrednie
+Bezpośrednie podania szybciej prowadzą do strzału, krótkie utrzymują piłkę.
+Ostrożnie
+Twardo
+Twardy odbiór przeszkadza rywalowi, ale grozi kartkami i karnymi.
+Posiadanie piłki
+Wszędzie
+Lewe skrzydło
+Środek
+Prawe skrzydło
+Oba skrzydła
+Różnie
+Bliższy słupek
+Dalszy słupek
+Rozegranie krótko
+Strefa
+Krycie indywidualne
+Głęboka obrona, wąsko, gra na czas. Przeciw faworytom.
+Wysoka linia, pressing tuż po stracie, szybkie tempo. Wymaga wytrzymałych graczy.
+Krótkie podania, posiadanie, fałszywa dziewiątka. Wymaga technicznych pomocników.
+Oddać piłkę i atakować wolne przestrzenie szybko i bezpośrednio.
+Długie piłki na napastników i skrzydła, walka o drugą piłkę.
+Standardowe ustawienia bez skrajności.
+Szerokość, dośrodkowania i gra skrzydłami.
+Częste zmiany ustawienia i poleceń obniżają zgranie; zgrupowania i sparingi je zwiększają.
+Zapisz w {0}
+Polecenia
+Role
+Style
+W meczu
+Styl gry
+Kierunek ataku
+Pułapka ofsajdowa
+Rywal częściej jest na spalonym, ale udany wypad jest groźniejszy.
+Gra na czas przy prowadzeniu
+Od 55. minuty przy prowadzeniu: mniej okazji dla obu i ryzyko żółtych kartek.
+Rola określa, co zawodnik robi na boisku. Procent pokazuje, jak pasuje do jego umiejętności.
+Auto
+Wykonawcy
+Rzuty wolne
+Kapitan
+Kolejność karnych
+Wariant rzutu rożnego
+Bliższy słupek — częściej strzał; dalszy — dla wysokich; krótko — mniejsze ryzyko.
+Obrona stałych fragmentów
+Krycie indywidualne dopuszcza mniej strzałów, ale możliwe są faule w polu karnym.
+Gotowe style jednym dotknięciem: ustawienie i polecenia. Role wracają do domyślnych.
+Zastosuj
+Polecenia warunkowe
+Taktyka zmienia się sama po spełnieniu warunku (do 4 reguł).
+Jeśli
+po
+Dodaj regułę
+Automatyczne zmiany
+Wył.
+Od 50. minuty zmęczony zawodnik (kondycja poniżej progu) jest zmieniany na najlepszego rezerwowego.
+Sloty taktyczne
+Trzy warianty taktyki (A/B/C): szybkie przełączanie przed meczem i w jego trakcie.
+Polecenia wobec rywala
+Najbliższy rywal
+Ścisłe krycie lidera rywala
+Brak
+Spychać rywali na słabszą nogę
+Nieco gorsze strzały rywala, ale więcej fauli.
+Taktykę zapisano w slocie {0}
+Taktyka {0}
+najlepsze
+najgorsze
+Miejsce w rankingu: cały okres
+Punkty w grze
+ost. mecz
+Szukaj reprezentacji
+Zmiany od ostatniej aktualizacji rankingu ({0}); przy każdej drużynie punkty z jej ostatniego meczu.
+Ruchy w okresie
+3 mies.
+6 mies.
+Miejsce
+Profil reprezentacji
+Porównaj z
+1993–2025 — wygenerowane archiwum, dalej — w grze.
+I — waga meczu, „Ocz.” — oczekiwany wynik według wzoru FIFA.
+Data
+Wynik
+Ocz.
+Według miesięcy
+Według lat
+Najbliższe mecze
+Ostatnie wyniki
+Nieprzeczytane
+Oznacz wszystkie jako przeczytane
+Wszystkie wiadomości przeczytane
+Start kariery: 1 stycznia 2027
+Mistrzostwa świata 2026 już rozegrane. Przed nami Puchar Azji, Puchar Narodów Afryki, Euro 2028, Copa América i eliminacje MŚ 2030.
+Szczegółowość relacji
+Kluczowe momenty
+Pełny komentarz
+Rozgrywka (ten zapis)
+Normalna
+Trudna
+Wpływa na siłę rywali w twoich meczach, premie i cierpliwość federacji.
+Częstotliwość kontuzji
+Rzadko
+Często
+Realistyczne zmęczenie
+Pogoda wpływa na mecze
+Interfejs
+Po każdej akcji
+Raz na dzień gry
+Raz na tydzień gry
+Raz na miesiąc gry
+Tylko ręcznie
+Waluta
+Jednostki
+Metryczne (cm)
+Imperialne (stopy)
+Rozmiar czcionki
+Powiadomienia wyskakujące
+Potwierdzaj ważne działania
+Sytuacja na 1 stycznia
+Mistrzostwa świata 2026 za nami, zaczyna się nowy cykl. Reprezentacja gra dalej w:
+Autobus w bramce
+Gegenpressing
+Tiki-taka
+Kontratak
+Długa piłka
+Gra skrzydłami
+Atakować
+Utrzymać wynik
+Wysoki pressing
+Uspokoić grę
+Taktyka A
+Taktyka B
+Taktyka C
+Przegrywamy
+Przegrywamy 2+
+Prowadzimy 1 bramką
+Prowadzimy

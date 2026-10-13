@@ -529,3 +529,201 @@ Germany: reboot
 Back to the elite after setbacks: reach the 2030 World Cup semi-finals.
 Scenario goal achieved! You can carry on with your career.
 Scenario goal not achieved. Your career continues without the scenario.
+Foul in the box at a corner — penalty!
+Corner taken by {0}.
+Yellow card for time-wasting
+{0}: tactics change as planned
+Calendar
+Autumn 2026 is being simulated — your career starts on 1 January 2027
+m
+Sweeper keeper
+Central defender
+Ball-playing defender
+Stopper
+Full-back
+Attacking wing-back
+Inverted full-back
+Defensive midfielder
+Anchor
+Deep-lying playmaker
+Ball winner
+Central midfielder
+Box-to-box
+Advanced playmaker
+Attacking midfielder
+Shadow striker
+Wide midfielder
+Wide forward
+Winger
+Inside forward
+Forward
+Target man
+Poacher
+False 9
+Pressing forward
+attack
+defence
+ball control
+shots
+passing
+heading
+fatigue
+pressing
+fouls
+crosses
+possession
+opponent chances
+saves
+finishing
+balanced role
+More players in attack — more shots for both teams.
+Low
+Medium
+High
+Defensive line
+A high line squeezes the pitch and catches opponents offside, but leaves space in behind.
+High pressing wins the ball and possession, but tires players and leads to more fouls.
+Narrow
+Normal
+Wide
+Width
+Wide play means more crosses and corners; narrow play is tighter in the middle.
+A fast tempo creates more attacks, but chances are poorer and players tire.
+Short
+Direct
+Direct passing reaches a shot faster; short passing keeps the ball.
+Careful
+Hard
+Hard tackling disrupts the opponent but risks cards and penalties.
+Possession
+Everywhere
+Left flank
+Centre
+Right flank
+Both flanks
+Varied
+Near post
+Far post
+Play it short
+Zonal
+Man-to-man
+Deep defence, narrow, time-wasting. Against favourites.
+High line, pressing right after losing the ball, fast tempo. Needs fit players.
+Short passing, possession, a false 9. Needs technical midfielders.
+Give up the ball, then attack fast and direct into open space.
+Long balls to the forwards and the flanks, winning second balls.
+Standard instructions with no extremes.
+Width, crosses and play through the wide men.
+Changing formation and instructions often lowers familiarity; camps and friendlies raise it.
+Save to {0}
+Instructions
+Roles
+Styles
+In-match
+Playing style
+Attack focus
+Offside trap
+Opponents get caught offside more often, but a successful run through on goal is more dangerous.
+Waste time when we are ahead
+After the 55th minute when leading: fewer chances for both teams, risk of yellow cards.
+A role defines what a player does on the pitch. The percentage shows how well the role suits his attributes.
+Automatic
+Takers
+Free kicks
+Captain
+Penalty order
+Corner routine
+Near post — more shots; far post — for tall players; short — less risk.
+Defending set pieces
+Man-marking allows fewer shots, but fouls in the box are possible.
+Ready-made styles apply in one tap: formation and instructions. Roles reset to default.
+Apply
+Conditional instructions
+Tactics change automatically when the condition is met (up to 4 rules).
+If
+after
+Add rule
+Auto-substitutions
+Off
+After the 50th minute a tired player (freshness below the threshold) is replaced by the best substitute.
+Tactic slots
+Three tactic variants (A/B/C): switch quickly before the match and during play.
+Opposition instructions
+Next opponent
+Tight-mark the opponent's star
+None
+Show opponents onto their weaker foot
+Slightly worse opponent shots, but more fouls.
+Tactic saved to slot {0}
+Tactic {0}
+best
+worst
+Ranking position: all time
+Points in game
+last match
+Search for a team
+Changes since the last ranking update ({0}); each team also shows points from its last match.
+Movement over the period
+3 mo.
+6 mo.
+Position
+Team profile
+Compare with
+1993–2025 — generated archive, then in-game.
+I — match importance, "Exp." — expected result by the FIFA formula.
+Date
+Score
+Exp.
+By month
+By year
+Upcoming matches
+Recent results
+Unread
+Mark all as read
+All messages marked as read
+Career start: 1 January 2027
+The 2026 World Cup has been played. Ahead: the Asian Cup, the Africa Cup of Nations, Euro 2028, the Copa América and 2030 World Cup qualifying.
+Commentary detail
+Key moments
+Full commentary
+Gameplay (this save)
+Normal
+Hard
+Affects opponent strength in your matches, prize money and the federation's patience.
+Injury frequency
+Rarely
+Often
+Realistic fatigue
+Weather affects matches
+Interface
+After every action
+Once per game day
+Once per game week
+Once per game month
+Manual only
+Currency
+Units
+Metric (cm)
+Imperial (feet)
+Font size
+Pop-up notifications
+Confirm important actions
+State of play on 1 January
+The 2026 World Cup is over and a new cycle begins. The team continues in:
+Park the bus
+Gegenpress
+Tiki-taka
+Counter-attack
+Long ball
+Wing play
+Attack
+Hold the lead
+High press
+Calm the game
+Tactic A
+Tactic B
+Tactic C
+Losing
+Losing by 2+
+Leading by 1
+Leading

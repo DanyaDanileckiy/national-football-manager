@@ -529,3 +529,201 @@ Alemania: reinicio
 De vuelta a la élite tras los fracasos: llega a las semifinales del Mundial 2030.
 ¡Objetivo del escenario cumplido! Puedes seguir con tu carrera.
 Objetivo del escenario no cumplido. Tu carrera continúa sin el escenario.
+¡Falta en el área en un córner: penalti!
+Saca el córner {0}.
+Amarilla por perder tiempo
+{0}: la táctica cambia según lo previsto
+Calendario
+Se simula el otoño de 2026: tu carrera empieza el 1 de enero de 2027
+M
+Portero líbero
+Defensa central
+Central con salida de balón
+Stopper
+Lateral
+Carrilero ofensivo
+Lateral invertido
+Mediocentro defensivo
+Ancla
+Organizador retrasado
+Recuperador
+Mediocentro
+Box-to-box
+Mediapunta organizador
+Mediapunta
+Segundo delantero
+Volante de banda
+Extremo delantero
+Extremo
+Extremo invertido
+Delantero
+Delantero tanque
+Cazagoles
+Falso 9
+Delantero presionante
+ataque
+defensa
+control del balón
+tiros
+pases
+juego aéreo
+cansancio
+presión
+faltas
+centros
+posesión
+ocasiones rivales
+paradas
+definición
+rol equilibrado
+Más jugadores en ataque: más tiros para ambos equipos.
+Baja
+Media
+Alta
+Línea defensiva
+Una línea alta reduce el campo y deja en fuera de juego, pero deja espacio a la espalda.
+La presión alta recupera el balón y da posesión, pero desgasta y provoca más faltas.
+Estrecho
+Normal
+Abierto
+Amplitud
+Juego abierto: más centros y córners; estrecho: más denso por el centro.
+Ritmo rápido: más ataques, pero ocasiones peores y jugadores cansados.
+Corto
+Directo
+El pase directo llega antes al tiro; el corto conserva el balón.
+Con cuidado
+Duro
+La entrada dura incomoda al rival, pero arriesga tarjetas y penaltis.
+Posesión
+En todas partes
+Banda izquierda
+Centro
+Banda derecha
+Ambas bandas
+Variado
+Primer palo
+Segundo palo
+Jugar en corto
+Zonal
+Al hombre
+Defensa profunda, cerrada, perder tiempo. Contra favoritos.
+Línea alta, presión tras pérdida, ritmo rápido. Requiere jugadores en forma.
+Pase corto, posesión, falso 9. Requiere centrocampistas técnicos.
+Ceder el balón y atacar rápido y directo a los espacios.
+Balones largos a los delanteros y bandas, ganar segundas jugadas.
+Instrucciones estándar sin extremos.
+Amplitud, centros y juego por los extremos.
+Cambiar a menudo de sistema e instrucciones reduce la compenetración; las concentraciones y amistosos la aumentan.
+Guardar en {0}
+Instrucciones
+Roles
+Estilos
+Durante el partido
+Estilo de juego
+Dirección del ataque
+Trampa del fuera de juego
+El rival cae más en fuera de juego, pero si se escapa es más peligroso.
+Perder tiempo cuando vamos ganando
+Desde el minuto 55 con ventaja: menos ocasiones para ambos y riesgo de amarillas.
+El rol define qué hace el jugador en el campo. El porcentaje indica cuánto encaja con sus atributos.
+Automático
+Lanzadores
+Tiros libres
+Capitán
+Orden de penaltis
+Jugada de córner
+Primer palo: más remates; segundo palo: para jugadores altos; en corto: menos riesgo.
+Defensa a balón parado
+El marcaje al hombre concede menos tiros, pero puede haber faltas en el área.
+Estilos listos en un toque: sistema e instrucciones. Los roles vuelven a los predeterminados.
+Aplicar
+Instrucciones condicionales
+La táctica cambia sola cuando se cumple la condición (hasta 4 reglas).
+Si
+después del
+Añadir regla
+Cambios automáticos
+No
+Desde el minuto 50, un jugador cansado (frescura bajo el umbral) se cambia por el mejor suplente.
+Ranuras tácticas
+Tres variantes tácticas (A/B/C): cambia rápido antes y durante el partido.
+Instrucciones contra el rival
+Próximo rival
+Marcaje estrecho a la estrella rival
+Ninguno
+Llevar a los rivales a su pierna mala
+Tiros rivales algo peores, pero más faltas.
+Táctica guardada en la ranura {0}
+Táctica {0}
+mejor
+peor
+Puesto en el ranking: histórico
+Puntos en el juego
+últ. partido
+Buscar selección
+Cambios desde la última actualización del ranking ({0}); cada selección muestra los puntos de su último partido.
+Movimiento en el periodo
+3 meses
+6 meses
+Puesto
+Perfil de la selección
+Comparar con
+1993–2025: archivo generado; después, en el juego.
+I: importancia del partido; «Esp.»: resultado esperado según la fórmula FIFA.
+Fecha
+Resultado
+Esp.
+Por meses
+Por años
+Próximos partidos
+Últimos resultados
+Sin leer
+Marcar todo como leído
+Todos los mensajes leídos
+Inicio de carrera: 1 de enero de 2027
+El Mundial 2026 ya se jugó. Por delante: Copa Asiática, Copa Africana, Euro 2028, Copa América y la clasificación al Mundial 2030.
+Detalle de la retransmisión
+Momentos clave
+Comentario completo
+Jugabilidad (esta partida)
+Normal
+Difícil
+Afecta a la fuerza de los rivales en tus partidos, a los premios y a la paciencia de la federación.
+Frecuencia de lesiones
+Raras
+Frecuentes
+Cansancio realista
+El clima influye en los partidos
+Interfaz
+Tras cada acción
+Una vez por día de juego
+Una vez por semana de juego
+Una vez por mes de juego
+Solo manual
+Moneda
+Unidades
+Métricas (cm)
+Imperiales (pies)
+Tamaño de letra
+Notificaciones emergentes
+Confirmar acciones importantes
+Situación al 1 de enero
+El Mundial 2026 terminó y empieza un nuevo ciclo. La selección sigue compitiendo en:
+Aparcar el autobús
+Gegenpressing
+Tiki-taka
+Contraataque
+Balón largo
+Juego por bandas
+Atacar
+Mantener el resultado
+Presión alta
+Calmar el partido
+Táctica A
+Táctica B
+Táctica C
+Perdiendo
+Perdiendo por 2+
+Ganando por 1
+Ganando

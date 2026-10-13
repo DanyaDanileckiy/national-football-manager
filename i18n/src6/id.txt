@@ -529,3 +529,201 @@ Jerman: mulai ulang
 Kembali ke elite setelah kegagalan: capai semifinal Piala Dunia 2030.
 Target skenario tercapai! Anda bisa melanjutkan karier.
 Target skenario tidak tercapai. Karier berlanjut tanpa skenario.
+Pelanggaran di kotak penalti saat sepak pojok — penalti!
+Sepak pojok diambil oleh {0}.
+Kartu kuning karena mengulur waktu
+{0}: taktik berubah sesuai rencana
+Kalender
+Musim gugur 2026 sedang disimulasikan — kariermu dimulai 1 Januari 2027
+jt
+Kiper penyapu
+Bek tengah
+Bek pengumpan
+Stoper
+Bek sayap
+Wingback
+Bek sayap terbalik
+Gelandang bertahan
+Jangkar
+Playmaker dalam
+Perebut bola
+Gelandang tengah
+Box-to-box
+Playmaker menyerang
+Gelandang serang
+Penyerang lubang
+Gelandang sayap
+Penyerang sayap
+Pemain sayap
+Sayap terbalik
+Penyerang
+Target man
+Pemburu gol
+False nine
+Penyerang penekan
+serangan
+pertahanan
+penguasaan bola
+tembakan
+umpan
+sundulan
+kelelahan
+pressing
+pelanggaran
+umpan silang
+penguasaan
+peluang lawan
+penyelamatan
+penyelesaian
+peran seimbang
+Lebih banyak pemain menyerang — lebih banyak tembakan bagi kedua tim.
+Rendah
+Sedang
+Tinggi
+Garis pertahanan
+Garis tinggi mempersempit lapangan dan menjebak offside, tetapi menyisakan ruang di belakang.
+Pressing tinggi merebut bola dan penguasaan, tetapi melelahkan dan memicu lebih banyak pelanggaran.
+Sempit
+Normal
+Lebar
+Lebar permainan
+Main melebar — lebih banyak umpan silang dan sepak pojok; sempit — lebih padat di tengah.
+Tempo cepat — lebih banyak serangan, tetapi peluang lebih buruk dan pemain lelah.
+Pendek
+Langsung
+Umpan langsung lebih cepat menghasilkan tembakan; umpan pendek menjaga bola.
+Hati-hati
+Keras
+Tekel keras mengganggu lawan, tetapi berisiko kartu dan penalti.
+Penguasaan bola
+Di mana saja
+Sayap kiri
+Tengah
+Sayap kanan
+Kedua sayap
+Bervariasi
+Tiang dekat
+Tiang jauh
+Dimainkan pendek
+Zona
+Satu lawan satu
+Bertahan dalam, rapat, mengulur waktu. Melawan unggulan.
+Garis tinggi, pressing segera setelah kehilangan bola, tempo cepat. Butuh pemain bugar.
+Umpan pendek, penguasaan, false nine. Butuh gelandang teknis.
+Membiarkan lawan memegang bola lalu menyerang ruang dengan cepat dan langsung.
+Bola panjang ke penyerang dan sayap, berebut bola kedua.
+Instruksi standar tanpa ekstrem.
+Lebar, umpan silang, dan permainan lewat sayap.
+Sering mengganti formasi dan instruksi menurunkan kekompakan; pemusatan latihan dan uji coba meningkatkannya.
+Simpan ke {0}
+Instruksi
+Peran
+Gaya
+Saat pertandingan
+Gaya bermain
+Arah serangan
+Jebakan offside
+Lawan lebih sering offside, tetapi terobosan yang lolos lebih berbahaya.
+Ulur waktu saat unggul
+Mulai menit 55 saat unggul: lebih sedikit peluang bagi kedua tim dan risiko kartu kuning.
+Peran menentukan tugas pemain di lapangan. Persentase menunjukkan kecocokan dengan atributnya.
+Otomatis
+Eksekutor
+Tendangan bebas
+Kapten
+Urutan penendang penalti
+Skema sepak pojok
+Tiang dekat — lebih sering tembakan; tiang jauh — untuk pemain jangkung; pendek — risiko lebih kecil.
+Bertahan saat bola mati
+Penjagaan satu lawan satu memberi lebih sedikit tembakan, tetapi bisa terjadi pelanggaran di kotak penalti.
+Gaya siap pakai dengan satu ketukan: formasi dan instruksi. Peran kembali ke bawaan.
+Terapkan
+Instruksi bersyarat
+Taktik berubah otomatis saat syarat terpenuhi (maksimal 4 aturan).
+Jika
+setelah menit
+Tambah aturan
+Pergantian otomatis
+Mati
+Mulai menit 50, pemain yang lelah (kebugaran di bawah ambang) diganti cadangan terbaik.
+Slot taktik
+Tiga varian taktik (A/B/C): ganti cepat sebelum dan selama pertandingan.
+Instruksi terhadap lawan
+Lawan berikutnya
+Kawal ketat bintang lawan
+Tidak ada
+Arahkan lawan ke kaki lemahnya
+Tembakan lawan sedikit lebih buruk, tetapi lebih banyak pelanggaran.
+Taktik disimpan ke slot {0}
+Taktik {0}
+terbaik
+terburuk
+Posisi peringkat: sepanjang waktu
+Poin dalam game
+laga terakhir
+Cari tim
+Perubahan sejak pembaruan peringkat terakhir ({0}); setiap tim menampilkan poin dari laga terakhirnya.
+Pergerakan periode ini
+3 bln
+6 bln
+Posisi
+Profil tim
+Bandingkan dengan
+1993–2025 — arsip yang dihasilkan, selanjutnya dalam game.
+I — bobot laga, «Harap.» — hasil yang diharapkan menurut rumus FIFA.
+Tanggal
+Skor
+Harap.
+Per bulan
+Per tahun
+Laga mendatang
+Hasil terakhir
+Belum dibaca
+Tandai semua sudah dibaca
+Semua pesan sudah dibaca
+Awal karier: 1 Januari 2027
+Piala Dunia 2026 sudah selesai. Berikutnya: Piala Asia, Piala Afrika, Euro 2028, Copa América, dan kualifikasi Piala Dunia 2030.
+Detail siaran
+Momen penting
+Komentar lengkap
+Gameplay (simpanan ini)
+Normal
+Sulit
+Memengaruhi kekuatan lawan di laga-lagamu, bonus, dan kesabaran federasi.
+Frekuensi cedera
+Jarang
+Sering
+Kelelahan realistis
+Cuaca memengaruhi pertandingan
+Antarmuka
+Setelah setiap aksi
+Sekali per hari permainan
+Sekali per minggu permainan
+Sekali per bulan permainan
+Hanya manual
+Mata uang
+Satuan
+Metrik (cm)
+Imperial (kaki)
+Ukuran huruf
+Notifikasi pop-up
+Konfirmasi tindakan penting
+Situasi per 1 Januari
+Piala Dunia 2026 telah usai, siklus baru dimulai. Tim nasional terus berlaga di:
+Parkir bus
+Gegenpressing
+Tiki-taka
+Serangan balik
+Bola panjang
+Permainan sayap
+Menyerang
+Pertahankan skor
+Pressing tinggi
+Tenangkan permainan
+Taktik A
+Taktik B
+Taktik C
+Tertinggal
+Tertinggal 2+
+Unggul 1 gol
+Unggul

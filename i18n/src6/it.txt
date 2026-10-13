@@ -529,3 +529,201 @@ Germania: ripartenza
 Di nuovo nell'élite dopo i fallimenti: raggiungi le semifinali dei Mondiali 2030.
 Obiettivo dello scenario raggiunto! Puoi continuare la carriera.
 Obiettivo dello scenario non raggiunto. La carriera continua senza scenario.
+Fallo in area su calcio d'angolo — rigore!
+Calcio d'angolo battuto da {0}.
+Giallo per perdita di tempo
+{0}: la tattica cambia come previsto
+Calendario
+Simulazione dell'autunno 2026 — la tua carriera inizia il 1° gennaio 2027
+mln
+Portiere libero
+Difensore centrale
+Difensore palla al piede
+Stopper
+Terzino
+Esterno a tutta fascia
+Terzino invertito
+Mediano
+Centrocampista d'equilibrio
+Regista arretrato
+Incontrista
+Centrocampista centrale
+Box-to-box
+Regista avanzato
+Trequartista
+Seconda punta
+Esterno di centrocampo
+Ala offensiva
+Ala
+Ala invertita
+Attaccante
+Punta di peso
+Rapace d'area
+Falso nove
+Punta di pressione
+attacco
+difesa
+controllo palla
+tiri
+passaggi
+gioco aereo
+stanchezza
+pressing
+falli
+cross
+possesso
+occasioni avversarie
+parate
+finalizzazione
+ruolo equilibrato
+Più giocatori in attacco — più tiri per entrambe le squadre.
+Bassa
+Media
+Alta
+Linea difensiva
+Una linea alta accorcia il campo e manda in fuorigioco, ma lascia spazio alle spalle.
+Il pressing alto recupera palla e possesso, ma stanca e porta più falli.
+Stretto
+Normale
+Largo
+Ampiezza
+Gioco largo: più cross e angoli; stretto: più densità al centro.
+Ritmo alto: più attacchi, ma occasioni peggiori e giocatori stanchi.
+Corto
+Diretto
+I passaggi diretti arrivano prima al tiro, quelli corti tengono palla.
+Prudente
+Duro
+I contrasti duri disturbano l'avversario, ma rischiano cartellini e rigori.
+Possesso palla
+Ovunque
+Fascia sinistra
+Centro
+Fascia destra
+Entrambe le fasce
+Vario
+Primo palo
+Secondo palo
+Battuto corto
+A zona
+A uomo
+Difesa bassa e stretta, perdita di tempo. Contro le favorite.
+Linea alta, pressing subito dopo la perdita, ritmo alto. Servono giocatori in forma.
+Passaggi corti, possesso, falso nove. Servono centrocampisti tecnici.
+Lasciare palla e attaccare gli spazi in modo rapido e diretto.
+Palle lunghe su punte ed esterni, lotta sulle seconde palle.
+Istruzioni standard senza estremi.
+Ampiezza, cross e gioco sulle fasce.
+Cambiare spesso modulo e istruzioni riduce l'intesa; ritiri e amichevoli la aumentano.
+Salva in {0}
+Istruzioni
+Ruoli
+Stili
+In partita
+Stile di gioco
+Direzione d'attacco
+Trappola del fuorigioco
+L'avversario finisce più spesso in fuorigioco, ma una fuga riuscita è più pericolosa.
+Perdere tempo in vantaggio
+Dal 55' in vantaggio: meno occasioni per entrambe e rischio di cartellini gialli.
+Il ruolo definisce cosa fa il giocatore in campo. La percentuale indica quanto si adatta alle sue caratteristiche.
+Auto
+Battitori
+Punizioni
+Capitano
+Ordine dei rigoristi
+Schema sui calci d'angolo
+Primo palo — più conclusioni; secondo palo — per i giocatori alti; corto — meno rischi.
+Difesa sui calci piazzati
+La marcatura a uomo concede meno tiri, ma sono possibili falli in area.
+Stili pronti con un tocco: modulo e istruzioni. I ruoli tornano predefiniti.
+Applica
+Istruzioni condizionali
+La tattica cambia da sola quando la condizione si verifica (fino a 4 regole).
+Se
+dopo il
+Aggiungi regola
+Cambi automatici
+No
+Dal 50', un giocatore stanco (condizione sotto la soglia) viene sostituito dalla miglior riserva.
+Slot tattici
+Tre varianti tattiche (A/B/C): passa rapidamente dall'una all'altra prima e durante la partita.
+Istruzioni sull'avversario
+Prossimo avversario
+Marcatura stretta sulla stella avversaria
+Nessuna
+Spingere gli avversari sul piede debole
+Tiri avversari un po' peggiori, ma più falli.
+Tattica salvata nello slot {0}
+Tattica {0}
+migliore
+peggiore
+Posizione nel ranking: tutto il periodo
+Punti in partita
+ult. partita
+Cerca nazionale
+Variazioni dall'ultimo aggiornamento del ranking ({0}); ogni nazionale mostra i punti della sua ultima partita.
+Movimenti del periodo
+3 mesi
+6 mesi
+Posizione
+Scheda nazionale
+Confronta con
+1993–2025 — archivio generato, poi in gioco.
+I — importanza della partita, «Att.» — risultato atteso secondo la formula FIFA.
+Data
+Risultato
+Att.
+Per mese
+Per anno
+Prossime partite
+Ultimi risultati
+Non letti
+Segna tutto come letto
+Tutti i messaggi letti
+Inizio carriera: 1° gennaio 2027
+Il Mondiale 2026 è già stato giocato. In arrivo: Coppa d'Asia, Coppa d'Africa, Euro 2028, Copa América e qualificazioni al Mondiale 2030.
+Dettaglio della cronaca
+Momenti chiave
+Cronaca completa
+Gameplay (questo salvataggio)
+Normale
+Difficile
+Influisce sulla forza degli avversari nelle tue partite, sui premi e sulla pazienza della federazione.
+Frequenza infortuni
+Rari
+Frequenti
+Stanchezza realistica
+Il meteo influisce sulle partite
+Interfaccia
+Dopo ogni azione
+Una volta per giorno di gioco
+Una volta per settimana di gioco
+Una volta per mese di gioco
+Solo manuale
+Valuta
+Unità
+Metriche (cm)
+Imperiali (piedi)
+Dimensione testo
+Notifiche a comparsa
+Conferma le azioni importanti
+Situazione al 1° gennaio
+Il Mondiale 2026 è alle spalle, inizia un nuovo ciclo. La nazionale prosegue in:
+Parcheggiare il pullman
+Gegenpressing
+Tiki-taka
+Contropiede
+Palla lunga
+Gioco sulle fasce
+Attaccare
+Difendere il risultato
+Pressing alto
+Calmare il gioco
+Tattica A
+Tattica B
+Tattica C
+In svantaggio
+Sotto di 2+
+Avanti di 1
+In vantaggio

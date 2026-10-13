@@ -529,3 +529,201 @@ Deutschland: Neustart
 Nach Rückschlägen zurück in die Elite: Erreichen Sie das Halbfinale der WM 2030.
 Szenario-Ziel erreicht! Sie können Ihre Karriere fortsetzen.
 Szenario-Ziel verfehlt. Die Karriere geht ohne Szenario weiter.
+Foul im Strafraum nach einer Ecke — Elfmeter!
+Ecke ausgeführt von {0}.
+Gelb wegen Zeitspiels
+{0}: Taktik wird planmäßig umgestellt
+Kalender
+Der Herbst 2026 wird simuliert — deine Karriere beginnt am 1. Januar 2027
+Mio.
+Mitspielender Torwart
+Innenverteidiger
+Ballspielender Verteidiger
+Vorstopper
+Außenverteidiger
+Offensiver Flügelverteidiger
+Inverser Außenverteidiger
+Defensiver Mittelfeldspieler
+Anker
+Tiefer Spielmacher
+Balleroberer
+Zentraler Mittelfeldspieler
+Box-to-Box
+Offensiver Spielmacher
+Offensiver Mittelfeldspieler
+Hängende Spitze
+Außenbahnspieler
+Flügelstürmer
+Klassischer Flügelspieler
+Inverser Flügelstürmer
+Stürmer
+Zielspieler
+Abstauber
+Falsche Neun
+Pressing-Stürmer
+Angriff
+Abwehr
+Ballkontrolle
+Schüsse
+Pässe
+Kopfballspiel
+Ermüdung
+Pressing
+Fouls
+Flanken
+Ballbesitz
+Chancen des Gegners
+Paraden
+Abschluss
+ausgewogene Rolle
+Mehr Spieler im Angriff — mehr Schüsse auf beiden Seiten.
+Tief
+Mittel
+Hoch
+Abwehrlinie
+Eine hohe Linie verengt das Feld und stellt Abseitsfallen, lässt aber Raum im Rücken.
+Hohes Pressing erobert Ball und Ballbesitz, kostet aber Kraft und führt zu mehr Fouls.
+Eng
+Normal
+Breit
+Breite
+Breites Spiel bringt mehr Flanken und Ecken, enges Spiel macht die Mitte dichter.
+Hohes Tempo bringt mehr Angriffe, aber schlechtere Chancen, und die Spieler ermüden.
+Kurz
+Direkt
+Direkte Pässe führen schneller zum Abschluss, kurze halten den Ball.
+Vorsichtig
+Hart
+Harte Zweikämpfe stören den Gegner, bringen aber Karten- und Elfmeterrisiko.
+Ballbesitzspiel
+Überall
+Linker Flügel
+Zentrum
+Rechter Flügel
+Beide Flügel
+Abwechslungsreich
+Kurzer Pfosten
+Langer Pfosten
+Kurz ausführen
+Raumdeckung
+Manndeckung
+Tiefe Abwehr, eng, Zeitspiel. Gegen Favoriten.
+Hohe Linie, Gegenpressing nach Ballverlust, hohes Tempo. Braucht fitte Spieler.
+Kurzpassspiel, Ballbesitz, falsche Neun. Braucht technisch starke Mittelfeldspieler.
+Ball überlassen, dann schnell und direkt in freie Räume angreifen.
+Lange Bälle auf die Stürmer und die Flügel, Kampf um zweite Bälle.
+Standardvorgaben ohne Extreme.
+Breite, Flanken und Spiel über die Außen.
+Häufige Wechsel von Formation und Vorgaben senken die Eingespieltheit; Trainingslager und Testspiele erhöhen sie.
+In {0} speichern
+Vorgaben
+Rollen
+Stile
+Im Spiel
+Spielstil
+Angriffsschwerpunkt
+Abseitsfalle
+Gegner laufen öfter ins Abseits, aber ein gelungener Durchbruch ist gefährlicher.
+Bei Führung auf Zeit spielen
+Ab der 55. Minute bei Führung: weniger Chancen für beide Teams, Risiko Gelber Karten.
+Die Rolle bestimmt, was ein Spieler auf dem Platz tut. Der Prozentwert zeigt, wie gut sie zu seinen Attributen passt.
+Automatisch
+Schützen
+Freistöße
+Kapitän
+Elfmeter-Reihenfolge
+Eckballvariante
+Kurzer Pfosten — öfter ein Abschluss, langer — für große Spieler, kurz — weniger Risiko.
+Verteidigung bei Standards
+Manndeckung lässt seltener Schüsse zu, aber Fouls im Strafraum sind möglich.
+Fertige Stile mit einem Tipp: Formation und Vorgaben. Rollen werden zurückgesetzt.
+Anwenden
+Bedingte Vorgaben
+Die Taktik ändert sich automatisch, wenn die Bedingung erfüllt ist (bis zu 4 Regeln).
+Wenn
+nach
+Regel hinzufügen
+Auto-Wechsel
+Aus
+Ab der 50. Minute wird ein müder Spieler (Frische unter der Schwelle) durch den besten Ersatz ersetzt.
+Taktik-Slots
+Drei Taktikvarianten (A/B/C): schnell vor dem Spiel und während der Partie umschalten.
+Vorgaben gegen den Gegner
+Nächster Gegner
+Enge Manndeckung des gegnerischen Stars
+Keine
+Gegner auf den schwachen Fuß lenken
+Etwas schwächere Schüsse des Gegners, aber mehr Fouls.
+Taktik in Slot {0} gespeichert
+Taktik {0}
+beste
+schlechteste
+Ranglistenplatz: gesamte Zeit
+Punkte im Spiel
+letztes Spiel
+Mannschaft suchen
+Änderungen seit dem letzten Ranglisten-Update ({0}); bei jedem Team die Punkte aus seinem letzten Spiel.
+Bewegung im Zeitraum
+3 Mon.
+6 Mon.
+Platz
+Teamprofil
+Vergleichen mit
+1993–2025 — generiertes Archiv, danach im Spiel.
+I — Bedeutung des Spiels, „Erw.“ — erwartetes Ergebnis nach FIFA-Formel.
+Datum
+Ergebnis
+Erw.
+Nach Monaten
+Nach Jahren
+Nächste Spiele
+Letzte Ergebnisse
+Ungelesen
+Alle als gelesen markieren
+Alle Nachrichten gelesen
+Karrierestart: 1. Januar 2027
+Die WM 2026 ist gespielt. Vor uns liegen Asienmeisterschaft, Afrika-Cup, EM 2028, Copa América und die WM-Qualifikation 2030.
+Detailgrad der Übertragung
+Schlüsselszenen
+Voller Kommentar
+Spielablauf (dieser Spielstand)
+Normal
+Schwer
+Beeinflusst die Gegnerstärke in deinen Spielen, Prämien und die Geduld des Verbands.
+Verletzungshäufigkeit
+Selten
+Oft
+Realistische Ermüdung
+Wetter beeinflusst Spiele
+Oberfläche
+Nach jeder Aktion
+Einmal pro Spieltag
+Einmal pro Spielwoche
+Einmal pro Spielmonat
+Nur manuell
+Währung
+Einheiten
+Metrisch (cm)
+Imperial (Fuß)
+Schriftgröße
+Pop-up-Benachrichtigungen
+Wichtige Aktionen bestätigen
+Lage zum 1. Januar
+Die WM 2026 ist vorbei, ein neuer Zyklus beginnt. Die Mannschaft spielt weiter in:
+Bus parken
+Gegenpressing
+Tiki-Taka
+Konter
+Lange Bälle
+Flügelspiel
+Angreifen
+Führung halten
+Hohes Pressing
+Spiel beruhigen
+Taktik A
+Taktik B
+Taktik C
+Rückstand
+Rückstand 2+
+1 Tor vorn
+Führung

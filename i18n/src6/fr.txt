@@ -529,3 +529,201 @@ Allemagne : redémarrage
 Retour dans l'élite après les échecs : atteignez les demi-finales de la Coupe du monde 2030.
 Objectif du scénario atteint ! Vous pouvez poursuivre votre carrière.
 Objectif du scénario non atteint. La carrière continue sans le scénario.
+Faute dans la surface sur corner — penalty !
+Corner tiré par {0}.
+Jaune pour gain de temps
+{0} : la tactique change comme prévu
+Calendrier
+L'automne 2026 est simulé — votre carrière commence le 1er janvier 2027
+M
+Gardien libéro
+Défenseur central
+Défenseur relanceur
+Stoppeur
+Latéral
+Piston
+Latéral inversé
+Milieu défensif
+Sentinelle
+Meneur reculé
+Récupérateur
+Milieu central
+Box-to-box
+Meneur avancé
+Milieu offensif
+Second attaquant
+Milieu latéral
+Ailier-attaquant
+Ailier
+Ailier inversé
+Attaquant
+Point d'appui
+Renard des surfaces
+Faux 9
+Attaquant pressant
+attaque
+défense
+contrôle du ballon
+tirs
+passes
+jeu de tête
+fatigue
+pressing
+fautes
+centres
+possession
+occasions adverses
+arrêts
+finition
+rôle équilibré
+Plus de joueurs en attaque — plus de tirs pour les deux équipes.
+Basse
+Moyenne
+Haute
+Ligne défensive
+Une ligne haute réduit le terrain et piège l'adversaire au hors-jeu, mais laisse de l'espace dans le dos.
+Un pressing haut récupère le ballon et la possession, mais fatigue et entraîne plus de fautes.
+Étroit
+Normal
+Large
+Largeur
+Jeu large : plus de centres et de corners ; jeu étroit : plus compact au centre.
+Tempo rapide : plus d'attaques, mais des occasions moins nettes et des joueurs fatigués.
+Court
+Direct
+Les passes directes mènent plus vite au tir ; les courtes gardent le ballon.
+Prudent
+Rugueux
+Des tacles rugueux gênent l'adversaire, mais exposent aux cartons et penaltys.
+Possession
+Partout
+Côté gauche
+Axe
+Côté droit
+Les deux côtés
+Varié
+Premier poteau
+Second poteau
+Joué à deux
+Zone
+Individuelle
+Bloc bas, compact, gain de temps. Contre les favoris.
+Ligne haute, contre-pressing à la perte, tempo rapide. Demande des joueurs en forme.
+Passes courtes, possession, faux 9. Demande des milieux techniques.
+Laisser le ballon et attaquer vite et directement dans les espaces.
+Ballons longs vers les attaquants et les ailes, lutte pour les seconds ballons.
+Consignes standard sans extrêmes.
+Largeur, centres et jeu sur les ailes.
+Changer souvent de système et de consignes réduit les automatismes ; stages et matchs amicaux les renforcent.
+Enregistrer dans {0}
+Consignes
+Rôles
+Styles
+En match
+Style de jeu
+Orientation de l'attaque
+Piège du hors-jeu
+L'adversaire est plus souvent hors-jeu, mais une percée réussie est plus dangereuse.
+Gagner du temps quand on mène
+Dès la 55e minute en tête : moins d'occasions des deux côtés et risque de cartons jaunes.
+Le rôle définit ce que fait le joueur sur le terrain. Le pourcentage indique son adéquation avec ses attributs.
+Auto
+Tireurs
+Coups francs
+Capitaine
+Ordre des tireurs de penalty
+Combinaison sur corner
+Premier poteau — plus de frappes ; second — pour les grands ; joué à deux — moins de risque.
+Défense sur coups de pied arrêtés
+Le marquage individuel concède moins de tirs, mais des fautes dans la surface sont possibles.
+Styles prêts en un geste : système et consignes. Les rôles sont réinitialisés.
+Appliquer
+Consignes conditionnelles
+La tactique change d'elle-même quand la condition est remplie (jusqu'à 4 règles).
+Si
+après la
+Ajouter une règle
+Remplacements auto
+Désactivé
+Dès la 50e minute, un joueur fatigué (forme sous le seuil) est remplacé par le meilleur remplaçant.
+Emplacements tactiques
+Trois variantes tactiques (A/B/C) : changez vite avant et pendant le match.
+Consignes contre l'adversaire
+Prochain adversaire
+Marquage serré de la star adverse
+Aucune
+Pousser l'adversaire sur son mauvais pied
+Tirs adverses un peu moins dangereux, mais plus de fautes.
+Tactique enregistrée dans l'emplacement {0}
+Tactique {0}
+meilleur
+pire
+Place au classement : toute la période
+Points en jeu
+dern. match
+Rechercher une équipe
+Évolution depuis la dernière mise à jour du classement ({0}) ; chaque équipe affiche les points de son dernier match.
+Mouvements de la période
+3 mois
+6 mois
+Rang
+Fiche de l'équipe
+Comparer avec
+1993–2025 — archive générée, ensuite dans le jeu.
+I — importance du match, « Att. » — résultat attendu selon la formule FIFA.
+Date
+Score
+Att.
+Par mois
+Par année
+Prochains matchs
+Derniers résultats
+Non lus
+Tout marquer comme lu
+Tous les messages sont lus
+Début de carrière : 1er janvier 2027
+La Coupe du monde 2026 est jouée. À venir : Coupe d'Asie, CAN, Euro 2028, Copa América et qualifications pour 2030.
+Détail de la retransmission
+Temps forts
+Commentaire complet
+Jeu (cette sauvegarde)
+Normale
+Difficile
+Influe sur la force des adversaires dans vos matchs, les primes et la patience de la fédération.
+Fréquence des blessures
+Rares
+Fréquentes
+Fatigue réaliste
+La météo influe sur les matchs
+Interface
+Après chaque action
+Une fois par jour de jeu
+Une fois par semaine de jeu
+Une fois par mois de jeu
+Manuelle uniquement
+Devise
+Unités
+Métriques (cm)
+Impériales (pieds)
+Taille du texte
+Notifications contextuelles
+Confirmer les actions importantes
+Situation au 1er janvier
+La Coupe du monde 2026 est derrière nous, un nouveau cycle commence. L'équipe poursuit en :
+Garer le bus
+Gegenpressing
+Tiki-taka
+Contre-attaque
+Jeu long
+Jeu sur les ailes
+Attaquer
+Garder le score
+Pressing haut
+Calmer le jeu
+Tactique A
+Tactique B
+Tactique C
+Mené
+Mené de 2+
+Devant d'un but
+Devant

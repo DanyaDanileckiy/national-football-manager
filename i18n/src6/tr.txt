@@ -529,3 +529,201 @@ Almanya: yeniden başlangıç
 Başarısızlıkların ardından yeniden zirvede: 2030 Dünya Kupası'nda yarı finale yükselin.
 Senaryo hedefine ulaşıldı! Kariyerinize devam edebilirsiniz.
 Senaryo hedefine ulaşılamadı. Kariyer senaryosuz devam ediyor.
+Kornerde ceza sahasında faul — penaltı!
+Korneri {0} kullanıyor.
+Zaman geçirmekten sarı kart
+{0}: taktik plana göre değişiyor
+Takvim
+2026 sonbaharı simüle ediliyor — kariyerin 1 Ocak 2027'de başlayacak
+mn
+Libero kaleci
+Stoper
+Oyun kurucu stoper
+Önde baskı stoperi
+Bek
+Kanat bek
+İçe kat eden bek
+Defansif orta saha
+Çapa
+Derin oyun kurucu
+Top kapıcı
+Merkez orta saha
+Box-to-box
+İleri oyun kurucu
+Ofansif orta saha
+Gizli forvet
+Kanat orta saha
+Kanat forvet
+Kanat
+Ters kanat
+Forvet
+Pivot santrfor
+Golcü
+Sahte dokuz
+Baskıcı forvet
+hücum
+savunma
+top kontrolü
+şutlar
+paslar
+kafa oyunu
+yorgunluk
+pres
+fauller
+ortalar
+topa sahip olma
+rakip pozisyonları
+kurtarışlar
+bitiricilik
+dengeli rol
+Hücumda daha çok oyuncu — iki takım için de daha çok şut.
+Düşük
+Orta
+Yüksek
+Savunma hattı
+Yüksek hat sahayı daraltır ve ofsayta düşürür, ancak arkada boşluk bırakır.
+Yüksek pres topu ve topa sahip olmayı kazandırır, ama yorar ve daha çok faule yol açar.
+Dar
+Normal
+Geniş
+Genişlik
+Geniş oyun daha çok orta ve korner getirir; dar oyun merkezi sıkılaştırır.
+Hızlı tempo daha çok atak getirir, ama pozisyonlar zayıflar ve oyuncular yorulur.
+Kısa
+Direkt
+Direkt paslar şuta daha hızlı ulaşır, kısa paslar topu tutar.
+Dikkatli
+Sert
+Sert müdahaleler rakibi bozar ama kart ve penaltı riski taşır.
+Topa sahip olma
+Her yerde
+Sol kanat
+Merkez
+Sağ kanat
+İki kanat
+Karışık
+Ön direk
+Arka direk
+Kısa kullan
+Alan
+Adam adama
+Derin savunma, dar alan, zaman geçirme. Favorilere karşı.
+Yüksek hat, top kaybından hemen sonra pres, hızlı tempo. Fit oyuncular gerekir.
+Kısa pas, topa sahip olma, sahte dokuz. Teknik orta sahalar gerekir.
+Topu rakibe bırakıp boşluklara hızlı ve direkt saldırmak.
+Forvetlere ve kanatlara uzun toplar, ikinci top mücadelesi.
+Uç noktalara gitmeyen standart talimatlar.
+Genişlik, ortalar ve kanatlardan oyun.
+Diziliş ve talimatları sık değiştirmek uyumu düşürür; kamplar ve hazırlık maçları artırır.
+{0} içine kaydet
+Talimatlar
+Roller
+Stiller
+Maç içinde
+Oyun stili
+Hücum yönü
+Ofsayt taktiği
+Rakip daha sık ofsayta düşer, ama başarılı bir kaçış daha tehlikelidir.
+Öndeyken zaman geçir
+55. dakikadan itibaren öndeyken: iki taraf için daha az pozisyon ve sarı kart riski.
+Rol, oyuncunun sahada ne yaptığını belirler. Yüzde, özelliklerine ne kadar uyduğunu gösterir.
+Otomatik
+Kullananlar
+Serbest vuruşlar
+Kaptan
+Penaltı sırası
+Korner organizasyonu
+Ön direk — daha sık şut; arka direk — uzun oyuncular için; kısa — daha az risk.
+Duran top savunması
+Adam adama savunma daha az şuta izin verir, ama ceza sahasında faul olabilir.
+Tek dokunuşla hazır stiller: diziliş ve talimatlar. Roller varsayılana döner.
+Uygula
+Koşullu talimatlar
+Koşul sağlanınca taktik kendiliğinden değişir (en fazla 4 kural).
+Eğer
+şu dakikadan sonra
+Kural ekle
+Otomatik değişiklikler
+Kapalı
+50. dakikadan itibaren yorgun bir oyuncu (kondisyonu eşiğin altında) en iyi yedekle değiştirilir.
+Taktik yuvaları
+Üç taktik varyantı (A/B/C): maç öncesi ve sırasında hızlı geçiş.
+Rakibe karşı talimatlar
+Sıradaki rakip
+Rakibin yıldızına sıkı markaj
+Yok
+Rakipleri zayıf ayağına yönlendir
+Rakip şutları biraz daha zayıf, ama daha çok faul.
+Taktik {0} yuvasına kaydedildi
+Taktik {0}
+en iyi
+en kötü
+Sıralama: tüm zamanlar
+Oyundaki puan
+son maç
+Takım ara
+Son sıralama güncellemesinden ({0}) bu yana değişim; her takımda son maçından aldığı puan.
+Dönemin hareketlileri
+3 ay
+6 ay
+Sıra
+Takım profili
+Karşılaştır
+1993–2025 — üretilmiş arşiv, sonrası oyunda.
+I — maçın önemi, «Bkl.» — FIFA formülüne göre beklenen sonuç.
+Tarih
+Skor
+Bkl.
+Aylara göre
+Yıllara göre
+Yaklaşan maçlar
+Son sonuçlar
+Okunmamış
+Tümünü okundu say
+Tüm mesajlar okundu
+Kariyer başlangıcı: 1 Ocak 2027
+2026 Dünya Kupası oynandı. Sırada Asya Kupası, Afrika Uluslar Kupası, Euro 2028, Copa América ve 2030 Dünya Kupası elemeleri var.
+Yayın ayrıntısı
+Önemli anlar
+Tam anlatım
+Oynanış (bu kayıt)
+Normal
+Zor
+Maçlarındaki rakip gücünü, primleri ve federasyonun sabrını etkiler.
+Sakatlık sıklığı
+Nadir
+Sık
+Gerçekçi yorgunluk
+Hava durumu maçları etkiler
+Arayüz
+Her işlemden sonra
+Oyun gününde bir
+Oyun haftasında bir
+Oyun ayında bir
+Yalnızca elle
+Para birimi
+Birimler
+Metrik (cm)
+İngiliz (fit)
+Yazı boyutu
+Açılır bildirimler
+Önemli işlemleri onayla
+1 Ocak itibarıyla durum
+2026 Dünya Kupası geride kaldı, yeni bir dönem başlıyor. Milli takım şunlarda mücadele ediyor:
+Otobüsü çek
+Gegenpressing
+Tiki-taka
+Kontra atak
+Uzun top
+Kanat oyunu
+Hücum et
+Skoru koru
+Yüksek pres
+Oyunu sakinleştir
+Taktik A
+Taktik B
+Taktik C
+Gerideyiz
+2+ gerideyiz
+1 golle öndeyiz
+Öndeyiz

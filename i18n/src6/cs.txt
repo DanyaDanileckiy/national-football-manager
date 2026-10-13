@@ -529,3 +529,201 @@ Německo: restart
 Po nezdarech zpět mezi elitu: dojděte do semifinále MS 2030.
 Cíl scénáře splněn! Můžete pokračovat v kariéře.
 Cíl scénáře nesplněn. Kariéra pokračuje bez scénáře.
+Faul ve vápně při rohu — penalta!
+Roh zahrává {0}.
+Žlutá za zdržování hry
+{0}: taktika se mění podle plánu
+Kalendář
+Simuluje se podzim 2026 — kariéra začne 1. ledna 2027
+mil.
+Brankář-libero
+Střední obránce
+Rozehrávající obránce
+Stoper
+Krajní obránce
+Wingbek
+Invertovaný krajní obránce
+Defenzivní záložník
+Kotva
+Hluboký tvůrce hry
+Ničitel
+Střední záložník
+Box-to-box
+Útočný tvůrce hry
+Ofenzivní záložník
+Podhrotový útočník
+Krajní záložník
+Křídelní útočník
+Křídlo
+Invertované křídlo
+Útočník
+Hroťák
+Lovec gólů
+Falešná devítka
+Presující útočník
+útok
+obrana
+kontrola míče
+střely
+přihrávky
+hra hlavou
+únava
+presink
+fauly
+centry
+držení míče
+šance soupeře
+zákroky
+proměňování
+vyvážená role
+Více hráčů v útoku — více střel pro oba týmy.
+Nízká
+Střední
+Vysoká
+Obranná linie
+Vysoká linie zužuje hřiště a chytá do ofsajdu, ale za zády zůstává prostor.
+Vysoký presink získává míč a držení, ale vyčerpává a přináší víc faulů.
+Úzce
+Normálně
+Široce
+Šířka
+Široká hra — víc centrů a rohů, úzká — hustěji ve středu.
+Rychlé tempo — víc útoků, ale horší šance a unavení hráči.
+Krátké
+Přímé
+Přímé přihrávky vedou rychleji ke střele, krátké drží míč.
+Opatrně
+Tvrdě
+Tvrdé zákroky ruší soupeře, ale hrozí karty a penalty.
+Držení míče
+Všude
+Levé křídlo
+Střed
+Pravé křídlo
+Obě křídla
+Různě
+Bližší tyč
+Vzdálenější tyč
+Rozehrát nakrátko
+Zónová
+Osobní
+Hluboká obrana, úzce, zdržování. Proti favoritům.
+Vysoká linie, presink hned po ztrátě, rychlé tempo. Vyžaduje fit hráče.
+Krátké přihrávky, držení míče, falešná devítka. Vyžaduje technické záložníky.
+Přenechat míč a rychle a přímo útočit do prostoru.
+Dlouhé míče na útočníky a křídla, boj o odražené míče.
+Standardní pokyny bez extrémů.
+Šířka, centry a hra po křídlech.
+Časté změny rozestavení a pokynů snižují sehranost; soustředění a přáteláky ji zvyšují.
+Uložit do {0}
+Pokyny
+Role
+Styly
+V zápase
+Herní styl
+Směr útoku
+Ofsajdová past
+Soupeř je častěji v ofsajdu, ale úspěšný únik je nebezpečnější.
+Zdržovat hru při vedení
+Od 55. minuty při vedení: méně šancí pro oba a riziko žlutých karet.
+Role určuje, co hráč na hřišti dělá. Procento ukazuje, jak sedí k jeho schopnostem.
+Auto
+Exekutoři
+Přímé kopy
+Kapitán
+Pořadí penalt
+Rozehrávka rohů
+Bližší tyč — častěji střela, vzdálenější — pro vysoké, nakrátko — menší riziko.
+Obrana při standardkách
+Osobní obrana dovolí méně střel, ale možné jsou fauly ve vápně.
+Hotové styly jedním klepnutím: rozestavení a pokyny. Role se vrátí na výchozí.
+Použít
+Podmíněné pokyny
+Taktika se změní sama, když je splněna podmínka (až 4 pravidla).
+Když
+po
+Přidat pravidlo
+Automatická střídání
+Vyp.
+Od 50. minuty se unavený hráč (svěžest pod prahem) vystřídá nejlepším náhradníkem.
+Taktické sloty
+Tři varianty taktiky (A/B/C): rychlé přepínání před zápasem i během něj.
+Pokyny proti soupeři
+Nejbližší soupeř
+Těsné bránění hvězdy soupeře
+Žádné
+Tlačit soupeře na slabší nohu
+O něco horší střely soupeře, ale víc faulů.
+Taktika uložena do slotu {0}
+Taktika {0}
+nejlepší
+nejhorší
+Místo v žebříčku: celé období
+Body ve hře
+posl. zápas
+Hledat tým
+Změny od poslední aktualizace žebříčku ({0}); u každého týmu body z jeho posledního zápasu.
+Pohyb za období
+3 měs.
+6 měs.
+Místo
+Profil týmu
+Porovnat s
+1993–2025 — vygenerovaný archiv, dál ve hře.
+I — důležitost zápasu, „Oček.“ — očekávaný výsledek podle vzorce FIFA.
+Datum
+Skóre
+Oček.
+Po měsících
+Po letech
+Nejbližší zápasy
+Poslední výsledky
+Nepřečtené
+Označit vše jako přečtené
+Všechny zprávy přečteny
+Začátek kariéry: 1. ledna 2027
+Mistrovství světa 2026 je odehráno. Čeká nás Asijský pohár, Africký pohár národů, Euro 2028, Copa América a kvalifikace o MS 2030.
+Podrobnost přenosu
+Klíčové momenty
+Plný komentář
+Hratelnost (tato uložená hra)
+Normální
+Těžká
+Ovlivňuje sílu soupeřů ve tvých zápasech, prémie a trpělivost svazu.
+Četnost zranění
+Zřídka
+Často
+Realistická únava
+Počasí ovlivňuje zápasy
+Rozhraní
+Po každé akci
+Jednou za herní den
+Jednou za herní týden
+Jednou za herní měsíc
+Pouze ručně
+Měna
+Jednotky
+Metrické (cm)
+Imperiální (stopy)
+Velikost písma
+Vyskakovací oznámení
+Potvrzovat důležité akce
+Stav k 1. lednu
+Mistrovství světa 2026 je za námi, začíná nový cyklus. Tým dál hraje v:
+Zaparkovat autobus
+Gegenpressing
+Tiki-taka
+Protiútok
+Dlouhé míče
+Hra po křídlech
+Útočit
+Udržet výsledek
+Vysoký presink
+Uklidnit hru
+Taktika A
+Taktika B
+Taktika C
+Prohráváme
+Prohráváme o 2+
+Vedeme o 1
+Vedeme

@@ -529,3 +529,201 @@ Alemanha: recomeço
 De volta à elite após os fracassos: chegue às semifinais da Copa de 2030.
 Objetivo do cenário cumprido! Você pode continuar a carreira.
 Objetivo do cenário não cumprido. A carreira continua sem o cenário.
+Falta na área num canto — penálti!
+Canto cobrado por {0}.
+Amarelo por retardar o jogo
+{0}: a tática muda conforme o planejado
+Calendário
+O outono de 2026 está a ser simulado — sua carreira começa em 1 de janeiro de 2027
+mi
+Guarda-redes líbero
+Defesa central
+Defesa construtor
+Defesa de antecipação
+Lateral
+Ala
+Lateral invertido
+Médio defensivo
+Médio âncora
+Armador recuado
+Médio recuperador
+Médio centro
+Box-to-box
+Armador avançado
+Médio ofensivo
+Segundo avançado
+Médio ala
+Extremo avançado
+Extremo
+Extremo invertido
+Avançado
+Ponta de lança
+Matador
+Falso 9
+Avançado de pressão
+ataque
+defesa
+controle de bola
+finalizações
+passes
+jogo aéreo
+cansaço
+pressão
+faltas
+cruzamentos
+posse
+chances do adversário
+defesas
+finalização
+função equilibrada
+Mais jogadores no ataque — mais finalizações para as duas equipas.
+Baixa
+Média
+Alta
+Linha defensiva
+Linha alta encurta o campo e deixa o rival em impedimento, mas abre espaço às costas.
+Pressão alta recupera a bola e a posse, mas cansa e gera mais faltas.
+Fechado
+Normal
+Aberto
+Amplitude
+Jogo aberto traz mais cruzamentos e cantos; fechado, mais compacto no meio.
+Ritmo rápido gera mais ataques, mas chances piores e jogadores cansados.
+Curto
+Direto
+Passes diretos chegam mais rápido à finalização; curtos mantêm a bola.
+Cuidadoso
+Duro
+Desarmes duros atrapalham o rival, mas arriscam cartões e penáltis.
+Posse de bola
+Em todo lugar
+Lado esquerdo
+Centro
+Lado direito
+Ambos os lados
+Variado
+Primeira trave
+Segunda trave
+Cobrança curta
+Zona
+Individual
+Defesa recuada, fechada, retardar o jogo. Contra favoritos.
+Linha alta, pressão logo após perder a bola, ritmo rápido. Exige jogadores em boa forma.
+Passe curto, posse, falso 9. Exige médios técnicos.
+Ceder a bola e atacar rápido e direto nos espaços.
+Bolas longas para avançados e extremos, disputa da segunda bola.
+Instruções padrão, sem extremos.
+Amplitude, cruzamentos e jogo pelos extremos.
+Mudanças frequentes de esquema e instruções reduzem o entrosamento; períodos de treino e amistosos aumentam.
+Guardar em {0}
+Instruções
+Funções
+Estilos
+No jogo
+Estilo de jogo
+Direção do ataque
+Linha de impedimento
+O rival cai mais em impedimento, mas uma escapada é mais perigosa.
+Fazer cera quando à frente
+A partir dos 55' com vantagem: menos chances para os dois e risco de amarelos.
+A função define o que o jogador faz em campo. A porcentagem mostra o quanto ela combina com os atributos dele.
+Automático
+Cobradores
+Faltas
+Capitão
+Ordem dos penáltis
+Jogada de canto
+Primeira trave — mais finalizações; segunda — para jogadores altos; curta — menos risco.
+Defesa em bolas paradas
+Marcação individual cede menos finalizações, mas pode gerar faltas na área.
+Estilos prontos com um toque: esquema e instruções. As funções voltam ao padrão.
+Aplicar
+Instruções condicionais
+A tática muda sozinha quando a condição é cumprida (até 4 regras).
+Se
+após o minuto
+Adicionar regra
+Substituições automáticas
+Desligadas
+A partir dos 50', um jogador cansado (condição abaixo do limite) é trocado pelo melhor reserva.
+Slots táticos
+Três variantes táticas (A/B/C): troque rápido antes e durante o jogo.
+Instruções contra o adversário
+Próximo adversário
+Marcação cerrada no craque adversário
+Nenhuma
+Forçar o rival para a perna ruim
+Finalizações do rival um pouco piores, mas mais faltas.
+Tática guardada no slot {0}
+Tática {0}
+melhor
+pior
+Posição no ranking: todo o período
+Pontos no jogo
+últ. jogo
+Procurar seleção
+Mudanças desde a última atualização do ranking ({0}); cada seleção mostra os pontos do seu último jogo.
+Movimento no período
+3 meses
+6 meses
+Posição
+Perfil da seleção
+Comparar com
+1993–2025 — arquivo gerado; depois, no jogo.
+I — importância do jogo; «Esp.» — resultado esperado pela fórmula da FIFA.
+Data
+Resultado
+Esp.
+Por mês
+Por ano
+Próximos jogos
+Últimos resultados
+Não lidas
+Marcar todas como lidas
+Todas as mensagens lidas
+Início da carreira: 1 de janeiro de 2027
+A Mundial de 2026 já foi disputada. Pela frente: Copa da Ásia, Copa Africana, Euro 2028, Copa América e as qualificação para 2030.
+Detalhe da transmissão
+Momentos-chave
+Relato completa
+Jogabilidade (este jogo guardado)
+Normal
+Difícil
+Afeta a força dos rivais nos seus jogos, os prémios e a paciência da federação.
+Frequência de lesões
+Raras
+Frequentes
+Cansaço realista
+O clima afeta os jogos
+Interface
+Após cada ação
+Uma vez por dia de jogo
+Uma vez por semana de jogo
+Uma vez por mês de jogo
+Só manual
+Moeda
+Unidades
+Métricas (cm)
+Imperiais (pés)
+Tamanho da fonte
+Notificações pop-up
+Confirmar ações importantes
+Situação em 1 de janeiro
+A Mundial 2026 ficou para trás e começa um novo ciclo. A seleção segue disputando:
+Estacionar o autocarro
+Gegenpressing
+Tiki-taka
+Contra-ataque
+Bola longa
+Jogo pelos extremos
+Atacar
+Segurar o resultado
+Pressão alta
+Acalmar o jogo
+Tática A
+Tática B
+Tática C
+Perdendo
+Perdendo por 2+
+Vencendo por 1
+Vencendo

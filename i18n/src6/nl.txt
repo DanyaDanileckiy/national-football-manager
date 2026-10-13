@@ -529,3 +529,201 @@ Duitsland: herstart
 Na teleurstellingen terug bij de elite: haal de halve finale van het WK 2030.
 Scenariodoel gehaald! Je kunt je carrière voortzetten.
 Scenariodoel niet gehaald. Je carrière gaat verder zonder scenario.
+Overtreding in de zestien bij een hoekschop — penalty!
+Hoekschop genomen door {0}.
+Geel voor tijdrekken
+{0}: de tactiek verandert zoals gepland
+Kalender
+Het najaar van 2026 wordt gesimuleerd — je carrière begint op 1 januari 2027
+mln
+Meevoetballende keeper
+Centrale verdediger
+Opbouwende verdediger
+Stopper
+Back
+Wingback
+Inverted back
+Verdedigende middenvelder
+Anker
+Diepe spelmaker
+Balafpakker
+Centrale middenvelder
+Box-to-box
+Aanvallende spelmaker
+Aanvallende middenvelder
+Schaduwspits
+Buitenspeler middenveld
+Buitenspits
+Vleugelspeler
+Inverted winger
+Spits
+Targetman
+Goalgetter
+Valse negen
+Jagende spits
+aanval
+verdediging
+balcontrole
+schoten
+passes
+kopspel
+vermoeidheid
+pressing
+overtredingen
+voorzetten
+balbezit
+kansen tegenstander
+reddingen
+afronding
+gebalanceerde rol
+Meer spelers in de aanval — meer schoten voor beide teams.
+Laag
+Gemiddeld
+Hoog
+Verdedigingslinie
+Een hoge linie maakt het veld klein en zet de tegenstander buitenspel, maar laat ruimte in de rug.
+Hoge druk wint de bal en het balbezit, maar kost energie en geeft meer overtredingen.
+Smal
+Normaal
+Breed
+Breedte
+Breed spel geeft meer voorzetten en hoekschoppen, smal maakt het midden compacter.
+Hoog tempo geeft meer aanvallen, maar slechtere kansen en vermoeide spelers.
+Kort
+Direct
+Directe passes leiden sneller tot een schot, korte houden de bal.
+Voorzichtig
+Hard
+Hard ingrijpen hindert de tegenstander, maar geeft kans op kaarten en penalty's.
+Balbezit
+Overal
+Linkerflank
+Centrum
+Rechterflank
+Beide flanken
+Gevarieerd
+Eerste paal
+Tweede paal
+Kort nemen
+Zonaal
+Man-op-man
+Diep verdedigen, smal, tijdrekken. Tegen favorieten.
+Hoge linie, direct druk na balverlies, hoog tempo. Vraagt fitte spelers.
+Kort passen, balbezit, valse negen. Vraagt technische middenvelders.
+De bal laten en snel en direct de ruimte in aanvallen.
+Lange ballen op de spitsen en flanken, strijd om de tweede bal.
+Standaardinstructies zonder uitersten.
+Breedte, voorzetten en spel via de vleugels.
+Vaak wisselen van formatie en instructies verlaagt de ingespeeldheid; trainingskampen en oefenduels verhogen haar.
+Opslaan in {0}
+Instructies
+Rollen
+Stijlen
+Tijdens de wedstrijd
+Speelstijl
+Aanvalsrichting
+Buitenspelval
+De tegenstander staat vaker buitenspel, maar een geslaagde doorbraak is gevaarlijker.
+Tijdrekken bij een voorsprong
+Vanaf de 55e minuut bij voorsprong: minder kansen voor beide teams en risico op gele kaarten.
+De rol bepaalt wat de speler op het veld doet. Het percentage toont hoe goed die bij zijn eigenschappen past.
+Auto
+Nemers
+Vrije trappen
+Aanvoerder
+Volgorde penaltynemers
+Hoekschopvariant
+Eerste paal — vaker een schot; tweede paal — voor lange spelers; kort — minder risico.
+Verdediging bij standaardsituaties
+Mandekking geeft minder schoten weg, maar overtredingen in de zestien zijn mogelijk.
+Kant-en-klare stijlen met één tik: formatie en instructies. Rollen worden teruggezet.
+Toepassen
+Voorwaardelijke instructies
+De tactiek verandert vanzelf als aan de voorwaarde is voldaan (maximaal 4 regels).
+Als
+na
+Regel toevoegen
+Automatische wissels
+Uit
+Vanaf de 50e minuut wordt een vermoeide speler (fitheid onder de drempel) vervangen door de beste invaller.
+Tactiekslots
+Drie tactiekvarianten (A/B/C): snel wisselen voor en tijdens de wedstrijd.
+Instructies tegen de tegenstander
+Volgende tegenstander
+Kort dekken van de ster van de tegenstander
+Geen
+Tegenstanders op hun zwakke been dwingen
+Iets slechtere schoten van de tegenstander, maar meer overtredingen.
+Tactiek opgeslagen in slot {0}
+Tactiek {0}
+beste
+slechtste
+Plaats op de ranglijst: alle tijden
+Punten in het spel
+laatste duel
+Land zoeken
+Wijzigingen sinds de laatste update van de ranglijst ({0}); bij elk team de punten uit zijn laatste wedstrijd.
+Stijgers en dalers in de periode
+3 mnd
+6 mnd
+Plaats
+Teamprofiel
+Vergelijken met
+1993–2025 — gegenereerd archief, daarna in het spel.
+I — belang van de wedstrijd, ‘Verw.’ — verwacht resultaat volgens de FIFA-formule.
+Datum
+Uitslag
+Verw.
+Per maand
+Per jaar
+Komende wedstrijden
+Laatste uitslagen
+Ongelezen
+Alles als gelezen markeren
+Alle berichten gelezen
+Start carrière: 1 januari 2027
+Het WK 2026 is gespeeld. In het verschiet: Azië Cup, Afrika Cup, EK 2028, Copa América en de WK-kwalificatie voor 2030.
+Detail van de verslaggeving
+Hoogtepunten
+Volledig commentaar
+Gameplay (deze save)
+Normaal
+Moeilijk
+Beïnvloedt de sterkte van tegenstanders in jouw wedstrijden, premies en het geduld van de bond.
+Blessurefrequentie
+Zelden
+Vaak
+Realistische vermoeidheid
+Weer beïnvloedt wedstrijden
+Interface
+Na elke actie
+Eens per speeldag
+Eens per speelweek
+Eens per speelmaand
+Alleen handmatig
+Valuta
+Eenheden
+Metrisch (cm)
+Imperiaal (voet)
+Lettergrootte
+Pop-upmeldingen
+Belangrijke acties bevestigen
+Stand van zaken op 1 januari
+Het WK 2026 ligt achter ons, een nieuwe cyclus begint. Het team speelt verder in:
+Bus parkeren
+Gegenpressing
+Tikitaka
+Counter
+Lange bal
+Vleugelspel
+Aanvallen
+Voorsprong vasthouden
+Hoge druk
+Spel rustig maken
+Tactiek A
+Tactiek B
+Tactiek C
+Achter
+2+ achter
+1 doelpunt voor
+Voor
