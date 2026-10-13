@@ -1,7 +1,7 @@
 {
   "name": "national-football-manager",
   "productName": "Сборная Футбольный Менеджер",
-  "version": "9.0.0",
+  "version": "10.0.0",
   "description": "Сборная: Футбольный Менеджер",
   "author": "DanyaDanileckiy",
   "main": "main.js",
@@ -13,10 +13,27 @@
   "build": {
     "appId": "io.github.danyadanileckiy.nfm",
     "artifactName": "NationalFootballManager-${version}-portable.exe",
-    "files": ["main.js", "app/**/*"],
-    "directories": { "output": "dist" },
-    "win": { "icon": "../icons/icon.ico", "target": "portable" },
-    "linux": { "icon": "../icons/icon.png" }
+    "files": [
+      "main.js",
+      "app/**/*"
+    ],
+    "directories": {
+      "output": "dist"
+    },
+    "win": {
+      "icon": "../icons/icon.ico",
+      "target": "portable",
+      "signAndEditExecutable": false
+    },
+    "linux": {
+      "icon": "../icons/icon.png"
+    },
+    "afterPack": "./afterpack.js"
   },
-  "devDependencies": { "electron": "^33.2.0", "electron-builder": "^25.1.8" }
+  "devDependencies": {
+    "electron": "^33.2.0",
+    "electron-builder": "^25.1.8",
+    "resedit": "^1.7.2",
+    "pe-library": "^0.4.1"
+  }
 }
