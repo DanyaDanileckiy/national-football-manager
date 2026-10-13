@@ -397,3 +397,6 @@ table.t10{width:100%;border-collapse:collapse;font-size:12.5px}table.t10 td,tabl
 .a101 ul{margin:8px 0 6px;padding-inline-start:20px}.a101 li{margin:4px 0;line-height:1.35}
 .chtip{position:absolute;z-index:5;background:var(--card,#0f1b2b);border:1px solid var(--line);border-radius:10px;padding:6px 8px;font-size:13px;box-shadow:0 6px 20px rgba(0,0,0,.45);pointer-events:none}
 .ch10w{margin-bottom:4px}
+
+/* v10.1: общий график */
+.ch10w.mini .ch10{height:56px}.rk10m{padding:6px 10px}.ch10w .chtip{position:absolute;z-index:30;background:#0f1b2b}.rk10m{position:relative;z-index:20;overflow:visible}

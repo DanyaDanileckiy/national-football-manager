@@ -65,9 +65,7 @@ SCR.bids=()=>{ top(_t("Заявки на турниры")); const s=S(); const b
 function v6bid(k){ const co=(document.getElementById('co_'+k)||{}).value||null; if(V6.submitBid(k,co)){ toast(_t("Заявка подана")); save(); refresh(); } else toast(_t("Недостаточно бюджета")); }
 function v6wd(k){ V6.withdraw(k); save(); refresh(); }
 // ===== рейтинг ФИФА: подробно =====
-function lineChart(series,W=320,H=120,inv=true,labels){ const all=series.flatMap(s=>s.d.map(x=>x[1])); if(!all.length) return ''; const mn=Math.min(...all), mx=Math.max(...all); const sp=Math.max(1,mx-mn); const n=Math.max(...series.map(s=>s.d.length));
- const x=i=>4+i/(Math.max(1,n-1))*(W-8), y=v=>inv?6+(v-mn)/sp*(H-12):H-6-(v-mn)/sp*(H-12);
- return `<svg class="spark" viewBox="0 0 ${W} ${H}" preserveAspectRatio="none" style="height:${H}px">${series.map(s=>`<polyline points="${s.d.map((v,i)=>x(i+n-s.d.length).toFixed(1)+','+y(v[1]).toFixed(1)).join(' ')}" fill="none" stroke="${s.c}" stroke-width="${s.w||2}" stroke-linejoin="round"${s.dash?' stroke-dasharray="4 3"':''}/>`).join('')}</svg>`; }
+function lineChart(series,W=320,H=120,inv=true,o={}){ /* v10.1: общий интерактивный график */ return N.chart(series.map(s=>Object.assign({},s,{name:s.t?fl(s.t)+' '+esc(T(s.t).n):s.name})),Object.assign({inv,W,H,align:'end'},o)); }
 const PAL=['#22d37a','#4c8dff','#f6c445','#ff5d62','#38d2e8','#ff9f43','#b48cff','#ff7ab6','#9be15d','#ffffff'];
 SCR.rank=()=>{ top(_t("Рейтинг ФИФА")); const s=S(); const [tab,tb]=tabs('rk6',[['mv',_t("Движение")],['team',_t("История команды")],['top',_t("Топ-10")],['pts',_t("Очки за матчи")]],'mv'); let body='';
  const confs=['ALL',...Object.keys(N.CONFS)]; const cf=st.tab.rkc6||'ALL'; const cft=`<div class="tabs">${confs.map(k=>`<div class="tab ${cf===k?'on':''}" onclick="UI.st.tab.rkc6='${k}';UI.refresh()">${k==='ALL'?_t("Мир"):k}</div>`).join('')}</div>`;
@@ -80,11 +78,11 @@ SCR.rank=()=>{ top(_t("Рейтинг ФИФА")); const s=S(); const [tab,tb]=t
  if(tab==='team'){ const c=st.tab.rkt||s.me; const g=V6.teamRk(c); const past=V6.pastRank(c); const best=Math.min(...past.map(x=>x[1]),...g.map(x=>x[1])), worst=Math.max(...past.map(x=>x[1]),...g.map(x=>x[1]));
   body=`<div class="card"><select onchange="UI.st.tab.rkt=this.value;UI.refresh()">${Object.values(s.T).sort((a,b)=>a.n.localeCompare(b.n)).map(t=>`<option value="${t.c}" ${t.c===c?'selected':''}>${esc(t.n)}</option>`).join('')}</select>
   <h3>${tf(c)} ${esc(T(c).n)} · #${N.fifaRank(c)} · ${_t("лучшее #{0} · худшее",best)} #${worst}</h3><div class="sm mut">${_t("В игре (по месяцам)")}</div>${g.length>1?lineChart([{d:g,c:'var(--acc)'}]):`<div class="sm mut">${_t("История появится через пару месяцев.")}</div>`}
-  <div class="sm mut">${_t("Архив 1993–2025 (сгенерирован)")}</div>${lineChart([{d:past,c:'var(--blue)'}])}<div class="xs mut" style="display:flex;justify-content:space-between"><span>1993 · #${past[0][1]}</span><span>2025 · #${past[past.length-1][1]}</span></div></div>
+  <div class="sm mut">${_t("Архив 1993–2025 (сгенерирован)")}</div>${lineChart([{d:past,c:'var(--blue)'}])}</div>
   <div class="card"><h3>${_t("Очки за матчи")}</h3>${ptsRows(c)}</div>`; }
  if(tab==='top'){ const n=Math.min(H.length,24); if(n<2){ body=`<div class="card mut">${_t("История появится через пару месяцев.")}</div>`; } else { const idx=Array.from({length:n},(_,k)=>H.length-n+k); const now=V6.rkAt(H.length-1); const top10=Object.keys(now).filter(c=>cf==='ALL'||T(c).conf===cf).sort((a,b)=>now[a]-now[b]).slice(0,10);
-  const ser=top10.map((c,k)=>({d:idx.map(i=>[H[i].d,Math.min(25,V6.rkAt(i)[c]||25)]),c:PAL[k],w:c===s.me?3.5:2}));
-  body=`${cft}<div class="card"><h3>${_t("Топ-10: история за {0} мес.",n)}</h3>${lineChart(ser,320,180)}<div class="legend">${top10.map((c,k)=>`<span><i style="background:${PAL[k]}"></i>${now[c]}. ${fl(c)} ${esc(T(c).n)}</span>`).join('')}</div></div>
+  const ser=top10.map((c,k)=>({d:idx.map(i=>[H[i].d,Math.min(25,V6.rkAt(i)[c]||25)]),c:PAL[k],w:c===s.me?3.5:2,t:c,mk:c===s.me}));
+  body=`${cft}<div class="card"><h3>${_t("Топ-10: история за {0} мес.",n)}</h3>${lineChart(ser,320,180,true,{fmt:v=>v>=25?'25+':'#'+Math.round(v),legend:true})}<div class="legend">${top10.map((c,k)=>`<span><i style="background:${PAL[k]}"></i>${now[c]}. ${fl(c)} ${esc(T(c).n)}</span>`).join('')}</div></div>
   <div class="card"><table><tr><th>${_t("Месяц")}</th>${[1,2,3].map(k=>`<th>#${k}</th>`).join('')}</tr>${idx.slice().reverse().map(i=>{ const p=V6.rkAt(i); const l=Object.keys(p).filter(c=>cf==='ALL'||T(c).conf===cf).sort((a,b)=>p[a]-p[b]).slice(0,3); return `<tr><td class="sm">${N.fmtD(H[i].d,1)}</td>${l.map(c=>`<td>${fl(c)}</td>`).join('')}</tr>`; }).join('')}</table></div>`; } }
  if(tab==='pts'){ const c=st.tab.rkt||s.me; body=`<div class="card"><select onchange="UI.st.tab.rkt=this.value;UI.refresh()">${Object.values(s.T).sort((a,b)=>a.n.localeCompare(b.n)).map(t=>`<option value="${t.c}" ${t.c===c?'selected':''}>${esc(t.n)}</option>`).join('')}</select><h3>${tf(c)} ${esc(T(c).n)}: ${T(c).pts.toFixed(2)}</h3>${ptsRows(c)}</div>`; }
  V().innerHTML=tb+body; };
